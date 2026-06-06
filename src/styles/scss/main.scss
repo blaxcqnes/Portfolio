@@ -1,0 +1,71 @@
+@use '../scss/loader';
+@use '../scss/header';
+@use '../scss/mainContent';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  user-select: none;
+  font-family: 'Alan Sans', sans-serif;
+  font-weight: 400;
+  color: #ffffff;
+  transition: all 0.2s ease;
+}
+
+body {
+  background-color: #232323;
+  scroll-behavior: smooth;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  row-gap: 1rem;
+  width: 100%;
+  height: 100dvh;
+  padding: 1rem;
+  position: relative;
+
+  @media (min-width: 300px) and (max-width: 700px) {
+    height: auto;
+    overflow-x: hidden;
+  }
+
+  @media (min-width: 976px) and (max-width: 1023px) {
+    height: auto;
+  }
+
+  @media (min-width: 1023px) and (max-width: 1200px) {
+    row-gap: 0.6rem;
+    height: auto;
+  }
+
+  @media (min-width: 1200px) and (max-width: 1400px) {
+    row-gap: 0.8rem;
+  }
+
+  @media (min-width: 1023px) and (max-width: 1200px) {
+    row-gap: 0.6rem;
+    height: auto;
+  }
+
+  // Height adjustments
+
+  @media (orientation: landscape) and (min-height: 811px) {
+    height: 100dvh;
+  }
+
+  @media (orientation: landscape) and (max-height: 811px) {
+    height: auto;
+  }
+
+  @media (orientation: portrait) and (min-height: 1470px) {
+    height: 100dvh !important;
+  }
+
+  @media (orientation: portrait) and (max-height: 1470px) {
+    height: auto;
+  }
+}

@@ -1,0 +1,1308 @@
+.header {
+  display: flex;
+  width: 100%;
+  height: fit-content;
+  position: relative;
+  animation: header 0.5s linear;
+  animation-iteration-count: 1;
+
+  @keyframes header {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  .headerConatiner {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 1.5rem 2rem;
+    background-color: #635445;
+    border-radius: 0.5rem;
+
+    @media (min-width: 300px) and (max-width: 400px) {
+      padding: 1.2rem 0.75rem;
+    }
+
+    @media (min-width: 400px) and (max-width: 500px) {
+      padding: 1.2rem 1rem;
+    }
+
+    @media (min-width: 500px) and (max-width: 600px) {
+      padding: 1.5rem 2rem;
+    }
+
+    @media (min-width: 600px) and (max-width: 700px) {
+      padding: 1.5rem 1rem;
+    }
+
+    @media (min-width: 1023px) and (max-width: 1200px) {
+      padding: 1.5rem 1rem;
+    }
+
+    @media (min-width: 1200px) and (max-width: 1400px) {
+      padding: 1.5rem 1.2rem;
+    }
+
+    @media (min-width: 1570px) and (max-width: 1670px) {
+      padding: 1.7rem 2rem;
+    }
+
+    .nameAndProfession {
+      display: flex;
+      flex-direction: row;
+      column-gap: 1.5rem;
+      align-items: center;
+
+      @media (min-width: 600px) and (max-width: 1200px) {
+        flex-direction: column;
+        row-gap: 0.2rem;
+        align-items: start;
+      }
+
+      .name {
+        font-size: 20pt;
+        font-weight: 500;
+
+        @media (min-width: 300px) and (max-width: 400px) {
+          font-size: 14pt;
+        }
+
+        @media (min-width: 400px) and (max-width: 500px) {
+          font-size: 16pt;
+        }
+
+        @media (min-width: 500px) and (max-width: 600px) {
+          font-size: 17pt;
+        }
+
+        @media (min-width: 600px) and (max-width: 700px) {
+          font-size: 18pt;
+        }
+
+        @media (min-width: 700px) and (max-width: 1023px) {
+          font-size: 19pt;
+        }
+
+        @media (min-width: 1023px) and (max-width: 1046px) {
+          font-size: 19pt;
+        }
+
+        @media (min-width: 1046px) and (max-width: 1061px) {
+          font-size: 19.8pt;
+        }
+
+        @media (min-width: 1570px) and (max-width: 1670px) {
+          font-size: 21pt;
+        }
+      }
+
+      .profession {
+        font-size: 10pt;
+        color: #ebebeb;
+
+        @media (min-width: 300px) and (max-width: 700px) {
+          display: none;
+        }
+
+        @media (min-width: 700px) and (max-width: 920px) {
+          display: block !important;
+          font-size: 9pt !important;
+        }
+
+        @media (min-width: 920px) and (max-width: 976px) {
+          display: block !important;
+          font-size: 10pt !important;
+        }
+
+        @media (width: 976px) {
+          font-size: 10pt !important;
+        }
+
+        @media (min-width: 1023px) and (max-width: 1046px) {
+          font-size: 9.5pt;
+        }
+
+        @media (min-width: 1046px) and (max-width: 1061px) {
+          font-size: 9.8pt;
+        }
+      }
+    }
+
+    .locationAndContact {
+      display: flex;
+      flex-direction: row;
+      column-gap: 2.2rem;
+      align-items: center;
+
+      @media (min-width: 600px) and (max-width: 767px) {
+        column-gap: 1.5rem;
+      }
+
+      @media (min-width: 767px) and (max-width: 900px) {
+        column-gap: 1.3rem;
+      }
+
+      @media (min-width: 900px) and (max-width: 1023px) {
+        column-gap: 1rem;
+      }
+
+      @media (min-width: 1023px) and (max-width: 1200px) {
+        column-gap: 1.5rem;
+      }
+
+      .location {
+        font-size: 10pt;
+        color: #ebebeb;
+
+        @media (min-width: 300px) and (max-width: 600px) {
+          display: none;
+        }
+
+        @media (min-width: 600px) and (max-width: 920px) {
+          display: block !important;
+          font-size: 9pt !important;
+        }
+
+        @media (min-width: 920px) and (max-width: 976px) {
+          display: block !important;
+          font-size: 10pt !important;
+        }
+
+        @media (width: 976px) {
+          display: block !important;
+          font-size: 10pt !important;
+        }
+
+        @media (min-width: 1023px) and (max-width: 1046px) {
+          font-size: 9.5pt;
+        }
+
+        @media (min-width: 1046px) and (max-width: 1061px) {
+          font-size: 9.8pt;
+        }
+      }
+
+      .contact {
+        width: 7rem;
+        height: 2.5rem;
+        background-color: #232323;
+        border: none;
+        border-radius: 0.5rem;
+        font-size: 10pt;
+        color: #ebebeb;
+        cursor: pointer;
+        transition: all 0.2s ease;
+
+        &:hover {
+          background-color: #4f4d41;
+        }
+
+        @media (min-width: 300px) and (max-width: 400px) {
+          width: min(6rem, 6rem);
+          height: min(2.3rem, 2.3rem);
+          font-size: 9pt;
+        }
+
+        @media (min-width: 700px) and (max-width: 767px) {
+          width: min(6rem, 6rem);
+          font-size: 9pt;
+        }
+
+        @media (min-width: 1023px) and (max-width: 1400px) {
+          width: min(6rem, 6rem);
+          height: min(2.3rem, 2.3rem);
+          font-size: 9pt;
+        }
+      }
+    }
+  }
+
+  .contactForm {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+    width: min(22.68rem, 22.68rem);
+    height: min(31.625rem, 31.625rem);
+    position: absolute;
+    top: 6.5rem;
+    right: 1%;
+    animation: contactMenu 0.2s linear;
+    animation-iteration-count: 1;
+    background-color: #232323;
+    border-radius: 0.5rem;
+    border: 0.1rem solid #4f4d41;
+    z-index: 1;
+    filter: none;
+
+    @keyframes contactMenu {
+      0% {
+        top: 0;
+        opacity: 0;
+      }
+      100% {
+        top: 6.5rem;
+        opacity: 1;
+      }
+    }
+
+    @media (min-width: 300px) and (max-width: 400px) {
+      width: 100%;
+      height: min(27.625rem, 27.625rem) !important;
+      position: absolute;
+      top: 7.3rem;
+      right: 0;
+      animation: contactMenu 0.2s linear;
+      animation-iteration-count: 1;
+
+      @keyframes contactMenu {
+        0% {
+          top: 0;
+          opacity: 0;
+        }
+        100% {
+          top: 7.3rem;
+          opacity: 1;
+        }
+      }
+    }
+
+    @media (min-width: 400px) and (max-width: 500px) {
+      width: min(97%, 97%);
+      position: absolute;
+      top: 7.4rem;
+      left: 1.5%;
+      animation: contactMenu 0.2s linear;
+      animation-iteration-count: 1;
+
+      @keyframes contactMenu {
+        0% {
+          top: 0;
+          opacity: 0;
+        }
+        100% {
+          top: 7.4rem;
+          opacity: 1;
+        }
+      }
+    }
+
+    @media (min-width: 500px) and (max-width: 600px) {
+      width: min(85%, 85%);
+      position: absolute;
+      top: 8.2rem;
+      left: 7.5%;
+      animation: contactMenu 0.2s linear;
+      animation-iteration-count: 1;
+
+      @keyframes contactMenu {
+        0% {
+          top: 0;
+          opacity: 0;
+        }
+        100% {
+          top: 8.2rem;
+          opacity: 1;
+        }
+      }
+    }
+
+    @media (min-width: 600px) and (max-width: 700px) {
+      width: min(75%, 75%);
+      position: absolute;
+      top: 7.5rem;
+      left: 13%;
+      animation: contactMenu 0.2s linear;
+      animation-iteration-count: 1;
+
+      @keyframes contactMenu {
+        0% {
+          top: 0;
+          opacity: 0;
+        }
+        100% {
+          top: 7.5rem;
+          opacity: 1;
+        }
+      }
+    }
+
+    @media (min-width: 700px) and (max-width: 767px) {
+      width: min(75%, 75%);
+      position: absolute;
+      top: 8.1rem;
+      left: 13%;
+      animation: contactMenu 0.2s linear;
+      animation-iteration-count: 1;
+
+      @keyframes contactMenu {
+        0% {
+          top: 0;
+          opacity: 0;
+        }
+        100% {
+          top: 8.1rem;
+          opacity: 1;
+        }
+      }
+    }
+
+    @media (min-width: 767px) and (max-width: 1023px) {
+      width: min(75%, 75%);
+      position: absolute;
+      top: 8.2rem;
+      left: 13%;
+      animation: contactMenu 0.2s linear;
+      animation-iteration-count: 1;
+
+      @keyframes contactMenu {
+        0% {
+          top: 0;
+          opacity: 0;
+        }
+        100% {
+          top: 8.2rem;
+          opacity: 1;
+        }
+      }
+    }
+
+    @media (min-width: 740px) and (max-width: 800px) {
+      width: min(73%, 73%);
+      left: 14%;
+    }
+
+    @media (min-width: 800px) and (max-width: 860px) {
+      width: min(71%, 71%);
+      left: 14.5%;
+    }
+
+    @media (min-width: 860px) and (max-width: 920px) {
+      width: min(67%, 67%);
+      left: 16.5%;
+    }
+
+    @media (min-width: 920px) and (max-width: 980px) {
+      width: min(65%, 65%);
+      left: 17%;
+    }
+
+    @media (min-width: 980px) and (max-width: 1023px) {
+      width: min(63%, 63%);
+      left: 18%;
+    }
+
+    @media (min-width: 1023px) and (max-width: 1200px) {
+      row-gap: 0.8rem;
+      width: min(24.5%, 24.5%);
+      height: min(30.625rem, 30.625rem);
+      position: absolute;
+      top: 7.2rem;
+      animation: contactMenu 0.2s linear;
+      animation-iteration-count: 1;
+
+      @keyframes contactMenu {
+        0% {
+          top: 0;
+          opacity: 0;
+        }
+        100% {
+          top: 7.2rem;
+          opacity: 1;
+        }
+      }
+    }
+
+    @media (min-width: 1200px) and (max-width: 1400px) {
+      width: min(24%, 24%);
+    }
+
+    @media (min-width: 1400px) and (max-width: 1500px) {
+      width: min(24.3%, 24.3%);
+    }
+
+    @media (min-width: 1570px) and (max-width: 1670px) {
+      width: min(24%, 24%);
+      position: absolute;
+      top: 7.4rem;
+      animation: contactMenu 0.2s linear;
+      animation-iteration-count: 1;
+
+      @keyframes contactMenu {
+        0% {
+          top: 0;
+          opacity: 0;
+        }
+        100% {
+          top: 7.4rem;
+          opacity: 1;
+        }
+      }
+    }
+
+    .titleAndButton {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0.8rem 1rem;
+      background-color: #635445;
+      border-radius: 0.4rem 0.4rem 0 0;
+
+      h4 {
+        font-size: 14pt;
+        font-weight: 500;
+      }
+
+      .close {
+        width: 7rem;
+        height: 2.5rem;
+        position: relative;
+        align-self: center;
+        background-color: #232323;
+        border: none;
+        border-radius: 0.5rem;
+        font-size: 10pt;
+        color: #ebebeb;
+        cursor: pointer;
+        transition: all 0.2s ease;
+
+        &:hover {
+          background-color: #4f4d41;
+        }
+
+        @media (min-width: 300px) and (max-width: 400px) {
+          width: min(6rem, 6rem);
+          height: min(2.3rem, 2.3rem);
+          font-size: 9pt;
+        }
+
+        @media (min-width: 700px) and (max-width: 767px) {
+          width: min(6rem, 6rem);
+          font-size: 9pt;
+        }
+
+        @media (min-width: 1023px) and (max-width: 1400px) {
+          width: min(6rem, 6rem);
+          height: min(2.3rem, 2.3rem);
+          font-size: 9pt;
+        }
+      }
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      row-gap: 0.8rem;
+      position: relative;
+
+      .info {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 4.1rem;
+        padding: 1rem 0.5rem;
+        position: absolute;
+        top: -5.15rem;
+        background-color: #635445;
+        border-radius: 0.5rem 0.5rem 0 0;
+        opacity: 0;
+        z-index: 2;
+        animation: info 3s linear;
+        animation-iteration-count: 1;
+        transition: all 0s ease-in-out;
+
+        @keyframes info {
+          0% {
+            opacity: 0;
+          }
+          10% {
+            opacity: 1;
+          }
+          20% {
+            opacity: 1;
+          }
+          30% {
+            opacity: 1;
+          }
+          40% {
+            opacity: 1;
+          }
+          50% {
+            opacity: 1;
+          }
+          60% {
+            opacity: 1;
+          }
+          70% {
+            opacity: 1;
+          }
+          80% {
+            opacity: 1;
+          }
+          90% {
+            opacity: 1;
+          }
+          100% {
+            opacity: 0;
+          }
+        }
+      }
+
+      .success {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 4.1rem;
+        padding: 1rem 0.5rem;
+        position: absolute;
+        top: -5.15rem;
+        background-color: #4f4d41;
+        border-radius: 0.5rem 0.5rem 0 0;
+        opacity: 0;
+        z-index: 2;
+        animation: success 5s linear;
+        animation-iteration-count: 1;
+        transition: all 0s ease-in-out;
+
+        @keyframes success {
+          0% {
+            opacity: 0;
+          }
+          10% {
+            opacity: 1;
+          }
+          20% {
+            opacity: 1;
+          }
+          30% {
+            opacity: 1;
+          }
+          40% {
+            opacity: 1;
+          }
+          50% {
+            opacity: 1;
+          }
+          60% {
+            opacity: 1;
+          }
+          70% {
+            opacity: 1;
+          }
+          80% {
+            opacity: 1;
+          }
+          90% {
+            opacity: 1;
+          }
+          100% {
+            opacity: 0;
+          }
+        }
+      }
+
+      .fail {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 4.1rem;
+        padding: 1rem 0.5rem;
+        position: absolute;
+        top: -5.15rem;
+        background-color: #91372b;
+        border-radius: 0.5rem 0.5rem 0 0;
+        opacity: 0;
+        z-index: 2;
+        animation: fail 5s linear;
+        animation-iteration-count: 1;
+        transition: all 0s ease-in-out;
+
+        @keyframes fail {
+          0% {
+            opacity: 0;
+          }
+          10% {
+            opacity: 1;
+          }
+          20% {
+            opacity: 1;
+          }
+          30% {
+            opacity: 1;
+          }
+          40% {
+            opacity: 1;
+          }
+          50% {
+            opacity: 1;
+          }
+          60% {
+            opacity: 1;
+          }
+          70% {
+            opacity: 1;
+          }
+          80% {
+            opacity: 1;
+          }
+          90% {
+            opacity: 1;
+          }
+          100% {
+            opacity: 0;
+          }
+        }
+      }
+
+      label {
+        display: none;
+      }
+
+      .namesAndSubject {
+        display: flex;
+        flex-direction: column;
+        row-gap: 0.8rem;
+
+        .names {
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          column-gap: 3%;
+
+          label {
+            display: none;
+          }
+
+          .firstName {
+            width: min(46%, 46%);
+            height: min(3rem, 3rem);
+            padding: 0.5rem;
+            align-self: center;
+            border: 0.1rem solid #4f4d41;
+            border-radius: 0.5rem;
+            background-color: #232323;
+
+            &:focus:where(
+                input[type='text'],
+                input[type='search'],
+                input[type='password'],
+                input[type='url'],
+                input[type='email']
+              ) {
+              appearance: none;
+              border-style: solid;
+              outline: none;
+            }
+
+            @media (min-width: 300px) and (max-width: 400px) {
+              height: 2.5rem;
+            }
+          }
+
+          .lastName {
+            width: min(46%, 46%);
+            height: min(3rem, 3rem);
+            padding: 0.5rem;
+            align-self: center;
+            border: 0.1rem solid #4f4d41;
+            border-radius: 0.5rem;
+            background-color: #232323;
+
+            &:focus:where(
+                input[type='text'],
+                input[type='search'],
+                input[type='password'],
+                input[type='url'],
+                input[type='email']
+              ) {
+              appearance: none;
+              border-style: solid;
+              outline: none;
+            }
+
+            @media (min-width: 300px) and (max-width: 400px) {
+              height: 2.5rem;
+            }
+          }
+        }
+
+        .subject {
+          width: min(95%, 95%);
+          height: min(3rem, 3rem);
+          padding: 0.5rem;
+          align-self: center;
+          border: 0.1rem solid #4f4d41;
+          border-radius: 0.5rem;
+          background-color: #232323;
+
+          &:focus:where(
+              input[type='text'],
+              input[type='search'],
+              input[type='password'],
+              input[type='url'],
+              input[type='email']
+            ) {
+            appearance: none;
+            border-style: solid;
+            outline: none;
+          }
+
+          @media (min-width: 300px) and (max-width: 400px) {
+            height: 2.5rem;
+          }
+        }
+      }
+
+      .email {
+        width: min(95%, 95%);
+        height: min(3rem, 3rem);
+        padding: 0.5rem;
+        align-self: center;
+        border: 0.1rem solid #4f4d41;
+        border-radius: 0.5rem;
+        background-color: #232323;
+
+        &:focus:where(
+            input[type='text'],
+            input[type='search'],
+            input[type='password'],
+            input[type='url'],
+            input[type='email']
+          ) {
+          appearance: none;
+          border-style: solid;
+          outline: none;
+        }
+
+        @media (min-width: 300px) and (max-width: 400px) {
+          height: 2.5rem;
+        }
+      }
+
+      .textArea {
+        width: min(95%, 95%);
+        height: min(10rem, 10rem);
+        padding: 0.5rem;
+        align-self: center;
+        border: 0.1rem solid #4f4d41;
+        border-radius: 0.5rem;
+        background-color: #232323;
+        resize: none;
+
+        &:focus:where(textarea) {
+          appearance: none;
+          border-style: solid;
+          outline: none;
+        }
+
+        @media (min-width: 300px) and (max-width: 400px) {
+          height: 8rem;
+        }
+      }
+
+      .buttons {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        column-gap: 1rem;
+        width: 100%;
+        position: absolute;
+        top: 22.7rem;
+
+        @media (min-width: 300px) and (max-width: 400px) {
+          margin-top: 0.4rem;
+          position: unset;
+          font-size: 9pt;
+        }
+
+        .send {
+          width: 7rem;
+          height: 2.5rem;
+          align-self: center;
+          background-color: #635445;
+          border: none;
+          border-radius: 0.5rem;
+          font-size: 10pt;
+          color: #ebebeb;
+          cursor: pointer;
+          animation: send 0.1s linear;
+          animation-iteration-count: 1;
+          transition: all 0.1s ease;
+
+          @keyframes send {
+            0% {
+              opacity: 0;
+            }
+            100% {
+              opacity: 1;
+            }
+          }
+
+          &:hover {
+            background-color: #4f4d41;
+          }
+
+          @media (min-width: 300px) and (max-width: 400px) {
+            width: min(6rem, 6rem);
+            height: min(2.3rem, 2.3rem);
+            font-size: 9pt;
+          }
+
+          @media (min-width: 400px) and (max-width: 600px) {
+            bottom: -19.375rem;
+          }
+
+          @media (min-width: 600px) and (max-width: 700px) {
+            bottom: -19rem;
+          }
+
+          @media (width: 700px) {
+            width: min(6rem, 6rem);
+            font-size: 9pt;
+            bottom: 0 !important;
+          }
+
+          @media (min-width: 700px) and (max-width: 767px) {
+            width: min(6rem, 6rem);
+            font-size: 9pt;
+          }
+
+          @media (min-width: 1023px) and (max-width: 1400px) {
+            width: min(6rem, 6rem);
+            height: min(2.3rem, 2.3rem);
+            font-size: 9pt;
+          }
+        }
+
+        .sendDisabled {
+          width: 7rem;
+          height: 2.5rem;
+          align-self: center;
+          background-color: #4e4e4e;
+          border: none;
+          border-radius: 0.5rem;
+          font-size: 10pt;
+          color: #000000;
+          animation: sendDisabled 0.1s linear;
+          animation-iteration-count: 1;
+          transition: all 0.1s ease;
+
+          @keyframes sendDisabled {
+            0% {
+              opacity: 0;
+            }
+            100% {
+              opacity: 1;
+            }
+          }
+
+          @media (min-width: 300px) and (max-width: 400px) {
+            width: min(6rem, 6rem);
+            height: min(2.3rem, 2.3rem);
+            font-size: 9pt;
+          }
+
+          @media (min-width: 400px) and (max-width: 600px) {
+            bottom: -19.375rem;
+          }
+
+          @media (min-width: 600px) and (max-width: 700px) {
+            bottom: -19rem;
+          }
+
+          @media (width: 700px) {
+            width: min(6rem, 6rem);
+            font-size: 9pt;
+            bottom: 0 !important;
+          }
+
+          @media (min-width: 700px) and (max-width: 767px) {
+            width: min(6rem, 6rem);
+            font-size: 9pt;
+          }
+
+          @media (min-width: 1023px) and (max-width: 1400px) {
+            width: min(6rem, 6rem);
+            height: min(2.3rem, 2.3rem);
+            font-size: 9pt;
+          }
+        }
+
+        .reset {
+          width: 7rem;
+          height: 2.5rem;
+          align-self: center;
+          background-color: #91372b;
+          border: none;
+          border-radius: 0.5rem;
+          font-size: 10pt;
+          color: #ebebeb;
+          cursor: pointer;
+          animation: reset 0.1s linear;
+          animation-iteration-count: 1;
+          transition: all 0.1s ease;
+
+          @keyframes reset {
+            0% {
+              opacity: 0;
+            }
+            100% {
+              opacity: 1;
+            }
+          }
+
+          &:hover {
+            background-color: #722f26;
+          }
+
+          @media (min-width: 300px) and (max-width: 400px) {
+            width: min(6rem, 6rem);
+            height: min(2.3rem, 2.3rem);
+            font-size: 9pt;
+          }
+
+          @media (min-width: 400px) and (max-width: 600px) {
+            bottom: -19.375rem;
+          }
+
+          @media (min-width: 600px) and (max-width: 700px) {
+            bottom: -19rem;
+          }
+
+          @media (width: 700px) {
+            width: min(6rem, 6rem);
+            font-size: 9pt;
+            bottom: 0 !important;
+          }
+
+          @media (min-width: 700px) and (max-width: 767px) {
+            width: min(6rem, 6rem);
+            font-size: 9pt;
+          }
+
+          @media (min-width: 1023px) and (max-width: 1400px) {
+            width: min(6rem, 6rem);
+            height: min(2.3rem, 2.3rem);
+            font-size: 9pt;
+          }
+        }
+      }
+    }
+  }
+}
+
+// Unfocused state of header, works when contact form is open
+
+.headerConatinerUnfocused {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 1.5rem 2rem;
+  position: relative;
+  top: 0.47rem;
+  background-color: #635445;
+  border-radius: 0.5rem;
+  filter: opacity(0.5) grayscale(10%) blur(0.05rem) brightness(80%);
+  transform: scale(98%);
+  transition: all 0.3s ease;
+  animation: headerConatinerUnfocused 0.2s linear;
+  animation-iteration-count: 1;
+
+  @keyframes headerConatinerUnfocused {
+    0% {
+      top: 0;
+    }
+    100% {
+      top: 0.47rem;
+    }
+  }
+
+  @media (min-width: 300px) and (max-width: 400px) {
+    padding: 1.2rem 0.75rem;
+    top: 2.3rem;
+    animation: unset;
+    transform: scale(98%);
+    animation: headerConatinerUnfocused 0.2s linear;
+    animation-iteration-count: 1;
+
+    @keyframes headerConatinerUnfocused {
+      0% {
+        top: 0;
+      }
+      100% {
+        top: 2.3rem;
+      }
+    }
+  }
+
+  @media (min-width: 400px) and (max-width: 500px) {
+    padding: 1.2rem 1rem;
+    top: 2.3rem;
+    animation: unset;
+    transform: scale(98%);
+    animation: headerConatinerUnfocused 0.2s linear;
+    animation-iteration-count: 1;
+
+    @keyframes headerConatinerUnfocused {
+      0% {
+        top: 0;
+      }
+      100% {
+        top: 2.3rem;
+      }
+    }
+  }
+
+  @media (min-width: 500px) and (max-width: 600px) {
+    padding: 1.5rem 2rem;
+    top: 2.3rem;
+    animation: unset;
+    transform: scale(98%);
+    animation: headerConatinerUnfocused 0.2s linear;
+    animation-iteration-count: 1;
+
+    @keyframes headerConatinerUnfocused {
+      0% {
+        top: 0;
+      }
+      100% {
+        top: 2.3rem;
+      }
+    }
+  }
+
+  @media (min-width: 600px) and (max-width: 700px) {
+    padding: 1.5rem 1rem;
+    top: 1.3rem;
+    animation: unset;
+    transform: scale(98%);
+    animation: headerConatinerUnfocused 0.2s linear;
+    animation-iteration-count: 1;
+
+    @keyframes headerConatinerUnfocused {
+      0% {
+        top: 0;
+      }
+      100% {
+        top: 1.3rem;
+      }
+    }
+  }
+
+  @media (min-width: 700px) and (max-width: 767px) {
+    animation: unset;
+    top: 1.1rem;
+    transform: scale(98%);
+    animation: headerConatinerUnfocused 0.2s linear;
+    animation-iteration-count: 1;
+
+    @keyframes headerConatinerUnfocused {
+      0% {
+        top: 0;
+      }
+      100% {
+        top: 1.1rem;
+      }
+    }
+  }
+
+  @media (min-width: 767px) and (max-width: 1023px) {
+    animation: unset;
+    top: 1rem;
+    filter: opacity(0.5) grayscale(10%) blur(0.05rem) brightness(80%);
+    transform: scale(98%);
+    animation: headerConatinerUnfocused 0.2s linear;
+    animation-iteration-count: 1;
+
+    @keyframes headerConatinerUnfocused {
+      0% {
+        top: 0;
+      }
+      100% {
+        top: 1rem;
+      }
+    }
+  }
+
+  @media (min-width: 1023px) and (max-width: 1200px) {
+    padding: 1.5rem 1rem;
+  }
+
+  @media (min-width: 1200px) and (max-width: 1400px) {
+    padding: 1.5rem 1.2rem;
+  }
+
+  @media (min-width: 1570px) and (max-width: 1670px) {
+    padding: 1.7rem 2rem;
+  }
+
+  .nameAndProfession {
+    display: flex;
+    flex-direction: row;
+    column-gap: 1.5rem;
+    align-items: center;
+
+    @media (min-width: 600px) and (max-width: 1200px) {
+      flex-direction: column;
+      row-gap: 0.2rem;
+      align-items: start;
+    }
+
+    .name {
+      font-size: 20pt;
+      font-weight: 500;
+
+      @media (min-width: 300px) and (max-width: 400px) {
+        font-size: 14pt;
+      }
+
+      @media (min-width: 400px) and (max-width: 500px) {
+        font-size: 16pt;
+      }
+
+      @media (min-width: 500px) and (max-width: 600px) {
+        font-size: 17pt;
+      }
+
+      @media (min-width: 600px) and (max-width: 700px) {
+        font-size: 18pt;
+      }
+
+      @media (min-width: 700px) and (max-width: 1023px) {
+        font-size: 19pt;
+      }
+
+      @media (min-width: 1023px) and (max-width: 1046px) {
+        font-size: 19pt;
+      }
+
+      @media (min-width: 1046px) and (max-width: 1061px) {
+        font-size: 19.8pt;
+      }
+
+      @media (min-width: 1570px) and (max-width: 1670px) {
+        font-size: 21pt;
+      }
+    }
+
+    .profession {
+      font-size: 10pt;
+      color: #ebebeb;
+
+      @media (min-width: 300px) and (max-width: 700px) {
+        display: none;
+      }
+
+      @media (min-width: 700px) and (max-width: 920px) {
+        display: block !important;
+        font-size: 9pt !important;
+      }
+
+      @media (min-width: 920px) and (max-width: 976px) {
+        display: block !important;
+        font-size: 10pt !important;
+      }
+
+      @media (width: 976px) {
+        font-size: 10pt !important;
+      }
+
+      @media (min-width: 1023px) and (max-width: 1046px) {
+        font-size: 9.5pt;
+      }
+
+      @media (min-width: 1046px) and (max-width: 1061px) {
+        font-size: 9.8pt;
+      }
+    }
+  }
+
+  .locationAndContact {
+    display: flex;
+    flex-direction: row;
+    column-gap: 2.2rem;
+    align-items: center;
+
+    @media (min-width: 600px) and (max-width: 767px) {
+      column-gap: 1.5rem;
+    }
+
+    @media (min-width: 767px) and (max-width: 900px) {
+      column-gap: 1.3rem;
+    }
+
+    @media (min-width: 900px) and (max-width: 1023px) {
+      column-gap: 1rem;
+    }
+
+    @media (min-width: 1023px) and (max-width: 1200px) {
+      column-gap: 1.5rem;
+    }
+
+    .location {
+      font-size: 10pt;
+      color: #ebebeb;
+
+      @media (min-width: 300px) and (max-width: 600px) {
+        display: none;
+      }
+
+      @media (min-width: 600px) and (max-width: 976px) {
+        display: block !important;
+        font-size: 9pt !important;
+      }
+
+      @media (width: 976px) {
+        display: block !important;
+        font-size: 10pt !important;
+      }
+
+      @media (min-width: 1023px) and (max-width: 1046px) {
+        font-size: 9.5pt;
+      }
+
+      @media (min-width: 1046px) and (max-width: 1061px) {
+        font-size: 9.8pt;
+      }
+    }
+
+    .contact {
+      width: 7rem;
+      height: 2.5rem;
+      background-color: #232323;
+      border: none;
+      border-radius: 0.5rem;
+      font-size: 10pt;
+      color: #ebebeb;
+      transition: all 0.2s ease;
+
+      @media (min-width: 300px) and (max-width: 400px) {
+        width: min(6rem, 6rem);
+        height: min(2.3rem, 2.3rem);
+        font-size: 9pt;
+      }
+
+      @media (min-width: 700px) and (max-width: 767px) {
+        width: min(6rem, 6rem);
+        font-size: 9pt;
+      }
+
+      @media (min-width: 1023px) and (max-width: 1400px) {
+        width: min(6rem, 6rem);
+        height: min(2.3rem, 2.3rem);
+        font-size: 9pt;
+      }
+    }
+  }
+}
