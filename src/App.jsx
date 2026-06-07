@@ -52,14 +52,14 @@ export default function App() {
   // Handle side effects when contactForm, educationList, skillList, cyberList and webList are open
 
   // 1 contact form open: prevent background scrolling
-  useEffect(() => {
-    isContactFormOpen
-      ? (document.body.style.overflow = 'hidden')
-      : (document.body.style.removeProperty('overflow'),
-        document.getElementById('root').removeAttribute('style'));
-    return () => {};
-  }, [isContactFormOpen]);
-  // End
+  // useEffect(() => {
+  //   isContactFormOpen
+  //     ? (document.body.style.overflow = 'hidden')
+  //     : (document.body.style.removeProperty('overflow'),
+  //       document.getElementById('root').removeAttribute('style'));
+  //   return () => {};
+  // }, [isContactFormOpen]);
+  // // End
 
   // 2 Related to skillList, when it's displayed, allowing background scrolling, and can be closed when the user scrolls to the top of the page, and when closed, it scrolls back to the original position before the list button was clicked
   useEffect(() => {
@@ -173,6 +173,7 @@ export default function App() {
       const scrollTop = window.scrollY || document.documentElement.scrollTop;
 
       if (scrollTop <= 1) {
+        setIsContactFormOpen(false);
         setIsSkillListOpen(false);
         setIsEducationListOpen(false);
         setIsCyberListOpen(false);
@@ -184,7 +185,13 @@ export default function App() {
     window.addEventListener('scroll', handleScroll, { passive: true });
 
     return () => window.removeEventListener('scroll', handleScroll);
-  }, [isSkillListOpen, isEducationListOpen, isCyberListOpen, isWebListOpen]);
+  }, [
+    isContactFormOpen,
+    isSkillListOpen,
+    isEducationListOpen,
+    isCyberListOpen,
+    isWebListOpen,
+  ]);
   // End
 
   // Close contactForm, skillList, educationList, cyberList and webList when the user presses the Escape key

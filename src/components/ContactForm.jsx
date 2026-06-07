@@ -69,7 +69,7 @@ export default function ContactForm({ isContactFormOpen, toggleContactForm }) {
   };
 
   return (
-    <main className="contactForm">
+    <main className="contactForm" id="contactForm">
       {/*  */}
       <div className="titleAndButton">
         <h4>Get in touch</h4>
