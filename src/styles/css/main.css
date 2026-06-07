@@ -6749,16 +6749,6 @@ input[type=email]) {
   display: flex;
   flex-direction: row-reverse;
   column-gap: 2%;
-  animation: skillsAndEducation 0.5s linear;
-  animation-iteration-count: 1;
-}
-@keyframes skillsAndEducation {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
 }
 @media (min-width: 300px) and (max-width: 600px) {
   .mainContent .leftOrUpperPart .leftOrUpperPartContainerUnfocused .skillsAndEducation {
@@ -7925,16 +7915,6 @@ input[type=email]) {
   flex-direction: row;
   column-gap: 2%;
   height: 30.95rem;
-  animation: projects 0.5s linear;
-  animation-iteration-count: 1;
-}
-@keyframes projects {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
 }
 @media (min-width: 300px) and (max-width: 600px) {
   .mainContent .rightOrLowerPart .rightOrLowerPartContainerUnfocused .projects {
