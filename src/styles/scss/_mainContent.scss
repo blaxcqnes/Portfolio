@@ -6505,22 +6505,23 @@
         flex-direction: row;
         column-gap: 2%;
         height: min(30.95rem, 30.95rem);
-        animation: projectsSwapped 0.5s linear;
-        animation-iteration-count: 1;
-
-        @keyframes projectsSwapped {
-          0% {
-            opacity: 0;
-          }
-          100% {
-            opacity: 1;
-          }
-        }
 
         @media (min-width: 300px) and (max-width: 600px) {
           flex-direction: column;
           row-gap: 1rem;
           height: auto;
+
+          animation: projectsSwapped 0.5s linear;
+          animation-iteration-count: 1;
+
+          @keyframes projectsSwapped {
+            0% {
+              opacity: 0;
+            }
+            100% {
+              opacity: 1;
+            }
+          }
         }
 
         @media (min-width: 600px) and (max-width: 700px) {
