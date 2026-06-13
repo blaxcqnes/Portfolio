@@ -5,7 +5,9 @@ import MainContent from './components/MainContent';
 
 export default function App() {
   const [loading, setLoading] = useState(true);
+  const [isLightModeOn, setIsLightModeOn] = useState(false);
   const [isContactFormOpen, setIsContactFormOpen] = useState(false);
+  const [isContactFormMobileOpen, setIsContactFormMobileOpen] = useState(false);
   const [isSkillListOpen, setIsSkillListOpen] = useState(false);
   const [isEducationListOpen, setIsEducationListOpen] = useState(false);
   const [isCyberListOpen, setIsCyberListOpen] = useState(false);
@@ -22,9 +24,18 @@ export default function App() {
   }, []);
   // End
 
-  // Toggle functions for contact form, educationList and skillList
+  // Toggle functions for lightMode, contactForm, contactFormMobile, skillList, educationList, cyberList and webList
+  function toggleLightMode() {
+    setIsLightModeOn((prev) => !prev);
+  }
+  //
   function toggleContactForm() {
     setIsContactFormOpen((prev) => !prev);
+    setClassType((prev) => !prev);
+  }
+  //
+  function toggleContactFormMobile() {
+    setIsContactFormMobileOpen((prev) => !prev);
     setClassType((prev) => !prev);
   }
   //
@@ -49,19 +60,55 @@ export default function App() {
   }
   // End
 
-  // Handle side effects when contactForm, educationList, skillList, cyberList and webList are open
+  // 1 Related to lightMode, switches UI to a lighter theme
+  useEffect(() => {
+    isLightModeOn
+      ? (document.body.style.backgroundColor = '#D9D9D9')
+      : document.body.removeAttribute('style');
 
-  // 1 contact form open: prevent background scrolling
+    return () => {};
+  }, [isLightModeOn]);
+  //
+
+  // 2 Related to contactForm, when displayed, it can be closed when the user scrolls to the top of the page, and when closed, it scrolls back to the original position before the form was displayed
+  useEffect(() => {
+    const originalScrollY = window.scrollY;
+    const originalScrollX = window.scrollX;
+
+    isContactFormOpen &&
+      document
+        .getElementById('contactForm')
+        .scrollIntoView({ behavior: 'smooth' });
+    return () => {
+      window.scrollTo({
+        top: originalScrollY,
+        left: originalScrollX,
+        behavior: 'smooth',
+      });
+    };
+  }, [isContactFormOpen]);
+  //
+
+  // 3 Related to contactFormMoble, when displayed, it allows background scrolling, and can be closed when the user scrolls to the top of the page, and when closed, it scrolls back to the original position before the form was displayed
   // useEffect(() => {
-  //   isContactFormOpen
-  //     ? (document.body.style.overflow = 'hidden')
-  //     : (document.body.style.removeProperty('overflow'),
-  //       document.getElementById('root').removeAttribute('style'));
-  //   return () => {};
-  // }, [isContactFormOpen]);
-  // // End
+  //   const originalScrollY = window.scrollY;
+  //   const originalScrollX = window.scrollX;
 
-  // 2 Related to skillList, when it's displayed, allowing background scrolling, and can be closed when the user scrolls to the top of the page, and when closed, it scrolls back to the original position before the list button was clicked
+  //   isContactFormMobileOpen &&
+  //     document
+  //       .getElementById('contactFormMobile')
+  //       .scrollIntoView({ behavior: 'smooth' });
+  //   return () => {
+  //     window.scrollTo({
+  //       top: originalScrollY,
+  //       left: originalScrollX,
+  //       behavior: 'smooth',
+  //     });
+  //   };
+  // }, [isContactFormMobileOpen]);
+  //
+
+  // 4 Related to skillList, when displayed, it allows background scrolling, and can be closed when the user scrolls to the top of the page, and when closed, it scrolls back to the original position before the form was displayed
   useEffect(() => {
     isSkillListOpen
       ? (document.getElementById('root').style.height = 'auto')
@@ -88,7 +135,7 @@ export default function App() {
   }, [isSkillListOpen]);
   //
 
-  // 3 Related to educationList, when it's displayed, allowing background scrolling, and can be closed when the user scrolls to the top of the page, and when closed, it scrolls back to the original position before the list button was clicked
+  // 5 Related to educationList, when displayed, it allows background scrolling, and can be closed when the user scrolls to the top of the page, and when closed, it scrolls back to the original position before the form was displayed
   useEffect(() => {
     isEducationListOpen
       ? (document.getElementById('root').style.height = 'auto')
@@ -115,7 +162,7 @@ export default function App() {
   }, [isEducationListOpen]);
   //
 
-  // 4 Related to cyberList, when it's displayed, allowing background scrolling, and can be closed when the user scrolls to the top of the page, and when closed, it scrolls back to the original position before the list button was clicked
+  // 6 Related to cyberList, when displayed, it allows background scrolling, and can be closed when the user scrolls to the top of the page, and when closed, it scrolls back to the original position before the form was displayed
   useEffect(() => {
     isCyberListOpen
       ? (document.getElementById('root').style.height = 'auto')
@@ -142,7 +189,7 @@ export default function App() {
   }, [isCyberListOpen]);
   //
 
-  // 5 Related to webList, when it's displayed, allowing background scrolling, and can be closed when the user scrolls to the top of the page, and when closed, it scrolls back to the original position before the list button was clicked
+  // 7 Related to educationList, when displayed, it allows background scrolling, and can be closed when the user scrolls to the top of the page, and when closed, it scrolls back to the original position before the form was displayed
   useEffect(() => {
     isWebListOpen
       ? (document.getElementById('root').style.height = 'auto')
@@ -167,13 +214,14 @@ export default function App() {
   }, [isWebListOpen]);
   //
 
-  // 6 Related to both skillList and educationList, allows them to close when the user scrolls back to the top of the page
+  // 8 Related to lightMode, contactForm, contactFormMobile, skillList, educationList, cyberList and webList, all of them get closed when the user scrolls back to the top of the page
   useEffect(() => {
     const handleScroll = () => {
       const scrollTop = window.scrollY || document.documentElement.scrollTop;
 
       if (scrollTop <= 1) {
         setIsContactFormOpen(false);
+        setIsContactFormMobileOpen(false);
         setIsSkillListOpen(false);
         setIsEducationListOpen(false);
         setIsCyberListOpen(false);
@@ -186,20 +234,22 @@ export default function App() {
 
     return () => window.removeEventListener('scroll', handleScroll);
   }, [
+    isContactFormMobileOpen,
     isContactFormOpen,
     isSkillListOpen,
     isEducationListOpen,
     isCyberListOpen,
     isWebListOpen,
   ]);
-  // End
+  //
 
-  // Close contactForm, skillList, educationList, cyberList and webList when the user presses the Escape key
+  //  9 Closes contactForm, contactFormMobile, skillList, educationList, cyberList and webList when the user presses the Escape key
   useEffect(() => {
     window.addEventListener('keydown', function (e) {
       if (e.key === 'Escape') {
         return (
           setIsContactFormOpen(false),
+          setIsContactFormMobileOpen(false),
           setIsSkillListOpen(false),
           setIsEducationListOpen(false),
           setIsCyberListOpen(false),
@@ -210,6 +260,7 @@ export default function App() {
     });
   });
   // End
+
   return (
     <>
       {loading ? (
@@ -217,28 +268,36 @@ export default function App() {
       ) : (
         <>
           <Header
+            isLightModeOn={isLightModeOn}
             isContactFormOpen={isContactFormOpen}
+            isContactFormMobileOpen={isContactFormMobileOpen}
             isSkillListOpen={isSkillListOpen}
             isEducationListOpen={isEducationListOpen}
             isCyberListOpen={isCyberListOpen}
             isWebListOpen={isWebListOpen}
             classType={classType}
             //
+            toggleLightMode={toggleLightMode}
             toggleContactForm={toggleContactForm}
+            toggleContactFormMobile={toggleContactFormMobile}
             toggleSkillList={toggleSkillList}
             toggleEducationList={toggleEducationList}
             toggleCyberList={toggleCyberList}
             toggleWebList={toggleWebList}
           />
           <MainContent
+            isLightModeOn={isLightModeOn}
             isContactFormOpen={isContactFormOpen}
+            isContactFormMobileOpen={isContactFormMobileOpen}
             isSkillListOpen={isSkillListOpen}
             isEducationListOpen={isEducationListOpen}
             isCyberListOpen={isCyberListOpen}
             isWebListOpen={isWebListOpen}
             classType={classType}
             //
+            toggleLightMode={toggleLightMode}
             toggleContactForm={toggleContactForm}
+            toggleContactFormMobile={toggleContactFormMobile}
             toggleSkillList={toggleSkillList}
             toggleEducationList={toggleEducationList}
             toggleCyberList={toggleCyberList}

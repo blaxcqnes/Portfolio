@@ -5,11 +5,14 @@ import CyberList from './CyberList';
 import WebList from './WebList';
 
 export default function RightOrLowerPart({
+  isLightModeOn,
   isContactFormOpen,
+  isContactFormMobileOpen,
   isSkillListOpen,
   isEducationListOpen,
   isCyberListOpen,
   isWebListOpen,
+  toggleContactFormMobile,
   toggleSkillList,
   toggleEducationList,
   toggleCyberList,
@@ -17,7 +20,9 @@ export default function RightOrLowerPart({
   classType,
 }) {
   function handleClick() {
-    if (isSkillListOpen) {
+    if (isContactFormMobileOpen) {
+      toggleContactFormMobile();
+    } else if (isSkillListOpen) {
       toggleSkillList();
     } else if (isEducationListOpen) {
       toggleEducationList();
@@ -46,7 +51,7 @@ export default function RightOrLowerPart({
           onClick={closeLists}
         >
           {/*  */}
-          <div className="cyber">
+          <div className={isLightModeOn ? 'cyberLight' : 'cyber'}>
             <p className="title">Cybersecurity Projects</p>
             <div className="allInOneCyber">
               <h4>Securing Systems & Networks</h4>
@@ -69,6 +74,7 @@ export default function RightOrLowerPart({
             </div>
             {/*  */}
             {isContactFormOpen ||
+            isContactFormMobileOpen ||
             isSkillListOpen ||
             isEducationListOpen ||
             isCyberListOpen ||
@@ -84,7 +90,7 @@ export default function RightOrLowerPart({
             {/*  */}
           </div>
           {/*  */}
-          <div className="web">
+          <div className={isLightModeOn ? 'webLight' : 'web'}>
             <p className="title">Web Dev. Projects</p>
             {/*  */}
             <div className="carousel">
@@ -119,6 +125,7 @@ export default function RightOrLowerPart({
             </div>
             {/*  */}
             {isContactFormOpen ||
+            isContactFormMobileOpen ||
             isSkillListOpen ||
             isEducationListOpen ||
             isCyberListOpen ||
@@ -139,8 +146,25 @@ export default function RightOrLowerPart({
         </section>
         {/*  */}
         <footer
-          className={
-            isCyberListOpen || isWebListOpen ? 'footerHidden' : 'footer'
+          className={isLightModeOn ? 'footerLight' : 'footer'}
+          style={
+            isWebListOpen || isCyberListOpen
+              ? {
+                  display: 'hidden',
+                  width: '100%',
+                  height: '0',
+                  padding: '0',
+                  borderRadius: '0',
+                  opacity: '0',
+                }
+              : {
+                  display: 'flex',
+                  width: '100%',
+                  // height: 'min(6.5rem, 6.5rem)',
+                  padding: '1.5rem 1rem',
+                  borderRadius: '0.5rem',
+                  opacity: '1',
+                }
           }
         >
           <div className="wrapper">

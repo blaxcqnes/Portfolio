@@ -1,12 +1,12 @@
-.header {
+.headerLight {
   display: flex;
   width: 100%;
   height: fit-content;
   position: relative;
-  animation: header 0.5s linear;
+  animation: headerLight 0.5s linear;
   animation-iteration-count: 1;
 
-  @keyframes header {
+  @keyframes headerLight {
     0% {
       filter: opacity(0.5) grayscale(10%) blur(0.05rem) brightness(80%);
       transform: scale(100%);
@@ -33,7 +33,7 @@
     align-items: center;
     width: 100%;
     padding: 1.5rem 2rem;
-    background-color: #635445;
+    background-color: #656253;
     border-radius: 0.5rem;
 
     @media (min-width: 300px) and (max-width: 400px) {
@@ -167,7 +167,7 @@
         column-gap: 1.5rem;
       }
 
-      .lightButton {
+      .darkButton {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -175,19 +175,19 @@
         height: 2.5rem;
         margin-right: 2rem;
         border-radius: 50%;
-        background-color: #656253;
+        background-color: #635445;
         cursor: pointer;
 
         &:hover {
-          background-color: #886849;
+          background-color: #4f4d41;
         }
 
         @media (min-width: 300px) and (max-width: 1023px) {
           margin: 0;
         }
 
-        .light {
-          background-image: url('/src/images/header/light.svg');
+        .dark {
+          background-image: url('/src/images/header/dark.svg');
           background-repeat: no-repeat;
           background-size: cover;
           width: 22px;
@@ -230,16 +230,17 @@
       .contact {
         width: 7rem;
         height: 2.5rem;
-        background-color: #232323;
+        background-color: #d9d9d9;
         border: none;
         border-radius: 0.5rem;
         font-size: 10pt;
-        color: #ebebeb;
+        color: #5a5a5a;
         cursor: pointer;
         transition: all 0.2s ease;
 
         &:hover {
-          background-color: #4f4d41;
+          background-color: #886849;
+          color: #ebebeb;
         }
 
         @media (min-width: 300px) and (max-width: 600px) {
@@ -275,7 +276,7 @@
     padding: 1.5rem 2rem;
     position: relative;
     top: 0.47rem;
-    background-color: #635445;
+    background-color: #656253;
     border-radius: 0.5rem;
     filter: opacity(0.5) grayscale(10%) blur(0.05rem) brightness(80%);
     transform: scale(98%);
@@ -546,7 +547,7 @@
         column-gap: 1.5rem;
       }
 
-      .lightButton {
+      .darkButton {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -562,14 +563,13 @@
           margin: 0;
         }
 
-        .light {
-          background-image: url('/src/images/header/light.svg');
+        .dark {
+          background-image: url('/src/images/header/dark.svg');
           background-repeat: no-repeat;
           background-size: cover;
           width: 0;
           height: 0;
           transition: all 0.2s ease;
-          opacity: 0;
         }
       }
 
@@ -603,7 +603,7 @@
       .contact {
         width: 7rem;
         height: 2.5rem;
-        background-color: #232323;
+        background-color: #929292;
         border: none;
         border-radius: 0.5rem;
         font-size: 10pt;
@@ -643,9 +643,9 @@
     right: 1%;
     animation: contactForm 0.2s linear;
     animation-iteration-count: 1;
-    background-color: #232323;
+    background-color: #d9d9d9;
     border-radius: 0.5rem;
-    border: 0.1rem solid #4f4d41;
+    border: 0.1rem solid #886849;
     z-index: 1;
     filter: none;
 
@@ -799,7 +799,7 @@
       justify-content: space-between;
       align-items: center;
       padding: 0.8rem 1rem;
-      background-color: #635445;
+      background-color: #656253;
       border-radius: 0.4rem 0.4rem 0 0;
 
       h4 {
@@ -812,16 +812,17 @@
         height: 2.5rem;
         position: relative;
         align-self: center;
-        background-color: #232323;
+        background-color: #d9d9d9;
         border: none;
         border-radius: 0.5rem;
         font-size: 10pt;
-        color: #ebebeb;
+        color: #5a5a5a;
         cursor: pointer;
         transition: all 0.2s ease;
 
         &:hover {
-          background-color: #4f4d41;
+          background-color: #886849;
+          color: #ebebeb;
         }
 
         @media (min-width: 300px) and (max-width: 400px) {
@@ -858,7 +859,7 @@
         padding: 1rem 0.5rem;
         position: absolute;
         top: -5.15rem;
-        background-color: #635445;
+        background-color: #886849;
         border-radius: 0.5rem 0.5rem 0 0;
         opacity: 0;
         z-index: 2;
@@ -912,7 +913,7 @@
         padding: 1rem 0.5rem;
         position: absolute;
         top: -5.15rem;
-        background-color: #4f4d41;
+        background-color: #656253;
         border-radius: 0.5rem 0.5rem 0 0;
         opacity: 0;
         z-index: 2;
@@ -1035,9 +1036,10 @@
             height: min(3rem, 3rem);
             padding: 0.5rem;
             align-self: center;
-            border: 0.1rem solid #4f4d41;
+            border: 0.1rem solid #886849;
             border-radius: 0.5rem;
-            background-color: #232323;
+            background-color: #c8c8c8;
+            color: #5a5a5a;
 
             &:focus:where(
                 input[type='text'],
@@ -1049,6 +1051,10 @@
               appearance: none;
               border-style: solid;
               outline: none;
+            }
+
+            &::placeholder {
+              color: #5a5a5a;
             }
 
             @media (min-width: 300px) and (max-width: 400px) {
@@ -1061,9 +1067,10 @@
             height: min(3rem, 3rem);
             padding: 0.5rem;
             align-self: center;
-            border: 0.1rem solid #4f4d41;
+            border: 0.1rem solid #886849;
             border-radius: 0.5rem;
-            background-color: #232323;
+            background-color: #c8c8c8;
+            color: #5a5a5a;
 
             &:focus:where(
                 input[type='text'],
@@ -1075,6 +1082,10 @@
               appearance: none;
               border-style: solid;
               outline: none;
+            }
+
+            &::placeholder {
+              color: #5a5a5a;
             }
 
             @media (min-width: 300px) and (max-width: 400px) {
@@ -1088,9 +1099,10 @@
           height: min(3rem, 3rem);
           padding: 0.5rem;
           align-self: center;
-          border: 0.1rem solid #4f4d41;
+          border: 0.1rem solid #886849;
           border-radius: 0.5rem;
-          background-color: #232323;
+          background-color: #c8c8c8;
+          color: #5a5a5a;
 
           &:focus:where(
               input[type='text'],
@@ -1104,6 +1116,10 @@
             outline: none;
           }
 
+          &::placeholder {
+            color: #5a5a5a;
+          }
+
           @media (min-width: 300px) and (max-width: 400px) {
             height: 2.5rem;
           }
@@ -1115,9 +1131,10 @@
         height: min(3rem, 3rem);
         padding: 0.5rem;
         align-self: center;
-        border: 0.1rem solid #4f4d41;
+        border: 0.1rem solid #886849;
         border-radius: 0.5rem;
-        background-color: #232323;
+        background-color: #c8c8c8;
+        color: #5a5a5a;
 
         &:focus:where(
             input[type='text'],
@@ -1131,6 +1148,10 @@
           outline: none;
         }
 
+        &::placeholder {
+          color: #5a5a5a;
+        }
+
         @media (min-width: 300px) and (max-width: 400px) {
           height: 2.5rem;
         }
@@ -1141,15 +1162,20 @@
         height: min(10rem, 10rem);
         padding: 0.5rem;
         align-self: center;
-        border: 0.1rem solid #4f4d41;
+        border: 0.1rem solid #886849;
         border-radius: 0.5rem;
-        background-color: #232323;
+        background-color: #c8c8c8;
+        color: #5a5a5a;
         resize: none;
 
         &:focus:where(textarea) {
           appearance: none;
           border-style: solid;
           outline: none;
+        }
+
+        &::placeholder {
+          color: #5a5a5a;
         }
 
         @media (min-width: 300px) and (max-width: 400px) {
@@ -1176,7 +1202,7 @@
           width: 7rem;
           height: 2.5rem;
           align-self: center;
-          background-color: #635445;
+          background-color: #656253;
           border: none;
           border-radius: 0.5rem;
           font-size: 10pt;
@@ -1196,7 +1222,7 @@
           }
 
           &:hover {
-            background-color: #4f4d41;
+            background-color: #886849;
           }
 
           @media (min-width: 300px) and (max-width: 400px) {
@@ -1235,11 +1261,11 @@
           width: 7rem;
           height: 2.5rem;
           align-self: center;
-          background-color: #4e4e4e;
+          background-color: #909090;
           border: none;
           border-radius: 0.5rem;
           font-size: 10pt;
-          color: #000000;
+          color: #5a5a5a;
           animation: sendDisabled 0.1s linear;
           animation-iteration-count: 1;
           transition: all 0.1s ease;

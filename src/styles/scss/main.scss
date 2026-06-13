@@ -1,6 +1,8 @@
 @use '../scss/loader';
 @use '../scss/header';
 @use '../scss/mainContent';
+@use './headerLight';
+@use './mainContentLight';
 
 * {
   margin: 0;
@@ -16,6 +18,27 @@
 body {
   background-color: #232323;
   scroll-behavior: smooth;
+  animation: body 0.5s linear;
+  animation-iteration-count: 1;
+  transition: all 0.2s ease-in-out;
+
+  @keyframes body {
+    0% {
+      filter: opacity(0.25) grayscale(10%) blur(0.05rem) brightness(80%);
+      transform: scale(98%);
+      transition: all 0.2s ease-in-out;
+    }
+    50% {
+      filter: opacity(0.5) grayscale(5%) blur(0.05rem) brightness(90%);
+      transform: scale(99%);
+      transition: all 0.2s ease-in-out;
+    }
+    100% {
+      filter: opacity(1) grayscale(0%) brightness(100%);
+      transform: scale(100%);
+      transition: all 0.2s ease-in-out;
+    }
+  }
 }
 
 #root {

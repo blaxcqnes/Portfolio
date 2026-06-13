@@ -1,4 +1,4 @@
-.mainContent {
+.mainContentLight {
   display: flex;
   flex-direction: row;
   column-gap: 1rem;
@@ -76,7 +76,7 @@
           height: 100%;
         }
 
-        .aboutMe {
+        .aboutMeLight {
           display: flex;
           flex-direction: column;
           row-gap: 2rem;
@@ -85,11 +85,11 @@
           padding: 2rem;
           position: relative;
           border-radius: 0.5rem;
-          background-color: #635445;
-          animation: aboutMe 0.5s linear;
+          background-color: #656253;
+          animation: aboutMeLight 0.5s linear;
           animation-iteration-count: 1;
 
-          @keyframes aboutMe {
+          @keyframes aboutMeLight {
             0% {
               filter: opacity(0.5) grayscale(10%) blur(0.05rem) brightness(80%);
               transform: scale(100%);
@@ -417,16 +417,17 @@
             .contact {
               width: 7rem;
               height: 2.5rem;
-              background-color: #232323;
+              background-color: #d9d9d9;
               border: none;
               border-radius: 0.5rem;
               font-size: 10pt;
-              color: #ebebeb;
+              color: #5a5a5a;
               cursor: pointer;
               transition: all 0.2s ease;
 
               &:hover {
-                background-color: #4f4d41;
+                background-color: #886849;
+                color: #ebebeb;
               }
 
               @media (min-width: 300px) and (max-width: 400px) {
@@ -458,12 +459,12 @@
           }
         }
 
-        .forSmallerScreens {
+        .forSmallerScreensLight {
           display: none;
-          animation: forSmallerScreens 0.5s linear;
+          animation: forSmallerScreensLight 0.5s linear;
           animation-iteration-count: 1;
 
-          @keyframes forSmallerScreens {
+          @keyframes forSmallerScreensLight {
             0% {
               filter: opacity(0.5) grayscale(10%) blur(0.05rem) brightness(80%);
               transform: scale(100%);
@@ -537,15 +538,15 @@
             justify-content: end;
           }
 
-          .smallerImg {
+          .smallerImgLight {
             width: min(100%, 100%);
             height: min(28.125rem, 28.125rem);
             object-fit: cover;
             border-radius: 0.5rem;
-            animation: smallerImg 0.5s linear;
+            animation: smallerImgLight 0.5s linear;
             animation-iteration-count: 1;
 
-            @keyframes smallerImg {
+            @keyframes smallerImgLight {
               0% {
                 filter: opacity(0.5) grayscale(10%) blur(0.05rem)
                   brightness(80%);
@@ -629,15 +630,15 @@
           }
         }
 
-        .regularImg {
+        .regularImgLight {
           width: min(32%, 32%);
           height: min(18.75rem, 18.75rem);
           object-fit: cover;
           border-radius: 0.5rem;
-          animation: regularImg 0.5s linear;
+          animation: regularImgLight 0.5s linear;
           animation-iteration-count: 1;
 
-          @keyframes regularImg {
+          @keyframes regularImgLight {
             0% {
               filter: opacity(0.5) grayscale(10%) blur(0.05rem) brightness(80%);
               transform: scale(100%);
@@ -716,7 +717,7 @@
           height: 100%;
         }
 
-        .skills {
+        .skillsLight {
           display: flex;
           flex-direction: column;
           row-gap: 2rem;
@@ -725,11 +726,11 @@
           padding: 2rem;
           position: relative;
           border-radius: 0.5rem;
-          background-color: #635445;
-          animation: skills 0.5s linear;
+          background-color: #656253;
+          animation: skillsLight 0.5s linear;
           animation-iteration-count: 1;
 
-          @keyframes skills {
+          @keyframes skillsLight {
             0% {
               filter: opacity(0.5) grayscale(10%) blur(0.05rem) brightness(80%);
               transform: scale(100%);
@@ -884,16 +885,17 @@
               width: 7rem;
               height: 2.5rem;
               position: relative;
-              background-color: #232323;
+              background-color: #d9d9d9;
               border: none;
               border-radius: 0.5rem;
               font-size: 10pt;
-              color: #ebebeb;
+              color: #5a5a5a;
               cursor: pointer;
               transition: all 0.2s ease;
 
               &:hover {
-                background-color: #4f4d41;
+                background-color: #886849;
+                color: #ebebeb;
               }
 
               @media (min-width: 300px) and (max-width: 400px) {
@@ -965,7 +967,7 @@
           }
         }
 
-        .education {
+        .educationLight {
           display: flex;
           flex-direction: column;
           row-gap: 1.5rem;
@@ -974,11 +976,11 @@
           padding: 2rem;
           position: relative;
           border-radius: 0.5rem;
-          background-color: #4f4d41;
-          animation: education 0.5s linear;
+          background-color: #886849;
+          animation: educationLight 0.5s linear;
           animation-iteration-count: 1;
 
-          @keyframes education {
+          @keyframes educationLight {
             0% {
               filter: opacity(0.5) grayscale(10%) blur(0.05rem) brightness(80%);
               transform: scale(100%);
@@ -1125,16 +1127,17 @@
               width: 7rem;
               height: 2.5rem;
               position: relative;
-              background-color: #232323;
+              background-color: #d9d9d9;
               border: none;
               border-radius: 0.5rem;
               font-size: 10pt;
-              color: #ebebeb;
+              color: #5a5a5a;
               cursor: pointer;
               transition: all 0.2s ease;
 
               &:hover {
-                background-color: #635445;
+                background-color: #656253;
+                color: #ebebeb;
               }
 
               @media (min-width: 300px) and (max-width: 400px) {
@@ -1247,9 +1250,9 @@
       height: min(20rem, 20rem);
       animation: skillList 0.5s linear;
       animation-iteration-count: 1;
-      background-color: #232323;
+      background-color: #d9d9d9;
       border-radius: 0.5rem;
-      border: 0.1rem solid #4f4d41;
+      border: 0.1rem solid #886849;
       z-index: 1;
       filter: none;
 
@@ -1279,7 +1282,7 @@
         justify-content: space-between;
         align-items: center;
         padding: 0.8rem 2rem;
-        background-color: #635445;
+        background-color: #656253;
         border-radius: 0.4rem 0.4rem 0 0;
 
         h4 {
@@ -1292,16 +1295,17 @@
           height: 2.5rem;
           position: relative;
           align-self: center;
-          background-color: #232323;
+          background-color: #d9d9d9;
           border: none;
           border-radius: 0.5rem;
           font-size: 10pt;
-          color: #ebebeb;
+          color: #5a5a5a;
           cursor: pointer;
           transition: all 0.2s ease;
 
           &:hover {
-            background-color: #4f4d41;
+            background-color: #886849;
+            color: #ebebeb;
           }
 
           @media (min-width: 300px) and (max-width: 600px) {
@@ -1339,9 +1343,9 @@
       height: min(20rem, 20rem);
       animation: educationList 0.5s linear;
       animation-iteration-count: 1;
-      background-color: #232323;
+      background-color: #d9d9d9;
       border-radius: 0.5rem;
-      border: 0.1rem solid #635445;
+      border: 0.1rem solid #656253;
       z-index: 1;
       filter: none;
 
@@ -1371,7 +1375,7 @@
         justify-content: space-between;
         align-items: center;
         padding: 0.8rem 2rem;
-        background-color: #4f4d41;
+        background-color: #886849;
         border-radius: 0.4rem 0.4rem 0 0;
 
         h4 {
@@ -1384,16 +1388,17 @@
           height: 2.5rem;
           position: relative;
           align-self: center;
-          background-color: #232323;
+          background-color: #d9d9d9;
           border: none;
           border-radius: 0.5rem;
           font-size: 10pt;
-          color: #ebebeb;
+          color: #5a5a5a;
           cursor: pointer;
           transition: all 0.2s ease;
 
           &:hover {
-            background-color: #635445;
+            background-color: #656253;
+            color: #ebebeb;
           }
 
           @media (min-width: 300px) and (max-width: 600px) {
@@ -1427,9 +1432,9 @@
       display: flex;
       flex-direction: column;
       row-gap: 1rem;
-      background-color: #232323;
+      background-color: #d9d9d9;
       border-radius: 0.5rem;
-      border: 0.1rem solid #4f4d41;
+      border: 0.1rem solid #886849;
       z-index: 1;
       filter: none;
 
@@ -1745,7 +1750,7 @@
         justify-content: space-between;
         align-items: center;
         padding: 0.8rem 1rem;
-        background-color: #635445;
+        background-color: #656253;
         border-radius: 0.4rem 0.4rem 0 0;
 
         h4 {
@@ -1758,16 +1763,17 @@
           height: 2.5rem;
           position: relative;
           align-self: center;
-          background-color: #232323;
+          background-color: #d9d9d9;
           border: none;
           border-radius: 0.5rem;
           font-size: 10pt;
-          color: #ebebeb;
+          color: #5a5a5a;
           cursor: pointer;
           transition: all 0.2s ease;
 
           &:hover {
-            background-color: #4f4d41;
+            background-color: #886849;
+            color: #ebebeb;
           }
 
           @media (min-width: 300px) and (max-width: 400px) {
@@ -1804,7 +1810,7 @@
           padding: 1rem 0.5rem;
           position: absolute;
           top: -5.15rem;
-          background-color: #635445;
+          background-color: #886849;
           border-radius: 0.5rem 0.5rem 0 0;
           opacity: 0;
           z-index: 2;
@@ -1858,7 +1864,7 @@
           padding: 1rem 0.5rem;
           position: absolute;
           top: -5.15rem;
-          background-color: #4f4d41;
+          background-color: #656253;
           border-radius: 0.5rem 0.5rem 0 0;
           opacity: 0;
           z-index: 2;
@@ -1981,9 +1987,10 @@
               height: min(3rem, 3rem);
               padding: 0.5rem;
               align-self: center;
-              border: 0.1rem solid #4f4d41;
+              border: 0.1rem solid #886849;
               border-radius: 0.5rem;
-              background-color: #232323;
+              background-color: #c8c8c8;
+              color: #5a5a5a;
 
               &:focus:where(
                   input[type='text'],
@@ -1995,6 +2002,10 @@
                 appearance: none;
                 border-style: solid;
                 outline: none;
+              }
+
+              &::placeholder {
+                color: #5a5a5a;
               }
 
               @media (min-width: 300px) and (max-width: 400px) {
@@ -2007,9 +2018,10 @@
               height: min(3rem, 3rem);
               padding: 0.5rem;
               align-self: center;
-              border: 0.1rem solid #4f4d41;
+              border: 0.1rem solid #886849;
               border-radius: 0.5rem;
-              background-color: #232323;
+              background-color: #c8c8c8;
+              color: #5a5a5a;
 
               &:focus:where(
                   input[type='text'],
@@ -2021,6 +2033,10 @@
                 appearance: none;
                 border-style: solid;
                 outline: none;
+              }
+
+              &::placeholder {
+                color: #5a5a5a;
               }
 
               @media (min-width: 300px) and (max-width: 400px) {
@@ -2034,9 +2050,10 @@
             height: min(3rem, 3rem);
             padding: 0.5rem;
             align-self: center;
-            border: 0.1rem solid #4f4d41;
+            border: 0.1rem solid #886849;
             border-radius: 0.5rem;
-            background-color: #232323;
+            background-color: #c8c8c8;
+            color: #5a5a5a;
 
             &:focus:where(
                 input[type='text'],
@@ -2050,6 +2067,10 @@
               outline: none;
             }
 
+            &::placeholder {
+              color: #5a5a5a;
+            }
+
             @media (min-width: 300px) and (max-width: 400px) {
               height: 2.5rem;
             }
@@ -2061,9 +2082,10 @@
           height: min(3rem, 3rem);
           padding: 0.5rem;
           align-self: center;
-          border: 0.1rem solid #4f4d41;
+          border: 0.1rem solid #886849;
           border-radius: 0.5rem;
-          background-color: #232323;
+          background-color: #c8c8c8;
+          color: #5a5a5a;
 
           &:focus:where(
               input[type='text'],
@@ -2077,6 +2099,10 @@
             outline: none;
           }
 
+          &::placeholder {
+            color: #5a5a5a;
+          }
+
           @media (min-width: 300px) and (max-width: 400px) {
             height: 2.5rem;
           }
@@ -2087,15 +2113,20 @@
           height: min(10rem, 10rem);
           padding: 0.5rem;
           align-self: center;
-          border: 0.1rem solid #4f4d41;
+          border: 0.1rem solid #886849;
           border-radius: 0.5rem;
-          background-color: #232323;
+          background-color: #c8c8c8;
+          color: #5a5a5a;
           resize: none;
 
           &:focus:where(textarea) {
             appearance: none;
             border-style: solid;
             outline: none;
+          }
+
+          &::placeholder {
+            color: #5a5a5a;
           }
 
           @media (min-width: 300px) and (max-width: 400px) {
@@ -2122,7 +2153,7 @@
             width: 7rem;
             height: 2.5rem;
             align-self: center;
-            background-color: #635445;
+            background-color: #656253;
             border: none;
             border-radius: 0.5rem;
             font-size: 10pt;
@@ -2142,7 +2173,7 @@
             }
 
             &:hover {
-              background-color: #4f4d41;
+              background-color: #886849;
             }
 
             @media (min-width: 300px) and (max-width: 400px) {
@@ -2181,11 +2212,11 @@
             width: 7rem;
             height: 2.5rem;
             align-self: center;
-            background-color: #4e4e4e;
+            background-color: #909090;
             border: none;
             border-radius: 0.5rem;
             font-size: 10pt;
-            color: #000000;
+            color: #5a5a5a;
             animation: sendDisabled 0.1s linear;
             animation-iteration-count: 1;
             transition: all 0.1s ease;
@@ -2357,7 +2388,7 @@
           height: min(34rem, 34rem);
         }
 
-        .cyber {
+        .cyberLight {
           display: flex;
           flex-direction: column;
           row-gap: 2rem;
@@ -2366,11 +2397,11 @@
           padding: 2rem 2rem 0 2rem;
           position: relative;
           border-radius: 0.5rem;
-          background-color: #635445;
-          animation: cyber 0.5s linear;
+          background-color: #656253;
+          animation: cyberLight 0.5s linear;
           animation-iteration-count: 1;
 
-          @keyframes cyber {
+          @keyframes cyberLight {
             0% {
               filter: opacity(0.5) grayscale(10%) blur(0.05rem) brightness(80%);
               transform: scale(100%);
@@ -2600,16 +2631,17 @@
             align-self: center;
             position: absolute;
             bottom: 1.5rem;
-            background-color: #232323;
+            background-color: #d9d9d9;
             border: none;
             border-radius: 0.5rem;
             font-size: 10pt;
-            color: #ebebeb;
+            color: #5a5a5a;
             cursor: pointer;
             transition: all 0.2s ease;
 
             &:hover {
-              background-color: #4f4d41;
+              background-color: #886849;
+              color: #ebebeb;
             }
 
             @media (min-width: 300px) and (max-width: 400px) {
@@ -2657,7 +2689,7 @@
           }
         }
 
-        .web {
+        .webLight {
           display: flex;
           flex-direction: column;
           row-gap: 2rem;
@@ -2666,11 +2698,11 @@
           padding: 2rem 2rem 0 2rem;
           position: relative;
           border-radius: 0.5rem;
-          background-color: #4f4d41;
-          animation: web 0.5s linear;
+          background-color: #886849;
+          animation: webLight 0.5s linear;
           animation-iteration-count: 1;
 
-          @keyframes web {
+          @keyframes webLight {
             0% {
               filter: opacity(0.5) grayscale(10%) blur(0.05rem) brightness(80%);
               transform: scale(100%);
@@ -2901,16 +2933,17 @@
             align-self: center;
             position: absolute;
             bottom: 1.5rem;
-            background-color: #232323;
+            background-color: #d9d9d9;
             border: none;
             border-radius: 0.5rem;
             font-size: 10pt;
-            color: #ebebeb;
+            color: #5a5a5a;
             cursor: pointer;
             transition: all 0.2s ease;
 
             &:hover {
-              background-color: #635445;
+              background-color: #656253;
+              color: #ebebeb;
             }
 
             @media (min-width: 300px) and (max-width: 400px) {
@@ -2959,17 +2992,17 @@
         }
       }
 
-      .footer {
+      .footerLight {
         display: flex;
         width: 100%;
         height: min(6.5rem, 6.5rem);
         padding: 1.5rem 1rem;
         border-radius: 0.5rem;
-        background-color: #635445;
-        animation: footer 0.5s linear;
+        background-color: #656253;
+        animation: footerLight 0.5s linear;
         animation-iteration-count: 1;
 
-        @keyframes footer {
+        @keyframes footerLight {
           0% {
             filter: opacity(0.5) grayscale(10%) blur(0.05rem) brightness(80%);
             transform: scale(100%);
@@ -2992,14 +3025,14 @@
         @media (min-width: 300px) and (max-width: 400px) {
           align-items: center;
           height: min(8.5rem, 8.5rem);
-          background-color: #4f4d41;
+          background-color: #886849;
         }
 
         @media (min-width: 400px) and (max-width: 600px) {
           justify-content: center;
           height: min(8.5rem, 8.5rem);
           padding: 1rem;
-          background-color: #4f4d41;
+          background-color: #886849;
         }
 
         @media (min-width: 600px) and (max-width: 1023px) {
@@ -3182,9 +3215,9 @@
       height: min(20rem, 20rem);
       animation: cyberList 0.5s linear;
       animation-iteration-count: 1;
-      background-color: #232323;
+      background-color: #d9d9d9;
       border-radius: 0.5rem;
-      border: 0.1rem solid #4f4d41;
+      border: 0.1rem solid #886849;
       z-index: 1;
       filter: none;
 
@@ -3214,7 +3247,7 @@
         justify-content: space-between;
         align-items: center;
         padding: 0.8rem 2rem;
-        background-color: #635445;
+        background-color: #656253;
         border-radius: 0.4rem 0.4rem 0 0;
 
         h4 {
@@ -3227,16 +3260,17 @@
           height: 2.5rem;
           position: relative;
           align-self: center;
-          background-color: #232323;
+          background-color: #d9d9d9;
           border: none;
           border-radius: 0.5rem;
           font-size: 10pt;
-          color: #ebebeb;
+          color: #5a5a5a;
           cursor: pointer;
           transition: all 0.2s ease;
 
           &:hover {
-            background-color: #4f4d41;
+            background-color: #886849;
+            color: #ebebeb;
           }
 
           @media (min-width: 300px) and (max-width: 600px) {
@@ -3274,9 +3308,9 @@
       height: min(20rem, 20rem);
       animation: webList 0.5s linear;
       animation-iteration-count: 1;
-      background-color: #232323;
+      background-color: #d9d9d9;
       border-radius: 0.5rem;
-      border: 0.1rem solid #4f4d41;
+      border: 0.1rem solid #656253;
       z-index: 1;
       filter: none;
 
@@ -3306,7 +3340,7 @@
         justify-content: space-between;
         align-items: center;
         padding: 0.8rem 2rem;
-        background-color: #4f4d41;
+        background-color: #886849;
         border-radius: 0.4rem 0.4rem 0 0;
 
         h4 {
@@ -3319,16 +3353,17 @@
           height: 2.5rem;
           position: relative;
           align-self: center;
-          background-color: #232323;
+          background-color: #d9d9d9;
           border: none;
           border-radius: 0.5rem;
           font-size: 10pt;
-          color: #ebebeb;
+          color: #5a5a5a;
           cursor: pointer;
           transition: all 0.2s ease;
 
           &:hover {
-            background-color: #635445;
+            background-color: #656253;
+            color: #ebebeb;
           }
 
           @media (min-width: 300px) and (max-width: 600px) {
@@ -3362,7 +3397,7 @@
 
 // Unfocused state for the left/upper and the right/lower containers, applied when contactForm, educationList and skillList are open on both larger and smaller screens
 
-.mainContent {
+.mainContentLight {
   display: flex;
   flex-direction: row;
   column-gap: 1rem;
@@ -3444,7 +3479,7 @@
           height: 100%;
         }
 
-        .aboutMe {
+        .aboutMeLight {
           display: flex;
           flex-direction: column;
           row-gap: 2rem;
@@ -3453,11 +3488,11 @@
           padding: 2rem;
           position: relative;
           border-radius: 0.5rem;
-          background-color: #635445;
-          animation: aboutMe 0.5s linear;
+          background-color: #656253;
+          animation: aboutMeLight 0.5s linear;
           animation-iteration-count: 1;
 
-          @keyframes aboutMe {
+          @keyframes aboutMeLight {
             0% {
               filter: opacity(0.5) grayscale(10%) blur(0.05rem) brightness(80%);
               transform: scale(100%);
@@ -3785,16 +3820,17 @@
             .contact {
               width: 7rem;
               height: 2.5rem;
-              background-color: #232323;
+              background-color: #d9d9d9;
               border: none;
               border-radius: 0.5rem;
               font-size: 10pt;
-              color: #ebebeb;
+              color: #5a5a5a;
               cursor: pointer;
               transition: all 0.2s ease;
 
               &:hover {
-                background-color: #4f4d41;
+                background-color: #886849;
+                color: #ebebeb;
               }
 
               @media (min-width: 300px) and (max-width: 400px) {
@@ -3826,12 +3862,12 @@
           }
         }
 
-        .forSmallerScreens {
+        .forSmallerScreensLight {
           display: none;
-          animation: forSmallerScreens 0.5s linear;
+          animation: forSmallerScreensLight 0.5s linear;
           animation-iteration-count: 1;
 
-          @keyframes forSmallerScreens {
+          @keyframes forSmallerScreensLight {
             0% {
               filter: opacity(0.5) grayscale(10%) blur(0.05rem) brightness(80%);
               transform: scale(100%);
@@ -3905,15 +3941,15 @@
             justify-content: end;
           }
 
-          .smallerImg {
+          .smallerImgLight {
             width: min(100%, 100%);
             height: min(28.125rem, 28.125rem);
             object-fit: cover;
             border-radius: 0.5rem;
-            animation: smallerImg 0.5s linear;
+            animation: smallerImgLight 0.5s linear;
             animation-iteration-count: 1;
 
-            @keyframes smallerImg {
+            @keyframes smallerImgLight {
               0% {
                 filter: opacity(0.5) grayscale(10%) blur(0.05rem)
                   brightness(80%);
@@ -3997,15 +4033,15 @@
           }
         }
 
-        .regularImg {
+        .regularImgLight {
           width: min(32%, 32%);
           height: min(18.75rem, 18.75rem);
           object-fit: cover;
           border-radius: 0.5rem;
-          animation: regularImg 0.5s linear;
+          animation: regularImgLight 0.5s linear;
           animation-iteration-count: 1;
 
-          @keyframes regularImg {
+          @keyframes regularImgLight {
             0% {
               filter: opacity(0.5) grayscale(10%) blur(0.05rem) brightness(80%);
               transform: scale(100%);
@@ -4084,7 +4120,7 @@
           height: 100%;
         }
 
-        .skills {
+        .skillsLight {
           display: flex;
           flex-direction: column;
           row-gap: 2rem;
@@ -4093,11 +4129,11 @@
           padding: 2rem;
           position: relative;
           border-radius: 0.5rem;
-          background-color: #635445;
-          animation: skills 0.5s linear;
+          background-color: #656253;
+          animation: skillsLight 0.5s linear;
           animation-iteration-count: 1;
 
-          @keyframes skills {
+          @keyframes skillsLight {
             0% {
               filter: opacity(0.5) grayscale(10%) blur(0.05rem) brightness(80%);
               transform: scale(100%);
@@ -4252,11 +4288,11 @@
               width: 7rem;
               height: 2.5rem;
               position: relative;
-              background-color: #232323;
+              background-color: #d9d9d9;
               border: none;
               border-radius: 0.5rem;
               font-size: 10pt;
-              color: #ebebeb;
+              color: #5a5a5a;
               transition: all 0.2s ease;
 
               @media (min-width: 300px) and (max-width: 400px) {
@@ -4328,7 +4364,7 @@
           }
         }
 
-        .education {
+        .educationLight {
           display: flex;
           flex-direction: column;
           row-gap: 1.5rem;
@@ -4337,11 +4373,11 @@
           padding: 2rem;
           position: relative;
           border-radius: 0.5rem;
-          background-color: #4f4d41;
-          animation: education 0.5s linear;
+          background-color: #886849;
+          animation: educationLight 0.5s linear;
           animation-iteration-count: 1;
 
-          @keyframes education {
+          @keyframes educationLight {
             0% {
               filter: opacity(0.5) grayscale(10%) blur(0.05rem) brightness(80%);
               transform: scale(100%);
@@ -4488,11 +4524,11 @@
               width: 7rem;
               height: 2.5rem;
               position: relative;
-              background-color: #232323;
+              background-color: #d9d9d9;
               border: none;
               border-radius: 0.5rem;
               font-size: 10pt;
-              color: #ebebeb;
+              color: #5a5a5a;
               transition: all 0.2s ease;
 
               @media (min-width: 300px) and (max-width: 400px) {
@@ -4596,7 +4632,7 @@
         }
       }
 
-      // This class gets applied on smaller screens to swap the order of skills and education sections when educationList is opened
+      // This class gets applied on smaller screens to swap the order of skillsLight and educationLight sections when educationList is opened
       .skillsAndEducationSwapped {
         display: flex;
         flex-direction: row-reverse;
@@ -4638,7 +4674,7 @@
           height: 100%;
         }
 
-        .skills {
+        .skillsLight {
           display: flex;
           flex-direction: column;
           row-gap: 2rem;
@@ -4647,11 +4683,11 @@
           padding: 2rem;
           position: relative;
           border-radius: 0.5rem;
-          background-color: #635445;
-          animation: skills 0.5s linear;
+          background-color: #656253;
+          animation: skillsLight 0.5s linear;
           animation-iteration-count: 1;
 
-          @keyframes skills {
+          @keyframes skillsLight {
             0% {
               filter: opacity(0.5) grayscale(10%) blur(0.05rem) brightness(80%);
               transform: scale(100%);
@@ -4806,11 +4842,11 @@
               width: 7rem;
               height: 2.5rem;
               position: relative;
-              background-color: #232323;
+              background-color: #d9d9d9;
               border: none;
               border-radius: 0.5rem;
               font-size: 10pt;
-              color: #ebebeb;
+              color: #5a5a5a;
               transition: all 0.2s ease;
 
               @media (min-width: 300px) and (max-width: 400px) {
@@ -4882,7 +4918,7 @@
           }
         }
 
-        .education {
+        .educationLight {
           display: flex;
           flex-direction: column;
           row-gap: 1.5rem;
@@ -4891,11 +4927,11 @@
           padding: 2rem;
           position: relative;
           border-radius: 0.5rem;
-          background-color: #4f4d41;
-          animation: education 0.5s linear;
+          background-color: #886849;
+          animation: educationLight 0.5s linear;
           animation-iteration-count: 1;
 
-          @keyframes education {
+          @keyframes educationLight {
             0% {
               filter: opacity(0.5) grayscale(10%) blur(0.05rem) brightness(80%);
               transform: scale(100%);
@@ -5042,11 +5078,11 @@
               width: 7rem;
               height: 2.5rem;
               position: relative;
-              background-color: #232323;
+              background-color: #d9d9d9;
               border: none;
               border-radius: 0.5rem;
               font-size: 10pt;
-              color: #ebebeb;
+              color: #5a5a5a;
               transition: all 0.2s ease;
 
               @media (min-width: 300px) and (max-width: 400px) {
@@ -5208,7 +5244,7 @@
           height: min(34rem, 34rem);
         }
 
-        .cyber {
+        .cyberLight {
           display: flex;
           flex-direction: column;
           row-gap: 2rem;
@@ -5217,11 +5253,11 @@
           padding: 2rem 2rem 0 2rem;
           position: relative;
           border-radius: 0.5rem;
-          background-color: #635445;
-          animation: cyber 0.5s linear;
+          background-color: #656253;
+          animation: cyberLight 0.5s linear;
           animation-iteration-count: 1;
 
-          @keyframes cyber {
+          @keyframes cyberLight {
             0% {
               filter: opacity(0.5) grayscale(10%) blur(0.05rem) brightness(80%);
               transform: scale(100%);
@@ -5450,11 +5486,11 @@
             align-self: center;
             position: absolute;
             bottom: 1.5rem;
-            background-color: #232323;
+            background-color: #d9d9d9;
             border: none;
             border-radius: 0.5rem;
             font-size: 10pt;
-            color: #ebebeb;
+            color: #5a5a5a;
             transition: all 0.2s ease;
 
             @media (min-width: 300px) and (max-width: 400px) {
@@ -5502,7 +5538,7 @@
           }
         }
 
-        .web {
+        .webLight {
           display: flex;
           flex-direction: column;
           row-gap: 2rem;
@@ -5511,11 +5547,11 @@
           padding: 2rem 2rem 0 2rem;
           position: relative;
           border-radius: 0.5rem;
-          background-color: #4f4d41;
-          animation: web 0.5s linear;
+          background-color: #886849;
+          animation: webLight 0.5s linear;
           animation-iteration-count: 1;
 
-          @keyframes web {
+          @keyframes webLight {
             0% {
               filter: opacity(0.5) grayscale(10%) blur(0.05rem) brightness(80%);
               transform: scale(100%);
@@ -5748,11 +5784,11 @@
             align-self: center;
             position: absolute;
             bottom: 1.5rem;
-            background-color: #232323;
+            background-color: #d9d9d9;
             border: none;
             border-radius: 0.5rem;
             font-size: 10pt;
-            color: #ebebeb;
+            color: #5a5a5a;
             transition: all 0.2s ease;
 
             @media (min-width: 300px) and (max-width: 400px) {
@@ -5854,7 +5890,7 @@
           height: min(34rem, 34rem);
         }
 
-        .cyber {
+        .cyberLight {
           display: flex;
           flex-direction: column;
           row-gap: 2rem;
@@ -5863,11 +5899,11 @@
           padding: 2rem 2rem 0 2rem;
           position: relative;
           border-radius: 0.5rem;
-          background-color: #635445;
-          animation: cyber 0.5s linear;
+          background-color: #656253;
+          animation: cyberLight 0.5s linear;
           animation-iteration-count: 1;
 
-          @keyframes cyber {
+          @keyframes cyberLight {
             0% {
               filter: opacity(0.5) grayscale(10%) blur(0.05rem) brightness(80%);
               transform: scale(100%);
@@ -6096,11 +6132,11 @@
             align-self: center;
             position: absolute;
             bottom: 1.5rem;
-            background-color: #232323;
+            background-color: #d9d9d9;
             border: none;
             border-radius: 0.5rem;
             font-size: 10pt;
-            color: #ebebeb;
+            color: #5a5a5a;
             transition: all 0.2s ease;
 
             @media (min-width: 300px) and (max-width: 400px) {
@@ -6148,7 +6184,7 @@
           }
         }
 
-        .web {
+        .webLight {
           display: flex;
           flex-direction: column;
           row-gap: 2rem;
@@ -6157,11 +6193,11 @@
           padding: 2rem 2rem 0 2rem;
           position: relative;
           border-radius: 0.5rem;
-          background-color: #4f4d41;
-          animation: web 0.5s linear;
+          background-color: #886849;
+          animation: webLight 0.5s linear;
           animation-iteration-count: 1;
 
-          @keyframes web {
+          @keyframes webLight {
             0% {
               filter: opacity(0.5) grayscale(10%) blur(0.05rem) brightness(80%);
               transform: scale(100%);
@@ -6394,11 +6430,11 @@
             align-self: center;
             position: absolute;
             bottom: 1.5rem;
-            background-color: #232323;
+            background-color: #d9d9d9;
             border: none;
             border-radius: 0.5rem;
             font-size: 10pt;
-            color: #ebebeb;
+            color: #5a5a5a;
             transition: all 0.2s ease;
 
             @media (min-width: 300px) and (max-width: 400px) {
@@ -6447,17 +6483,17 @@
         }
       }
 
-      .footer {
+      .footerLight {
         display: flex;
         width: 100%;
         height: min(6.5rem, 6.5rem);
         padding: 1.5rem 1rem;
         border-radius: 0.5rem;
-        background-color: #635445;
-        animation: footer 0.5s linear;
+        background-color: #656253;
+        animation: footerLight 0.5s linear;
         animation-iteration-count: 1;
 
-        @keyframes footer {
+        @keyframes footerLight {
           0% {
             filter: opacity(0.5) grayscale(10%) blur(0.05rem) brightness(80%);
             transform: scale(100%);
@@ -6480,14 +6516,14 @@
         @media (min-width: 300px) and (max-width: 400px) {
           align-items: center;
           height: min(8.5rem, 8.5rem);
-          background-color: #4f4d41;
+          background-color: #886849;
         }
 
         @media (min-width: 400px) and (max-width: 600px) {
           justify-content: center;
           height: min(8.5rem, 8.5rem);
           padding: 1rem;
-          background-color: #4f4d41;
+          background-color: #886849;
         }
 
         @media (min-width: 600px) and (max-width: 1023px) {

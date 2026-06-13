@@ -2,12 +2,16 @@ import LeftOrUpperPart from './LeftOrUpperPart';
 import RightOrLowerPart from './RightOrLowerPart';
 
 export default function MainContent({
+  isLightModeOn,
   isContactFormOpen,
+  isContactFormMobileOpen,
   isSkillListOpen,
   isEducationListOpen,
   isCyberListOpen,
   isWebListOpen,
+  toggleLightMode,
   toggleContactForm,
+  toggleContactFormMobile,
   toggleSkillList,
   toggleEducationList,
   toggleCyberList,
@@ -16,11 +20,12 @@ export default function MainContent({
 }) {
   return (
     <main
-      className={isContactFormOpen ? 'mainContentUnfocused' : 'mainContent'}
+      className={isLightModeOn ? 'mainContentLight' : 'mainContent'}
       onClick={isContactFormOpen ? toggleContactForm : undefined}
       style={{
         transform:
           isContactFormOpen ||
+          isContactFormMobileOpen ||
           isSkillListOpen ||
           isEducationListOpen ||
           isCyberListOpen ||
@@ -30,24 +35,35 @@ export default function MainContent({
       }}
     >
       <LeftOrUpperPart
+        isLightModeOn={isLightModeOn}
         isContactFormOpen={isContactFormOpen}
+        isContactFormMobileOpen={isContactFormMobileOpen}
         isSkillListOpen={isSkillListOpen}
         isEducationListOpen={isEducationListOpen}
         isCyberListOpen={isCyberListOpen}
         isWebListOpen={isWebListOpen}
         classType={classType}
+        //
+        toggleLightMode={toggleLightMode}
+        toggleContactForm={toggleContactForm}
+        toggleContactFormMobile={toggleContactFormMobile}
         toggleSkillList={toggleSkillList}
         toggleEducationList={toggleEducationList}
         toggleCyberList={toggleCyberList}
         toggleWebList={toggleWebList}
       />
       <RightOrLowerPart
+        isLightModeOn={isLightModeOn}
         isContactFormOpen={isContactFormOpen}
+        isContactFormMobileOpen={isContactFormMobileOpen}
         isSkillListOpen={isSkillListOpen}
         isEducationListOpen={isEducationListOpen}
         isCyberListOpen={isCyberListOpen}
         isWebListOpen={isWebListOpen}
         classType={classType}
+        //
+        toggleLightMode={toggleLightMode}
+        toggleContactFormMobile={toggleContactFormMobile}
         toggleSkillList={toggleSkillList}
         toggleEducationList={toggleEducationList}
         toggleCyberList={toggleCyberList}

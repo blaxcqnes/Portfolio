@@ -1,12 +1,17 @@
+import LightButton from './LightButton';
 import ContactForm from './ContactForm';
 
 export default function Header({
+  isLightModeOn,
   isContactFormOpen,
+  isContactFormMobileOpen,
   isSkillListOpen,
   isEducationListOpen,
   isCyberListOpen,
   isWebListOpen,
+  toggleLightMode,
   toggleContactForm,
+  toggleContactFormMobile,
   toggleSkillList,
   toggleEducationList,
   toggleCyberList,
@@ -16,6 +21,8 @@ export default function Header({
   function handleClick() {
     if (isContactFormOpen) {
       toggleContactForm();
+    } else if (isContactFormMobileOpen) {
+      toggleContactFormMobile();
     } else if (isSkillListOpen) {
       toggleSkillList();
     } else if (isEducationListOpen) {
@@ -27,10 +34,11 @@ export default function Header({
     }
   }
   return (
-    <main className="header">
+    <main className={isLightModeOn ? 'headerLight' : 'header'}>
       <section
-        className={classType ? 'headerConatinerUnfocused' : 'headerConatiner'}
+        className={classType ? 'headerContainerUnfocused' : 'headerContainer'}
         onClick={handleClick}
+        style={{ marginBottom: isContactFormMobileOpen ? '0.2rem' : '0' }}
       >
         <div className="nameAndProfession">
           <p className="name">Mahmoud Taha</p>
@@ -38,10 +46,15 @@ export default function Header({
             Cybersecurity Professional & Web Developer
           </p>
         </div>
-
         <div className="locationAndContact">
+          <LightButton
+            isLightModeOn={isLightModeOn}
+            toggleLightMode={toggleLightMode}
+          />
+
           <p className="location">Riyadh, Saudi Arabia</p>
           {isContactFormOpen ||
+          isContactFormMobileOpen ||
           isSkillListOpen ||
           isEducationListOpen ||
           isCyberListOpen ||

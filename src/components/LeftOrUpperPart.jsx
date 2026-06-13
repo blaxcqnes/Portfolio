@@ -1,13 +1,18 @@
 import me from '../images/mainContent_leftOrUpperPart/me.jpg';
+import meLight from '../images/mainContent_leftOrUpperPart/meLight.jpg';
+import ContactFormMobile from './ContaceFormMobile';
 import SkillList from './SkillList';
 import EducationList from './EducationList';
 
 export default function LeftOrUpperPart({
+  isLightModeOn,
   isContactFormOpen,
+  isContactFormMobileOpen,
   isSkillListOpen,
   isEducationListOpen,
   isCyberListOpen,
   isWebListOpen,
+  toggleContactFormMobile,
   toggleSkillList,
   toggleEducationList,
   toggleCyberList,
@@ -15,7 +20,9 @@ export default function LeftOrUpperPart({
   classType,
 }) {
   function handleClick() {
-    if (isSkillListOpen) {
+    if (isContactFormMobileOpen) {
+      toggleContactFormMobile();
+    } else if (isSkillListOpen) {
       toggleSkillList();
     } else if (isEducationListOpen) {
       toggleEducationList();
@@ -39,7 +46,7 @@ export default function LeftOrUpperPart({
         {/*  */}
         <section className="aboutMeAndImage">
           {/*  */}
-          <div className="aboutMe">
+          <div className={isLightModeOn ? 'aboutMeLight' : 'aboutMe'}>
             <p className="title">About Me</p>
             <p className="aboutMeDescription">
               Highly results-oriented Cybersecurity Analyst with knowledge and
@@ -52,15 +59,44 @@ export default function LeftOrUpperPart({
               Web developer with high proficiency in coding, web app testing and
               designing.
             </p>
-            <p className="locationForSmallerScreens">Riyadh, Saudi Arabia</p>
+            <div className="locationAndContactForm">
+              <p className="locationForSmallerScreens">Riyadh, Saudi Arabia</p>
+
+              {isContactFormOpen ||
+              isContactFormMobileOpen ||
+              isSkillListOpen ||
+              isEducationListOpen ||
+              isCyberListOpen ||
+              isWebListOpen ? (
+                <button className="contact" disabled>
+                  Contact
+                </button>
+              ) : (
+                <button className="contact" onClick={toggleContactFormMobile}>
+                  Contact
+                </button>
+              )}
+            </div>
           </div>
           {/*  */}
-          <div className="forSmallerScreens">
-            <img src={me} alt="" className="smallerImg" />
+          <div
+            className={
+              isLightModeOn ? 'forSmallerScreensLight' : 'forSmallerScreens'
+            }
+          >
+            {isLightModeOn ? (
+              <img src={meLight} alt="" className="smallerImgLight" />
+            ) : (
+              <img src={me} alt="" className="smallerImg" />
+            )}
             <p>Cybersecurity Professional & Web Developer</p>
           </div>
           {/*  */}
-          <img src={me} alt="" className="regularImg" />
+          {isLightModeOn ? (
+            <img src={meLight} alt="" className="regularImgLight" />
+          ) : (
+            <img src={me} alt="" className="regularImg" />
+          )}
           {/*  */}
         </section>
 
@@ -71,14 +107,15 @@ export default function LeftOrUpperPart({
               : 'skillsAndEducation'
           }
         >
-          <div className="skills">
+          <div className={isLightModeOn ? 'skillsLight' : 'skills'}>
             {/*  */}
             <div className="titleAndButton">
               <p className="title">Skills</p>
-              {isSkillListOpen ||
+              {isContactFormOpen ||
+              isContactFormMobileOpen ||
+              isSkillListOpen ||
               isEducationListOpen ||
               isCyberListOpen ||
-              isContactFormOpen ||
               isWebListOpen ? (
                 <button className="fluency" disabled>
                   Fluency
@@ -100,14 +137,18 @@ export default function LeftOrUpperPart({
             {/*  */}
           </div>
           {/*  */}
-          <div className="education" id="education">
+          <div
+            className={isLightModeOn ? 'educationLight' : 'education'}
+            id="education"
+          >
             {/*  */}
             <div className="titleAndButton">
               <p className="title">Education</p>
-              {isSkillListOpen ||
+              {isContactFormOpen ||
+              isContactFormMobileOpen ||
+              isSkillListOpen ||
               isEducationListOpen ||
               isCyberListOpen ||
-              isContactFormOpen ||
               isWebListOpen ? (
                 <button className="courses" disabled>
                   Courses
@@ -152,6 +193,13 @@ export default function LeftOrUpperPart({
         </section>
         {/*  */}
       </div>
+      {/*  */}
+      {isContactFormMobileOpen && (
+        <ContactFormMobile
+          isContactFormMobileOpen={isContactFormMobileOpen}
+          toggleContactFormMobile={toggleContactFormMobile}
+        />
+      )}
       {/*  */}
       {isEducationListOpen && (
         <EducationList
