@@ -33,7 +33,9 @@ export default function LeftOrUpperPart({
     }
   }
   return (
-    <main className="leftOrUpperPart">
+    <main
+      className={isLightModeOn ? 'leftOrUpperPartLight' : 'leftOrUpperPart'}
+    >
       {/*  */}
       <div
         className={
@@ -72,7 +74,14 @@ export default function LeftOrUpperPart({
                   Contact
                 </button>
               ) : (
-                <button className="contact" onClick={toggleContactFormMobile}>
+                <button
+                  className="contact"
+                  onClick={
+                    !isContactFormMobileOpen
+                      ? toggleContactFormMobile
+                      : undefined
+                  }
+                >
                   Contact
                 </button>
               )}
@@ -121,7 +130,10 @@ export default function LeftOrUpperPart({
                   Fluency
                 </button>
               ) : (
-                <button className="fluency" onClick={toggleSkillList}>
+                <button
+                  className="fluency"
+                  onClick={!isSkillListOpen ? toggleSkillList : undefined}
+                >
                   Fluency
                 </button>
               )}
@@ -154,7 +166,12 @@ export default function LeftOrUpperPart({
                   Courses
                 </button>
               ) : (
-                <button className="courses" onClick={toggleEducationList}>
+                <button
+                  className="courses"
+                  onClick={
+                    !isEducationListOpen ? toggleEducationList : undefined
+                  }
+                >
                   Courses
                 </button>
               )}

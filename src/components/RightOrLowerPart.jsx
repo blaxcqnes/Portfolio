@@ -37,7 +37,10 @@ export default function RightOrLowerPart({
     }
   }
   return (
-    <main className="rightOrLowerPart" onClick={handleClick}>
+    <main
+      className={isLightModeOn ? 'rightOrLowerPartLight' : 'rightOrLowerPart'}
+      onClick={handleClick}
+    >
       {/*  */}
       <div
         className={

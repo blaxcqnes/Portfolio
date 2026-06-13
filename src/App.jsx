@@ -63,7 +63,8 @@ export default function App() {
   // 1 Related to lightMode, switches UI to a lighter theme
   useEffect(() => {
     isLightModeOn
-      ? (document.body.style.backgroundColor = '#D9D9D9')
+      ? (document.body.style.cssText =
+          'background-color: #d9d9d9; transition: all 0.2s ease-in-out;')
       : document.body.removeAttribute('style');
 
     return () => {};

@@ -2,7 +2,7 @@ export default function LightButton({ isLightModeOn, toggleLightMode }) {
   return (
     <div
       className={!isLightModeOn ? 'lightButton' : 'darkButton'}
-      onClick={!isLightModeOn ? toggleLightMode : toggleLightMode}
+      onClick={toggleLightMode}
     >
       {!isLightModeOn ? (
         <div className="light"></div>

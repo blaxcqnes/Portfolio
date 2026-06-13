@@ -641,15 +641,19 @@
             0% {
               filter: opacity(0.5) grayscale(10%) blur(0.05rem) brightness(80%);
               transform: scale(100%);
+              opacity: 0;
             }
             25% {
               transform: scale(101%);
+              opacity: 0.25;
             }
             50% {
               transform: scale(102%);
+              opacity: 0.5;
             }
             75% {
               transform: scale(101%);
+              opacity: 0.75;
             }
             100% {
               transform: scale(100%);
@@ -4009,15 +4013,19 @@
             0% {
               filter: opacity(0.5) grayscale(10%) blur(0.05rem) brightness(80%);
               transform: scale(100%);
+              opacity: 0;
             }
             25% {
               transform: scale(101%);
+              opacity: 0.25;
             }
             50% {
               transform: scale(102%);
+              opacity: 0.5;
             }
             75% {
               transform: scale(101%);
+              opacity: 0.75;
             }
             100% {
               transform: scale(100%);

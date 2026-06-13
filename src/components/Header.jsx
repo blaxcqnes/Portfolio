@@ -59,11 +59,14 @@ export default function Header({
           isEducationListOpen ||
           isCyberListOpen ||
           isWebListOpen ? (
-            <button className="contact" onClick={toggleContactForm} disabled>
+            <button className="contact" disabled>
               Contact
             </button>
           ) : (
-            <button className="contact" onClick={toggleContactForm}>
+            <button
+              className="contact"
+              onClick={!isContactFormOpen ? toggleContactForm : undefined}
+            >
               Contact
             </button>
           )}

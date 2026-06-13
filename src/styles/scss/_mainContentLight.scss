@@ -29,7 +29,7 @@
     column-gap: 0.8rem;
   }
 
-  .leftOrUpperPart {
+  .leftOrUpperPartLight {
     display: flex;
     width: min(50%, 50%);
     height: auto;
@@ -642,15 +642,19 @@
             0% {
               filter: opacity(0.5) grayscale(10%) blur(0.05rem) brightness(80%);
               transform: scale(100%);
+              opacity: 0;
             }
             25% {
               transform: scale(101%);
+              opacity: 0.25;
             }
             50% {
               transform: scale(102%);
+              opacity: 0.5;
             }
             75% {
               transform: scale(101%);
+              opacity: 0.75;
             }
             100% {
               transform: scale(100%);
@@ -2325,7 +2329,7 @@
     }
   }
 
-  .rightOrLowerPart {
+  .rightOrLowerPartLight {
     display: flex;
     flex-direction: column;
     width: min(50%, 50%);
@@ -2843,7 +2847,7 @@
             overflow-x: hidden;
             overscroll-behavior-y: contain;
             scrollbar-width: thin;
-            scrollbar-color: #999999 #4f4d41;
+            scrollbar-color: #999999 #886849;
             scroll-snap-type: y mandatory;
             scroll-behavior: smooth;
 
@@ -3427,7 +3431,7 @@
     column-gap: 0.8rem;
   }
 
-  .leftOrUpperPart {
+  .leftOrUpperPartLight {
     display: flex;
     flex-direction: column;
     row-gap: 1rem;
@@ -4045,15 +4049,19 @@
             0% {
               filter: opacity(0.5) grayscale(10%) blur(0.05rem) brightness(80%);
               transform: scale(100%);
+              opacity: 0;
             }
             25% {
               transform: scale(101%);
+              opacity: 0.25;
             }
             50% {
               transform: scale(102%);
+              opacity: 0.5;
             }
             75% {
               transform: scale(101%);
+              opacity: 0.75;
             }
             100% {
               transform: scale(100%);
@@ -5184,7 +5192,7 @@
     }
   }
 
-  .rightOrLowerPart {
+  .rightOrLowerPartLight {
     display: flex;
     width: min(50%, 50%);
     height: auto;
@@ -5691,7 +5699,7 @@
             overflow-y: hidden;
             overflow-x: hidden;
             scrollbar-width: thin;
-            scrollbar-color: #999999 #4f4d41;
+            scrollbar-color: #999999 #886849;
 
             @media (min-width: 300px) and (max-width: 600px) {
               height: min(22rem, 22rem);
@@ -6337,7 +6345,7 @@
             overflow-y: hidden;
             overflow-x: hidden;
             scrollbar-width: thin;
-            scrollbar-color: #999999 #4f4d41;
+            scrollbar-color: #999999 #886849;
 
             @media (min-width: 300px) and (max-width: 600px) {
               height: min(22rem, 22rem);
