@@ -31,7 +31,6 @@ export default function App() {
   //
   function toggleContactForm() {
     setIsContactFormOpen((prev) => !prev);
-    setClassType((prev) => !prev);
   }
   //
   function toggleContactFormMobile() {
@@ -71,7 +70,18 @@ export default function App() {
   }, [isLightModeOn]);
   //
 
-  // 2 Related to contactForm, when displayed, it can be closed when the user scrolls to the top of the page, and when closed, it scrolls back to the original position before the form was displayed
+  // 2 Related to allowing background to be scrollable
+
+  useEffect(() => {
+    classType
+      ? (document.getElementById('root').style.height = 'auto')
+      : document.getElementById('root').removeAttribute('style');
+
+    return () => {};
+  }, [classType]);
+  //
+
+  // 3 Related to contactForm, when displayed, it can be closed when the user scrolls to the top of the page, and when closed, it scrolls back to the original position before the form was displayed
   useEffect(() => {
     const originalScrollY = window.scrollY;
     const originalScrollX = window.scrollX;
@@ -90,34 +100,7 @@ export default function App() {
   }, [isContactFormOpen]);
   //
 
-  // 3 Related to contactFormMoble, when displayed, it allows background scrolling, and can be closed when the user scrolls to the top of the page, and when closed, it scrolls back to the original position before the form was displayed
-  // useEffect(() => {
-  //   const originalScrollY = window.scrollY;
-  //   const originalScrollX = window.scrollX;
-
-  //   isContactFormMobileOpen &&
-  //     document
-  //       .getElementById('contactFormMobile')
-  //       .scrollIntoView({ behavior: 'smooth' });
-  //   return () => {
-  //     window.scrollTo({
-  //       top: originalScrollY,
-  //       left: originalScrollX,
-  //       behavior: 'smooth',
-  //     });
-  //   };
-  // }, [isContactFormMobileOpen]);
-  //
-
   // 4 Related to skillList, when displayed, it allows background scrolling, and can be closed when the user scrolls to the top of the page, and when closed, it scrolls back to the original position before the form was displayed
-  useEffect(() => {
-    isSkillListOpen
-      ? (document.getElementById('root').style.height = 'auto')
-      : document.getElementById('root').removeAttribute('style');
-
-    return () => {};
-  }, [isSkillListOpen]);
-  //
   useEffect(() => {
     const originalScrollY = window.scrollY;
     const originalScrollX = window.scrollX;
@@ -138,14 +121,6 @@ export default function App() {
 
   // 5 Related to educationList, when displayed, it allows background scrolling, and can be closed when the user scrolls to the top of the page, and when closed, it scrolls back to the original position before the form was displayed
   useEffect(() => {
-    isEducationListOpen
-      ? (document.getElementById('root').style.height = 'auto')
-      : document.getElementById('root').removeAttribute('style');
-
-    return () => {};
-  }, [isEducationListOpen]);
-  //
-  useEffect(() => {
     const originalScrollY = window.scrollY;
     const originalScrollX = window.scrollX;
 
@@ -163,15 +138,7 @@ export default function App() {
   }, [isEducationListOpen]);
   //
 
-  // 6 Related to cyberList, when displayed, it allows background scrolling, and can be closed when the user scrolls to the top of the page, and when closed, it scrolls back to the original position before the form was displayed
-  useEffect(() => {
-    isCyberListOpen
-      ? (document.getElementById('root').style.height = 'auto')
-      : document.getElementById('root').removeAttribute('style');
-
-    return () => {};
-  }, [isCyberListOpen]);
-  //
+  // 6 Related to cyberList, when displayed, it allows background scrolling, and can be closed when the user scrolls to the top of the page, and when closed, it scrolls back to the original position before the form was displaye
   useEffect(() => {
     const originalScrollY = window.scrollY;
     const originalScrollX = window.scrollX;
@@ -191,14 +158,6 @@ export default function App() {
   //
 
   // 7 Related to educationList, when displayed, it allows background scrolling, and can be closed when the user scrolls to the top of the page, and when closed, it scrolls back to the original position before the form was displayed
-  useEffect(() => {
-    isWebListOpen
-      ? (document.getElementById('root').style.height = 'auto')
-      : document.getElementById('root').removeAttribute('style');
-
-    return () => {};
-  }, [isWebListOpen]);
-  //
   useEffect(() => {
     const originalScrollY = window.scrollY;
     const originalScrollX = window.scrollX;

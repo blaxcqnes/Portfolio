@@ -39,7 +39,7 @@ export default function LeftOrUpperPart({
       {/*  */}
       <div
         className={
-          classType
+          classType || isContactFormOpen
             ? 'leftOrUpperPartContainerUnfocused'
             : 'leftOrUpperPartContainer'
         }
@@ -64,12 +64,7 @@ export default function LeftOrUpperPart({
             <div className="locationAndContactForm">
               <p className="locationForSmallerScreens">Riyadh, Saudi Arabia</p>
 
-              {isContactFormOpen ||
-              isContactFormMobileOpen ||
-              isSkillListOpen ||
-              isEducationListOpen ||
-              isCyberListOpen ||
-              isWebListOpen ? (
+              {classType || isContactFormOpen ? (
                 <button className="contact" disabled>
                   Contact
                 </button>
@@ -94,17 +89,17 @@ export default function LeftOrUpperPart({
             }
           >
             {isLightModeOn ? (
-              <img src={meLight} alt="" className="smallerImgLight" />
+              <img src={meLight} className="smallerImgLight" />
             ) : (
-              <img src={me} alt="" className="smallerImg" />
+              <img src={me} className="smallerImg" />
             )}
             <p>Cybersecurity Professional & Web Developer</p>
           </div>
           {/*  */}
           {isLightModeOn ? (
-            <img src={meLight} alt="" className="regularImgLight" />
+            <img src={meLight} className="regularImgLight" />
           ) : (
-            <img src={me} alt="" className="regularImg" />
+            <img src={me} className="regularImg" />
           )}
           {/*  */}
         </section>
@@ -120,20 +115,12 @@ export default function LeftOrUpperPart({
             {/*  */}
             <div className="titleAndButton">
               <p className="title">Skills</p>
-              {isContactFormOpen ||
-              isContactFormMobileOpen ||
-              isSkillListOpen ||
-              isEducationListOpen ||
-              isCyberListOpen ||
-              isWebListOpen ? (
+              {classType || isContactFormOpen ? (
                 <button className="fluency" disabled>
                   Fluency
                 </button>
               ) : (
-                <button
-                  className="fluency"
-                  onClick={!isSkillListOpen ? toggleSkillList : undefined}
-                >
+                <button className="fluency" onClick={toggleSkillList}>
                   Fluency
                 </button>
               )}
@@ -156,22 +143,12 @@ export default function LeftOrUpperPart({
             {/*  */}
             <div className="titleAndButton">
               <p className="title">Education</p>
-              {isContactFormOpen ||
-              isContactFormMobileOpen ||
-              isSkillListOpen ||
-              isEducationListOpen ||
-              isCyberListOpen ||
-              isWebListOpen ? (
+              {classType || isContactFormOpen ? (
                 <button className="courses" disabled>
                   Courses
                 </button>
               ) : (
-                <button
-                  className="courses"
-                  onClick={
-                    !isEducationListOpen ? toggleEducationList : undefined
-                  }
-                >
+                <button className="courses" onClick={toggleEducationList}>
                   Courses
                 </button>
               )}

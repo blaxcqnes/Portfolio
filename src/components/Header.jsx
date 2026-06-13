@@ -36,7 +36,11 @@ export default function Header({
   return (
     <main className={isLightModeOn ? 'headerLight' : 'header'}>
       <section
-        className={classType ? 'headerContainerUnfocused' : 'headerContainer'}
+        className={
+          classType || isContactFormOpen
+            ? 'headerContainerUnfocused'
+            : 'headerContainer'
+        }
         onClick={handleClick}
         style={{ marginBottom: isContactFormMobileOpen ? '0.2rem' : '0' }}
       >
@@ -53,12 +57,7 @@ export default function Header({
           />
 
           <p className="location">Riyadh, Saudi Arabia</p>
-          {isContactFormOpen ||
-          isContactFormMobileOpen ||
-          isSkillListOpen ||
-          isEducationListOpen ||
-          isCyberListOpen ||
-          isWebListOpen ? (
+          {classType || isContactFormOpen ? (
             <button className="contact" disabled>
               Contact
             </button>

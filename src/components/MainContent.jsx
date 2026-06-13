@@ -23,15 +23,7 @@ export default function MainContent({
       className={isLightModeOn ? 'mainContentLight' : 'mainContent'}
       onClick={isContactFormOpen ? toggleContactForm : undefined}
       style={{
-        transform:
-          isContactFormOpen ||
-          isContactFormMobileOpen ||
-          isSkillListOpen ||
-          isEducationListOpen ||
-          isCyberListOpen ||
-          isWebListOpen
-            ? 'scale(0.98)'
-            : 'scale(1)',
+        transform: classType || isContactFormOpen ? 'scale(0.98)' : 'scale(1)',
       }}
     >
       <LeftOrUpperPart

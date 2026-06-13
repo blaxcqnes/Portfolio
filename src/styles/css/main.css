@@ -632,7 +632,7 @@
   }
 }
 .header .headerContainerUnfocused .locationAndContact .lightButton {
-  display: flex;
+  display: block;
   justify-content: center;
   align-items: center;
   width: 0;
@@ -642,6 +642,46 @@
   background-color: #656253;
   transition: all 0.2s ease;
   opacity: 0;
+  animation: lightButton 0.2s linear;
+  animation-iteration-count: 1;
+}
+@keyframes lightButton {
+  0% {
+    width: 2.5rem;
+    height: 2.5rem;
+    margin-right: 2rem;
+    opacity: 1;
+  }
+  20% {
+    width: 2rem;
+    height: 2rem;
+    margin-right: 1.5rem;
+    opacity: 0.8;
+  }
+  40% {
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-right: 1rem;
+    opacity: 0.6;
+  }
+  60% {
+    width: 1rem;
+    height: 1rem;
+    margin-right: 0.5rem;
+    opacity: 0.4;
+  }
+  80% {
+    width: 0.5rem;
+    height: 0.5rem;
+    margin-right: 0;
+    opacity: 0.2;
+  }
+  100% {
+    width: 0;
+    height: 0;
+    margin-right: 0;
+    opacity: 0;
+  }
 }
 @media (min-width: 300px) and (max-width: 1023px) {
   .header .headerContainerUnfocused .locationAndContact .lightButton {
@@ -656,6 +696,40 @@
   height: 0;
   transition: all 0.2s ease;
   opacity: 0;
+  animation: light 0.2s linear;
+  animation-iteration-count: 1;
+}
+@keyframes light {
+  0% {
+    width: 22px;
+    height: 22px;
+    opacity: 1;
+  }
+  20% {
+    width: 17.6px;
+    height: 17.6px;
+    opacity: 0.8;
+  }
+  40% {
+    width: 13.2px;
+    height: 13.2px;
+    opacity: 0.6;
+  }
+  60% {
+    width: 8.8px;
+    height: 8.8px;
+    opacity: 0.4;
+  }
+  80% {
+    width: 4.4px;
+    height: 4.4px;
+    opacity: 0.2;
+  }
+  100% {
+    width: 0;
+    height: 0;
+    opacity: 0;
+  }
 }
 .header .headerContainerUnfocused .locationAndContact .location {
   font-size: 10pt;
@@ -9251,6 +9325,46 @@ input[type=email]) {
   background-color: #656253;
   transition: all 0.2s ease;
   opacity: 0;
+  animation: lightButton 0.2s linear;
+  animation-iteration-count: 1;
+}
+@keyframes lightButton {
+  0% {
+    width: 2.5rem;
+    height: 2.5rem;
+    margin-right: 2rem;
+    opacity: 1;
+  }
+  20% {
+    width: 2rem;
+    height: 2rem;
+    margin-right: 1.5rem;
+    opacity: 0.8;
+  }
+  40% {
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-right: 1rem;
+    opacity: 0.6;
+  }
+  60% {
+    width: 1rem;
+    height: 1rem;
+    margin-right: 0.5rem;
+    opacity: 0.4;
+  }
+  80% {
+    width: 0.5rem;
+    height: 0.5rem;
+    margin-right: 0;
+    opacity: 0.2;
+  }
+  100% {
+    width: 0;
+    height: 0;
+    margin-right: 0;
+    opacity: 0;
+  }
 }
 @media (min-width: 300px) and (max-width: 1023px) {
   .headerLight .headerContainerUnfocused .locationAndContact .darkButton {
@@ -9264,6 +9378,41 @@ input[type=email]) {
   width: 0;
   height: 0;
   transition: all 0.2s ease;
+  opacity: 0;
+  animation: light 0.2s linear;
+  animation-iteration-count: 1;
+}
+@keyframes light {
+  0% {
+    width: 22px;
+    height: 22px;
+    opacity: 1;
+  }
+  20% {
+    width: 17.6px;
+    height: 17.6px;
+    opacity: 0.8;
+  }
+  40% {
+    width: 13.2px;
+    height: 13.2px;
+    opacity: 0.6;
+  }
+  60% {
+    width: 8.8px;
+    height: 8.8px;
+    opacity: 0.4;
+  }
+  80% {
+    width: 4.4px;
+    height: 4.4px;
+    opacity: 0.2;
+  }
+  100% {
+    width: 0;
+    height: 0;
+    opacity: 0;
+  }
 }
 .headerLight .headerContainerUnfocused .locationAndContact .location {
   font-size: 10pt;

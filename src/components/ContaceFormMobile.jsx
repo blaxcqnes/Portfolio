@@ -83,7 +83,7 @@ export default function ContactFormMobile({
             isContactFormMobileOpen ? toggleContactFormMobile : undefined
           }
         >
-          Close {console.log(isContactFormMobileOpen)}
+          Close
         </button>
         {/*  */}
       </div>

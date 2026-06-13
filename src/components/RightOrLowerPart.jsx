@@ -44,7 +44,7 @@ export default function RightOrLowerPart({
       {/*  */}
       <div
         className={
-          classType
+          classType || isContactFormOpen
             ? 'rightOrLowerPartContainerUnfocused'
             : 'rightOrLowerPartContainer'
         }
@@ -76,12 +76,7 @@ export default function RightOrLowerPart({
               </ol>
             </div>
             {/*  */}
-            {isContactFormOpen ||
-            isContactFormMobileOpen ||
-            isSkillListOpen ||
-            isEducationListOpen ||
-            isCyberListOpen ||
-            isWebListOpen ? (
+            {classType || isContactFormOpen ? (
               <button className="extras" disabled>
                 Extras
               </button>
@@ -127,12 +122,7 @@ export default function RightOrLowerPart({
               {/*  */}
             </div>
             {/*  */}
-            {isContactFormOpen ||
-            isContactFormMobileOpen ||
-            isSkillListOpen ||
-            isEducationListOpen ||
-            isCyberListOpen ||
-            isWebListOpen ? (
+            {classType || isContactFormOpen ? (
               <button className="more" disabled>
                 More
               </button>
@@ -158,13 +148,14 @@ export default function RightOrLowerPart({
                   height: '0',
                   padding: '0',
                   borderRadius: '0',
+                  transition: 'all 0.2s ease',
                   opacity: '0',
                 }
               : {
                   display: 'flex',
                   width: '100%',
-                  // height: 'min(6.5rem, 6.5rem)',
                   padding: '1.5rem 1rem',
+                  transition: 'all 0.2s ease',
                   borderRadius: '0.5rem',
                   opacity: '1',
                 }
