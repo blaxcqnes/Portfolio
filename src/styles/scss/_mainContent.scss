@@ -5816,7 +5816,7 @@
         height: min(30.95rem, 30.95rem);
 
         @media (min-width: 300px) and (max-width: 600px) {
-          flex-direction: column-reverse;
+          flex-direction: column;
           row-gap: 1rem;
           height: auto;
           animation: projectsSwapped 0.5s linear;
