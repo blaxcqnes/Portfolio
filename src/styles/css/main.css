@@ -7776,7 +7776,7 @@ input[type=email]) {
 }
 @media (min-width: 300px) and (max-width: 600px) {
   .mainContent .rightOrLowerPart .rightOrLowerPartContainerUnfocused .projectsSwapped {
-    flex-direction: column;
+    flex-direction: column-reverse;
     row-gap: 1rem;
     height: auto;
     animation: projectsSwapped 0.5s linear;
@@ -16511,7 +16511,7 @@ input[type=email]) {
 }
 @media (min-width: 300px) and (max-width: 600px) {
   .mainContentLight .rightOrLowerPartLight .rightOrLowerPartContainerUnfocused .projectsSwapped {
-    flex-direction: column;
+    flex-direction: column-reverse;
     row-gap: 1rem;
     height: auto;
     animation: projectsSwapped 0.5s linear;
