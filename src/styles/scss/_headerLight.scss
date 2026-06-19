@@ -929,6 +929,10 @@
           font-size: 9pt;
         }
 
+        @media (min-width: 300px) and (max-width: 1023px) {
+          cursor: default;
+        }
+
         @media (min-width: 1023px) and (max-width: 1400px) {
           width: min(6rem, 6rem);
           height: min(2.3rem, 2.3rem);

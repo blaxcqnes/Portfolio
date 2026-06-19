@@ -1024,6 +1024,11 @@
     font-size: 9pt;
   }
 }
+@media (min-width: 300px) and (max-width: 1023px) {
+  .header .contactForm .titleAndButton .close {
+    cursor: default;
+  }
+}
 @media (min-width: 1023px) and (max-width: 1400px) {
   .header .contactForm .titleAndButton .close {
     width: 6rem;
@@ -2997,19 +3002,11 @@ input[type=email]) {
 .mainContent .leftOrUpperPart .skillList .titleAndButton .close:hover {
   background-color: #4f4d41;
 }
-@media (min-width: 300px) and (max-width: 600px) {
+@media (min-width: 300px) and (max-width: 400px) {
   .mainContent .leftOrUpperPart .skillList .titleAndButton .close {
     width: 6rem;
     height: 2.3rem;
-    top: 0;
     font-size: 9pt;
-  }
-}
-@media (width: 700px) {
-  .mainContent .leftOrUpperPart .skillList .titleAndButton .close {
-    width: 6rem;
-    font-size: 9pt;
-    bottom: 0 !important;
   }
 }
 @media (min-width: 700px) and (max-width: 767px) {
@@ -3038,6 +3035,11 @@ input[type=email]) {
   height: 74%;
   background-color: #2a2a2a;
   border-radius: 0.5rem;
+}
+@media (min-width: 300px) and (max-width: 600px) {
+  .mainContent .leftOrUpperPart .skillList .content {
+    width: 97%;
+  }
 }
 .mainContent .leftOrUpperPart .educationList {
   display: flex;
@@ -3101,19 +3103,11 @@ input[type=email]) {
 .mainContent .leftOrUpperPart .educationList .titleAndButton .close:hover {
   background-color: #635445;
 }
-@media (min-width: 300px) and (max-width: 600px) {
+@media (min-width: 300px) and (max-width: 400px) {
   .mainContent .leftOrUpperPart .educationList .titleAndButton .close {
     width: 6rem;
     height: 2.3rem;
-    top: 0;
     font-size: 9pt;
-  }
-}
-@media (width: 700px) {
-  .mainContent .leftOrUpperPart .educationList .titleAndButton .close {
-    width: 6rem;
-    font-size: 9pt;
-    bottom: 0 !important;
   }
 }
 @media (min-width: 700px) and (max-width: 767px) {
@@ -3142,6 +3136,11 @@ input[type=email]) {
   height: 74%;
   background-color: #2a2a2a;
   border-radius: 0.5rem;
+}
+@media (min-width: 300px) and (max-width: 600px) {
+  .mainContent .leftOrUpperPart .educationList .content {
+    width: 97%;
+  }
 }
 .mainContent .leftOrUpperPart .contactFormMobile {
   display: flex;
@@ -3396,7 +3395,7 @@ input[type=email]) {
     width: 85%;
     height: 31.625rem;
     position: absolute;
-    transform: translate(7.5%, 120%);
+    transform: translate(7.5%, 119%);
     animation: contactFormMobile 0.2s linear;
     animation-iteration-count: 1;
   }
@@ -3404,23 +3403,23 @@ input[type=email]) {
     0% {
       filter: opacity(0.5) grayscale(10%) blur(0.05rem) brightness(80%);
       transform: scale(100%);
-      transform: translate(0%, 116%);
+      transform: translate(0.5%, 115%);
     }
     25% {
       transform: scale(101%);
-      transform: translate(0%, 117%);
+      transform: translate(2.5%, 116%);
     }
     50% {
       transform: scale(102%);
-      transform: translate(0%, 118%);
+      transform: translate(4.5%, 117%);
     }
     75% {
       transform: scale(101%);
-      transform: translate(0%, 119%);
+      transform: translate(5.5%, 118%);
     }
     100% {
       transform: scale(100%);
-      transform: translate(7.5%, 120%);
+      transform: translate(7.5%, 119%);
       opacity: 1;
     }
   }
@@ -3438,19 +3437,19 @@ input[type=email]) {
     0% {
       filter: opacity(0.5) grayscale(10%) blur(0.05rem) brightness(80%);
       transform: scale(100%);
-      transform: translate(0%, 126%);
+      transform: translate(0.5%, 126%);
     }
     25% {
       transform: scale(101%);
-      transform: translate(0%, 127%);
+      transform: translate(2.5%, 127%);
     }
     50% {
       transform: scale(102%);
-      transform: translate(0%, 128%);
+      transform: translate(4.5%, 128%);
     }
     75% {
       transform: scale(101%);
-      transform: translate(0%, 129%);
+      transform: translate(5.5%, 129%);
     }
     100% {
       transform: scale(100%);
@@ -3699,7 +3698,7 @@ input[type=email]) {
   align-self: center;
   border: 0.1rem solid #4f4d41;
   border-radius: 0.5rem;
-  background-color: #232323;
+  background-color: #2a2a2a;
 }
 .mainContent .leftOrUpperPart .contactFormMobile form .namesAndSubject .names .firstName:focus:where(input[type=text],
 input[type=search],
@@ -3709,6 +3708,9 @@ input[type=email]) {
   appearance: none;
   border-style: solid;
   outline: none;
+}
+.mainContent .leftOrUpperPart .contactFormMobile form .namesAndSubject .names .firstName::placeholder {
+  color: #a6a6a6;
 }
 @media (min-width: 300px) and (max-width: 400px) {
   .mainContent .leftOrUpperPart .contactFormMobile form .namesAndSubject .names .firstName {
@@ -3722,7 +3724,7 @@ input[type=email]) {
   align-self: center;
   border: 0.1rem solid #4f4d41;
   border-radius: 0.5rem;
-  background-color: #232323;
+  background-color: #2a2a2a;
 }
 .mainContent .leftOrUpperPart .contactFormMobile form .namesAndSubject .names .lastName:focus:where(input[type=text],
 input[type=search],
@@ -3732,6 +3734,9 @@ input[type=email]) {
   appearance: none;
   border-style: solid;
   outline: none;
+}
+.mainContent .leftOrUpperPart .contactFormMobile form .namesAndSubject .names .lastName::placeholder {
+  color: #a6a6a6;
 }
 @media (min-width: 300px) and (max-width: 400px) {
   .mainContent .leftOrUpperPart .contactFormMobile form .namesAndSubject .names .lastName {
@@ -3745,7 +3750,7 @@ input[type=email]) {
   align-self: center;
   border: 0.1rem solid #4f4d41;
   border-radius: 0.5rem;
-  background-color: #232323;
+  background-color: #2a2a2a;
 }
 .mainContent .leftOrUpperPart .contactFormMobile form .namesAndSubject .subject:focus:where(input[type=text],
 input[type=search],
@@ -3755,6 +3760,9 @@ input[type=email]) {
   appearance: none;
   border-style: solid;
   outline: none;
+}
+.mainContent .leftOrUpperPart .contactFormMobile form .namesAndSubject .subject::placeholder {
+  color: #a6a6a6;
 }
 @media (min-width: 300px) and (max-width: 400px) {
   .mainContent .leftOrUpperPart .contactFormMobile form .namesAndSubject .subject {
@@ -3768,7 +3776,7 @@ input[type=email]) {
   align-self: center;
   border: 0.1rem solid #4f4d41;
   border-radius: 0.5rem;
-  background-color: #232323;
+  background-color: #2a2a2a;
 }
 .mainContent .leftOrUpperPart .contactFormMobile form .email:focus:where(input[type=text],
 input[type=search],
@@ -3778,6 +3786,9 @@ input[type=email]) {
   appearance: none;
   border-style: solid;
   outline: none;
+}
+.mainContent .leftOrUpperPart .contactFormMobile form .email::placeholder {
+  color: #a6a6a6;
 }
 @media (min-width: 300px) and (max-width: 400px) {
   .mainContent .leftOrUpperPart .contactFormMobile form .email {
@@ -3791,13 +3802,16 @@ input[type=email]) {
   align-self: center;
   border: 0.1rem solid #4f4d41;
   border-radius: 0.5rem;
-  background-color: #232323;
+  background-color: #2a2a2a;
   resize: none;
 }
 .mainContent .leftOrUpperPart .contactFormMobile form .textArea:focus:where(textarea) {
   appearance: none;
   border-style: solid;
   outline: none;
+}
+.mainContent .leftOrUpperPart .contactFormMobile form .textArea::placeholder {
+  color: #a6a6a6;
 }
 @media (min-width: 300px) and (max-width: 400px) {
   .mainContent .leftOrUpperPart .contactFormMobile form .textArea {
@@ -5049,19 +5063,11 @@ input[type=email]) {
 .mainContent .rightOrLowerPart .cyberList .titleAndButton .close:hover {
   background-color: #4f4d41;
 }
-@media (min-width: 300px) and (max-width: 600px) {
+@media (min-width: 300px) and (max-width: 400px) {
   .mainContent .rightOrLowerPart .cyberList .titleAndButton .close {
     width: 6rem;
     height: 2.3rem;
-    top: 0;
     font-size: 9pt;
-  }
-}
-@media (width: 700px) {
-  .mainContent .rightOrLowerPart .cyberList .titleAndButton .close {
-    width: 6rem;
-    font-size: 9pt;
-    bottom: 0 !important;
   }
 }
 @media (min-width: 700px) and (max-width: 767px) {
@@ -5090,6 +5096,11 @@ input[type=email]) {
   height: 74%;
   background-color: #2a2a2a;
   border-radius: 0.5rem;
+}
+@media (min-width: 300px) and (max-width: 600px) {
+  .mainContent .rightOrLowerPart .cyberList .content {
+    width: 97%;
+  }
 }
 .mainContent .rightOrLowerPart .webList {
   display: flex;
@@ -5153,19 +5164,11 @@ input[type=email]) {
 .mainContent .rightOrLowerPart .webList .titleAndButton .close:hover {
   background-color: #635445;
 }
-@media (min-width: 300px) and (max-width: 600px) {
+@media (min-width: 300px) and (max-width: 400px) {
   .mainContent .rightOrLowerPart .webList .titleAndButton .close {
     width: 6rem;
     height: 2.3rem;
-    top: 0;
     font-size: 9pt;
-  }
-}
-@media (width: 700px) {
-  .mainContent .rightOrLowerPart .webList .titleAndButton .close {
-    width: 6rem;
-    font-size: 9pt;
-    bottom: 0 !important;
   }
 }
 @media (min-width: 700px) and (max-width: 767px) {
@@ -5194,6 +5197,11 @@ input[type=email]) {
   height: 74%;
   background-color: #2a2a2a;
   border-radius: 0.5rem;
+}
+@media (min-width: 300px) and (max-width: 600px) {
+  .mainContent .rightOrLowerPart .webList .content {
+    width: 97%;
+  }
 }
 
 .mainContent {
@@ -6590,6 +6598,7 @@ input[type=email]) {
   .mainContent .leftOrUpperPart .leftOrUpperPartContainerUnfocused .skillsAndEducationSwapped {
     flex-direction: column;
     row-gap: 1rem;
+    transition: all 0.5s ease;
     animation: skillsAndEducationSwapped 0.5s linear;
     animation-iteration-count: 1;
   }
@@ -7945,6 +7954,7 @@ input[type=email]) {
     flex-direction: column;
     row-gap: 1rem;
     height: auto;
+    transition: all 0.5s ease;
     animation: projectsSwapped 0.5s linear;
     animation-iteration-count: 1;
   }
@@ -9882,6 +9892,11 @@ input[type=email]) {
   .headerLight .contactForm .titleAndButton .close {
     width: 6rem;
     font-size: 9pt;
+  }
+}
+@media (min-width: 300px) and (max-width: 1023px) {
+  .headerLight .contactForm .titleAndButton .close {
+    cursor: default;
   }
 }
 @media (min-width: 1023px) and (max-width: 1400px) {
@@ -11866,19 +11881,11 @@ input[type=email]) {
   background-color: #886849;
   color: #ebebeb;
 }
-@media (min-width: 300px) and (max-width: 600px) {
+@media (min-width: 300px) and (max-width: 400px) {
   .mainContentLight .leftOrUpperPartLight .skillList .titleAndButton .close {
     width: 6rem;
     height: 2.3rem;
-    top: 0;
     font-size: 9pt;
-  }
-}
-@media (width: 700px) {
-  .mainContentLight .leftOrUpperPartLight .skillList .titleAndButton .close {
-    width: 6rem;
-    font-size: 9pt;
-    bottom: 0 !important;
   }
 }
 @media (min-width: 700px) and (max-width: 767px) {
@@ -11907,6 +11914,11 @@ input[type=email]) {
   height: 74%;
   background-color: #c8c8c8;
   border-radius: 0.5rem;
+}
+@media (min-width: 300px) and (max-width: 600px) {
+  .mainContentLight .leftOrUpperPartLight .skillList .content {
+    width: 97%;
+  }
 }
 .mainContentLight .leftOrUpperPartLight .educationList {
   display: flex;
@@ -11971,19 +11983,11 @@ input[type=email]) {
   background-color: #656253;
   color: #ebebeb;
 }
-@media (min-width: 300px) and (max-width: 600px) {
+@media (min-width: 300px) and (max-width: 400px) {
   .mainContentLight .leftOrUpperPartLight .educationList .titleAndButton .close {
     width: 6rem;
     height: 2.3rem;
-    top: 0;
     font-size: 9pt;
-  }
-}
-@media (width: 700px) {
-  .mainContentLight .leftOrUpperPartLight .educationList .titleAndButton .close {
-    width: 6rem;
-    font-size: 9pt;
-    bottom: 0 !important;
   }
 }
 @media (min-width: 700px) and (max-width: 767px) {
@@ -12012,6 +12016,11 @@ input[type=email]) {
   height: 74%;
   background-color: #c8c8c8;
   border-radius: 0.5rem;
+}
+@media (min-width: 300px) and (max-width: 600px) {
+  .mainContentLight .leftOrUpperPartLight .educationList .content {
+    width: 97%;
+  }
 }
 .mainContentLight .leftOrUpperPartLight .contactFormMobile {
   display: flex;
@@ -12266,7 +12275,7 @@ input[type=email]) {
     width: 85%;
     height: 31.625rem;
     position: absolute;
-    transform: translate(7.5%, 120%);
+    transform: translate(7.5%, 119%);
     animation: contactFormMobile 0.2s linear;
     animation-iteration-count: 1;
   }
@@ -12274,23 +12283,23 @@ input[type=email]) {
     0% {
       filter: opacity(0.5) grayscale(10%) blur(0.05rem) brightness(80%);
       transform: scale(100%);
-      transform: translate(0%, 116%);
+      transform: translate(0.5%, 115%);
     }
     25% {
       transform: scale(101%);
-      transform: translate(0%, 117%);
+      transform: translate(2.5%, 116%);
     }
     50% {
       transform: scale(102%);
-      transform: translate(0%, 118%);
+      transform: translate(4.5%, 117%);
     }
     75% {
       transform: scale(101%);
-      transform: translate(0%, 119%);
+      transform: translate(5.5%, 118%);
     }
     100% {
       transform: scale(100%);
-      transform: translate(7.5%, 120%);
+      transform: translate(7.5%, 119%);
       opacity: 1;
     }
   }
@@ -12308,19 +12317,19 @@ input[type=email]) {
     0% {
       filter: opacity(0.5) grayscale(10%) blur(0.05rem) brightness(80%);
       transform: scale(100%);
-      transform: translate(0%, 126%);
+      transform: translate(0.5%, 126%);
     }
     25% {
       transform: scale(101%);
-      transform: translate(0%, 127%);
+      transform: translate(2.5%, 127%);
     }
     50% {
       transform: scale(102%);
-      transform: translate(0%, 128%);
+      transform: translate(4.5%, 128%);
     }
     75% {
       transform: scale(101%);
-      transform: translate(0%, 129%);
+      transform: translate(5.5%, 129%);
     }
     100% {
       transform: scale(100%);
@@ -13943,19 +13952,11 @@ input[type=email]) {
   background-color: #886849;
   color: #ebebeb;
 }
-@media (min-width: 300px) and (max-width: 600px) {
+@media (min-width: 300px) and (max-width: 400px) {
   .mainContentLight .rightOrLowerPartLight .cyberList .titleAndButton .close {
     width: 6rem;
     height: 2.3rem;
-    top: 0;
     font-size: 9pt;
-  }
-}
-@media (width: 700px) {
-  .mainContentLight .rightOrLowerPartLight .cyberList .titleAndButton .close {
-    width: 6rem;
-    font-size: 9pt;
-    bottom: 0 !important;
   }
 }
 @media (min-width: 700px) and (max-width: 767px) {
@@ -13984,6 +13985,11 @@ input[type=email]) {
   height: 74%;
   background-color: #c8c8c8;
   border-radius: 0.5rem;
+}
+@media (min-width: 300px) and (max-width: 600px) {
+  .mainContentLight .rightOrLowerPartLight .cyberList .content {
+    width: 97%;
+  }
 }
 .mainContentLight .rightOrLowerPartLight .webList {
   display: flex;
@@ -14048,19 +14054,11 @@ input[type=email]) {
   background-color: #656253;
   color: #ebebeb;
 }
-@media (min-width: 300px) and (max-width: 600px) {
+@media (min-width: 300px) and (max-width: 400px) {
   .mainContentLight .rightOrLowerPartLight .webList .titleAndButton .close {
     width: 6rem;
     height: 2.3rem;
-    top: 0;
     font-size: 9pt;
-  }
-}
-@media (width: 700px) {
-  .mainContentLight .rightOrLowerPartLight .webList .titleAndButton .close {
-    width: 6rem;
-    font-size: 9pt;
-    bottom: 0 !important;
   }
 }
 @media (min-width: 700px) and (max-width: 767px) {
@@ -14089,6 +14087,11 @@ input[type=email]) {
   height: 74%;
   background-color: #c8c8c8;
   border-radius: 0.5rem;
+}
+@media (min-width: 300px) and (max-width: 600px) {
+  .mainContentLight .rightOrLowerPartLight .webList .content {
+    width: 97%;
+  }
 }
 
 .mainContentLight {
@@ -15486,6 +15489,7 @@ input[type=email]) {
   .mainContentLight .leftOrUpperPartLight .leftOrUpperPartContainerUnfocused .skillsAndEducationSwapped {
     flex-direction: column;
     row-gap: 1rem;
+    transition: all 0.5s ease;
     animation: skillsAndEducationSwapped 0.5s linear;
     animation-iteration-count: 1;
   }
@@ -16841,6 +16845,7 @@ input[type=email]) {
     flex-direction: column;
     row-gap: 1rem;
     height: auto;
+    transition: all 0.5s ease;
     animation: projectsSwapped 0.5s linear;
     animation-iteration-count: 1;
   }

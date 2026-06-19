@@ -1320,17 +1320,10 @@
             background-color: #4f4d41;
           }
 
-          @media (min-width: 300px) and (max-width: 600px) {
+          @media (min-width: 300px) and (max-width: 400px) {
             width: min(6rem, 6rem);
             height: min(2.3rem, 2.3rem);
-            top: 0;
             font-size: 9pt;
-          }
-
-          @media (width: 700px) {
-            width: min(6rem, 6rem);
-            font-size: 9pt;
-            bottom: 0 !important;
           }
 
           @media (min-width: 700px) and (max-width: 767px) {
@@ -1358,6 +1351,10 @@
         height: 74%;
         background-color: #2a2a2a;
         border-radius: 0.5rem;
+
+        @media (min-width: 300px) and (max-width: 600px) {
+          width: 97%;
+        }
       }
     }
 
@@ -1426,17 +1423,10 @@
             background-color: #635445;
           }
 
-          @media (min-width: 300px) and (max-width: 600px) {
+          @media (min-width: 300px) and (max-width: 400px) {
             width: min(6rem, 6rem);
             height: min(2.3rem, 2.3rem);
-            top: 0;
             font-size: 9pt;
-          }
-
-          @media (width: 700px) {
-            width: min(6rem, 6rem);
-            font-size: 9pt;
-            bottom: 0 !important;
           }
 
           @media (min-width: 700px) and (max-width: 767px) {
@@ -1464,6 +1454,10 @@
         height: 74%;
         background-color: #2a2a2a;
         border-radius: 0.5rem;
+
+        @media (min-width: 300px) and (max-width: 600px) {
+          width: 97%;
+        }
       }
     }
 
@@ -1719,7 +1713,7 @@
         width: min(85%, 85%);
         height: min(31.625rem, 31.625rem);
         position: absolute;
-        transform: translate(7.5%, 120%);
+        transform: translate(7.5%, 119%);
         animation: contactFormMobile 0.2s linear;
         animation-iteration-count: 1;
 
@@ -1727,23 +1721,23 @@
           0% {
             filter: opacity(0.5) grayscale(10%) blur(0.05rem) brightness(80%);
             transform: scale(100%);
-            transform: translate(0%, 116%);
+            transform: translate(0.5%, 115%);
           }
           25% {
             transform: scale(101%);
-            transform: translate(0%, 117%);
+            transform: translate(2.5%, 116%);
           }
           50% {
             transform: scale(102%);
-            transform: translate(0%, 118%);
+            transform: translate(4.5%, 117%);
           }
           75% {
             transform: scale(101%);
-            transform: translate(0%, 119%);
+            transform: translate(5.5%, 118%);
           }
           100% {
             transform: scale(100%);
-            transform: translate(7.5%, 120%);
+            transform: translate(7.5%, 119%);
             opacity: 1;
           }
         }
@@ -1761,19 +1755,19 @@
           0% {
             filter: opacity(0.5) grayscale(10%) blur(0.05rem) brightness(80%);
             transform: scale(100%);
-            transform: translate(0%, 126%);
+            transform: translate(0.5%, 126%);
           }
           25% {
             transform: scale(101%);
-            transform: translate(0%, 127%);
+            transform: translate(2.5%, 127%);
           }
           50% {
             transform: scale(102%);
-            transform: translate(0%, 128%);
+            transform: translate(4.5%, 128%);
           }
           75% {
             transform: scale(101%);
-            transform: translate(0%, 129%);
+            transform: translate(5.5%, 129%);
           }
           100% {
             transform: scale(100%);
@@ -2031,7 +2025,7 @@
               align-self: center;
               border: 0.1rem solid #4f4d41;
               border-radius: 0.5rem;
-              background-color: #232323;
+              background-color: #2a2a2a;
 
               &:focus:where(
                   input[type='text'],
@@ -2043,6 +2037,10 @@
                 appearance: none;
                 border-style: solid;
                 outline: none;
+              }
+
+              &::placeholder {
+                color: #a6a6a6;
               }
 
               @media (min-width: 300px) and (max-width: 400px) {
@@ -2057,7 +2055,7 @@
               align-self: center;
               border: 0.1rem solid #4f4d41;
               border-radius: 0.5rem;
-              background-color: #232323;
+              background-color: #2a2a2a;
 
               &:focus:where(
                   input[type='text'],
@@ -2069,6 +2067,10 @@
                 appearance: none;
                 border-style: solid;
                 outline: none;
+              }
+
+              &::placeholder {
+                color: #a6a6a6;
               }
 
               @media (min-width: 300px) and (max-width: 400px) {
@@ -2084,7 +2086,7 @@
             align-self: center;
             border: 0.1rem solid #4f4d41;
             border-radius: 0.5rem;
-            background-color: #232323;
+            background-color: #2a2a2a;
 
             &:focus:where(
                 input[type='text'],
@@ -2096,6 +2098,10 @@
               appearance: none;
               border-style: solid;
               outline: none;
+            }
+
+            &::placeholder {
+              color: #a6a6a6;
             }
 
             @media (min-width: 300px) and (max-width: 400px) {
@@ -2111,7 +2117,7 @@
           align-self: center;
           border: 0.1rem solid #4f4d41;
           border-radius: 0.5rem;
-          background-color: #232323;
+          background-color: #2a2a2a;
 
           &:focus:where(
               input[type='text'],
@@ -2123,6 +2129,10 @@
             appearance: none;
             border-style: solid;
             outline: none;
+          }
+
+          &::placeholder {
+            color: #a6a6a6;
           }
 
           @media (min-width: 300px) and (max-width: 400px) {
@@ -2137,13 +2147,17 @@
           align-self: center;
           border: 0.1rem solid #4f4d41;
           border-radius: 0.5rem;
-          background-color: #232323;
+          background-color: #2a2a2a;
           resize: none;
 
           &:focus:where(textarea) {
             appearance: none;
             border-style: solid;
             outline: none;
+          }
+
+          &::placeholder {
+            color: #a6a6a6;
           }
 
           @media (min-width: 300px) and (max-width: 400px) {
@@ -3295,17 +3309,10 @@
             background-color: #4f4d41;
           }
 
-          @media (min-width: 300px) and (max-width: 600px) {
+          @media (min-width: 300px) and (max-width: 400px) {
             width: min(6rem, 6rem);
             height: min(2.3rem, 2.3rem);
-            top: 0;
             font-size: 9pt;
-          }
-
-          @media (width: 700px) {
-            width: min(6rem, 6rem);
-            font-size: 9pt;
-            bottom: 0 !important;
           }
 
           @media (min-width: 700px) and (max-width: 767px) {
@@ -3333,6 +3340,10 @@
         height: 74%;
         background-color: #2a2a2a;
         border-radius: 0.5rem;
+
+        @media (min-width: 300px) and (max-width: 600px) {
+          width: 97%;
+        }
       }
     }
 
@@ -3401,17 +3412,10 @@
             background-color: #635445;
           }
 
-          @media (min-width: 300px) and (max-width: 600px) {
+          @media (min-width: 300px) and (max-width: 400px) {
             width: min(6rem, 6rem);
             height: min(2.3rem, 2.3rem);
-            top: 0;
             font-size: 9pt;
-          }
-
-          @media (width: 700px) {
-            width: min(6rem, 6rem);
-            font-size: 9pt;
-            bottom: 0 !important;
           }
 
           @media (min-width: 700px) and (max-width: 767px) {
@@ -3439,6 +3443,10 @@
         height: 74%;
         background-color: #2a2a2a;
         border-radius: 0.5rem;
+
+        @media (min-width: 300px) and (max-width: 600px) {
+          width: 97%;
+        }
       }
     }
   }
@@ -4705,6 +4713,7 @@
         @media (min-width: 300px) and (max-width: 600px) {
           flex-direction: column;
           row-gap: 1rem;
+          transition: all 0.5s ease;
           animation: skillsAndEducationSwapped 0.5s linear;
           animation-iteration-count: 1;
 
@@ -5927,6 +5936,7 @@
           flex-direction: column;
           row-gap: 1rem;
           height: auto;
+          transition: all 0.5s ease;
           animation: projectsSwapped 0.5s linear;
           animation-iteration-count: 1;
 

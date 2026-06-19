@@ -1,12 +1,9 @@
-export default function SkillList({ isSkillListOpen, toggleSkillList }) {
+export default function SkillList({ toggleSkillList }) {
   return (
     <main className="skillList" id="skillList">
       <div className="titleAndButton">
         <h4>Fluency</h4>
-        <button
-          className="close"
-          onClick={isSkillListOpen ? toggleSkillList : undefined}
-        >
+        <button className="close" onClick={toggleSkillList}>
           Close
         </button>
       </div>
