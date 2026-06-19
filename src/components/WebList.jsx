@@ -10,6 +10,7 @@ export default function WebList({ isWebListOpen, toggleWebList }) {
           Close
         </button>
       </div>
+      <div className="content"></div>
     </main>
   );
 }

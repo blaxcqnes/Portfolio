@@ -10,6 +10,7 @@ export default function SkillList({ isSkillListOpen, toggleSkillList }) {
           Close
         </button>
       </div>
+      <div className="content"></div>
     </main>
   );
 }

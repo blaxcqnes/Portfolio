@@ -13,6 +13,7 @@ export default function EducationList({
           Close
         </button>
       </div>
+      <div className="content"></div>
     </main>
   );
 }

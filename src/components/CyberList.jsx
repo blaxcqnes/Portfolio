@@ -10,6 +10,7 @@ export default function CyberList({ isCyberListOpen, toggleCyberList }) {
           Close
         </button>
       </div>
+      <div className="content"></div>
     </main>
   );
 }

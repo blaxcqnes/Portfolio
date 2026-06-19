@@ -440,6 +440,10 @@
                 font-size: 9pt;
               }
 
+              @media (min-width: 300px) and (max-width: 1023px) {
+                cursor: default;
+              }
+
               @media (min-width: 1023px) and (max-width: 1400px) {
                 width: min(6rem, 6rem);
                 height: min(2.3rem, 2.3rem);
@@ -926,6 +930,10 @@
                 font-size: 9pt;
               }
 
+              @media (min-width: 300px) and (max-width: 1023px) {
+                cursor: default;
+              }
+
               @media (min-width: 1023px) and (max-width: 1400px) {
                 width: min(6rem, 6rem);
                 height: min(2.3rem, 2.3rem);
@@ -1167,6 +1175,10 @@
                 font-size: 9pt;
               }
 
+              @media (min-width: 300px) and (max-width: 1023px) {
+                cursor: default;
+              }
+
               @media (min-width: 1023px) and (max-width: 1400px) {
                 width: min(6rem, 6rem);
                 height: min(2.3rem, 2.3rem);
@@ -1246,7 +1258,7 @@
     .skillList {
       display: flex;
       flex-direction: column;
-      row-gap: 1rem;
+      row-gap: 0.5rem;
       width: 100%;
       height: min(20rem, 20rem);
       animation: skillList 0.5s linear;
@@ -1326,6 +1338,10 @@
             font-size: 9pt;
           }
 
+          @media (min-width: 300px) and (max-width: 1023px) {
+            cursor: default;
+          }
+
           @media (min-width: 1023px) and (max-width: 1400px) {
             width: min(6rem, 6rem);
             height: min(2.3rem, 2.3rem);
@@ -1333,12 +1349,22 @@
           }
         }
       }
+
+      .content {
+        display: flex;
+        flex-direction: row;
+        align-self: center;
+        width: 98%;
+        height: 74%;
+        background-color: #2a2a2a;
+        border-radius: 0.5rem;
+      }
     }
 
     .educationList {
       display: flex;
       flex-direction: column;
-      row-gap: 1rem;
+      row-gap: 0.5rem;
       width: 100%;
       height: min(20rem, 20rem);
       animation: educationList 0.5s linear;
@@ -1418,12 +1444,26 @@
             font-size: 9pt;
           }
 
+          @media (min-width: 300px) and (max-width: 1023px) {
+            cursor: default;
+          }
+
           @media (min-width: 1023px) and (max-width: 1400px) {
             width: min(6rem, 6rem);
             height: min(2.3rem, 2.3rem);
             font-size: 9pt;
           }
         }
+      }
+
+      .content {
+        display: flex;
+        flex-direction: row;
+        align-self: center;
+        width: 98%;
+        height: 74%;
+        background-color: #2a2a2a;
+        border-radius: 0.5rem;
       }
     }
 
@@ -1783,6 +1823,10 @@
           @media (min-width: 700px) and (max-width: 767px) {
             width: min(6rem, 6rem);
             font-size: 9pt;
+          }
+
+          @media (min-width: 300px) and (max-width: 1023px) {
+            cursor: default;
           }
 
           @media (min-width: 1023px) and (max-width: 1400px) {
@@ -2653,6 +2697,10 @@
               font-size: 9pt;
             }
 
+            @media (min-width: 300px) and (max-width: 1023px) {
+              cursor: default;
+            }
+
             @media (min-width: 1023px) and (max-width: 1400px) {
               width: min(6rem, 6rem);
               height: min(2.3rem, 2.3rem);
@@ -2954,6 +3002,10 @@
               font-size: 9pt;
             }
 
+            @media (min-width: 300px) and (max-width: 1023px) {
+              cursor: default;
+            }
+
             @media (min-width: 1023px) and (max-width: 1400px) {
               width: min(6rem, 6rem);
               height: min(2.3rem, 2.3rem);
@@ -3181,7 +3233,7 @@
     .cyberList {
       display: flex;
       flex-direction: column;
-      row-gap: 1rem;
+      row-gap: 0.5rem;
       width: 100%;
       height: min(20rem, 20rem);
       animation: cyberList 0.5s linear;
@@ -3261,6 +3313,10 @@
             font-size: 9pt;
           }
 
+          @media (min-width: 300px) and (max-width: 1023px) {
+            cursor: default;
+          }
+
           @media (min-width: 1023px) and (max-width: 1400px) {
             width: min(6rem, 6rem);
             height: min(2.3rem, 2.3rem);
@@ -3268,12 +3324,22 @@
           }
         }
       }
+
+      .content {
+        display: flex;
+        flex-direction: row;
+        align-self: center;
+        width: 98%;
+        height: 74%;
+        background-color: #2a2a2a;
+        border-radius: 0.5rem;
+      }
     }
 
     .webList {
       display: flex;
       flex-direction: column;
-      row-gap: 1rem;
+      row-gap: 0.5rem;
       width: 100%;
       height: min(20rem, 20rem);
       animation: webList 0.5s linear;
@@ -3353,12 +3419,26 @@
             font-size: 9pt;
           }
 
+          @media (min-width: 300px) and (max-width: 1023px) {
+            cursor: default;
+          }
+
           @media (min-width: 1023px) and (max-width: 1400px) {
             width: min(6rem, 6rem);
             height: min(2.3rem, 2.3rem);
             font-size: 9pt;
           }
         }
+      }
+
+      .content {
+        display: flex;
+        flex-direction: row;
+        align-self: center;
+        width: 98%;
+        height: 74%;
+        background-color: #2a2a2a;
+        border-radius: 0.5rem;
       }
     }
   }
@@ -3810,6 +3890,10 @@
               @media (min-width: 700px) and (max-width: 767px) {
                 width: min(6rem, 6rem);
                 font-size: 9pt;
+              }
+
+              @media (min-width: 300px) and (max-width: 1023px) {
+                cursor: default;
               }
 
               @media (min-width: 1023px) and (max-width: 1400px) {
@@ -4293,6 +4377,10 @@
                 font-size: 9pt;
               }
 
+              @media (min-width: 300px) and (max-width: 1023px) {
+                cursor: default;
+              }
+
               @media (min-width: 1023px) and (max-width: 1400px) {
                 width: min(6rem, 6rem);
                 height: min(2.3rem, 2.3rem);
@@ -4527,6 +4615,10 @@
               @media (min-width: 700px) and (max-width: 767px) {
                 width: min(6rem, 6rem);
                 font-size: 9pt;
+              }
+
+              @media (min-width: 300px) and (max-width: 1023px) {
+                cursor: default;
               }
 
               @media (min-width: 1023px) and (max-width: 1400px) {
@@ -4847,6 +4939,10 @@
                 font-size: 9pt;
               }
 
+              @media (min-width: 300px) and (max-width: 1023px) {
+                cursor: default;
+              }
+
               @media (min-width: 1023px) and (max-width: 1400px) {
                 width: min(6rem, 6rem);
                 height: min(2.3rem, 2.3rem);
@@ -5081,6 +5177,10 @@
               @media (min-width: 700px) and (max-width: 767px) {
                 width: min(6rem, 6rem);
                 font-size: 9pt;
+              }
+
+              @media (min-width: 300px) and (max-width: 1023px) {
+                cursor: default;
               }
 
               @media (min-width: 1023px) and (max-width: 1400px) {
@@ -5502,6 +5602,10 @@
               font-size: 9pt;
             }
 
+            @media (min-width: 300px) and (max-width: 1023px) {
+              cursor: default;
+            }
+
             @media (min-width: 1023px) and (max-width: 1400px) {
               width: min(6rem, 6rem);
               height: min(2.3rem, 2.3rem);
@@ -5798,6 +5902,10 @@
               width: min(6rem, 6rem);
               bottom: 1.3rem;
               font-size: 9pt;
+            }
+
+            @media (min-width: 300px) and (max-width: 1023px) {
+              cursor: default;
             }
 
             @media (min-width: 1023px) and (max-width: 1400px) {
@@ -6147,6 +6255,10 @@
               font-size: 9pt;
             }
 
+            @media (min-width: 300px) and (max-width: 1023px) {
+              cursor: default;
+            }
+
             @media (min-width: 1023px) and (max-width: 1400px) {
               width: min(6rem, 6rem);
               height: min(2.3rem, 2.3rem);
@@ -6443,6 +6555,10 @@
               width: min(6rem, 6rem);
               bottom: 1.3rem;
               font-size: 9pt;
+            }
+
+            @media (min-width: 300px) and (max-width: 1023px) {
+              cursor: default;
             }
 
             @media (min-width: 1023px) and (max-width: 1400px) {
