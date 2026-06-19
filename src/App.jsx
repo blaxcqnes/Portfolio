@@ -180,7 +180,6 @@ export default function App() {
       const scrollTop = window.scrollY || document.documentElement.scrollTop;
 
       if (scrollTop <= 1) {
-        setIsContactFormOpen(false);
         setIsContactFormMobileOpen(false);
         setIsSkillListOpen(false);
         setIsEducationListOpen(false);
