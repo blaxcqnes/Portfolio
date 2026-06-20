@@ -1347,13 +1347,19 @@
         display: flex;
         flex-direction: row;
         align-self: center;
-        width: 98%;
+        width: 97.5%;
         height: 74%;
         background-color: #2a2a2a;
         border-radius: 0.5rem;
 
-        @media (min-width: 300px) and (max-width: 600px) {
+        @media (min-width: 300px) and (max-width: 400px) {
           width: 97%;
+          height: 75%;
+        }
+
+        @media (min-width: 400px) and (max-width: 600px) {
+          width: 97%;
+          height: 74.2%;
         }
       }
     }
@@ -1450,13 +1456,19 @@
         display: flex;
         flex-direction: row;
         align-self: center;
-        width: 98%;
+        width: 97.5%;
         height: 74%;
         background-color: #2a2a2a;
         border-radius: 0.5rem;
 
-        @media (min-width: 300px) and (max-width: 600px) {
+        @media (min-width: 300px) and (max-width: 400px) {
           width: 97%;
+          height: 75%;
+        }
+
+        @media (min-width: 400px) and (max-width: 600px) {
+          width: 97%;
+          height: 74.2%;
         }
       }
     }
@@ -3336,13 +3348,19 @@
         display: flex;
         flex-direction: row;
         align-self: center;
-        width: 98%;
+        width: 97.5%;
         height: 74%;
         background-color: #2a2a2a;
         border-radius: 0.5rem;
 
-        @media (min-width: 300px) and (max-width: 600px) {
+        @media (min-width: 300px) and (max-width: 400px) {
           width: 97%;
+          height: 75%;
+        }
+
+        @media (min-width: 400px) and (max-width: 600px) {
+          width: 97%;
+          height: 74.2%;
         }
       }
     }
@@ -3439,13 +3457,19 @@
         display: flex;
         flex-direction: row;
         align-self: center;
-        width: 98%;
+        width: 97.5%;
         height: 74%;
         background-color: #2a2a2a;
         border-radius: 0.5rem;
 
-        @media (min-width: 300px) and (max-width: 600px) {
+        @media (min-width: 300px) and (max-width: 400px) {
           width: 97%;
+          height: 75%;
+        }
+
+        @media (min-width: 400px) and (max-width: 600px) {
+          width: 97%;
+          height: 74.2%;
         }
       }
     }

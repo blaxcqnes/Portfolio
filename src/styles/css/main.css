@@ -3031,14 +3031,21 @@ input[type=email]) {
   display: flex;
   flex-direction: row;
   align-self: center;
-  width: 98%;
+  width: 97.5%;
   height: 74%;
   background-color: #2a2a2a;
   border-radius: 0.5rem;
 }
-@media (min-width: 300px) and (max-width: 600px) {
+@media (min-width: 300px) and (max-width: 400px) {
   .mainContent .leftOrUpperPart .skillList .content {
     width: 97%;
+    height: 75%;
+  }
+}
+@media (min-width: 400px) and (max-width: 600px) {
+  .mainContent .leftOrUpperPart .skillList .content {
+    width: 97%;
+    height: 74.2%;
   }
 }
 .mainContent .leftOrUpperPart .educationList {
@@ -3132,14 +3139,21 @@ input[type=email]) {
   display: flex;
   flex-direction: row;
   align-self: center;
-  width: 98%;
+  width: 97.5%;
   height: 74%;
   background-color: #2a2a2a;
   border-radius: 0.5rem;
 }
-@media (min-width: 300px) and (max-width: 600px) {
+@media (min-width: 300px) and (max-width: 400px) {
   .mainContent .leftOrUpperPart .educationList .content {
     width: 97%;
+    height: 75%;
+  }
+}
+@media (min-width: 400px) and (max-width: 600px) {
+  .mainContent .leftOrUpperPart .educationList .content {
+    width: 97%;
+    height: 74.2%;
   }
 }
 .mainContent .leftOrUpperPart .contactFormMobile {
@@ -5092,14 +5106,21 @@ input[type=email]) {
   display: flex;
   flex-direction: row;
   align-self: center;
-  width: 98%;
+  width: 97.5%;
   height: 74%;
   background-color: #2a2a2a;
   border-radius: 0.5rem;
 }
-@media (min-width: 300px) and (max-width: 600px) {
+@media (min-width: 300px) and (max-width: 400px) {
   .mainContent .rightOrLowerPart .cyberList .content {
     width: 97%;
+    height: 75%;
+  }
+}
+@media (min-width: 400px) and (max-width: 600px) {
+  .mainContent .rightOrLowerPart .cyberList .content {
+    width: 97%;
+    height: 74.2%;
   }
 }
 .mainContent .rightOrLowerPart .webList {
@@ -5193,14 +5214,21 @@ input[type=email]) {
   display: flex;
   flex-direction: row;
   align-self: center;
-  width: 98%;
+  width: 97.5%;
   height: 74%;
   background-color: #2a2a2a;
   border-radius: 0.5rem;
 }
-@media (min-width: 300px) and (max-width: 600px) {
+@media (min-width: 300px) and (max-width: 400px) {
   .mainContent .rightOrLowerPart .webList .content {
     width: 97%;
+    height: 75%;
+  }
+}
+@media (min-width: 400px) and (max-width: 600px) {
+  .mainContent .rightOrLowerPart .webList .content {
+    width: 97%;
+    height: 74.2%;
   }
 }
 
@@ -11910,14 +11938,21 @@ input[type=email]) {
   display: flex;
   flex-direction: row;
   align-self: center;
-  width: 98%;
+  width: 97.5%;
   height: 74%;
   background-color: #c8c8c8;
   border-radius: 0.5rem;
 }
-@media (min-width: 300px) and (max-width: 600px) {
+@media (min-width: 300px) and (max-width: 400px) {
   .mainContentLight .leftOrUpperPartLight .skillList .content {
     width: 97%;
+    height: 75%;
+  }
+}
+@media (min-width: 400px) and (max-width: 600px) {
+  .mainContentLight .leftOrUpperPartLight .skillList .content {
+    width: 97%;
+    height: 74.2%;
   }
 }
 .mainContentLight .leftOrUpperPartLight .educationList {
@@ -12012,14 +12047,21 @@ input[type=email]) {
   display: flex;
   flex-direction: row;
   align-self: center;
-  width: 98%;
+  width: 97.5%;
   height: 74%;
   background-color: #c8c8c8;
   border-radius: 0.5rem;
 }
-@media (min-width: 300px) and (max-width: 600px) {
+@media (min-width: 300px) and (max-width: 400px) {
   .mainContentLight .leftOrUpperPartLight .educationList .content {
     width: 97%;
+    height: 75%;
+  }
+}
+@media (min-width: 400px) and (max-width: 600px) {
+  .mainContentLight .leftOrUpperPartLight .educationList .content {
+    width: 97%;
+    height: 74.2%;
   }
 }
 .mainContentLight .leftOrUpperPartLight .contactFormMobile {
@@ -13981,14 +14023,21 @@ input[type=email]) {
   display: flex;
   flex-direction: row;
   align-self: center;
-  width: 98%;
+  width: 97.5%;
   height: 74%;
   background-color: #c8c8c8;
   border-radius: 0.5rem;
 }
-@media (min-width: 300px) and (max-width: 600px) {
+@media (min-width: 300px) and (max-width: 400px) {
   .mainContentLight .rightOrLowerPartLight .cyberList .content {
     width: 97%;
+    height: 75%;
+  }
+}
+@media (min-width: 400px) and (max-width: 600px) {
+  .mainContentLight .rightOrLowerPartLight .cyberList .content {
+    width: 97%;
+    height: 74.2%;
   }
 }
 .mainContentLight .rightOrLowerPartLight .webList {
@@ -14083,14 +14132,21 @@ input[type=email]) {
   display: flex;
   flex-direction: row;
   align-self: center;
-  width: 98%;
+  width: 97.5%;
   height: 74%;
   background-color: #c8c8c8;
   border-radius: 0.5rem;
 }
-@media (min-width: 300px) and (max-width: 600px) {
+@media (min-width: 300px) and (max-width: 400px) {
   .mainContentLight .rightOrLowerPartLight .webList .content {
     width: 97%;
+    height: 75%;
+  }
+}
+@media (min-width: 400px) and (max-width: 600px) {
+  .mainContentLight .rightOrLowerPartLight .webList .content {
+    width: 97%;
+    height: 74.2%;
   }
 }
 

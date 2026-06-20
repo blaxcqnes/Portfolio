@@ -20,21 +20,26 @@ export default function LeftOrUpperPart({
   classType,
 }) {
   function handleClick() {
+    if (isCyberListOpen) {
+      toggleCyberList();
+    } else if (isWebListOpen) {
+      toggleWebList();
+    }
+  }
+
+  function closeLists() {
     if (isContactFormMobileOpen) {
       toggleContactFormMobile();
     } else if (isSkillListOpen) {
       toggleSkillList();
     } else if (isEducationListOpen) {
       toggleEducationList();
-    } else if (isCyberListOpen) {
-      toggleCyberList();
-    } else if (isWebListOpen) {
-      toggleWebList();
     }
   }
   return (
     <main
       className={isLightModeOn ? 'leftOrUpperPartLight' : 'leftOrUpperPart'}
+      onClick={handleClick}
     >
       {/*  */}
       <div
@@ -43,7 +48,7 @@ export default function LeftOrUpperPart({
             ? 'leftOrUpperPartContainerUnfocused'
             : 'leftOrUpperPartContainer'
         }
-        onClick={handleClick}
+        onClick={closeLists}
       >
         {/*  */}
         <section className="aboutMeAndImage">
