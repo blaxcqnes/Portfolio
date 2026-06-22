@@ -44,46 +44,46 @@ export default function EducationList({ toggleEducationList }) {
             &lt;
           </button>
         )}
-        <div className="pages">
-          {pageNumber < 2 ? (
-            <ol className="pageOne">
-              <li>
-                <span>Cybersecurity Professional</span> - (Hacker School - HYD,
-                INDIA) - 2026
-              </li>
-              <li>
-                <span>React</span> - (SCRIMBA) - 2026
-              </li>
-              <li>
-                <span>Advanced React</span> - (SCRIMBA) - 2026
-              </li>
-              <li>
-                <span>Backend Path</span> - (SCRIMBA) - 2026
-              </li>
-              <li>
-                <span>SQL</span> - (SCRIMBA) - 2026
-              </li>
-            </ol>
-          ) : (
-            <ol className="pageTwo">
-              <li>
-                <span>Express.JS</span> - (SCRIMBA) - 2026
-              </li>
-              <li>
-                <span>Node.JS</span> - (SCRIMBA) - 2026
-              </li>
-              <li>
-                <span>FullStack Web Development</span> - (Udemy) - 2025
-              </li>
-              <li>
-                <span>JavaScript</span> - (Udemy) - 2025
-              </li>
-              <li>
-                <span>MongoDB</span> - (Udemy) - 2025
-              </li>
-            </ol>
-          )}
-        </div>
+
+        {pageNumber < 2 ? (
+          <ol className="pageOne">
+            <li>
+              <span>Cybersecurity Professional</span> - (Hacker School - HYD,
+              INDIA) - 2026
+            </li>
+            <li>
+              <span>React</span> - (SCRIMBA) - 2026
+            </li>
+            <li>
+              <span>Advanced React</span> - (SCRIMBA) - 2026
+            </li>
+            <li>
+              <span>Backend Path</span> - (SCRIMBA) - 2026
+            </li>
+            <li>
+              <span>SQL</span> - (SCRIMBA) - 2026
+            </li>
+          </ol>
+        ) : (
+          <ol className="pageTwo">
+            <li>
+              <span>Express.JS</span> - (SCRIMBA) - 2026
+            </li>
+            <li>
+              <span>Node.JS</span> - (SCRIMBA) - 2026
+            </li>
+            <li>
+              <span>FullStack Web Development</span> - (Udemy) - 2025
+            </li>
+            <li>
+              <span>JavaScript</span> - (Udemy) - 2025
+            </li>
+            <li>
+              <span>MongoDB</span> - (Udemy) - 2025
+            </li>
+          </ol>
+        )}
+
         {pageNumber > 1 ? (
           <button className="nextDisabled" disabled>
             &gt;

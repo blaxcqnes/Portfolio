@@ -1528,7 +1528,11 @@
           height: min(77%, 77%);
         }
 
-        @media (min-width: 1023px) and (max-width: 1349px) {
+        @media (min-width: 1023px) and (max-width: 1200px) {
+          height: min(75%, 75%);
+        }
+
+        @media (min-width: 1200px) and (max-width: 1349px) {
           height: min(74.5%, 74.5%);
         }
 
@@ -1550,8 +1554,10 @@
           @media (min-width: 300px) and (max-width: 600px) {
             width: min(6rem, 6rem);
             height: min(2.3rem, 2.3rem);
-            top: 1rem;
-            left: unset;
+            bottom: 1rem;
+            left: 0.5rem;
+            background-color: #d9d9d9;
+            color: #757575;
             font-size: 9pt;
           }
 
@@ -1560,6 +1566,9 @@
             height: 7rem;
             top: unset;
             left: 2rem;
+            bottom: unset;
+            background-color: #c8c8c8;
+            color: #c8c8c8;
             font-size: 10pt;
           }
 
@@ -1580,7 +1589,7 @@
           position: absolute;
           left: 2rem;
           align-self: center;
-          background-color: #65625380;
+          background-color: #656253;
           border: none;
           border-radius: 0.5rem;
           font-size: 10pt;
@@ -1596,15 +1605,20 @@
           @media (min-width: 300px) and (max-width: 600px) {
             width: min(6rem, 6rem);
             height: min(2.3rem, 2.3rem);
-            top: 1rem;
-            left: unset;
+            bottom: 1rem;
+            left: 0.5rem;
             font-size: 9pt;
+
+            &:hover {
+              background-color: unset;
+            }
           }
 
           @media (width: 600px) {
             width: 2.5rem;
             height: 7rem;
             top: unset;
+            bottom: unset;
             left: 2rem;
             font-size: 10pt;
           }
@@ -1636,8 +1650,20 @@
             }
           }
 
-          @media (min-width: 300px) and (max-width: 600px) {
-            align-items: center;
+          @media (min-width: 300px) and (max-width: 400px) {
+            align-self: start;
+            align-items: start;
+            padding-inline: 0.8rem;
+            margin-top: 2.5rem;
+            row-gap: 1.6rem;
+          }
+
+          @media (min-width: 400px) and (max-width: 600px) {
+            align-self: start;
+            align-items: start;
+            width: 100%;
+            padding-inline: 2rem;
+            margin-top: 2.5rem;
             row-gap: 1.6rem;
           }
 
@@ -1657,7 +1683,7 @@
             color: #5a5a5a;
 
             @media (min-width: 300px) and (max-width: 600px) {
-              width: 90%;
+              width: auto;
             }
 
             @media (min-width: 600px) and (max-width: 650px) {
@@ -1736,8 +1762,20 @@
             }
           }
 
-          @media (min-width: 300px) and (max-width: 600px) {
+          @media (min-width: 300px) and (max-width: 400px) {
+            align-self: start;
             align-items: start;
+            padding-inline: 0.8rem;
+            margin-top: 2.5rem;
+            row-gap: 1.6rem;
+          }
+
+          @media (min-width: 400px) and (max-width: 600px) {
+            align-self: start;
+            align-items: start;
+            width: 100%;
+            padding-inline: 2rem;
+            margin-top: 2.5rem;
             row-gap: 1.6rem;
           }
 
@@ -1757,7 +1795,7 @@
             color: #5a5a5a;
 
             @media (min-width: 300px) and (max-width: 600px) {
-              width: 90%;
+              width: auto;
             }
 
             @media (min-width: 600px) and (max-width: 650px) {
@@ -1835,11 +1873,23 @@
           cursor: default;
           transition: all 0.2s ease;
 
-          @media (min-width: 300px) and (max-width: 600px) {
+          @media (min-width: 300px) and (max-width: 350px) {
             width: min(6rem, 6rem);
             height: min(2.3rem, 2.3rem);
             bottom: 1rem;
-            right: unset;
+            left: 7rem;
+            background-color: #d9d9d9;
+            color: #757575;
+            font-size: 9pt;
+          }
+
+          @media (min-width: 350px) and (max-width: 600px) {
+            width: min(6rem, 6rem);
+            height: min(2.3rem, 2.3rem);
+            bottom: 1rem;
+            left: 8rem;
+            background-color: #d9d9d9;
+            color: #757575;
             font-size: 9pt;
           }
 
@@ -1848,6 +1898,9 @@
             height: 7rem;
             bottom: unset;
             right: 2rem;
+            left: unset;
+            background-color: #c8c8c8;
+            color: #c8c8c8;
             font-size: 10pt;
           }
 
@@ -1868,7 +1921,7 @@
           position: absolute;
           right: 2rem;
           align-self: center;
-          background-color: #65625380;
+          background-color: #656253;
           border: none;
           border-radius: 0.5rem;
           font-size: 10pt;
@@ -1881,12 +1934,28 @@
             background-color: #656253;
           }
 
-          @media (min-width: 300px) and (max-width: 600px) {
+          @media (min-width: 300px) and (max-width: 350px) {
             width: min(6rem, 6rem);
             height: min(2.3rem, 2.3rem);
             bottom: 1rem;
-            right: unset;
+            left: 7rem;
             font-size: 9pt;
+
+            &:hover {
+              background-color: unset;
+            }
+          }
+
+          @media (min-width: 350px) and (max-width: 600px) {
+            width: min(6rem, 6rem);
+            height: min(2.3rem, 2.3rem);
+            bottom: 1rem;
+            left: 8rem;
+            font-size: 9pt;
+
+            &:hover {
+              background-color: unset;
+            }
           }
 
           @media (width: 600px) {
@@ -1894,6 +1963,7 @@
             height: 7rem;
             bottom: unset;
             right: 2rem;
+            left: unset;
             font-size: 10pt;
           }
 
@@ -1915,9 +1985,15 @@
           font-size: 9pt;
           color: #757575;
 
-          @media (min-width: 300px) and (max-width: 400px) {
+          @media (min-width: 300px) and (max-width: 350px) {
+            right: 0.8rem;
+            bottom: 1.8rem;
+            font-size: 8.5pt;
+          }
+
+          @media (min-width: 350px) and (max-width: 600px) {
             right: 1rem;
-            bottom: 1rem;
+            bottom: 1.5rem;
           }
         }
       }

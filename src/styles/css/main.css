@@ -3210,7 +3210,12 @@ input[type=email]) {
     height: 77%;
   }
 }
-@media (min-width: 1023px) and (max-width: 1349px) {
+@media (min-width: 1023px) and (max-width: 1200px) {
+  .mainContent .leftOrUpperPart .educationList .content {
+    height: 75%;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1349px) {
   .mainContent .leftOrUpperPart .educationList .content {
     height: 74.5%;
   }
@@ -3234,8 +3239,10 @@ input[type=email]) {
   .mainContent .leftOrUpperPart .educationList .content .previousDisabled {
     width: 6rem;
     height: 2.3rem;
-    top: 1rem;
-    left: unset;
+    bottom: 1rem;
+    left: 0.5rem;
+    background-color: #232323;
+    color: #a6a6a6;
     font-size: 9pt;
   }
 }
@@ -3244,7 +3251,10 @@ input[type=email]) {
     width: 2.5rem;
     height: 7rem;
     top: unset;
+    bottom: unset;
     left: 2rem;
+    background-color: #2a2a2a;
+    color: #2a2a2a;
     font-size: 10pt;
   }
 }
@@ -3266,7 +3276,7 @@ input[type=email]) {
   position: absolute;
   left: 2rem;
   align-self: center;
-  background-color: rgba(99, 84, 69, 0.3019607843);
+  background-color: #635445;
   border: none;
   border-radius: 0.5rem;
   font-size: 10pt;
@@ -3282,9 +3292,12 @@ input[type=email]) {
   .mainContent .leftOrUpperPart .educationList .content .previous {
     width: 6rem;
     height: 2.3rem;
-    top: 1rem;
-    left: unset;
+    bottom: 1rem;
+    left: 0.5rem;
     font-size: 9pt;
+  }
+  .mainContent .leftOrUpperPart .educationList .content .previous:hover {
+    background-color: unset;
   }
 }
 @media (width: 600px) {
@@ -3292,6 +3305,7 @@ input[type=email]) {
     width: 2.5rem;
     height: 7rem;
     top: unset;
+    bottom: unset;
     left: 2rem;
     font-size: 10pt;
   }
@@ -3323,9 +3337,22 @@ input[type=email]) {
     opacity: 1;
   }
 }
-@media (min-width: 300px) and (max-width: 600px) {
+@media (min-width: 300px) and (max-width: 400px) {
   .mainContent .leftOrUpperPart .educationList .content .pageOne {
-    align-items: center;
+    align-self: start;
+    align-items: start;
+    padding-inline: 0.8rem;
+    margin-top: 2.5rem;
+    row-gap: 1.6rem;
+  }
+}
+@media (min-width: 400px) and (max-width: 600px) {
+  .mainContent .leftOrUpperPart .educationList .content .pageOne {
+    align-self: start;
+    align-items: start;
+    width: 100%;
+    padding-inline: 2rem;
+    margin-top: 2.5rem;
     row-gap: 1.6rem;
   }
 }
@@ -3348,7 +3375,7 @@ input[type=email]) {
 }
 @media (min-width: 300px) and (max-width: 600px) {
   .mainContent .leftOrUpperPart .educationList .content .pageOne li {
-    width: 90%;
+    width: auto;
   }
 }
 @media (min-width: 600px) and (max-width: 650px) {
@@ -3436,9 +3463,22 @@ input[type=email]) {
     opacity: 1;
   }
 }
-@media (min-width: 300px) and (max-width: 600px) {
+@media (min-width: 300px) and (max-width: 400px) {
   .mainContent .leftOrUpperPart .educationList .content .pageTwo {
+    align-self: start;
     align-items: start;
+    padding-inline: 0.8rem;
+    margin-top: 2.5rem;
+    row-gap: 1.6rem;
+  }
+}
+@media (min-width: 400px) and (max-width: 600px) {
+  .mainContent .leftOrUpperPart .educationList .content .pageTwo {
+    align-self: start;
+    align-items: start;
+    width: 100%;
+    padding-inline: 2rem;
+    margin-top: 2.5rem;
     row-gap: 1.6rem;
   }
 }
@@ -3461,7 +3501,7 @@ input[type=email]) {
 }
 @media (min-width: 300px) and (max-width: 600px) {
   .mainContent .leftOrUpperPart .educationList .content .pageTwo li {
-    width: 90%;
+    width: auto;
   }
 }
 @media (min-width: 600px) and (max-width: 650px) {
@@ -3549,12 +3589,25 @@ input[type=email]) {
   cursor: default;
   transition: all 0.2s ease;
 }
-@media (min-width: 300px) and (max-width: 600px) {
+@media (min-width: 300px) and (max-width: 350px) {
   .mainContent .leftOrUpperPart .educationList .content .nextDisabled {
     width: 6rem;
     height: 2.3rem;
     bottom: 1rem;
-    right: unset;
+    left: 7rem;
+    background-color: #232323;
+    color: #a6a6a6;
+    font-size: 9pt;
+  }
+}
+@media (min-width: 350px) and (max-width: 600px) {
+  .mainContent .leftOrUpperPart .educationList .content .nextDisabled {
+    width: 6rem;
+    height: 2.3rem;
+    bottom: 1rem;
+    left: 8rem;
+    background-color: #232323;
+    color: #a6a6a6;
     font-size: 9pt;
   }
 }
@@ -3564,6 +3617,9 @@ input[type=email]) {
     height: 7rem;
     bottom: unset;
     right: 2rem;
+    left: unset;
+    background-color: #2a2a2a;
+    color: #2a2a2a;
     font-size: 10pt;
   }
 }
@@ -3585,7 +3641,7 @@ input[type=email]) {
   position: absolute;
   right: 2rem;
   align-self: center;
-  background-color: rgba(99, 84, 69, 0.3019607843);
+  background-color: #635445;
   border: none;
   border-radius: 0.5rem;
   font-size: 10pt;
@@ -3597,13 +3653,28 @@ input[type=email]) {
 .mainContent .leftOrUpperPart .educationList .content .next:hover {
   background-color: #635445;
 }
-@media (min-width: 300px) and (max-width: 600px) {
+@media (min-width: 300px) and (max-width: 350px) {
   .mainContent .leftOrUpperPart .educationList .content .next {
     width: 6rem;
     height: 2.3rem;
     bottom: 1rem;
-    right: unset;
+    left: 7rem;
     font-size: 9pt;
+  }
+  .mainContent .leftOrUpperPart .educationList .content .next:hover {
+    background-color: unset;
+  }
+}
+@media (min-width: 350px) and (max-width: 600px) {
+  .mainContent .leftOrUpperPart .educationList .content .next {
+    width: 6rem;
+    height: 2.3rem;
+    bottom: 1rem;
+    left: 8rem;
+    font-size: 9pt;
+  }
+  .mainContent .leftOrUpperPart .educationList .content .next:hover {
+    background-color: unset;
   }
 }
 @media (width: 600px) {
@@ -3612,6 +3683,7 @@ input[type=email]) {
     height: 7rem;
     bottom: unset;
     right: 2rem;
+    left: unset;
     font-size: 10pt;
   }
 }
@@ -3634,10 +3706,17 @@ input[type=email]) {
   font-size: 9pt;
   color: #a6a6a6;
 }
-@media (min-width: 300px) and (max-width: 400px) {
+@media (min-width: 300px) and (max-width: 350px) {
+  .mainContent .leftOrUpperPart .educationList .content p {
+    right: 0.8rem;
+    bottom: 1.8rem;
+    font-size: 8.5pt;
+  }
+}
+@media (min-width: 350px) and (max-width: 600px) {
   .mainContent .leftOrUpperPart .educationList .content p {
     right: 1rem;
-    bottom: 1rem;
+    bottom: 1.5rem;
   }
 }
 .mainContent .leftOrUpperPart .contactFormMobile {
@@ -12612,7 +12691,12 @@ input[type=email]) {
     height: 77%;
   }
 }
-@media (min-width: 1023px) and (max-width: 1349px) {
+@media (min-width: 1023px) and (max-width: 1200px) {
+  .mainContentLight .leftOrUpperPartLight .educationList .content {
+    height: 75%;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1349px) {
   .mainContentLight .leftOrUpperPartLight .educationList .content {
     height: 74.5%;
   }
@@ -12636,8 +12720,10 @@ input[type=email]) {
   .mainContentLight .leftOrUpperPartLight .educationList .content .previousDisabled {
     width: 6rem;
     height: 2.3rem;
-    top: 1rem;
-    left: unset;
+    bottom: 1rem;
+    left: 0.5rem;
+    background-color: #d9d9d9;
+    color: #757575;
     font-size: 9pt;
   }
 }
@@ -12647,6 +12733,9 @@ input[type=email]) {
     height: 7rem;
     top: unset;
     left: 2rem;
+    bottom: unset;
+    background-color: #c8c8c8;
+    color: #c8c8c8;
     font-size: 10pt;
   }
 }
@@ -12668,7 +12757,7 @@ input[type=email]) {
   position: absolute;
   left: 2rem;
   align-self: center;
-  background-color: rgba(101, 98, 83, 0.5019607843);
+  background-color: #656253;
   border: none;
   border-radius: 0.5rem;
   font-size: 10pt;
@@ -12684,9 +12773,12 @@ input[type=email]) {
   .mainContentLight .leftOrUpperPartLight .educationList .content .previous {
     width: 6rem;
     height: 2.3rem;
-    top: 1rem;
-    left: unset;
+    bottom: 1rem;
+    left: 0.5rem;
     font-size: 9pt;
+  }
+  .mainContentLight .leftOrUpperPartLight .educationList .content .previous:hover {
+    background-color: unset;
   }
 }
 @media (width: 600px) {
@@ -12694,6 +12786,7 @@ input[type=email]) {
     width: 2.5rem;
     height: 7rem;
     top: unset;
+    bottom: unset;
     left: 2rem;
     font-size: 10pt;
   }
@@ -12725,9 +12818,22 @@ input[type=email]) {
     opacity: 1;
   }
 }
-@media (min-width: 300px) and (max-width: 600px) {
+@media (min-width: 300px) and (max-width: 400px) {
   .mainContentLight .leftOrUpperPartLight .educationList .content .pageOne {
-    align-items: center;
+    align-self: start;
+    align-items: start;
+    padding-inline: 0.8rem;
+    margin-top: 2.5rem;
+    row-gap: 1.6rem;
+  }
+}
+@media (min-width: 400px) and (max-width: 600px) {
+  .mainContentLight .leftOrUpperPartLight .educationList .content .pageOne {
+    align-self: start;
+    align-items: start;
+    width: 100%;
+    padding-inline: 2rem;
+    margin-top: 2.5rem;
     row-gap: 1.6rem;
   }
 }
@@ -12750,7 +12856,7 @@ input[type=email]) {
 }
 @media (min-width: 300px) and (max-width: 600px) {
   .mainContentLight .leftOrUpperPartLight .educationList .content .pageOne li {
-    width: 90%;
+    width: auto;
   }
 }
 @media (min-width: 600px) and (max-width: 650px) {
@@ -12838,9 +12944,22 @@ input[type=email]) {
     opacity: 1;
   }
 }
-@media (min-width: 300px) and (max-width: 600px) {
+@media (min-width: 300px) and (max-width: 400px) {
   .mainContentLight .leftOrUpperPartLight .educationList .content .pageTwo {
+    align-self: start;
     align-items: start;
+    padding-inline: 0.8rem;
+    margin-top: 2.5rem;
+    row-gap: 1.6rem;
+  }
+}
+@media (min-width: 400px) and (max-width: 600px) {
+  .mainContentLight .leftOrUpperPartLight .educationList .content .pageTwo {
+    align-self: start;
+    align-items: start;
+    width: 100%;
+    padding-inline: 2rem;
+    margin-top: 2.5rem;
     row-gap: 1.6rem;
   }
 }
@@ -12863,7 +12982,7 @@ input[type=email]) {
 }
 @media (min-width: 300px) and (max-width: 600px) {
   .mainContentLight .leftOrUpperPartLight .educationList .content .pageTwo li {
-    width: 90%;
+    width: auto;
   }
 }
 @media (min-width: 600px) and (max-width: 650px) {
@@ -12951,12 +13070,25 @@ input[type=email]) {
   cursor: default;
   transition: all 0.2s ease;
 }
-@media (min-width: 300px) and (max-width: 600px) {
+@media (min-width: 300px) and (max-width: 350px) {
   .mainContentLight .leftOrUpperPartLight .educationList .content .nextDisabled {
     width: 6rem;
     height: 2.3rem;
     bottom: 1rem;
-    right: unset;
+    left: 7rem;
+    background-color: #d9d9d9;
+    color: #757575;
+    font-size: 9pt;
+  }
+}
+@media (min-width: 350px) and (max-width: 600px) {
+  .mainContentLight .leftOrUpperPartLight .educationList .content .nextDisabled {
+    width: 6rem;
+    height: 2.3rem;
+    bottom: 1rem;
+    left: 8rem;
+    background-color: #d9d9d9;
+    color: #757575;
     font-size: 9pt;
   }
 }
@@ -12966,6 +13098,9 @@ input[type=email]) {
     height: 7rem;
     bottom: unset;
     right: 2rem;
+    left: unset;
+    background-color: #c8c8c8;
+    color: #c8c8c8;
     font-size: 10pt;
   }
 }
@@ -12987,7 +13122,7 @@ input[type=email]) {
   position: absolute;
   right: 2rem;
   align-self: center;
-  background-color: rgba(101, 98, 83, 0.5019607843);
+  background-color: #656253;
   border: none;
   border-radius: 0.5rem;
   font-size: 10pt;
@@ -12999,13 +13134,28 @@ input[type=email]) {
 .mainContentLight .leftOrUpperPartLight .educationList .content .next:hover {
   background-color: #656253;
 }
-@media (min-width: 300px) and (max-width: 600px) {
+@media (min-width: 300px) and (max-width: 350px) {
   .mainContentLight .leftOrUpperPartLight .educationList .content .next {
     width: 6rem;
     height: 2.3rem;
     bottom: 1rem;
-    right: unset;
+    left: 7rem;
     font-size: 9pt;
+  }
+  .mainContentLight .leftOrUpperPartLight .educationList .content .next:hover {
+    background-color: unset;
+  }
+}
+@media (min-width: 350px) and (max-width: 600px) {
+  .mainContentLight .leftOrUpperPartLight .educationList .content .next {
+    width: 6rem;
+    height: 2.3rem;
+    bottom: 1rem;
+    left: 8rem;
+    font-size: 9pt;
+  }
+  .mainContentLight .leftOrUpperPartLight .educationList .content .next:hover {
+    background-color: unset;
   }
 }
 @media (width: 600px) {
@@ -13014,6 +13164,7 @@ input[type=email]) {
     height: 7rem;
     bottom: unset;
     right: 2rem;
+    left: unset;
     font-size: 10pt;
   }
 }
@@ -13036,10 +13187,17 @@ input[type=email]) {
   font-size: 9pt;
   color: #757575;
 }
-@media (min-width: 300px) and (max-width: 400px) {
+@media (min-width: 300px) and (max-width: 350px) {
+  .mainContentLight .leftOrUpperPartLight .educationList .content p {
+    right: 0.8rem;
+    bottom: 1.8rem;
+    font-size: 8.5pt;
+  }
+}
+@media (min-width: 350px) and (max-width: 600px) {
   .mainContentLight .leftOrUpperPartLight .educationList .content p {
     right: 1rem;
-    bottom: 1rem;
+    bottom: 1.5rem;
   }
 }
 .mainContentLight .leftOrUpperPartLight .contactFormMobile {
