@@ -11,13 +11,7 @@
       filter: opacity(0.5) grayscale(10%) blur(0.05rem) brightness(80%);
       transform: scale(100%);
     }
-    25% {
-      transform: scale(101%);
-    }
     50% {
-      transform: scale(102%);
-    }
-    75% {
       transform: scale(101%);
     }
     100% {
@@ -1151,7 +1145,7 @@
             }
 
             &::placeholder {
-              color: #5a5a5a;
+              color: #757575;
             }
 
             @media (min-width: 300px) and (max-width: 400px) {
@@ -1182,7 +1176,7 @@
             }
 
             &::placeholder {
-              color: #5a5a5a;
+              color: #757575;
             }
 
             @media (min-width: 300px) and (max-width: 400px) {
@@ -1214,7 +1208,7 @@
           }
 
           &::placeholder {
-            color: #5a5a5a;
+            color: #757575;
           }
 
           @media (min-width: 300px) and (max-width: 400px) {
@@ -1246,7 +1240,7 @@
         }
 
         &::placeholder {
-          color: #5a5a5a;
+          color: #757575;
         }
 
         @media (min-width: 300px) and (max-width: 400px) {
@@ -1272,7 +1266,7 @@
         }
 
         &::placeholder {
-          color: #5a5a5a;
+          color: #757575;
         }
 
         @media (min-width: 300px) and (max-width: 400px) {

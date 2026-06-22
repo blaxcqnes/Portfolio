@@ -1,4 +1,31 @@
+import { useState, useEffect } from 'react';
 export default function EducationList({ toggleEducationList }) {
+  const [pageNumber, setPageNumber] = useState(1);
+
+  useEffect(() => {
+    window.addEventListener('keydown', function (e) {
+      if (e.key === 'ArrowRight') {
+        return setPageNumber(2);
+      }
+    });
+  });
+
+  useEffect(() => {
+    window.addEventListener('keydown', function (e) {
+      if (e.key === 'ArrowLeft') {
+        return setPageNumber(1);
+      }
+    });
+  });
+
+  function previous() {
+    if (pageNumber > 1) setPageNumber((prev) => prev - 1);
+  }
+
+  function next() {
+    if (pageNumber < 2) setPageNumber((prev) => prev + 1);
+  }
+
   return (
     <main className="educationList" id="educationList">
       <div className="titleAndButton">
@@ -7,7 +34,68 @@ export default function EducationList({ toggleEducationList }) {
           Close
         </button>
       </div>
-      <div className="content"></div>
+      <div className="content">
+        {pageNumber < 2 ? (
+          <button className="previousDisabled" disabled>
+            &lt;
+          </button>
+        ) : (
+          <button className="previous" onClick={previous}>
+            &lt;
+          </button>
+        )}
+        <div className="pages">
+          {pageNumber < 2 ? (
+            <ol className="pageOne">
+              <li>
+                <span>Cybersecurity Professional</span> - (Hacker School - HYD,
+                INDIA) - 2026
+              </li>
+              <li>
+                <span>React</span> - (SCRIMBA) - 2026
+              </li>
+              <li>
+                <span>Advanced React</span> - (SCRIMBA) - 2026
+              </li>
+              <li>
+                <span>Backend Path</span> - (SCRIMBA) - 2026
+              </li>
+              <li>
+                <span>SQL</span> - (SCRIMBA) - 2026
+              </li>
+            </ol>
+          ) : (
+            <ol className="pageTwo">
+              <li>
+                <span>Express.JS</span> - (SCRIMBA) - 2026
+              </li>
+              <li>
+                <span>Node.JS</span> - (SCRIMBA) - 2026
+              </li>
+              <li>
+                <span>FullStack Web Development</span> - (Udemy) - 2025
+              </li>
+              <li>
+                <span>JavaScript</span> - (Udemy) - 2025
+              </li>
+              <li>
+                <span>MongoDB</span> - (Udemy) - 2025
+              </li>
+            </ol>
+          )}
+        </div>
+        {pageNumber > 1 ? (
+          <button className="nextDisabled" disabled>
+            &gt;
+          </button>
+        ) : (
+          <button className="next" onClick={next}>
+            &gt;
+          </button>
+        )}
+
+        <p>{pageNumber} / 2</p>
+      </div>
     </main>
   );
 }
