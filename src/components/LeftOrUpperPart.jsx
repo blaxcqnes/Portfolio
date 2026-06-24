@@ -208,6 +208,7 @@ export default function LeftOrUpperPart({
       )}
       {isSkillListOpen && (
         <SkillList
+          isLightModeOn={isLightModeOn}
           isSkillListOpen={isSkillListOpen}
           toggleSkillList={toggleSkillList}
         />
