@@ -80,11 +80,11 @@ body {
   //   height: 100dvh;
   // }
 
-  @media (orientation: landscape) and (min-width: 1500px) and (min-height: 749px) {
+  @media (orientation: landscape) and (min-height: 749px) {
     height: 100dvh;
   } // for 16" laptops with 16:9 aspect ratio
 
-  @media (orientation: landscape) and (max-width: 1500px) and (max-height: 749px) {
+  @media (orientation: landscape) and (max-height: 749px) {
     height: auto;
   }
 

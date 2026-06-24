@@ -191,8 +191,8 @@
           @media (min-width: 1023px) and (max-width: 1099px) {
             row-gap: 1.1rem;
             width: min(50%, 50%);
-            height: min(23rem, 23rem);
-            padding: 2rem 1rem;
+            height: min(20rem, 20rem);
+            padding: 1.1rem 1rem;
           }
 
           @media (min-width: 1099px) and (max-width: 1200px) {
@@ -206,7 +206,7 @@
             row-gap: 1.25rem;
             width: min(60%, 60%);
             height: min(20rem, 20rem);
-            padding: 1.8rem 1.2rem;
+            padding: 1.4rem 1.2rem;
           }
 
           @media (min-width: 1400px) and (max-width: 1466px) {
@@ -296,18 +296,9 @@
               line-height: 2.6rem;
             }
 
-            @media (min-width: 1023px) and (max-width: 1046px) {
+            @media (min-width: 1023px) and (max-width: 1099px) {
               font-size: 9.5pt;
               line-height: 1.28rem;
-            }
-
-            @media (min-width: 1046px) and (max-width: 1061px) {
-              font-size: 9.8pt;
-              line-height: 1.35rem;
-            }
-
-            @media (min-width: 1061px) and (max-width: 1099px) {
-              line-height: 1.35rem;
             }
 
             @media (min-width: 1099px) and (max-width: 1126px) {
@@ -686,15 +677,10 @@
 
           @media (min-width: 1023px) and (max-width: 1099px) {
             width: min(48%, 48%);
-            height: min(23rem, 23rem);
-          }
-
-          @media (min-width: 1099px) and (max-width: 1200px) {
-            width: min(40%, 40%);
             height: min(20rem, 20rem);
           }
 
-          @media (min-width: 1200px) and (max-width: 1400px) {
+          @media (min-width: 1099px) and (max-width: 1400px) {
             width: min(40%, 40%);
             height: min(20rem, 20rem);
           }
@@ -841,13 +827,13 @@
 
           @media (min-width: 1023px) and (max-width: 1099px) {
             row-gap: 1.2rem;
-            height: min(21rem, 21rem);
-            padding: 2rem 1rem;
+            height: min(18.5rem, 18.5rem);
+            padding: 1.1rem 1rem;
           }
 
           @media (min-width: 1099px) and (max-width: 1400px) {
-            height: min(21rem, 21rem);
-            padding: 2rem 1.2rem;
+            height: min(18.5rem, 18.5rem);
+            padding: 1.4rem 1.2rem;
           }
 
           @media (min-width: 1570px) and (max-width: 1670px) {
@@ -1086,13 +1072,13 @@
           }
 
           @media (min-width: 1023px) and (max-width: 1099px) {
-            height: min(21rem, 21rem);
-            padding: 2rem 1rem;
+            height: min(18.5rem, 18.5rem);
+            padding: 1.1rem 1rem;
           }
 
           @media (min-width: 1099px) and (max-width: 1400px) {
-            height: min(21rem, 21rem);
-            padding: 2rem 1.2rem;
+            height: min(18.5rem, 18.5rem);
+            padding: 1.4rem 1.2rem;
           }
 
           @media (min-width: 1570px) and (max-width: 1670px) {
@@ -2214,10 +2200,7 @@
                 z-index: 2;
 
                 @media (min-width: 300px) and (max-width: 600px) {
-                  width: 2rem;
-                  position: relative;
-                  bottom: 0;
-                  right: 0.4rem;
+                  width: 1.85rem;
                 }
               }
             }
@@ -4320,14 +4303,14 @@
           flex-direction: row;
         }
 
-        @media (min-width: 1023px) and (max-width: 1099px) {
+        @media (min-width: 1023px) and (max-width: 1200px) {
           width: 100%;
-          height: min(37.48rem, 37.48rem);
+          height: min(33.5rem, 33.5rem);
         }
 
-        @media (min-width: 1099px) and (max-width: 1400px) {
+        @media (min-width: 1200px) and (max-width: 1400px) {
           width: 100%;
-          height: min(34.46rem, 34.46rem);
+          height: min(32.5rem, 32.5rem);
         }
 
         @media (min-width: 1570px) and (max-width: 1670px) {
@@ -4443,12 +4426,17 @@
           }
 
           @media (min-width: 1023px) and (max-width: 1099px) {
-            row-gap: 2.5rem;
+            row-gap: 1.2rem;
             padding: 2rem 1rem;
           }
 
-          @media (min-width: 1099px) and (max-width: 1400px) {
-            padding: 2rem 1.2rem;
+          @media (min-width: 1099px) and (max-width: 1200px) {
+            padding: 1.4rem 1.2rem;
+          }
+
+          @media (min-width: 1200px) and (max-width: 1400px) {
+            row-gap: 2rem;
+            padding: 1.4rem 1.2rem;
           }
 
           @media (min-width: 1570px) and (max-width: 1670px) {
@@ -4499,20 +4487,12 @@
               column-gap: 0.3rem;
             }
 
-            @media (min-width: 1200px) and (max-width: 1213px) {
-              row-gap: 1.8rem;
+            @media (min-width: 1200px) and (max-width: 1300px) {
+              row-gap: 1rem;
             }
 
-            @media (min-width: 1212px) and (max-width: 1213px) {
+            @media (min-width: 1300px) and (max-width: 1300px) {
               row-gap: 2rem;
-            }
-
-            @media (min-width: 1213px) and (max-width: 1230px) {
-              row-gap: 2rem;
-            }
-
-            @media (min-width: 1230px) and (max-width: 1400px) {
-              row-gap: 2.5rem;
             }
 
             h4 {
@@ -4740,12 +4720,12 @@
           }
 
           @media (min-width: 1023px) and (max-width: 1099px) {
-            row-gap: 2.5rem;
+            row-gap: 2.2rem;
             padding: 2rem 1rem;
           }
 
           @media (min-width: 1099px) and (max-width: 1400px) {
-            padding: 2rem 1.2rem;
+            padding: 1.4rem 1.2rem;
           }
 
           @media (min-width: 1570px) and (max-width: 1670px) {
@@ -4821,7 +4801,7 @@
 
             @media (min-width: 1023px) and (max-width: 1099px) {
               width: 100%;
-              height: min(26rem, 26rem);
+              height: auto;
             }
 
             @media (min-width: 1099px) and (max-width: 1200px) {
@@ -4829,14 +4809,9 @@
               height: min(23rem, 23rem);
             }
 
-            @media (min-width: 1200px) and (max-width: 1349px) {
+            @media (min-width: 1200px) and (max-width: 1400px) {
               width: 100%;
-              height: min(23rem, 23rem);
-            }
-
-            @media (min-width: 1349px) and (max-width: 1400px) {
-              width: 100%;
-              height: min(23rem, 23rem);
+              height: min(22rem, 22rem);
             }
 
             @media (min-width: 1570px) and (max-width: 1670px) {
@@ -4864,7 +4839,12 @@
                 height: min(8.5rem, 8.5rem);
               }
 
-              @media (min-width: 1023px) and (max-width: 1349px) {
+              @media (min-width: 1023px) and (max-width: 1099px) {
+                width: min(12rem, 12rem);
+                height: min(7rem, 7rem);
+              }
+
+              @media (min-width: 1099px) and (max-width: 1349px) {
                 width: min(13rem, 13rem);
                 height: min(8rem, 8rem);
               }
@@ -4992,10 +4972,17 @@
         }
 
         @media (min-width: 1023px) and (max-width: 1099px) {
-          padding: 1.5rem 0.5rem;
+          height: 5rem;
+          padding: 1rem 1rem;
         }
 
         @media (min-width: 1099px) and (max-width: 1200px) {
+          height: 5rem;
+          padding: 1.5rem 1rem;
+        }
+
+        @media (min-width: 1200px) and (max-width: 1400px) {
+          height: 6rem;
           padding: 1.5rem 1rem;
         }
 
@@ -5025,12 +5012,12 @@
             row-gap: 1.8rem;
           }
 
-          @media (min-width: 1023px) and (max-width: 1060px) {
+          @media (min-width: 1023px) and (max-width: 1034px) {
             justify-content: center;
-            column-gap: 0.8rem;
+            column-gap: 0.5rem;
           }
 
-          @media (min-width: 1023px) and (max-width: 1060px) {
+          @media (min-width: 1034px) and (max-width: 1060px) {
             justify-content: center;
             column-gap: 0.8rem;
           }
@@ -5075,7 +5062,7 @@
               text-decoration: none;
               color: #ffffff;
 
-              @media (min-width: 1023px) and (max-width: 1200px) {
+              @media (min-width: 1023px) and (max-width: 1350px) {
                 font-size: 10pt;
               }
             }
@@ -5150,7 +5137,7 @@
               text-decoration: none;
               color: #ffffff;
 
-              @media (min-width: 1023px) and (max-width: 1200px) {
+              @media (min-width: 1023px) and (max-width: 1350px) {
                 font-size: 10pt;
               }
             }
@@ -5441,7 +5428,7 @@
       transition: all 0.25s ease-out;
 
       @media (min-width: 700px) and (max-width: 767px) {
-        row-gap: 0.8rem;
+        row-gap: 1rem;
       }
 
       @media (min-width: 1023px) and (max-width: 1200px) {
@@ -5586,8 +5573,8 @@
           @media (min-width: 1023px) and (max-width: 1099px) {
             row-gap: 1.1rem;
             width: min(50%, 50%);
-            height: min(23rem, 23rem);
-            padding: 2rem 1rem;
+            height: min(20rem, 20rem);
+            padding: 1.1rem 1rem;
           }
 
           @media (min-width: 1099px) and (max-width: 1200px) {
@@ -5601,7 +5588,7 @@
             row-gap: 1.25rem;
             width: min(60%, 60%);
             height: min(20rem, 20rem);
-            padding: 1.8rem 1.2rem;
+            padding: 1.4rem 1.2rem;
           }
 
           @media (min-width: 1400px) and (max-width: 1466px) {
@@ -5691,18 +5678,9 @@
               line-height: 2.6rem;
             }
 
-            @media (min-width: 1023px) and (max-width: 1046px) {
+            @media (min-width: 1023px) and (max-width: 1099px) {
               font-size: 9.5pt;
               line-height: 1.28rem;
-            }
-
-            @media (min-width: 1046px) and (max-width: 1061px) {
-              font-size: 9.8pt;
-              line-height: 1.35rem;
-            }
-
-            @media (min-width: 1061px) and (max-width: 1099px) {
-              line-height: 1.35rem;
             }
 
             @media (min-width: 1099px) and (max-width: 1126px) {
@@ -6081,15 +6059,10 @@
 
           @media (min-width: 1023px) and (max-width: 1099px) {
             width: min(48%, 48%);
-            height: min(23rem, 23rem);
-          }
-
-          @media (min-width: 1099px) and (max-width: 1200px) {
-            width: min(40%, 40%);
             height: min(20rem, 20rem);
           }
 
-          @media (min-width: 1200px) and (max-width: 1400px) {
+          @media (min-width: 1099px) and (max-width: 1400px) {
             width: min(40%, 40%);
             height: min(20rem, 20rem);
           }
@@ -6236,13 +6209,13 @@
 
           @media (min-width: 1023px) and (max-width: 1099px) {
             row-gap: 1.2rem;
-            height: min(21rem, 21rem);
-            padding: 2rem 1rem;
+            height: min(18.5rem, 18.5rem);
+            padding: 1.1rem 1rem;
           }
 
           @media (min-width: 1099px) and (max-width: 1400px) {
-            height: min(21rem, 21rem);
-            padding: 2rem 1.2rem;
+            height: min(18.5rem, 18.5rem);
+            padding: 1.4rem 1.2rem;
           }
 
           @media (min-width: 1570px) and (max-width: 1670px) {
@@ -6476,13 +6449,13 @@
           }
 
           @media (min-width: 1023px) and (max-width: 1099px) {
-            height: min(21rem, 21rem);
-            padding: 2rem 1rem;
+            height: min(18.5rem, 18.5rem);
+            padding: 1.1rem 1rem;
           }
 
           @media (min-width: 1099px) and (max-width: 1400px) {
-            height: min(21rem, 21rem);
-            padding: 2rem 1.2rem;
+            height: min(18.5rem, 18.5rem);
+            padding: 1.4rem 1.2rem;
           }
 
           @media (min-width: 1570px) and (max-width: 1670px) {
@@ -6799,13 +6772,13 @@
 
           @media (min-width: 1023px) and (max-width: 1099px) {
             row-gap: 1.2rem;
-            height: min(21rem, 21rem);
-            padding: 2rem 1rem;
+            height: min(18.5rem, 18.5rem);
+            padding: 1.1rem 1rem;
           }
 
           @media (min-width: 1099px) and (max-width: 1400px) {
-            height: min(21rem, 21rem);
-            padding: 2rem 1.2rem;
+            height: min(18.5rem, 18.5rem);
+            padding: 1.4rem 1.2rem;
           }
 
           @media (min-width: 1570px) and (max-width: 1670px) {
@@ -7039,13 +7012,13 @@
           }
 
           @media (min-width: 1023px) and (max-width: 1099px) {
-            height: min(21rem, 21rem);
-            padding: 2rem 1rem;
+            height: min(18.5rem, 18.5rem);
+            padding: 1.1rem 1rem;
           }
 
           @media (min-width: 1099px) and (max-width: 1400px) {
-            height: min(21rem, 21rem);
-            padding: 2rem 1.2rem;
+            height: min(18.5rem, 18.5rem);
+            padding: 1.4rem 1.2rem;
           }
 
           @media (min-width: 1570px) and (max-width: 1670px) {
@@ -7246,14 +7219,14 @@
           flex-direction: row;
         }
 
-        @media (min-width: 1023px) and (max-width: 1099px) {
+        @media (min-width: 1023px) and (max-width: 1200px) {
           width: 100%;
-          height: min(37.48rem, 37.48rem);
+          height: min(33.5rem, 33.5rem);
         }
 
-        @media (min-width: 1099px) and (max-width: 1400px) {
+        @media (min-width: 1200px) and (max-width: 1400px) {
           width: 100%;
-          height: min(34.46rem, 34.46rem);
+          height: min(32.5rem, 32.5rem);
         }
 
         @media (min-width: 1570px) and (max-width: 1670px) {
@@ -7368,12 +7341,17 @@
           }
 
           @media (min-width: 1023px) and (max-width: 1099px) {
-            row-gap: 2.5rem;
+            row-gap: 1.2rem;
             padding: 2rem 1rem;
           }
 
-          @media (min-width: 1099px) and (max-width: 1400px) {
-            padding: 2rem 1.2rem;
+          @media (min-width: 1099px) and (max-width: 1200px) {
+            padding: 1.4rem 1.2rem;
+          }
+
+          @media (min-width: 1200px) and (max-width: 1400px) {
+            row-gap: 1.5rem;
+            padding: 1.4rem 1.2rem;
           }
 
           @media (min-width: 1570px) and (max-width: 1670px) {
@@ -7424,20 +7402,12 @@
               column-gap: 0.3rem;
             }
 
-            @media (min-width: 1200px) and (max-width: 1213px) {
-              row-gap: 1.8rem;
+            @media (min-width: 1200px) and (max-width: 1300px) {
+              row-gap: 1rem;
             }
 
-            @media (min-width: 1212px) and (max-width: 1213px) {
+            @media (min-width: 1300px) and (max-width: 1300px) {
               row-gap: 2rem;
-            }
-
-            @media (min-width: 1213px) and (max-width: 1230px) {
-              row-gap: 2rem;
-            }
-
-            @media (min-width: 1230px) and (max-width: 1400px) {
-              row-gap: 2.5rem;
             }
 
             h4 {
@@ -7660,12 +7630,12 @@
           }
 
           @media (min-width: 1023px) and (max-width: 1099px) {
-            row-gap: 2.5rem;
+            row-gap: 2.2rem;
             padding: 2rem 1rem;
           }
 
           @media (min-width: 1099px) and (max-width: 1400px) {
-            padding: 2rem 1.2rem;
+            padding: 1.4rem 1.2rem;
           }
 
           @media (min-width: 1570px) and (max-width: 1670px) {
@@ -7738,7 +7708,7 @@
 
             @media (min-width: 1023px) and (max-width: 1099px) {
               width: 100%;
-              height: min(26rem, 26rem);
+              height: auto;
             }
 
             @media (min-width: 1099px) and (max-width: 1200px) {
@@ -7746,14 +7716,9 @@
               height: min(23rem, 23rem);
             }
 
-            @media (min-width: 1200px) and (max-width: 1349px) {
+            @media (min-width: 1200px) and (max-width: 1400px) {
               width: 100%;
-              height: min(23rem, 23rem);
-            }
-
-            @media (min-width: 1349px) and (max-width: 1400px) {
-              width: 100%;
-              height: min(23rem, 23rem);
+              height: min(22rem, 22rem);
             }
 
             @media (min-width: 1570px) and (max-width: 1670px) {
@@ -7785,7 +7750,12 @@
                   height: min(8.5rem, 8.5rem);
                 }
 
-                @media (min-width: 1023px) and (max-width: 1349px) {
+                @media (min-width: 1023px) and (max-width: 1099px) {
+                  width: min(12rem, 12rem);
+                  height: min(7rem, 7rem);
+                }
+
+                @media (min-width: 1099px) and (max-width: 1349px) {
                   width: min(13rem, 13rem);
                   height: min(8rem, 8rem);
                 }
@@ -7900,14 +7870,14 @@
           flex-direction: row;
         }
 
-        @media (min-width: 1023px) and (max-width: 1099px) {
+        @media (min-width: 1023px) and (max-width: 1200px) {
           width: 100%;
-          height: min(37.48rem, 37.48rem);
+          height: min(33.5rem, 33.5rem);
         }
 
-        @media (min-width: 1099px) and (max-width: 1400px) {
+        @media (min-width: 1200px) and (max-width: 1400px) {
           width: 100%;
-          height: min(34.46rem, 34.46rem);
+          height: min(32.5rem, 32.5rem);
         }
 
         @media (min-width: 1570px) and (max-width: 1670px) {
@@ -8022,12 +7992,17 @@
           }
 
           @media (min-width: 1023px) and (max-width: 1099px) {
-            row-gap: 2.5rem;
+            row-gap: 1.2rem;
             padding: 2rem 1rem;
           }
 
-          @media (min-width: 1099px) and (max-width: 1400px) {
-            padding: 2rem 1.2rem;
+          @media (min-width: 1099px) and (max-width: 1200px) {
+            padding: 1.4rem 1.2rem;
+          }
+
+          @media (min-width: 1200px) and (max-width: 1400px) {
+            row-gap: 1.5rem;
+            padding: 1.4rem 1.2rem;
           }
 
           @media (min-width: 1570px) and (max-width: 1670px) {
@@ -8078,20 +8053,12 @@
               column-gap: 0.3rem;
             }
 
-            @media (min-width: 1200px) and (max-width: 1213px) {
-              row-gap: 1.8rem;
+            @media (min-width: 1200px) and (max-width: 1300px) {
+              row-gap: 1rem;
             }
 
-            @media (min-width: 1212px) and (max-width: 1213px) {
+            @media (min-width: 1300px) and (max-width: 1300px) {
               row-gap: 2rem;
-            }
-
-            @media (min-width: 1213px) and (max-width: 1230px) {
-              row-gap: 2rem;
-            }
-
-            @media (min-width: 1230px) and (max-width: 1400px) {
-              row-gap: 2.5rem;
             }
 
             h4 {
@@ -8314,12 +8281,12 @@
           }
 
           @media (min-width: 1023px) and (max-width: 1099px) {
-            row-gap: 2.5rem;
+            row-gap: 2.2rem;
             padding: 2rem 1rem;
           }
 
           @media (min-width: 1099px) and (max-width: 1400px) {
-            padding: 2rem 1.2rem;
+            padding: 1.4rem 1.2rem;
           }
 
           @media (min-width: 1570px) and (max-width: 1670px) {
@@ -8392,7 +8359,7 @@
 
             @media (min-width: 1023px) and (max-width: 1099px) {
               width: 100%;
-              height: min(26rem, 26rem);
+              height: auto;
             }
 
             @media (min-width: 1099px) and (max-width: 1200px) {
@@ -8400,14 +8367,9 @@
               height: min(23rem, 23rem);
             }
 
-            @media (min-width: 1200px) and (max-width: 1349px) {
+            @media (min-width: 1200px) and (max-width: 1400px) {
               width: 100%;
-              height: min(23rem, 23rem);
-            }
-
-            @media (min-width: 1349px) and (max-width: 1400px) {
-              width: 100%;
-              height: min(23rem, 23rem);
+              height: min(22rem, 22rem);
             }
 
             @media (min-width: 1570px) and (max-width: 1670px) {
@@ -8439,7 +8401,12 @@
                   height: min(8.5rem, 8.5rem);
                 }
 
-                @media (min-width: 1023px) and (max-width: 1349px) {
+                @media (min-width: 1023px) and (max-width: 1099px) {
+                  width: min(12rem, 12rem);
+                  height: min(7rem, 7rem);
+                }
+
+                @media (min-width: 1099px) and (max-width: 1349px) {
                   width: min(13rem, 13rem);
                   height: min(8rem, 8rem);
                 }
@@ -8563,10 +8530,17 @@
         }
 
         @media (min-width: 1023px) and (max-width: 1099px) {
-          padding: 1.5rem 0.5rem;
+          height: 5rem;
+          padding: 1rem 1rem;
         }
 
         @media (min-width: 1099px) and (max-width: 1200px) {
+          height: 5rem;
+          padding: 1.5rem 1rem;
+        }
+
+        @media (min-width: 1200px) and (max-width: 1400px) {
+          height: 6rem;
           padding: 1.5rem 1rem;
         }
 
@@ -8596,12 +8570,12 @@
             row-gap: 1.8rem;
           }
 
-          @media (min-width: 1023px) and (max-width: 1060px) {
+          @media (min-width: 1023px) and (max-width: 1034px) {
             justify-content: center;
-            column-gap: 0.8rem;
+            column-gap: 0.5rem;
           }
 
-          @media (min-width: 1023px) and (max-width: 1060px) {
+          @media (min-width: 1034px) and (max-width: 1060px) {
             justify-content: center;
             column-gap: 0.8rem;
           }
@@ -8647,7 +8621,7 @@
               pointer-events: none;
               cursor: default;
 
-              @media (min-width: 1023px) and (max-width: 1200px) {
+              @media (min-width: 1023px) and (max-width: 1350px) {
                 font-size: 10pt;
               }
             }
@@ -8726,7 +8700,7 @@
               pointer-events: none;
               cursor: default;
 
-              @media (min-width: 1023px) and (max-width: 1200px) {
+              @media (min-width: 1023px) and (max-width: 1350px) {
                 font-size: 10pt;
               }
             }

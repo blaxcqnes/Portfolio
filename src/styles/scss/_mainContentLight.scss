@@ -2229,10 +2229,7 @@
                 }
 
                 @media (min-width: 300px) and (max-width: 600px) {
-                  width: 2rem;
-                  position: relative;
-                  bottom: 0;
-                  right: 0.4rem;
+                  width: 1.85rem;
                 }
               }
             }
@@ -5049,12 +5046,12 @@
             row-gap: 1.8rem;
           }
 
-          @media (min-width: 1023px) and (max-width: 1060px) {
+          @media (min-width: 1023px) and (max-width: 1034px) {
             justify-content: center;
-            column-gap: 0.8rem;
+            column-gap: 0.5rem;
           }
 
-          @media (min-width: 1023px) and (max-width: 1060px) {
+          @media (min-width: 1034px) and (max-width: 1060px) {
             justify-content: center;
             column-gap: 0.8rem;
           }
@@ -8628,7 +8625,12 @@
             column-gap: 0.8rem;
           }
 
-          @media (min-width: 1023px) and (max-width: 1060px) {
+          @media (min-width: 1023px) and (max-width: 1034px) {
+            justify-content: center;
+            column-gap: 0.5rem;
+          }
+
+          @media (min-width: 1034px) and (max-width: 1060px) {
             justify-content: center;
             column-gap: 0.8rem;
           }

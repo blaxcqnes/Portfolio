@@ -46,12 +46,16 @@
       padding: 1.5rem 1rem;
     }
 
-    @media (min-width: 1023px) and (max-width: 1200px) {
-      padding: 1.5rem 1rem;
+    @media (min-width: 1023px) and (max-width: 1099px) {
+      padding: 1.1rem 1rem;
+    }
+
+    @media (min-width: 1099px) and (max-width: 1200px) {
+      padding: 1.1rem 1.2rem;
     }
 
     @media (min-width: 1200px) and (max-width: 1400px) {
-      padding: 1.5rem 1.2rem;
+      padding: 1.3rem 1.2rem;
     }
 
     @media (min-width: 1570px) and (max-width: 1670px) {
@@ -68,6 +72,12 @@
         flex-direction: column;
         row-gap: 0.2rem;
         align-items: start;
+      }
+
+      @media (width: 1200px) {
+        flex-direction: row;
+        column-gap: 1.5rem;
+        align-items: center;
       }
 
       .name {
@@ -94,12 +104,12 @@
           font-size: 19pt;
         }
 
-        @media (min-width: 1023px) and (max-width: 1046px) {
-          font-size: 19pt;
+        @media (min-width: 1023px) and (max-width: 1099px) {
+          font-size: 17pt;
         }
 
-        @media (min-width: 1046px) and (max-width: 1061px) {
-          font-size: 19.8pt;
+        @media (min-width: 1099px) and (max-width: 1250px) {
+          font-size: 18pt;
         }
 
         @media (min-width: 1570px) and (max-width: 1670px) {
@@ -433,12 +443,16 @@
       }
     }
 
-    @media (min-width: 1023px) and (max-width: 1200px) {
-      padding: 1.5rem 1rem;
+    @media (min-width: 1023px) and (max-width: 1099px) {
+      padding: 1.1rem 1rem;
+    }
+
+    @media (min-width: 1099px) and (max-width: 1200px) {
+      padding: 1.1rem 1.2rem;
     }
 
     @media (min-width: 1200px) and (max-width: 1400px) {
-      padding: 1.5rem 1.2rem;
+      padding: 1.3rem 1.2rem;
     }
 
     @media (min-width: 1570px) and (max-width: 1670px) {
@@ -481,12 +495,12 @@
           font-size: 19pt;
         }
 
-        @media (min-width: 1023px) and (max-width: 1046px) {
-          font-size: 19pt;
+        @media (min-width: 1023px) and (max-width: 1099px) {
+          font-size: 17pt;
         }
 
-        @media (min-width: 1046px) and (max-width: 1061px) {
-          font-size: 19.8pt;
+        @media (min-width: 1099px) and (max-width: 1250px) {
+          font-size: 18pt;
         }
 
         @media (min-width: 1570px) and (max-width: 1670px) {
@@ -725,7 +739,7 @@
     width: min(22.68rem, 22.68rem);
     height: min(31.625rem, 31.625rem);
     position: absolute;
-    top: 6.5rem;
+    top: 6.4rem;
     right: 1%;
     animation: contactForm 0.2s linear;
     animation-iteration-count: 1;
@@ -832,9 +846,9 @@
     }
 
     @media (min-width: 1023px) and (max-width: 1200px) {
-      row-gap: 0.8rem;
+      row-gap: 1rem;
       width: min(24.5%, 24.5%);
-      height: min(30.625rem, 30.625rem);
+      height: min(31rem, 31rem);
       position: absolute;
       top: 7.2rem;
       animation: contactForm 0.2s linear;
@@ -854,10 +868,12 @@
 
     @media (min-width: 1200px) and (max-width: 1400px) {
       width: min(24%, 24%);
+      top: 6.2rem;
     }
 
     @media (min-width: 1400px) and (max-width: 1500px) {
       width: min(24.3%, 24.3%);
+      top: 6.25rem;
     }
 
     @media (min-width: 1570px) and (max-width: 1670px) {
@@ -888,9 +904,17 @@
       background-color: #635445;
       border-radius: 0.4rem 0.4rem 0 0;
 
+      @media (min-width: 1023px) and (max-width: 1200px) {
+        padding: 0.5rem 0.5rem;
+      }
+
       h4 {
         font-size: 14pt;
         font-weight: 500;
+
+        @media (min-width: 1023px) and (max-width: 1200px) {
+          font-size: 13pt;
+        }
       }
 
       .close {
@@ -1148,6 +1172,11 @@
             @media (min-width: 300px) and (max-width: 400px) {
               height: 2.5rem;
             }
+
+            @media (min-width: 1023px) and (max-width: 1200px) {
+              height: 2.5rem;
+              font-size: 9.5pt;
+            }
           }
 
           .lastName {
@@ -1177,6 +1206,11 @@
 
             @media (min-width: 300px) and (max-width: 400px) {
               height: 2.5rem;
+            }
+
+            @media (min-width: 1023px) and (max-width: 1200px) {
+              height: 2.5rem;
+              font-size: 9.5pt;
             }
           }
         }
@@ -1209,6 +1243,11 @@
           @media (min-width: 300px) and (max-width: 400px) {
             height: 2.5rem;
           }
+
+          @media (min-width: 1023px) and (max-width: 1200px) {
+            height: 2.5rem;
+            font-size: 9.5pt;
+          }
         }
       }
 
@@ -1240,6 +1279,11 @@
         @media (min-width: 300px) and (max-width: 400px) {
           height: 2.5rem;
         }
+
+        @media (min-width: 1023px) and (max-width: 1200px) {
+          height: 2.5rem;
+          font-size: 9.5pt;
+        }
       }
 
       .textArea {
@@ -1264,6 +1308,11 @@
 
         @media (min-width: 300px) and (max-width: 400px) {
           height: 8rem;
+        }
+
+        @media (min-width: 1023px) and (max-width: 1200px) {
+          height: 11.5rem;
+          font-size: 10.5pt;
         }
       }
 

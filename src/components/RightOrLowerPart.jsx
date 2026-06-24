@@ -154,7 +154,6 @@ export default function RightOrLowerPart({
               : {
                   display: 'flex',
                   width: '100%',
-                  padding: '1.5rem 1rem',
                   transition: 'all 0.2s ease',
                   borderRadius: '0.5rem',
                   opacity: '1',
@@ -165,7 +164,7 @@ export default function RightOrLowerPart({
             {/*  */}
             <div className="leftPart">
               <a
-                href="https://example.com"
+                href="https://www.linkedin.com/in/blaxcqnes/"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -173,23 +172,17 @@ export default function RightOrLowerPart({
               </a>
               {/*  */}
               <a
-                href="https://example.com"
+                href="https://github.com/blaxcqnes"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 GitHub
               </a>
               {/*  */}
-              <a
-                href="https://example.com"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                WhatsApp
-              </a>
+              <a>WhatsApp</a>
               {/*  */}
               <a
-                href="https://example.com"
+                href="https://www.instagram.com/blaxcqnes/"
                 target="_blank"
                 rel="noopener noreferrer"
               >
