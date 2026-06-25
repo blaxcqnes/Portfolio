@@ -1747,12 +1747,20 @@ input[type=email]) {
     padding: 3rem 2rem;
   }
 }
-@media (min-width: 600px) and (max-width: 666px) {
+@media (min-width: 600px) and (max-width: 607px) {
   .mainContent .leftOrUpperPart .leftOrUpperPartContainer .aboutMeAndImage .aboutMe {
     row-gap: 1.5rem;
     width: 50%;
     height: 25rem;
     padding: 1.8rem 1rem;
+  }
+}
+@media (min-width: 607px) and (max-width: 666px) {
+  .mainContent .leftOrUpperPart .leftOrUpperPartContainer .aboutMeAndImage .aboutMe {
+    row-gap: 1.5rem;
+    width: 50%;
+    height: 25rem;
+    padding: 2.2rem 1rem;
   }
 }
 @media (min-width: 666px) and (max-width: 700px) {
@@ -1888,9 +1896,30 @@ input[type=email]) {
   line-height: 1.5rem;
   color: #efefef;
 }
-@media (min-width: 607px) and (max-width: 666px) {
+@media (min-width: 300px) and (max-width: 330px) {
   .mainContent .leftOrUpperPart .leftOrUpperPartContainer .aboutMeAndImage .aboutMe .aboutMeDescription {
-    line-height: 1.7rem;
+    font-size: 9.5pt;
+  }
+}
+@media (min-width: 400px) and (max-width: 500px) {
+  .mainContent .leftOrUpperPart .leftOrUpperPartContainer .aboutMeAndImage .aboutMe .aboutMeDescription {
+    font-size: 10.5pt;
+  }
+}
+@media (min-width: 500px) and (max-width: 600px) {
+  .mainContent .leftOrUpperPart .leftOrUpperPartContainer .aboutMeAndImage .aboutMe .aboutMeDescription {
+    font-size: 11pt;
+  }
+}
+@media (width: 600px) {
+  .mainContent .leftOrUpperPart .leftOrUpperPartContainer .aboutMeAndImage .aboutMe .aboutMeDescription {
+    font-size: 10pt;
+    line-height: 1.6rem;
+  }
+}
+@media (min-width: 600px) and (max-width: 666px) {
+  .mainContent .leftOrUpperPart .leftOrUpperPartContainer .aboutMeAndImage .aboutMe .aboutMeDescription {
+    line-height: 1.6rem;
   }
 }
 @media (min-width: 666px) and (max-width: 700px) {
@@ -1985,24 +2014,25 @@ input[type=email]) {
 .mainContent .leftOrUpperPart .leftOrUpperPartContainer .aboutMeAndImage .aboutMe .locationAndContactForm {
   display: none;
 }
-@media (min-width: 300px) and (max-width: 307px) {
+@media (min-width: 300px) and (max-width: 310px) {
   .mainContent .leftOrUpperPart .leftOrUpperPartContainer .aboutMeAndImage .aboutMe .locationAndContactForm {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    transform: translate(0, 10%);
   }
 }
-@media (min-width: 307px) and (max-width: 337px) {
+@media (min-width: 310px) and (max-width: 322px) {
   .mainContent .leftOrUpperPart .leftOrUpperPartContainer .aboutMeAndImage .aboutMe .locationAndContactForm {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    transform: translate(0, 15%);
+    transform: translate(0, 10%);
   }
 }
-@media (min-width: 337px) and (max-width: 397px) {
+@media (min-width: 322px) and (max-width: 330px) {
   .mainContent .leftOrUpperPart .leftOrUpperPartContainer .aboutMeAndImage .aboutMe .locationAndContactForm {
     display: flex;
     flex-direction: row;
@@ -2011,25 +2041,16 @@ input[type=email]) {
     transform: translate(0, 75%);
   }
 }
-@media (min-width: 397px) and (max-width: 400px) {
+@media (min-width: 330px) and (max-width: 337px) {
   .mainContent .leftOrUpperPart .leftOrUpperPartContainer .aboutMeAndImage .aboutMe .locationAndContactForm {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    transform: translate(0, 140%);
+    transform: translate(0, 10%);
   }
 }
-@media (min-width: 400px) and (max-width: 404px) {
-  .mainContent .leftOrUpperPart .leftOrUpperPartContainer .aboutMeAndImage .aboutMe .locationAndContactForm {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    transform: translate(0, 15%);
-  }
-}
-@media (min-width: 404px) and (max-width: 467px) {
+@media (min-width: 337px) and (max-width: 397px) {
   .mainContent .leftOrUpperPart .leftOrUpperPartContainer .aboutMeAndImage .aboutMe .locationAndContactForm {
     display: flex;
     flex-direction: row;
@@ -2038,32 +2059,67 @@ input[type=email]) {
     transform: translate(0, 70%);
   }
 }
-@media (min-width: 467px) and (max-width: 500px) {
+@media (min-width: 397px) and (max-width: 400px) {
+  .mainContent .leftOrUpperPart .leftOrUpperPartContainer .aboutMeAndImage .aboutMe .locationAndContactForm {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    transform: translate(0, 135%);
+  }
+}
+@media (min-width: 400px) and (max-width: 420px) {
+  .mainContent .leftOrUpperPart .leftOrUpperPartContainer .aboutMeAndImage .aboutMe .locationAndContactForm {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    transform: translate(0, 15%);
+  }
+}
+@media (min-width: 420px) and (max-width: 489px) {
+  .mainContent .leftOrUpperPart .leftOrUpperPartContainer .aboutMeAndImage .aboutMe .locationAndContactForm {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    transform: translate(0, 70%);
+  }
+}
+@media (width = 420px) {
+  .mainContent .leftOrUpperPart .leftOrUpperPartContainer .aboutMeAndImage .aboutMe .locationAndContactForm {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    transform: translate(0, 15%);
+  }
+}
+@media (min-width: 489px) and (max-width: 500px) {
   .mainContent .leftOrUpperPart .leftOrUpperPartContainer .aboutMeAndImage .aboutMe .locationAndContactForm {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     transform: translate(0, 130%);
-    padding-inline: 0.2rem;
   }
 }
-@media (min-width: 500px) and (max-width: 570px) {
+@media (min-width: 500px) and (max-width: 541px) {
+  .mainContent .leftOrUpperPart .leftOrUpperPartContainer .aboutMeAndImage .aboutMe .locationAndContactForm {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    transform: translate(0, 75%);
+  }
+}
+@media (min-width: 541px) and (max-width: 600px) {
   .mainContent .leftOrUpperPart .leftOrUpperPartContainer .aboutMeAndImage .aboutMe .locationAndContactForm {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     transform: translate(0, 130%);
-  }
-}
-@media (min-width: 570px) and (max-width: 600px) {
-  .mainContent .leftOrUpperPart .leftOrUpperPartContainer .aboutMeAndImage .aboutMe .locationAndContactForm {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    transform: translate(0, 195%);
   }
 }
 @media (min-width: 600px) {
@@ -2112,11 +2168,17 @@ input[type=email]) {
 }
 .mainContent .leftOrUpperPart .leftOrUpperPartContainer .aboutMeAndImage .aboutMe .locationAndContactForm .locationForSmallerScreens {
   display: flex;
+  font-size: 10pt;
   color: #efefef;
 }
-@media (min-width: 300px) and (max-width: 600px) {
+@media (min-width: 300px) and (max-width: 400px) {
   .mainContent .leftOrUpperPart .leftOrUpperPartContainer .aboutMeAndImage .aboutMe .locationAndContactForm .locationForSmallerScreens {
     font-size: 9pt;
+  }
+}
+@media (min-width: 400px) and (max-width: 600px) {
+  .mainContent .leftOrUpperPart .leftOrUpperPartContainer .aboutMeAndImage .aboutMe .locationAndContactForm .locationForSmallerScreens {
+    font-size: 10pt;
   }
 }
 .mainContent .leftOrUpperPart .leftOrUpperPartContainer .aboutMeAndImage .forSmallerScreens {
@@ -2280,18 +2342,19 @@ input[type=email]) {
     font-size: 9pt;
   }
 }
-@media (min-width: 330px) and (max-width: 370px) {
+@media (min-width: 330px) and (max-width: 400px) {
   .mainContent .leftOrUpperPart .leftOrUpperPartContainer .aboutMeAndImage .forSmallerScreens p {
     margin: 2.25rem 0;
     font-size: 9pt;
   }
 }
-@media (min-width: 370px) and (max-width: 600px) {
+@media (min-width: 400px) and (max-width: 600px) {
   .mainContent .leftOrUpperPart .leftOrUpperPartContainer .aboutMeAndImage .forSmallerScreens p {
-    margin: 2.25rem 0;
+    margin: 2.8rem 1rem;
+    font-size: 10pt;
   }
 }
-@media (min-width: 600px) and (max-width: 700px) {
+@media (min-width: 600px) and (max-width: 920px) {
   .mainContent .leftOrUpperPart .leftOrUpperPartContainer .aboutMeAndImage .forSmallerScreens p {
     margin: 2.8rem 1rem;
     font-size: 9pt;
@@ -2382,6 +2445,21 @@ input[type=email]) {
   .mainContent .leftOrUpperPart .leftOrUpperPartContainer .skillsAndEducation {
     flex-direction: column-reverse;
     row-gap: 1rem;
+    animation: skillsAndEducation 0.5s linear;
+    animation-iteration-count: 1;
+  }
+  @keyframes skillsAndEducation {
+    0% {
+      filter: opacity(0.5) grayscale(10%) blur(0.05rem) brightness(80%);
+      transform: scale(100%);
+    }
+    50% {
+      transform: scale(101%);
+    }
+    100% {
+      transform: scale(100%);
+      opacity: 1;
+    }
   }
 }
 @media (min-width: 600px) and (max-width: 700px) {
@@ -2640,6 +2718,26 @@ input[type=email]) {
   font-size: 10pt;
   line-height: 1.5rem;
   color: #efefef;
+}
+@media (min-width: 300px) and (max-width: 330px) {
+  .mainContent .leftOrUpperPart .leftOrUpperPartContainer .skillsAndEducation .skills .skillsDescription {
+    font-size: 9.5pt;
+  }
+}
+@media (min-width: 400px) and (max-width: 500px) {
+  .mainContent .leftOrUpperPart .leftOrUpperPartContainer .skillsAndEducation .skills .skillsDescription {
+    font-size: 10.5pt;
+  }
+}
+@media (min-width: 500px) and (max-width: 600px) {
+  .mainContent .leftOrUpperPart .leftOrUpperPartContainer .skillsAndEducation .skills .skillsDescription {
+    font-size: 11pt;
+  }
+}
+@media (width: 600px) {
+  .mainContent .leftOrUpperPart .leftOrUpperPartContainer .skillsAndEducation .skills .skillsDescription {
+    font-size: 10pt;
+  }
 }
 @media (min-width: 920px) and (max-width: 976px) {
   .mainContent .leftOrUpperPart .leftOrUpperPartContainer .skillsAndEducation .skills .skillsDescription {
@@ -2928,6 +3026,11 @@ input[type=email]) {
   font-weight: 500;
   color: #ffffff;
 }
+@media (min-width: 500px) and (max-width: 600px) {
+  .mainContent .leftOrUpperPart .leftOrUpperPartContainer .skillsAndEducation .education .allInOneEducation .wrapper h4 {
+    font-size: 11.5pt;
+  }
+}
 @media (min-width: 920px) and (max-width: 976px) {
   .mainContent .leftOrUpperPart .leftOrUpperPartContainer .skillsAndEducation .education .allInOneEducation .wrapper h4 {
     font-size: 11.5pt;
@@ -2952,6 +3055,16 @@ input[type=email]) {
   font-size: 9pt;
   color: #ebebeb;
 }
+@media (min-width: 400px) and (max-width: 500px) {
+  .mainContent .leftOrUpperPart .leftOrUpperPartContainer .skillsAndEducation .education .allInOneEducation .wrapper .location {
+    font-size: 9.5pt;
+  }
+}
+@media (min-width: 500px) and (max-width: 600px) {
+  .mainContent .leftOrUpperPart .leftOrUpperPartContainer .skillsAndEducation .education .allInOneEducation .wrapper .location {
+    font-size: 10pt;
+  }
+}
 @media (min-width: 920px) and (max-width: 976px) {
   .mainContent .leftOrUpperPart .leftOrUpperPartContainer .skillsAndEducation .education .allInOneEducation .wrapper .location {
     font-size: 9.5pt;
@@ -2965,6 +3078,16 @@ input[type=email]) {
 .mainContent .leftOrUpperPart .leftOrUpperPartContainer .skillsAndEducation .education .allInOneEducation .degree {
   font-size: 9pt;
   color: #ebebeb;
+}
+@media (min-width: 400px) and (max-width: 500px) {
+  .mainContent .leftOrUpperPart .leftOrUpperPartContainer .skillsAndEducation .education .allInOneEducation .degree {
+    font-size: 9.5pt;
+  }
+}
+@media (min-width: 500px) and (max-width: 600px) {
+  .mainContent .leftOrUpperPart .leftOrUpperPartContainer .skillsAndEducation .education .allInOneEducation .degree {
+    font-size: 10pt;
+  }
 }
 @media (min-width: 920px) and (max-width: 976px) {
   .mainContent .leftOrUpperPart .leftOrUpperPartContainer .skillsAndEducation .education .allInOneEducation .degree {
@@ -6258,7 +6381,7 @@ input[type=email]) {
   flex-direction: column;
   row-gap: 1rem;
 }
-@media (min-width: 300px) and (max-width: 500px) {
+@media (min-width: 300px) and (max-width: 600px) {
   .mainContent .rightOrLowerPart .rightOrLowerPartContainer .projects .cyber .allInOneCyber {
     padding-left: 0.8rem;
   }
@@ -6287,6 +6410,11 @@ input[type=email]) {
   font-size: 11pt;
   font-weight: 500;
   color: #ffffff;
+}
+@media (min-width: 500px) and (max-width: 600px) {
+  .mainContent .rightOrLowerPart .rightOrLowerPartContainer .projects .cyber .allInOneCyber h4 {
+    font-size: 11.5pt;
+  }
 }
 @media (min-width: 920px) and (max-width: 976px) {
   .mainContent .rightOrLowerPart .rightOrLowerPartContainer .projects .cyber .allInOneCyber h4 {
@@ -6328,6 +6456,16 @@ input[type=email]) {
   font-size: 10pt;
   list-style-type: disc;
   color: #ebebeb;
+}
+@media (min-width: 300px) and (max-width: 330px) {
+  .mainContent .rightOrLowerPart .rightOrLowerPartContainer .projects .cyber .allInOneCyber .points li {
+    font-size: 9.5pt;
+  }
+}
+@media (min-width: 500px) and (max-width: 600px) {
+  .mainContent .rightOrLowerPart .rightOrLowerPartContainer .projects .cyber .allInOneCyber .points li {
+    font-size: 10.5pt;
+  }
 }
 @media (min-width: 920px) and (max-width: 976px) {
   .mainContent .rightOrLowerPart .rightOrLowerPartContainer .projects .cyber .allInOneCyber .points li {
@@ -6458,7 +6596,7 @@ input[type=email]) {
 }
 @media (min-width: 500px) and (max-width: 600px) {
   .mainContent .rightOrLowerPart .rightOrLowerPartContainer .projects .web {
-    row-gap: 2.5rem;
+    row-gap: 2rem;
     width: 100%;
     height: 34rem;
     padding: 3rem 2rem;
@@ -6592,31 +6730,52 @@ input[type=email]) {
   scroll-snap-type: y mandatory;
   scroll-behavior: smooth;
 }
+@media (min-width: 300px) and (max-width: 330px) {
+  .mainContent .rightOrLowerPart .rightOrLowerPartContainer .projects .web .carousel {
+    width: 90%;
+  }
+}
+@media (min-width: 330px) and (max-width: 380px) {
+  .mainContent .rightOrLowerPart .rightOrLowerPartContainer .projects .web .carousel {
+    width: 80%;
+  }
+}
+@media (min-width: 380px) and (max-width: 450px) {
+  .mainContent .rightOrLowerPart .rightOrLowerPartContainer .projects .web .carousel {
+    width: 75%;
+  }
+}
+@media (min-width: 450px) and (max-width: 600px) {
+  .mainContent .rightOrLowerPart .rightOrLowerPartContainer .projects .web .carousel {
+    width: 65%;
+  }
+}
 @media (min-width: 300px) and (max-width: 600px) {
   .mainContent .rightOrLowerPart .rightOrLowerPartContainer .projects .web .carousel {
     height: 22rem;
   }
 }
-@media (min-width: 300px) and (max-width: 500px) {
-  .mainContent .rightOrLowerPart .rightOrLowerPartContainer .projects .web .carousel {
-    width: 85%;
-  }
-}
 @media (min-width: 600px) and (max-width: 860px) {
   .mainContent .rightOrLowerPart .rightOrLowerPartContainer .projects .web .carousel {
-    width: 100%;
+    width: 85%;
     height: 18.5rem;
+  }
+}
+@media (width: 600px) {
+  .mainContent .rightOrLowerPart .rightOrLowerPartContainer .projects .web .carousel {
+    width: 100%;
+    height: 21.5rem;
   }
 }
 @media (min-width: 860px) and (max-width: 976px) {
   .mainContent .rightOrLowerPart .rightOrLowerPartContainer .projects .web .carousel {
-    width: 100%;
+    width: 75%;
     height: 18rem;
   }
 }
 @media (min-width: 976px) and (max-width: 1023px) {
   .mainContent .rightOrLowerPart .rightOrLowerPartContainer .projects .web .carousel {
-    width: 100%;
+    width: 70%;
     height: 18.2rem;
   }
 }
@@ -6667,10 +6826,16 @@ input[type=email]) {
     height: 8.5rem;
   }
 }
+@media (min-width: 600px) and (max-width: 1023px) {
+  .mainContent .rightOrLowerPart .rightOrLowerPartContainer .projects .web .carousel img {
+    width: 13rem;
+    height: 7rem;
+  }
+}
 @media (min-width: 1023px) and (max-width: 1099px) {
   .mainContent .rightOrLowerPart .rightOrLowerPartContainer .projects .web .carousel img {
     width: 12rem;
-    height: 7rem;
+    height: 7.5rem;
   }
 }
 @media (min-width: 1099px) and (max-width: 1349px) {
@@ -7511,9 +7676,30 @@ input[type=email]) {
   line-height: 1.5rem;
   color: #efefef;
 }
-@media (min-width: 607px) and (max-width: 666px) {
+@media (min-width: 300px) and (max-width: 330px) {
   .mainContent .leftOrUpperPart .leftOrUpperPartContainerUnfocused .aboutMeAndImage .aboutMe .aboutMeDescription {
-    line-height: 1.7rem;
+    font-size: 9.5pt;
+  }
+}
+@media (min-width: 400px) and (max-width: 500px) {
+  .mainContent .leftOrUpperPart .leftOrUpperPartContainerUnfocused .aboutMeAndImage .aboutMe .aboutMeDescription {
+    font-size: 10.5pt;
+  }
+}
+@media (min-width: 500px) and (max-width: 600px) {
+  .mainContent .leftOrUpperPart .leftOrUpperPartContainerUnfocused .aboutMeAndImage .aboutMe .aboutMeDescription {
+    font-size: 11pt;
+  }
+}
+@media (width: 600px) {
+  .mainContent .leftOrUpperPart .leftOrUpperPartContainerUnfocused .aboutMeAndImage .aboutMe .aboutMeDescription {
+    font-size: 10pt;
+    line-height: 1.6rem;
+  }
+}
+@media (min-width: 600px) and (max-width: 666px) {
+  .mainContent .leftOrUpperPart .leftOrUpperPartContainerUnfocused .aboutMeAndImage .aboutMe .aboutMeDescription {
+    line-height: 1.6rem;
   }
 }
 @media (min-width: 666px) and (max-width: 700px) {
@@ -7608,24 +7794,25 @@ input[type=email]) {
 .mainContent .leftOrUpperPart .leftOrUpperPartContainerUnfocused .aboutMeAndImage .aboutMe .locationAndContactForm {
   display: none;
 }
-@media (min-width: 300px) and (max-width: 307px) {
+@media (min-width: 300px) and (max-width: 310px) {
   .mainContent .leftOrUpperPart .leftOrUpperPartContainerUnfocused .aboutMeAndImage .aboutMe .locationAndContactForm {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    transform: translate(0, 10%);
   }
 }
-@media (min-width: 307px) and (max-width: 337px) {
+@media (min-width: 310px) and (max-width: 322px) {
   .mainContent .leftOrUpperPart .leftOrUpperPartContainerUnfocused .aboutMeAndImage .aboutMe .locationAndContactForm {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    transform: translate(0, 15%);
+    transform: translate(0, 10%);
   }
 }
-@media (min-width: 337px) and (max-width: 397px) {
+@media (min-width: 322px) and (max-width: 330px) {
   .mainContent .leftOrUpperPart .leftOrUpperPartContainerUnfocused .aboutMeAndImage .aboutMe .locationAndContactForm {
     display: flex;
     flex-direction: row;
@@ -7634,25 +7821,16 @@ input[type=email]) {
     transform: translate(0, 75%);
   }
 }
-@media (min-width: 397px) and (max-width: 400px) {
+@media (min-width: 330px) and (max-width: 337px) {
   .mainContent .leftOrUpperPart .leftOrUpperPartContainerUnfocused .aboutMeAndImage .aboutMe .locationAndContactForm {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    transform: translate(0, 140%);
+    transform: translate(0, 10%);
   }
 }
-@media (min-width: 400px) and (max-width: 404px) {
-  .mainContent .leftOrUpperPart .leftOrUpperPartContainerUnfocused .aboutMeAndImage .aboutMe .locationAndContactForm {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    transform: translate(0, 15%);
-  }
-}
-@media (min-width: 404px) and (max-width: 467px) {
+@media (min-width: 337px) and (max-width: 397px) {
   .mainContent .leftOrUpperPart .leftOrUpperPartContainerUnfocused .aboutMeAndImage .aboutMe .locationAndContactForm {
     display: flex;
     flex-direction: row;
@@ -7661,32 +7839,67 @@ input[type=email]) {
     transform: translate(0, 70%);
   }
 }
-@media (min-width: 467px) and (max-width: 500px) {
+@media (min-width: 397px) and (max-width: 400px) {
+  .mainContent .leftOrUpperPart .leftOrUpperPartContainerUnfocused .aboutMeAndImage .aboutMe .locationAndContactForm {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    transform: translate(0, 135%);
+  }
+}
+@media (min-width: 400px) and (max-width: 420px) {
+  .mainContent .leftOrUpperPart .leftOrUpperPartContainerUnfocused .aboutMeAndImage .aboutMe .locationAndContactForm {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    transform: translate(0, 15%);
+  }
+}
+@media (min-width: 420px) and (max-width: 489px) {
+  .mainContent .leftOrUpperPart .leftOrUpperPartContainerUnfocused .aboutMeAndImage .aboutMe .locationAndContactForm {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    transform: translate(0, 70%);
+  }
+}
+@media (width = 420px) {
+  .mainContent .leftOrUpperPart .leftOrUpperPartContainerUnfocused .aboutMeAndImage .aboutMe .locationAndContactForm {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    transform: translate(0, 15%);
+  }
+}
+@media (min-width: 489px) and (max-width: 500px) {
   .mainContent .leftOrUpperPart .leftOrUpperPartContainerUnfocused .aboutMeAndImage .aboutMe .locationAndContactForm {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     transform: translate(0, 130%);
-    padding-inline: 0.2rem;
   }
 }
-@media (min-width: 500px) and (max-width: 570px) {
+@media (min-width: 500px) and (max-width: 541px) {
+  .mainContent .leftOrUpperPart .leftOrUpperPartContainerUnfocused .aboutMeAndImage .aboutMe .locationAndContactForm {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    transform: translate(0, 75%);
+  }
+}
+@media (min-width: 541px) and (max-width: 600px) {
   .mainContent .leftOrUpperPart .leftOrUpperPartContainerUnfocused .aboutMeAndImage .aboutMe .locationAndContactForm {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     transform: translate(0, 130%);
-  }
-}
-@media (min-width: 570px) and (max-width: 600px) {
-  .mainContent .leftOrUpperPart .leftOrUpperPartContainerUnfocused .aboutMeAndImage .aboutMe .locationAndContactForm {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    transform: translate(0, 195%);
   }
 }
 @media (min-width: 600px) {
@@ -7735,11 +7948,17 @@ input[type=email]) {
 }
 .mainContent .leftOrUpperPart .leftOrUpperPartContainerUnfocused .aboutMeAndImage .aboutMe .locationAndContactForm .locationForSmallerScreens {
   display: flex;
+  font-size: 10pt;
   color: #efefef;
 }
-@media (min-width: 300px) and (max-width: 600px) {
+@media (min-width: 300px) and (max-width: 400px) {
   .mainContent .leftOrUpperPart .leftOrUpperPartContainerUnfocused .aboutMeAndImage .aboutMe .locationAndContactForm .locationForSmallerScreens {
     font-size: 9pt;
+  }
+}
+@media (min-width: 400px) and (max-width: 600px) {
+  .mainContent .leftOrUpperPart .leftOrUpperPartContainerUnfocused .aboutMeAndImage .aboutMe .locationAndContactForm .locationForSmallerScreens {
+    font-size: 10pt;
   }
 }
 .mainContent .leftOrUpperPart .leftOrUpperPartContainerUnfocused .aboutMeAndImage .forSmallerScreens {
@@ -7903,18 +8122,19 @@ input[type=email]) {
     font-size: 9pt;
   }
 }
-@media (min-width: 330px) and (max-width: 370px) {
+@media (min-width: 330px) and (max-width: 400px) {
   .mainContent .leftOrUpperPart .leftOrUpperPartContainerUnfocused .aboutMeAndImage .forSmallerScreens p {
     margin: 2.25rem 0;
     font-size: 9pt;
   }
 }
-@media (min-width: 370px) and (max-width: 600px) {
+@media (min-width: 400px) and (max-width: 600px) {
   .mainContent .leftOrUpperPart .leftOrUpperPartContainerUnfocused .aboutMeAndImage .forSmallerScreens p {
-    margin: 2.25rem 0;
+    margin: 2.8rem 1rem;
+    font-size: 10pt;
   }
 }
-@media (min-width: 600px) and (max-width: 700px) {
+@media (min-width: 600px) and (max-width: 920px) {
   .mainContent .leftOrUpperPart .leftOrUpperPartContainerUnfocused .aboutMeAndImage .forSmallerScreens p {
     margin: 2.8rem 1rem;
     font-size: 9pt;
@@ -8005,6 +8225,21 @@ input[type=email]) {
   .mainContent .leftOrUpperPart .leftOrUpperPartContainerUnfocused .skillsAndEducation {
     flex-direction: column-reverse;
     row-gap: 1rem;
+    animation: skillsAndEducation 0.5s linear;
+    animation-iteration-count: 1;
+  }
+  @keyframes skillsAndEducation {
+    0% {
+      filter: opacity(0.5) grayscale(10%) blur(0.05rem) brightness(80%);
+      transform: scale(100%);
+    }
+    50% {
+      transform: scale(101%);
+    }
+    100% {
+      transform: scale(100%);
+      opacity: 1;
+    }
   }
 }
 @media (min-width: 600px) and (max-width: 700px) {
@@ -8259,6 +8494,26 @@ input[type=email]) {
   font-size: 10pt;
   line-height: 1.5rem;
   color: #efefef;
+}
+@media (min-width: 300px) and (max-width: 330px) {
+  .mainContent .leftOrUpperPart .leftOrUpperPartContainerUnfocused .skillsAndEducation .skills .skillsDescription {
+    font-size: 9.5pt;
+  }
+}
+@media (min-width: 400px) and (max-width: 500px) {
+  .mainContent .leftOrUpperPart .leftOrUpperPartContainerUnfocused .skillsAndEducation .skills .skillsDescription {
+    font-size: 10.5pt;
+  }
+}
+@media (min-width: 500px) and (max-width: 600px) {
+  .mainContent .leftOrUpperPart .leftOrUpperPartContainerUnfocused .skillsAndEducation .skills .skillsDescription {
+    font-size: 11pt;
+  }
+}
+@media (width: 600px) {
+  .mainContent .leftOrUpperPart .leftOrUpperPartContainerUnfocused .skillsAndEducation .skills .skillsDescription {
+    font-size: 10pt;
+  }
 }
 @media (min-width: 920px) and (max-width: 976px) {
   .mainContent .leftOrUpperPart .leftOrUpperPartContainerUnfocused .skillsAndEducation .skills .skillsDescription {
@@ -8543,6 +8798,11 @@ input[type=email]) {
   font-weight: 500;
   color: #ffffff;
 }
+@media (min-width: 500px) and (max-width: 600px) {
+  .mainContent .leftOrUpperPart .leftOrUpperPartContainerUnfocused .skillsAndEducation .education .allInOneEducation .wrapper h4 {
+    font-size: 11.5pt;
+  }
+}
 @media (min-width: 920px) and (max-width: 976px) {
   .mainContent .leftOrUpperPart .leftOrUpperPartContainerUnfocused .skillsAndEducation .education .allInOneEducation .wrapper h4 {
     font-size: 11.5pt;
@@ -8567,6 +8827,16 @@ input[type=email]) {
   font-size: 9pt;
   color: #ebebeb;
 }
+@media (min-width: 400px) and (max-width: 500px) {
+  .mainContent .leftOrUpperPart .leftOrUpperPartContainerUnfocused .skillsAndEducation .education .allInOneEducation .wrapper .location {
+    font-size: 9.5pt;
+  }
+}
+@media (min-width: 500px) and (max-width: 600px) {
+  .mainContent .leftOrUpperPart .leftOrUpperPartContainerUnfocused .skillsAndEducation .education .allInOneEducation .wrapper .location {
+    font-size: 10pt;
+  }
+}
 @media (min-width: 920px) and (max-width: 976px) {
   .mainContent .leftOrUpperPart .leftOrUpperPartContainerUnfocused .skillsAndEducation .education .allInOneEducation .wrapper .location {
     font-size: 9.5pt;
@@ -8580,6 +8850,16 @@ input[type=email]) {
 .mainContent .leftOrUpperPart .leftOrUpperPartContainerUnfocused .skillsAndEducation .education .allInOneEducation .degree {
   font-size: 9pt;
   color: #ebebeb;
+}
+@media (min-width: 400px) and (max-width: 500px) {
+  .mainContent .leftOrUpperPart .leftOrUpperPartContainerUnfocused .skillsAndEducation .education .allInOneEducation .degree {
+    font-size: 9.5pt;
+  }
+}
+@media (min-width: 500px) and (max-width: 600px) {
+  .mainContent .leftOrUpperPart .leftOrUpperPartContainerUnfocused .skillsAndEducation .education .allInOneEducation .degree {
+    font-size: 10pt;
+  }
 }
 @media (min-width: 920px) and (max-width: 976px) {
   .mainContent .leftOrUpperPart .leftOrUpperPartContainerUnfocused .skillsAndEducation .education .allInOneEducation .degree {
@@ -8595,12 +8875,12 @@ input[type=email]) {
   display: flex;
   flex-direction: row-reverse;
   column-gap: 2%;
+  animation: unset;
 }
 @media (min-width: 300px) and (max-width: 600px) {
   .mainContent .leftOrUpperPart .leftOrUpperPartContainerUnfocused .skillsAndEducationSwapped {
     flex-direction: column;
     row-gap: 1rem;
-    transition: all 0.5s ease;
     animation: skillsAndEducationSwapped 0.5s linear;
     animation-iteration-count: 1;
   }
@@ -8609,13 +8889,7 @@ input[type=email]) {
       filter: opacity(0.5) grayscale(10%) blur(0.05rem) brightness(80%);
       transform: scale(100%);
     }
-    25% {
-      transform: scale(101%);
-    }
     50% {
-      transform: scale(102%);
-    }
-    75% {
       transform: scale(101%);
     }
     100% {
@@ -8876,6 +9150,26 @@ input[type=email]) {
   font-size: 10pt;
   line-height: 1.5rem;
   color: #efefef;
+}
+@media (min-width: 300px) and (max-width: 330px) {
+  .mainContent .leftOrUpperPart .leftOrUpperPartContainerUnfocused .skillsAndEducationSwapped .skills .skillsDescription {
+    font-size: 9.5pt;
+  }
+}
+@media (min-width: 400px) and (max-width: 500px) {
+  .mainContent .leftOrUpperPart .leftOrUpperPartContainerUnfocused .skillsAndEducationSwapped .skills .skillsDescription {
+    font-size: 10.5pt;
+  }
+}
+@media (min-width: 500px) and (max-width: 600px) {
+  .mainContent .leftOrUpperPart .leftOrUpperPartContainerUnfocused .skillsAndEducationSwapped .skills .skillsDescription {
+    font-size: 11pt;
+  }
+}
+@media (width: 600px) {
+  .mainContent .leftOrUpperPart .leftOrUpperPartContainerUnfocused .skillsAndEducationSwapped .skills .skillsDescription {
+    font-size: 10pt;
+  }
 }
 @media (min-width: 920px) and (max-width: 976px) {
   .mainContent .leftOrUpperPart .leftOrUpperPartContainerUnfocused .skillsAndEducationSwapped .skills .skillsDescription {
@@ -9160,6 +9454,16 @@ input[type=email]) {
   font-weight: 500;
   color: #ffffff;
 }
+@media (min-width: 500px) and (max-width: 600px) {
+  .mainContent .leftOrUpperPart .leftOrUpperPartContainerUnfocused .skillsAndEducationSwapped .education .allInOneEducation .wrapper h4 {
+    font-size: 11.5pt;
+  }
+}
+@media (min-width: 920px) and (max-width: 976px) {
+  .mainContent .leftOrUpperPart .leftOrUpperPartContainerUnfocused .skillsAndEducationSwapped .education .allInOneEducation .wrapper h4 {
+    font-size: 11.5pt;
+  }
+}
 @media (min-width: 967px) and (max-width: 1023px) {
   .mainContent .leftOrUpperPart .leftOrUpperPartContainerUnfocused .skillsAndEducationSwapped .education .allInOneEducation .wrapper h4 {
     font-size: 12pt;
@@ -9179,6 +9483,16 @@ input[type=email]) {
   font-size: 9pt;
   color: #ebebeb;
 }
+@media (min-width: 400px) and (max-width: 500px) {
+  .mainContent .leftOrUpperPart .leftOrUpperPartContainerUnfocused .skillsAndEducationSwapped .education .allInOneEducation .wrapper .location {
+    font-size: 9.5pt;
+  }
+}
+@media (min-width: 500px) and (max-width: 600px) {
+  .mainContent .leftOrUpperPart .leftOrUpperPartContainerUnfocused .skillsAndEducationSwapped .education .allInOneEducation .wrapper .location {
+    font-size: 10pt;
+  }
+}
 @media (min-width: 920px) and (max-width: 976px) {
   .mainContent .leftOrUpperPart .leftOrUpperPartContainerUnfocused .skillsAndEducationSwapped .education .allInOneEducation .wrapper .location {
     font-size: 9.5pt;
@@ -9192,6 +9506,16 @@ input[type=email]) {
 .mainContent .leftOrUpperPart .leftOrUpperPartContainerUnfocused .skillsAndEducationSwapped .education .allInOneEducation .degree {
   font-size: 9pt;
   color: #ebebeb;
+}
+@media (min-width: 400px) and (max-width: 500px) {
+  .mainContent .leftOrUpperPart .leftOrUpperPartContainerUnfocused .skillsAndEducationSwapped .education .allInOneEducation .degree {
+    font-size: 9.5pt;
+  }
+}
+@media (min-width: 500px) and (max-width: 600px) {
+  .mainContent .leftOrUpperPart .leftOrUpperPartContainerUnfocused .skillsAndEducationSwapped .education .allInOneEducation .degree {
+    font-size: 10pt;
+  }
 }
 @media (min-width: 920px) and (max-width: 976px) {
   .mainContent .leftOrUpperPart .leftOrUpperPartContainerUnfocused .skillsAndEducationSwapped .education .allInOneEducation .degree {
@@ -9449,7 +9773,7 @@ input[type=email]) {
   flex-direction: column;
   row-gap: 1rem;
 }
-@media (min-width: 300px) and (max-width: 500px) {
+@media (min-width: 300px) and (max-width: 600px) {
   .mainContent .rightOrLowerPart .rightOrLowerPartContainerUnfocused .projects .cyber .allInOneCyber {
     padding-left: 0.8rem;
   }
@@ -9478,6 +9802,11 @@ input[type=email]) {
   font-size: 11pt;
   font-weight: 500;
   color: #ffffff;
+}
+@media (min-width: 500px) and (max-width: 600px) {
+  .mainContent .rightOrLowerPart .rightOrLowerPartContainerUnfocused .projects .cyber .allInOneCyber h4 {
+    font-size: 11.5pt;
+  }
 }
 @media (min-width: 920px) and (max-width: 976px) {
   .mainContent .rightOrLowerPart .rightOrLowerPartContainerUnfocused .projects .cyber .allInOneCyber h4 {
@@ -9519,6 +9848,16 @@ input[type=email]) {
   font-size: 10pt;
   list-style-type: disc;
   color: #ebebeb;
+}
+@media (min-width: 300px) and (max-width: 330px) {
+  .mainContent .rightOrLowerPart .rightOrLowerPartContainerUnfocused .projects .cyber .allInOneCyber .points li {
+    font-size: 9.5pt;
+  }
+}
+@media (min-width: 500px) and (max-width: 600px) {
+  .mainContent .rightOrLowerPart .rightOrLowerPartContainerUnfocused .projects .cyber .allInOneCyber .points li {
+    font-size: 10.5pt;
+  }
 }
 @media (min-width: 920px) and (max-width: 976px) {
   .mainContent .rightOrLowerPart .rightOrLowerPartContainerUnfocused .projects .cyber .allInOneCyber .points li {
@@ -9645,7 +9984,7 @@ input[type=email]) {
 }
 @media (min-width: 500px) and (max-width: 600px) {
   .mainContent .rightOrLowerPart .rightOrLowerPartContainerUnfocused .projects .web {
-    row-gap: 2.5rem;
+    row-gap: 2rem;
     width: 100%;
     height: 34rem;
     padding: 3rem 2rem;
@@ -9776,32 +10115,53 @@ input[type=email]) {
   scrollbar-width: thin;
   scrollbar-color: #999999 #4f4d41;
 }
+@media (min-width: 300px) and (max-width: 330px) {
+  .mainContent .rightOrLowerPart .rightOrLowerPartContainerUnfocused .projects .web .carousel {
+    width: 90%;
+  }
+}
+@media (min-width: 330px) and (max-width: 380px) {
+  .mainContent .rightOrLowerPart .rightOrLowerPartContainerUnfocused .projects .web .carousel {
+    width: 80%;
+  }
+}
+@media (min-width: 380px) and (max-width: 450px) {
+  .mainContent .rightOrLowerPart .rightOrLowerPartContainerUnfocused .projects .web .carousel {
+    width: 75%;
+  }
+}
+@media (min-width: 450px) and (max-width: 600px) {
+  .mainContent .rightOrLowerPart .rightOrLowerPartContainerUnfocused .projects .web .carousel {
+    width: 65%;
+  }
+}
 @media (min-width: 300px) and (max-width: 600px) {
   .mainContent .rightOrLowerPart .rightOrLowerPartContainerUnfocused .projects .web .carousel {
     height: 22rem;
   }
 }
-@media (min-width: 300px) and (max-width: 500px) {
-  .mainContent .rightOrLowerPart .rightOrLowerPartContainerUnfocused .projects .web .carousel {
-    width: 85%;
-  }
-}
 @media (min-width: 600px) and (max-width: 860px) {
   .mainContent .rightOrLowerPart .rightOrLowerPartContainerUnfocused .projects .web .carousel {
-    width: 100%;
+    width: 85%;
     height: 18.5rem;
+  }
+}
+@media (width: 600px) {
+  .mainContent .rightOrLowerPart .rightOrLowerPartContainerUnfocused .projects .web .carousel {
+    width: 100%;
+    height: 21.5rem;
   }
 }
 @media (min-width: 860px) and (max-width: 976px) {
   .mainContent .rightOrLowerPart .rightOrLowerPartContainerUnfocused .projects .web .carousel {
-    width: 100%;
+    width: 75%;
     height: 18rem;
   }
 }
 @media (min-width: 976px) and (max-width: 1023px) {
   .mainContent .rightOrLowerPart .rightOrLowerPartContainerUnfocused .projects .web .carousel {
-    width: 100%;
-    height: 20rem;
+    width: 70%;
+    height: 18.2rem;
   }
 }
 @media (min-width: 1023px) and (max-width: 1099px) {
@@ -9855,10 +10215,16 @@ input[type=email]) {
     height: 8.5rem;
   }
 }
+@media (min-width: 600px) and (max-width: 1023px) {
+  .mainContent .rightOrLowerPart .rightOrLowerPartContainerUnfocused .projects .web .carousel a img {
+    width: 13rem;
+    height: 7rem;
+  }
+}
 @media (min-width: 1023px) and (max-width: 1099px) {
   .mainContent .rightOrLowerPart .rightOrLowerPartContainerUnfocused .projects .web .carousel a img {
     width: 12rem;
-    height: 7rem;
+    height: 7.5rem;
   }
 }
 @media (min-width: 1099px) and (max-width: 1349px) {
@@ -9945,35 +10311,28 @@ input[type=email]) {
   display: flex;
   flex-direction: row;
   column-gap: 2%;
-  height: 30.95rem;
+  height: projectsSwapped(30.95rem, 30.95rem);
+  animation: projectsSwapped 0.5s linear;
+  animation-iteration-count: 1;
+}
+@keyframes header {
+  0% {
+    filter: opacity(0.5) grayscale(10%) blur(0.05rem) brightness(80%);
+    transform: scale(100%);
+  }
+  50% {
+    transform: scale(101%);
+  }
+  100% {
+    transform: scale(100%);
+    opacity: 1;
+  }
 }
 @media (min-width: 300px) and (max-width: 600px) {
   .mainContent .rightOrLowerPart .rightOrLowerPartContainerUnfocused .projectsSwapped {
     flex-direction: column;
     row-gap: 1rem;
     height: auto;
-    transition: all 0.5s ease;
-    animation: projectsSwapped 0.5s linear;
-    animation-iteration-count: 1;
-  }
-  @keyframes projectsSwapped {
-    0% {
-      filter: opacity(0.5) grayscale(10%) blur(0.05rem) brightness(80%);
-      transform: scale(100%);
-    }
-    25% {
-      transform: scale(101%);
-    }
-    50% {
-      transform: scale(102%);
-    }
-    75% {
-      transform: scale(101%);
-    }
-    100% {
-      transform: scale(100%);
-      opacity: 1;
-    }
   }
 }
 @media (min-width: 600px) and (max-width: 700px) {
@@ -10175,7 +10534,7 @@ input[type=email]) {
   flex-direction: column;
   row-gap: 1rem;
 }
-@media (min-width: 300px) and (max-width: 500px) {
+@media (min-width: 300px) and (max-width: 600px) {
   .mainContent .rightOrLowerPart .rightOrLowerPartContainerUnfocused .projectsSwapped .cyber .allInOneCyber {
     padding-left: 0.8rem;
   }
@@ -10204,6 +10563,11 @@ input[type=email]) {
   font-size: 11pt;
   font-weight: 500;
   color: #ffffff;
+}
+@media (min-width: 500px) and (max-width: 600px) {
+  .mainContent .rightOrLowerPart .rightOrLowerPartContainerUnfocused .projectsSwapped .cyber .allInOneCyber h4 {
+    font-size: 11.5pt;
+  }
 }
 @media (min-width: 920px) and (max-width: 976px) {
   .mainContent .rightOrLowerPart .rightOrLowerPartContainerUnfocused .projectsSwapped .cyber .allInOneCyber h4 {
@@ -10245,6 +10609,16 @@ input[type=email]) {
   font-size: 10pt;
   list-style-type: disc;
   color: #ebebeb;
+}
+@media (min-width: 300px) and (max-width: 330px) {
+  .mainContent .rightOrLowerPart .rightOrLowerPartContainerUnfocused .projectsSwapped .cyber .allInOneCyber .points li {
+    font-size: 9.5pt;
+  }
+}
+@media (min-width: 500px) and (max-width: 600px) {
+  .mainContent .rightOrLowerPart .rightOrLowerPartContainerUnfocused .projectsSwapped .cyber .allInOneCyber .points li {
+    font-size: 10.5pt;
+  }
 }
 @media (min-width: 920px) and (max-width: 976px) {
   .mainContent .rightOrLowerPart .rightOrLowerPartContainerUnfocused .projectsSwapped .cyber .allInOneCyber .points li {
@@ -10371,7 +10745,7 @@ input[type=email]) {
 }
 @media (min-width: 500px) and (max-width: 600px) {
   .mainContent .rightOrLowerPart .rightOrLowerPartContainerUnfocused .projectsSwapped .web {
-    row-gap: 2.5rem;
+    row-gap: 2rem;
     width: 100%;
     height: 34rem;
     padding: 3rem 2rem;
@@ -10502,32 +10876,53 @@ input[type=email]) {
   scrollbar-width: thin;
   scrollbar-color: #999999 #4f4d41;
 }
+@media (min-width: 300px) and (max-width: 330px) {
+  .mainContent .rightOrLowerPart .rightOrLowerPartContainerUnfocused .projectsSwapped .web .carousel {
+    width: 90%;
+  }
+}
+@media (min-width: 330px) and (max-width: 380px) {
+  .mainContent .rightOrLowerPart .rightOrLowerPartContainerUnfocused .projectsSwapped .web .carousel {
+    width: 80%;
+  }
+}
+@media (min-width: 380px) and (max-width: 450px) {
+  .mainContent .rightOrLowerPart .rightOrLowerPartContainerUnfocused .projectsSwapped .web .carousel {
+    width: 75%;
+  }
+}
+@media (min-width: 450px) and (max-width: 600px) {
+  .mainContent .rightOrLowerPart .rightOrLowerPartContainerUnfocused .projectsSwapped .web .carousel {
+    width: 65%;
+  }
+}
 @media (min-width: 300px) and (max-width: 600px) {
   .mainContent .rightOrLowerPart .rightOrLowerPartContainerUnfocused .projectsSwapped .web .carousel {
     height: 22rem;
   }
 }
-@media (min-width: 300px) and (max-width: 500px) {
-  .mainContent .rightOrLowerPart .rightOrLowerPartContainerUnfocused .projectsSwapped .web .carousel {
-    width: 85%;
-  }
-}
 @media (min-width: 600px) and (max-width: 860px) {
   .mainContent .rightOrLowerPart .rightOrLowerPartContainerUnfocused .projectsSwapped .web .carousel {
-    width: 100%;
+    width: 85%;
     height: 18.5rem;
+  }
+}
+@media (width: 600px) {
+  .mainContent .rightOrLowerPart .rightOrLowerPartContainerUnfocused .projectsSwapped .web .carousel {
+    width: 100%;
+    height: 21.5rem;
   }
 }
 @media (min-width: 860px) and (max-width: 976px) {
   .mainContent .rightOrLowerPart .rightOrLowerPartContainerUnfocused .projectsSwapped .web .carousel {
-    width: 100%;
+    width: 75%;
     height: 18rem;
   }
 }
 @media (min-width: 976px) and (max-width: 1023px) {
   .mainContent .rightOrLowerPart .rightOrLowerPartContainerUnfocused .projectsSwapped .web .carousel {
-    width: 100%;
-    height: 20rem;
+    width: 70%;
+    height: 18.2rem;
   }
 }
 @media (min-width: 1023px) and (max-width: 1099px) {
@@ -10581,10 +10976,16 @@ input[type=email]) {
     height: 8.5rem;
   }
 }
+@media (min-width: 600px) and (max-width: 1023px) {
+  .mainContent .rightOrLowerPart .rightOrLowerPartContainerUnfocused .projectsSwapped .web .carousel a img {
+    width: 13rem;
+    height: 7rem;
+  }
+}
 @media (min-width: 1023px) and (max-width: 1099px) {
   .mainContent .rightOrLowerPart .rightOrLowerPartContainerUnfocused .projectsSwapped .web .carousel a img {
     width: 12rem;
-    height: 7rem;
+    height: 7.5rem;
   }
 }
 @media (min-width: 1099px) and (max-width: 1349px) {
@@ -21878,7 +22279,7 @@ body {
 }
 @media (orientation: portrait) and (min-height: 1470px) {
   #root {
-    height: 100dvh !important;
+    height: 100dvh;
   }
 }
 @media (orientation: portrait) and (max-height: 1470px) {
