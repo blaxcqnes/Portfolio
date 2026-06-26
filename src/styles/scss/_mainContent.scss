@@ -233,7 +233,14 @@
             padding: 1.6rem 1.2rem;
           }
 
-          @media (min-width: 1200px) and (max-width: 1400px) {
+          @media (min-width: 1200px) and (max-width: 1300px) {
+            row-gap: 1.25rem;
+            width: min(64%, 64%);
+            height: min(18rem, 18rem);
+            padding: 1.4rem 1.2rem;
+          }
+
+          @media (min-width: 1300px) and (max-width: 1400px) {
             row-gap: 1.25rem;
             width: min(60%, 60%);
             height: min(20rem, 20rem);
@@ -358,9 +365,9 @@
               line-height: 1.3rem;
             }
 
-            // @media (min-width: 1126px) and (max-width: 1200px) {
-            //   line-height: 1.45rem;
-            // }
+            @media (min-width: 1200px) and (max-width: 1300px) {
+              line-height: 1.3rem;
+            }
 
             @media (min-width: 1317px) and (max-width: 1330px) {
               line-height: 1.4rem !important;
@@ -763,8 +770,13 @@
             height: min(18rem, 18rem);
           }
 
-          @media (min-width: 1099px) and (max-width: 1400px) {
+          @media (min-width: 1099px) and (max-width: 1200px) {
             width: min(40%, 40%);
+            height: min(18rem, 18rem);
+          }
+
+          @media (min-width: 1200px) and (max-width: 1300px) {
+            width: min(34%, 34%);
             height: min(18rem, 18rem);
           }
 
@@ -930,9 +942,14 @@
             padding: 1.1rem 1rem;
           }
 
-          @media (min-width: 1099px) and (max-width: 1400px) {
+          @media (min-width: 1099px) and (max-width: 1200px) {
             height: min(18rem, 18rem);
             padding: 1.2rem 1.2rem;
+          }
+
+          @media (min-width: 1200px) and (max-width: 1300px) {
+            height: min(17.5rem, 17.5rem);
+            padding: 1.4rem 1.2rem;
           }
 
           @media (min-width: 1570px) and (max-width: 1670px) {
@@ -1196,10 +1213,16 @@
             padding: 1.1rem 1rem;
           }
 
-          @media (min-width: 1099px) and (max-width: 1400px) {
+          @media (min-width: 1099px) and (max-width: 1200px) {
             row-gap: 1.2rem;
             height: min(18rem, 18rem);
             padding: 1.2rem 1.2rem;
+          }
+
+          @media (min-width: 1200px) and (max-width: 1300px) {
+            row-gap: 1.2rem;
+            height: min(17.5rem, 17.5rem);
+            padding: 1.4rem 1.2rem;
           }
 
           @media (min-width: 1570px) and (max-width: 1670px) {
@@ -4474,7 +4497,12 @@
           height: min(31.5rem, 31.5rem);
         }
 
-        @media (min-width: 1200px) and (max-width: 1400px) {
+        @media (min-width: 1200px) and (max-width: 1300px) {
+          width: 100%;
+          height: min(30.6rem, 30.6rem);
+        }
+
+        @media (min-width: 1300px) and (max-width: 1400px) {
           width: 100%;
           height: min(32.5rem, 32.5rem);
         }
@@ -4601,7 +4629,12 @@
             padding: 1.4rem 1.1rem;
           }
 
-          @media (min-width: 1200px) and (max-width: 1400px) {
+          @media (min-width: 1200px) and (max-width: 1300px) {
+            row-gap: 1.3rem;
+            padding: 1.4rem 1.2rem;
+          }
+
+          @media (min-width: 1300px) and (max-width: 1400px) {
             row-gap: 2rem;
             padding: 1.4rem 1.2rem;
           }
@@ -4909,8 +4942,13 @@
             padding: 1.5rem 1rem;
           }
 
-          @media (min-width: 1099px) and (max-width: 1400px) {
+          @media (min-width: 1099px) and (max-width: 1200px) {
             row-gap: 1.5rem;
+            padding: 1.4rem 1.1rem;
+          }
+
+          @media (min-width: 1200px) and (max-width: 1300px) {
+            row-gap: 1.2rem;
             padding: 1.4rem 1.1rem;
           }
 
@@ -4957,7 +4995,7 @@
             row-gap: 0.5rem;
             align-items: center;
             align-self: center;
-            width: min(21.5rem, 21.5rem);
+            width: min(18.5rem, 18.5rem);
             height: min(19.32rem, 19.32rem);
             border-radius: 0.5rem;
             overflow-y: auto;
@@ -5017,9 +5055,9 @@
               height: min(22rem, 22rem);
             }
 
-            @media (min-width: 1200px) and (max-width: 1400px) {
+            @media (min-width: 1200px) and (max-width: 1300px) {
               width: 100%;
-              height: min(22rem, 22rem);
+              height: min(21.5rem, 21.5rem);
             }
 
             @media (min-width: 1570px) and (max-width: 1670px) {
@@ -5057,12 +5095,17 @@
                 height: min(7rem, 7rem);
               }
 
-              @media (min-width: 1099px) and (max-width: 1349px) {
+              @media (min-width: 1099px) and (max-width: 1200px) {
                 width: min(13rem, 13rem);
                 height: min(7rem, 7rem);
               }
 
-              @media (min-width: 1349px) and (max-width: 1400px) {
+              @media (min-width: 1200px) and (max-width: 1300px) {
+                width: min(12rem, 12rem);
+                height: min(7rem, 7rem);
+              }
+
+              @media (min-width: 1300px) and (max-width: 1400px) {
                 width: min(14rem, 14rem);
                 height: min(8rem, 8rem);
               }
@@ -5194,7 +5237,12 @@
           padding: 1rem 1rem;
         }
 
-        @media (min-width: 1200px) and (max-width: 1400px) {
+        @media (min-width: 1200px) and (max-width: 1300px) {
+          height: 4.9rem;
+          padding: 1.5rem 1rem;
+        }
+
+        @media (min-width: 1300px) and (max-width: 1400px) {
           height: 6rem;
           padding: 1.5rem 1rem;
         }
@@ -5826,7 +5874,14 @@
             padding: 1.6rem 1.2rem;
           }
 
-          @media (min-width: 1200px) and (max-width: 1400px) {
+          @media (min-width: 1200px) and (max-width: 1300px) {
+            row-gap: 1.25rem;
+            width: min(64%, 64%);
+            height: min(18rem, 18rem);
+            padding: 1.4rem 1.2rem;
+          }
+
+          @media (min-width: 1300px) and (max-width: 1400px) {
             row-gap: 1.25rem;
             width: min(60%, 60%);
             height: min(20rem, 20rem);
@@ -5951,9 +6006,9 @@
               line-height: 1.3rem;
             }
 
-            // @media (min-width: 1126px) and (max-width: 1200px) {
-            //   line-height: 1.45rem;
-            // }
+            @media (min-width: 1200px) and (max-width: 1300px) {
+              line-height: 1.3rem;
+            }
 
             @media (min-width: 1317px) and (max-width: 1330px) {
               line-height: 1.4rem !important;
@@ -6356,8 +6411,13 @@
             height: min(18rem, 18rem);
           }
 
-          @media (min-width: 1099px) and (max-width: 1400px) {
+          @media (min-width: 1099px) and (max-width: 1200px) {
             width: min(40%, 40%);
+            height: min(18rem, 18rem);
+          }
+
+          @media (min-width: 1200px) and (max-width: 1300px) {
+            width: min(34%, 34%);
             height: min(18rem, 18rem);
           }
 
@@ -6523,9 +6583,14 @@
             padding: 1.1rem 1rem;
           }
 
-          @media (min-width: 1099px) and (max-width: 1400px) {
+          @media (min-width: 1099px) and (max-width: 1200px) {
             height: min(18rem, 18rem);
             padding: 1.2rem 1.2rem;
+          }
+
+          @media (min-width: 1200px) and (max-width: 1300px) {
+            height: min(17.5rem, 17.5rem);
+            padding: 1.4rem 1.2rem;
           }
 
           @media (min-width: 1570px) and (max-width: 1670px) {
@@ -6784,10 +6849,16 @@
             padding: 1.1rem 1rem;
           }
 
-          @media (min-width: 1099px) and (max-width: 1400px) {
+          @media (min-width: 1099px) and (max-width: 1200px) {
             row-gap: 1.2rem;
             height: min(18rem, 18rem);
             padding: 1.2rem 1.2rem;
+          }
+
+          @media (min-width: 1200px) and (max-width: 1300px) {
+            row-gap: 1.2rem;
+            height: min(17.5rem, 17.5rem);
+            padding: 1.4rem 1.2rem;
           }
 
           @media (min-width: 1570px) and (max-width: 1670px) {
@@ -7126,9 +7197,14 @@
             padding: 1.1rem 1rem;
           }
 
-          @media (min-width: 1099px) and (max-width: 1400px) {
+          @media (min-width: 1099px) and (max-width: 1200px) {
             height: min(18rem, 18rem);
             padding: 1.2rem 1.2rem;
+          }
+
+          @media (min-width: 1200px) and (max-width: 1300px) {
+            height: min(17.5rem, 17.5rem);
+            padding: 1.4rem 1.2rem;
           }
 
           @media (min-width: 1570px) and (max-width: 1670px) {
@@ -7387,10 +7463,16 @@
             padding: 1.1rem 1rem;
           }
 
-          @media (min-width: 1099px) and (max-width: 1400px) {
+          @media (min-width: 1099px) and (max-width: 1200px) {
             row-gap: 1.2rem;
             height: min(18rem, 18rem);
             padding: 1.2rem 1.2rem;
+          }
+
+          @media (min-width: 1200px) and (max-width: 1300px) {
+            row-gap: 1.2rem;
+            height: min(17.5rem, 17.5rem);
+            padding: 1.4rem 1.2rem;
           }
 
           @media (min-width: 1570px) and (max-width: 1670px) {
@@ -7645,7 +7727,12 @@
           height: min(31.5rem, 31.5rem);
         }
 
-        @media (min-width: 1200px) and (max-width: 1400px) {
+        @media (min-width: 1200px) and (max-width: 1300px) {
+          width: 100%;
+          height: min(30.6rem, 30.6rem);
+        }
+
+        @media (min-width: 1300px) and (max-width: 1400px) {
           width: 100%;
           height: min(32.5rem, 32.5rem);
         }
@@ -7771,8 +7858,13 @@
             padding: 1.4rem 1.1rem;
           }
 
-          @media (min-width: 1200px) and (max-width: 1400px) {
-            row-gap: 1.5rem;
+          @media (min-width: 1200px) and (max-width: 1300px) {
+            row-gap: 1.3rem;
+            padding: 1.4rem 1.2rem;
+          }
+
+          @media (min-width: 1300px) and (max-width: 1400px) {
+            row-gap: 2rem;
             padding: 1.4rem 1.2rem;
           }
 
@@ -8074,8 +8166,13 @@
             padding: 1.5rem 1rem;
           }
 
-          @media (min-width: 1099px) and (max-width: 1400px) {
+          @media (min-width: 1099px) and (max-width: 1200px) {
             row-gap: 1.5rem;
+            padding: 1.4rem 1.1rem;
+          }
+
+          @media (min-width: 1200px) and (max-width: 1300px) {
+            row-gap: 1.2rem;
             padding: 1.4rem 1.1rem;
           }
 
@@ -8122,7 +8219,7 @@
             row-gap: 0.5rem;
             align-items: center;
             align-self: center;
-            width: min(21.5rem, 21.5rem);
+            width: min(18.5rem, 18.5rem);
             height: min(19.32rem, 19.32rem);
             border-radius: 0.5rem;
             overflow-y: hidden;
@@ -8179,9 +8276,9 @@
               height: min(22rem, 22rem);
             }
 
-            @media (min-width: 1200px) and (max-width: 1400px) {
+            @media (min-width: 1200px) and (max-width: 1300px) {
               width: 100%;
-              height: min(22rem, 22rem);
+              height: min(21.5rem, 21.5rem);
             }
 
             @media (min-width: 1570px) and (max-width: 1670px) {
@@ -8223,12 +8320,17 @@
                   height: min(7rem, 7rem);
                 }
 
-                @media (min-width: 1099px) and (max-width: 1349px) {
+                @media (min-width: 1099px) and (max-width: 1200px) {
                   width: min(13rem, 13rem);
                   height: min(7rem, 7rem);
                 }
 
-                @media (min-width: 1349px) and (max-width: 1400px) {
+                @media (min-width: 1200px) and (max-width: 1300px) {
+                  width: min(12rem, 12rem);
+                  height: min(7rem, 7rem);
+                }
+
+                @media (min-width: 1300px) and (max-width: 1400px) {
                   width: min(14rem, 14rem);
                   height: min(8rem, 8rem);
                 }
@@ -8341,7 +8443,12 @@
           height: min(31.5rem, 31.5rem);
         }
 
-        @media (min-width: 1200px) and (max-width: 1400px) {
+        @media (min-width: 1200px) and (max-width: 1300px) {
+          width: 100%;
+          height: min(30.6rem, 30.6rem);
+        }
+
+        @media (min-width: 1300px) and (max-width: 1400px) {
           width: 100%;
           height: min(32.5rem, 32.5rem);
         }
@@ -8467,8 +8574,13 @@
             padding: 1.4rem 1.1rem;
           }
 
-          @media (min-width: 1200px) and (max-width: 1400px) {
-            row-gap: 1.5rem;
+          @media (min-width: 1200px) and (max-width: 1300px) {
+            row-gap: 1.3rem;
+            padding: 1.4rem 1.2rem;
+          }
+
+          @media (min-width: 1300px) and (max-width: 1400px) {
+            row-gap: 2rem;
             padding: 1.4rem 1.2rem;
           }
 
@@ -8770,8 +8882,13 @@
             padding: 1.5rem 1rem;
           }
 
-          @media (min-width: 1099px) and (max-width: 1400px) {
+          @media (min-width: 1099px) and (max-width: 1200px) {
             row-gap: 1.5rem;
+            padding: 1.4rem 1.1rem;
+          }
+
+          @media (min-width: 1200px) and (max-width: 1300px) {
+            row-gap: 1.2rem;
             padding: 1.4rem 1.1rem;
           }
 
@@ -8818,7 +8935,7 @@
             row-gap: 0.5rem;
             align-items: center;
             align-self: center;
-            width: min(21.5rem, 21.5rem);
+            width: min(18.5rem, 18.5rem);
             height: min(19.32rem, 19.32rem);
             border-radius: 0.5rem;
             overflow-y: hidden;
@@ -8875,9 +8992,9 @@
               height: min(22rem, 22rem);
             }
 
-            @media (min-width: 1200px) and (max-width: 1400px) {
+            @media (min-width: 1200px) and (max-width: 1300px) {
               width: 100%;
-              height: min(22rem, 22rem);
+              height: min(21.5rem, 21.5rem);
             }
 
             @media (min-width: 1570px) and (max-width: 1670px) {
@@ -8919,12 +9036,17 @@
                   height: min(7rem, 7rem);
                 }
 
-                @media (min-width: 1099px) and (max-width: 1349px) {
+                @media (min-width: 1099px) and (max-width: 1200px) {
                   width: min(13rem, 13rem);
                   height: min(7rem, 7rem);
                 }
 
-                @media (min-width: 1349px) and (max-width: 1400px) {
+                @media (min-width: 1200px) and (max-width: 1300px) {
+                  width: min(12rem, 12rem);
+                  height: min(7rem, 7rem);
+                }
+
+                @media (min-width: 1300px) and (max-width: 1400px) {
                   width: min(14rem, 14rem);
                   height: min(8rem, 8rem);
                 }
@@ -9052,7 +9174,12 @@
           padding: 1rem 1rem;
         }
 
-        @media (min-width: 1200px) and (max-width: 1400px) {
+        @media (min-width: 1200px) and (max-width: 1300px) {
+          height: 4.9rem;
+          padding: 1.5rem 1rem;
+        }
+
+        @media (min-width: 1300px) and (max-width: 1400px) {
           height: 6rem;
           padding: 1.5rem 1rem;
         }

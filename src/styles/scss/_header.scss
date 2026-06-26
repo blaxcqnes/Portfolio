@@ -54,7 +54,11 @@
       padding: 1.1rem 1.2rem;
     }
 
-    @media (min-width: 1200px) and (max-width: 1400px) {
+    @media (min-width: 1200px) and (max-width: 1300px) {
+      padding: 1.2rem 1.2rem;
+    }
+
+    @media (min-width: 1300px) and (max-width: 1400px) {
       padding: 1.3rem 1.2rem;
     }
 
@@ -118,6 +122,10 @@
           font-size: 17pt;
         }
 
+        @media (min-width: 1200px) and (max-width: 1300px) {
+          font-size: 18pt;
+        }
+
         @media (min-width: 1570px) and (max-width: 1670px) {
           font-size: 21pt;
         }
@@ -145,7 +153,7 @@
           font-size: 10pt !important;
         }
 
-        @media (min-width: 1023px) and (max-width: 1200px) {
+        @media (min-width: 1023px) and (max-width: 1300px) {
           font-size: 9pt;
         }
       }
@@ -187,41 +195,17 @@
         animation-iteration-count: 1;
 
         @keyframes lightButton {
-          0% {
+          from {
+            width: 0;
+            height: 0;
+            margin-right: 0;
+            opacity: 0.5;
+          }
+          to {
             width: 2.5rem;
             height: 2.5rem;
             margin-right: 2rem;
             opacity: 1;
-          }
-          20% {
-            width: 2rem;
-            height: 2rem;
-            margin-right: 1.5rem;
-            opacity: 0.8;
-          }
-          40% {
-            width: 1.5rem;
-            height: 1.5rem;
-            margin-right: 1rem;
-            opacity: 0.6;
-          }
-          60% {
-            width: 1rem;
-            height: 1rem;
-            margin-right: 0.5rem;
-            opacity: 0.4;
-          }
-          80% {
-            width: 0.5rem;
-            height: 0.5rem;
-            margin-right: 0;
-            opacity: 0.2;
-          }
-          100% {
-            width: 0;
-            height: 0;
-            margin-right: 0;
-            opacity: 0;
           }
         }
 
@@ -237,9 +221,24 @@
           cursor: default;
         }
 
-        @media (min-width: 1023px) and (max-width: 1200px) {
+        @media (min-width: 1023px) and (max-width: 1300px) {
           width: 2.2rem;
           height: 2.2rem;
+
+          @keyframes lightButton {
+            from {
+              width: 0;
+              height: 0;
+              margin-right: 0;
+              opacity: 0.5;
+            }
+            to {
+              width: 2.2rem;
+              height: 2.2rem;
+              margin-right: 2rem;
+              opacity: 1;
+            }
+          }
         }
 
         .light {
@@ -252,41 +251,34 @@
           animation-iteration-count: 1;
 
           @keyframes light {
-            0% {
+            from {
+              width: 0;
+              height: 0;
+              opacity: 0.5;
+            }
+            to {
               width: 22px;
               height: 22px;
               opacity: 1;
             }
-            20% {
-              width: 17.6px;
-              height: 17.6px;
-              opacity: 0.8;
-            }
-            40% {
-              width: 13.2px;
-              height: 13.2px;
-              opacity: 0.6;
-            }
-            60% {
-              width: 8.8px;
-              height: 8.8px;
-              opacity: 0.4;
-            }
-            80% {
-              width: 4.4px;
-              height: 4.4px;
-              opacity: 0.2;
-            }
-            100% {
-              width: 0;
-              height: 0;
-              opacity: 0;
-            }
           }
 
-          @media (min-width: 1023px) and (max-width: 1200px) {
-            width: 20px;
-            height: 20px;
+          @media (min-width: 1023px) and (max-width: 1300px) {
+            width: 19px;
+            height: 19px;
+
+            @keyframes light {
+              from {
+                width: 0;
+                height: 0;
+                opacity: 0.5;
+              }
+              to {
+                width: 19px;
+                height: 19px;
+                opacity: 1;
+              }
+            }
           }
         }
       }
@@ -314,7 +306,7 @@
           font-size: 10pt !important;
         }
 
-        @media (min-width: 1023px) and (max-width: 1200px) {
+        @media (min-width: 1023px) and (max-width: 1300px) {
           font-size: 9pt;
         }
       }
@@ -535,7 +527,11 @@
       padding: 1.1rem 1.2rem;
     }
 
-    @media (min-width: 1200px) and (max-width: 1400px) {
+    @media (min-width: 1200px) and (max-width: 1300px) {
+      padding: 1.2rem 1.2rem;
+    }
+
+    @media (min-width: 1300px) and (max-width: 1400px) {
       padding: 1.3rem 1.2rem;
     }
 
@@ -599,6 +595,10 @@
           font-size: 17pt;
         }
 
+        @media (min-width: 1200px) and (max-width: 1300px) {
+          font-size: 18pt;
+        }
+
         @media (min-width: 1570px) and (max-width: 1670px) {
           font-size: 21pt;
         }
@@ -629,6 +629,10 @@
         @media (min-width: 1023px) and (max-width: 1200px) {
           font-size: 9pt;
         }
+
+        @media (min-width: 1023px) and (max-width: 1300px) {
+          font-size: 9pt;
+        }
       }
     }
 
@@ -655,7 +659,7 @@
       }
 
       .lightButton {
-        display: block;
+        display: flex;
         justify-content: center;
         align-items: center;
         width: 0;
@@ -663,43 +667,18 @@
         margin-right: 0;
         border-radius: 50%;
         background-color: #656253;
-        transition: all 0.2s ease;
         opacity: 0;
-        animation: lightButton 0.2s linear;
+        animation: lightButtonHidden 0.5s linear;
         animation-iteration-count: 1;
 
-        @keyframes lightButton {
-          0% {
+        @keyframes lightButtonHidden {
+          from {
             width: 2.5rem;
             height: 2.5rem;
             margin-right: 2rem;
             opacity: 1;
           }
-          20% {
-            width: 2rem;
-            height: 2rem;
-            margin-right: 1.5rem;
-            opacity: 0.8;
-          }
-          40% {
-            width: 1.5rem;
-            height: 1.5rem;
-            margin-right: 1rem;
-            opacity: 0.6;
-          }
-          60% {
-            width: 1rem;
-            height: 1rem;
-            margin-right: 0.5rem;
-            opacity: 0.4;
-          }
-          80% {
-            width: 0.5rem;
-            height: 0.5rem;
-            margin-right: 0;
-            opacity: 0.2;
-          }
-          100% {
+          to {
             width: 0;
             height: 0;
             margin-right: 0;
@@ -715,9 +694,24 @@
           cursor: default;
         }
 
-        @media (min-width: 1023px) and (max-width: 1200px) {
+        @media (min-width: 1023px) and (max-width: 1300px) {
           width: 2.2rem;
           height: 2.2rem;
+
+          @keyframes lightButtonHidden {
+            from {
+              width: 2.2rem;
+              height: 2.2rem;
+              margin-right: 2rem;
+              opacity: 1;
+            }
+            to {
+              width: 0;
+              height: 0;
+              margin-right: 0;
+              opacity: 0;
+            }
+          }
         }
 
         .light {
@@ -726,47 +720,39 @@
           background-size: cover;
           width: 0;
           height: 0;
-          transition: all 0.2s ease;
           opacity: 0;
-          animation: light 0.2s linear;
+          animation: lightHidden 0.5s linear;
           animation-iteration-count: 1;
 
-          @keyframes light {
-            0% {
+          @keyframes lightHidden {
+            from {
               width: 22px;
               height: 22px;
-              opacity: 1;
+              opacity: 0.5;
             }
-            20% {
-              width: 17.6px;
-              height: 17.6px;
-              opacity: 0.8;
-            }
-            40% {
-              width: 13.2px;
-              height: 13.2px;
-              opacity: 0.6;
-            }
-            60% {
-              width: 8.8px;
-              height: 8.8px;
-              opacity: 0.4;
-            }
-            80% {
-              width: 4.4px;
-              height: 4.4px;
-              opacity: 0.2;
-            }
-            100% {
+            to {
               width: 0;
               height: 0;
               opacity: 0;
             }
           }
 
-          @media (min-width: 1023px) and (max-width: 1200px) {
-            width: 20px;
-            height: 20px;
+          @media (min-width: 1023px) and (max-width: 1300px) {
+            width: 19px;
+            height: 19px;
+
+            @keyframes lightHidden {
+              from {
+                width: 19px;
+                height: 19px;
+                opacity: 0.5;
+              }
+              to {
+                width: 0;
+                height: 0;
+                opacity: 0;
+              }
+            }
           }
         }
       }
@@ -789,7 +775,7 @@
           font-size: 10pt !important;
         }
 
-        @media (min-width: 1023px) and (max-width: 1200px) {
+        @media (min-width: 1023px) and (max-width: 1300px) {
           font-size: 9pt;
         }
       }
@@ -834,10 +820,10 @@
     display: flex;
     flex-direction: column;
     row-gap: 1rem;
-    width: min(22.68rem, 22.68rem);
-    height: min(31.625rem, 31.625rem);
+    width: min(22.3rem, 22.3rem);
+    height: min(31.5rem, 31.5rem);
     position: absolute;
-    top: 6.4rem;
+    top: 6.75rem;
     right: 1%;
     animation: contactForm 0.2s linear;
     animation-iteration-count: 1;
@@ -853,7 +839,7 @@
         filter: opacity(0.5) grayscale(10%) blur(0.05rem) brightness(80%);
       }
       100% {
-        top: 6.5rem;
+        top: 6.75rem;
         opacity: 1;
       }
     }
@@ -973,7 +959,24 @@
       }
     }
 
-    @media (min-width: 1200px) and (max-width: 1400px) {
+    @media (min-width: 1200px) and (max-width: 1300px) {
+      width: min(24%, 24%);
+      height: 30.2rem;
+      top: 5.75rem;
+
+      @keyframes contactForm {
+        0% {
+          top: 0;
+          filter: opacity(0.5) grayscale(10%) blur(0.05rem) brightness(80%);
+        }
+        100% {
+          top: 6.2rem;
+          opacity: 1;
+        }
+      }
+    }
+
+    @media (min-width: 1300px) and (max-width: 1400px) {
       width: min(24%, 24%);
       top: 6.2rem;
 
@@ -1439,7 +1442,10 @@
 
         @media (min-width: 1023px) and (max-width: 1200px) {
           height: 11.5rem;
-          font-size: 10.5pt;
+        }
+
+        @media (min-width: 1200px) and (max-width: 1300px) {
+          height: 9rem;
         }
       }
 
@@ -1456,6 +1462,10 @@
           margin-top: 0.4rem;
           position: unset;
           font-size: 9pt;
+        }
+
+        @media (min-width: 1200px) and (max-width: 1300px) {
+          top: 21.7rem;
         }
 
         .send {
