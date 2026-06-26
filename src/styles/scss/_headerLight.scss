@@ -719,7 +719,7 @@
     }
   }
 
-  .contactForm {
+  .contactFormLight {
     display: flex;
     flex-direction: column;
     row-gap: 1rem;
@@ -728,7 +728,7 @@
     position: absolute;
     top: 6.5rem;
     right: 1%;
-    animation: contactForm 0.2s linear;
+    animation: contactFormLight 0.2s linear;
     animation-iteration-count: 1;
     background-color: #d9d9d9;
     border-radius: 0.5rem;
@@ -736,7 +736,7 @@
     z-index: 1;
     filter: none;
 
-    @keyframes contactForm {
+    @keyframes contactFormLight {
       0% {
         top: 0;
         filter: opacity(0.5) grayscale(10%) blur(0.05rem) brightness(80%);
@@ -752,10 +752,10 @@
       position: absolute;
       top: 7.5rem;
       left: 13%;
-      animation: contactForm 0.2s linear;
+      animation: contactFormLight 0.2s linear;
       animation-iteration-count: 1;
 
-      @keyframes contactForm {
+      @keyframes contactFormLight {
         0% {
           top: 0;
           filter: opacity(0.5) grayscale(10%) blur(0.05rem) brightness(80%);
@@ -772,10 +772,10 @@
       position: absolute;
       top: 8.1rem;
       left: 13%;
-      animation: contactForm 0.2s linear;
+      animation: contactFormLight 0.2s linear;
       animation-iteration-count: 1;
 
-      @keyframes contactForm {
+      @keyframes contactFormLight {
         0% {
           top: 0;
           filter: opacity(0.5) grayscale(10%) blur(0.05rem) brightness(80%);
@@ -792,10 +792,10 @@
       position: absolute;
       top: 8.2rem;
       left: 13%;
-      animation: contactForm 0.2s linear;
+      animation: contactFormLight 0.2s linear;
       animation-iteration-count: 1;
 
-      @keyframes contactForm {
+      @keyframes contactFormLight {
         0% {
           top: 0;
           filter: opacity(0.5) grayscale(10%) blur(0.05rem) brightness(80%);
@@ -838,10 +838,10 @@
       height: min(30.625rem, 30.625rem);
       position: absolute;
       top: 7.2rem;
-      animation: contactForm 0.2s linear;
+      animation: contactFormLight 0.2s linear;
       animation-iteration-count: 1;
 
-      @keyframes contactForm {
+      @keyframes contactFormLight {
         0% {
           top: 0;
           filter: opacity(0.5) grayscale(10%) blur(0.05rem) brightness(80%);
@@ -865,10 +865,10 @@
       width: min(24%, 24%);
       position: absolute;
       top: 7.4rem;
-      animation: contactForm 0.2s linear;
+      animation: contactFormLight 0.2s linear;
       animation-iteration-count: 1;
 
-      @keyframes contactForm {
+      @keyframes contactFormLight {
         0% {
           top: 0;
           filter: opacity(0.5) grayscale(10%) blur(0.05rem) brightness(80%);

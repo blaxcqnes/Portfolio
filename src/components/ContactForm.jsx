@@ -1,7 +1,11 @@
 import { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
 
-export default function ContactForm({ isContactFormOpen, toggleContactForm }) {
+export default function ContactForm({
+  isLightModeOn,
+  isContactFormOpen,
+  toggleContactForm,
+}) {
   const [statusMessage, setStatusMessage] = useState('');
   const [statusType, setStatusType] = useState('');
   // ..
@@ -69,7 +73,10 @@ export default function ContactForm({ isContactFormOpen, toggleContactForm }) {
   };
 
   return (
-    <main className="contactForm" id="contactForm">
+    <main
+      className={isLightModeOn ? 'contactFormLight' : 'contactForm'}
+      id="contactForm"
+    >
       {/*  */}
       <div className="titleAndButton">
         <h4>Get in touch</h4>

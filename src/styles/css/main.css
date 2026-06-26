@@ -95,7 +95,7 @@
 }
 @media (min-width: 1023px) and (max-width: 1099px) {
   .header .headerContainer {
-    padding: 1.1rem 1rem;
+    padding: 1rem 1rem;
   }
 }
 @media (min-width: 1099px) and (max-width: 1200px) {
@@ -119,17 +119,24 @@
   column-gap: 1.5rem;
   align-items: center;
 }
-@media (min-width: 600px) and (max-width: 1200px) {
+@media (min-width: 600px) and (max-width: 1023px) {
   .header .headerContainer .nameAndProfession {
     flex-direction: column;
     row-gap: 0.2rem;
     align-items: start;
   }
 }
-@media (width: 1200px) {
+@media (width: 1023px) {
   .header .headerContainer .nameAndProfession {
     flex-direction: row;
     column-gap: 1.5rem;
+    align-items: center;
+  }
+}
+@media (min-width: 1023px) and (max-width: 1099px) {
+  .header .headerContainer .nameAndProfession {
+    flex-direction: row;
+    column-gap: 1.1rem;
     align-items: center;
   }
 }
@@ -164,12 +171,12 @@
 }
 @media (min-width: 1023px) and (max-width: 1099px) {
   .header .headerContainer .nameAndProfession .name {
-    font-size: 17pt;
+    font-size: 16.5pt;
   }
 }
-@media (min-width: 1099px) and (max-width: 1250px) {
+@media (min-width: 1099px) and (max-width: 1200px) {
   .header .headerContainer .nameAndProfession .name {
-    font-size: 18pt;
+    font-size: 17pt;
   }
 }
 @media (min-width: 1570px) and (max-width: 1670px) {
@@ -203,14 +210,9 @@
     font-size: 10pt !important;
   }
 }
-@media (min-width: 1023px) and (max-width: 1046px) {
+@media (min-width: 1023px) and (max-width: 1200px) {
   .header .headerContainer .nameAndProfession .profession {
-    font-size: 9.5pt;
-  }
-}
-@media (min-width: 1046px) and (max-width: 1061px) {
-  .header .headerContainer .nameAndProfession .profession {
-    font-size: 9.8pt;
+    font-size: 9pt;
   }
 }
 .header .headerContainer .locationAndContact {
@@ -249,6 +251,46 @@
   border-radius: 50%;
   background-color: #656253;
   cursor: pointer;
+  animation: lightButton 0.2s linear;
+  animation-iteration-count: 1;
+}
+@keyframes lightButton {
+  0% {
+    width: 2.5rem;
+    height: 2.5rem;
+    margin-right: 2rem;
+    opacity: 1;
+  }
+  20% {
+    width: 2rem;
+    height: 2rem;
+    margin-right: 1.5rem;
+    opacity: 0.8;
+  }
+  40% {
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-right: 1rem;
+    opacity: 0.6;
+  }
+  60% {
+    width: 1rem;
+    height: 1rem;
+    margin-right: 0.5rem;
+    opacity: 0.4;
+  }
+  80% {
+    width: 0.5rem;
+    height: 0.5rem;
+    margin-right: 0;
+    opacity: 0.2;
+  }
+  100% {
+    width: 0;
+    height: 0;
+    margin-right: 0;
+    opacity: 0;
+  }
 }
 .header .headerContainer .locationAndContact .lightButton:hover {
   background-color: #886849;
@@ -263,12 +305,58 @@
     cursor: default;
   }
 }
+@media (min-width: 1023px) and (max-width: 1200px) {
+  .header .headerContainer .locationAndContact .lightButton {
+    width: 2.2rem;
+    height: 2.2rem;
+  }
+}
 .header .headerContainer .locationAndContact .lightButton .light {
   background-image: url("/src/images/header/light.svg");
   background-repeat: no-repeat;
   background-size: cover;
   width: 22px;
   height: 22px;
+  animation: light 0.2s linear;
+  animation-iteration-count: 1;
+}
+@keyframes light {
+  0% {
+    width: 22px;
+    height: 22px;
+    opacity: 1;
+  }
+  20% {
+    width: 17.6px;
+    height: 17.6px;
+    opacity: 0.8;
+  }
+  40% {
+    width: 13.2px;
+    height: 13.2px;
+    opacity: 0.6;
+  }
+  60% {
+    width: 8.8px;
+    height: 8.8px;
+    opacity: 0.4;
+  }
+  80% {
+    width: 4.4px;
+    height: 4.4px;
+    opacity: 0.2;
+  }
+  100% {
+    width: 0;
+    height: 0;
+    opacity: 0;
+  }
+}
+@media (min-width: 1023px) and (max-width: 1200px) {
+  .header .headerContainer .locationAndContact .lightButton .light {
+    width: 20px;
+    height: 20px;
+  }
 }
 .header .headerContainer .locationAndContact .location {
   font-size: 10pt;
@@ -297,14 +385,9 @@
     font-size: 10pt !important;
   }
 }
-@media (min-width: 1023px) and (max-width: 1046px) {
+@media (min-width: 1023px) and (max-width: 1200px) {
   .header .headerContainer .locationAndContact .location {
-    font-size: 9.5pt;
-  }
-}
-@media (min-width: 1046px) and (max-width: 1061px) {
-  .header .headerContainer .locationAndContact .location {
-    font-size: 9.8pt;
+    font-size: 9pt;
   }
 }
 .header .headerContainer .locationAndContact .contact {
@@ -515,7 +598,7 @@
 }
 @media (min-width: 1023px) and (max-width: 1099px) {
   .header .headerContainerUnfocused {
-    padding: 1.1rem 1rem;
+    padding: 1rem 1rem;
   }
 }
 @media (min-width: 1099px) and (max-width: 1200px) {
@@ -539,11 +622,25 @@
   column-gap: 1.5rem;
   align-items: center;
 }
-@media (min-width: 600px) and (max-width: 1200px) {
+@media (min-width: 600px) and (max-width: 1023px) {
   .header .headerContainerUnfocused .nameAndProfession {
     flex-direction: column;
     row-gap: 0.2rem;
     align-items: start;
+  }
+}
+@media (width: 1023px) {
+  .header .headerContainerUnfocused .nameAndProfession {
+    flex-direction: row;
+    column-gap: 1.5rem;
+    align-items: center;
+  }
+}
+@media (min-width: 1023px) and (max-width: 1099px) {
+  .header .headerContainerUnfocused .nameAndProfession {
+    flex-direction: row;
+    column-gap: 1.1rem;
+    align-items: center;
   }
 }
 .header .headerContainerUnfocused .nameAndProfession .name {
@@ -577,12 +674,12 @@
 }
 @media (min-width: 1023px) and (max-width: 1099px) {
   .header .headerContainerUnfocused .nameAndProfession .name {
-    font-size: 17pt;
+    font-size: 16.5pt;
   }
 }
-@media (min-width: 1099px) and (max-width: 1250px) {
+@media (min-width: 1099px) and (max-width: 1200px) {
   .header .headerContainerUnfocused .nameAndProfession .name {
-    font-size: 18pt;
+    font-size: 17pt;
   }
 }
 @media (min-width: 1570px) and (max-width: 1670px) {
@@ -616,14 +713,9 @@
     font-size: 10pt !important;
   }
 }
-@media (min-width: 1023px) and (max-width: 1046px) {
+@media (min-width: 1023px) and (max-width: 1200px) {
   .header .headerContainerUnfocused .nameAndProfession .profession {
-    font-size: 9.5pt;
-  }
-}
-@media (min-width: 1046px) and (max-width: 1061px) {
-  .header .headerContainerUnfocused .nameAndProfession .profession {
-    font-size: 9.8pt;
+    font-size: 9pt;
   }
 }
 .header .headerContainerUnfocused .locationAndContact {
@@ -714,6 +806,12 @@
     cursor: default;
   }
 }
+@media (min-width: 1023px) and (max-width: 1200px) {
+  .header .headerContainerUnfocused .locationAndContact .lightButton {
+    width: 2.2rem;
+    height: 2.2rem;
+  }
+}
 .header .headerContainerUnfocused .locationAndContact .lightButton .light {
   background-image: url("/src/images/header/light.svg");
   background-repeat: no-repeat;
@@ -757,6 +855,12 @@
     opacity: 0;
   }
 }
+@media (min-width: 1023px) and (max-width: 1200px) {
+  .header .headerContainerUnfocused .locationAndContact .lightButton .light {
+    width: 20px;
+    height: 20px;
+  }
+}
 .header .headerContainerUnfocused .locationAndContact .location {
   font-size: 10pt;
   color: #ebebeb;
@@ -778,14 +882,9 @@
     font-size: 10pt !important;
   }
 }
-@media (min-width: 1023px) and (max-width: 1046px) {
+@media (min-width: 1023px) and (max-width: 1200px) {
   .header .headerContainerUnfocused .locationAndContact .location {
-    font-size: 9.5pt;
-  }
-}
-@media (min-width: 1046px) and (max-width: 1061px) {
-  .header .headerContainerUnfocused .locationAndContact .location {
-    font-size: 9.8pt;
+    font-size: 9pt;
   }
 }
 .header .headerContainerUnfocused .locationAndContact .contact {
@@ -859,8 +958,6 @@
     position: absolute;
     top: 7.5rem;
     left: 13%;
-    animation: contactForm 0.2s linear;
-    animation-iteration-count: 1;
   }
   @keyframes contactForm {
     0% {
@@ -879,8 +976,6 @@
     position: absolute;
     top: 8.1rem;
     left: 13%;
-    animation: contactForm 0.2s linear;
-    animation-iteration-count: 1;
   }
   @keyframes contactForm {
     0% {
@@ -899,8 +994,6 @@
     position: absolute;
     top: 8.2rem;
     left: 13%;
-    animation: contactForm 0.2s linear;
-    animation-iteration-count: 1;
   }
   @keyframes contactForm {
     0% {
@@ -943,15 +1036,13 @@
     left: 18%;
   }
 }
-@media (min-width: 1023px) and (max-width: 1200px) {
+@media (min-width: 1023px) and (max-width: 1099px) {
   .header .contactForm {
     row-gap: 1rem;
-    width: 24.5%;
-    height: 31rem;
+    width: 24%;
+    height: 30.3rem;
     position: absolute;
-    top: 7.2rem;
-    animation: contactForm 0.2s linear;
-    animation-iteration-count: 1;
+    top: 5.2rem;
   }
   @keyframes contactForm {
     0% {
@@ -959,7 +1050,24 @@
       filter: opacity(0.5) grayscale(10%) blur(0.05rem) brightness(80%);
     }
     100% {
-      top: 7.2rem;
+      top: 5.2rem;
+      opacity: 1;
+    }
+  }
+}
+@media (min-width: 1099px) and (max-width: 1200px) {
+  .header .contactForm {
+    width: 24%;
+    height: 31rem;
+    top: 5.5rem;
+  }
+  @keyframes contactForm {
+    0% {
+      top: 0;
+      filter: opacity(0.5) grayscale(10%) blur(0.05rem) brightness(80%);
+    }
+    100% {
+      top: 5.5rem;
       opacity: 1;
     }
   }
@@ -969,11 +1077,31 @@
     width: 24%;
     top: 6.2rem;
   }
+  @keyframes contactForm {
+    0% {
+      top: 0;
+      filter: opacity(0.5) grayscale(10%) blur(0.05rem) brightness(80%);
+    }
+    100% {
+      top: 6.2rem;
+      opacity: 1;
+    }
+  }
 }
 @media (min-width: 1400px) and (max-width: 1500px) {
   .header .contactForm {
     width: 24.3%;
     top: 6.25rem;
+  }
+  @keyframes contactForm {
+    0% {
+      top: 0;
+      filter: opacity(0.5) grayscale(10%) blur(0.05rem) brightness(80%);
+    }
+    100% {
+      top: 6.25rem;
+      opacity: 1;
+    }
   }
 }
 @media (min-width: 1570px) and (max-width: 1670px) {
@@ -981,8 +1109,6 @@
     width: 24%;
     position: absolute;
     top: 7.4rem;
-    animation: contactForm 0.2s linear;
-    animation-iteration-count: 1;
   }
   @keyframes contactForm {
     0% {
@@ -1006,7 +1132,7 @@
 }
 @media (min-width: 1023px) and (max-width: 1200px) {
   .header .contactForm .titleAndButton {
-    padding: 0.5rem 0.5rem;
+    padding: 0.5rem 0.7rem;
   }
 }
 .header .contactForm .titleAndButton h4 {
@@ -1015,7 +1141,7 @@
 }
 @media (min-width: 1023px) and (max-width: 1200px) {
   .header .contactForm .titleAndButton h4 {
-    font-size: 13pt;
+    font-size: 12pt;
   }
 }
 .header .contactForm .titleAndButton .close {
@@ -1630,24 +1756,45 @@ input[type=email]) {
     row-gap: 1rem;
   }
 }
-@media (min-width: 1023px) and (max-width: 1200px) {
+@media (min-width: 1023px) and (max-width: 1099px) {
   .mainContent {
     column-gap: 0.6rem;
   }
 }
-@media (min-width: 1200px) and (max-width: 1400px) {
+@media (min-width: 1099px) and (max-width: 1200px) {
+  .mainContent {
+    column-gap: 0.7rem;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1300px) {
   .mainContent {
     column-gap: 0.8rem;
   }
 }
 .mainContent .leftOrUpperPart {
   display: flex;
+  flex-direction: column;
   width: 50%;
   height: auto;
 }
 @media (min-width: 300px) and (max-width: 1023px) {
   .mainContent .leftOrUpperPart {
     width: 100%;
+  }
+}
+@media (min-width: 1023px) and (max-width: 1099px) {
+  .mainContent .leftOrUpperPart {
+    row-gap: 0.6rem;
+  }
+}
+@media (min-width: 1099px) and (max-width: 1200px) {
+  .mainContent .leftOrUpperPart {
+    row-gap: 0.7rem;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1300px) {
+  .mainContent .leftOrUpperPart {
+    row-gap: 0.8rem;
   }
 }
 .mainContent .leftOrUpperPart .leftOrUpperPartContainer {
@@ -1657,17 +1804,17 @@ input[type=email]) {
   width: 100%;
   height: auto;
 }
-@media (min-width: 700px) and (max-width: 767px) {
-  .mainContent .leftOrUpperPart .leftOrUpperPartContainer {
-    row-gap: 1rem;
-  }
-}
-@media (min-width: 1023px) and (max-width: 1200px) {
+@media (min-width: 1023px) and (max-width: 1099px) {
   .mainContent .leftOrUpperPart .leftOrUpperPartContainer {
     row-gap: 0.6rem;
   }
 }
-@media (min-width: 1200px) and (max-width: 1400px) {
+@media (min-width: 1099px) and (max-width: 1200px) {
+  .mainContent .leftOrUpperPart .leftOrUpperPartContainer {
+    row-gap: 0.7rem;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1300px) {
   .mainContent .leftOrUpperPart .leftOrUpperPartContainer {
     row-gap: 0.8rem;
   }
@@ -1826,20 +1973,28 @@ input[type=email]) {
     padding: 4rem 2rem;
   }
 }
-@media (min-width: 1023px) and (max-width: 1099px) {
+@media (min-width: 1023px) and (max-width: 1083px) {
   .mainContent .leftOrUpperPart .leftOrUpperPartContainer .aboutMeAndImage .aboutMe {
     row-gap: 1.1rem;
-    width: 50%;
-    height: 20rem;
-    padding: 1.1rem 1rem;
+    width: 57%;
+    height: 18rem;
+    padding: 1.4rem 1rem;
+  }
+}
+@media (min-width: 1083px) and (max-width: 1099px) {
+  .mainContent .leftOrUpperPart .leftOrUpperPartContainer .aboutMeAndImage .aboutMe {
+    row-gap: 1.1rem;
+    width: 57%;
+    height: 18rem;
+    padding: 1.8rem 1rem;
   }
 }
 @media (min-width: 1099px) and (max-width: 1200px) {
   .mainContent .leftOrUpperPart .leftOrUpperPartContainer .aboutMeAndImage .aboutMe {
-    row-gap: 1.5rem;
-    width: 58%;
-    height: 20rem;
-    padding: 1.8rem 1.2rem;
+    row-gap: 1.2rem;
+    width: 61%;
+    height: 18rem;
+    padding: 1.6rem 1.2rem;
   }
 }
 @media (min-width: 1200px) and (max-width: 1400px) {
@@ -1881,7 +2036,12 @@ input[type=email]) {
     font-size: 15.5pt;
   }
 }
-@media (min-width: 1023px) and (max-width: 1200px) {
+@media (min-width: 1023px) and (max-width: 1099px) {
+  .mainContent .leftOrUpperPart .leftOrUpperPartContainer .aboutMeAndImage .aboutMe .title {
+    font-size: 13.5pt;
+  }
+}
+@media (min-width: 1099px) and (max-width: 1200px) {
   .mainContent .leftOrUpperPart .leftOrUpperPartContainer .aboutMeAndImage .aboutMe .title {
     font-size: 14pt;
   }
@@ -1981,14 +2141,10 @@ input[type=email]) {
     line-height: 1.28rem;
   }
 }
-@media (min-width: 1099px) and (max-width: 1126px) {
+@media (min-width: 1099px) and (max-width: 1200px) {
   .mainContent .leftOrUpperPart .leftOrUpperPartContainer .aboutMeAndImage .aboutMe .aboutMeDescription {
+    font-size: 9.85pt;
     line-height: 1.3rem;
-  }
-}
-@media (min-width: 1126px) and (max-width: 1200px) {
-  .mainContent .leftOrUpperPart .leftOrUpperPartContainer .aboutMeAndImage .aboutMe .aboutMeDescription {
-    line-height: 1.45rem;
   }
 }
 @media (min-width: 1317px) and (max-width: 1330px) {
@@ -2421,14 +2577,14 @@ input[type=email]) {
 }
 @media (min-width: 1023px) and (max-width: 1099px) {
   .mainContent .leftOrUpperPart .leftOrUpperPartContainer .aboutMeAndImage .regularImg {
-    width: 48%;
-    height: 20rem;
+    width: 41%;
+    height: 18rem;
   }
 }
 @media (min-width: 1099px) and (max-width: 1400px) {
   .mainContent .leftOrUpperPart .leftOrUpperPartContainer .aboutMeAndImage .regularImg {
     width: 40%;
-    height: 20rem;
+    height: 18rem;
   }
 }
 @media (min-width: 1570px) and (max-width: 1670px) {
@@ -2602,15 +2758,15 @@ input[type=email]) {
 }
 @media (min-width: 1023px) and (max-width: 1099px) {
   .mainContent .leftOrUpperPart .leftOrUpperPartContainer .skillsAndEducation .skills {
-    row-gap: 1.2rem;
-    height: 18.5rem;
+    row-gap: 1.1rem;
+    height: 17.5rem;
     padding: 1.1rem 1rem;
   }
 }
 @media (min-width: 1099px) and (max-width: 1400px) {
   .mainContent .leftOrUpperPart .leftOrUpperPartContainer .skillsAndEducation .skills {
-    height: 18.5rem;
-    padding: 1.4rem 1.2rem;
+    height: 18rem;
+    padding: 1.2rem 1.2rem;
   }
 }
 @media (min-width: 1570px) and (max-width: 1670px) {
@@ -2646,7 +2802,12 @@ input[type=email]) {
     font-size: 15.5pt;
   }
 }
-@media (min-width: 1023px) and (max-width: 1200px) {
+@media (min-width: 1023px) and (max-width: 1099px) {
+  .mainContent .leftOrUpperPart .leftOrUpperPartContainer .skillsAndEducation .skills .titleAndButton .title {
+    font-size: 13.5pt;
+  }
+}
+@media (min-width: 1099px) and (max-width: 1200px) {
   .mainContent .leftOrUpperPart .leftOrUpperPartContainer .skillsAndEducation .skills .titleAndButton .title {
     font-size: 14pt;
   }
@@ -2894,14 +3055,16 @@ input[type=email]) {
 }
 @media (min-width: 1023px) and (max-width: 1099px) {
   .mainContent .leftOrUpperPart .leftOrUpperPartContainer .skillsAndEducation .education {
-    height: 18.5rem;
+    row-gap: 1.1rem;
+    height: 17.5rem;
     padding: 1.1rem 1rem;
   }
 }
 @media (min-width: 1099px) and (max-width: 1400px) {
   .mainContent .leftOrUpperPart .leftOrUpperPartContainer .skillsAndEducation .education {
-    height: 18.5rem;
-    padding: 1.4rem 1.2rem;
+    row-gap: 1.2rem;
+    height: 18rem;
+    padding: 1.2rem 1.2rem;
   }
 }
 @media (min-width: 1570px) and (max-width: 1670px) {
@@ -2937,7 +3100,12 @@ input[type=email]) {
     font-size: 15.5pt;
   }
 }
-@media (min-width: 1023px) and (max-width: 1200px) {
+@media (min-width: 1023px) and (max-width: 1099px) {
+  .mainContent .leftOrUpperPart .leftOrUpperPartContainer .skillsAndEducation .education .titleAndButton .title {
+    font-size: 13.5pt;
+  }
+}
+@media (min-width: 1099px) and (max-width: 1200px) {
   .mainContent .leftOrUpperPart .leftOrUpperPartContainer .skillsAndEducation .education .titleAndButton .title {
     font-size: 14pt;
   }
@@ -6155,12 +6323,12 @@ input[type=email]) {
 }
 @media (min-width: 700px) and (max-width: 767px) {
   .mainContent .rightOrLowerPart .rightOrLowerPartContainer {
-    row-gap: 0.8rem;
+    row-gap: 0.6rem;
   }
 }
 @media (min-width: 1023px) and (max-width: 1200px) {
   .mainContent .rightOrLowerPart .rightOrLowerPartContainer {
-    row-gap: 0.6rem;
+    row-gap: 0.7rem;
   }
 }
 @media (min-width: 1200px) and (max-width: 1400px) {
@@ -6172,13 +6340,28 @@ input[type=email]) {
   display: flex;
   flex-direction: row;
   column-gap: 2%;
-  height: 30.95rem;
+  height: 32rem;
 }
 @media (min-width: 300px) and (max-width: 600px) {
   .mainContent .rightOrLowerPart .rightOrLowerPartContainer .projects {
     flex-direction: column-reverse;
     row-gap: 1rem;
     height: auto;
+    animation: projects 0.5s linear;
+    animation-iteration-count: 1;
+  }
+  @keyframes projects {
+    0% {
+      filter: opacity(0.5) grayscale(10%) blur(0.05rem) brightness(80%);
+      transform: scale(100%);
+    }
+    50% {
+      transform: scale(101%);
+    }
+    100% {
+      transform: scale(100%);
+      opacity: 1;
+    }
   }
 }
 @media (min-width: 600px) and (max-width: 700px) {
@@ -6186,10 +6369,16 @@ input[type=email]) {
     flex-direction: row;
   }
 }
-@media (min-width: 1023px) and (max-width: 1200px) {
+@media (min-width: 1023px) and (max-width: 1099px) {
   .mainContent .rightOrLowerPart .rightOrLowerPartContainer .projects {
     width: 100%;
-    height: 33.5rem;
+    height: 30.9rem;
+  }
+}
+@media (min-width: 1099px) and (max-width: 1200px) {
+  .mainContent .rightOrLowerPart .rightOrLowerPartContainer .projects {
+    width: 100%;
+    height: 31.5rem;
   }
 }
 @media (min-width: 1200px) and (max-width: 1400px) {
@@ -6326,12 +6515,13 @@ input[type=email]) {
 @media (min-width: 1023px) and (max-width: 1099px) {
   .mainContent .rightOrLowerPart .rightOrLowerPartContainer .projects .cyber {
     row-gap: 1.2rem;
-    padding: 2rem 1rem;
+    padding: 1.5rem 1rem;
   }
 }
 @media (min-width: 1099px) and (max-width: 1200px) {
   .mainContent .rightOrLowerPart .rightOrLowerPartContainer .projects .cyber {
-    padding: 1.4rem 1.2rem;
+    row-gap: 1.8rem;
+    padding: 1.4rem 1.1rem;
   }
 }
 @media (min-width: 1200px) and (max-width: 1400px) {
@@ -6366,8 +6556,15 @@ input[type=email]) {
     font-size: 15.5pt;
   }
 }
-@media (min-width: 1023px) and (max-width: 1200px) {
+@media (min-width: 1023px) and (max-width: 1099px) {
   .mainContent .rightOrLowerPart .rightOrLowerPartContainer .projects .cyber .title {
+    align-self: center;
+    font-size: 13.5pt;
+  }
+}
+@media (min-width: 1099px) and (max-width: 1200px) {
+  .mainContent .rightOrLowerPart .rightOrLowerPartContainer .projects .cyber .title {
+    align-self: center;
     font-size: 14pt;
   }
 }
@@ -6449,7 +6646,7 @@ input[type=email]) {
 }
 @media (min-width: 1023px) and (max-width: 1099px) {
   .mainContent .rightOrLowerPart .rightOrLowerPartContainer .projects .cyber .allInOneCyber .points {
-    row-gap: 1rem;
+    row-gap: 0.8rem;
   }
 }
 .mainContent .rightOrLowerPart .rightOrLowerPartContainer .projects .cyber .allInOneCyber .points li {
@@ -6668,13 +6865,14 @@ input[type=email]) {
 }
 @media (min-width: 1023px) and (max-width: 1099px) {
   .mainContent .rightOrLowerPart .rightOrLowerPartContainer .projects .web {
-    row-gap: 2.2rem;
-    padding: 2rem 1rem;
+    row-gap: 1.5rem;
+    padding: 1.5rem 1rem;
   }
 }
 @media (min-width: 1099px) and (max-width: 1400px) {
   .mainContent .rightOrLowerPart .rightOrLowerPartContainer .projects .web {
-    padding: 1.4rem 1.2rem;
+    row-gap: 1.5rem;
+    padding: 1.4rem 1.1rem;
   }
 }
 @media (min-width: 1570px) and (max-width: 1670px) {
@@ -6703,8 +6901,15 @@ input[type=email]) {
     font-size: 15.5pt;
   }
 }
-@media (min-width: 1023px) and (max-width: 1200px) {
+@media (min-width: 1023px) and (max-width: 1099px) {
   .mainContent .rightOrLowerPart .rightOrLowerPartContainer .projects .web .title {
+    align-self: center;
+    font-size: 13.5pt;
+  }
+}
+@media (min-width: 1099px) and (max-width: 1200px) {
+  .mainContent .rightOrLowerPart .rightOrLowerPartContainer .projects .web .title {
+    align-self: center;
     font-size: 14pt;
   }
 }
@@ -6782,13 +6987,13 @@ input[type=email]) {
 @media (min-width: 1023px) and (max-width: 1099px) {
   .mainContent .rightOrLowerPart .rightOrLowerPartContainer .projects .web .carousel {
     width: 100%;
-    height: auto;
+    height: 21rem;
   }
 }
 @media (min-width: 1099px) and (max-width: 1200px) {
   .mainContent .rightOrLowerPart .rightOrLowerPartContainer .projects .web .carousel {
     width: 100%;
-    height: 23rem;
+    height: 22rem;
   }
 }
 @media (min-width: 1200px) and (max-width: 1400px) {
@@ -6835,13 +7040,13 @@ input[type=email]) {
 @media (min-width: 1023px) and (max-width: 1099px) {
   .mainContent .rightOrLowerPart .rightOrLowerPartContainer .projects .web .carousel img {
     width: 12rem;
-    height: 7.5rem;
+    height: 7rem;
   }
 }
 @media (min-width: 1099px) and (max-width: 1349px) {
   .mainContent .rightOrLowerPart .rightOrLowerPartContainer .projects .web .carousel img {
     width: 13rem;
-    height: 8rem;
+    height: 7rem;
   }
 }
 @media (min-width: 1349px) and (max-width: 1400px) {
@@ -6925,7 +7130,7 @@ input[type=email]) {
 .mainContent .rightOrLowerPart .rightOrLowerPartContainer .footer {
   display: flex;
   width: 100%;
-  height: 6.5rem;
+  height: 5.5rem;
   padding: 1.5rem 1rem;
   border-radius: 0.5rem;
   background-color: #635445;
@@ -6973,14 +7178,14 @@ input[type=email]) {
 }
 @media (min-width: 1023px) and (max-width: 1099px) {
   .mainContent .rightOrLowerPart .rightOrLowerPartContainer .footer {
-    height: 5rem;
-    padding: 1rem 1rem;
+    height: 4.5rem;
+    padding: 1rem 0.66rem;
   }
 }
 @media (min-width: 1099px) and (max-width: 1200px) {
   .mainContent .rightOrLowerPart .rightOrLowerPartContainer .footer {
-    height: 5rem;
-    padding: 1.5rem 1rem;
+    height: 4.5rem;
+    padding: 1rem 1rem;
   }
 }
 @media (min-width: 1200px) and (max-width: 1400px) {
@@ -7031,7 +7236,7 @@ input[type=email]) {
     column-gap: 0.8rem;
   }
 }
-@media (min-width: 1060px) and (max-width: 1120px) {
+@media (min-width: 1060px) and (max-width: 1200px) {
   .mainContent .rightOrLowerPart .rightOrLowerPartContainer .footer .wrapper {
     justify-content: center;
     column-gap: 1.2rem;
@@ -7058,13 +7263,13 @@ input[type=email]) {
     width: inherit;
   }
 }
-@media (min-width: 1023px) and (max-width: 1060px) {
+@media (min-width: 1023px) and (max-width: 1099px) {
   .mainContent .rightOrLowerPart .rightOrLowerPartContainer .footer .wrapper .leftPart {
     column-gap: 0.8rem;
     width: auto;
   }
 }
-@media (min-width: 1060px) and (max-width: 1120px) {
+@media (min-width: 1099px) and (max-width: 1200px) {
   .mainContent .rightOrLowerPart .rightOrLowerPartContainer .footer .wrapper .leftPart {
     column-gap: 1rem;
     width: auto;
@@ -7137,14 +7342,13 @@ input[type=email]) {
     column-gap: 3rem;
   }
 }
-@media (min-width: 1023px) and (max-width: 1060px) {
+@media (min-width: 1023px) and (max-width: 1099px) {
   .mainContent .rightOrLowerPart .rightOrLowerPartContainer .footer .wrapper .rightPart {
-    justify-content: center;
     column-gap: 0.8rem;
     width: auto;
   }
 }
-@media (min-width: 1060px) and (max-width: 1120px) {
+@media (min-width: 1099px) and (max-width: 1200px) {
   .mainContent .rightOrLowerPart .rightOrLowerPartContainer .footer .wrapper .rightPart {
     column-gap: 1rem;
     width: auto;
@@ -7413,12 +7617,17 @@ input[type=email]) {
     row-gap: 1rem;
   }
 }
-@media (min-width: 1023px) and (max-width: 1200px) {
+@media (min-width: 1023px) and (max-width: 1099px) {
   .mainContent {
     column-gap: 0.6rem;
   }
 }
-@media (min-width: 1200px) and (max-width: 1400px) {
+@media (min-width: 1099px) and (max-width: 1200px) {
+  .mainContent {
+    column-gap: 0.7rem;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1300px) {
   .mainContent {
     column-gap: 0.8rem;
   }
@@ -7436,6 +7645,21 @@ input[type=email]) {
     width: 100%;
   }
 }
+@media (min-width: 1023px) and (max-width: 1099px) {
+  .mainContent .leftOrUpperPart {
+    row-gap: 0.6rem;
+  }
+}
+@media (min-width: 1099px) and (max-width: 1200px) {
+  .mainContent .leftOrUpperPart {
+    row-gap: 0.7rem;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1300px) {
+  .mainContent .leftOrUpperPart {
+    row-gap: 0.8rem;
+  }
+}
 .mainContent .leftOrUpperPart .leftOrUpperPartContainerUnfocused {
   display: flex;
   flex-direction: column;
@@ -7445,17 +7669,17 @@ input[type=email]) {
   filter: opacity(0.5) grayscale(10%) blur(0.05rem) brightness(80%);
   transition: all 0.25s ease-out;
 }
-@media (min-width: 700px) and (max-width: 767px) {
-  .mainContent .leftOrUpperPart .leftOrUpperPartContainerUnfocused {
-    row-gap: 1rem;
-  }
-}
-@media (min-width: 1023px) and (max-width: 1200px) {
+@media (min-width: 1023px) and (max-width: 1099px) {
   .mainContent .leftOrUpperPart .leftOrUpperPartContainerUnfocused {
     row-gap: 0.6rem;
   }
 }
-@media (min-width: 1200px) and (max-width: 1400px) {
+@media (min-width: 1099px) and (max-width: 1200px) {
+  .mainContent .leftOrUpperPart .leftOrUpperPartContainerUnfocused {
+    row-gap: 0.7rem;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1300px) {
   .mainContent .leftOrUpperPart .leftOrUpperPartContainerUnfocused {
     row-gap: 0.8rem;
   }
@@ -7535,12 +7759,20 @@ input[type=email]) {
     padding: 3rem 2rem;
   }
 }
-@media (min-width: 600px) and (max-width: 666px) {
+@media (min-width: 600px) and (max-width: 607px) {
   .mainContent .leftOrUpperPart .leftOrUpperPartContainerUnfocused .aboutMeAndImage .aboutMe {
     row-gap: 1.5rem;
     width: 50%;
     height: 25rem;
     padding: 1.8rem 1rem;
+  }
+}
+@media (min-width: 607px) and (max-width: 666px) {
+  .mainContent .leftOrUpperPart .leftOrUpperPartContainerUnfocused .aboutMeAndImage .aboutMe {
+    row-gap: 1.5rem;
+    width: 50%;
+    height: 25rem;
+    padding: 2.2rem 1rem;
   }
 }
 @media (min-width: 666px) and (max-width: 700px) {
@@ -7606,20 +7838,28 @@ input[type=email]) {
     padding: 4rem 2rem;
   }
 }
-@media (min-width: 1023px) and (max-width: 1099px) {
+@media (min-width: 1023px) and (max-width: 1083px) {
   .mainContent .leftOrUpperPart .leftOrUpperPartContainerUnfocused .aboutMeAndImage .aboutMe {
     row-gap: 1.1rem;
-    width: 50%;
-    height: 20rem;
-    padding: 1.1rem 1rem;
+    width: 57%;
+    height: 18rem;
+    padding: 1.4rem 1rem;
+  }
+}
+@media (min-width: 1083px) and (max-width: 1099px) {
+  .mainContent .leftOrUpperPart .leftOrUpperPartContainerUnfocused .aboutMeAndImage .aboutMe {
+    row-gap: 1.1rem;
+    width: 57%;
+    height: 18rem;
+    padding: 1.8rem 1rem;
   }
 }
 @media (min-width: 1099px) and (max-width: 1200px) {
   .mainContent .leftOrUpperPart .leftOrUpperPartContainerUnfocused .aboutMeAndImage .aboutMe {
-    row-gap: 1.5rem;
-    width: 58%;
-    height: 20rem;
-    padding: 1.8rem 1.2rem;
+    row-gap: 1.2rem;
+    width: 61%;
+    height: 18rem;
+    padding: 1.6rem 1.2rem;
   }
 }
 @media (min-width: 1200px) and (max-width: 1400px) {
@@ -7661,7 +7901,12 @@ input[type=email]) {
     font-size: 15.5pt;
   }
 }
-@media (min-width: 1023px) and (max-width: 1200px) {
+@media (min-width: 1023px) and (max-width: 1099px) {
+  .mainContent .leftOrUpperPart .leftOrUpperPartContainerUnfocused .aboutMeAndImage .aboutMe .title {
+    font-size: 13.5pt;
+  }
+}
+@media (min-width: 1099px) and (max-width: 1200px) {
   .mainContent .leftOrUpperPart .leftOrUpperPartContainerUnfocused .aboutMeAndImage .aboutMe .title {
     font-size: 14pt;
   }
@@ -7761,14 +8006,10 @@ input[type=email]) {
     line-height: 1.28rem;
   }
 }
-@media (min-width: 1099px) and (max-width: 1126px) {
+@media (min-width: 1099px) and (max-width: 1200px) {
   .mainContent .leftOrUpperPart .leftOrUpperPartContainerUnfocused .aboutMeAndImage .aboutMe .aboutMeDescription {
+    font-size: 9.85pt;
     line-height: 1.3rem;
-  }
-}
-@media (min-width: 1126px) and (max-width: 1200px) {
-  .mainContent .leftOrUpperPart .leftOrUpperPartContainerUnfocused .aboutMeAndImage .aboutMe .aboutMeDescription {
-    line-height: 1.45rem;
   }
 }
 @media (min-width: 1317px) and (max-width: 1330px) {
@@ -8201,14 +8442,14 @@ input[type=email]) {
 }
 @media (min-width: 1023px) and (max-width: 1099px) {
   .mainContent .leftOrUpperPart .leftOrUpperPartContainerUnfocused .aboutMeAndImage .regularImg {
-    width: 48%;
-    height: 20rem;
+    width: 41%;
+    height: 18rem;
   }
 }
 @media (min-width: 1099px) and (max-width: 1400px) {
   .mainContent .leftOrUpperPart .leftOrUpperPartContainerUnfocused .aboutMeAndImage .regularImg {
     width: 40%;
-    height: 20rem;
+    height: 18rem;
   }
 }
 @media (min-width: 1570px) and (max-width: 1670px) {
@@ -8382,15 +8623,15 @@ input[type=email]) {
 }
 @media (min-width: 1023px) and (max-width: 1099px) {
   .mainContent .leftOrUpperPart .leftOrUpperPartContainerUnfocused .skillsAndEducation .skills {
-    row-gap: 1.2rem;
-    height: 18.5rem;
+    row-gap: 1.1rem;
+    height: 17.5rem;
     padding: 1.1rem 1rem;
   }
 }
 @media (min-width: 1099px) and (max-width: 1400px) {
   .mainContent .leftOrUpperPart .leftOrUpperPartContainerUnfocused .skillsAndEducation .skills {
-    height: 18.5rem;
-    padding: 1.4rem 1.2rem;
+    height: 18rem;
+    padding: 1.2rem 1.2rem;
   }
 }
 @media (min-width: 1570px) and (max-width: 1670px) {
@@ -8426,7 +8667,12 @@ input[type=email]) {
     font-size: 15.5pt;
   }
 }
-@media (min-width: 1023px) and (max-width: 1200px) {
+@media (min-width: 1023px) and (max-width: 1099px) {
+  .mainContent .leftOrUpperPart .leftOrUpperPartContainerUnfocused .skillsAndEducation .skills .titleAndButton .title {
+    font-size: 13.5pt;
+  }
+}
+@media (min-width: 1099px) and (max-width: 1200px) {
   .mainContent .leftOrUpperPart .leftOrUpperPartContainerUnfocused .skillsAndEducation .skills .titleAndButton .title {
     font-size: 14pt;
   }
@@ -8670,14 +8916,16 @@ input[type=email]) {
 }
 @media (min-width: 1023px) and (max-width: 1099px) {
   .mainContent .leftOrUpperPart .leftOrUpperPartContainerUnfocused .skillsAndEducation .education {
-    height: 18.5rem;
+    row-gap: 1.1rem;
+    height: 17.5rem;
     padding: 1.1rem 1rem;
   }
 }
 @media (min-width: 1099px) and (max-width: 1400px) {
   .mainContent .leftOrUpperPart .leftOrUpperPartContainerUnfocused .skillsAndEducation .education {
-    height: 18.5rem;
-    padding: 1.4rem 1.2rem;
+    row-gap: 1.2rem;
+    height: 18rem;
+    padding: 1.2rem 1.2rem;
   }
 }
 @media (min-width: 1570px) and (max-width: 1670px) {
@@ -8713,7 +8961,12 @@ input[type=email]) {
     font-size: 15.5pt;
   }
 }
-@media (min-width: 1023px) and (max-width: 1200px) {
+@media (min-width: 1023px) and (max-width: 1099px) {
+  .mainContent .leftOrUpperPart .leftOrUpperPartContainerUnfocused .skillsAndEducation .education .titleAndButton .title {
+    font-size: 13.5pt;
+  }
+}
+@media (min-width: 1099px) and (max-width: 1200px) {
   .mainContent .leftOrUpperPart .leftOrUpperPartContainerUnfocused .skillsAndEducation .education .titleAndButton .title {
     font-size: 14pt;
   }
@@ -9038,15 +9291,15 @@ input[type=email]) {
 }
 @media (min-width: 1023px) and (max-width: 1099px) {
   .mainContent .leftOrUpperPart .leftOrUpperPartContainerUnfocused .skillsAndEducationSwapped .skills {
-    row-gap: 1.2rem;
-    height: 18.5rem;
+    row-gap: 1.1rem;
+    height: 17.5rem;
     padding: 1.1rem 1rem;
   }
 }
 @media (min-width: 1099px) and (max-width: 1400px) {
   .mainContent .leftOrUpperPart .leftOrUpperPartContainerUnfocused .skillsAndEducationSwapped .skills {
-    height: 18.5rem;
-    padding: 1.4rem 1.2rem;
+    height: 18rem;
+    padding: 1.2rem 1.2rem;
   }
 }
 @media (min-width: 1570px) and (max-width: 1670px) {
@@ -9082,7 +9335,12 @@ input[type=email]) {
     font-size: 15.5pt;
   }
 }
-@media (min-width: 1023px) and (max-width: 1200px) {
+@media (min-width: 1023px) and (max-width: 1099px) {
+  .mainContent .leftOrUpperPart .leftOrUpperPartContainerUnfocused .skillsAndEducationSwapped .skills .titleAndButton .title {
+    font-size: 13.5pt;
+  }
+}
+@media (min-width: 1099px) and (max-width: 1200px) {
   .mainContent .leftOrUpperPart .leftOrUpperPartContainerUnfocused .skillsAndEducationSwapped .skills .titleAndButton .title {
     font-size: 14pt;
   }
@@ -9326,14 +9584,16 @@ input[type=email]) {
 }
 @media (min-width: 1023px) and (max-width: 1099px) {
   .mainContent .leftOrUpperPart .leftOrUpperPartContainerUnfocused .skillsAndEducationSwapped .education {
-    height: 18.5rem;
+    row-gap: 1.1rem;
+    height: 17.5rem;
     padding: 1.1rem 1rem;
   }
 }
 @media (min-width: 1099px) and (max-width: 1400px) {
   .mainContent .leftOrUpperPart .leftOrUpperPartContainerUnfocused .skillsAndEducationSwapped .education {
-    height: 18.5rem;
-    padding: 1.4rem 1.2rem;
+    row-gap: 1.2rem;
+    height: 18rem;
+    padding: 1.2rem 1.2rem;
   }
 }
 @media (min-width: 1570px) and (max-width: 1670px) {
@@ -9369,7 +9629,12 @@ input[type=email]) {
     font-size: 15.5pt;
   }
 }
-@media (min-width: 1023px) and (max-width: 1200px) {
+@media (min-width: 1023px) and (max-width: 1099px) {
+  .mainContent .leftOrUpperPart .leftOrUpperPartContainerUnfocused .skillsAndEducationSwapped .education .titleAndButton .title {
+    font-size: 13.5pt;
+  }
+}
+@media (min-width: 1099px) and (max-width: 1200px) {
   .mainContent .leftOrUpperPart .leftOrUpperPartContainerUnfocused .skillsAndEducationSwapped .education .titleAndButton .title {
     font-size: 14pt;
   }
@@ -9548,12 +9813,12 @@ input[type=email]) {
 }
 @media (min-width: 700px) and (max-width: 767px) {
   .mainContent .rightOrLowerPart .rightOrLowerPartContainerUnfocused {
-    row-gap: 0.8rem;
+    row-gap: 0.6rem;
   }
 }
 @media (min-width: 1023px) and (max-width: 1200px) {
   .mainContent .rightOrLowerPart .rightOrLowerPartContainerUnfocused {
-    row-gap: 0.6rem;
+    row-gap: 0.7rem;
   }
 }
 @media (min-width: 1200px) and (max-width: 1400px) {
@@ -9565,13 +9830,28 @@ input[type=email]) {
   display: flex;
   flex-direction: row;
   column-gap: 2%;
-  height: 30.95rem;
+  height: 32rem;
 }
 @media (min-width: 300px) and (max-width: 600px) {
   .mainContent .rightOrLowerPart .rightOrLowerPartContainerUnfocused .projects {
     flex-direction: column-reverse;
     row-gap: 1rem;
     height: auto;
+    animation: projects 0.5s linear;
+    animation-iteration-count: 1;
+  }
+  @keyframes projects {
+    0% {
+      filter: opacity(0.5) grayscale(10%) blur(0.05rem) brightness(80%);
+      transform: scale(100%);
+    }
+    50% {
+      transform: scale(101%);
+    }
+    100% {
+      transform: scale(100%);
+      opacity: 1;
+    }
   }
 }
 @media (min-width: 600px) and (max-width: 700px) {
@@ -9579,10 +9859,16 @@ input[type=email]) {
     flex-direction: row;
   }
 }
-@media (min-width: 1023px) and (max-width: 1200px) {
+@media (min-width: 1023px) and (max-width: 1099px) {
   .mainContent .rightOrLowerPart .rightOrLowerPartContainerUnfocused .projects {
     width: 100%;
-    height: 33.5rem;
+    height: 30.9rem;
+  }
+}
+@media (min-width: 1099px) and (max-width: 1200px) {
+  .mainContent .rightOrLowerPart .rightOrLowerPartContainerUnfocused .projects {
+    width: 100%;
+    height: 31.5rem;
   }
 }
 @media (min-width: 1200px) and (max-width: 1400px) {
@@ -9718,12 +10004,13 @@ input[type=email]) {
 @media (min-width: 1023px) and (max-width: 1099px) {
   .mainContent .rightOrLowerPart .rightOrLowerPartContainerUnfocused .projects .cyber {
     row-gap: 1.2rem;
-    padding: 2rem 1rem;
+    padding: 1.5rem 1rem;
   }
 }
 @media (min-width: 1099px) and (max-width: 1200px) {
   .mainContent .rightOrLowerPart .rightOrLowerPartContainerUnfocused .projects .cyber {
-    padding: 1.4rem 1.2rem;
+    row-gap: 1.8rem;
+    padding: 1.4rem 1.1rem;
   }
 }
 @media (min-width: 1200px) and (max-width: 1400px) {
@@ -9758,8 +10045,15 @@ input[type=email]) {
     font-size: 15.5pt;
   }
 }
-@media (min-width: 1023px) and (max-width: 1200px) {
+@media (min-width: 1023px) and (max-width: 1099px) {
   .mainContent .rightOrLowerPart .rightOrLowerPartContainerUnfocused .projects .cyber .title {
+    align-self: center;
+    font-size: 13.5pt;
+  }
+}
+@media (min-width: 1099px) and (max-width: 1200px) {
+  .mainContent .rightOrLowerPart .rightOrLowerPartContainerUnfocused .projects .cyber .title {
+    align-self: center;
     font-size: 14pt;
   }
 }
@@ -9841,7 +10135,7 @@ input[type=email]) {
 }
 @media (min-width: 1023px) and (max-width: 1099px) {
   .mainContent .rightOrLowerPart .rightOrLowerPartContainerUnfocused .projects .cyber .allInOneCyber .points {
-    row-gap: 1rem;
+    row-gap: 0.8rem;
   }
 }
 .mainContent .rightOrLowerPart .rightOrLowerPartContainerUnfocused .projects .cyber .allInOneCyber .points li {
@@ -10056,13 +10350,14 @@ input[type=email]) {
 }
 @media (min-width: 1023px) and (max-width: 1099px) {
   .mainContent .rightOrLowerPart .rightOrLowerPartContainerUnfocused .projects .web {
-    row-gap: 2.2rem;
-    padding: 2rem 1rem;
+    row-gap: 1.5rem;
+    padding: 1.5rem 1rem;
   }
 }
 @media (min-width: 1099px) and (max-width: 1400px) {
   .mainContent .rightOrLowerPart .rightOrLowerPartContainerUnfocused .projects .web {
-    padding: 1.4rem 1.2rem;
+    row-gap: 1.5rem;
+    padding: 1.4rem 1.1rem;
   }
 }
 @media (min-width: 1570px) and (max-width: 1670px) {
@@ -10091,8 +10386,15 @@ input[type=email]) {
     font-size: 15.5pt;
   }
 }
-@media (min-width: 1023px) and (max-width: 1200px) {
+@media (min-width: 1023px) and (max-width: 1099px) {
   .mainContent .rightOrLowerPart .rightOrLowerPartContainerUnfocused .projects .web .title {
+    align-self: center;
+    font-size: 13.5pt;
+  }
+}
+@media (min-width: 1099px) and (max-width: 1200px) {
+  .mainContent .rightOrLowerPart .rightOrLowerPartContainerUnfocused .projects .web .title {
+    align-self: center;
     font-size: 14pt;
   }
 }
@@ -10167,13 +10469,13 @@ input[type=email]) {
 @media (min-width: 1023px) and (max-width: 1099px) {
   .mainContent .rightOrLowerPart .rightOrLowerPartContainerUnfocused .projects .web .carousel {
     width: 100%;
-    height: auto;
+    height: 21rem;
   }
 }
 @media (min-width: 1099px) and (max-width: 1200px) {
   .mainContent .rightOrLowerPart .rightOrLowerPartContainerUnfocused .projects .web .carousel {
     width: 100%;
-    height: 23rem;
+    height: 22rem;
   }
 }
 @media (min-width: 1200px) and (max-width: 1400px) {
@@ -10224,13 +10526,13 @@ input[type=email]) {
 @media (min-width: 1023px) and (max-width: 1099px) {
   .mainContent .rightOrLowerPart .rightOrLowerPartContainerUnfocused .projects .web .carousel a img {
     width: 12rem;
-    height: 7.5rem;
+    height: 7rem;
   }
 }
 @media (min-width: 1099px) and (max-width: 1349px) {
   .mainContent .rightOrLowerPart .rightOrLowerPartContainerUnfocused .projects .web .carousel a img {
     width: 13rem;
-    height: 8rem;
+    height: 7rem;
   }
 }
 @media (min-width: 1349px) and (max-width: 1400px) {
@@ -10311,11 +10613,11 @@ input[type=email]) {
   display: flex;
   flex-direction: row;
   column-gap: 2%;
-  height: projectsSwapped(30.95rem, 30.95rem);
+  height: 32rem;
   animation: projectsSwapped 0.5s linear;
   animation-iteration-count: 1;
 }
-@keyframes header {
+@keyframes projectsSwapped {
   0% {
     filter: opacity(0.5) grayscale(10%) blur(0.05rem) brightness(80%);
     transform: scale(100%);
@@ -10340,10 +10642,16 @@ input[type=email]) {
     flex-direction: row;
   }
 }
-@media (min-width: 1023px) and (max-width: 1200px) {
+@media (min-width: 1023px) and (max-width: 1099px) {
   .mainContent .rightOrLowerPart .rightOrLowerPartContainerUnfocused .projectsSwapped {
     width: 100%;
-    height: 33.5rem;
+    height: 30.9rem;
+  }
+}
+@media (min-width: 1099px) and (max-width: 1200px) {
+  .mainContent .rightOrLowerPart .rightOrLowerPartContainerUnfocused .projectsSwapped {
+    width: 100%;
+    height: 31.5rem;
   }
 }
 @media (min-width: 1200px) and (max-width: 1400px) {
@@ -10479,12 +10787,13 @@ input[type=email]) {
 @media (min-width: 1023px) and (max-width: 1099px) {
   .mainContent .rightOrLowerPart .rightOrLowerPartContainerUnfocused .projectsSwapped .cyber {
     row-gap: 1.2rem;
-    padding: 2rem 1rem;
+    padding: 1.5rem 1rem;
   }
 }
 @media (min-width: 1099px) and (max-width: 1200px) {
   .mainContent .rightOrLowerPart .rightOrLowerPartContainerUnfocused .projectsSwapped .cyber {
-    padding: 1.4rem 1.2rem;
+    row-gap: 1.8rem;
+    padding: 1.4rem 1.1rem;
   }
 }
 @media (min-width: 1200px) and (max-width: 1400px) {
@@ -10519,8 +10828,15 @@ input[type=email]) {
     font-size: 15.5pt;
   }
 }
-@media (min-width: 1023px) and (max-width: 1200px) {
+@media (min-width: 1023px) and (max-width: 1099px) {
   .mainContent .rightOrLowerPart .rightOrLowerPartContainerUnfocused .projectsSwapped .cyber .title {
+    align-self: center;
+    font-size: 13.5pt;
+  }
+}
+@media (min-width: 1099px) and (max-width: 1200px) {
+  .mainContent .rightOrLowerPart .rightOrLowerPartContainerUnfocused .projectsSwapped .cyber .title {
+    align-self: center;
     font-size: 14pt;
   }
 }
@@ -10602,7 +10918,7 @@ input[type=email]) {
 }
 @media (min-width: 1023px) and (max-width: 1099px) {
   .mainContent .rightOrLowerPart .rightOrLowerPartContainerUnfocused .projectsSwapped .cyber .allInOneCyber .points {
-    row-gap: 1rem;
+    row-gap: 0.8rem;
   }
 }
 .mainContent .rightOrLowerPart .rightOrLowerPartContainerUnfocused .projectsSwapped .cyber .allInOneCyber .points li {
@@ -10817,13 +11133,14 @@ input[type=email]) {
 }
 @media (min-width: 1023px) and (max-width: 1099px) {
   .mainContent .rightOrLowerPart .rightOrLowerPartContainerUnfocused .projectsSwapped .web {
-    row-gap: 2.2rem;
-    padding: 2rem 1rem;
+    row-gap: 1.5rem;
+    padding: 1.5rem 1rem;
   }
 }
 @media (min-width: 1099px) and (max-width: 1400px) {
   .mainContent .rightOrLowerPart .rightOrLowerPartContainerUnfocused .projectsSwapped .web {
-    padding: 1.4rem 1.2rem;
+    row-gap: 1.5rem;
+    padding: 1.4rem 1.1rem;
   }
 }
 @media (min-width: 1570px) and (max-width: 1670px) {
@@ -10852,8 +11169,15 @@ input[type=email]) {
     font-size: 15.5pt;
   }
 }
-@media (min-width: 1023px) and (max-width: 1200px) {
+@media (min-width: 1023px) and (max-width: 1099px) {
   .mainContent .rightOrLowerPart .rightOrLowerPartContainerUnfocused .projectsSwapped .web .title {
+    align-self: center;
+    font-size: 13.5pt;
+  }
+}
+@media (min-width: 1099px) and (max-width: 1200px) {
+  .mainContent .rightOrLowerPart .rightOrLowerPartContainerUnfocused .projectsSwapped .web .title {
+    align-self: center;
     font-size: 14pt;
   }
 }
@@ -10928,13 +11252,13 @@ input[type=email]) {
 @media (min-width: 1023px) and (max-width: 1099px) {
   .mainContent .rightOrLowerPart .rightOrLowerPartContainerUnfocused .projectsSwapped .web .carousel {
     width: 100%;
-    height: auto;
+    height: 21rem;
   }
 }
 @media (min-width: 1099px) and (max-width: 1200px) {
   .mainContent .rightOrLowerPart .rightOrLowerPartContainerUnfocused .projectsSwapped .web .carousel {
     width: 100%;
-    height: 23rem;
+    height: 22rem;
   }
 }
 @media (min-width: 1200px) and (max-width: 1400px) {
@@ -10985,13 +11309,13 @@ input[type=email]) {
 @media (min-width: 1023px) and (max-width: 1099px) {
   .mainContent .rightOrLowerPart .rightOrLowerPartContainerUnfocused .projectsSwapped .web .carousel a img {
     width: 12rem;
-    height: 7.5rem;
+    height: 7rem;
   }
 }
 @media (min-width: 1099px) and (max-width: 1349px) {
   .mainContent .rightOrLowerPart .rightOrLowerPartContainerUnfocused .projectsSwapped .web .carousel a img {
     width: 13rem;
-    height: 8rem;
+    height: 7rem;
   }
 }
 @media (min-width: 1349px) and (max-width: 1400px) {
@@ -11071,7 +11395,7 @@ input[type=email]) {
 .mainContent .rightOrLowerPart .rightOrLowerPartContainerUnfocused .footer {
   display: flex;
   width: 100%;
-  height: 6.5rem;
+  height: 5.5rem;
   padding: 1.5rem 1rem;
   border-radius: 0.5rem;
   background-color: #635445;
@@ -11119,14 +11443,14 @@ input[type=email]) {
 }
 @media (min-width: 1023px) and (max-width: 1099px) {
   .mainContent .rightOrLowerPart .rightOrLowerPartContainerUnfocused .footer {
-    height: 5rem;
-    padding: 1rem 1rem;
+    height: 4.5rem;
+    padding: 1rem 0.66rem;
   }
 }
 @media (min-width: 1099px) and (max-width: 1200px) {
   .mainContent .rightOrLowerPart .rightOrLowerPartContainerUnfocused .footer {
-    height: 5rem;
-    padding: 1.5rem 1rem;
+    height: 4.5rem;
+    padding: 1rem 1rem;
   }
 }
 @media (min-width: 1200px) and (max-width: 1400px) {
@@ -11177,7 +11501,7 @@ input[type=email]) {
     column-gap: 0.8rem;
   }
 }
-@media (min-width: 1060px) and (max-width: 1120px) {
+@media (min-width: 1060px) and (max-width: 1200px) {
   .mainContent .rightOrLowerPart .rightOrLowerPartContainerUnfocused .footer .wrapper {
     justify-content: center;
     column-gap: 1.2rem;
@@ -11203,13 +11527,13 @@ input[type=email]) {
     width: inherit;
   }
 }
-@media (min-width: 1023px) and (max-width: 1060px) {
+@media (min-width: 1023px) and (max-width: 1099px) {
   .mainContent .rightOrLowerPart .rightOrLowerPartContainerUnfocused .footer .wrapper .leftPart {
     column-gap: 0.8rem;
     width: auto;
   }
 }
-@media (min-width: 1060px) and (max-width: 1120px) {
+@media (min-width: 1099px) and (max-width: 1200px) {
   .mainContent .rightOrLowerPart .rightOrLowerPartContainerUnfocused .footer .wrapper .leftPart {
     column-gap: 1rem;
     width: auto;
@@ -11286,14 +11610,13 @@ input[type=email]) {
     column-gap: 3rem;
   }
 }
-@media (min-width: 1023px) and (max-width: 1060px) {
+@media (min-width: 1023px) and (max-width: 1099px) {
   .mainContent .rightOrLowerPart .rightOrLowerPartContainerUnfocused .footer .wrapper .rightPart {
-    justify-content: center;
     column-gap: 0.8rem;
     width: auto;
   }
 }
-@media (min-width: 1060px) and (max-width: 1120px) {
+@media (min-width: 1099px) and (max-width: 1200px) {
   .mainContent .rightOrLowerPart .rightOrLowerPartContainerUnfocused .footer .wrapper .rightPart {
     column-gap: 1rem;
     width: auto;
@@ -12081,7 +12404,7 @@ input[type=email]) {
     font-size: 9pt;
   }
 }
-.headerLight .contactForm {
+.headerLight .contactFormLight {
   display: flex;
   flex-direction: column;
   row-gap: 1rem;
@@ -12090,7 +12413,7 @@ input[type=email]) {
   position: absolute;
   top: 6.5rem;
   right: 1%;
-  animation: contactForm 0.2s linear;
+  animation: contactFormLight 0.2s linear;
   animation-iteration-count: 1;
   background-color: #d9d9d9;
   border-radius: 0.5rem;
@@ -12098,7 +12421,7 @@ input[type=email]) {
   z-index: 1;
   filter: none;
 }
-@keyframes contactForm {
+@keyframes contactFormLight {
   0% {
     top: 0;
     filter: opacity(0.5) grayscale(10%) blur(0.05rem) brightness(80%);
@@ -12109,15 +12432,15 @@ input[type=email]) {
   }
 }
 @media (min-width: 600px) and (max-width: 700px) {
-  .headerLight .contactForm {
+  .headerLight .contactFormLight {
     width: 75%;
     position: absolute;
     top: 7.5rem;
     left: 13%;
-    animation: contactForm 0.2s linear;
+    animation: contactFormLight 0.2s linear;
     animation-iteration-count: 1;
   }
-  @keyframes contactForm {
+  @keyframes contactFormLight {
     0% {
       top: 0;
       filter: opacity(0.5) grayscale(10%) blur(0.05rem) brightness(80%);
@@ -12129,15 +12452,15 @@ input[type=email]) {
   }
 }
 @media (min-width: 700px) and (max-width: 767px) {
-  .headerLight .contactForm {
+  .headerLight .contactFormLight {
     width: 75%;
     position: absolute;
     top: 8.1rem;
     left: 13%;
-    animation: contactForm 0.2s linear;
+    animation: contactFormLight 0.2s linear;
     animation-iteration-count: 1;
   }
-  @keyframes contactForm {
+  @keyframes contactFormLight {
     0% {
       top: 0;
       filter: opacity(0.5) grayscale(10%) blur(0.05rem) brightness(80%);
@@ -12149,15 +12472,15 @@ input[type=email]) {
   }
 }
 @media (min-width: 767px) and (max-width: 1023px) {
-  .headerLight .contactForm {
+  .headerLight .contactFormLight {
     width: 75%;
     position: absolute;
     top: 8.2rem;
     left: 13%;
-    animation: contactForm 0.2s linear;
+    animation: contactFormLight 0.2s linear;
     animation-iteration-count: 1;
   }
-  @keyframes contactForm {
+  @keyframes contactFormLight {
     0% {
       top: 0;
       filter: opacity(0.5) grayscale(10%) blur(0.05rem) brightness(80%);
@@ -12169,46 +12492,46 @@ input[type=email]) {
   }
 }
 @media (min-width: 740px) and (max-width: 800px) {
-  .headerLight .contactForm {
+  .headerLight .contactFormLight {
     width: 73%;
     left: 14%;
   }
 }
 @media (min-width: 800px) and (max-width: 860px) {
-  .headerLight .contactForm {
+  .headerLight .contactFormLight {
     width: 71%;
     left: 14.5%;
   }
 }
 @media (min-width: 860px) and (max-width: 920px) {
-  .headerLight .contactForm {
+  .headerLight .contactFormLight {
     width: 67%;
     left: 16.5%;
   }
 }
 @media (min-width: 920px) and (max-width: 980px) {
-  .headerLight .contactForm {
+  .headerLight .contactFormLight {
     width: 65%;
     left: 17%;
   }
 }
 @media (min-width: 980px) and (max-width: 1023px) {
-  .headerLight .contactForm {
+  .headerLight .contactFormLight {
     width: 63%;
     left: 18%;
   }
 }
 @media (min-width: 1023px) and (max-width: 1200px) {
-  .headerLight .contactForm {
+  .headerLight .contactFormLight {
     row-gap: 0.8rem;
     width: 24.5%;
     height: 30.625rem;
     position: absolute;
     top: 7.2rem;
-    animation: contactForm 0.2s linear;
+    animation: contactFormLight 0.2s linear;
     animation-iteration-count: 1;
   }
-  @keyframes contactForm {
+  @keyframes contactFormLight {
     0% {
       top: 0;
       filter: opacity(0.5) grayscale(10%) blur(0.05rem) brightness(80%);
@@ -12220,24 +12543,24 @@ input[type=email]) {
   }
 }
 @media (min-width: 1200px) and (max-width: 1400px) {
-  .headerLight .contactForm {
+  .headerLight .contactFormLight {
     width: 24%;
   }
 }
 @media (min-width: 1400px) and (max-width: 1500px) {
-  .headerLight .contactForm {
+  .headerLight .contactFormLight {
     width: 24.3%;
   }
 }
 @media (min-width: 1570px) and (max-width: 1670px) {
-  .headerLight .contactForm {
+  .headerLight .contactFormLight {
     width: 24%;
     position: absolute;
     top: 7.4rem;
-    animation: contactForm 0.2s linear;
+    animation: contactFormLight 0.2s linear;
     animation-iteration-count: 1;
   }
-  @keyframes contactForm {
+  @keyframes contactFormLight {
     0% {
       top: 0;
       filter: opacity(0.5) grayscale(10%) blur(0.05rem) brightness(80%);
@@ -12248,7 +12571,7 @@ input[type=email]) {
     }
   }
 }
-.headerLight .contactForm .titleAndButton {
+.headerLight .contactFormLight .titleAndButton {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -12257,11 +12580,11 @@ input[type=email]) {
   background-color: #656253;
   border-radius: 0.4rem 0.4rem 0 0;
 }
-.headerLight .contactForm .titleAndButton h4 {
+.headerLight .contactFormLight .titleAndButton h4 {
   font-size: 14pt;
   font-weight: 500;
 }
-.headerLight .contactForm .titleAndButton .close {
+.headerLight .contactFormLight .titleAndButton .close {
   width: 7rem;
   height: 2.5rem;
   position: relative;
@@ -12274,42 +12597,42 @@ input[type=email]) {
   cursor: pointer;
   transition: all 0.2s ease;
 }
-.headerLight .contactForm .titleAndButton .close:hover {
+.headerLight .contactFormLight .titleAndButton .close:hover {
   background-color: #886849;
   color: #ebebeb;
 }
 @media (min-width: 300px) and (max-width: 400px) {
-  .headerLight .contactForm .titleAndButton .close {
+  .headerLight .contactFormLight .titleAndButton .close {
     width: 6rem;
     height: 2.3rem;
     font-size: 9pt;
   }
 }
 @media (min-width: 700px) and (max-width: 767px) {
-  .headerLight .contactForm .titleAndButton .close {
+  .headerLight .contactFormLight .titleAndButton .close {
     width: 6rem;
     font-size: 9pt;
   }
 }
 @media (min-width: 300px) and (max-width: 1023px) {
-  .headerLight .contactForm .titleAndButton .close {
+  .headerLight .contactFormLight .titleAndButton .close {
     cursor: default;
   }
 }
 @media (min-width: 1023px) and (max-width: 1400px) {
-  .headerLight .contactForm .titleAndButton .close {
+  .headerLight .contactFormLight .titleAndButton .close {
     width: 6rem;
     height: 2.3rem;
     font-size: 9pt;
   }
 }
-.headerLight .contactForm form {
+.headerLight .contactFormLight form {
   display: flex;
   flex-direction: column;
   row-gap: 0.8rem;
   position: relative;
 }
-.headerLight .contactForm form .info {
+.headerLight .contactFormLight form .info {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -12361,7 +12684,7 @@ input[type=email]) {
     opacity: 0;
   }
 }
-.headerLight .contactForm form .success {
+.headerLight .contactFormLight form .success {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -12413,7 +12736,7 @@ input[type=email]) {
     opacity: 0;
   }
 }
-.headerLight .contactForm form .fail {
+.headerLight .contactFormLight form .fail {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -12465,24 +12788,24 @@ input[type=email]) {
     opacity: 0;
   }
 }
-.headerLight .contactForm form label {
+.headerLight .contactFormLight form label {
   display: none;
 }
-.headerLight .contactForm form .namesAndSubject {
+.headerLight .contactFormLight form .namesAndSubject {
   display: flex;
   flex-direction: column;
   row-gap: 0.8rem;
 }
-.headerLight .contactForm form .namesAndSubject .names {
+.headerLight .contactFormLight form .namesAndSubject .names {
   display: flex;
   flex-direction: row;
   justify-content: center;
   column-gap: 3%;
 }
-.headerLight .contactForm form .namesAndSubject .names label {
+.headerLight .contactFormLight form .namesAndSubject .names label {
   display: none;
 }
-.headerLight .contactForm form .namesAndSubject .names .firstName {
+.headerLight .contactFormLight form .namesAndSubject .names .firstName {
   width: 46%;
   height: 3rem;
   padding: 0.5rem;
@@ -12492,7 +12815,7 @@ input[type=email]) {
   background-color: #c8c8c8;
   color: #5a5a5a;
 }
-.headerLight .contactForm form .namesAndSubject .names .firstName:focus:where(input[type=text],
+.headerLight .contactFormLight form .namesAndSubject .names .firstName:focus:where(input[type=text],
 input[type=search],
 input[type=password],
 input[type=url],
@@ -12501,15 +12824,15 @@ input[type=email]) {
   border-style: solid;
   outline: none;
 }
-.headerLight .contactForm form .namesAndSubject .names .firstName::placeholder {
+.headerLight .contactFormLight form .namesAndSubject .names .firstName::placeholder {
   color: #757575;
 }
 @media (min-width: 300px) and (max-width: 400px) {
-  .headerLight .contactForm form .namesAndSubject .names .firstName {
+  .headerLight .contactFormLight form .namesAndSubject .names .firstName {
     height: 2.5rem;
   }
 }
-.headerLight .contactForm form .namesAndSubject .names .lastName {
+.headerLight .contactFormLight form .namesAndSubject .names .lastName {
   width: 46%;
   height: 3rem;
   padding: 0.5rem;
@@ -12519,7 +12842,7 @@ input[type=email]) {
   background-color: #c8c8c8;
   color: #5a5a5a;
 }
-.headerLight .contactForm form .namesAndSubject .names .lastName:focus:where(input[type=text],
+.headerLight .contactFormLight form .namesAndSubject .names .lastName:focus:where(input[type=text],
 input[type=search],
 input[type=password],
 input[type=url],
@@ -12528,15 +12851,15 @@ input[type=email]) {
   border-style: solid;
   outline: none;
 }
-.headerLight .contactForm form .namesAndSubject .names .lastName::placeholder {
+.headerLight .contactFormLight form .namesAndSubject .names .lastName::placeholder {
   color: #757575;
 }
 @media (min-width: 300px) and (max-width: 400px) {
-  .headerLight .contactForm form .namesAndSubject .names .lastName {
+  .headerLight .contactFormLight form .namesAndSubject .names .lastName {
     height: 2.5rem;
   }
 }
-.headerLight .contactForm form .namesAndSubject .subject {
+.headerLight .contactFormLight form .namesAndSubject .subject {
   width: 95%;
   height: 3rem;
   padding: 0.5rem;
@@ -12546,7 +12869,7 @@ input[type=email]) {
   background-color: #c8c8c8;
   color: #5a5a5a;
 }
-.headerLight .contactForm form .namesAndSubject .subject:focus:where(input[type=text],
+.headerLight .contactFormLight form .namesAndSubject .subject:focus:where(input[type=text],
 input[type=search],
 input[type=password],
 input[type=url],
@@ -12555,15 +12878,15 @@ input[type=email]) {
   border-style: solid;
   outline: none;
 }
-.headerLight .contactForm form .namesAndSubject .subject::placeholder {
+.headerLight .contactFormLight form .namesAndSubject .subject::placeholder {
   color: #757575;
 }
 @media (min-width: 300px) and (max-width: 400px) {
-  .headerLight .contactForm form .namesAndSubject .subject {
+  .headerLight .contactFormLight form .namesAndSubject .subject {
     height: 2.5rem;
   }
 }
-.headerLight .contactForm form .email {
+.headerLight .contactFormLight form .email {
   width: 95%;
   height: 3rem;
   padding: 0.5rem;
@@ -12573,7 +12896,7 @@ input[type=email]) {
   background-color: #c8c8c8;
   color: #5a5a5a;
 }
-.headerLight .contactForm form .email:focus:where(input[type=text],
+.headerLight .contactFormLight form .email:focus:where(input[type=text],
 input[type=search],
 input[type=password],
 input[type=url],
@@ -12582,15 +12905,15 @@ input[type=email]) {
   border-style: solid;
   outline: none;
 }
-.headerLight .contactForm form .email::placeholder {
+.headerLight .contactFormLight form .email::placeholder {
   color: #757575;
 }
 @media (min-width: 300px) and (max-width: 400px) {
-  .headerLight .contactForm form .email {
+  .headerLight .contactFormLight form .email {
     height: 2.5rem;
   }
 }
-.headerLight .contactForm form .textArea {
+.headerLight .contactFormLight form .textArea {
   width: 95%;
   height: 10rem;
   padding: 0.5rem;
@@ -12601,20 +12924,20 @@ input[type=email]) {
   color: #5a5a5a;
   resize: none;
 }
-.headerLight .contactForm form .textArea:focus:where(textarea) {
+.headerLight .contactFormLight form .textArea:focus:where(textarea) {
   appearance: none;
   border-style: solid;
   outline: none;
 }
-.headerLight .contactForm form .textArea::placeholder {
+.headerLight .contactFormLight form .textArea::placeholder {
   color: #757575;
 }
 @media (min-width: 300px) and (max-width: 400px) {
-  .headerLight .contactForm form .textArea {
+  .headerLight .contactFormLight form .textArea {
     height: 8rem;
   }
 }
-.headerLight .contactForm form .buttons {
+.headerLight .contactFormLight form .buttons {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -12624,13 +12947,13 @@ input[type=email]) {
   top: 22.7rem;
 }
 @media (min-width: 300px) and (max-width: 400px) {
-  .headerLight .contactForm form .buttons {
+  .headerLight .contactFormLight form .buttons {
     margin-top: 0.4rem;
     position: unset;
     font-size: 9pt;
   }
 }
-.headerLight .contactForm form .buttons .send {
+.headerLight .contactFormLight form .buttons .send {
   width: 7rem;
   height: 2.5rem;
   align-self: center;
@@ -12652,52 +12975,52 @@ input[type=email]) {
     opacity: 1;
   }
 }
-.headerLight .contactForm form .buttons .send:hover {
+.headerLight .contactFormLight form .buttons .send:hover {
   background-color: #886849;
 }
 @media (min-width: 300px) and (max-width: 400px) {
-  .headerLight .contactForm form .buttons .send {
+  .headerLight .contactFormLight form .buttons .send {
     width: 6rem;
     height: 2.3rem;
     font-size: 9pt;
   }
 }
 @media (min-width: 400px) and (max-width: 600px) {
-  .headerLight .contactForm form .buttons .send {
+  .headerLight .contactFormLight form .buttons .send {
     bottom: -19.375rem;
   }
 }
 @media (min-width: 600px) and (max-width: 700px) {
-  .headerLight .contactForm form .buttons .send {
+  .headerLight .contactFormLight form .buttons .send {
     bottom: -19rem;
   }
 }
 @media (width: 700px) {
-  .headerLight .contactForm form .buttons .send {
+  .headerLight .contactFormLight form .buttons .send {
     width: 6rem;
     font-size: 9pt;
     bottom: 0 !important;
   }
 }
 @media (min-width: 700px) and (max-width: 767px) {
-  .headerLight .contactForm form .buttons .send {
+  .headerLight .contactFormLight form .buttons .send {
     width: 6rem;
     font-size: 9pt;
   }
 }
 @media (min-width: 300px) and (max-width: 1023px) {
-  .headerLight .contactForm form .buttons .send {
+  .headerLight .contactFormLight form .buttons .send {
     cursor: default;
   }
 }
 @media (min-width: 1023px) and (max-width: 1400px) {
-  .headerLight .contactForm form .buttons .send {
+  .headerLight .contactFormLight form .buttons .send {
     width: 6rem;
     height: 2.3rem;
     font-size: 9pt;
   }
 }
-.headerLight .contactForm form .buttons .sendDisabled {
+.headerLight .contactFormLight form .buttons .sendDisabled {
   width: 7rem;
   height: 2.5rem;
   align-self: center;
@@ -12719,43 +13042,43 @@ input[type=email]) {
   }
 }
 @media (min-width: 300px) and (max-width: 400px) {
-  .headerLight .contactForm form .buttons .sendDisabled {
+  .headerLight .contactFormLight form .buttons .sendDisabled {
     width: 6rem;
     height: 2.3rem;
     font-size: 9pt;
   }
 }
 @media (min-width: 400px) and (max-width: 600px) {
-  .headerLight .contactForm form .buttons .sendDisabled {
+  .headerLight .contactFormLight form .buttons .sendDisabled {
     bottom: -19.375rem;
   }
 }
 @media (min-width: 600px) and (max-width: 700px) {
-  .headerLight .contactForm form .buttons .sendDisabled {
+  .headerLight .contactFormLight form .buttons .sendDisabled {
     bottom: -19rem;
   }
 }
 @media (width: 700px) {
-  .headerLight .contactForm form .buttons .sendDisabled {
+  .headerLight .contactFormLight form .buttons .sendDisabled {
     width: 6rem;
     font-size: 9pt;
     bottom: 0 !important;
   }
 }
 @media (min-width: 700px) and (max-width: 767px) {
-  .headerLight .contactForm form .buttons .sendDisabled {
+  .headerLight .contactFormLight form .buttons .sendDisabled {
     width: 6rem;
     font-size: 9pt;
   }
 }
 @media (min-width: 1023px) and (max-width: 1400px) {
-  .headerLight .contactForm form .buttons .sendDisabled {
+  .headerLight .contactFormLight form .buttons .sendDisabled {
     width: 6rem;
     height: 2.3rem;
     font-size: 9pt;
   }
 }
-.headerLight .contactForm form .buttons .reset {
+.headerLight .contactFormLight form .buttons .reset {
   width: 7rem;
   height: 2.5rem;
   align-self: center;
@@ -12777,46 +13100,46 @@ input[type=email]) {
     opacity: 1;
   }
 }
-.headerLight .contactForm form .buttons .reset:hover {
+.headerLight .contactFormLight form .buttons .reset:hover {
   background-color: #722f26;
 }
 @media (min-width: 300px) and (max-width: 400px) {
-  .headerLight .contactForm form .buttons .reset {
+  .headerLight .contactFormLight form .buttons .reset {
     width: 6rem;
     height: 2.3rem;
     font-size: 9pt;
   }
 }
 @media (min-width: 400px) and (max-width: 600px) {
-  .headerLight .contactForm form .buttons .reset {
+  .headerLight .contactFormLight form .buttons .reset {
     bottom: -19.375rem;
   }
 }
 @media (min-width: 600px) and (max-width: 700px) {
-  .headerLight .contactForm form .buttons .reset {
+  .headerLight .contactFormLight form .buttons .reset {
     bottom: -19rem;
   }
 }
 @media (width: 700px) {
-  .headerLight .contactForm form .buttons .reset {
+  .headerLight .contactFormLight form .buttons .reset {
     width: 6rem;
     font-size: 9pt;
     bottom: 0 !important;
   }
 }
 @media (min-width: 700px) and (max-width: 767px) {
-  .headerLight .contactForm form .buttons .reset {
+  .headerLight .contactFormLight form .buttons .reset {
     width: 6rem;
     font-size: 9pt;
   }
 }
 @media (min-width: 300px) and (max-width: 1023px) {
-  .headerLight .contactForm form .buttons .reset {
+  .headerLight .contactFormLight form .buttons .reset {
     cursor: default;
   }
 }
 @media (min-width: 1023px) and (max-width: 1400px) {
-  .headerLight .contactForm form .buttons .reset {
+  .headerLight .contactFormLight form .buttons .reset {
     width: 6rem;
     height: 2.3rem;
     font-size: 9pt;
@@ -22239,40 +22562,48 @@ body {
   padding: 1rem;
   position: relative;
 }
-@media (min-width: 300px) and (max-width: 700px) {
+@media (min-width: 300px) and (max-width: 600px) {
   #root {
     height: auto;
     overflow-x: hidden;
   }
 }
-@media (min-width: 976px) and (max-width: 1023px) {
-  #root {
-    height: auto;
-  }
-}
-@media (min-width: 1023px) and (max-width: 1200px) {
+@media (min-width: 1023px) and (max-width: 1099px) {
   #root {
     row-gap: 0.6rem;
-    height: auto;
   }
 }
-@media (min-width: 1200px) and (max-width: 1400px) {
+@media (min-width: 1099px) and (max-width: 1200px) {
   #root {
-    row-gap: 0.8rem;
+    row-gap: 0.7rem;
   }
 }
-@media (min-width: 1023px) and (max-width: 1200px) {
-  #root {
-    row-gap: 0.6rem;
-    height: auto;
-  }
-}
-@media (orientation: landscape) and (min-height: 749px) {
+@media (orientation: landscape) and (min-width: 1023px) and (max-width: 1099px) and (min-height: 684px) {
   #root {
     height: 100dvh;
   }
 }
-@media (orientation: landscape) and (max-height: 749px) {
+@media (orientation: landscape) and (min-width: 1023px) and (max-width: 1099px) and (max-height: 684px) {
+  #root {
+    height: auto;
+  }
+}
+@media (orientation: landscape) and (min-width: 1099px) and (max-width: 1200px) and (min-height: 703px) {
+  #root {
+    height: 100dvh;
+  }
+}
+@media (orientation: landscape) and (min-width: 1099px) and (max-width: 1200px) and (max-height: 703px) {
+  #root {
+    height: auto;
+  }
+}
+@media (orientation: landscape) and (min-width: 1400px) and (max-width: 1500px) and (min-height: 749px) {
+  #root {
+    height: 100dvh;
+  }
+}
+@media (orientation: landscape) and (min-width: 1400px) and (max-width: 1500px) and (max-height: 749px) {
   #root {
     height: auto;
   }

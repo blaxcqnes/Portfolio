@@ -74,6 +74,7 @@ export default function Header({
 
       {isContactFormOpen && (
         <ContactForm
+          isLightModeOn={isLightModeOn}
           isContactFormOpen={isContactFormOpen}
           toggleContactForm={toggleContactForm}
         />
