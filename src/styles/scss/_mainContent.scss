@@ -8406,27 +8406,27 @@
         flex-direction: row;
         column-gap: 2%;
         height: min(32rem, 32rem);
-        animation: projectsSwapped 0.5s linear;
-        animation-iteration-count: 1;
-
-        @keyframes projectsSwapped {
-          0% {
-            filter: opacity(0.5) grayscale(10%) blur(0.05rem) brightness(80%);
-            transform: scale(100%);
-          }
-          50% {
-            transform: scale(101%);
-          }
-          100% {
-            transform: scale(100%);
-            opacity: 1;
-          }
-        }
 
         @media (min-width: 300px) and (max-width: 600px) {
           flex-direction: column;
           row-gap: 1rem;
           height: auto;
+          animation: projectsSwapped 0.5s linear;
+          animation-iteration-count: 1;
+
+          @keyframes projectsSwapped {
+            0% {
+              filter: opacity(0.5) grayscale(10%) blur(0.05rem) brightness(80%);
+              transform: scale(100%);
+            }
+            50% {
+              transform: scale(101%);
+            }
+            100% {
+              transform: scale(100%);
+              opacity: 1;
+            }
+          }
         }
 
         @media (min-width: 600px) and (max-width: 700px) {
