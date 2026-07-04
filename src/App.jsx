@@ -5,9 +5,8 @@ import MainContent from './components/MainContent';
 
 export default function App() {
   const [loading, setLoading] = useState(true);
-  const [isLightModeOn, setIsLightModeOn] = useState(false);
   const [isContactFormOpen, setIsContactFormOpen] = useState(false);
-  const [isContactFormMobileOpen, setIsContactFormMobileOpen] = useState(false);
+  // const [isContactFormMobileOpen, setIsContactFormMobileOpen] = useState(false);
   const [isSkillListOpen, setIsSkillListOpen] = useState(false);
   const [isEducationListOpen, setIsEducationListOpen] = useState(false);
   const [isCyberListOpen, setIsCyberListOpen] = useState(false);
@@ -25,18 +24,18 @@ export default function App() {
   // End
 
   // Toggle functions for lightMode, contactForm, contactFormMobile, skillList, educationList, cyberList and webList
-  function toggleLightMode() {
-    setIsLightModeOn((prev) => !prev);
-  }
+  // function toggleLightMode() {
+  //   setIsLightModeOn((prev) => !prev);
+  // }
   //
   function toggleContactForm() {
     setIsContactFormOpen((prev) => !prev);
   }
   //
-  function toggleContactFormMobile() {
-    setIsContactFormMobileOpen((prev) => !prev);
-    setClassType((prev) => !prev);
-  }
+  // function toggleContactFormMobile() {
+  //   setIsContactFormMobileOpen((prev) => !prev);
+  //   setClassType((prev) => !prev);
+  // }
   //
   function toggleSkillList() {
     setIsSkillListOpen((prev) => !prev);
@@ -59,18 +58,7 @@ export default function App() {
   }
   // End
 
-  // 1 Related to lightMode, switches UI to a lighter theme
-  useEffect(() => {
-    isLightModeOn
-      ? (document.body.style.cssText =
-          'background-color: #d9d9d9; transition: all 0.2s ease-in-out;')
-      : document.body.removeAttribute('style');
-
-    return () => {};
-  }, [isLightModeOn]);
-  //
-
-  // 2 Related to allowing background to be scrollable
+  // 1 Related to allowing background to be scrollable
   useEffect(() => {
     classType
       ? (document.getElementById('root').style.height = 'auto')
@@ -78,6 +66,16 @@ export default function App() {
 
     return () => {};
   }, [classType]);
+  //
+
+  // 2 Related to root scalling, when contactForm, skillList, educationList, cyberList or webList are open, the root scales down to 98% of its original size
+  useEffect(() => {
+    classType || isContactFormOpen
+      ? (document.getElementById('root').style.transform = 'scale(98%)')
+      : document.getElementById('root').removeAttribute('style');
+
+    return () => {};
+  }, [classType, isContactFormOpen]);
   //
 
   // 3 Related to contactForm, allows scrolling back to the original position before the form was displayed
@@ -179,7 +177,6 @@ export default function App() {
       const scrollTop = window.scrollY || document.documentElement.scrollTop;
 
       if (scrollTop <= 1) {
-        setIsContactFormMobileOpen(false);
         setIsSkillListOpen(false);
         setIsEducationListOpen(false);
         setIsCyberListOpen(false);
@@ -192,11 +189,11 @@ export default function App() {
 
     return () => window.removeEventListener('scroll', handleScroll);
   }, [
-    isContactFormMobileOpen,
     isSkillListOpen,
     isEducationListOpen,
     isCyberListOpen,
     isWebListOpen,
+    classType,
   ]);
   //
 
@@ -206,7 +203,6 @@ export default function App() {
       if (e.key === 'Escape') {
         return (
           setIsContactFormOpen(false),
-          setIsContactFormMobileOpen(false),
           setIsSkillListOpen(false),
           setIsEducationListOpen(false),
           setIsCyberListOpen(false),
@@ -225,36 +221,28 @@ export default function App() {
       ) : (
         <>
           <Header
-            isLightModeOn={isLightModeOn}
             isContactFormOpen={isContactFormOpen}
-            isContactFormMobileOpen={isContactFormMobileOpen}
             isSkillListOpen={isSkillListOpen}
             isEducationListOpen={isEducationListOpen}
             isCyberListOpen={isCyberListOpen}
             isWebListOpen={isWebListOpen}
             classType={classType}
             //
-            toggleLightMode={toggleLightMode}
             toggleContactForm={toggleContactForm}
-            toggleContactFormMobile={toggleContactFormMobile}
             toggleSkillList={toggleSkillList}
             toggleEducationList={toggleEducationList}
             toggleCyberList={toggleCyberList}
             toggleWebList={toggleWebList}
           />
           <MainContent
-            isLightModeOn={isLightModeOn}
             isContactFormOpen={isContactFormOpen}
-            isContactFormMobileOpen={isContactFormMobileOpen}
             isSkillListOpen={isSkillListOpen}
             isEducationListOpen={isEducationListOpen}
             isCyberListOpen={isCyberListOpen}
             isWebListOpen={isWebListOpen}
             classType={classType}
             //
-            toggleLightMode={toggleLightMode}
             toggleContactForm={toggleContactForm}
-            toggleContactFormMobile={toggleContactFormMobile}
             toggleSkillList={toggleSkillList}
             toggleEducationList={toggleEducationList}
             toggleCyberList={toggleCyberList}

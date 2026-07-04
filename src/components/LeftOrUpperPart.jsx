@@ -1,18 +1,17 @@
+import { useState, useEffect } from 'react';
 import me from '../images/mainContent_leftOrUpperPart/me.jpg';
-import meLight from '../images/mainContent_leftOrUpperPart/meLight.jpg';
-import ContactFormMobile from './ContaceFormMobile';
+// import ContactFormMobile from './ContaceFormMobile';
 import SkillList from './SkillList';
 import EducationList from './EducationList';
 
 export default function LeftOrUpperPart({
-  isLightModeOn,
   isContactFormOpen,
-  isContactFormMobileOpen,
+  // isContactFormMobileOpen,
   isSkillListOpen,
   isEducationListOpen,
   isCyberListOpen,
   isWebListOpen,
-  toggleContactFormMobile,
+  // toggleContactFormMobile,
   toggleSkillList,
   toggleEducationList,
   toggleCyberList,
@@ -28,19 +27,28 @@ export default function LeftOrUpperPart({
   }
 
   function closeLists() {
-    if (isContactFormMobileOpen) {
-      toggleContactFormMobile();
-    } else if (isSkillListOpen) {
+    if (isSkillListOpen) {
       toggleSkillList();
     } else if (isEducationListOpen) {
       toggleEducationList();
     }
   }
+
+  const [isNarrowScreen, setIsNarrowScreen] = useState(
+    () => window.matchMedia('(max-width: 600px)').matches,
+  );
+
+  useEffect(() => {
+    const mediaWatcher = window.matchMedia('(max-width: 600px)');
+
+    const updateScreen = (e) => setIsNarrowScreen(e.matches);
+    mediaWatcher.addEventListener('change', updateScreen);
+
+    return () => mediaWatcher.removeEventListener('change', updateScreen);
+  }, []);
+
   return (
-    <main
-      className={isLightModeOn ? 'leftOrUpperPartLight' : 'leftOrUpperPart'}
-      onClick={handleClick}
-    >
+    <main className="leftOrUpperPart" onClick={handleClick}>
       {/*  */}
       <div
         className={
@@ -53,7 +61,7 @@ export default function LeftOrUpperPart({
         {/*  */}
         <section className="aboutMeAndImage">
           {/*  */}
-          <div className={isLightModeOn ? 'aboutMeLight' : 'aboutMe'}>
+          <div className="aboutMe">
             <p className="title">About Me</p>
             <p className="aboutMeDescription">
               Highly results-oriented Cybersecurity Analyst with knowledge and
@@ -66,57 +74,26 @@ export default function LeftOrUpperPart({
               Web developer with high proficiency in coding, web app testing and
               designing.
             </p>
-            <div className="locationAndContactForm">
-              <p className="locationForSmallerScreens">Riyadh, Saudi Arabia</p>
-
-              {classType || isContactFormOpen ? (
-                <button className="contact" disabled>
-                  Contact
-                </button>
-              ) : (
-                <button
-                  className="contact"
-                  onClick={
-                    !isContactFormMobileOpen
-                      ? toggleContactFormMobile
-                      : undefined
-                  }
-                >
-                  Contact
-                </button>
-              )}
-            </div>
+            <p className="locationForSmallerScreens">Riyadh, Saudi Arabia</p>
           </div>
           {/*  */}
-          <div
-            className={
-              isLightModeOn ? 'forSmallerScreensLight' : 'forSmallerScreens'
-            }
-          >
-            {isLightModeOn ? (
-              <img src={meLight} className="smallerImgLight" />
-            ) : (
-              <img src={me} className="smallerImg" />
-            )}
+          <div className="forSmallerScreens">
+            <img src={me} className="smallerImg" />
             <p>Cybersecurity Professional & Web Developer</p>
           </div>
           {/*  */}
-          {isLightModeOn ? (
-            <img src={meLight} className="regularImgLight" />
-          ) : (
-            <img src={me} className="regularImg" />
-          )}
+          <img src={me} className="regularImg" />
           {/*  */}
         </section>
 
         <section
           className={
-            isEducationListOpen
+            isNarrowScreen && isEducationListOpen
               ? 'skillsAndEducationSwapped'
               : 'skillsAndEducation'
           }
         >
-          <div className={isLightModeOn ? 'skillsLight' : 'skills'}>
+          <div className="skills">
             {/*  */}
             <div className="titleAndButton">
               <p className="title">Skills</p>
@@ -141,10 +118,7 @@ export default function LeftOrUpperPart({
             {/*  */}
           </div>
           {/*  */}
-          <div
-            className={isLightModeOn ? 'educationLight' : 'education'}
-            id="education"
-          >
+          <div className="education" id="education">
             {/*  */}
             <div className="titleAndButton">
               <p className="title">Education</p>
@@ -193,12 +167,12 @@ export default function LeftOrUpperPart({
         {/*  */}
       </div>
       {/*  */}
-      {isContactFormMobileOpen && (
+      {/* {isContactFormMobileOpen && (
         <ContactFormMobile
           isContactFormMobileOpen={isContactFormMobileOpen}
           toggleContactFormMobile={toggleContactFormMobile}
         />
-      )}
+      )} */}
       {/*  */}
       {isEducationListOpen && (
         <EducationList
@@ -208,7 +182,6 @@ export default function LeftOrUpperPart({
       )}
       {isSkillListOpen && (
         <SkillList
-          isLightModeOn={isLightModeOn}
           isSkillListOpen={isSkillListOpen}
           toggleSkillList={toggleSkillList}
         />

@@ -1,3 +1,4 @@
+import { useState, useEffect } from 'react';
 import kaffa from '../images/mainContent_rightOrLowerPart/kaffa.png';
 import veila from '../images/mainContent_rightOrLowerPart/veila.png';
 import guessGame from '../images/mainContent_rightOrLowerPart/guessGame.png';
@@ -5,7 +6,6 @@ import CyberList from './CyberList';
 import WebList from './WebList';
 
 export default function RightOrLowerPart({
-  isLightModeOn,
   isContactFormOpen,
   isContactFormMobileOpen,
   isSkillListOpen,
@@ -36,11 +36,21 @@ export default function RightOrLowerPart({
       toggleWebList();
     }
   }
+
+  const [isNarrowScreen, setIsNarrowScreen] = useState(
+    () => window.matchMedia('(max-width: 600px)').matches,
+  );
+
+  useEffect(() => {
+    const mediaWatcher = window.matchMedia('(max-width: 600px)');
+
+    const updateScreen = (e) => setIsNarrowScreen(e.matches);
+    mediaWatcher.addEventListener('change', updateScreen);
+
+    return () => mediaWatcher.removeEventListener('change', updateScreen);
+  }, []);
   return (
-    <main
-      className={isLightModeOn ? 'rightOrLowerPartLight' : 'rightOrLowerPart'}
-      onClick={handleClick}
-    >
+    <main className="rightOrLowerPart" onClick={handleClick}>
       {/*  */}
       <div
         className={
@@ -50,11 +60,13 @@ export default function RightOrLowerPart({
         }
       >
         <section
-          className={isWebListOpen ? 'projectsSwapped' : 'projects'}
+          className={
+            isNarrowScreen && isWebListOpen ? 'projectsSwapped' : 'projects'
+          }
           onClick={closeLists}
         >
           {/*  */}
-          <div className={isLightModeOn ? 'cyberLight' : 'cyber'}>
+          <div className="cyber">
             <p className="title">Cybersecurity Projects</p>
             <div className="allInOneCyber">
               <h4>Securing Systems & Networks</h4>
@@ -88,7 +100,10 @@ export default function RightOrLowerPart({
             {/*  */}
           </div>
           {/*  */}
-          <div className={isLightModeOn ? 'webLight' : 'web'}>
+          <div
+            // className={isLightModeOn ? 'webLight' : 'web'}
+            className="web"
+          >
             <p className="title">Web Dev. Projects</p>
             {/*  */}
             <div className="carousel">
@@ -139,7 +154,7 @@ export default function RightOrLowerPart({
         </section>
         {/*  */}
         <footer
-          className={isLightModeOn ? 'footerLight' : 'footer'}
+          className="footer"
           style={
             isWebListOpen || isCyberListOpen
               ? {

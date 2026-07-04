@@ -1,8 +1,6 @@
 @use '../scss/loader';
 @use '../scss/header';
 @use '../scss/mainContent';
-@use './headerLight';
-@use './mainContentLight';
 
 * {
   margin: 0;
@@ -18,27 +16,6 @@
 body {
   background-color: #232323;
   scroll-behavior: smooth;
-  animation: body 0.5s linear;
-  animation-iteration-count: 1;
-  transition: all 0.2s ease-in-out;
-
-  @keyframes body {
-    0% {
-      filter: opacity(0.25) grayscale(10%) blur(0.05rem) brightness(80%);
-      transform: scale(98%);
-      transition: all 0.2s ease-in-out;
-    }
-    50% {
-      filter: opacity(0.5) grayscale(5%) blur(0.05rem) brightness(90%);
-      transform: scale(99%);
-      transition: all 0.2s ease-in-out;
-    }
-    100% {
-      filter: opacity(1) grayscale(0%) brightness(100%);
-      transform: scale(100%);
-      transition: all 0.2s ease-in-out;
-    }
-  }
 }
 
 #root {
@@ -57,11 +34,11 @@ body {
   }
 
   @media (min-width: 1023px) and (max-width: 1099px) {
-    row-gap: 0.6rem;
+    row-gap: 0.4rem;
   }
 
   @media (min-width: 1099px) and (max-width: 1200px) {
-    row-gap: 0.7rem;
+    row-gap: 0.5rem;
   }
 
   @media (min-width: 1200px) and (max-width: 1300px) {
@@ -70,27 +47,27 @@ body {
 
   // Height adjustments
 
-  @media (orientation: landscape) and (min-width: 1023px) and (max-width: 1099px) and (min-height: 684px) {
+  @media (orientation: landscape) and (min-width: 1023px) and (max-width: 1099px) and (min-height: 449px) {
     height: 100dvh;
   }
 
-  @media (orientation: landscape) and (min-width: 1023px) and (max-width: 1099px) and (max-height: 684px) {
+  @media (orientation: landscape) and (min-width: 1023px) and (max-width: 1099px) and (max-height: 449px) {
     height: auto;
   }
 
-  @media (orientation: landscape) and (min-width: 1099px) and (max-width: 1200px) and (min-height: 703px) {
+  @media (orientation: landscape) and (min-width: 1099px) and (max-width: 1200px) and (min-height: 503px) {
     height: 100dvh;
   }
 
-  @media (orientation: landscape) and (min-width: 1099px) and (max-width: 1200px) and (max-height: 703px) {
+  @media (orientation: landscape) and (min-width: 1099px) and (max-width: 1200px) and (max-height: 503px) {
     height: auto;
   }
 
-  @media (orientation: landscape) and (min-width: 1200px) and (max-width: 1300px) and (min-height: 700px) {
+  @media (orientation: landscape) and (min-width: 1200px) and (max-width: 1300px) and (min-height: 558px) {
     height: 100dvh;
   }
 
-  @media (orientation: landscape) and (min-width: 1200px) and (max-width: 1300px) and (max-height: 700px) {
+  @media (orientation: landscape) and (min-width: 1200px) and (max-width: 1300px) and (max-height: 558px) {
     height: auto;
   }
 

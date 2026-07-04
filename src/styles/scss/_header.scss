@@ -47,15 +47,15 @@
     }
 
     @media (min-width: 1023px) and (max-width: 1099px) {
-      padding: 1rem 1rem;
+      padding: 0.6rem;
     }
 
     @media (min-width: 1099px) and (max-width: 1200px) {
-      padding: 1.1rem 1.2rem;
+      padding: 0.8rem;
     }
 
     @media (min-width: 1200px) and (max-width: 1300px) {
-      padding: 1.2rem 1.2rem;
+      padding: 0.8rem 1rem;
     }
 
     @media (min-width: 1300px) and (max-width: 1400px) {
@@ -79,15 +79,15 @@
       }
 
       @media (width: 1023px) {
-        flex-direction: row;
         column-gap: 1.5rem;
-        align-items: center;
       }
 
       @media (min-width: 1023px) and (max-width: 1099px) {
-        flex-direction: row;
-        column-gap: 1.1rem;
-        align-items: center;
+        column-gap: 0.9rem;
+      }
+
+      @media (min-width: 1099px) and (max-width: 1200px) {
+        column-gap: 1.2rem;
       }
 
       .name {
@@ -115,15 +115,15 @@
         }
 
         @media (min-width: 1023px) and (max-width: 1099px) {
-          font-size: 16.5pt;
+          font-size: 12.5pt;
         }
 
         @media (min-width: 1099px) and (max-width: 1200px) {
-          font-size: 17pt;
+          font-size: 14pt;
         }
 
         @media (min-width: 1200px) and (max-width: 1300px) {
-          font-size: 18pt;
+          font-size: 15pt;
         }
 
         @media (min-width: 1570px) and (max-width: 1670px) {
@@ -153,8 +153,16 @@
           font-size: 10pt !important;
         }
 
-        @media (min-width: 1023px) and (max-width: 1300px) {
-          font-size: 9pt;
+        @media (min-width: 1023px) and (max-width: 1099px) {
+          font-size: 7.5pt;
+        }
+
+        @media (min-width: 1099px) and (max-width: 1200px) {
+          font-size: 8pt;
+        }
+
+        @media (min-width: 1200px) and (max-width: 1300px) {
+          font-size: 8pt;
         }
       }
     }
@@ -179,108 +187,6 @@
 
       @media (min-width: 1023px) and (max-width: 1200px) {
         column-gap: 1.5rem;
-      }
-
-      .lightButton {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 2.5rem;
-        height: 2.5rem;
-        margin-right: 2rem;
-        border-radius: 50%;
-        background-color: #656253;
-        cursor: pointer;
-        animation: lightButton 0.2s linear;
-        animation-iteration-count: 1;
-
-        @keyframes lightButton {
-          from {
-            width: 0;
-            height: 0;
-            margin-right: 0;
-            opacity: 0.5;
-          }
-          to {
-            width: 2.5rem;
-            height: 2.5rem;
-            margin-right: 2rem;
-            opacity: 1;
-          }
-        }
-
-        &:hover {
-          background-color: #886849;
-        }
-
-        @media (min-width: 300px) and (max-width: 1023px) {
-          margin: 0;
-        }
-
-        @media (min-width: 300px) and (max-width: 1023px) {
-          cursor: default;
-        }
-
-        @media (min-width: 1023px) and (max-width: 1300px) {
-          width: 2.2rem;
-          height: 2.2rem;
-
-          @keyframes lightButton {
-            from {
-              width: 0;
-              height: 0;
-              margin-right: 0;
-              opacity: 0.5;
-            }
-            to {
-              width: 2.2rem;
-              height: 2.2rem;
-              margin-right: 2rem;
-              opacity: 1;
-            }
-          }
-        }
-
-        .light {
-          background-image: url('/src/images/header/light.svg');
-          background-repeat: no-repeat;
-          background-size: cover;
-          width: 22px;
-          height: 22px;
-          animation: light 0.2s linear;
-          animation-iteration-count: 1;
-
-          @keyframes light {
-            from {
-              width: 0;
-              height: 0;
-              opacity: 0.5;
-            }
-            to {
-              width: 22px;
-              height: 22px;
-              opacity: 1;
-            }
-          }
-
-          @media (min-width: 1023px) and (max-width: 1300px) {
-            width: 19px;
-            height: 19px;
-
-            @keyframes light {
-              from {
-                width: 0;
-                height: 0;
-                opacity: 0.5;
-              }
-              to {
-                width: 19px;
-                height: 19px;
-                opacity: 1;
-              }
-            }
-          }
-        }
       }
 
       .location {
@@ -306,8 +212,16 @@
           font-size: 10pt !important;
         }
 
-        @media (min-width: 1023px) and (max-width: 1300px) {
-          font-size: 9pt;
+        @media (min-width: 1023px) and (max-width: 1099px) {
+          font-size: 7.5pt;
+        }
+
+        @media (min-width: 1099px) and (max-width: 1200px) {
+          font-size: 8pt;
+        }
+
+        @media (min-width: 1200px) and (max-width: 1300px) {
+          font-size: 8pt;
         }
       }
 
@@ -325,9 +239,10 @@
         &:hover {
           background-color: #4f4d41;
         }
-
-        @media (min-width: 300px) and (max-width: 600px) {
-          display: none;
+        @media (min-width: 300px) and (max-width: 400px) {
+          width: min(6rem, 6rem);
+          height: min(2.3rem, 2.3rem);
+          font-size: 9pt;
         }
 
         @media (min-width: 600px) and (max-width: 700px) {
@@ -343,10 +258,22 @@
           cursor: default;
         }
 
-        @media (min-width: 1023px) and (max-width: 1400px) {
-          width: min(6rem, 6rem);
-          height: min(2.3rem, 2.3rem);
-          font-size: 9pt;
+        @media (min-width: 1023px) and (max-width: 1099px) {
+          width: 4.7rem;
+          height: 1.8rem;
+          font-size: 7.4pt;
+        }
+
+        @media (min-width: 1099px) and (max-width: 1200px) {
+          width: 5.1rem;
+          height: 1.9rem;
+          font-size: 8pt;
+        }
+
+        @media (min-width: 1200px) and (max-width: 1300px) {
+          width: 5.5rem;
+          height: 2rem;
+          font-size: 8pt;
         }
       }
     }
@@ -361,174 +288,37 @@
     align-items: center;
     width: 100%;
     padding: 1.5rem 2rem;
-    position: relative;
-    top: 0.47rem;
     background-color: #635445;
     border-radius: 0.5rem;
     filter: opacity(0.5) grayscale(10%) blur(0.05rem) brightness(80%);
-    transform: scale(98%);
-    transition: all 0.15s ease-out;
-    animation: headerContainerUnfocused 0.15s linear;
-    animation-iteration-count: 1;
-
-    @keyframes headerContainerUnfocused {
-      0% {
-        top: 0;
-        filter: opacity(0.5) grayscale(10%) blur(0.05rem) brightness(80%);
-        transform: scale(100%);
-      }
-      50% {
-        top: 0.25;
-        transform: scale(99%);
-      }
-      100% {
-        top: 0.47rem;
-        transform: scale(98%);
-        opacity: 1;
-      }
-    }
+    transition: all 0.25s ease-out;
 
     @media (min-width: 300px) and (max-width: 400px) {
       padding: 1.2rem 0.75rem;
-      top: 2.3rem;
-      animation: unset;
-      transform: scale(98%);
-      animation: headerContainerUnfocused 0.15s linear;
-      animation-iteration-count: 1;
-
-      @keyframes headerContainerUnfocused {
-        0% {
-          top: 0;
-          filter: opacity(0.5) grayscale(10%) blur(0.05rem) brightness(80%);
-          transform: scale(100%);
-        }
-        100% {
-          top: 2.3rem;
-          transform: scale(98%);
-          opacity: 1;
-        }
-      }
     }
 
     @media (min-width: 400px) and (max-width: 500px) {
       padding: 1.2rem 1rem;
-      top: 2.3rem;
-      animation: unset;
-      transform: scale(98%);
-      animation: headerContainerUnfocused 0.15s linear;
-      animation-iteration-count: 1;
-
-      @keyframes headerContainerUnfocused {
-        0% {
-          top: 0;
-          filter: opacity(0.5) grayscale(10%) blur(0.05rem) brightness(80%);
-          transform: scale(100%);
-        }
-        100% {
-          top: 2.3rem;
-          transform: scale(98%);
-          opacity: 1;
-        }
-      }
     }
 
     @media (min-width: 500px) and (max-width: 600px) {
       padding: 1.5rem 2rem;
-      top: 2.3rem;
-      animation: unset;
-      transform: scale(98%);
-      animation: headerContainerUnfocused 0.15s linear;
-      animation-iteration-count: 1;
-
-      @keyframes headerContainerUnfocused {
-        0% {
-          top: 0;
-          filter: opacity(0.5) grayscale(10%) blur(0.05rem) brightness(80%);
-          transform: scale(100%);
-        }
-        100% {
-          top: 2.3rem;
-          transform: scale(98%);
-          opacity: 1;
-        }
-      }
     }
 
     @media (min-width: 600px) and (max-width: 700px) {
       padding: 1.5rem 1rem;
-      top: 1.3rem;
-      animation: unset;
-      transform: scale(98%);
-      animation: headerContainerUnfocused 0.15s linear;
-      animation-iteration-count: 1;
-
-      @keyframes headerContainerUnfocused {
-        0% {
-          top: 0;
-          filter: opacity(0.5) grayscale(10%) blur(0.05rem) brightness(80%);
-          transform: scale(100%);
-        }
-        100% {
-          top: 1.3rem;
-          transform: scale(98%);
-          opacity: 1;
-        }
-      }
-    }
-
-    @media (min-width: 700px) and (max-width: 767px) {
-      animation: unset;
-      top: 1.1rem;
-      transform: scale(98%);
-      animation: headerContainerUnfocused 0.15s linear;
-      animation-iteration-count: 1;
-
-      @keyframes headerContainerUnfocused {
-        0% {
-          top: 0;
-          filter: opacity(0.5) grayscale(10%) blur(0.05rem) brightness(80%);
-          transform: scale(100%);
-        }
-        100% {
-          top: 1.1rem;
-          transform: scale(98%);
-          opacity: 1;
-        }
-      }
-    }
-
-    @media (min-width: 767px) and (max-width: 1023px) {
-      animation: unset;
-      top: 1rem;
-      filter: opacity(0.5) grayscale(10%) blur(0.05rem) brightness(80%);
-      transform: scale(98%);
-      animation: headerContainerUnfocused 0.15s linear;
-      animation-iteration-count: 1;
-
-      @keyframes headerContainerUnfocused {
-        0% {
-          top: 0;
-          filter: opacity(0.5) grayscale(10%) blur(0.05rem) brightness(80%);
-          transform: scale(100%);
-        }
-        100% {
-          top: 1rem;
-          transform: scale(98%);
-          opacity: 1;
-        }
-      }
     }
 
     @media (min-width: 1023px) and (max-width: 1099px) {
-      padding: 1rem 1rem;
+      padding: 0.6rem;
     }
 
     @media (min-width: 1099px) and (max-width: 1200px) {
-      padding: 1.1rem 1.2rem;
+      padding: 0.8rem;
     }
 
     @media (min-width: 1200px) and (max-width: 1300px) {
-      padding: 1.2rem 1.2rem;
+      padding: 0.8rem 1rem;
     }
 
     @media (min-width: 1300px) and (max-width: 1400px) {
@@ -552,15 +342,15 @@
       }
 
       @media (width: 1023px) {
-        flex-direction: row;
         column-gap: 1.5rem;
-        align-items: center;
       }
 
       @media (min-width: 1023px) and (max-width: 1099px) {
-        flex-direction: row;
-        column-gap: 1.1rem;
-        align-items: center;
+        column-gap: 0.9rem;
+      }
+
+      @media (min-width: 1099px) and (max-width: 1200px) {
+        column-gap: 1.2rem;
       }
 
       .name {
@@ -588,15 +378,15 @@
         }
 
         @media (min-width: 1023px) and (max-width: 1099px) {
-          font-size: 16.5pt;
+          font-size: 12.5pt;
         }
 
         @media (min-width: 1099px) and (max-width: 1200px) {
-          font-size: 17pt;
+          font-size: 14pt;
         }
 
         @media (min-width: 1200px) and (max-width: 1300px) {
-          font-size: 18pt;
+          font-size: 15pt;
         }
 
         @media (min-width: 1570px) and (max-width: 1670px) {
@@ -626,12 +416,16 @@
           font-size: 10pt !important;
         }
 
-        @media (min-width: 1023px) and (max-width: 1200px) {
-          font-size: 9pt;
+        @media (min-width: 1023px) and (max-width: 1099px) {
+          font-size: 7.5pt;
         }
 
-        @media (min-width: 1023px) and (max-width: 1300px) {
-          font-size: 9pt;
+        @media (min-width: 1099px) and (max-width: 1200px) {
+          font-size: 8pt;
+        }
+
+        @media (min-width: 1200px) and (max-width: 1300px) {
+          font-size: 8pt;
         }
       }
     }
@@ -658,105 +452,6 @@
         column-gap: 1.5rem;
       }
 
-      .lightButton {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 0;
-        height: 0;
-        margin-right: 0;
-        border-radius: 50%;
-        background-color: #656253;
-        opacity: 0;
-        animation: lightButtonHidden 0.5s linear;
-        animation-iteration-count: 1;
-
-        @keyframes lightButtonHidden {
-          from {
-            width: 2.5rem;
-            height: 2.5rem;
-            margin-right: 2rem;
-            opacity: 1;
-          }
-          to {
-            width: 0;
-            height: 0;
-            margin-right: 0;
-            opacity: 0;
-          }
-        }
-
-        @media (min-width: 300px) and (max-width: 1023px) {
-          margin: 0;
-        }
-
-        @media (min-width: 300px) and (max-width: 1023px) {
-          cursor: default;
-        }
-
-        @media (min-width: 1023px) and (max-width: 1300px) {
-          width: 2.2rem;
-          height: 2.2rem;
-
-          @keyframes lightButtonHidden {
-            from {
-              width: 2.2rem;
-              height: 2.2rem;
-              margin-right: 2rem;
-              opacity: 1;
-            }
-            to {
-              width: 0;
-              height: 0;
-              margin-right: 0;
-              opacity: 0;
-            }
-          }
-        }
-
-        .light {
-          background-image: url('/src/images/header/light.svg');
-          background-repeat: no-repeat;
-          background-size: cover;
-          width: 0;
-          height: 0;
-          opacity: 0;
-          animation: lightHidden 0.5s linear;
-          animation-iteration-count: 1;
-
-          @keyframes lightHidden {
-            from {
-              width: 22px;
-              height: 22px;
-              opacity: 0.5;
-            }
-            to {
-              width: 0;
-              height: 0;
-              opacity: 0;
-            }
-          }
-
-          @media (min-width: 1023px) and (max-width: 1300px) {
-            width: 19px;
-            height: 19px;
-
-            @keyframes lightHidden {
-              from {
-                width: 19px;
-                height: 19px;
-                opacity: 0.5;
-              }
-              to {
-                width: 0;
-                height: 0;
-                opacity: 0;
-              }
-            }
-          }
-        }
-      }
-
       .location {
         font-size: 10pt;
         color: #ebebeb;
@@ -775,8 +470,16 @@
           font-size: 10pt !important;
         }
 
-        @media (min-width: 1023px) and (max-width: 1300px) {
-          font-size: 9pt;
+        @media (min-width: 1023px) and (max-width: 1099px) {
+          font-size: 7.5pt;
+        }
+
+        @media (min-width: 1099px) and (max-width: 1200px) {
+          font-size: 8pt;
+        }
+
+        @media (min-width: 1200px) and (max-width: 1300px) {
+          font-size: 8pt;
         }
       }
 
@@ -790,8 +493,10 @@
         color: #ebebeb;
         transition: all 0.2s ease;
 
-        @media (min-width: 300px) and (max-width: 600px) {
-          display: none;
+        @media (min-width: 300px) and (max-width: 400px) {
+          width: min(6rem, 6rem);
+          height: min(2.3rem, 2.3rem);
+          font-size: 9pt;
         }
 
         @media (min-width: 600px) and (max-width: 700px) {
@@ -807,10 +512,22 @@
           cursor: default;
         }
 
-        @media (min-width: 1023px) and (max-width: 1400px) {
-          width: min(6rem, 6rem);
-          height: min(2.3rem, 2.3rem);
-          font-size: 9pt;
+        @media (min-width: 1023px) and (max-width: 1099px) {
+          width: 4.7rem;
+          height: 1.8rem;
+          font-size: 7.4pt;
+        }
+
+        @media (min-width: 1099px) and (max-width: 1200px) {
+          width: 5.1rem;
+          height: 1.9rem;
+          font-size: 8pt;
+        }
+
+        @media (min-width: 1200px) and (max-width: 1300px) {
+          width: 5.5rem;
+          height: 2rem;
+          font-size: 8pt;
         }
       }
     }
@@ -824,7 +541,8 @@
     height: min(31.5rem, 31.5rem);
     position: absolute;
     top: 6.75rem;
-    right: 1%;
+    right: 0;
+    transform: scale(102%);
     animation: contactForm 0.2s linear;
     animation-iteration-count: 1;
     background-color: #232323;
@@ -837,16 +555,49 @@
       0% {
         top: 0;
         filter: opacity(0.5) grayscale(10%) blur(0.05rem) brightness(80%);
+        transform: scale(100%);
+      }
+      50% {
+        top: 3.375rem;
+        transform: scale(101%);
       }
       100% {
         top: 6.75rem;
+        transform: scale(102%);
         opacity: 1;
       }
     }
 
+    @media (min-width: 300px) and (max-width: 400px) {
+      width: 100%;
+      height: 27.3rem;
+      top: 6rem;
+      right: unset;
+
+      @keyframes contactForm {
+        0% {
+          top: 0;
+          filter: opacity(0.5) grayscale(10%) blur(0.05rem) brightness(80%);
+          transform: scale(100%);
+        }
+        50% {
+          top: 3rem;
+          transform: scale(101%);
+        }
+        100% {
+          top: 6rem;
+          transform: scale(102%);
+          opacity: 1;
+        }
+      }
+    }
+
+    @media (min-width: 300px) and (max-width: 1023px) {
+      cursor: default;
+    }
+
     @media (min-width: 600px) and (max-width: 700px) {
       width: min(75%, 75%);
-      position: absolute;
       top: 7.5rem;
       left: 13%;
 
@@ -854,9 +605,15 @@
         0% {
           top: 0;
           filter: opacity(0.5) grayscale(10%) blur(0.05rem) brightness(80%);
+          transform: scale(100%);
+        }
+        50% {
+          top: 3.75rem;
+          transform: scale(101%);
         }
         100% {
           top: 7.5rem;
+          transform: scale(102%);
           opacity: 1;
         }
       }
@@ -864,7 +621,6 @@
 
     @media (min-width: 700px) and (max-width: 767px) {
       width: min(75%, 75%);
-      position: absolute;
       top: 8.1rem;
       left: 13%;
 
@@ -872,9 +628,15 @@
         0% {
           top: 0;
           filter: opacity(0.5) grayscale(10%) blur(0.05rem) brightness(80%);
+          transform: scale(100%);
+        }
+        50% {
+          top: 4.05rem;
+          transform: scale(101%);
         }
         100% {
           top: 8.1rem;
+          transform: scale(102%);
           opacity: 1;
         }
       }
@@ -882,7 +644,6 @@
 
     @media (min-width: 767px) and (max-width: 1023px) {
       width: min(75%, 75%);
-      position: absolute;
       top: 8.2rem;
       left: 13%;
 
@@ -890,9 +651,15 @@
         0% {
           top: 0;
           filter: opacity(0.5) grayscale(10%) blur(0.05rem) brightness(80%);
+          transform: scale(100%);
+        }
+        50% {
+          top: 4.1rem;
+          transform: scale(101%);
         }
         100% {
           top: 8.2rem;
+          transform: scale(102%);
           opacity: 1;
         }
       }
@@ -924,53 +691,72 @@
     }
 
     @media (min-width: 1023px) and (max-width: 1099px) {
-      row-gap: 1rem;
-      width: min(24%, 24%);
-      height: min(30.3rem, 30.3rem);
-      position: absolute;
-      top: 5.2rem;
+      row-gap: 0.5rem;
+      width: 24.5%;
+      height: 19.9rem;
+      top: 3.6rem;
 
       @keyframes contactForm {
         0% {
           top: 0;
           filter: opacity(0.5) grayscale(10%) blur(0.05rem) brightness(80%);
+          transform: scale(100%);
+        }
+        50% {
+          top: 1.8rem;
+          transform: scale(101%);
         }
         100% {
-          top: 5.2rem;
+          top: 3.6rem;
+          transform: scale(102%);
           opacity: 1;
         }
       }
     }
 
     @media (min-width: 1099px) and (max-width: 1200px) {
-      width: 24%;
-      height: 31rem;
-      top: 5.5rem;
+      row-gap: 0.7rem;
+      width: 24.5%;
+      height: 22rem;
+      top: 4.3rem;
 
       @keyframes contactForm {
         0% {
           top: 0;
           filter: opacity(0.5) grayscale(10%) blur(0.05rem) brightness(80%);
+          transform: scale(100%);
+        }
+        50% {
+          top: 2.15rem;
+          transform: scale(101%);
         }
         100% {
-          top: 5.5rem;
+          top: 4.3rem;
+          transform: scale(102%);
           opacity: 1;
         }
       }
     }
 
     @media (min-width: 1200px) and (max-width: 1300px) {
-      width: min(24%, 24%);
-      height: 30.2rem;
-      top: 5.75rem;
+      row-gap: 0.7rem;
+      width: 24%;
+      height: 24.4rem;
+      top: 4.65rem;
 
       @keyframes contactForm {
         0% {
           top: 0;
           filter: opacity(0.5) grayscale(10%) blur(0.05rem) brightness(80%);
+          transform: scale(100%);
+        }
+        50% {
+          top: 2.325rem;
+          transform: scale(101%);
         }
         100% {
-          top: 6.2rem;
+          top: 4.65rem;
+          transform: scale(102%);
           opacity: 1;
         }
       }
@@ -984,9 +770,15 @@
         0% {
           top: 0;
           filter: opacity(0.5) grayscale(10%) blur(0.05rem) brightness(80%);
+          transform: scale(100%);
+        }
+        50% {
+          top: 3.1rem;
+          transform: scale(101%);
         }
         100% {
           top: 6.2rem;
+          transform: scale(102%);
           opacity: 1;
         }
       }
@@ -1000,9 +792,15 @@
         0% {
           top: 0;
           filter: opacity(0.5) grayscale(10%) blur(0.05rem) brightness(80%);
+          transform: scale(100%);
+        }
+        50% {
+          top: 3.125rem;
+          transform: scale(101%);
         }
         100% {
           top: 6.25rem;
+          transform: scale(102%);
           opacity: 1;
         }
       }
@@ -1017,9 +815,15 @@
         0% {
           top: 0;
           filter: opacity(0.5) grayscale(10%) blur(0.05rem) brightness(80%);
+          transform: scale(100%);
+        }
+        50% {
+          top: 3.7rem;
+          transform: scale(101%);
         }
         100% {
           top: 7.4rem;
+          transform: scale(102%);
           opacity: 1;
         }
       }
@@ -1038,11 +842,23 @@
         padding: 0.5rem 0.7rem;
       }
 
+      @media (min-width: 1200px) and (max-width: 1300px) {
+        padding: 0.6rem 1rem;
+      }
+
       h4 {
         font-size: 14pt;
         font-weight: 500;
 
-        @media (min-width: 1023px) and (max-width: 1200px) {
+        @media (min-width: 1023px) and (max-width: 1099px) {
+          font-size: 10pt;
+        }
+
+        @media (min-width: 1099px) and (max-width: 1200px) {
+          font-size: 11pt;
+        }
+
+        @media (min-width: 1200px) and (max-width: 1300px) {
           font-size: 12pt;
         }
       }
@@ -1079,10 +895,22 @@
           cursor: default;
         }
 
-        @media (min-width: 1023px) and (max-width: 1400px) {
-          width: min(6rem, 6rem);
-          height: min(2.3rem, 2.3rem);
-          font-size: 9pt;
+        @media (min-width: 1023px) and (max-width: 1099px) {
+          width: 4.7rem;
+          height: 1.8rem;
+          font-size: 7.4pt;
+        }
+
+        @media (min-width: 1099px) and (max-width: 1200px) {
+          width: 5.1rem;
+          height: 1.9rem;
+          font-size: 8pt;
+        }
+
+        @media (min-width: 1200px) and (max-width: 1300px) {
+          width: 5.5rem;
+          height: 2rem;
+          font-size: 8pt;
         }
       }
     }
@@ -1092,6 +920,10 @@
       flex-direction: column;
       row-gap: 0.8rem;
       position: relative;
+
+      @media (min-width: 1023px) and (max-width: 1099px) {
+        row-gap: 0.5rem;
+      }
 
       .info {
         display: flex;
@@ -1144,6 +976,27 @@
           100% {
             opacity: 0;
           }
+        }
+
+        @media (min-width: 1023px) and (max-width: 1099px) {
+          height: 2.799rem;
+          padding: 0.5rem 0.7rem;
+          top: -3.3rem;
+          font-size: 10pt;
+        }
+
+        @media (min-width: 1099px) and (max-width: 1200px) {
+          height: 2.95rem;
+          padding: 0.5rem 0.7rem;
+          top: -3.65rem;
+          font-size: 11pt;
+        }
+
+        @media (min-width: 1200px) and (max-width: 1300px) {
+          height: 3.2rem;
+          padding: 0.6rem 1rem;
+          top: -3.9rem;
+          font-size: 12pt;
         }
       }
 
@@ -1199,6 +1052,27 @@
             opacity: 0;
           }
         }
+
+        @media (min-width: 1023px) and (max-width: 1099px) {
+          height: 2.799rem;
+          padding: 0.5rem 0.7rem;
+          top: -3.3rem;
+          font-size: 10pt;
+        }
+
+        @media (min-width: 1099px) and (max-width: 1200px) {
+          height: 2.95rem;
+          padding: 0.5rem 0.7rem;
+          top: -3.65rem;
+          font-size: 11pt;
+        }
+
+        @media (min-width: 1200px) and (max-width: 1300px) {
+          height: 3.2rem;
+          padding: 0.6rem 1rem;
+          top: -3.9rem;
+          font-size: 12pt;
+        }
       }
 
       .fail {
@@ -1253,6 +1127,27 @@
             opacity: 0;
           }
         }
+
+        @media (min-width: 1023px) and (max-width: 1099px) {
+          height: 2.799rem;
+          padding: 0.5rem 0.7rem;
+          top: -3.3rem;
+          font-size: 10pt;
+        }
+
+        @media (min-width: 1099px) and (max-width: 1200px) {
+          height: 2.95rem;
+          padding: 0.5rem 0.7rem;
+          top: -3.65rem;
+          font-size: 11pt;
+        }
+
+        @media (min-width: 1200px) and (max-width: 1300px) {
+          height: 3.2rem;
+          padding: 0.6rem 1rem;
+          top: -3.9rem;
+          font-size: 12pt;
+        }
       }
 
       label {
@@ -1264,11 +1159,20 @@
         flex-direction: column;
         row-gap: 0.8rem;
 
+        @media (min-width: 1023px) and (max-width: 1099px) {
+          row-gap: 0.5rem;
+        }
+
         .names {
           display: flex;
           flex-direction: row;
           justify-content: center;
           column-gap: 3%;
+
+          @media (min-width: 1023px) and (max-width: 1099px) {
+            justify-content: space-evenly;
+            column-gap: unset;
+          }
 
           label {
             display: none;
@@ -1303,9 +1207,19 @@
               height: 2.5rem;
             }
 
-            @media (min-width: 1023px) and (max-width: 1200px) {
-              height: 2.5rem;
-              font-size: 9.5pt;
+            @media (min-width: 1023px) and (max-width: 1099px) {
+              height: 2rem;
+              font-size: 8.2pt;
+            }
+
+            @media (min-width: 1099px) and (max-width: 1200px) {
+              height: 2rem;
+              font-size: 9pt;
+            }
+
+            @media (min-width: 1200px) and (max-width: 1300px) {
+              height: 2.3rem;
+              font-size: 9pt;
             }
           }
 
@@ -1338,9 +1252,19 @@
               height: 2.5rem;
             }
 
-            @media (min-width: 1023px) and (max-width: 1200px) {
-              height: 2.5rem;
-              font-size: 9.5pt;
+            @media (min-width: 1023px) and (max-width: 1099px) {
+              height: 2rem;
+              font-size: 8.2pt;
+            }
+
+            @media (min-width: 1099px) and (max-width: 1200px) {
+              height: 2rem;
+              font-size: 9pt;
+            }
+
+            @media (min-width: 1200px) and (max-width: 1300px) {
+              height: 2.3rem;
+              font-size: 9pt;
             }
           }
         }
@@ -1374,9 +1298,19 @@
             height: 2.5rem;
           }
 
-          @media (min-width: 1023px) and (max-width: 1200px) {
-            height: 2.5rem;
-            font-size: 9.5pt;
+          @media (min-width: 1023px) and (max-width: 1099px) {
+            height: 2rem;
+            font-size: 8.2pt;
+          }
+
+          @media (min-width: 1099px) and (max-width: 1200px) {
+            height: 2rem;
+            font-size: 9pt;
+          }
+
+          @media (min-width: 1200px) and (max-width: 1300px) {
+            height: 2.3rem;
+            font-size: 9pt;
           }
         }
       }
@@ -1410,9 +1344,19 @@
           height: 2.5rem;
         }
 
-        @media (min-width: 1023px) and (max-width: 1200px) {
-          height: 2.5rem;
-          font-size: 9.5pt;
+        @media (min-width: 1023px) and (max-width: 1099px) {
+          height: 2rem;
+          font-size: 8.2pt;
+        }
+
+        @media (min-width: 1099px) and (max-width: 1200px) {
+          height: 2rem;
+          font-size: 9pt;
+        }
+
+        @media (min-width: 1200px) and (max-width: 1300px) {
+          height: 2.3rem;
+          font-size: 9pt;
         }
       }
 
@@ -1440,12 +1384,19 @@
           height: 8rem;
         }
 
-        @media (min-width: 1023px) and (max-width: 1200px) {
-          height: 11.5rem;
+        @media (min-width: 1023px) and (max-width: 1099px) {
+          height: 5.5rem;
+          font-size: 9pt;
+        }
+
+        @media (min-width: 1099px) and (max-width: 1200px) {
+          height: 6.5rem;
+          font-size: 10pt;
         }
 
         @media (min-width: 1200px) and (max-width: 1300px) {
-          height: 9rem;
+          height: 6.8rem;
+          font-size: 10pt;
         }
       }
 
@@ -1464,8 +1415,16 @@
           font-size: 9pt;
         }
 
+        @media (min-width: 1023px) and (max-width: 1099px) {
+          top: 13.7rem;
+        }
+
+        @media (min-width: 1099px) and (max-width: 1200px) {
+          top: 15.6rem;
+        }
+
         @media (min-width: 1200px) and (max-width: 1300px) {
-          top: 21.7rem;
+          top: 17.2rem;
         }
 
         .send {
@@ -1524,10 +1483,22 @@
             cursor: default;
           }
 
-          @media (min-width: 1023px) and (max-width: 1400px) {
-            width: min(6rem, 6rem);
-            height: min(2.3rem, 2.3rem);
-            font-size: 9pt;
+          @media (min-width: 1023px) and (max-width: 1099px) {
+            width: 4.7rem;
+            height: 1.8rem;
+            font-size: 7.4pt;
+          }
+
+          @media (min-width: 1099px) and (max-width: 1200px) {
+            width: 5.1rem;
+            height: 1.9rem;
+            font-size: 8pt;
+          }
+
+          @media (min-width: 1200px) and (max-width: 1300px) {
+            width: 5.5rem;
+            height: 2rem;
+            font-size: 8pt;
           }
         }
 
@@ -1578,10 +1549,22 @@
             font-size: 9pt;
           }
 
-          @media (min-width: 1023px) and (max-width: 1400px) {
-            width: min(6rem, 6rem);
-            height: min(2.3rem, 2.3rem);
-            font-size: 9pt;
+          @media (min-width: 1023px) and (max-width: 1099px) {
+            width: 4.7rem;
+            height: 1.8rem;
+            font-size: 7.4pt;
+          }
+
+          @media (min-width: 1099px) and (max-width: 1200px) {
+            width: 5.1rem;
+            height: 1.9rem;
+            font-size: 8pt;
+          }
+
+          @media (min-width: 1200px) and (max-width: 1300px) {
+            width: 5.5rem;
+            height: 2rem;
+            font-size: 8pt;
           }
         }
 
@@ -1641,10 +1624,22 @@
             cursor: default;
           }
 
-          @media (min-width: 1023px) and (max-width: 1400px) {
-            width: min(6rem, 6rem);
-            height: min(2.3rem, 2.3rem);
-            font-size: 9pt;
+          @media (min-width: 1023px) and (max-width: 1099px) {
+            width: 4.7rem;
+            height: 1.8rem;
+            font-size: 7.4pt;
+          }
+
+          @media (min-width: 1099px) and (max-width: 1200px) {
+            width: 5.1rem;
+            height: 1.9rem;
+            font-size: 8pt;
+          }
+
+          @media (min-width: 1200px) and (max-width: 1300px) {
+            width: 5.5rem;
+            height: 2rem;
+            font-size: 8pt;
           }
         }
       }

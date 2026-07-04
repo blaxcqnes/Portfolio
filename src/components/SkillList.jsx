@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-export default function SkillList({ isLightModeOn, toggleSkillList }) {
+export default function SkillList({ toggleSkillList }) {
   const [pageNumber, setPageNumber] = useState(1);
 
   useEffect(() => {
@@ -53,7 +53,10 @@ export default function SkillList({ isLightModeOn, toggleSkillList }) {
               <div className="statusBar">
                 <div className="bottom"></div>
                 <p className="percentage">70%</p>
-                <div className={isLightModeOn ? 'topOneLight' : 'topOne'}></div>
+                <div
+                  // className={isLightModeOn ? 'topOneLight' : 'topOne'}
+                  className="topOne"
+                ></div>
               </div>
             </div>
 
@@ -64,7 +67,10 @@ export default function SkillList({ isLightModeOn, toggleSkillList }) {
               <div className="statusBar">
                 <div className="bottom"></div>
                 <p className="percentage">80%</p>
-                <div className={isLightModeOn ? 'topTwoLight' : 'topTwo'}></div>
+                <div
+                  // className={isLightModeOn ? 'topTwoLight' : 'topTwo'}
+                  className="topTwo"
+                ></div>
               </div>
             </div>
 
@@ -76,7 +82,8 @@ export default function SkillList({ isLightModeOn, toggleSkillList }) {
                 <div className="bottom"></div>
                 <p className="percentage">65%</p>
                 <div
-                  className={isLightModeOn ? 'topThreeLight' : 'topThree'}
+                  // className={isLightModeOn ? 'topThreeLight' : 'topThree'}
+                  className="topThree"
                 ></div>
               </div>
             </div>
@@ -89,7 +96,8 @@ export default function SkillList({ isLightModeOn, toggleSkillList }) {
                 <div className="bottom"></div>
                 <p className="percentage">75%</p>
                 <div
-                  className={isLightModeOn ? 'topFourLight' : 'topFour'}
+                  // className={isLightModeOn ? 'topFourLight' : 'topFour'}
+                  className="topFour"
                 ></div>
               </div>
             </div>
@@ -103,7 +111,8 @@ export default function SkillList({ isLightModeOn, toggleSkillList }) {
                 <div className="bottom"></div>
                 <p className="percentage">100%</p>
                 <div
-                  className={isLightModeOn ? 'topFiveLight' : 'topFive'}
+                  // className={isLightModeOn ? 'topFiveLight' : 'topFive'}
+                  className="topFive"
                 ></div>
               </div>
             </div>
@@ -117,7 +126,10 @@ export default function SkillList({ isLightModeOn, toggleSkillList }) {
               <div className="statusBar">
                 <div className="bottom"></div>
                 <p className="percentage">90%</p>
-                <div className={isLightModeOn ? 'topSixLight' : 'topSix'}></div>
+                <div
+                  // className={isLightModeOn ? 'topSixLight' : 'topSix'}
+                  className="topSix"
+                ></div>
               </div>
             </div>
 
@@ -129,7 +141,8 @@ export default function SkillList({ isLightModeOn, toggleSkillList }) {
                 <div className="bottom"></div>
                 <p className="percentage">70%</p>
                 <div
-                  className={isLightModeOn ? 'topSevenLight' : 'topSeven'}
+                  // className={isLightModeOn ? 'topSevenLight' : 'topSeven'}
+                  className="topSeven"
                 ></div>
               </div>
             </div>
@@ -142,7 +155,8 @@ export default function SkillList({ isLightModeOn, toggleSkillList }) {
                 <div className="bottom"></div>
                 <p className="percentage">80%</p>
                 <div
-                  className={isLightModeOn ? 'topEightLight' : 'topEight'}
+                  // className={isLightModeOn ? 'topEightLight' : 'topEight'}
+                  className="topEight"
                 ></div>
               </div>
             </div>

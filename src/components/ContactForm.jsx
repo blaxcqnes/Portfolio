@@ -1,11 +1,7 @@
 import { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
 
-export default function ContactForm({
-  isLightModeOn,
-  isContactFormOpen,
-  toggleContactForm,
-}) {
+export default function ContactForm({ isContactFormOpen, toggleContactForm }) {
   const [statusMessage, setStatusMessage] = useState('');
   const [statusType, setStatusType] = useState('');
   // ..
@@ -53,7 +49,7 @@ export default function ContactForm({
 
           setTimeout(() => {
             setStatusMessage('');
-          }, 5000);
+          }, 5000000000000);
         },
         (error) => {
           const errorMessage =
@@ -66,17 +62,14 @@ export default function ContactForm({
 
           setTimeout(() => {
             setStatusMessage('');
-          }, 5000);
+          }, 5000000000000);
         },
       );
     e.target.reset();
   };
 
   return (
-    <main
-      className={isLightModeOn ? 'contactFormLight' : 'contactForm'}
-      id="contactForm"
-    >
+    <main className="contactForm" id="contactForm">
       {/*  */}
       <div className="titleAndButton">
         <h4>Get in touch</h4>
@@ -92,6 +85,7 @@ export default function ContactForm({
       {/*  */}
       <form ref={form} onSubmit={sendAnEmail}>
         {statusMessage && <p className={statusType}>{statusMessage}</p>}
+        {/* <p className="fail">{statusMessage}</p> */}
         <div className="namesAndSubject">
           {/* */}
           <span className="names">
