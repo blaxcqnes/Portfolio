@@ -1,17 +1,14 @@
 import { useState, useEffect } from 'react';
-import me from '../images/mainContent_leftOrUpperPart/me.jpg';
-// import ContactFormMobile from './ContaceFormMobile';
 import SkillList from './SkillList';
 import EducationList from './EducationList';
 
 export default function LeftOrUpperPart({
+  me,
   isContactFormOpen,
-  // isContactFormMobileOpen,
   isSkillListOpen,
   isEducationListOpen,
   isCyberListOpen,
   isWebListOpen,
-  // toggleContactFormMobile,
   toggleSkillList,
   toggleEducationList,
   toggleCyberList,

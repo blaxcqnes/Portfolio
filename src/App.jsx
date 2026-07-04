@@ -3,55 +3,67 @@ import Loader from './components/Loader';
 import Header from './components/Header';
 import MainContent from './components/MainContent';
 
+const IMAGES_TO_PRELOAD = [...(MainContent.assets || [])];
+
 export default function App() {
   const [loading, setLoading] = useState(true);
   const [isContactFormOpen, setIsContactFormOpen] = useState(false);
-  // const [isContactFormMobileOpen, setIsContactFormMobileOpen] = useState(false);
   const [isSkillListOpen, setIsSkillListOpen] = useState(false);
   const [isEducationListOpen, setIsEducationListOpen] = useState(false);
   const [isCyberListOpen, setIsCyberListOpen] = useState(false);
   const [isWebListOpen, setIsWebListOpen] = useState(false);
   const [classType, setClassType] = useState(false);
 
-  // Simulate loading state for 2.5 seconds
+  // Dynamic Image Preloader
   useEffect(() => {
-    const timer = setTimeout(() => {
-      setLoading(false);
-    }, 2500);
+    const preloadImage = (src) => {
+      return new Promise((resolve, reject) => {
+        const img = new Image();
+        img.onload = resolve;
+        img.onerror = reject;
+        img.src = src;
+      });
+    };
 
-    return () => clearTimeout(timer);
+    const minDelay = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
+
+    const loadAssets = async () => {
+      try {
+        await Promise.all([
+          ...IMAGES_TO_PRELOAD.map((src) => preloadImage(src)),
+          minDelay(2500),
+        ]);
+      } catch (error) {
+        console.error('One or more images failed to preload safely:', error);
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    loadAssets();
   }, []);
   // End
 
-  // Toggle functions for lightMode, contactForm, contactFormMobile, skillList, educationList, cyberList and webList
-  // function toggleLightMode() {
-  //   setIsLightModeOn((prev) => !prev);
-  // }
-  //
+  // Toggle functions
   function toggleContactForm() {
     setIsContactFormOpen((prev) => !prev);
   }
-  //
-  // function toggleContactFormMobile() {
-  //   setIsContactFormMobileOpen((prev) => !prev);
-  //   setClassType((prev) => !prev);
-  // }
-  //
+
   function toggleSkillList() {
     setIsSkillListOpen((prev) => !prev);
     setClassType((prev) => !prev);
   }
-  //
+
   function toggleEducationList() {
     setIsEducationListOpen((prev) => !prev);
     setClassType((prev) => !prev);
   }
-  //
+
   function toggleCyberList() {
     setIsCyberListOpen((prev) => !prev);
     setClassType((prev) => !prev);
   }
-  //
+
   function toggleWebList() {
     setIsWebListOpen((prev) => !prev);
     setClassType((prev) => !prev);
@@ -63,22 +75,16 @@ export default function App() {
     classType
       ? (document.getElementById('root').style.height = 'auto')
       : document.getElementById('root').removeAttribute('style');
-
-    return () => {};
   }, [classType]);
-  //
 
-  // 2 Related to root scalling, when contactForm, skillList, educationList, cyberList or webList are open, the root scales down to 98% of its original size
+  // 2 Related to root scaling
   useEffect(() => {
     classType || isContactFormOpen
       ? (document.getElementById('root').style.transform = 'scale(98%)')
       : document.getElementById('root').removeAttribute('style');
-
-    return () => {};
   }, [classType, isContactFormOpen]);
-  //
 
-  // 3 Related to contactForm, allows scrolling back to the original position before the form was displayed
+  // 3 Related to contactForm scrolling
   useEffect(() => {
     const originalScrollY = window.scrollY;
     const originalScrollX = window.scrollX;
@@ -95,9 +101,8 @@ export default function App() {
       });
     };
   }, [isContactFormOpen]);
-  //
 
-  // 4 Related to skillList, when displayed, it allows background scrolling, and when closed, it scrolls back to the original position before the form was displayed
+  // 4 Related to skillList scrolling
   useEffect(() => {
     const originalScrollY = window.scrollY;
     const originalScrollX = window.scrollX;
@@ -114,9 +119,8 @@ export default function App() {
       });
     };
   }, [isSkillListOpen]);
-  //
 
-  // 5 Related to educationList, when displayed, it allows background scrolling, and when closed, it scrolls back to the original position before the form was displayed
+  // 5 Related to educationList scrolling
   useEffect(() => {
     const originalScrollY = window.scrollY;
     const originalScrollX = window.scrollX;
@@ -133,9 +137,8 @@ export default function App() {
       });
     };
   }, [isEducationListOpen]);
-  //
 
-  // 6 Related to cyberList, when displayed, it allows background scrolling, and when closed, it scrolls back to the original position before the form was displaye
+  // 6 Related to cyberList scrolling
   useEffect(() => {
     const originalScrollY = window.scrollY;
     const originalScrollX = window.scrollX;
@@ -152,9 +155,8 @@ export default function App() {
       });
     };
   }, [isCyberListOpen]);
-  //
 
-  // 7 Related to educationList, when displayed, it allows background scrolling, and when closed, it scrolls back to the original position before the form was displayed
+  // 7 Related to webList scrolling
   useEffect(() => {
     const originalScrollY = window.scrollY;
     const originalScrollX = window.scrollX;
@@ -169,9 +171,8 @@ export default function App() {
       });
     };
   }, [isWebListOpen]);
-  //
 
-  // 8 Related to lightMode, contactForm, contactFormMobile, skillList, educationList, cyberList and webList, all of them get closed when the user scrolls back to the top of the page
+  // 8 Auto close on scroll to top
   useEffect(() => {
     const handleScroll = () => {
       const scrollTop = window.scrollY || document.documentElement.scrollTop;
@@ -186,7 +187,6 @@ export default function App() {
     };
 
     window.addEventListener('scroll', handleScroll, { passive: true });
-
     return () => window.removeEventListener('scroll', handleScroll);
   }, [
     isSkillListOpen,
@@ -195,23 +195,23 @@ export default function App() {
     isWebListOpen,
     classType,
   ]);
-  //
 
-  // 9 Closes contactForm, contactFormMobile, skillList, educationList, cyberList and webList when the user presses the Escape key
+  // 9 Escape key event handler
   useEffect(() => {
-    window.addEventListener('keydown', function (e) {
+    const handleKeyDown = (e) => {
       if (e.key === 'Escape') {
-        return (
-          setIsContactFormOpen(false),
-          setIsSkillListOpen(false),
-          setIsEducationListOpen(false),
-          setIsCyberListOpen(false),
-          setIsWebListOpen(false),
-          setClassType(false)
-        );
+        setIsContactFormOpen(false);
+        setIsSkillListOpen(false);
+        setIsEducationListOpen(false);
+        setIsCyberListOpen(false);
+        setIsWebListOpen(false);
+        setClassType(false);
       }
-    });
-  });
+    };
+
+    window.addEventListener('keydown', handleKeyDown);
+    return () => window.removeEventListener('keydown', handleKeyDown);
+  }, []);
   // End
 
   return (
@@ -227,7 +227,6 @@ export default function App() {
             isCyberListOpen={isCyberListOpen}
             isWebListOpen={isWebListOpen}
             classType={classType}
-            //
             toggleContactForm={toggleContactForm}
             toggleSkillList={toggleSkillList}
             toggleEducationList={toggleEducationList}
@@ -241,7 +240,6 @@ export default function App() {
             isCyberListOpen={isCyberListOpen}
             isWebListOpen={isWebListOpen}
             classType={classType}
-            //
             toggleContactForm={toggleContactForm}
             toggleSkillList={toggleSkillList}
             toggleEducationList={toggleEducationList}

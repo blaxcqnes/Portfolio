@@ -1,14 +1,23 @@
-.loaderContainer {
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 1rem;
+  width: 100%;
+  height: 90dvh;
+}
+.container .loaderContainer {
   display: flex;
   flex-direction: row;
   justify-content: center;
   width: 100%;
-  height: 90dvh;
+  height: 15rem;
   align-items: center;
   position: relative;
   z-index: 1;
 }
-.loaderContainer .spinnerBrown {
+.container .loaderContainer .spinnerBrown {
   width: 6rem;
   height: 6rem;
   border: 0.5rem solid;
@@ -16,7 +25,7 @@
   border-radius: 50%;
   animation: spinnerBrownAnimation 1.5s linear infinite;
 }
-.loaderContainer .spinnerOlive {
+.container .loaderContainer .spinnerOlive {
   width: 10rem;
   height: 10rem;
   position: fixed;

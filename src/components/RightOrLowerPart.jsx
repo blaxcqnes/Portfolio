@@ -1,11 +1,11 @@
 import { useState, useEffect } from 'react';
-import kaffa from '../images/mainContent_rightOrLowerPart/kaffa.png';
-import veila from '../images/mainContent_rightOrLowerPart/veila.png';
-import guessGame from '../images/mainContent_rightOrLowerPart/guessGame.png';
 import CyberList from './CyberList';
 import WebList from './WebList';
 
 export default function RightOrLowerPart({
+  kaffa,
+  veila,
+  guessGame,
   isContactFormOpen,
   isContactFormMobileOpen,
   isSkillListOpen,
@@ -246,3 +246,9 @@ export default function RightOrLowerPart({
     </main>
   );
 }
+
+RightOrLowerPart.assets = [
+  '../images/mainContent_rightOrLowerPart/kaffa.png',
+  '../images/mainContent_rightOrLowerPart/veila.png',
+  '../images/mainContent_rightOrLowerPart/guessGame.png',
+];
