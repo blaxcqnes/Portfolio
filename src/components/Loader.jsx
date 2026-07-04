@@ -1,7 +1,7 @@
 export default function Loader() {
   return (
-    <div className="container">
-      <div className="loaderContainer">
+    <div className="loaderContainer">
+      <div className="loader">
         <div className="spinnerBrown"></div>
         <div className="spinnerOlive"></div>
       </div>

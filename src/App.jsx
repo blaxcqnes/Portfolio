@@ -31,7 +31,7 @@ export default function App() {
       try {
         await Promise.all([
           ...IMAGES_TO_PRELOAD.map((src) => preloadImage(src)),
-          minDelay(2500),
+          minDelay(3000),
         ]);
       } catch (error) {
         console.error('One or more images failed to preload safely:', error);

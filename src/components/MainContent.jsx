@@ -58,9 +58,4 @@ export default function MainContent({
   );
 }
 
-MainContent.assets = [
-  '../images/mainContent_leftOrUpperPart/me.jpg',
-  '../images/mainContent_rightOrLowerPart/kaffa.png',
-  '../images/mainContent_rightOrLowerPart/veila.png',
-  '../images/mainContent_rightOrLowerPart/guessGame.png',
-];
+MainContent.assets = [me, kaffa, veila, guessGame];

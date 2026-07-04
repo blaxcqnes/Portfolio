@@ -1,4 +1,4 @@
-.container {
+.loaderContainer {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -6,8 +6,21 @@
   row-gap: 1rem;
   width: 100%;
   height: 90dvh;
+  background-color: #232323;
+  animation: loaderContainer 0.5s linear;
+  animation-iteration-count: 1;
 
-  .loaderContainer {
+  @keyframes loaderContainer {
+    from {
+      filter: opacity(0.5) grayscale(10%) blur(0.05rem) brightness(80%);
+      transform: scale(100%);
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  .loader {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -53,5 +66,13 @@
         transform: rotate(-360deg);
       }
     }
+  }
+
+  p {
+    font-size: 11pt;
+    font-weight: 500;
+    text-align: center;
+    line-height: 1.5rem;
+    color: #ebebeb;
   }
 }

@@ -37,6 +37,10 @@ body {
     row-gap: 0.4rem;
   }
 
+  @media (orientation: portrait) and (min-width: 1023px) and (max-width: 1099px) {
+    row-gap: 1.2rem;
+  }
+
   @media (min-width: 1099px) and (max-width: 1200px) {
     row-gap: 0.5rem;
   }

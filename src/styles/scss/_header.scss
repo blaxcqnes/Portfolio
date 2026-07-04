@@ -50,6 +50,10 @@
       padding: 0.6rem;
     }
 
+    @media (orientation: portrait) and (min-width: 1023px) and (max-width: 1099px) {
+      padding: 1.5rem 2rem;
+    }
+
     @media (min-width: 1099px) and (max-width: 1200px) {
       padding: 0.8rem;
     }
@@ -86,6 +90,10 @@
         column-gap: 0.9rem;
       }
 
+      @media (orientation: portrait) and (min-width: 1023px) and (max-width: 1099px) {
+        column-gap: 1.5rem;
+      }
+
       @media (min-width: 1099px) and (max-width: 1200px) {
         column-gap: 1.2rem;
       }
@@ -116,6 +124,10 @@
 
         @media (min-width: 1023px) and (max-width: 1099px) {
           font-size: 12.5pt;
+        }
+
+        @media (orientation: portrait) and (min-width: 1023px) and (max-width: 1099px) {
+          font-size: 19pt;
         }
 
         @media (min-width: 1099px) and (max-width: 1200px) {
@@ -155,6 +167,10 @@
 
         @media (min-width: 1023px) and (max-width: 1099px) {
           font-size: 7.5pt;
+        }
+
+        @media (orientation: portrait) and (min-width: 1023px) and (max-width: 1099px) {
+          font-size: 10pt;
         }
 
         @media (min-width: 1099px) and (max-width: 1200px) {
@@ -216,6 +232,10 @@
           font-size: 7.5pt;
         }
 
+        @media (orientation: portrait) and (min-width: 1023px) and (max-width: 1099px) {
+          font-size: 10pt;
+        }
+
         @media (min-width: 1099px) and (max-width: 1200px) {
           font-size: 8pt;
         }
@@ -262,6 +282,12 @@
           width: 4.7rem;
           height: 1.8rem;
           font-size: 7.4pt;
+        }
+
+        @media (orientation: portrait) and (min-width: 1023px) and (max-width: 1099px) {
+          width: 7rem;
+          height: 2.5rem;
+          font-size: 10pt;
         }
 
         @media (min-width: 1099px) and (max-width: 1200px) {
@@ -311,6 +337,10 @@
 
     @media (min-width: 1023px) and (max-width: 1099px) {
       padding: 0.6rem;
+    }
+
+    @media (orientation: portrait) and (min-width: 1023px) and (max-width: 1099px) {
+      padding: 1.5rem 2rem;
     }
 
     @media (min-width: 1099px) and (max-width: 1200px) {
@@ -381,6 +411,10 @@
           font-size: 12.5pt;
         }
 
+        @media (orientation: portrait) and (min-width: 1023px) and (max-width: 1099px) {
+          font-size: 19pt;
+        }
+
         @media (min-width: 1099px) and (max-width: 1200px) {
           font-size: 14pt;
         }
@@ -418,6 +452,10 @@
 
         @media (min-width: 1023px) and (max-width: 1099px) {
           font-size: 7.5pt;
+        }
+
+        @media (orientation: portrait) and (min-width: 1023px) and (max-width: 1099px) {
+          font-size: 10pt;
         }
 
         @media (min-width: 1099px) and (max-width: 1200px) {
@@ -474,6 +512,10 @@
           font-size: 7.5pt;
         }
 
+        @media (orientation: portrait) and (min-width: 1023px) and (max-width: 1099px) {
+          font-size: 10pt;
+        }
+
         @media (min-width: 1099px) and (max-width: 1200px) {
           font-size: 8pt;
         }
@@ -516,6 +558,12 @@
           width: 4.7rem;
           height: 1.8rem;
           font-size: 7.4pt;
+        }
+
+        @media (orientation: portrait) and (min-width: 1023px) and (max-width: 1099px) {
+          width: 7rem;
+          height: 2.5rem;
+          font-size: 10pt;
         }
 
         @media (min-width: 1099px) and (max-width: 1200px) {
