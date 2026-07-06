@@ -227,6 +227,7 @@ export default function App() {
             isCyberListOpen={isCyberListOpen}
             isWebListOpen={isWebListOpen}
             classType={classType}
+            //
             toggleContactForm={toggleContactForm}
             toggleSkillList={toggleSkillList}
             toggleEducationList={toggleEducationList}
@@ -240,6 +241,7 @@ export default function App() {
             isCyberListOpen={isCyberListOpen}
             isWebListOpen={isWebListOpen}
             classType={classType}
+            //
             toggleContactForm={toggleContactForm}
             toggleSkillList={toggleSkillList}
             toggleEducationList={toggleEducationList}

@@ -100,10 +100,7 @@ export default function RightOrLowerPart({
             {/*  */}
           </div>
           {/*  */}
-          <div
-            // className={isLightModeOn ? 'webLight' : 'web'}
-            className="web"
-          >
+          <div className="web">
             <p className="title">Web Dev. Projects</p>
             {/*  */}
             <div className="carousel">
@@ -114,7 +111,7 @@ export default function RightOrLowerPart({
                 rel="noopener noreferrer"
                 className="firstImg"
               >
-                <img src={kaffa} />
+                <img src={kaffa} loading="lazy" />
               </a>
               {/*  */}
               <a
@@ -123,7 +120,7 @@ export default function RightOrLowerPart({
                 rel="noopener noreferrer"
                 className="secondImg"
               >
-                <img src={veila} />
+                <img src={veila} loading="lazy" />
               </a>
               {/*  */}
               <a
@@ -132,7 +129,7 @@ export default function RightOrLowerPart({
                 rel="noopener noreferrer"
                 className="thirdImg"
               >
-                <img src={guessGame} />
+                <img src={guessGame} loading="lazy" />
               </a>
               {/*  */}
             </div>
@@ -246,9 +243,3 @@ export default function RightOrLowerPart({
     </main>
   );
 }
-
-RightOrLowerPart.assets = [
-  '../images/mainContent_rightOrLowerPart/kaffa.png',
-  '../images/mainContent_rightOrLowerPart/veila.png',
-  '../images/mainContent_rightOrLowerPart/guessGame.png',
-];

@@ -75,11 +75,11 @@ export default function LeftOrUpperPart({
           </div>
           {/*  */}
           <div className="forSmallerScreens">
-            <img src={me} className="smallerImg" />
+            <img src={me} className="smallerImg" loading="lazy" />
             <p>Cybersecurity Professional & Web Developer</p>
           </div>
           {/*  */}
-          <img src={me} className="regularImg" />
+          <img src={me} className="regularImg" loading="lazy" />
           {/*  */}
         </section>
 

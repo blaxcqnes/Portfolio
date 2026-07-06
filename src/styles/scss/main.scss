@@ -27,6 +27,7 @@ body {
   height: 100dvh;
   padding: 1rem;
   position: relative;
+  scroll-behavior: smooth;
 
   @media (min-width: 300px) and (max-width: 600px) {
     height: auto;

@@ -3,20 +3,26 @@ export default function SkillList({ toggleSkillList }) {
   const [pageNumber, setPageNumber] = useState(1);
 
   useEffect(() => {
-    window.addEventListener('keydown', function (e) {
+    const handleKeyDown = (e) => {
       if (e.key === 'ArrowRight') {
-        return setPageNumber(2);
+        setPageNumber(2);
       }
-    });
-  });
+    };
+
+    window.addEventListener('keydown', handleKeyDown);
+    return () => window.removeEventListener('keydown', handleKeyDown);
+  }, []);
 
   useEffect(() => {
-    window.addEventListener('keydown', function (e) {
+    const handleKeyDown = (e) => {
       if (e.key === 'ArrowLeft') {
-        return setPageNumber(1);
+        setPageNumber(1);
       }
-    });
-  });
+    };
+
+    window.addEventListener('keydown', handleKeyDown);
+    return () => window.removeEventListener('keydown', handleKeyDown);
+  }, []);
 
   function previous() {
     if (pageNumber > 1) setPageNumber((prev) => prev - 1);
