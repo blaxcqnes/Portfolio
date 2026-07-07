@@ -11,7 +11,6 @@ export default function Header({
   toggleEducationList,
   toggleCyberList,
   toggleWebList,
-  // classType,
   activeList,
 }) {
   function handleClick() {
@@ -58,17 +57,14 @@ export default function Header({
               Contact
             </button>
           ) : (
-            <button
-              className="contact"
-              onClick={!isContactFormOpen ? toggleContactForm : undefined}
-            >
+            <button className="contact" onClick={toggleContactForm}>
               Contact
             </button>
           )}
         </div>
       </section>
       {/*  */}
-      {activeList === 'contactForm' && (
+      {isContactFormOpen && (
         <ContactForm
           isContactFormOpen={isContactFormOpen}
           toggleContactForm={toggleContactForm}

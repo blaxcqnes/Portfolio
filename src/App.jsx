@@ -48,7 +48,7 @@ export default function App() {
   // Toggle functions
   function toggleContactForm() {
     setIsContactFormOpen((prev) => !prev);
-    setActiveList((prev) => (prev === 'contactForm' ? null : 'contactForm'));
+    // setActiveList((prev) => (prev === 'contactForm' ? null : 'contactForm'));
   }
 
   function toggleEducationList() {
@@ -80,17 +80,17 @@ export default function App() {
 
   // 1 Related to allowing background to be scrollable
   useEffect(() => {
-    activeList
+    classType
       ? (document.getElementById('root').style.height = 'auto')
       : document.getElementById('root').removeAttribute('style');
-  }, [activeList]);
+  }, [classType]);
 
   // 2 Related to root scaling and elements getting unfocused
   useEffect(() => {
-    activeList
+    activeList || isContactFormOpen
       ? (document.getElementById('root').style.transform = 'scale(98%)')
       : document.getElementById('root').removeAttribute('style');
-  }, [activeList]);
+  }, [activeList, isContactFormOpen]);
 
   // 3 Related to scrollIntoView for lists
   useEffect(() => {
@@ -178,7 +178,6 @@ export default function App() {
             isEducationListOpen={isEducationListOpen}
             isCyberListOpen={isCyberListOpen}
             isWebListOpen={isWebListOpen}
-            classType={classType}
             activeList={activeList}
             //
             toggleContactForm={toggleContactForm}
