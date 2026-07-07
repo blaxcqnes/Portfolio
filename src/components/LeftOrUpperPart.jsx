@@ -13,7 +13,6 @@ export default function LeftOrUpperPart({
   toggleEducationList,
   toggleCyberList,
   toggleWebList,
-  // classType,
   activeList,
 }) {
   function closeForeignLists() {

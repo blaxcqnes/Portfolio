@@ -15,7 +15,6 @@ export default function RightOrLowerPart({
   toggleEducationList,
   toggleCyberList,
   toggleWebList,
-  // classType,
   activeList,
 }) {
   function closeForeignLists() {

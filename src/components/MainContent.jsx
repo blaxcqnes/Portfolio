@@ -16,7 +16,6 @@ export default function MainContent({
   toggleEducationList,
   toggleCyberList,
   toggleWebList,
-  classType,
   activeList,
 }) {
   return (
@@ -31,7 +30,6 @@ export default function MainContent({
         isEducationListOpen={isEducationListOpen}
         isCyberListOpen={isCyberListOpen}
         isWebListOpen={isWebListOpen}
-        classType={classType}
         activeList={activeList}
         //
         toggleContactForm={toggleContactForm}
@@ -49,7 +47,6 @@ export default function MainContent({
         isEducationListOpen={isEducationListOpen}
         isCyberListOpen={isCyberListOpen}
         isWebListOpen={isWebListOpen}
-        classType={classType}
         activeList={activeList}
         //
         toggleSkillList={toggleSkillList}

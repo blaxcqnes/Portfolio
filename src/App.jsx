@@ -12,7 +12,6 @@ export default function App() {
   const [isEducationListOpen, setIsEducationListOpen] = useState(false);
   const [isCyberListOpen, setIsCyberListOpen] = useState(false);
   const [isWebListOpen, setIsWebListOpen] = useState(false);
-  const [classType, setClassType] = useState(false);
   const [activeList, setActiveList] = useState(null);
 
   // True dynamic Image Preloader
@@ -48,7 +47,6 @@ export default function App() {
   // Toggle functions
   function toggleContactForm() {
     setIsContactFormOpen((prev) => !prev);
-    // setActiveList((prev) => (prev === 'contactForm' ? null : 'contactForm'));
   }
 
   function toggleEducationList() {
@@ -56,41 +54,23 @@ export default function App() {
     setActiveList((prev) =>
       prev === 'educationList' ? null : 'educationList',
     );
-    setClassType((prev) => !prev);
   }
 
   function toggleSkillList() {
     setIsSkillListOpen((prev) => !prev);
     setActiveList((prev) => (prev === 'skillList' ? null : 'skillList'));
-    setClassType((prev) => !prev);
   }
 
   function toggleCyberList() {
     setIsCyberListOpen((prev) => !prev);
     setActiveList((prev) => (prev === 'cyberList' ? null : 'cyberList'));
-    setClassType((prev) => !prev);
   }
 
   function toggleWebList() {
     setIsWebListOpen((prev) => !prev);
     setActiveList((prev) => (prev === 'webList' ? null : 'webList'));
-    setClassType((prev) => !prev);
   }
   // End
-
-  // 1 Related to allowing background to be scrollable
-  useEffect(() => {
-    classType
-      ? (document.getElementById('root').style.height = 'auto')
-      : document.getElementById('root').removeAttribute('style');
-  }, [classType]);
-
-  // 2 Related to root scaling and elements getting unfocused
-  useEffect(() => {
-    activeList || isContactFormOpen
-      ? (document.getElementById('root').style.transform = 'scale(98%)')
-      : document.getElementById('root').removeAttribute('style');
-  }, [activeList, isContactFormOpen]);
 
   // 3 Related to scrollIntoView for lists
   useEffect(() => {
@@ -123,7 +103,6 @@ export default function App() {
         setIsEducationListOpen(false);
         setIsCyberListOpen(false);
         setIsWebListOpen(false);
-        setClassType(false);
         setActiveList(null);
       }
     };
@@ -135,7 +114,6 @@ export default function App() {
     isEducationListOpen,
     isCyberListOpen,
     isWebListOpen,
-    classType,
     activeList,
   ]);
 
@@ -149,7 +127,6 @@ export default function App() {
         setIsEducationListOpen(false);
         setIsCyberListOpen(false);
         setIsWebListOpen(false);
-        setClassType(false);
         setActiveList(null);
       }
     };
@@ -162,12 +139,17 @@ export default function App() {
     isEducationListOpen,
     isCyberListOpen,
     isWebListOpen,
-    classType,
     activeList,
   ]);
 
   return (
-    <>
+    <div
+      className="container"
+      style={{
+        ...(activeList && { height: 'auto', transform: 'scale(98%)' }),
+        ...(isContactFormOpen && { transform: 'scale(98%)' }),
+      }}
+    >
       {loading ? (
         <Loader />
       ) : (
@@ -192,7 +174,6 @@ export default function App() {
             isEducationListOpen={isEducationListOpen}
             isCyberListOpen={isCyberListOpen}
             isWebListOpen={isWebListOpen}
-            classType={classType}
             activeList={activeList}
             //
             toggleContactForm={toggleContactForm}
@@ -203,6 +184,6 @@ export default function App() {
           />
         </>
       )}
-    </>
+    </div>
   );
 }
