@@ -84,11 +84,11 @@ body {
     height: auto;
   }
 
-  @media (orientation: portrait) and (min-height: 1470px) {
+  @media (orientation: portrait) and (min-width: 1099px) and (min-height: 1500px) {
     height: 100dvh;
   }
 
-  @media (orientation: portrait) and (max-height: 1470px) {
+  @media (orientation: portrait) and (max-width: 1099px) and (max-height: 1500px) {
     height: auto;
   }
 }

@@ -7,29 +7,26 @@ export default function RightOrLowerPart({
   veila,
   guessGame,
   isContactFormOpen,
-  isContactFormMobileOpen,
   isSkillListOpen,
   isEducationListOpen,
   isCyberListOpen,
   isWebListOpen,
-  toggleContactFormMobile,
   toggleSkillList,
   toggleEducationList,
   toggleCyberList,
   toggleWebList,
   classType,
+  activeList,
 }) {
-  function handleClick() {
-    if (isContactFormMobileOpen) {
-      toggleContactFormMobile();
-    } else if (isSkillListOpen) {
+  function closeForeignLists() {
+    if (isSkillListOpen) {
       toggleSkillList();
     } else if (isEducationListOpen) {
       toggleEducationList();
     }
   }
 
-  function closeLists() {
+  function closeLocalLists() {
     if (isCyberListOpen) {
       toggleCyberList();
     } else if (isWebListOpen) {
@@ -49,21 +46,35 @@ export default function RightOrLowerPart({
 
     return () => mediaWatcher.removeEventListener('change', updateScreen);
   }, []);
+
   return (
-    <main className="rightOrLowerPart" onClick={handleClick}>
+    <main className="rightOrLowerPart" onClick={closeForeignLists}>
       {/*  */}
       <div
-        className={
+        className="rightOrLowerPartContainer"
+        id="rightOrLowerPartContainer"
+        style={
           classType || isContactFormOpen
-            ? 'rightOrLowerPartContainerUnfocused'
-            : 'rightOrLowerPartContainer'
+            ? {
+                filter:
+                  'opacity(0.5) grayscale(10%) blur(0.05rem) brightness(80%)',
+              }
+            : null
         }
+        onClick={closeLocalLists}
       >
+        {/*  */}
         <section
-          className={
-            isNarrowScreen && isWebListOpen ? 'projectsSwapped' : 'projects'
+          className="projects"
+          style={
+            isNarrowScreen && isWebListOpen
+              ? {
+                  flexDirection: 'column',
+                  rowGap: '1rem',
+                  animation: 'projectsSwapped 0.5s linear 1',
+                }
+              : undefined
           }
-          onClick={closeLists}
         >
           {/*  */}
           <div className="cyber">
@@ -103,7 +114,17 @@ export default function RightOrLowerPart({
           <div className="web">
             <p className="title">Web Dev. Projects</p>
             {/*  */}
-            <div className="carousel">
+            <div
+              className="carousel"
+              style={
+                classType
+                  ? {
+                      overflowY: 'hidden',
+                      overscrollBehaviorY: 'unset',
+                    }
+                  : undefined
+              }
+            >
               {/*  */}
               <a
                 href="https://example.com"
@@ -144,9 +165,7 @@ export default function RightOrLowerPart({
               </button>
             )}
             {/*  */}
-            {/*  */}
           </div>
-          {/*  */}
           {/*  */}
         </section>
         {/*  */}
@@ -231,13 +250,14 @@ export default function RightOrLowerPart({
         {/*  */}
       </div>
       {/*  */}
-      {isCyberListOpen && (
+      {activeList === 'cyberList' && (
         <CyberList
           isCyberListOpen={isCyberListOpen}
           toggleCyberList={toggleCyberList}
         />
       )}
-      {isWebListOpen && (
+
+      {activeList === 'webList' && (
         <WebList isWebListOpen={isWebListOpen} toggleWebList={toggleWebList} />
       )}
     </main>

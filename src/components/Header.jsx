@@ -12,6 +12,7 @@ export default function Header({
   toggleCyberList,
   toggleWebList,
   classType,
+  activeList,
 }) {
   function handleClick() {
     if (isContactFormOpen) {
@@ -28,20 +29,28 @@ export default function Header({
   }
   return (
     <main className="header">
+      {/*  */}
       <section
-        className={
+        className="headerContainer"
+        id="headerContainer"
+        style={
           classType || isContactFormOpen
-            ? 'headerContainerUnfocused'
-            : 'headerContainer'
+            ? {
+                filter:
+                  'opacity(0.5) grayscale(10%) blur(0.05rem) brightness(80%)',
+              }
+            : null
         }
         onClick={handleClick}
       >
+        {/*  */}
         <div className="nameAndProfession">
           <p className="name">Mahmoud Taha</p>
           <p className="profession">
             Cybersecurity Professional & Web Developer
           </p>
         </div>
+        {/*  */}
         <div className="locationAndContact">
           <p className="location">Riyadh, Saudi Arabia</p>
           {classType || isContactFormOpen ? (
@@ -58,8 +67,8 @@ export default function Header({
           )}
         </div>
       </section>
-
-      {isContactFormOpen && (
+      {/*  */}
+      {activeList === 'contactForm' && (
         <ContactForm
           isContactFormOpen={isContactFormOpen}
           toggleContactForm={toggleContactForm}

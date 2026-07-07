@@ -14,8 +14,9 @@ export default function LeftOrUpperPart({
   toggleCyberList,
   toggleWebList,
   classType,
+  activeList,
 }) {
-  function handleClick() {
+  function closeForeignLists() {
     if (isCyberListOpen) {
       toggleCyberList();
     } else if (isWebListOpen) {
@@ -23,7 +24,7 @@ export default function LeftOrUpperPart({
     }
   }
 
-  function closeLists() {
+  function closeLocalLists() {
     if (isSkillListOpen) {
       toggleSkillList();
     } else if (isEducationListOpen) {
@@ -45,15 +46,20 @@ export default function LeftOrUpperPart({
   }, []);
 
   return (
-    <main className="leftOrUpperPart" onClick={handleClick}>
+    <main className="leftOrUpperPart" onClick={closeForeignLists}>
       {/*  */}
       <div
-        className={
+        className="leftOrUpperPartContainer"
+        id="leftOrUpperPartContainer"
+        style={
           classType || isContactFormOpen
-            ? 'leftOrUpperPartContainerUnfocused'
-            : 'leftOrUpperPartContainer'
+            ? {
+                filter:
+                  'opacity(0.5) grayscale(10%) blur(0.05rem) brightness(80%)',
+              }
+            : null
         }
-        onClick={closeLists}
+        onClick={closeLocalLists}
       >
         {/*  */}
         <section className="aboutMeAndImage">
@@ -82,12 +88,17 @@ export default function LeftOrUpperPart({
           <img src={me} className="regularImg" loading="lazy" />
           {/*  */}
         </section>
-
+        {/*  */}
         <section
-          className={
+          className="skillsAndEducation"
+          style={
             isNarrowScreen && isEducationListOpen
-              ? 'skillsAndEducationSwapped'
-              : 'skillsAndEducation'
+              ? {
+                  flexDirection: 'column',
+                  rowGap: '1rem',
+                  animation: 'skillsAndEducationSwapped 0.5s linear 1',
+                }
+              : undefined
           }
         >
           <div className="skills">
@@ -164,20 +175,14 @@ export default function LeftOrUpperPart({
         {/*  */}
       </div>
       {/*  */}
-      {/* {isContactFormMobileOpen && (
-        <ContactFormMobile
-          isContactFormMobileOpen={isContactFormMobileOpen}
-          toggleContactFormMobile={toggleContactFormMobile}
-        />
-      )} */}
-      {/*  */}
-      {isEducationListOpen && (
+      {activeList === 'educationList' && (
         <EducationList
           isEducationListOpen={isEducationListOpen}
           toggleEducationList={toggleEducationList}
         />
       )}
-      {isSkillListOpen && (
+
+      {activeList === 'skillList' && (
         <SkillList
           isSkillListOpen={isSkillListOpen}
           toggleSkillList={toggleSkillList}

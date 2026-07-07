@@ -13,8 +13,9 @@ export default function App() {
   const [isCyberListOpen, setIsCyberListOpen] = useState(false);
   const [isWebListOpen, setIsWebListOpen] = useState(false);
   const [classType, setClassType] = useState(false);
+  const [activeList, setActiveList] = useState(null);
 
-  // Dynamic Image Preloader
+  // True dynamic Image Preloader
   useEffect(() => {
     const preloadImage = (src) => {
       return new Promise((resolve, reject) => {
@@ -47,52 +48,62 @@ export default function App() {
   // Toggle functions
   function toggleContactForm() {
     setIsContactFormOpen((prev) => !prev);
-  }
-
-  function toggleSkillList() {
-    setIsSkillListOpen((prev) => !prev);
-    setClassType((prev) => !prev);
+    setActiveList((prev) => (prev === 'contactForm' ? null : 'contactForm'));
   }
 
   function toggleEducationList() {
     setIsEducationListOpen((prev) => !prev);
+    setActiveList((prev) =>
+      prev === 'educationList' ? null : 'educationList',
+    );
+    setClassType((prev) => !prev);
+  }
+
+  function toggleSkillList() {
+    setIsSkillListOpen((prev) => !prev);
+    setActiveList((prev) => (prev === 'skillList' ? null : 'skillList'));
     setClassType((prev) => !prev);
   }
 
   function toggleCyberList() {
     setIsCyberListOpen((prev) => !prev);
+    setActiveList((prev) => (prev === 'cyberList' ? null : 'cyberList'));
     setClassType((prev) => !prev);
   }
 
   function toggleWebList() {
     setIsWebListOpen((prev) => !prev);
+    setActiveList((prev) => (prev === 'webList' ? null : 'webList'));
     setClassType((prev) => !prev);
   }
   // End
 
   // 1 Related to allowing background to be scrollable
   useEffect(() => {
-    classType
+    activeList
       ? (document.getElementById('root').style.height = 'auto')
       : document.getElementById('root').removeAttribute('style');
-  }, [classType]);
+  }, [activeList]);
 
-  // 2 Related to root scaling
+  // 2 Related to root scaling and elements getting unfocused
   useEffect(() => {
-    classType || isContactFormOpen
+    activeList
       ? (document.getElementById('root').style.transform = 'scale(98%)')
       : document.getElementById('root').removeAttribute('style');
-  }, [classType, isContactFormOpen]);
+  }, [activeList]);
 
-  // 3 Related to contactForm scrolling
+  // 3 Related to scrollIntoView for lists
   useEffect(() => {
+    if (!activeList) return;
+
     const originalScrollY = window.scrollY;
     const originalScrollX = window.scrollX;
 
-    isContactFormOpen &&
-      document
-        .getElementById('contactForm')
-        .scrollIntoView({ behavior: 'smooth' });
+    const targetElement = document.getElementById(activeList);
+    if (targetElement) {
+      targetElement.scrollIntoView({ behavior: 'smooth' });
+    }
+
     return () => {
       window.scrollTo({
         top: originalScrollY,
@@ -100,79 +111,9 @@ export default function App() {
         behavior: 'smooth',
       });
     };
-  }, [isContactFormOpen]);
+  }, [activeList]);
 
-  // 4 Related to skillList scrolling
-  useEffect(() => {
-    const originalScrollY = window.scrollY;
-    const originalScrollX = window.scrollX;
-
-    isSkillListOpen &&
-      document
-        .getElementById('skillList')
-        .scrollIntoView({ behavior: 'smooth' });
-    return () => {
-      window.scrollTo({
-        top: originalScrollY,
-        left: originalScrollX,
-        behavior: 'smooth',
-      });
-    };
-  }, [isSkillListOpen]);
-
-  // 5 Related to educationList scrolling
-  useEffect(() => {
-    const originalScrollY = window.scrollY;
-    const originalScrollX = window.scrollX;
-
-    isEducationListOpen &&
-      document
-        .getElementById('educationList')
-        .scrollIntoView({ behavior: 'smooth' });
-    return () => {
-      window.scrollTo({
-        top: originalScrollY,
-        left: originalScrollX,
-        behavior: 'smooth',
-      });
-    };
-  }, [isEducationListOpen]);
-
-  // 6 Related to cyberList scrolling
-  useEffect(() => {
-    const originalScrollY = window.scrollY;
-    const originalScrollX = window.scrollX;
-
-    isCyberListOpen &&
-      document
-        .getElementById('cyberList')
-        .scrollIntoView({ behavior: 'smooth' });
-    return () => {
-      window.scrollTo({
-        top: originalScrollY,
-        left: originalScrollX,
-        behavior: 'smooth',
-      });
-    };
-  }, [isCyberListOpen]);
-
-  // 7 Related to webList scrolling
-  useEffect(() => {
-    const originalScrollY = window.scrollY;
-    const originalScrollX = window.scrollX;
-
-    isWebListOpen &&
-      document.getElementById('webList').scrollIntoView({ behavior: 'smooth' });
-    return () => {
-      window.scrollTo({
-        top: originalScrollY,
-        left: originalScrollX,
-        behavior: 'smooth',
-      });
-    };
-  }, [isWebListOpen]);
-
-  // 8 Auto close on scroll to top
+  // 4 Auto close when scrolled to the top
   useEffect(() => {
     const handleScroll = () => {
       const scrollTop = window.scrollY || document.documentElement.scrollTop;
@@ -196,7 +137,8 @@ export default function App() {
     classType,
   ]);
 
-  // 9 Escape key event handler
+  // 5 Escape key event handler
+
   useEffect(() => {
     const handleKeyDown = (e) => {
       if (e.key === 'Escape') {
@@ -206,13 +148,21 @@ export default function App() {
         setIsCyberListOpen(false);
         setIsWebListOpen(false);
         setClassType(false);
+        setActiveList(null);
       }
     };
 
     window.addEventListener('keydown', handleKeyDown);
     return () => window.removeEventListener('keydown', handleKeyDown);
-  }, []);
-  // End
+  }, [
+    isContactFormOpen,
+    isSkillListOpen,
+    isEducationListOpen,
+    isCyberListOpen,
+    isWebListOpen,
+    classType,
+    activeList,
+  ]);
 
   return (
     <>
@@ -227,6 +177,7 @@ export default function App() {
             isCyberListOpen={isCyberListOpen}
             isWebListOpen={isWebListOpen}
             classType={classType}
+            activeList={activeList}
             //
             toggleContactForm={toggleContactForm}
             toggleSkillList={toggleSkillList}
@@ -241,6 +192,7 @@ export default function App() {
             isCyberListOpen={isCyberListOpen}
             isWebListOpen={isWebListOpen}
             classType={classType}
+            activeList={activeList}
             //
             toggleContactForm={toggleContactForm}
             toggleSkillList={toggleSkillList}
