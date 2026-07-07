@@ -118,12 +118,13 @@ export default function App() {
     const handleScroll = () => {
       const scrollTop = window.scrollY || document.documentElement.scrollTop;
 
-      if (scrollTop <= 2) {
+      if (scrollTop <= 1) {
         setIsSkillListOpen(false);
         setIsEducationListOpen(false);
         setIsCyberListOpen(false);
         setIsWebListOpen(false);
         setClassType(false);
+        setActiveList(null);
       }
     };
 
@@ -135,6 +136,7 @@ export default function App() {
     isCyberListOpen,
     isWebListOpen,
     classType,
+    activeList,
   ]);
 
   // 5 Escape key event handler

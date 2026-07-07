@@ -13,7 +13,7 @@ export default function LeftOrUpperPart({
   toggleEducationList,
   toggleCyberList,
   toggleWebList,
-  classType,
+  // classType,
   activeList,
 }) {
   function closeForeignLists() {
@@ -52,7 +52,7 @@ export default function LeftOrUpperPart({
         className="leftOrUpperPartContainer"
         id="leftOrUpperPartContainer"
         style={
-          classType || isContactFormOpen
+          activeList || isContactFormOpen
             ? {
                 filter:
                   'opacity(0.5) grayscale(10%) blur(0.05rem) brightness(80%)',
@@ -105,7 +105,7 @@ export default function LeftOrUpperPart({
             {/*  */}
             <div className="titleAndButton">
               <p className="title">Skills</p>
-              {classType || isContactFormOpen ? (
+              {activeList || isContactFormOpen ? (
                 <button className="fluency" disabled>
                   Fluency
                 </button>
@@ -130,7 +130,7 @@ export default function LeftOrUpperPart({
             {/*  */}
             <div className="titleAndButton">
               <p className="title">Education</p>
-              {classType || isContactFormOpen ? (
+              {activeList || isContactFormOpen ? (
                 <button className="courses" disabled>
                   Courses
                 </button>

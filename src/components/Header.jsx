@@ -11,7 +11,7 @@ export default function Header({
   toggleEducationList,
   toggleCyberList,
   toggleWebList,
-  classType,
+  // classType,
   activeList,
 }) {
   function handleClick() {
@@ -34,7 +34,7 @@ export default function Header({
         className="headerContainer"
         id="headerContainer"
         style={
-          classType || isContactFormOpen
+          activeList || isContactFormOpen
             ? {
                 filter:
                   'opacity(0.5) grayscale(10%) blur(0.05rem) brightness(80%)',
@@ -53,7 +53,7 @@ export default function Header({
         {/*  */}
         <div className="locationAndContact">
           <p className="location">Riyadh, Saudi Arabia</p>
-          {classType || isContactFormOpen ? (
+          {activeList || isContactFormOpen ? (
             <button className="contact" disabled>
               Contact
             </button>

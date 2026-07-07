@@ -1669,9 +1669,25 @@ input[type=email]) {
     width: 100%;
   }
 }
+@media (min-width: 1023px) and (max-width: 1099px) {
+  .mainContent .leftOrUpperPart {
+    row-gap: 0.6rem;
+  }
+}
 @media (orientation: portrait) and (min-width: 1023px) and (max-width: 1099px) {
   .mainContent .leftOrUpperPart {
+    row-gap: 1.2rem;
     width: 100%;
+  }
+}
+@media (min-width: 1099px) and (max-width: 1200px) {
+  .mainContent .leftOrUpperPart {
+    row-gap: 0.6rem;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1300px) {
+  .mainContent .leftOrUpperPart {
+    row-gap: 0.9rem;
   }
 }
 .mainContent .leftOrUpperPart .leftOrUpperPartContainer {
@@ -5539,6 +5555,7 @@ input[type=email]) {
 .mainContent .rightOrLowerPart {
   display: flex;
   flex-direction: column;
+  row-gap: 1rem;
   width: 50%;
   height: auto;
 }
@@ -5547,9 +5564,25 @@ input[type=email]) {
     width: 100%;
   }
 }
+@media (min-width: 1023px) and (max-width: 1099px) {
+  .mainContent .rightOrLowerPart {
+    row-gap: 0.6rem;
+  }
+}
 @media (orientation: portrait) and (min-width: 1023px) and (max-width: 1099px) {
   .mainContent .rightOrLowerPart {
+    row-gap: 1.2rem;
     width: 100%;
+  }
+}
+@media (min-width: 1099px) and (max-width: 1200px) {
+  .mainContent .rightOrLowerPart {
+    row-gap: 0.6rem;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1300px) {
+  .mainContent .rightOrLowerPart {
+    row-gap: 0.9rem;
   }
 }
 .mainContent .rightOrLowerPart .rightOrLowerPartContainer {
@@ -5558,11 +5591,6 @@ input[type=email]) {
   row-gap: 1rem;
   width: 100%;
   height: auto;
-}
-@media (min-width: 300px) and (max-width: 400px) {
-  .mainContent .rightOrLowerPart .rightOrLowerPartContainer {
-    flex-direction: column;
-  }
 }
 @media (min-width: 1023px) and (max-width: 1099px) {
   .mainContent .rightOrLowerPart .rightOrLowerPartContainer {
@@ -5579,7 +5607,7 @@ input[type=email]) {
     row-gap: 0.5rem;
   }
 }
-@media (min-width: 1200px) and (max-width: 1400px) {
+@media (min-width: 1200px) and (max-width: 1300px) {
   .mainContent .rightOrLowerPart .rightOrLowerPartContainer {
     row-gap: 0.8rem;
   }

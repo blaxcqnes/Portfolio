@@ -44,8 +44,21 @@
       width: 100%;
     }
 
+    @media (min-width: 1023px) and (max-width: 1099px) {
+      row-gap: 0.6rem;
+    }
+
     @media (orientation: portrait) and (min-width: 1023px) and (max-width: 1099px) {
+      row-gap: 1.2rem;
       width: 100%;
+    }
+
+    @media (min-width: 1099px) and (max-width: 1200px) {
+      row-gap: 0.6rem;
+    }
+
+    @media (min-width: 1200px) and (max-width: 1300px) {
+      row-gap: 0.9rem;
     }
 
     .leftOrUpperPartContainer {
@@ -3667,6 +3680,7 @@
   .rightOrLowerPart {
     display: flex;
     flex-direction: column;
+    row-gap: 1rem;
     width: min(50%, 50%);
     height: auto;
 
@@ -3674,8 +3688,21 @@
       width: 100%;
     }
 
+    @media (min-width: 1023px) and (max-width: 1099px) {
+      row-gap: 0.6rem;
+    }
+
     @media (orientation: portrait) and (min-width: 1023px) and (max-width: 1099px) {
+      row-gap: 1.2rem;
       width: 100%;
+    }
+
+    @media (min-width: 1099px) and (max-width: 1200px) {
+      row-gap: 0.6rem;
+    }
+
+    @media (min-width: 1200px) and (max-width: 1300px) {
+      row-gap: 0.9rem;
     }
 
     .rightOrLowerPartContainer {
@@ -3684,10 +3711,6 @@
       row-gap: 1rem;
       width: 100%;
       height: auto;
-
-      @media (min-width: 300px) and (max-width: 400px) {
-        flex-direction: column;
-      }
 
       @media (min-width: 1023px) and (max-width: 1099px) {
         row-gap: 0.4rem;
@@ -3701,7 +3724,7 @@
         row-gap: 0.5rem;
       }
 
-      @media (min-width: 1200px) and (max-width: 1400px) {
+      @media (min-width: 1200px) and (max-width: 1300px) {
         row-gap: 0.8rem;
       }
 

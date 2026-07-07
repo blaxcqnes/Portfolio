@@ -15,7 +15,7 @@ export default function RightOrLowerPart({
   toggleEducationList,
   toggleCyberList,
   toggleWebList,
-  classType,
+  // classType,
   activeList,
 }) {
   function closeForeignLists() {
@@ -54,7 +54,7 @@ export default function RightOrLowerPart({
         className="rightOrLowerPartContainer"
         id="rightOrLowerPartContainer"
         style={
-          classType || isContactFormOpen
+          activeList || isContactFormOpen
             ? {
                 filter:
                   'opacity(0.5) grayscale(10%) blur(0.05rem) brightness(80%)',
@@ -99,7 +99,7 @@ export default function RightOrLowerPart({
               </ol>
             </div>
             {/*  */}
-            {classType || isContactFormOpen ? (
+            {activeList || isContactFormOpen ? (
               <button className="extras" disabled>
                 Extras
               </button>
@@ -117,7 +117,7 @@ export default function RightOrLowerPart({
             <div
               className="carousel"
               style={
-                classType
+                activeList
                   ? {
                       overflowY: 'hidden',
                       overscrollBehaviorY: 'unset',
@@ -155,7 +155,7 @@ export default function RightOrLowerPart({
               {/*  */}
             </div>
             {/*  */}
-            {classType || isContactFormOpen ? (
+            {activeList || isContactFormOpen ? (
               <button className="more" disabled>
                 More
               </button>
@@ -174,7 +174,7 @@ export default function RightOrLowerPart({
           style={
             isWebListOpen || isCyberListOpen
               ? {
-                  display: 'hidden',
+                  display: 'none',
                   width: '100%',
                   height: '0',
                   padding: '0',
