@@ -50,7 +50,11 @@ body {
     row-gap: 0.8rem;
   }
 
-  // Height adjustments
+  // Ratio adjustments
+
+  @media (orientation: landscape) and (max-width: 1023px) and (max-height: 1550px) {
+    height: auto;
+  }
 
   @media (orientation: landscape) and (min-width: 1023px) and (max-width: 1099px) and (min-height: 449px) {
     height: 100dvh;
