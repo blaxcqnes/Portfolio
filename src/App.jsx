@@ -118,7 +118,7 @@ export default function App() {
     const handleScroll = () => {
       const scrollTop = window.scrollY || document.documentElement.scrollTop;
 
-      if (scrollTop <= 1) {
+      if (scrollTop <= 2) {
         setIsSkillListOpen(false);
         setIsEducationListOpen(false);
         setIsCyberListOpen(false);
