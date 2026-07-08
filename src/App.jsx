@@ -9,8 +9,9 @@ export default function App() {
   const [loading, setLoading] = useState(true);
   const [isContactFormOpen, setIsContactFormOpen] = useState(false);
   const [activeList, setActiveList] = useState(false);
-  const activeListRef = useRef(activeList);
   const scrollTimeoutRef = useRef(null);
+  const activeListRef = useRef(null);
+  const originalScrollRef = useRef({ x: 0, y: 0 });
 
   // True dynamic Image Preloader
   useLayoutEffect(() => {
@@ -40,7 +41,6 @@ export default function App() {
 
     loadAssets();
   }, []);
-  // End
 
   // Toggle functions
   function toggleContactForm() {
@@ -66,11 +66,14 @@ export default function App() {
   }
   // End
 
-  // 3 Related to scrollIntoView for lists
+  // Related to scrollIntoView for lists
   useLayoutEffect(() => {
     if (!activeList) return;
-    const originalScrollY = window.scrollY;
-    const originalScrollX = window.scrollX;
+    originalScrollRef.current = {
+      x: window.scrollX,
+      y: window.scrollY,
+    };
+
     const currentActive = activeList;
     activeListRef.current = currentActive;
 
@@ -80,7 +83,6 @@ export default function App() {
 
     scrollTimeoutRef.current = setTimeout(() => {
       const targetElement = document.getElementById(currentActive);
-
       if (targetElement) {
         targetElement.scrollIntoView({
           behavior: 'smooth',
@@ -89,22 +91,23 @@ export default function App() {
         });
       }
     }, 50);
+
     return () => {
       if (scrollTimeoutRef.current) {
         clearTimeout(scrollTimeoutRef.current);
       }
 
-      if (!activeListRef.current) {
-        window.scrollTo({
-          top: originalScrollY,
-          left: originalScrollX,
-          behavior: 'auto',
-        });
-      }
+      window.scrollTo({
+        top: originalScrollRef.current.y,
+        left: originalScrollRef.current.x,
+        behavior: 'auto',
+      });
+
+      activeListRef.current = null;
     };
   }, [activeList]);
 
-  // 4 Auto close when scrolled to the top
+  // Auto closes lists when scrolled to the top
   useEffect(() => {
     let isLoggedActive = true;
 
@@ -127,8 +130,7 @@ export default function App() {
     };
   }, []);
 
-  // 5 Escape key event handler
-
+  // Escape key event handler
   useEffect(() => {
     const handleKeyDown = (e) => {
       if (e.key === 'Escape') {
