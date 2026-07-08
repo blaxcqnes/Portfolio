@@ -1,33 +1,18 @@
-import { useState, useEffect } from 'react';
+import { useState, useLayoutEffect } from 'react';
 import SkillList from './SkillList';
 import EducationList from './EducationList';
 
 export default function LeftOrUpperPart({
   me,
   isContactFormOpen,
-  isSkillListOpen,
-  isEducationListOpen,
-  isCyberListOpen,
-  isWebListOpen,
+  activeList,
+  setActiveList,
   toggleSkillList,
   toggleEducationList,
-  toggleCyberList,
-  toggleWebList,
-  activeList,
 }) {
-  function closeForeignLists() {
-    if (isCyberListOpen) {
-      toggleCyberList();
-    } else if (isWebListOpen) {
-      toggleWebList();
-    }
-  }
-
-  function closeLocalLists() {
-    if (isSkillListOpen) {
-      toggleSkillList();
-    } else if (isEducationListOpen) {
-      toggleEducationList();
+  function closeList() {
+    if (activeList) {
+      setActiveList(false);
     }
   }
 
@@ -35,7 +20,7 @@ export default function LeftOrUpperPart({
     () => window.matchMedia('(max-width: 600px)').matches,
   );
 
-  useEffect(() => {
+  useLayoutEffect(() => {
     const mediaWatcher = window.matchMedia('(max-width: 600px)');
 
     const updateScreen = (e) => setIsNarrowScreen(e.matches);
@@ -45,7 +30,14 @@ export default function LeftOrUpperPart({
   }, []);
 
   return (
-    <main className="leftOrUpperPart" onClick={closeForeignLists}>
+    <main
+      className="leftOrUpperPart"
+      onClick={
+        activeList === 'cyberList' || activeList === 'webList'
+          ? closeList
+          : undefined
+      }
+    >
       {/*  */}
       <div
         className="leftOrUpperPartContainer"
@@ -58,7 +50,7 @@ export default function LeftOrUpperPart({
               }
             : null
         }
-        onClick={closeLocalLists}
+        onClick={closeList}
       >
         {/*  */}
         <section className="aboutMeAndImage">
@@ -91,7 +83,7 @@ export default function LeftOrUpperPart({
         <section
           className="skillsAndEducation"
           style={
-            isNarrowScreen && isEducationListOpen
+            isNarrowScreen && activeList === 'educationList'
               ? {
                   flexDirection: 'column',
                   rowGap: '1rem',
@@ -175,17 +167,11 @@ export default function LeftOrUpperPart({
       </div>
       {/*  */}
       {activeList === 'educationList' && (
-        <EducationList
-          isEducationListOpen={isEducationListOpen}
-          toggleEducationList={toggleEducationList}
-        />
+        <EducationList toggleEducationList={toggleEducationList} />
       )}
 
       {activeList === 'skillList' && (
-        <SkillList
-          isSkillListOpen={isSkillListOpen}
-          toggleSkillList={toggleSkillList}
-        />
+        <SkillList toggleSkillList={toggleSkillList} />
       )}
     </main>
   );

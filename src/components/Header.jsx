@@ -2,28 +2,15 @@ import ContactForm from './ContactForm';
 
 export default function Header({
   isContactFormOpen,
-  isSkillListOpen,
-  isEducationListOpen,
-  isCyberListOpen,
-  isWebListOpen,
   toggleContactForm,
-  toggleSkillList,
-  toggleEducationList,
-  toggleCyberList,
-  toggleWebList,
   activeList,
+  setActiveList,
 }) {
-  function handleClick() {
-    if (isContactFormOpen) {
+  function closeList() {
+    if (activeList) {
+      setActiveList(false);
+    } else if (isContactFormOpen) {
       toggleContactForm();
-    } else if (isSkillListOpen) {
-      toggleSkillList();
-    } else if (isEducationListOpen) {
-      toggleEducationList();
-    } else if (isCyberListOpen) {
-      toggleCyberList();
-    } else if (isWebListOpen) {
-      toggleWebList();
     }
   }
   return (
@@ -40,7 +27,7 @@ export default function Header({
               }
             : null
         }
-        onClick={handleClick}
+        onClick={closeList}
       >
         {/*  */}
         <div className="nameAndProfession">

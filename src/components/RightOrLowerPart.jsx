@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState, useLayoutEffect } from 'react';
 import CyberList from './CyberList';
 import WebList from './WebList';
 
@@ -7,29 +7,14 @@ export default function RightOrLowerPart({
   veila,
   guessGame,
   isContactFormOpen,
-  isSkillListOpen,
-  isEducationListOpen,
-  isCyberListOpen,
-  isWebListOpen,
-  toggleSkillList,
-  toggleEducationList,
+  activeList,
+  setActiveList,
   toggleCyberList,
   toggleWebList,
-  activeList,
 }) {
-  function closeForeignLists() {
-    if (isSkillListOpen) {
-      toggleSkillList();
-    } else if (isEducationListOpen) {
-      toggleEducationList();
-    }
-  }
-
-  function closeLocalLists() {
-    if (isCyberListOpen) {
-      toggleCyberList();
-    } else if (isWebListOpen) {
-      toggleWebList();
+  function closeList() {
+    if (activeList) {
+      setActiveList(false);
     }
   }
 
@@ -37,7 +22,7 @@ export default function RightOrLowerPart({
     () => window.matchMedia('(max-width: 600px)').matches,
   );
 
-  useEffect(() => {
+  useLayoutEffect(() => {
     const mediaWatcher = window.matchMedia('(max-width: 600px)');
 
     const updateScreen = (e) => setIsNarrowScreen(e.matches);
@@ -47,7 +32,14 @@ export default function RightOrLowerPart({
   }, []);
 
   return (
-    <main className="rightOrLowerPart" onClick={closeForeignLists}>
+    <main
+      className="rightOrLowerPart"
+      onClick={
+        activeList === 'educationList' || activeList === 'skillList'
+          ? closeList
+          : undefined
+      }
+    >
       {/*  */}
       <div
         className="rightOrLowerPartContainer"
@@ -60,13 +52,13 @@ export default function RightOrLowerPart({
               }
             : null
         }
-        onClick={closeLocalLists}
+        onClick={closeList}
       >
         {/*  */}
         <section
           className="projects"
           style={
-            isNarrowScreen && isWebListOpen
+            isNarrowScreen && activeList === 'webList'
               ? {
                   flexDirection: 'column',
                   rowGap: '1rem',
@@ -171,7 +163,7 @@ export default function RightOrLowerPart({
         <footer
           className="footer"
           style={
-            isWebListOpen || isCyberListOpen
+            activeList === 'cyberList' || activeList === 'webList'
               ? {
                   display: 'none',
                   width: '100%',
@@ -250,15 +242,10 @@ export default function RightOrLowerPart({
       </div>
       {/*  */}
       {activeList === 'cyberList' && (
-        <CyberList
-          isCyberListOpen={isCyberListOpen}
-          toggleCyberList={toggleCyberList}
-        />
+        <CyberList toggleCyberList={toggleCyberList} />
       )}
 
-      {activeList === 'webList' && (
-        <WebList isWebListOpen={isWebListOpen} toggleWebList={toggleWebList} />
-      )}
+      {activeList === 'webList' && <WebList toggleWebList={toggleWebList} />}
     </main>
   );
 }

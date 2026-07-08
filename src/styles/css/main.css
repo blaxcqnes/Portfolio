@@ -70,7 +70,99 @@
   color: #ebebeb;
 }
 
-.header {
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  row-gap: 1rem;
+  width: 100%;
+  height: 100dvh;
+  padding: 1rem;
+  position: relative;
+  scroll-behavior: smooth;
+}
+@media (min-width: 300px) and (max-width: 600px) {
+  .container {
+    height: auto;
+    overflow-x: hidden;
+  }
+}
+@media (min-width: 1023px) and (max-width: 1100px) {
+  .container {
+    row-gap: 0.4rem;
+  }
+}
+@media (orientation: portrait) and (min-width: 1023px) and (max-width: 1100px) {
+  .container {
+    row-gap: 1.2rem;
+  }
+}
+@media (min-width: 1100px) and (max-width: 1200px) {
+  .container {
+    row-gap: 0.5rem;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1300px) {
+  .container {
+    row-gap: 0.8rem;
+  }
+}
+@media (orientation: landscape) and (max-width: 1023px) and (max-height: 1550px) {
+  .container {
+    height: auto;
+  }
+}
+@media (orientation: landscape) and (min-width: 1023px) and (max-width: 1100px) and (min-height: 449px) {
+  .container {
+    height: 100dvh;
+  }
+}
+@media (orientation: landscape) and (min-width: 1023px) and (max-width: 1100px) and (max-height: 449px) {
+  .container {
+    height: auto;
+  }
+}
+@media (orientation: landscape) and (min-width: 1100px) and (max-width: 1200px) and (min-height: 503px) {
+  .container {
+    height: 100dvh;
+  }
+}
+@media (orientation: landscape) and (min-width: 1100px) and (max-width: 1200px) and (max-height: 503px) {
+  .container {
+    height: auto;
+  }
+}
+@media (orientation: landscape) and (min-width: 1200px) and (max-width: 1300px) and (min-height: 558px) {
+  .container {
+    height: 100dvh;
+  }
+}
+@media (orientation: landscape) and (min-width: 1200px) and (max-width: 1300px) and (max-height: 558px) {
+  .container {
+    height: auto;
+  }
+}
+@media (orientation: landscape) and (min-width: 1400px) and (max-width: 1500px) and (min-height: 749px) {
+  .container {
+    height: 100dvh;
+  }
+}
+@media (orientation: landscape) and (min-width: 1400px) and (max-width: 1500px) and (max-height: 749px) {
+  .container {
+    height: auto;
+  }
+}
+@media (orientation: portrait) and (min-width: 1100px) and (min-height: 1500px) {
+  .container {
+    height: 100dvh;
+  }
+}
+@media (orientation: portrait) and (max-width: 1100px) and (max-height: 1500px) {
+  .container {
+    height: auto;
+  }
+}
+.container .header {
   display: flex;
   width: 100%;
   height: fit-content;
@@ -91,284 +183,284 @@
     opacity: 1;
   }
 }
-.header .headerContainer {
+.container .header .headerContainer {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
   width: 100%;
   padding: 1.5rem 2rem;
-  background-color: #635445;
+  background-color: #5c4f43;
   border-radius: 0.5rem;
 }
 @media (min-width: 300px) and (max-width: 400px) {
-  .header .headerContainer {
+  .container .header .headerContainer {
     padding: 1.2rem 0.75rem;
   }
 }
 @media (min-width: 400px) and (max-width: 500px) {
-  .header .headerContainer {
+  .container .header .headerContainer {
     padding: 1.2rem 1rem;
   }
 }
 @media (min-width: 500px) and (max-width: 600px) {
-  .header .headerContainer {
+  .container .header .headerContainer {
     padding: 1.5rem 2rem;
   }
 }
 @media (min-width: 600px) and (max-width: 800px) {
-  .header .headerContainer {
+  .container .header .headerContainer {
     padding: 1.5rem 1rem;
   }
 }
-@media (min-width: 1023px) and (max-width: 1099px) {
-  .header .headerContainer {
+@media (min-width: 1023px) and (max-width: 1100px) {
+  .container .header .headerContainer {
     padding: 0.6rem;
   }
 }
-@media (orientation: portrait) and (min-width: 1023px) and (max-width: 1099px) {
-  .header .headerContainer {
+@media (orientation: portrait) and (min-width: 1023px) and (max-width: 1100px) {
+  .container .header .headerContainer {
     padding: 1.5rem 2rem;
   }
 }
-@media (min-width: 1099px) and (max-width: 1200px) {
-  .header .headerContainer {
+@media (min-width: 1100px) and (max-width: 1200px) {
+  .container .header .headerContainer {
     padding: 0.8rem;
   }
 }
 @media (min-width: 1200px) and (max-width: 1300px) {
-  .header .headerContainer {
+  .container .header .headerContainer {
     padding: 0.8rem 1rem;
   }
 }
 @media (min-width: 1300px) and (max-width: 1400px) {
-  .header .headerContainer {
+  .container .header .headerContainer {
     padding: 1.3rem 1.2rem;
   }
 }
 @media (min-width: 1570px) and (max-width: 1670px) {
-  .header .headerContainer {
+  .container .header .headerContainer {
     padding: 1.7rem 2rem;
   }
 }
-.header .headerContainer .nameAndProfession {
+.container .header .headerContainer .nameAndProfession {
   display: flex;
   flex-direction: row;
   column-gap: 1.5rem;
   align-items: center;
 }
 @media (min-width: 600px) and (max-width: 1023px) {
-  .header .headerContainer .nameAndProfession {
+  .container .header .headerContainer .nameAndProfession {
     flex-direction: column;
     row-gap: 0.2rem;
     align-items: start;
   }
 }
 @media (width: 1023px) {
-  .header .headerContainer .nameAndProfession {
+  .container .header .headerContainer .nameAndProfession {
     column-gap: 1.5rem;
   }
 }
-@media (min-width: 1023px) and (max-width: 1099px) {
-  .header .headerContainer .nameAndProfession {
+@media (min-width: 1023px) and (max-width: 1100px) {
+  .container .header .headerContainer .nameAndProfession {
     column-gap: 0.9rem;
   }
 }
-@media (orientation: portrait) and (min-width: 1023px) and (max-width: 1099px) {
-  .header .headerContainer .nameAndProfession {
+@media (orientation: portrait) and (min-width: 1023px) and (max-width: 1100px) {
+  .container .header .headerContainer .nameAndProfession {
     column-gap: 1.2rem;
   }
 }
-@media (min-width: 1099px) and (max-width: 1200px) {
-  .header .headerContainer .nameAndProfession {
+@media (min-width: 1100px) and (max-width: 1200px) {
+  .container .header .headerContainer .nameAndProfession {
     column-gap: 1.2rem;
   }
 }
-.header .headerContainer .nameAndProfession .name {
+.container .header .headerContainer .nameAndProfession .name {
   font-size: 20pt;
   font-weight: 500;
 }
 @media (min-width: 300px) and (max-width: 400px) {
-  .header .headerContainer .nameAndProfession .name {
+  .container .header .headerContainer .nameAndProfession .name {
     font-size: 14pt;
   }
 }
 @media (min-width: 400px) and (max-width: 500px) {
-  .header .headerContainer .nameAndProfession .name {
+  .container .header .headerContainer .nameAndProfession .name {
     font-size: 16pt;
   }
 }
 @media (min-width: 500px) and (max-width: 600px) {
-  .header .headerContainer .nameAndProfession .name {
+  .container .header .headerContainer .nameAndProfession .name {
     font-size: 17pt;
   }
 }
 @media (min-width: 600px) and (max-width: 700px) {
-  .header .headerContainer .nameAndProfession .name {
+  .container .header .headerContainer .nameAndProfession .name {
     font-size: 18pt;
   }
 }
 @media (min-width: 700px) and (max-width: 1023px) {
-  .header .headerContainer .nameAndProfession .name {
+  .container .header .headerContainer .nameAndProfession .name {
     font-size: 19pt;
   }
 }
-@media (min-width: 1023px) and (max-width: 1099px) {
-  .header .headerContainer .nameAndProfession .name {
+@media (min-width: 1023px) and (max-width: 1100px) {
+  .container .header .headerContainer .nameAndProfession .name {
     font-size: 12.5pt;
   }
 }
-@media (orientation: portrait) and (min-width: 1023px) and (max-width: 1099px) {
-  .header .headerContainer .nameAndProfession .name {
+@media (orientation: portrait) and (min-width: 1023px) and (max-width: 1100px) {
+  .container .header .headerContainer .nameAndProfession .name {
     font-size: 19pt;
   }
 }
-@media (min-width: 1099px) and (max-width: 1200px) {
-  .header .headerContainer .nameAndProfession .name {
+@media (min-width: 1100px) and (max-width: 1200px) {
+  .container .header .headerContainer .nameAndProfession .name {
     font-size: 14pt;
   }
 }
 @media (min-width: 1200px) and (max-width: 1300px) {
-  .header .headerContainer .nameAndProfession .name {
+  .container .header .headerContainer .nameAndProfession .name {
     font-size: 15pt;
   }
 }
 @media (min-width: 1570px) and (max-width: 1670px) {
-  .header .headerContainer .nameAndProfession .name {
+  .container .header .headerContainer .nameAndProfession .name {
     font-size: 21pt;
   }
 }
-.header .headerContainer .nameAndProfession .profession {
+.container .header .headerContainer .nameAndProfession .profession {
   font-size: 10pt;
   color: #ebebeb;
 }
 @media (min-width: 300px) and (max-width: 700px) {
-  .header .headerContainer .nameAndProfession .profession {
+  .container .header .headerContainer .nameAndProfession .profession {
     display: none;
   }
 }
 @media (min-width: 700px) and (max-width: 900px) {
-  .header .headerContainer .nameAndProfession .profession {
+  .container .header .headerContainer .nameAndProfession .profession {
     display: flex;
     font-size: 9pt;
   }
 }
 @media (width: 700px) {
-  .header .headerContainer .nameAndProfession .profession {
+  .container .header .headerContainer .nameAndProfession .profession {
     display: flex;
     font-size: 9pt;
   }
 }
 @media (width: 900px) {
-  .header .headerContainer .nameAndProfession .profession {
+  .container .header .headerContainer .nameAndProfession .profession {
     font-size: 10pt;
   }
 }
-@media (min-width: 1023px) and (max-width: 1099px) {
-  .header .headerContainer .nameAndProfession .profession {
+@media (min-width: 1023px) and (max-width: 1100px) {
+  .container .header .headerContainer .nameAndProfession .profession {
     font-size: 7.5pt;
   }
 }
-@media (orientation: portrait) and (min-width: 1023px) and (max-width: 1099px) {
-  .header .headerContainer .nameAndProfession .profession {
+@media (orientation: portrait) and (min-width: 1023px) and (max-width: 1100px) {
+  .container .header .headerContainer .nameAndProfession .profession {
     font-size: 10pt;
   }
 }
-@media (min-width: 1099px) and (max-width: 1200px) {
-  .header .headerContainer .nameAndProfession .profession {
+@media (min-width: 1100px) and (max-width: 1200px) {
+  .container .header .headerContainer .nameAndProfession .profession {
     font-size: 8pt;
   }
 }
 @media (min-width: 1200px) and (max-width: 1300px) {
-  .header .headerContainer .nameAndProfession .profession {
+  .container .header .headerContainer .nameAndProfession .profession {
     font-size: 8pt;
   }
 }
-.header .headerContainer .locationAndContact {
+.container .header .headerContainer .locationAndContact {
   display: flex;
   flex-direction: row;
   column-gap: 2.2rem;
   align-items: center;
 }
 @media (min-width: 600px) and (max-width: 767px) {
-  .header .headerContainer .locationAndContact {
+  .container .header .headerContainer .locationAndContact {
     column-gap: 1.5rem;
   }
 }
 @media (min-width: 767px) and (max-width: 900px) {
-  .header .headerContainer .locationAndContact {
+  .container .header .headerContainer .locationAndContact {
     column-gap: 1.3rem;
   }
 }
 @media (min-width: 900px) and (max-width: 1023px) {
-  .header .headerContainer .locationAndContact {
+  .container .header .headerContainer .locationAndContact {
     column-gap: 1rem;
   }
 }
 @media (min-width: 1023px) and (max-width: 1200px) {
-  .header .headerContainer .locationAndContact {
+  .container .header .headerContainer .locationAndContact {
     column-gap: 1.5rem;
   }
 }
-.header .headerContainer .locationAndContact .location {
+.container .header .headerContainer .locationAndContact .location {
   font-size: 10pt;
   color: #ebebeb;
 }
 @media (min-width: 300px) and (max-width: 600px) {
-  .header .headerContainer .locationAndContact .location {
+  .container .header .headerContainer .locationAndContact .location {
     display: none;
   }
 }
 @media (min-width: 600px) and (max-width: 700px) {
-  .header .headerContainer .locationAndContact .location {
+  .container .header .headerContainer .locationAndContact .location {
     display: flex;
     font-size: 9pt;
   }
 }
 @media (width: 600px) {
-  .header .headerContainer .locationAndContact .location {
+  .container .header .headerContainer .locationAndContact .location {
     display: flex;
     font-size: 9pt;
   }
 }
 @media (min-width: 700px) and (max-width: 800px) {
-  .header .headerContainer .locationAndContact .location {
+  .container .header .headerContainer .locationAndContact .location {
     display: flex;
     font-size: 9pt;
   }
 }
 @media (min-width: 800px) and (max-width: 900px) {
-  .header .headerContainer .locationAndContact .location {
+  .container .header .headerContainer .locationAndContact .location {
     display: flex;
     font-size: 9pt;
   }
 }
 @media (width: 900px) {
-  .header .headerContainer .locationAndContact .location {
+  .container .header .headerContainer .locationAndContact .location {
     font-size: 10pt;
   }
 }
-@media (min-width: 1023px) and (max-width: 1099px) {
-  .header .headerContainer .locationAndContact .location {
+@media (min-width: 1023px) and (max-width: 1100px) {
+  .container .header .headerContainer .locationAndContact .location {
     font-size: 7.5pt;
   }
 }
-@media (orientation: portrait) and (min-width: 1023px) and (max-width: 1099px) {
-  .header .headerContainer .locationAndContact .location {
+@media (orientation: portrait) and (min-width: 1023px) and (max-width: 1100px) {
+  .container .header .headerContainer .locationAndContact .location {
     font-size: 10pt;
   }
 }
-@media (min-width: 1099px) and (max-width: 1200px) {
-  .header .headerContainer .locationAndContact .location {
+@media (min-width: 1100px) and (max-width: 1200px) {
+  .container .header .headerContainer .locationAndContact .location {
     font-size: 8pt;
   }
 }
 @media (min-width: 1200px) and (max-width: 1300px) {
-  .header .headerContainer .locationAndContact .location {
+  .container .header .headerContainer .locationAndContact .location {
     font-size: 8pt;
   }
 }
-.header .headerContainer .locationAndContact .contact {
+.container .header .headerContainer .locationAndContact .contact {
   width: 7rem;
   height: 2.5rem;
   background-color: #232323;
@@ -379,62 +471,62 @@
   cursor: pointer;
   transition: all 0.2s ease;
 }
-.header .headerContainer .locationAndContact .contact:hover {
-  background-color: #4f4d41;
+.container .header .headerContainer .locationAndContact .contact:hover {
+  background-color: #4b493d;
 }
 @media (min-width: 300px) and (max-width: 350px) {
-  .header .headerContainer .locationAndContact .contact {
+  .container .header .headerContainer .locationAndContact .contact {
     width: 5.7rem;
     height: 2.3rem;
     font-size: 9.5pt;
   }
 }
 @media (min-width: 350px) and (max-width: 400px) {
-  .header .headerContainer .locationAndContact .contact {
+  .container .header .headerContainer .locationAndContact .contact {
     width: 6rem;
     height: 2.3rem;
   }
 }
 @media (min-width: 700px) and (max-width: 763px) {
-  .header .headerContainer .locationAndContact .contact {
+  .container .header .headerContainer .locationAndContact .contact {
     width: 6rem;
     font-size: 9pt;
   }
 }
 @media (min-width: 300px) and (max-width: 1023px) {
-  .header .headerContainer .locationAndContact .contact {
+  .container .header .headerContainer .locationAndContact .contact {
     cursor: default;
   }
 }
-@media (min-width: 1023px) and (max-width: 1099px) {
-  .header .headerContainer .locationAndContact .contact {
+@media (min-width: 1023px) and (max-width: 1100px) {
+  .container .header .headerContainer .locationAndContact .contact {
     width: 4.7rem;
     height: 1.8rem;
     font-size: 7.4pt;
   }
 }
-@media (orientation: portrait) and (min-width: 1023px) and (max-width: 1099px) {
-  .header .headerContainer .locationAndContact .contact {
+@media (orientation: portrait) and (min-width: 1023px) and (max-width: 1100px) {
+  .container .header .headerContainer .locationAndContact .contact {
     width: 7rem;
     height: 2.5rem;
     font-size: 10pt;
   }
 }
-@media (min-width: 1099px) and (max-width: 1200px) {
-  .header .headerContainer .locationAndContact .contact {
+@media (min-width: 1100px) and (max-width: 1200px) {
+  .container .header .headerContainer .locationAndContact .contact {
     width: 5.1rem;
     height: 1.9rem;
     font-size: 8pt;
   }
 }
 @media (min-width: 1200px) and (max-width: 1300px) {
-  .header .headerContainer .locationAndContact .contact {
+  .container .header .headerContainer .locationAndContact .contact {
     width: 5.5rem;
     height: 2rem;
     font-size: 8pt;
   }
 }
-.header .contactForm {
+.container .header .contactForm {
   display: flex;
   flex-direction: column;
   row-gap: 1rem;
@@ -448,7 +540,7 @@
   animation-iteration-count: 1;
   background-color: #232323;
   border-radius: 0.5rem;
-  border: 0.1rem solid #4f4d41;
+  border: 0.1rem solid #4b493d;
   z-index: 1;
   filter: none;
 }
@@ -469,7 +561,7 @@
   }
 }
 @media (min-width: 300px) and (max-width: 400px) {
-  .header .contactForm {
+  .container .header .contactForm {
     width: 100%;
     height: 27.3rem;
     top: 6rem;
@@ -493,12 +585,12 @@
   }
 }
 @media (min-width: 300px) and (max-width: 1023px) {
-  .header .contactForm {
+  .container .header .contactForm {
     cursor: default;
   }
 }
 @media (min-width: 600px) and (max-width: 700px) {
-  .header .contactForm {
+  .container .header .contactForm {
     width: 75%;
     top: 7.5rem;
     left: 13%;
@@ -521,7 +613,7 @@
   }
 }
 @media (min-width: 700px) and (max-width: 767px) {
-  .header .contactForm {
+  .container .header .contactForm {
     width: 75%;
     top: 8.1rem;
     left: 13%;
@@ -544,7 +636,7 @@
   }
 }
 @media (min-width: 767px) and (max-width: 1023px) {
-  .header .contactForm {
+  .container .header .contactForm {
     width: 75%;
     top: 8.2rem;
     left: 13%;
@@ -567,37 +659,37 @@
   }
 }
 @media (min-width: 740px) and (max-width: 800px) {
-  .header .contactForm {
+  .container .header .contactForm {
     width: 73%;
     left: 14%;
   }
 }
 @media (min-width: 800px) and (max-width: 860px) {
-  .header .contactForm {
+  .container .header .contactForm {
     width: 71%;
     left: 14.5%;
   }
 }
 @media (min-width: 860px) and (max-width: 920px) {
-  .header .contactForm {
+  .container .header .contactForm {
     width: 67%;
     left: 16.5%;
   }
 }
 @media (min-width: 920px) and (max-width: 980px) {
-  .header .contactForm {
+  .container .header .contactForm {
     width: 65%;
     left: 17%;
   }
 }
 @media (min-width: 980px) and (max-width: 1023px) {
-  .header .contactForm {
+  .container .header .contactForm {
     width: 63%;
     left: 18%;
   }
 }
-@media (min-width: 1023px) and (max-width: 1099px) {
-  .header .contactForm {
+@media (min-width: 1023px) and (max-width: 1100px) {
+  .container .header .contactForm {
     row-gap: 0.5rem;
     width: 24.5%;
     height: 19.9rem;
@@ -620,8 +712,8 @@
     }
   }
 }
-@media (min-width: 1099px) and (max-width: 1200px) {
-  .header .contactForm {
+@media (min-width: 1100px) and (max-width: 1200px) {
+  .container .header .contactForm {
     row-gap: 0.7rem;
     width: 24.5%;
     height: 22rem;
@@ -645,7 +737,7 @@
   }
 }
 @media (min-width: 1200px) and (max-width: 1300px) {
-  .header .contactForm {
+  .container .header .contactForm {
     row-gap: 0.7rem;
     width: 24%;
     height: 24.4rem;
@@ -669,7 +761,7 @@
   }
 }
 @media (min-width: 1300px) and (max-width: 1400px) {
-  .header .contactForm {
+  .container .header .contactForm {
     width: 24%;
     top: 6.2rem;
   }
@@ -691,7 +783,7 @@
   }
 }
 @media (min-width: 1400px) and (max-width: 1500px) {
-  .header .contactForm {
+  .container .header .contactForm {
     width: 24.3%;
     top: 6.25rem;
   }
@@ -713,7 +805,7 @@
   }
 }
 @media (min-width: 1570px) and (max-width: 1670px) {
-  .header .contactForm {
+  .container .header .contactForm {
     width: 24%;
     position: absolute;
     top: 7.4rem;
@@ -735,70 +827,70 @@
     }
   }
 }
-.header .contactForm .titleAndButton {
+.container .header .contactForm .titleAndButton {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
   padding: 0.8rem 1rem;
-  background-color: #635445;
+  background-color: #5c4f43;
   border-radius: 0.4rem 0.4rem 0 0;
 }
 @media (min-width: 1023px) and (max-width: 1200px) {
-  .header .contactForm .titleAndButton {
+  .container .header .contactForm .titleAndButton {
     padding: 0.5rem 0.7rem;
   }
 }
 @media (min-width: 1200px) and (max-width: 1300px) {
-  .header .contactForm .titleAndButton {
+  .container .header .contactForm .titleAndButton {
     padding: 0.6rem 1rem;
   }
 }
-.header .contactForm .titleAndButton h4 {
+.container .header .contactForm .titleAndButton h4 {
   font-size: 15pt;
   font-weight: 600;
 }
 @media (min-width: 300px) and (max-width: 400px) {
-  .header .contactForm .titleAndButton h4 {
+  .container .header .contactForm .titleAndButton h4 {
     font-size: 13pt;
   }
 }
 @media (min-width: 400px) and (max-width: 500px) {
-  .header .contactForm .titleAndButton h4 {
+  .container .header .contactForm .titleAndButton h4 {
     font-size: 14pt;
   }
 }
 @media (min-width: 1000px) and (max-width: 1023px) {
-  .header .contactForm .titleAndButton h4 {
+  .container .header .contactForm .titleAndButton h4 {
     font-size: 15.5pt;
   }
 }
-@media (min-width: 1023px) and (max-width: 1099px) {
-  .header .contactForm .titleAndButton h4 {
+@media (min-width: 1023px) and (max-width: 1100px) {
+  .container .header .contactForm .titleAndButton h4 {
     font-size: 10pt;
   }
 }
-@media (orientation: portrait) and (min-width: 1023px) and (max-width: 1099px) {
-  .header .contactForm .titleAndButton h4 {
+@media (orientation: portrait) and (min-width: 1023px) and (max-width: 1100px) {
+  .container .header .contactForm .titleAndButton h4 {
     font-size: 16pt;
   }
 }
-@media (min-width: 1099px) and (max-width: 1200px) {
-  .header .contactForm .titleAndButton h4 {
+@media (min-width: 1100px) and (max-width: 1200px) {
+  .container .header .contactForm .titleAndButton h4 {
     font-size: 11pt;
   }
 }
 @media (min-width: 1200px) and (max-width: 1300px) {
-  .header .contactForm .titleAndButton h4 {
+  .container .header .contactForm .titleAndButton h4 {
     font-size: 12pt;
   }
 }
 @media (min-width: 1570px) and (max-width: 1670px) {
-  .header .contactForm .titleAndButton h4 {
+  .container .header .contactForm .titleAndButton h4 {
     font-size: 15.5pt;
   }
 }
-.header .contactForm .titleAndButton .close {
+.container .header .contactForm .titleAndButton .close {
   width: 7rem;
   height: 2.5rem;
   position: relative;
@@ -811,73 +903,73 @@
   cursor: pointer;
   transition: all 0.2s ease;
 }
-.header .contactForm .titleAndButton .close:hover {
-  background-color: #4f4d41;
+.container .header .contactForm .titleAndButton .close:hover {
+  background-color: #4b493d;
 }
 @media (min-width: 300px) and (max-width: 350px) {
-  .header .contactForm .titleAndButton .close {
+  .container .header .contactForm .titleAndButton .close {
     width: 5.7rem;
     height: 2.3rem;
     font-size: 9.5pt;
   }
 }
 @media (min-width: 350px) and (max-width: 400px) {
-  .header .contactForm .titleAndButton .close {
+  .container .header .contactForm .titleAndButton .close {
     width: 6rem;
     height: 2.3rem;
   }
 }
 @media (min-width: 700px) and (max-width: 763px) {
-  .header .contactForm .titleAndButton .close {
+  .container .header .contactForm .titleAndButton .close {
     width: 6rem;
     font-size: 9pt;
   }
 }
 @media (min-width: 300px) and (max-width: 1023px) {
-  .header .contactForm .titleAndButton .close {
+  .container .header .contactForm .titleAndButton .close {
     cursor: default;
   }
 }
-@media (min-width: 1023px) and (max-width: 1099px) {
-  .header .contactForm .titleAndButton .close {
+@media (min-width: 1023px) and (max-width: 1100px) {
+  .container .header .contactForm .titleAndButton .close {
     width: 4.7rem;
     height: 1.8rem;
     font-size: 7.4pt;
   }
 }
-@media (orientation: portrait) and (min-width: 1023px) and (max-width: 1099px) {
-  .header .contactForm .titleAndButton .close {
+@media (orientation: portrait) and (min-width: 1023px) and (max-width: 1100px) {
+  .container .header .contactForm .titleAndButton .close {
     width: 7rem;
     height: 2.5rem;
     font-size: 10pt;
   }
 }
-@media (min-width: 1099px) and (max-width: 1200px) {
-  .header .contactForm .titleAndButton .close {
+@media (min-width: 1100px) and (max-width: 1200px) {
+  .container .header .contactForm .titleAndButton .close {
     width: 5.1rem;
     height: 1.9rem;
     font-size: 8pt;
   }
 }
 @media (min-width: 1200px) and (max-width: 1300px) {
-  .header .contactForm .titleAndButton .close {
+  .container .header .contactForm .titleAndButton .close {
     width: 5.5rem;
     height: 2rem;
     font-size: 8pt;
   }
 }
-.header .contactForm form {
+.container .header .contactForm form {
   display: flex;
   flex-direction: column;
   row-gap: 0.8rem;
   position: relative;
 }
-@media (min-width: 1023px) and (max-width: 1099px) {
-  .header .contactForm form {
+@media (min-width: 1023px) and (max-width: 1100px) {
+  .container .header .contactForm form {
     row-gap: 0.5rem;
   }
 }
-.header .contactForm form .info {
+.container .header .contactForm form .info {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -886,7 +978,7 @@
   padding: 1rem 0.5rem;
   position: absolute;
   top: -5.15rem;
-  background-color: #635445;
+  background-color: #5c4f43;
   border-radius: 0.5rem 0.5rem 0 0;
   opacity: 0;
   z-index: 2;
@@ -929,16 +1021,16 @@
     opacity: 0;
   }
 }
-@media (min-width: 1023px) and (max-width: 1099px) {
-  .header .contactForm form .info {
+@media (min-width: 1023px) and (max-width: 1100px) {
+  .container .header .contactForm form .info {
     height: 2.799rem;
     padding: 0.5rem 0.7rem;
     top: -3.3rem;
     font-size: 10pt;
   }
 }
-@media (min-width: 1099px) and (max-width: 1200px) {
-  .header .contactForm form .info {
+@media (min-width: 1100px) and (max-width: 1200px) {
+  .container .header .contactForm form .info {
     height: 2.95rem;
     padding: 0.5rem 0.7rem;
     top: -3.65rem;
@@ -946,14 +1038,14 @@
   }
 }
 @media (min-width: 1200px) and (max-width: 1300px) {
-  .header .contactForm form .info {
+  .container .header .contactForm form .info {
     height: 3.2rem;
     padding: 0.6rem 1rem;
     top: -3.9rem;
     font-size: 12pt;
   }
 }
-.header .contactForm form .success {
+.container .header .contactForm form .success {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -962,7 +1054,7 @@
   padding: 1rem 0.5rem;
   position: absolute;
   top: -5.15rem;
-  background-color: #4f4d41;
+  background-color: #4b493d;
   border-radius: 0.5rem 0.5rem 0 0;
   opacity: 0;
   z-index: 2;
@@ -1005,16 +1097,16 @@
     opacity: 0;
   }
 }
-@media (min-width: 1023px) and (max-width: 1099px) {
-  .header .contactForm form .success {
+@media (min-width: 1023px) and (max-width: 1100px) {
+  .container .header .contactForm form .success {
     height: 2.799rem;
     padding: 0.5rem 0.7rem;
     top: -3.3rem;
     font-size: 10pt;
   }
 }
-@media (min-width: 1099px) and (max-width: 1200px) {
-  .header .contactForm form .success {
+@media (min-width: 1100px) and (max-width: 1200px) {
+  .container .header .contactForm form .success {
     height: 2.95rem;
     padding: 0.5rem 0.7rem;
     top: -3.65rem;
@@ -1022,14 +1114,14 @@
   }
 }
 @media (min-width: 1200px) and (max-width: 1300px) {
-  .header .contactForm form .success {
+  .container .header .contactForm form .success {
     height: 3.2rem;
     padding: 0.6rem 1rem;
     top: -3.9rem;
     font-size: 12pt;
   }
 }
-.header .contactForm form .fail {
+.container .header .contactForm form .fail {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1081,16 +1173,16 @@
     opacity: 0;
   }
 }
-@media (min-width: 1023px) and (max-width: 1099px) {
-  .header .contactForm form .fail {
+@media (min-width: 1023px) and (max-width: 1100px) {
+  .container .header .contactForm form .fail {
     height: 2.799rem;
     padding: 0.5rem 0.7rem;
     top: -3.3rem;
     font-size: 10pt;
   }
 }
-@media (min-width: 1099px) and (max-width: 1200px) {
-  .header .contactForm form .fail {
+@media (min-width: 1100px) and (max-width: 1200px) {
+  .container .header .contactForm form .fail {
     height: 2.95rem;
     padding: 0.5rem 0.7rem;
     top: -3.65rem;
@@ -1098,51 +1190,51 @@
   }
 }
 @media (min-width: 1200px) and (max-width: 1300px) {
-  .header .contactForm form .fail {
+  .container .header .contactForm form .fail {
     height: 3.2rem;
     padding: 0.6rem 1rem;
     top: -3.9rem;
     font-size: 12pt;
   }
 }
-.header .contactForm form label {
+.container .header .contactForm form label {
   display: none;
 }
-.header .contactForm form .namesAndSubject {
+.container .header .contactForm form .namesAndSubject {
   display: flex;
   flex-direction: column;
   row-gap: 0.8rem;
 }
-@media (min-width: 1023px) and (max-width: 1099px) {
-  .header .contactForm form .namesAndSubject {
+@media (min-width: 1023px) and (max-width: 1100px) {
+  .container .header .contactForm form .namesAndSubject {
     row-gap: 0.5rem;
   }
 }
-.header .contactForm form .namesAndSubject .names {
+.container .header .contactForm form .namesAndSubject .names {
   display: flex;
   flex-direction: row;
   justify-content: center;
   column-gap: 3%;
 }
-@media (min-width: 1023px) and (max-width: 1099px) {
-  .header .contactForm form .namesAndSubject .names {
+@media (min-width: 1023px) and (max-width: 1100px) {
+  .container .header .contactForm form .namesAndSubject .names {
     justify-content: space-evenly;
     column-gap: unset;
   }
 }
-.header .contactForm form .namesAndSubject .names label {
+.container .header .contactForm form .namesAndSubject .names label {
   display: none;
 }
-.header .contactForm form .namesAndSubject .names .firstName {
+.container .header .contactForm form .namesAndSubject .names .firstName {
   width: 46%;
   height: 3rem;
   padding: 0.5rem;
   align-self: center;
-  border: 0.1rem solid #4f4d41;
+  border: 0.1rem solid #4b493d;
   border-radius: 0.5rem;
   background-color: #2a2a2a;
 }
-.header .contactForm form .namesAndSubject .names .firstName:focus:where(input[type=text],
+.container .header .contactForm form .namesAndSubject .names .firstName:focus:where(input[type=text],
 input[type=search],
 input[type=password],
 input[type=url],
@@ -1151,42 +1243,42 @@ input[type=email]) {
   border-style: solid;
   outline: none;
 }
-.header .contactForm form .namesAndSubject .names .firstName::placeholder {
+.container .header .contactForm form .namesAndSubject .names .firstName::placeholder {
   color: #a6a6a6;
 }
 @media (min-width: 300px) and (max-width: 400px) {
-  .header .contactForm form .namesAndSubject .names .firstName {
+  .container .header .contactForm form .namesAndSubject .names .firstName {
     height: 2.5rem;
   }
 }
-@media (min-width: 1023px) and (max-width: 1099px) {
-  .header .contactForm form .namesAndSubject .names .firstName {
+@media (min-width: 1023px) and (max-width: 1100px) {
+  .container .header .contactForm form .namesAndSubject .names .firstName {
     height: 2rem;
     font-size: 8.2pt;
   }
 }
-@media (min-width: 1099px) and (max-width: 1200px) {
-  .header .contactForm form .namesAndSubject .names .firstName {
+@media (min-width: 1100px) and (max-width: 1200px) {
+  .container .header .contactForm form .namesAndSubject .names .firstName {
     height: 2rem;
     font-size: 9pt;
   }
 }
 @media (min-width: 1200px) and (max-width: 1300px) {
-  .header .contactForm form .namesAndSubject .names .firstName {
+  .container .header .contactForm form .namesAndSubject .names .firstName {
     height: 2.3rem;
     font-size: 9pt;
   }
 }
-.header .contactForm form .namesAndSubject .names .lastName {
+.container .header .contactForm form .namesAndSubject .names .lastName {
   width: 46%;
   height: 3rem;
   padding: 0.5rem;
   align-self: center;
-  border: 0.1rem solid #4f4d41;
+  border: 0.1rem solid #4b493d;
   border-radius: 0.5rem;
   background-color: #2a2a2a;
 }
-.header .contactForm form .namesAndSubject .names .lastName:focus:where(input[type=text],
+.container .header .contactForm form .namesAndSubject .names .lastName:focus:where(input[type=text],
 input[type=search],
 input[type=password],
 input[type=url],
@@ -1195,42 +1287,42 @@ input[type=email]) {
   border-style: solid;
   outline: none;
 }
-.header .contactForm form .namesAndSubject .names .lastName::placeholder {
+.container .header .contactForm form .namesAndSubject .names .lastName::placeholder {
   color: #a6a6a6;
 }
 @media (min-width: 300px) and (max-width: 400px) {
-  .header .contactForm form .namesAndSubject .names .lastName {
+  .container .header .contactForm form .namesAndSubject .names .lastName {
     height: 2.5rem;
   }
 }
-@media (min-width: 1023px) and (max-width: 1099px) {
-  .header .contactForm form .namesAndSubject .names .lastName {
+@media (min-width: 1023px) and (max-width: 1100px) {
+  .container .header .contactForm form .namesAndSubject .names .lastName {
     height: 2rem;
     font-size: 8.2pt;
   }
 }
-@media (min-width: 1099px) and (max-width: 1200px) {
-  .header .contactForm form .namesAndSubject .names .lastName {
+@media (min-width: 1100px) and (max-width: 1200px) {
+  .container .header .contactForm form .namesAndSubject .names .lastName {
     height: 2rem;
     font-size: 9pt;
   }
 }
 @media (min-width: 1200px) and (max-width: 1300px) {
-  .header .contactForm form .namesAndSubject .names .lastName {
+  .container .header .contactForm form .namesAndSubject .names .lastName {
     height: 2.3rem;
     font-size: 9pt;
   }
 }
-.header .contactForm form .namesAndSubject .subject {
+.container .header .contactForm form .namesAndSubject .subject {
   width: 95%;
   height: 3rem;
   padding: 0.5rem;
   align-self: center;
-  border: 0.1rem solid #4f4d41;
+  border: 0.1rem solid #4b493d;
   border-radius: 0.5rem;
   background-color: #2a2a2a;
 }
-.header .contactForm form .namesAndSubject .subject:focus:where(input[type=text],
+.container .header .contactForm form .namesAndSubject .subject:focus:where(input[type=text],
 input[type=search],
 input[type=password],
 input[type=url],
@@ -1239,42 +1331,42 @@ input[type=email]) {
   border-style: solid;
   outline: none;
 }
-.header .contactForm form .namesAndSubject .subject::placeholder {
+.container .header .contactForm form .namesAndSubject .subject::placeholder {
   color: #a6a6a6;
 }
 @media (min-width: 300px) and (max-width: 400px) {
-  .header .contactForm form .namesAndSubject .subject {
+  .container .header .contactForm form .namesAndSubject .subject {
     height: 2.5rem;
   }
 }
-@media (min-width: 1023px) and (max-width: 1099px) {
-  .header .contactForm form .namesAndSubject .subject {
+@media (min-width: 1023px) and (max-width: 1100px) {
+  .container .header .contactForm form .namesAndSubject .subject {
     height: 2rem;
     font-size: 8.2pt;
   }
 }
-@media (min-width: 1099px) and (max-width: 1200px) {
-  .header .contactForm form .namesAndSubject .subject {
+@media (min-width: 1100px) and (max-width: 1200px) {
+  .container .header .contactForm form .namesAndSubject .subject {
     height: 2rem;
     font-size: 9pt;
   }
 }
 @media (min-width: 1200px) and (max-width: 1300px) {
-  .header .contactForm form .namesAndSubject .subject {
+  .container .header .contactForm form .namesAndSubject .subject {
     height: 2.3rem;
     font-size: 9pt;
   }
 }
-.header .contactForm form .email {
+.container .header .contactForm form .email {
   width: 95%;
   height: 3rem;
   padding: 0.5rem;
   align-self: center;
-  border: 0.1rem solid #4f4d41;
+  border: 0.1rem solid #4b493d;
   border-radius: 0.5rem;
   background-color: #2a2a2a;
 }
-.header .contactForm form .email:focus:where(input[type=text],
+.container .header .contactForm form .email:focus:where(input[type=text],
 input[type=search],
 input[type=password],
 input[type=url],
@@ -1283,74 +1375,74 @@ input[type=email]) {
   border-style: solid;
   outline: none;
 }
-.header .contactForm form .email::placeholder {
+.container .header .contactForm form .email::placeholder {
   color: #a6a6a6;
 }
 @media (min-width: 300px) and (max-width: 400px) {
-  .header .contactForm form .email {
+  .container .header .contactForm form .email {
     height: 2.5rem;
   }
 }
-@media (min-width: 1023px) and (max-width: 1099px) {
-  .header .contactForm form .email {
+@media (min-width: 1023px) and (max-width: 1100px) {
+  .container .header .contactForm form .email {
     height: 2rem;
     font-size: 8.2pt;
   }
 }
-@media (min-width: 1099px) and (max-width: 1200px) {
-  .header .contactForm form .email {
+@media (min-width: 1100px) and (max-width: 1200px) {
+  .container .header .contactForm form .email {
     height: 2rem;
     font-size: 9pt;
   }
 }
 @media (min-width: 1200px) and (max-width: 1300px) {
-  .header .contactForm form .email {
+  .container .header .contactForm form .email {
     height: 2.3rem;
     font-size: 9pt;
   }
 }
-.header .contactForm form .textArea {
+.container .header .contactForm form .textArea {
   width: 95%;
   height: 10rem;
   padding: 0.5rem;
   align-self: center;
-  border: 0.1rem solid #4f4d41;
+  border: 0.1rem solid #4b493d;
   border-radius: 0.5rem;
   background-color: #2a2a2a;
   resize: none;
 }
-.header .contactForm form .textArea:focus:where(textarea) {
+.container .header .contactForm form .textArea:focus:where(textarea) {
   appearance: none;
   border-style: solid;
   outline: none;
 }
-.header .contactForm form .textArea::placeholder {
+.container .header .contactForm form .textArea::placeholder {
   color: #a6a6a6;
 }
 @media (min-width: 300px) and (max-width: 400px) {
-  .header .contactForm form .textArea {
+  .container .header .contactForm form .textArea {
     height: 8rem;
   }
 }
-@media (min-width: 1023px) and (max-width: 1099px) {
-  .header .contactForm form .textArea {
+@media (min-width: 1023px) and (max-width: 1100px) {
+  .container .header .contactForm form .textArea {
     height: 5.5rem;
     font-size: 9pt;
   }
 }
-@media (min-width: 1099px) and (max-width: 1200px) {
-  .header .contactForm form .textArea {
+@media (min-width: 1100px) and (max-width: 1200px) {
+  .container .header .contactForm form .textArea {
     height: 6.5rem;
     font-size: 10pt;
   }
 }
 @media (min-width: 1200px) and (max-width: 1300px) {
-  .header .contactForm form .textArea {
+  .container .header .contactForm form .textArea {
     height: 6.8rem;
     font-size: 10pt;
   }
 }
-.header .contactForm form .buttons {
+.container .header .contactForm form .buttons {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -1360,32 +1452,32 @@ input[type=email]) {
   top: 22.7rem;
 }
 @media (min-width: 300px) and (max-width: 400px) {
-  .header .contactForm form .buttons {
+  .container .header .contactForm form .buttons {
     margin-top: 0.4rem;
     position: unset;
     font-size: 9pt;
   }
 }
-@media (min-width: 1023px) and (max-width: 1099px) {
-  .header .contactForm form .buttons {
+@media (min-width: 1023px) and (max-width: 1100px) {
+  .container .header .contactForm form .buttons {
     top: 13.7rem;
   }
 }
-@media (min-width: 1099px) and (max-width: 1200px) {
-  .header .contactForm form .buttons {
+@media (min-width: 1100px) and (max-width: 1200px) {
+  .container .header .contactForm form .buttons {
     top: 15.6rem;
   }
 }
 @media (min-width: 1200px) and (max-width: 1300px) {
-  .header .contactForm form .buttons {
+  .container .header .contactForm form .buttons {
     top: 17.2rem;
   }
 }
-.header .contactForm form .buttons .send {
+.container .header .contactForm form .buttons .send {
   width: 7rem;
   height: 2.5rem;
   align-self: center;
-  background-color: #635445;
+  background-color: #5c4f43;
   border: none;
   border-radius: 0.5rem;
   font-size: 10pt;
@@ -1403,66 +1495,66 @@ input[type=email]) {
     opacity: 1;
   }
 }
-.header .contactForm form .buttons .send:hover {
-  background-color: #4f4d41;
+.container .header .contactForm form .buttons .send:hover {
+  background-color: #4b493d;
 }
 @media (min-width: 300px) and (max-width: 400px) {
-  .header .contactForm form .buttons .send {
+  .container .header .contactForm form .buttons .send {
     width: 6rem;
     height: 2.3rem;
     font-size: 9pt;
   }
 }
 @media (min-width: 400px) and (max-width: 600px) {
-  .header .contactForm form .buttons .send {
+  .container .header .contactForm form .buttons .send {
     bottom: -19.375rem;
   }
 }
 @media (min-width: 600px) and (max-width: 700px) {
-  .header .contactForm form .buttons .send {
+  .container .header .contactForm form .buttons .send {
     bottom: -19rem;
   }
 }
 @media (width: 700px) {
-  .header .contactForm form .buttons .send {
+  .container .header .contactForm form .buttons .send {
     width: 6rem;
     font-size: 9pt;
     bottom: 0 !important;
   }
 }
 @media (min-width: 700px) and (max-width: 767px) {
-  .header .contactForm form .buttons .send {
+  .container .header .contactForm form .buttons .send {
     width: 6rem;
     font-size: 9pt;
   }
 }
 @media (min-width: 300px) and (max-width: 1023px) {
-  .header .contactForm form .buttons .send {
+  .container .header .contactForm form .buttons .send {
     cursor: default;
   }
 }
-@media (min-width: 1023px) and (max-width: 1099px) {
-  .header .contactForm form .buttons .send {
+@media (min-width: 1023px) and (max-width: 1100px) {
+  .container .header .contactForm form .buttons .send {
     width: 4.7rem;
     height: 1.8rem;
     font-size: 7.4pt;
   }
 }
-@media (min-width: 1099px) and (max-width: 1200px) {
-  .header .contactForm form .buttons .send {
+@media (min-width: 1100px) and (max-width: 1200px) {
+  .container .header .contactForm form .buttons .send {
     width: 5.1rem;
     height: 1.9rem;
     font-size: 8pt;
   }
 }
 @media (min-width: 1200px) and (max-width: 1300px) {
-  .header .contactForm form .buttons .send {
+  .container .header .contactForm form .buttons .send {
     width: 5.5rem;
     height: 2rem;
     font-size: 8pt;
   }
 }
-.header .contactForm form .buttons .sendDisabled {
+.container .header .contactForm form .buttons .sendDisabled {
   width: 7rem;
   height: 2.5rem;
   align-self: center;
@@ -1484,57 +1576,57 @@ input[type=email]) {
   }
 }
 @media (min-width: 300px) and (max-width: 400px) {
-  .header .contactForm form .buttons .sendDisabled {
+  .container .header .contactForm form .buttons .sendDisabled {
     width: 6rem;
     height: 2.3rem;
     font-size: 9pt;
   }
 }
 @media (min-width: 400px) and (max-width: 600px) {
-  .header .contactForm form .buttons .sendDisabled {
+  .container .header .contactForm form .buttons .sendDisabled {
     bottom: -19.375rem;
   }
 }
 @media (min-width: 600px) and (max-width: 700px) {
-  .header .contactForm form .buttons .sendDisabled {
+  .container .header .contactForm form .buttons .sendDisabled {
     bottom: -19rem;
   }
 }
 @media (width: 700px) {
-  .header .contactForm form .buttons .sendDisabled {
+  .container .header .contactForm form .buttons .sendDisabled {
     width: 6rem;
     font-size: 9pt;
     bottom: 0 !important;
   }
 }
 @media (min-width: 700px) and (max-width: 767px) {
-  .header .contactForm form .buttons .sendDisabled {
+  .container .header .contactForm form .buttons .sendDisabled {
     width: 6rem;
     font-size: 9pt;
   }
 }
-@media (min-width: 1023px) and (max-width: 1099px) {
-  .header .contactForm form .buttons .sendDisabled {
+@media (min-width: 1023px) and (max-width: 1100px) {
+  .container .header .contactForm form .buttons .sendDisabled {
     width: 4.7rem;
     height: 1.8rem;
     font-size: 7.4pt;
   }
 }
-@media (min-width: 1099px) and (max-width: 1200px) {
-  .header .contactForm form .buttons .sendDisabled {
+@media (min-width: 1100px) and (max-width: 1200px) {
+  .container .header .contactForm form .buttons .sendDisabled {
     width: 5.1rem;
     height: 1.9rem;
     font-size: 8pt;
   }
 }
 @media (min-width: 1200px) and (max-width: 1300px) {
-  .header .contactForm form .buttons .sendDisabled {
+  .container .header .contactForm form .buttons .sendDisabled {
     width: 5.5rem;
     height: 2rem;
     font-size: 8pt;
   }
 }
-.header .contactForm form .buttons .reset {
+.container .header .contactForm form .buttons .reset {
   width: 7rem;
   height: 2.5rem;
   align-self: center;
@@ -1556,156 +1648,63 @@ input[type=email]) {
     opacity: 1;
   }
 }
-.header .contactForm form .buttons .reset:hover {
+.container .header .contactForm form .buttons .reset:hover {
   background-color: #722f26;
 }
 @media (min-width: 300px) and (max-width: 400px) {
-  .header .contactForm form .buttons .reset {
+  .container .header .contactForm form .buttons .reset {
     width: 6rem;
     height: 2.3rem;
     font-size: 9pt;
   }
 }
 @media (min-width: 400px) and (max-width: 600px) {
-  .header .contactForm form .buttons .reset {
+  .container .header .contactForm form .buttons .reset {
     bottom: -19.375rem;
   }
 }
 @media (min-width: 600px) and (max-width: 700px) {
-  .header .contactForm form .buttons .reset {
+  .container .header .contactForm form .buttons .reset {
     bottom: -19rem;
   }
 }
 @media (width: 700px) {
-  .header .contactForm form .buttons .reset {
+  .container .header .contactForm form .buttons .reset {
     width: 6rem;
     font-size: 9pt;
     bottom: 0 !important;
   }
 }
 @media (min-width: 700px) and (max-width: 767px) {
-  .header .contactForm form .buttons .reset {
+  .container .header .contactForm form .buttons .reset {
     width: 6rem;
     font-size: 9pt;
   }
 }
 @media (min-width: 300px) and (max-width: 1023px) {
-  .header .contactForm form .buttons .reset {
+  .container .header .contactForm form .buttons .reset {
     cursor: default;
   }
 }
-@media (min-width: 1023px) and (max-width: 1099px) {
-  .header .contactForm form .buttons .reset {
+@media (min-width: 1023px) and (max-width: 1100px) {
+  .container .header .contactForm form .buttons .reset {
     width: 4.7rem;
     height: 1.8rem;
     font-size: 7.4pt;
   }
 }
-@media (min-width: 1099px) and (max-width: 1200px) {
-  .header .contactForm form .buttons .reset {
+@media (min-width: 1100px) and (max-width: 1200px) {
+  .container .header .contactForm form .buttons .reset {
     width: 5.1rem;
     height: 1.9rem;
     font-size: 8pt;
   }
 }
 @media (min-width: 1200px) and (max-width: 1300px) {
-  .header .contactForm form .buttons .reset {
+  .container .header .contactForm form .buttons .reset {
     width: 5.5rem;
     height: 2rem;
     font-size: 8pt;
-  }
-}
-
-.container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  row-gap: 1rem;
-  width: 100%;
-  height: 100dvh;
-  padding: 1rem;
-  position: relative;
-  scroll-behavior: smooth;
-}
-@media (min-width: 300px) and (max-width: 600px) {
-  .container {
-    height: auto;
-    overflow-x: hidden;
-  }
-}
-@media (min-width: 1023px) and (max-width: 1099px) {
-  .container {
-    row-gap: 0.4rem;
-  }
-}
-@media (orientation: portrait) and (min-width: 1023px) and (max-width: 1099px) {
-  .container {
-    row-gap: 1.2rem;
-  }
-}
-@media (min-width: 1099px) and (max-width: 1200px) {
-  .container {
-    row-gap: 0.5rem;
-  }
-}
-@media (min-width: 1200px) and (max-width: 1300px) {
-  .container {
-    row-gap: 0.8rem;
-  }
-}
-@media (orientation: landscape) and (max-width: 1023px) and (max-height: 1550px) {
-  .container {
-    height: auto;
-  }
-}
-@media (orientation: landscape) and (min-width: 1023px) and (max-width: 1099px) and (min-height: 449px) {
-  .container {
-    height: 100dvh;
-  }
-}
-@media (orientation: landscape) and (min-width: 1023px) and (max-width: 1099px) and (max-height: 449px) {
-  .container {
-    height: auto;
-  }
-}
-@media (orientation: landscape) and (min-width: 1099px) and (max-width: 1200px) and (min-height: 503px) {
-  .container {
-    height: 100dvh;
-  }
-}
-@media (orientation: landscape) and (min-width: 1099px) and (max-width: 1200px) and (max-height: 503px) {
-  .container {
-    height: auto;
-  }
-}
-@media (orientation: landscape) and (min-width: 1200px) and (max-width: 1300px) and (min-height: 558px) {
-  .container {
-    height: 100dvh;
-  }
-}
-@media (orientation: landscape) and (min-width: 1200px) and (max-width: 1300px) and (max-height: 558px) {
-  .container {
-    height: auto;
-  }
-}
-@media (orientation: landscape) and (min-width: 1400px) and (max-width: 1500px) and (min-height: 749px) {
-  .container {
-    height: 100dvh;
-  }
-}
-@media (orientation: landscape) and (min-width: 1400px) and (max-width: 1500px) and (max-height: 749px) {
-  .container {
-    height: auto;
-  }
-}
-@media (orientation: portrait) and (min-width: 1099px) and (min-height: 1500px) {
-  .container {
-    height: 100dvh;
-  }
-}
-@media (orientation: portrait) and (max-width: 1099px) and (max-height: 1500px) {
-  .container {
-    height: auto;
   }
 }
 .container .mainContent {
@@ -1728,18 +1727,18 @@ input[type=email]) {
     row-gap: 1rem;
   }
 }
-@media (min-width: 1023px) and (max-width: 1099px) {
+@media (min-width: 1023px) and (max-width: 1100px) {
   .container .mainContent {
     column-gap: 0.4rem;
   }
 }
-@media (orientation: portrait) and (min-width: 1023px) and (max-width: 1099px) {
+@media (orientation: portrait) and (min-width: 1023px) and (max-width: 1100px) {
   .container .mainContent {
     flex-direction: column;
     row-gap: 1.2rem;
   }
 }
-@media (min-width: 1099px) and (max-width: 1200px) {
+@media (min-width: 1100px) and (max-width: 1200px) {
   .container .mainContent {
     column-gap: 0.5rem;
   }
@@ -1761,18 +1760,18 @@ input[type=email]) {
     width: 100%;
   }
 }
-@media (min-width: 1023px) and (max-width: 1099px) {
+@media (min-width: 1023px) and (max-width: 1100px) {
   .container .mainContent .leftOrUpperPart {
     row-gap: 0.6rem;
   }
 }
-@media (orientation: portrait) and (min-width: 1023px) and (max-width: 1099px) {
+@media (orientation: portrait) and (min-width: 1023px) and (max-width: 1100px) {
   .container .mainContent .leftOrUpperPart {
     row-gap: 1.2rem;
     width: 100%;
   }
 }
-@media (min-width: 1099px) and (max-width: 1200px) {
+@media (min-width: 1100px) and (max-width: 1200px) {
   .container .mainContent .leftOrUpperPart {
     row-gap: 0.6rem;
   }
@@ -1789,17 +1788,17 @@ input[type=email]) {
   width: 100%;
   height: auto;
 }
-@media (min-width: 1023px) and (max-width: 1099px) {
+@media (min-width: 1023px) and (max-width: 1100px) {
   .container .mainContent .leftOrUpperPart .leftOrUpperPartContainer {
     row-gap: 0.4rem;
   }
 }
-@media (orientation: portrait) and (min-width: 1023px) and (max-width: 1099px) {
+@media (orientation: portrait) and (min-width: 1023px) and (max-width: 1100px) {
   .container .mainContent .leftOrUpperPart .leftOrUpperPartContainer {
     row-gap: 1.2rem;
   }
 }
-@media (min-width: 1099px) and (max-width: 1200px) {
+@media (min-width: 1100px) and (max-width: 1200px) {
   .container .mainContent .leftOrUpperPart .leftOrUpperPartContainer {
     row-gap: 0.5rem;
   }
@@ -1825,17 +1824,17 @@ input[type=email]) {
     flex-direction: row;
   }
 }
-@media (min-width: 1023px) and (max-width: 1099px) {
+@media (min-width: 1023px) and (max-width: 1100px) {
   .container .mainContent .leftOrUpperPart .leftOrUpperPartContainer .aboutMeAndImage {
     column-gap: 1.4%;
   }
 }
-@media (orientation: portrait) and (min-width: 1023px) and (max-width: 1099px) {
+@media (orientation: portrait) and (min-width: 1023px) and (max-width: 1100px) {
   .container .mainContent .leftOrUpperPart .leftOrUpperPartContainer .aboutMeAndImage {
     column-gap: 2%;
   }
 }
-@media (min-width: 1099px) and (max-width: 1200px) {
+@media (min-width: 1100px) and (max-width: 1200px) {
   .container .mainContent .leftOrUpperPart .leftOrUpperPartContainer .aboutMeAndImage {
     column-gap: 1.5%;
   }
@@ -1854,7 +1853,7 @@ input[type=email]) {
   padding: 2rem;
   position: relative;
   border-radius: 0.5rem;
-  background-color: #635445;
+  background-color: #5c4f43;
   animation: aboutMe 0.5s linear;
   animation-iteration-count: 1;
 }
@@ -1953,7 +1952,7 @@ input[type=email]) {
     padding: 0.8rem;
   }
 }
-@media (min-width: 1050px) and (max-width: 1099px) {
+@media (min-width: 1050px) and (max-width: 1100px) {
   .container .mainContent .leftOrUpperPart .leftOrUpperPartContainer .aboutMeAndImage .aboutMe {
     row-gap: 0.7rem;
     width: 66.3%;
@@ -1961,7 +1960,7 @@ input[type=email]) {
     padding: 0.8rem;
   }
 }
-@media (orientation: portrait) and (min-width: 1023px) and (max-width: 1099px) {
+@media (orientation: portrait) and (min-width: 1023px) and (max-width: 1100px) {
   .container .mainContent .leftOrUpperPart .leftOrUpperPartContainer .aboutMeAndImage .aboutMe {
     row-gap: 2.5rem;
     width: 64%;
@@ -1969,7 +1968,7 @@ input[type=email]) {
     padding: 4rem 2rem;
   }
 }
-@media (min-width: 1099px) and (max-width: 1200px) {
+@media (min-width: 1100px) and (max-width: 1200px) {
   .container .mainContent .leftOrUpperPart .leftOrUpperPartContainer .aboutMeAndImage .aboutMe {
     row-gap: 0.7rem;
     width: 68.25%;
@@ -2024,17 +2023,17 @@ input[type=email]) {
     font-size: 16pt;
   }
 }
-@media (min-width: 1023px) and (max-width: 1099px) {
+@media (min-width: 1023px) and (max-width: 1100px) {
   .container .mainContent .leftOrUpperPart .leftOrUpperPartContainer .aboutMeAndImage .aboutMe .title {
     font-size: 10pt;
   }
 }
-@media (orientation: portrait) and (min-width: 1023px) and (max-width: 1099px) {
+@media (orientation: portrait) and (min-width: 1023px) and (max-width: 1100px) {
   .container .mainContent .leftOrUpperPart .leftOrUpperPartContainer .aboutMeAndImage .aboutMe .title {
     font-size: 16pt;
   }
 }
-@media (min-width: 1099px) and (max-width: 1200px) {
+@media (min-width: 1100px) and (max-width: 1200px) {
   .container .mainContent .leftOrUpperPart .leftOrUpperPartContainer .aboutMeAndImage .aboutMe .title {
     font-size: 11pt;
   }
@@ -2135,7 +2134,7 @@ input[type=email]) {
     line-height: 2.2rem;
   }
 }
-@media (min-width: 1023px) and (max-width: 1099px) {
+@media (min-width: 1023px) and (max-width: 1100px) {
   .container .mainContent .leftOrUpperPart .leftOrUpperPartContainer .aboutMeAndImage .aboutMe .aboutMeDescription {
     font-size: 8.2pt;
     line-height: 0.95rem;
@@ -2147,13 +2146,13 @@ input[type=email]) {
     line-height: 2.2rem;
   }
 }
-@media (orientation: portrait) and (min-width: 1057px) and (max-width: 1099px) {
+@media (orientation: portrait) and (min-width: 1057px) and (max-width: 1100px) {
   .container .mainContent .leftOrUpperPart .leftOrUpperPartContainer .aboutMeAndImage .aboutMe .aboutMeDescription {
     font-size: 11.5pt;
     line-height: 2.2rem;
   }
 }
-@media (min-width: 1099px) and (max-width: 1200px) {
+@media (min-width: 1100px) and (max-width: 1200px) {
   .container .mainContent .leftOrUpperPart .leftOrUpperPartContainer .aboutMeAndImage .aboutMe .aboutMeDescription {
     font-size: 9pt;
     line-height: 1.1rem;
@@ -2415,19 +2414,19 @@ input[type=email]) {
     height: 11.1rem;
   }
 }
-@media (min-width: 1050px) and (max-width: 1099px) {
+@media (min-width: 1050px) and (max-width: 1100px) {
   .container .mainContent .leftOrUpperPart .leftOrUpperPartContainer .aboutMeAndImage .regularImg {
     width: 32.3%;
     height: 11.1rem;
   }
 }
-@media (orientation: portrait) and (min-width: 1023px) and (max-width: 1099px) {
+@media (orientation: portrait) and (min-width: 1023px) and (max-width: 1100px) {
   .container .mainContent .leftOrUpperPart .leftOrUpperPartContainer .aboutMeAndImage .regularImg {
     width: 34%;
     height: 25rem;
   }
 }
-@media (min-width: 1099px) and (max-width: 1200px) {
+@media (min-width: 1100px) and (max-width: 1200px) {
   .container .mainContent .leftOrUpperPart .leftOrUpperPartContainer .aboutMeAndImage .regularImg {
     width: 30.25%;
     height: 12.5rem;
@@ -2506,17 +2505,17 @@ input[type=email]) {
     flex-direction: row-reverse;
   }
 }
-@media (min-width: 1023px) and (max-width: 1099px) {
+@media (min-width: 1023px) and (max-width: 1100px) {
   .container .mainContent .leftOrUpperPart .leftOrUpperPartContainer .skillsAndEducation {
     column-gap: 1.4%;
   }
 }
-@media (orientation: portrait) and (min-width: 1023px) and (max-width: 1099px) {
+@media (orientation: portrait) and (min-width: 1023px) and (max-width: 1100px) {
   .container .mainContent .leftOrUpperPart .leftOrUpperPartContainer .skillsAndEducation {
     column-gap: 2%;
   }
 }
-@media (min-width: 1099px) and (max-width: 1200px) {
+@media (min-width: 1100px) and (max-width: 1200px) {
   .container .mainContent .leftOrUpperPart .leftOrUpperPartContainer .skillsAndEducation {
     column-gap: 1.5%;
   }
@@ -2540,7 +2539,7 @@ input[type=email]) {
   padding: 2rem;
   position: relative;
   border-radius: 0.5rem;
-  background-color: #635445;
+  background-color: #5c4f43;
   animation: skills 0.5s linear;
   animation-iteration-count: 1;
 }
@@ -2622,7 +2621,7 @@ input[type=email]) {
     padding: 3rem 2rem;
   }
 }
-@media (min-width: 1023px) and (max-width: 1099px) {
+@media (min-width: 1023px) and (max-width: 1100px) {
   .container .mainContent .leftOrUpperPart .leftOrUpperPartContainer .skillsAndEducation .skills {
     row-gap: 0.6rem;
     width: 49.3%;
@@ -2630,7 +2629,7 @@ input[type=email]) {
     padding: 0.8rem;
   }
 }
-@media (orientation: portrait) and (min-width: 1023px) and (max-width: 1099px) {
+@media (orientation: portrait) and (min-width: 1023px) and (max-width: 1100px) {
   .container .mainContent .leftOrUpperPart .leftOrUpperPartContainer .skillsAndEducation .skills {
     row-gap: 1.5rem;
     width: 49%;
@@ -2638,7 +2637,7 @@ input[type=email]) {
     padding: 2.8rem 2rem;
   }
 }
-@media (min-width: 1099px) and (max-width: 1200px) {
+@media (min-width: 1100px) and (max-width: 1200px) {
   .container .mainContent .leftOrUpperPart .leftOrUpperPartContainer .skillsAndEducation .skills {
     row-gap: 0.8rem;
     width: 49.25%;
@@ -2698,17 +2697,17 @@ input[type=email]) {
     font-size: 16pt;
   }
 }
-@media (min-width: 1023px) and (max-width: 1099px) {
+@media (min-width: 1023px) and (max-width: 1100px) {
   .container .mainContent .leftOrUpperPart .leftOrUpperPartContainer .skillsAndEducation .skills .titleAndButton .title {
     font-size: 10pt;
   }
 }
-@media (orientation: portrait) and (min-width: 1023px) and (max-width: 1099px) {
+@media (orientation: portrait) and (min-width: 1023px) and (max-width: 1100px) {
   .container .mainContent .leftOrUpperPart .leftOrUpperPartContainer .skillsAndEducation .skills .titleAndButton .title {
     font-size: 16pt;
   }
 }
-@media (min-width: 1099px) and (max-width: 1200px) {
+@media (min-width: 1100px) and (max-width: 1200px) {
   .container .mainContent .leftOrUpperPart .leftOrUpperPartContainer .skillsAndEducation .skills .titleAndButton .title {
     font-size: 11pt;
   }
@@ -2736,7 +2735,7 @@ input[type=email]) {
   transition: all 0.2s ease;
 }
 .container .mainContent .leftOrUpperPart .leftOrUpperPartContainer .skillsAndEducation .skills .titleAndButton .fluency:hover {
-  background-color: #4f4d41;
+  background-color: #4b493d;
 }
 @media (min-width: 300px) and (max-width: 350px) {
   .container .mainContent .leftOrUpperPart .leftOrUpperPartContainer .skillsAndEducation .skills .titleAndButton .fluency {
@@ -2782,21 +2781,21 @@ input[type=email]) {
     cursor: default;
   }
 }
-@media (min-width: 1023px) and (max-width: 1099px) {
+@media (min-width: 1023px) and (max-width: 1100px) {
   .container .mainContent .leftOrUpperPart .leftOrUpperPartContainer .skillsAndEducation .skills .titleAndButton .fluency {
     width: 4.7rem;
     height: 1.8rem;
     font-size: 7.4pt;
   }
 }
-@media (orientation: portrait) and (min-width: 1023px) and (max-width: 1099px) {
+@media (orientation: portrait) and (min-width: 1023px) and (max-width: 1100px) {
   .container .mainContent .leftOrUpperPart .leftOrUpperPartContainer .skillsAndEducation .skills .titleAndButton .fluency {
     width: 7rem;
     height: 2.5rem;
     font-size: 10pt;
   }
 }
-@media (min-width: 1099px) and (max-width: 1200px) {
+@media (min-width: 1100px) and (max-width: 1200px) {
   .container .mainContent .leftOrUpperPart .leftOrUpperPartContainer .skillsAndEducation .skills .titleAndButton .fluency {
     width: 5.1rem;
     height: 1.9rem;
@@ -2864,19 +2863,19 @@ input[type=email]) {
     line-height: 1.55rem;
   }
 }
-@media (min-width: 1023px) and (max-width: 1099px) {
+@media (min-width: 1023px) and (max-width: 1100px) {
   .container .mainContent .leftOrUpperPart .leftOrUpperPartContainer .skillsAndEducation .skills .skillsDescription {
     font-size: 8.2pt;
     line-height: 0.95rem;
   }
 }
-@media (orientation: portrait) and (min-width: 1023px) and (max-width: 1099px) {
+@media (orientation: portrait) and (min-width: 1023px) and (max-width: 1100px) {
   .container .mainContent .leftOrUpperPart .leftOrUpperPartContainer .skillsAndEducation .skills .skillsDescription {
     font-size: 11.5pt;
     line-height: 1.7rem;
   }
 }
-@media (min-width: 1099px) and (max-width: 1200px) {
+@media (min-width: 1100px) and (max-width: 1200px) {
   .container .mainContent .leftOrUpperPart .leftOrUpperPartContainer .skillsAndEducation .skills .skillsDescription {
     font-size: 9pt;
     line-height: 1.1rem;
@@ -2918,7 +2917,7 @@ input[type=email]) {
   padding: 2rem;
   position: relative;
   border-radius: 0.5rem;
-  background-color: #4f4d41;
+  background-color: #4b493d;
   animation: education 0.5s linear;
   animation-iteration-count: 1;
 }
@@ -3007,7 +3006,7 @@ input[type=email]) {
     padding: 3rem 2rem;
   }
 }
-@media (min-width: 1023px) and (max-width: 1099px) {
+@media (min-width: 1023px) and (max-width: 1100px) {
   .container .mainContent .leftOrUpperPart .leftOrUpperPartContainer .skillsAndEducation .education {
     row-gap: 0.6rem;
     width: 49.3%;
@@ -3015,7 +3014,7 @@ input[type=email]) {
     padding: 0.8rem;
   }
 }
-@media (orientation: portrait) and (min-width: 1023px) and (max-width: 1099px) {
+@media (orientation: portrait) and (min-width: 1023px) and (max-width: 1100px) {
   .container .mainContent .leftOrUpperPart .leftOrUpperPartContainer .skillsAndEducation .education {
     row-gap: 1.5rem;
     width: 49%;
@@ -3023,7 +3022,7 @@ input[type=email]) {
     padding: 2.8rem 2rem;
   }
 }
-@media (min-width: 1099px) and (max-width: 1200px) {
+@media (min-width: 1100px) and (max-width: 1200px) {
   .container .mainContent .leftOrUpperPart .leftOrUpperPartContainer .skillsAndEducation .education {
     row-gap: 0.8rem;
     width: 49.25%;
@@ -3083,17 +3082,17 @@ input[type=email]) {
     font-size: 16pt;
   }
 }
-@media (min-width: 1023px) and (max-width: 1099px) {
+@media (min-width: 1023px) and (max-width: 1100px) {
   .container .mainContent .leftOrUpperPart .leftOrUpperPartContainer .skillsAndEducation .education .titleAndButton .title {
     font-size: 10pt;
   }
 }
-@media (orientation: portrait) and (min-width: 1023px) and (max-width: 1099px) {
+@media (orientation: portrait) and (min-width: 1023px) and (max-width: 1100px) {
   .container .mainContent .leftOrUpperPart .leftOrUpperPartContainer .skillsAndEducation .education .titleAndButton .title {
     font-size: 16pt;
   }
 }
-@media (min-width: 1099px) and (max-width: 1200px) {
+@media (min-width: 1100px) and (max-width: 1200px) {
   .container .mainContent .leftOrUpperPart .leftOrUpperPartContainer .skillsAndEducation .education .titleAndButton .title {
     font-size: 11pt;
   }
@@ -3121,7 +3120,7 @@ input[type=email]) {
   transition: all 0.2s ease;
 }
 .container .mainContent .leftOrUpperPart .leftOrUpperPartContainer .skillsAndEducation .education .titleAndButton .courses:hover {
-  background-color: #635445;
+  background-color: #5c4f43;
 }
 @media (min-width: 300px) and (max-width: 350px) {
   .container .mainContent .leftOrUpperPart .leftOrUpperPartContainer .skillsAndEducation .education .titleAndButton .courses {
@@ -3181,21 +3180,21 @@ input[type=email]) {
     cursor: default;
   }
 }
-@media (min-width: 1023px) and (max-width: 1099px) {
+@media (min-width: 1023px) and (max-width: 1100px) {
   .container .mainContent .leftOrUpperPart .leftOrUpperPartContainer .skillsAndEducation .education .titleAndButton .courses {
     width: 4.7rem;
     height: 1.8rem;
     font-size: 7.4pt;
   }
 }
-@media (orientation: portrait) and (min-width: 1023px) and (max-width: 1099px) {
+@media (orientation: portrait) and (min-width: 1023px) and (max-width: 1100px) {
   .container .mainContent .leftOrUpperPart .leftOrUpperPartContainer .skillsAndEducation .education .titleAndButton .courses {
     width: 7rem;
     height: 2.5rem;
     font-size: 10pt;
   }
 }
-@media (min-width: 1099px) and (max-width: 1200px) {
+@media (min-width: 1100px) and (max-width: 1200px) {
   .container .mainContent .leftOrUpperPart .leftOrUpperPartContainer .skillsAndEducation .education .titleAndButton .courses {
     width: 5.1rem;
     height: 1.9rem;
@@ -3225,7 +3224,7 @@ input[type=email]) {
     column-gap: 0.3rem;
   }
 }
-@media (orientation: portrait) and (min-width: 1023px) and (max-width: 1099px) {
+@media (orientation: portrait) and (min-width: 1023px) and (max-width: 1100px) {
   .container .mainContent .leftOrUpperPart .leftOrUpperPartContainer .skillsAndEducation .education .allInOneEducation .wrapper {
     column-gap: 0.3rem;
   }
@@ -3250,17 +3249,17 @@ input[type=email]) {
     font-size: 12pt;
   }
 }
-@media (min-width: 1023px) and (max-width: 1099px) {
+@media (min-width: 1023px) and (max-width: 1100px) {
   .container .mainContent .leftOrUpperPart .leftOrUpperPartContainer .skillsAndEducation .education .allInOneEducation .wrapper h4 {
     font-size: 8.5pt;
   }
 }
-@media (orientation: portrait) and (min-width: 1023px) and (max-width: 1099px) {
+@media (orientation: portrait) and (min-width: 1023px) and (max-width: 1100px) {
   .container .mainContent .leftOrUpperPart .leftOrUpperPartContainer .skillsAndEducation .education .allInOneEducation .wrapper h4 {
     font-size: 12pt;
   }
 }
-@media (min-width: 1099px) and (max-width: 1200px) {
+@media (min-width: 1100px) and (max-width: 1200px) {
   .container .mainContent .leftOrUpperPart .leftOrUpperPartContainer .skillsAndEducation .education .allInOneEducation .wrapper h4 {
     font-size: 9pt;
   }
@@ -3294,17 +3293,17 @@ input[type=email]) {
     font-size: 10pt;
   }
 }
-@media (min-width: 1023px) and (max-width: 1099px) {
+@media (min-width: 1023px) and (max-width: 1100px) {
   .container .mainContent .leftOrUpperPart .leftOrUpperPartContainer .skillsAndEducation .education .allInOneEducation .wrapper .location {
     font-size: 8pt;
   }
 }
-@media (orientation: portrait) and (min-width: 1023px) and (max-width: 1099px) {
+@media (orientation: portrait) and (min-width: 1023px) and (max-width: 1100px) {
   .container .mainContent .leftOrUpperPart .leftOrUpperPartContainer .skillsAndEducation .education .allInOneEducation .wrapper .location {
     font-size: 9.5pt;
   }
 }
-@media (min-width: 1099px) and (max-width: 1200px) {
+@media (min-width: 1100px) and (max-width: 1200px) {
   .container .mainContent .leftOrUpperPart .leftOrUpperPartContainer .skillsAndEducation .education .allInOneEducation .wrapper .location {
     font-size: 8.5pt;
   }
@@ -3348,17 +3347,17 @@ input[type=email]) {
     font-size: 11pt;
   }
 }
-@media (min-width: 1023px) and (max-width: 1099px) {
+@media (min-width: 1023px) and (max-width: 1100px) {
   .container .mainContent .leftOrUpperPart .leftOrUpperPartContainer .skillsAndEducation .education .allInOneEducation .degree {
     font-size: 8.1pt;
   }
 }
-@media (orientation: portrait) and (min-width: 1023px) and (max-width: 1099px) {
+@media (orientation: portrait) and (min-width: 1023px) and (max-width: 1100px) {
   .container .mainContent .leftOrUpperPart .leftOrUpperPartContainer .skillsAndEducation .education .allInOneEducation .degree {
     font-size: 10.5pt;
   }
 }
-@media (min-width: 1099px) and (max-width: 1200px) {
+@media (min-width: 1100px) and (max-width: 1200px) {
   .container .mainContent .leftOrUpperPart .leftOrUpperPartContainer .skillsAndEducation .education .allInOneEducation .degree {
     font-size: 8.5pt;
   }
@@ -3379,7 +3378,7 @@ input[type=email]) {
   animation-iteration-count: 1;
   background-color: #232323;
   border-radius: 0.5rem;
-  border: 0.1rem solid #4f4d41;
+  border: 0.1rem solid #4b493d;
   z-index: 1;
   filter: none;
 }
@@ -3431,7 +3430,7 @@ input[type=email]) {
   justify-content: space-between;
   align-items: center;
   padding: 0.8rem 2rem;
-  background-color: #635445;
+  background-color: #5c4f43;
   border-radius: 0.4rem 0.4rem 0 0;
 }
 @media (min-width: 300px) and (max-width: 400px) {
@@ -3468,17 +3467,17 @@ input[type=email]) {
     font-size: 16pt;
   }
 }
-@media (min-width: 1023px) and (max-width: 1099px) {
+@media (min-width: 1023px) and (max-width: 1100px) {
   .container .mainContent .leftOrUpperPart .skillList .titleAndButton h4 {
     font-size: 10pt;
   }
 }
-@media (orientation: portrait) and (min-width: 1023px) and (max-width: 1099px) {
+@media (orientation: portrait) and (min-width: 1023px) and (max-width: 1100px) {
   .container .mainContent .leftOrUpperPart .skillList .titleAndButton h4 {
     font-size: 16pt;
   }
 }
-@media (min-width: 1099px) and (max-width: 1200px) {
+@media (min-width: 1100px) and (max-width: 1200px) {
   .container .mainContent .leftOrUpperPart .skillList .titleAndButton h4 {
     font-size: 11pt;
   }
@@ -3507,7 +3506,7 @@ input[type=email]) {
   transition: all 0.2s ease;
 }
 .container .mainContent .leftOrUpperPart .skillList .titleAndButton .close:hover {
-  background-color: #4f4d41;
+  background-color: #4b493d;
 }
 @media (min-width: 300px) and (max-width: 350px) {
   .container .mainContent .leftOrUpperPart .skillList .titleAndButton .close {
@@ -3533,21 +3532,21 @@ input[type=email]) {
     cursor: default;
   }
 }
-@media (min-width: 1023px) and (max-width: 1099px) {
+@media (min-width: 1023px) and (max-width: 1100px) {
   .container .mainContent .leftOrUpperPart .skillList .titleAndButton .close {
     width: 4.7rem;
     height: 1.8rem;
     font-size: 7.4pt;
   }
 }
-@media (orientation: portrait) and (min-width: 1023px) and (max-width: 1099px) {
+@media (orientation: portrait) and (min-width: 1023px) and (max-width: 1100px) {
   .container .mainContent .leftOrUpperPart .skillList .titleAndButton .close {
     width: 7rem;
     height: 2.5rem;
     font-size: 10pt;
   }
 }
-@media (min-width: 1099px) and (max-width: 1200px) {
+@media (min-width: 1100px) and (max-width: 1200px) {
   .container .mainContent .leftOrUpperPart .skillList .titleAndButton .close {
     width: 5.1rem;
     height: 1.9rem;
@@ -3666,7 +3665,7 @@ input[type=email]) {
   position: absolute;
   left: 2rem;
   align-self: center;
-  background-color: #4f4d41;
+  background-color: #4b493d;
   border: none;
   border-radius: 0.5rem;
   font-size: 10pt;
@@ -3676,7 +3675,7 @@ input[type=email]) {
   transition: all 0.2s ease;
 }
 .container .mainContent .leftOrUpperPart .skillList .content .previous:hover {
-  background-color: #635445;
+  background-color: #5c4f43;
 }
 @media (min-width: 300px) and (max-width: 600px) {
   .container .mainContent .leftOrUpperPart .skillList .content .previous {
@@ -3744,7 +3743,7 @@ input[type=email]) {
     width: 45%;
   }
 }
-@media (min-width: 1023px) and (max-width: 1099px) {
+@media (min-width: 1023px) and (max-width: 1100px) {
   .container .mainContent .leftOrUpperPart .skillList .content .titleAndFluencies {
     width: 60%;
   }
@@ -3807,7 +3806,7 @@ input[type=email]) {
     width: 100%;
   }
 }
-@media (min-width: 1023px) and (max-width: 1099px) {
+@media (min-width: 1023px) and (max-width: 1100px) {
   .container .mainContent .leftOrUpperPart .skillList .content .titleAndFluencies .fluencyOne {
     flex-direction: row;
     column-gap: unset;
@@ -3834,7 +3833,7 @@ input[type=email]) {
   width: 10rem;
   height: 1.5rem;
   border-radius: 0.5rem;
-  background-color: #4f4d41;
+  background-color: #4b493d;
 }
 @media (min-width: 300px) and (max-width: 400px) {
   .container .mainContent .leftOrUpperPart .skillList .content .titleAndFluencies .fluencyOne .statusBar .bottom {
@@ -3847,19 +3846,19 @@ input[type=email]) {
   position: absolute;
   border-radius: 0.5rem;
   border: 0.1rem solid #656565;
-  background-color: #635445;
+  background-color: #5c4f43;
   animation: topOne 1s cubic-bezier(0.1, -0.6, 0.2, 0) 0s 3 alternate none;
   z-index: 1;
 }
 @keyframes topOne {
   from {
     width: 0rem;
-    background-color: #4f4d41;
+    background-color: #4b493d;
     opacity: 0;
   }
   to {
     width: 7.5rem;
-    background-color: #635445;
+    background-color: #5c4f43;
     opacity: 1;
   }
 }
@@ -3870,12 +3869,12 @@ input[type=email]) {
   @keyframes topOne {
     from {
       width: 0rem;
-      background-color: #4f4d41;
+      background-color: #4b493d;
       opacity: 0;
     }
     to {
       width: 6.5rem;
-      background-color: #635445;
+      background-color: #5c4f43;
       opacity: 1;
     }
   }
@@ -3930,7 +3929,7 @@ input[type=email]) {
     row-gap: 1.3rem;
   }
 }
-@media (min-width: 1023px) and (max-width: 1099px) {
+@media (min-width: 1023px) and (max-width: 1100px) {
   .container .mainContent .leftOrUpperPart .skillList .content .titleAndFluencies .fluencyTwo {
     flex-direction: row;
     column-gap: unset;
@@ -3957,7 +3956,7 @@ input[type=email]) {
   width: 10rem;
   height: 1.5rem;
   border-radius: 0.5rem;
-  background-color: #4f4d41;
+  background-color: #4b493d;
 }
 @media (min-width: 300px) and (max-width: 400px) {
   .container .mainContent .leftOrUpperPart .skillList .content .titleAndFluencies .fluencyTwo .statusBar .bottom {
@@ -3970,19 +3969,19 @@ input[type=email]) {
   position: absolute;
   border-radius: 0.5rem;
   border: 0.1rem solid #656565;
-  background-color: #635445;
+  background-color: #5c4f43;
   animation: topTwo 0.8s cubic-bezier(0.1, -0.6, 0.2, 0) 0s 3 alternate none;
   z-index: 1;
 }
 @keyframes topTwo {
   from {
     width: 0rem;
-    background-color: #4f4d41;
+    background-color: #4b493d;
     opacity: 0;
   }
   to {
     width: 8rem;
-    background-color: #635445;
+    background-color: #5c4f43;
     opacity: 1;
   }
 }
@@ -3993,12 +3992,12 @@ input[type=email]) {
   @keyframes topTwo {
     from {
       width: 0rem;
-      background-color: #4f4d41;
+      background-color: #4b493d;
       opacity: 0;
     }
     to {
       width: 7.1rem;
-      background-color: #635445;
+      background-color: #5c4f43;
       opacity: 1;
     }
   }
@@ -4053,7 +4052,7 @@ input[type=email]) {
     row-gap: 1.3rem;
   }
 }
-@media (min-width: 1023px) and (max-width: 1099px) {
+@media (min-width: 1023px) and (max-width: 1100px) {
   .container .mainContent .leftOrUpperPart .skillList .content .titleAndFluencies .fluencyThree {
     flex-direction: row;
     column-gap: unset;
@@ -4080,7 +4079,7 @@ input[type=email]) {
   width: 10rem;
   height: 1.5rem;
   border-radius: 0.5rem;
-  background-color: #4f4d41;
+  background-color: #4b493d;
 }
 @media (min-width: 300px) and (max-width: 400px) {
   .container .mainContent .leftOrUpperPart .skillList .content .titleAndFluencies .fluencyThree .statusBar .bottom {
@@ -4093,19 +4092,19 @@ input[type=email]) {
   position: absolute;
   border-radius: 0.5rem;
   border: 0.1rem solid #656565;
-  background-color: #635445;
+  background-color: #5c4f43;
   animation: topThree 1s cubic-bezier(0.1, -0.6, 0.2, 0) 0s 3 alternate none;
   z-index: 1;
 }
 @keyframes topThree {
   from {
     width: 0rem;
-    background-color: #4f4d41;
+    background-color: #4b493d;
     opacity: 0;
   }
   to {
     width: 6.5rem;
-    background-color: #635445;
+    background-color: #5c4f43;
     opacity: 1;
   }
 }
@@ -4116,12 +4115,12 @@ input[type=email]) {
   @keyframes topThree {
     from {
       width: 0rem;
-      background-color: #4f4d41;
+      background-color: #4b493d;
       opacity: 0;
     }
     to {
       width: 6.2rem;
-      background-color: #635445;
+      background-color: #5c4f43;
       opacity: 1;
     }
   }
@@ -4170,7 +4169,7 @@ input[type=email]) {
     width: 100%;
   }
 }
-@media (min-width: 1023px) and (max-width: 1099px) {
+@media (min-width: 1023px) and (max-width: 1100px) {
   .container .mainContent .leftOrUpperPart .skillList .content .titleAndFluencies .fluencyFour {
     flex-direction: row;
     column-gap: unset;
@@ -4197,7 +4196,7 @@ input[type=email]) {
   width: 10rem;
   height: 1.5rem;
   border-radius: 0.5rem;
-  background-color: #4f4d41;
+  background-color: #4b493d;
 }
 @media (min-width: 300px) and (max-width: 400px) {
   .container .mainContent .leftOrUpperPart .skillList .content .titleAndFluencies .fluencyFour .statusBar .bottom {
@@ -4210,19 +4209,19 @@ input[type=email]) {
   position: absolute;
   border-radius: 0.5rem;
   border: 0.1rem solid #656565;
-  background-color: #635445;
+  background-color: #5c4f43;
   animation: topFour 0.8s cubic-bezier(0.1, -0.6, 0.2, 0) 0s 3 alternate none;
   z-index: 1;
 }
 @keyframes topFour {
   from {
     width: 0rem;
-    background-color: #4f4d41;
+    background-color: #4b493d;
     opacity: 0;
   }
   to {
     width: 7.8rem;
-    background-color: #635445;
+    background-color: #5c4f43;
     opacity: 1;
   }
 }
@@ -4233,12 +4232,12 @@ input[type=email]) {
   @keyframes topFour {
     from {
       width: 0rem;
-      background-color: #4f4d41;
+      background-color: #4b493d;
       opacity: 0;
     }
     to {
       width: 6.8rem;
-      background-color: #635445;
+      background-color: #5c4f43;
       opacity: 1;
     }
   }
@@ -4311,7 +4310,7 @@ input[type=email]) {
     width: 100%;
   }
 }
-@media (min-width: 1023px) and (max-width: 1099px) {
+@media (min-width: 1023px) and (max-width: 1100px) {
   .container .mainContent .leftOrUpperPart .skillList .content .titleAndFluencies .fluencyFive {
     flex-direction: row;
     column-gap: unset;
@@ -4338,7 +4337,7 @@ input[type=email]) {
   width: 10rem;
   height: 1.5rem;
   border-radius: 0.5rem;
-  background-color: #4f4d41;
+  background-color: #4b493d;
 }
 @media (min-width: 300px) and (max-width: 400px) {
   .container .mainContent .leftOrUpperPart .skillList .content .titleAndFluencies .fluencyFive .statusBar .bottom {
@@ -4351,19 +4350,19 @@ input[type=email]) {
   position: absolute;
   border-radius: 0.5rem;
   border: 0.1rem solid #656565;
-  background-color: #635445;
+  background-color: #5c4f43;
   animation: topFive 1s cubic-bezier(0.1, -0.6, 0.2, 0) 0s 3 alternate none;
   z-index: 1;
 }
 @keyframes topFive {
   from {
     width: 0rem;
-    background-color: #4f4d41;
+    background-color: #4b493d;
     opacity: 0;
   }
   to {
     width: 10rem;
-    background-color: #635445;
+    background-color: #5c4f43;
     opacity: 1;
   }
 }
@@ -4374,12 +4373,12 @@ input[type=email]) {
   @keyframes topFive {
     from {
       width: 0rem;
-      background-color: #4f4d41;
+      background-color: #4b493d;
       opacity: 0;
     }
     to {
       width: 9rem;
-      background-color: #635445;
+      background-color: #5c4f43;
       opacity: 1;
     }
   }
@@ -4433,7 +4432,7 @@ input[type=email]) {
     width: 100%;
   }
 }
-@media (min-width: 1023px) and (max-width: 1099px) {
+@media (min-width: 1023px) and (max-width: 1100px) {
   .container .mainContent .leftOrUpperPart .skillList .content .titleAndFluencies .fluencySix {
     flex-direction: row;
     column-gap: unset;
@@ -4466,7 +4465,7 @@ input[type=email]) {
   width: 10rem;
   height: 1.5rem;
   border-radius: 0.5rem;
-  background-color: #4f4d41;
+  background-color: #4b493d;
 }
 @media (min-width: 300px) and (max-width: 400px) {
   .container .mainContent .leftOrUpperPart .skillList .content .titleAndFluencies .fluencySix .statusBar .bottom {
@@ -4479,19 +4478,19 @@ input[type=email]) {
   position: absolute;
   border-radius: 0.5rem;
   border: 0.1rem solid #656565;
-  background-color: #635445;
+  background-color: #5c4f43;
   animation: topSix 0.8s cubic-bezier(0.1, -0.6, 0.2, 0) 0s 3 alternate none;
   z-index: 1;
 }
 @keyframes topSix {
   from {
     width: 0rem;
-    background-color: #4f4d41;
+    background-color: #4b493d;
     opacity: 0;
   }
   to {
     width: 9rem;
-    background-color: #635445;
+    background-color: #5c4f43;
     opacity: 1;
   }
 }
@@ -4502,12 +4501,12 @@ input[type=email]) {
   @keyframes topSix {
     from {
       width: 0rem;
-      background-color: #4f4d41;
+      background-color: #4b493d;
       opacity: 0;
     }
     to {
       width: 8rem;
-      background-color: #635445;
+      background-color: #5c4f43;
       opacity: 1;
     }
   }
@@ -4562,7 +4561,7 @@ input[type=email]) {
     row-gap: 1.3rem;
   }
 }
-@media (min-width: 1023px) and (max-width: 1099px) {
+@media (min-width: 1023px) and (max-width: 1100px) {
   .container .mainContent .leftOrUpperPart .skillList .content .titleAndFluencies .fluencySeven {
     flex-direction: row;
     column-gap: unset;
@@ -4589,7 +4588,7 @@ input[type=email]) {
   width: 10rem;
   height: 1.5rem;
   border-radius: 0.5rem;
-  background-color: #4f4d41;
+  background-color: #4b493d;
 }
 @media (min-width: 300px) and (max-width: 400px) {
   .container .mainContent .leftOrUpperPart .skillList .content .titleAndFluencies .fluencySeven .statusBar .bottom {
@@ -4602,19 +4601,19 @@ input[type=email]) {
   position: absolute;
   border-radius: 0.5rem;
   border: 0.1rem solid #656565;
-  background-color: #635445;
+  background-color: #5c4f43;
   animation: topSeven 1s cubic-bezier(0.1, -0.6, 0.2, 0) 0s 3 alternate none;
   z-index: 1;
 }
 @keyframes topSeven {
   from {
     width: 0rem;
-    background-color: #4f4d41;
+    background-color: #4b493d;
     opacity: 0;
   }
   to {
     width: 7.5rem;
-    background-color: #635445;
+    background-color: #5c4f43;
     opacity: 1;
   }
 }
@@ -4625,12 +4624,12 @@ input[type=email]) {
   @keyframes topSeven {
     from {
       width: 0rem;
-      background-color: #4f4d41;
+      background-color: #4b493d;
       opacity: 0;
     }
     to {
       width: 6.3rem;
-      background-color: #635445;
+      background-color: #5c4f43;
       opacity: 1;
     }
   }
@@ -4685,7 +4684,7 @@ input[type=email]) {
     row-gap: 1.3rem;
   }
 }
-@media (min-width: 1023px) and (max-width: 1099px) {
+@media (min-width: 1023px) and (max-width: 1100px) {
   .container .mainContent .leftOrUpperPart .skillList .content .titleAndFluencies .fluencyEight {
     flex-direction: row;
     column-gap: unset;
@@ -4712,7 +4711,7 @@ input[type=email]) {
   width: 10rem;
   height: 1.5rem;
   border-radius: 0.5rem;
-  background-color: #4f4d41;
+  background-color: #4b493d;
 }
 @media (min-width: 300px) and (max-width: 400px) {
   .container .mainContent .leftOrUpperPart .skillList .content .titleAndFluencies .fluencyEight .statusBar .bottom {
@@ -4725,19 +4724,19 @@ input[type=email]) {
   position: absolute;
   border-radius: 0.5rem;
   border: 0.1rem solid #656565;
-  background-color: #635445;
+  background-color: #5c4f43;
   animation: topEight 0.8s cubic-bezier(0.1, -0.6, 0.2, 0) 0s 3 alternate none;
   z-index: 1;
 }
 @keyframes topEight {
   from {
     width: 0rem;
-    background-color: #4f4d41;
+    background-color: #4b493d;
     opacity: 0;
   }
   to {
     width: 8.2rem;
-    background-color: #635445;
+    background-color: #5c4f43;
     opacity: 1;
   }
 }
@@ -4748,12 +4747,12 @@ input[type=email]) {
   @keyframes topEight {
     from {
       width: 0rem;
-      background-color: #4f4d41;
+      background-color: #4b493d;
       opacity: 0;
     }
     to {
       width: 7.2rem;
-      background-color: #635445;
+      background-color: #5c4f43;
       opacity: 1;
     }
   }
@@ -4835,7 +4834,7 @@ input[type=email]) {
   position: absolute;
   right: 2rem;
   align-self: center;
-  background-color: #4f4d41;
+  background-color: #4b493d;
   border: none;
   border-radius: 0.5rem;
   font-size: 10pt;
@@ -4845,7 +4844,7 @@ input[type=email]) {
   transition: all 0.2s ease;
 }
 .container .mainContent .leftOrUpperPart .skillList .content .next:hover {
-  background-color: #635445;
+  background-color: #5c4f43;
 }
 @media (min-width: 300px) and (max-width: 350px) {
   .container .mainContent .leftOrUpperPart .skillList .content .next {
@@ -4931,7 +4930,7 @@ input[type=email]) {
   transform: scale(102%);
   background-color: #232323;
   border-radius: 0.5rem;
-  border: 0.1rem solid #635445;
+  border: 0.1rem solid #5c4f43;
   z-index: 1;
   filter: none;
 }
@@ -4983,7 +4982,7 @@ input[type=email]) {
   justify-content: space-between;
   align-items: center;
   padding: 0.8rem 2rem;
-  background-color: #4f4d41;
+  background-color: #4b493d;
   border-radius: 0.4rem 0.4rem 0 0;
 }
 @media (min-width: 300px) and (max-width: 400px) {
@@ -5020,17 +5019,17 @@ input[type=email]) {
     font-size: 16pt;
   }
 }
-@media (min-width: 1023px) and (max-width: 1099px) {
+@media (min-width: 1023px) and (max-width: 1100px) {
   .container .mainContent .leftOrUpperPart .educationList .titleAndButton h4 {
     font-size: 10pt;
   }
 }
-@media (orientation: portrait) and (min-width: 1023px) and (max-width: 1099px) {
+@media (orientation: portrait) and (min-width: 1023px) and (max-width: 1100px) {
   .container .mainContent .leftOrUpperPart .educationList .titleAndButton h4 {
     font-size: 16pt;
   }
 }
-@media (min-width: 1099px) and (max-width: 1200px) {
+@media (min-width: 1100px) and (max-width: 1200px) {
   .container .mainContent .leftOrUpperPart .educationList .titleAndButton h4 {
     font-size: 11pt;
   }
@@ -5059,7 +5058,7 @@ input[type=email]) {
   transition: all 0.2s ease;
 }
 .container .mainContent .leftOrUpperPart .educationList .titleAndButton .close:hover {
-  background-color: #635445;
+  background-color: #5c4f43;
 }
 @media (min-width: 300px) and (max-width: 350px) {
   .container .mainContent .leftOrUpperPart .educationList .titleAndButton .close {
@@ -5085,21 +5084,21 @@ input[type=email]) {
     cursor: default;
   }
 }
-@media (min-width: 1023px) and (max-width: 1099px) {
+@media (min-width: 1023px) and (max-width: 1100px) {
   .container .mainContent .leftOrUpperPart .educationList .titleAndButton .close {
     width: 4.7rem;
     height: 1.8rem;
     font-size: 7.4pt;
   }
 }
-@media (orientation: portrait) and (min-width: 1023px) and (max-width: 1099px) {
+@media (orientation: portrait) and (min-width: 1023px) and (max-width: 1100px) {
   .container .mainContent .leftOrUpperPart .educationList .titleAndButton .close {
     width: 7rem;
     height: 2.5rem;
     font-size: 10pt;
   }
 }
-@media (min-width: 1099px) and (max-width: 1200px) {
+@media (min-width: 1100px) and (max-width: 1200px) {
   .container .mainContent .leftOrUpperPart .educationList .titleAndButton .close {
     width: 5.1rem;
     height: 1.9rem;
@@ -5215,7 +5214,7 @@ input[type=email]) {
   position: absolute;
   left: 2rem;
   align-self: center;
-  background-color: #635445;
+  background-color: #5c4f43;
   border: none;
   border-radius: 0.5rem;
   font-size: 10pt;
@@ -5225,7 +5224,7 @@ input[type=email]) {
   transition: all 0.2s ease;
 }
 .container .mainContent .leftOrUpperPart .educationList .content .previous:hover {
-  background-color: #635445;
+  background-color: #5c4f43;
 }
 @media (min-width: 300px) and (max-width: 600px) {
   .container .mainContent .leftOrUpperPart .educationList .content .previous {
@@ -5301,7 +5300,7 @@ input[type=email]) {
     row-gap: 1.3rem;
   }
 }
-@media (min-width: 1023px) and (max-width: 1099px) {
+@media (min-width: 1023px) and (max-width: 1100px) {
   .container .mainContent .leftOrUpperPart .educationList .content .pageOne {
     row-gap: 1rem;
   }
@@ -5377,7 +5376,7 @@ input[type=email]) {
     font-size: 12pt;
   }
 }
-@media (min-width: 1023px) and (max-width: 1099px) {
+@media (min-width: 1023px) and (max-width: 1100px) {
   .container .mainContent .leftOrUpperPart .educationList .content .pageOne li span {
     font-size: 10pt;
   }
@@ -5427,7 +5426,7 @@ input[type=email]) {
     row-gap: 1.3rem;
   }
 }
-@media (min-width: 1023px) and (max-width: 1099px) {
+@media (min-width: 1023px) and (max-width: 1100px) {
   .container .mainContent .leftOrUpperPart .educationList .content .pageTwo {
     row-gap: 1rem;
   }
@@ -5503,7 +5502,7 @@ input[type=email]) {
     font-size: 12pt;
   }
 }
-@media (min-width: 1023px) and (max-width: 1099px) {
+@media (min-width: 1023px) and (max-width: 1100px) {
   .container .mainContent .leftOrUpperPart .educationList .content .pageTwo li span {
     font-size: 10pt;
   }
@@ -5580,7 +5579,7 @@ input[type=email]) {
   position: absolute;
   right: 2rem;
   align-self: center;
-  background-color: #635445;
+  background-color: #5c4f43;
   border: none;
   border-radius: 0.5rem;
   font-size: 10pt;
@@ -5590,7 +5589,7 @@ input[type=email]) {
   transition: all 0.2s ease;
 }
 .container .mainContent .leftOrUpperPart .educationList .content .next:hover {
-  background-color: #635445;
+  background-color: #5c4f43;
 }
 @media (min-width: 300px) and (max-width: 350px) {
   .container .mainContent .leftOrUpperPart .educationList .content .next {
@@ -5670,18 +5669,18 @@ input[type=email]) {
     width: 100%;
   }
 }
-@media (min-width: 1023px) and (max-width: 1099px) {
+@media (min-width: 1023px) and (max-width: 1100px) {
   .container .mainContent .rightOrLowerPart {
     row-gap: 0.6rem;
   }
 }
-@media (orientation: portrait) and (min-width: 1023px) and (max-width: 1099px) {
+@media (orientation: portrait) and (min-width: 1023px) and (max-width: 1100px) {
   .container .mainContent .rightOrLowerPart {
     row-gap: 1.2rem;
     width: 100%;
   }
 }
-@media (min-width: 1099px) and (max-width: 1200px) {
+@media (min-width: 1100px) and (max-width: 1200px) {
   .container .mainContent .rightOrLowerPart {
     row-gap: 0.6rem;
   }
@@ -5698,17 +5697,17 @@ input[type=email]) {
   width: 100%;
   height: auto;
 }
-@media (min-width: 1023px) and (max-width: 1099px) {
+@media (min-width: 1023px) and (max-width: 1100px) {
   .container .mainContent .rightOrLowerPart .rightOrLowerPartContainer {
     row-gap: 0.4rem;
   }
 }
-@media (orientation: portrait) and (min-width: 1023px) and (max-width: 1099px) {
+@media (orientation: portrait) and (min-width: 1023px) and (max-width: 1100px) {
   .container .mainContent .rightOrLowerPart .rightOrLowerPartContainer {
     row-gap: 1.2rem;
   }
 }
-@media (min-width: 1099px) and (max-width: 1200px) {
+@media (min-width: 1100px) and (max-width: 1200px) {
   .container .mainContent .rightOrLowerPart .rightOrLowerPartContainer {
     row-gap: 0.5rem;
   }
@@ -5771,19 +5770,19 @@ input[type=email]) {
     flex-direction: row;
   }
 }
-@media (min-width: 1023px) and (max-width: 1099px) {
+@media (min-width: 1023px) and (max-width: 1100px) {
   .container .mainContent .rightOrLowerPart .rightOrLowerPartContainer .projects {
     column-gap: 1.4%;
     height: 20.4rem;
   }
 }
-@media (orientation: portrait) and (min-width: 1023px) and (max-width: 1099px) {
+@media (orientation: portrait) and (min-width: 1023px) and (max-width: 1100px) {
   .container .mainContent .rightOrLowerPart .rightOrLowerPartContainer .projects {
     column-gap: 2%;
     height: 29rem;
   }
 }
-@media (min-width: 1099px) and (max-width: 1200px) {
+@media (min-width: 1100px) and (max-width: 1200px) {
   .container .mainContent .rightOrLowerPart .rightOrLowerPartContainer .projects {
     column-gap: 1.5%;
     height: 22.6rem;
@@ -5814,7 +5813,7 @@ input[type=email]) {
   padding: 2rem 2rem 0 2rem;
   position: relative;
   border-radius: 0.5rem;
-  background-color: #635445;
+  background-color: #5c4f43;
   animation: cyber 0.5s linear;
   animation-iteration-count: 1;
 }
@@ -5890,21 +5889,21 @@ input[type=email]) {
     padding: 3rem 2rem;
   }
 }
-@media (min-width: 1023px) and (max-width: 1099px) {
+@media (min-width: 1023px) and (max-width: 1100px) {
   .container .mainContent .rightOrLowerPart .rightOrLowerPartContainer .projects .cyber {
     row-gap: 0.8rem;
     width: 49.3%;
     padding: 1rem 0.8rem;
   }
 }
-@media (orientation: portrait) and (min-width: 1023px) and (max-width: 1099px) {
+@media (orientation: portrait) and (min-width: 1023px) and (max-width: 1100px) {
   .container .mainContent .rightOrLowerPart .rightOrLowerPartContainer .projects .cyber {
     row-gap: 1.5rem;
     width: 49%;
     padding: 2.8rem 2rem;
   }
 }
-@media (min-width: 1099px) and (max-width: 1200px) {
+@media (min-width: 1100px) and (max-width: 1200px) {
   .container .mainContent .rightOrLowerPart .rightOrLowerPartContainer .projects .cyber {
     row-gap: 0.6rem;
     padding: 1rem;
@@ -5954,17 +5953,17 @@ input[type=email]) {
     font-size: 16pt;
   }
 }
-@media (min-width: 1023px) and (max-width: 1099px) {
+@media (min-width: 1023px) and (max-width: 1100px) {
   .container .mainContent .rightOrLowerPart .rightOrLowerPartContainer .projects .cyber .title {
     font-size: 10pt;
   }
 }
-@media (orientation: portrait) and (min-width: 1023px) and (max-width: 1099px) {
+@media (orientation: portrait) and (min-width: 1023px) and (max-width: 1100px) {
   .container .mainContent .rightOrLowerPart .rightOrLowerPartContainer .projects .cyber .title {
     font-size: 16pt;
   }
 }
-@media (min-width: 1099px) and (max-width: 1200px) {
+@media (min-width: 1100px) and (max-width: 1200px) {
   .container .mainContent .rightOrLowerPart .rightOrLowerPartContainer .projects .cyber .title {
     font-size: 11pt;
   }
@@ -5994,17 +5993,17 @@ input[type=email]) {
     padding-left: 0.2rem;
   }
 }
-@media (min-width: 1023px) and (max-width: 1099px) {
+@media (min-width: 1023px) and (max-width: 1100px) {
   .container .mainContent .rightOrLowerPart .rightOrLowerPartContainer .projects .cyber .allInOneCyber {
     row-gap: 0.5rem;
   }
 }
-@media (orientation: portrait) and (min-width: 1023px) and (max-width: 1099px) {
+@media (orientation: portrait) and (min-width: 1023px) and (max-width: 1100px) {
   .container .mainContent .rightOrLowerPart .rightOrLowerPartContainer .projects .cyber .allInOneCyber {
     row-gap: 0.5rem;
   }
 }
-@media (min-width: 1099px) and (max-width: 1200px) {
+@media (min-width: 1100px) and (max-width: 1200px) {
   .container .mainContent .rightOrLowerPart .rightOrLowerPartContainer .projects .cyber .allInOneCyber {
     row-gap: 0.4rem;
   }
@@ -6039,17 +6038,17 @@ input[type=email]) {
     font-size: 12pt;
   }
 }
-@media (min-width: 1023px) and (max-width: 1099px) {
+@media (min-width: 1023px) and (max-width: 1100px) {
   .container .mainContent .rightOrLowerPart .rightOrLowerPartContainer .projects .cyber .allInOneCyber h4 {
     font-size: 8.5pt;
   }
 }
-@media (orientation: portrait) and (min-width: 1023px) and (max-width: 1099px) {
+@media (orientation: portrait) and (min-width: 1023px) and (max-width: 1100px) {
   .container .mainContent .rightOrLowerPart .rightOrLowerPartContainer .projects .cyber .allInOneCyber h4 {
     font-size: 12pt;
   }
 }
-@media (min-width: 1099px) and (max-width: 1200px) {
+@media (min-width: 1100px) and (max-width: 1200px) {
   .container .mainContent .rightOrLowerPart .rightOrLowerPartContainer .projects .cyber .allInOneCyber h4 {
     font-size: 9pt;
   }
@@ -6070,9 +6069,9 @@ input[type=email]) {
   row-gap: 0.5rem;
   padding-left: 0.8rem;
 }
-@media (min-width: 1023px) and (max-width: 1099px) {
+@media (min-width: 1023px) and (max-width: 1100px) {
   .container .mainContent .rightOrLowerPart .rightOrLowerPartContainer .projects .cyber .allInOneCyber .points {
-    row-gap: 0.8rem;
+    row-gap: 0.6rem;
   }
 }
 .container .mainContent .rightOrLowerPart .rightOrLowerPartContainer .projects .cyber .allInOneCyber .points li {
@@ -6100,17 +6099,17 @@ input[type=email]) {
     font-size: 11.5pt;
   }
 }
-@media (min-width: 1023px) and (max-width: 1099px) {
+@media (min-width: 1023px) and (max-width: 1100px) {
   .container .mainContent .rightOrLowerPart .rightOrLowerPartContainer .projects .cyber .allInOneCyber .points li {
     font-size: 8.2pt;
   }
 }
-@media (orientation: portrait) and (min-width: 1023px) and (max-width: 1099px) {
+@media (orientation: portrait) and (min-width: 1023px) and (max-width: 1100px) {
   .container .mainContent .rightOrLowerPart .rightOrLowerPartContainer .projects .cyber .allInOneCyber .points li {
     font-size: 11.5pt;
   }
 }
-@media (min-width: 1099px) and (max-width: 1200px) {
+@media (min-width: 1100px) and (max-width: 1200px) {
   .container .mainContent .rightOrLowerPart .rightOrLowerPartContainer .projects .cyber .allInOneCyber .points li {
     font-size: 9pt;
   }
@@ -6135,7 +6134,7 @@ input[type=email]) {
   transition: all 0.2s ease;
 }
 .container .mainContent .rightOrLowerPart .rightOrLowerPartContainer .projects .cyber .extras:hover {
-  background-color: #4f4d41;
+  background-color: #4b493d;
 }
 @media (min-width: 300px) and (max-width: 350px) {
   .container .mainContent .rightOrLowerPart .rightOrLowerPartContainer .projects .cyber .extras {
@@ -6208,7 +6207,7 @@ input[type=email]) {
     cursor: default;
   }
 }
-@media (min-width: 1023px) and (max-width: 1099px) {
+@media (min-width: 1023px) and (max-width: 1100px) {
   .container .mainContent .rightOrLowerPart .rightOrLowerPartContainer .projects .cyber .extras {
     width: 4.7rem;
     height: 1.8rem;
@@ -6217,7 +6216,7 @@ input[type=email]) {
     font-size: 7.4pt;
   }
 }
-@media (orientation: portrait) and (min-width: 1023px) and (max-width: 1099px) {
+@media (orientation: portrait) and (min-width: 1023px) and (max-width: 1100px) {
   .container .mainContent .rightOrLowerPart .rightOrLowerPartContainer .projects .cyber .extras {
     width: 7rem;
     height: 2.5rem;
@@ -6226,7 +6225,7 @@ input[type=email]) {
     font-size: 10pt;
   }
 }
-@media (min-width: 1099px) and (max-width: 1200px) {
+@media (min-width: 1100px) and (max-width: 1200px) {
   .container .mainContent .rightOrLowerPart .rightOrLowerPartContainer .projects .cyber .extras {
     width: 5.1rem;
     height: 1.9rem;
@@ -6251,7 +6250,7 @@ input[type=email]) {
   padding: 2rem 2rem 0 2rem;
   position: relative;
   border-radius: 0.5rem;
-  background-color: #4f4d41;
+  background-color: #4b493d;
   animation: web 0.5s linear;
   animation-iteration-count: 1;
 }
@@ -6326,21 +6325,21 @@ input[type=email]) {
     padding: 3rem 2rem;
   }
 }
-@media (min-width: 1023px) and (max-width: 1099px) {
+@media (min-width: 1023px) and (max-width: 1100px) {
   .container .mainContent .rightOrLowerPart .rightOrLowerPartContainer .projects .web {
     row-gap: 1rem;
     width: 49.3%;
     padding: 0.8rem;
   }
 }
-@media (orientation: portrait) and (min-width: 1023px) and (max-width: 1099px) {
+@media (orientation: portrait) and (min-width: 1023px) and (max-width: 1100px) {
   .container .mainContent .rightOrLowerPart .rightOrLowerPartContainer .projects .web {
     row-gap: 1rem;
     width: 49%;
     padding: 2.8rem 2rem;
   }
 }
-@media (min-width: 1099px) and (max-width: 1200px) {
+@media (min-width: 1100px) and (max-width: 1200px) {
   .container .mainContent .rightOrLowerPart .rightOrLowerPartContainer .projects .web {
     row-gap: 1.2rem;
     padding: 1rem;
@@ -6390,17 +6389,17 @@ input[type=email]) {
     font-size: 16pt;
   }
 }
-@media (min-width: 1023px) and (max-width: 1099px) {
+@media (min-width: 1023px) and (max-width: 1100px) {
   .container .mainContent .rightOrLowerPart .rightOrLowerPartContainer .projects .web .title {
     font-size: 10pt;
   }
 }
-@media (orientation: portrait) and (min-width: 1023px) and (max-width: 1099px) {
+@media (orientation: portrait) and (min-width: 1023px) and (max-width: 1100px) {
   .container .mainContent .rightOrLowerPart .rightOrLowerPartContainer .projects .web .title {
     font-size: 16pt;
   }
 }
-@media (min-width: 1099px) and (max-width: 1200px) {
+@media (min-width: 1100px) and (max-width: 1200px) {
   .container .mainContent .rightOrLowerPart .rightOrLowerPartContainer .projects .web .title {
     font-size: 11pt;
   }
@@ -6428,7 +6427,7 @@ input[type=email]) {
   overflow-x: hidden;
   overscroll-behavior-y: contain;
   scrollbar-width: thin;
-  scrollbar-color: #999999 #4f4d41;
+  scrollbar-color: #999999 #4b493d;
   scroll-snap-type: y mandatory;
   scroll-behavior: smooth;
 }
@@ -6480,19 +6479,19 @@ input[type=email]) {
     height: 18.2rem;
   }
 }
-@media (min-width: 1023px) and (max-width: 1099px) {
+@media (min-width: 1023px) and (max-width: 1100px) {
   .container .mainContent .rightOrLowerPart .rightOrLowerPartContainer .projects .web .carousel {
     width: 10rem;
     height: 14rem;
   }
 }
-@media (orientation: portrait) and (min-width: 1023px) and (max-width: 1099px) {
+@media (orientation: portrait) and (min-width: 1023px) and (max-width: 1100px) {
   .container .mainContent .rightOrLowerPart .rightOrLowerPartContainer .projects .web .carousel {
     width: 17rem;
     height: 17rem;
   }
 }
-@media (min-width: 1099px) and (max-width: 1200px) {
+@media (min-width: 1100px) and (max-width: 1200px) {
   .container .mainContent .rightOrLowerPart .rightOrLowerPartContainer .projects .web .carousel {
     width: 12rem;
     height: 15rem;
@@ -6539,19 +6538,19 @@ input[type=email]) {
     height: 7rem;
   }
 }
-@media (min-width: 1023px) and (max-width: 1099px) {
+@media (min-width: 1023px) and (max-width: 1100px) {
   .container .mainContent .rightOrLowerPart .rightOrLowerPartContainer .projects .web .carousel img {
     width: 8.5rem;
     height: 4.5rem;
   }
 }
-@media (orientation: portrait) and (min-width: 1023px) and (max-width: 1099px) {
+@media (orientation: portrait) and (min-width: 1023px) and (max-width: 1100px) {
   .container .mainContent .rightOrLowerPart .rightOrLowerPartContainer .projects .web .carousel img {
     width: 12rem;
     height: 7rem;
   }
 }
-@media (min-width: 1099px) and (max-width: 1200px) {
+@media (min-width: 1100px) and (max-width: 1200px) {
   .container .mainContent .rightOrLowerPart .rightOrLowerPartContainer .projects .web .carousel img {
     width: 10.5rem;
     height: 5.5rem;
@@ -6584,7 +6583,7 @@ input[type=email]) {
   transition: all 0.2s ease;
 }
 .container .mainContent .rightOrLowerPart .rightOrLowerPartContainer .projects .web .more:hover {
-  background-color: #635445;
+  background-color: #5c4f43;
 }
 @media (min-width: 300px) and (max-width: 350px) {
   .container .mainContent .rightOrLowerPart .rightOrLowerPartContainer .projects .web .more {
@@ -6657,7 +6656,7 @@ input[type=email]) {
     cursor: default;
   }
 }
-@media (min-width: 1023px) and (max-width: 1099px) {
+@media (min-width: 1023px) and (max-width: 1100px) {
   .container .mainContent .rightOrLowerPart .rightOrLowerPartContainer .projects .web .more {
     width: 4.7rem;
     height: 1.8rem;
@@ -6666,7 +6665,7 @@ input[type=email]) {
     font-size: 7.4pt;
   }
 }
-@media (orientation: portrait) and (min-width: 1023px) and (max-width: 1099px) {
+@media (orientation: portrait) and (min-width: 1023px) and (max-width: 1100px) {
   .container .mainContent .rightOrLowerPart .rightOrLowerPartContainer .projects .web .more {
     width: 7rem;
     height: 2.5rem;
@@ -6675,7 +6674,7 @@ input[type=email]) {
     font-size: 10pt;
   }
 }
-@media (min-width: 1099px) and (max-width: 1200px) {
+@media (min-width: 1100px) and (max-width: 1200px) {
   .container .mainContent .rightOrLowerPart .rightOrLowerPartContainer .projects .web .more {
     width: 5.1rem;
     height: 1.9rem;
@@ -6697,7 +6696,7 @@ input[type=email]) {
   height: 5.5rem;
   padding: 1.5rem 1rem;
   border-radius: 0.5rem;
-  background-color: #635445;
+  background-color: #5c4f43;
   animation: footer 0.5s linear;
   animation-iteration-count: 1;
 }
@@ -6719,7 +6718,7 @@ input[type=email]) {
     align-items: center;
     height: 10rem;
     padding: 1rem;
-    background-color: #4f4d41;
+    background-color: #4b493d;
   }
 }
 @media (min-width: 400px) and (max-width: 600px) {
@@ -6727,7 +6726,7 @@ input[type=email]) {
     justify-content: center;
     height: 8.5rem;
     padding: 1rem;
-    background-color: #4f4d41;
+    background-color: #4b493d;
   }
 }
 @media (min-width: 600px) and (max-width: 900px) {
@@ -6741,19 +6740,19 @@ input[type=email]) {
     padding: 1rem 0.8rem;
   }
 }
-@media (min-width: 1023px) and (max-width: 1099px) {
+@media (min-width: 1023px) and (max-width: 1100px) {
   .container .mainContent .rightOrLowerPart .rightOrLowerPartContainer .footer {
     height: 3rem;
     padding: 0.5rem;
   }
 }
-@media (orientation: portrait) and (min-width: 1023px) and (max-width: 1099px) {
+@media (orientation: portrait) and (min-width: 1023px) and (max-width: 1100px) {
   .container .mainContent .rightOrLowerPart .rightOrLowerPartContainer .footer {
     height: 5.5rem;
     padding: 0.5rem;
   }
 }
-@media (min-width: 1099px) and (max-width: 1200px) {
+@media (min-width: 1100px) and (max-width: 1200px) {
   .container .mainContent .rightOrLowerPart .rightOrLowerPartContainer .footer {
     height: 3.3rem;
     padding: 0.5rem;
@@ -6801,18 +6800,18 @@ input[type=email]) {
     row-gap: 1.8rem;
   }
 }
-@media (min-width: 1023px) and (max-width: 1099px) {
+@media (min-width: 1023px) and (max-width: 1100px) {
   .container .mainContent .rightOrLowerPart .rightOrLowerPartContainer .footer .wrapper {
     justify-content: center;
     column-gap: 1.3rem;
   }
 }
-@media (orientation: portrait) and (min-width: 1023px) and (max-width: 1099px) {
+@media (orientation: portrait) and (min-width: 1023px) and (max-width: 1100px) {
   .container .mainContent .rightOrLowerPart .rightOrLowerPartContainer .footer .wrapper {
     column-gap: 2rem;
   }
 }
-@media (min-width: 1099px) and (max-width: 1200px) {
+@media (min-width: 1100px) and (max-width: 1200px) {
   .container .mainContent .rightOrLowerPart .rightOrLowerPartContainer .footer .wrapper {
     justify-content: center;
     column-gap: 1.2rem;
@@ -6839,18 +6838,18 @@ input[type=email]) {
     width: inherit;
   }
 }
-@media (min-width: 1023px) and (max-width: 1099px) {
+@media (min-width: 1023px) and (max-width: 1100px) {
   .container .mainContent .rightOrLowerPart .rightOrLowerPartContainer .footer .wrapper .leftPart {
     column-gap: 1rem;
     width: auto;
   }
 }
-@media (orientation: portrait) and (min-width: 1023px) and (max-width: 1099px) {
+@media (orientation: portrait) and (min-width: 1023px) and (max-width: 1100px) {
   .container .mainContent .rightOrLowerPart .rightOrLowerPartContainer .footer .wrapper .leftPart {
     column-gap: 3rem;
   }
 }
-@media (min-width: 1099px) and (max-width: 1200px) {
+@media (min-width: 1100px) and (max-width: 1200px) {
   .container .mainContent .rightOrLowerPart .rightOrLowerPartContainer .footer .wrapper .leftPart {
     column-gap: 1rem;
     width: auto;
@@ -6877,17 +6876,17 @@ input[type=email]) {
     font-size: 12pt;
   }
 }
-@media (min-width: 1023px) and (max-width: 1099px) {
+@media (min-width: 1023px) and (max-width: 1100px) {
   .container .mainContent .rightOrLowerPart .rightOrLowerPartContainer .footer .wrapper .leftPart a {
     font-size: 8.5pt;
   }
 }
-@media (orientation: portrait) and (min-width: 1023px) and (max-width: 1099px) {
+@media (orientation: portrait) and (min-width: 1023px) and (max-width: 1100px) {
   .container .mainContent .rightOrLowerPart .rightOrLowerPartContainer .footer .wrapper .leftPart a {
     font-size: 12pt;
   }
 }
-@media (min-width: 1099px) and (max-width: 1200px) {
+@media (min-width: 1100px) and (max-width: 1200px) {
   .container .mainContent .rightOrLowerPart .rightOrLowerPartContainer .footer .wrapper .leftPart a {
     font-size: 9pt;
   }
@@ -6924,17 +6923,17 @@ input[type=email]) {
   text-decoration: none;
   color: #ffffff;
 }
-@media (min-width: 1023px) and (max-width: 1099px) {
+@media (min-width: 1023px) and (max-width: 1100px) {
   .container .mainContent .rightOrLowerPart .rightOrLowerPartContainer .footer .wrapper .separator a {
     font-size: 8.2pt;
   }
 }
-@media (min-width: 1099px) and (max-width: 1300px) {
+@media (min-width: 1100px) and (max-width: 1300px) {
   .container .mainContent .rightOrLowerPart .rightOrLowerPartContainer .footer .wrapper .separator a {
     font-size: 9pt;
   }
 }
-@media (orientation: portrait) and (min-width: 1023px) and (max-width: 1099px) {
+@media (orientation: portrait) and (min-width: 1023px) and (max-width: 1100px) {
   .container .mainContent .rightOrLowerPart .rightOrLowerPartContainer .footer .wrapper .separator a {
     font-size: 11pt;
   }
@@ -6973,18 +6972,18 @@ input[type=email]) {
     column-gap: 3rem;
   }
 }
-@media (min-width: 1023px) and (max-width: 1099px) {
+@media (min-width: 1023px) and (max-width: 1100px) {
   .container .mainContent .rightOrLowerPart .rightOrLowerPartContainer .footer .wrapper .rightPart {
     column-gap: 1rem;
     width: auto;
   }
 }
-@media (orientation: portrait) and (min-width: 1023px) and (max-width: 1099px) {
+@media (orientation: portrait) and (min-width: 1023px) and (max-width: 1100px) {
   .container .mainContent .rightOrLowerPart .rightOrLowerPartContainer .footer .wrapper .rightPart {
     column-gap: 3rem;
   }
 }
-@media (min-width: 1099px) and (max-width: 1200px) {
+@media (min-width: 1100px) and (max-width: 1200px) {
   .container .mainContent .rightOrLowerPart .rightOrLowerPartContainer .footer .wrapper .rightPart {
     column-gap: 1rem;
     width: auto;
@@ -7011,17 +7010,17 @@ input[type=email]) {
     font-size: 12pt;
   }
 }
-@media (min-width: 1023px) and (max-width: 1099px) {
+@media (min-width: 1023px) and (max-width: 1100px) {
   .container .mainContent .rightOrLowerPart .rightOrLowerPartContainer .footer .wrapper .rightPart a {
     font-size: 8.5pt;
   }
 }
-@media (orientation: portrait) and (min-width: 1023px) and (max-width: 1099px) {
+@media (orientation: portrait) and (min-width: 1023px) and (max-width: 1100px) {
   .container .mainContent .rightOrLowerPart .rightOrLowerPartContainer .footer .wrapper .rightPart a {
     font-size: 12pt;
   }
 }
-@media (min-width: 1099px) and (max-width: 1200px) {
+@media (min-width: 1100px) and (max-width: 1200px) {
   .container .mainContent .rightOrLowerPart .rightOrLowerPartContainer .footer .wrapper .rightPart a {
     font-size: 9pt;
   }
@@ -7047,7 +7046,7 @@ input[type=email]) {
   animation-iteration-count: 1;
   background-color: #232323;
   border-radius: 0.5rem;
-  border: 0.1rem solid #4f4d41;
+  border: 0.1rem solid #4b493d;
   z-index: 1;
   filter: none;
 }
@@ -7070,7 +7069,7 @@ input[type=email]) {
   justify-content: space-between;
   align-items: center;
   padding: 0.8rem 2rem;
-  background-color: #635445;
+  background-color: #5c4f43;
   border-radius: 0.4rem 0.4rem 0 0;
 }
 @media (min-width: 300px) and (max-width: 600px) {
@@ -7097,17 +7096,17 @@ input[type=email]) {
     font-size: 16pt;
   }
 }
-@media (min-width: 1023px) and (max-width: 1099px) {
+@media (min-width: 1023px) and (max-width: 1100px) {
   .container .mainContent .rightOrLowerPart .cyberList .titleAndButton h4 {
     font-size: 10pt;
   }
 }
-@media (orientation: portrait) and (min-width: 1023px) and (max-width: 1099px) {
+@media (orientation: portrait) and (min-width: 1023px) and (max-width: 1100px) {
   .container .mainContent .rightOrLowerPart .cyberList .titleAndButton h4 {
     font-size: 16pt;
   }
 }
-@media (min-width: 1099px) and (max-width: 1200px) {
+@media (min-width: 1100px) and (max-width: 1200px) {
   .container .mainContent .rightOrLowerPart .cyberList .titleAndButton h4 {
     font-size: 11pt;
   }
@@ -7136,7 +7135,7 @@ input[type=email]) {
   transition: all 0.2s ease;
 }
 .container .mainContent .rightOrLowerPart .cyberList .titleAndButton .close:hover {
-  background-color: #4f4d41;
+  background-color: #4b493d;
 }
 @media (min-width: 300px) and (max-width: 350px) {
   .container .mainContent .rightOrLowerPart .cyberList .titleAndButton .close {
@@ -7162,21 +7161,21 @@ input[type=email]) {
     cursor: default;
   }
 }
-@media (min-width: 1023px) and (max-width: 1099px) {
+@media (min-width: 1023px) and (max-width: 1100px) {
   .container .mainContent .rightOrLowerPart .cyberList .titleAndButton .close {
     width: 4.7rem;
     height: 1.8rem;
     font-size: 7.4pt;
   }
 }
-@media (orientation: portrait) and (min-width: 1023px) and (max-width: 1099px) {
+@media (orientation: portrait) and (min-width: 1023px) and (max-width: 1100px) {
   .container .mainContent .rightOrLowerPart .cyberList .titleAndButton .close {
     width: 7rem;
     height: 2.5rem;
     font-size: 10pt;
   }
 }
-@media (min-width: 1099px) and (max-width: 1200px) {
+@media (min-width: 1100px) and (max-width: 1200px) {
   .container .mainContent .rightOrLowerPart .cyberList .titleAndButton .close {
     width: 5.1rem;
     height: 1.9rem;
@@ -7222,7 +7221,7 @@ input[type=email]) {
   animation-iteration-count: 1;
   background-color: #232323;
   border-radius: 0.5rem;
-  border: 0.1rem solid #4f4d41;
+  border: 0.1rem solid #4b493d;
   z-index: 1;
   filter: none;
 }
@@ -7245,7 +7244,7 @@ input[type=email]) {
   justify-content: space-between;
   align-items: center;
   padding: 0.8rem 2rem;
-  background-color: #4f4d41;
+  background-color: #4b493d;
   border-radius: 0.4rem 0.4rem 0 0;
 }
 @media (min-width: 300px) and (max-width: 600px) {
@@ -7272,17 +7271,17 @@ input[type=email]) {
     font-size: 16pt;
   }
 }
-@media (min-width: 1023px) and (max-width: 1099px) {
+@media (min-width: 1023px) and (max-width: 1100px) {
   .container .mainContent .rightOrLowerPart .webList .titleAndButton h4 {
     font-size: 10pt;
   }
 }
-@media (orientation: portrait) and (min-width: 1023px) and (max-width: 1099px) {
+@media (orientation: portrait) and (min-width: 1023px) and (max-width: 1100px) {
   .container .mainContent .rightOrLowerPart .webList .titleAndButton h4 {
     font-size: 16pt;
   }
 }
-@media (min-width: 1099px) and (max-width: 1200px) {
+@media (min-width: 1100px) and (max-width: 1200px) {
   .container .mainContent .rightOrLowerPart .webList .titleAndButton h4 {
     font-size: 11pt;
   }
@@ -7311,7 +7310,7 @@ input[type=email]) {
   transition: all 0.2s ease;
 }
 .container .mainContent .rightOrLowerPart .webList .titleAndButton .close:hover {
-  background-color: #635445;
+  background-color: #5c4f43;
 }
 @media (min-width: 300px) and (max-width: 350px) {
   .container .mainContent .rightOrLowerPart .webList .titleAndButton .close {
@@ -7337,21 +7336,21 @@ input[type=email]) {
     cursor: default;
   }
 }
-@media (min-width: 1023px) and (max-width: 1099px) {
+@media (min-width: 1023px) and (max-width: 1100px) {
   .container .mainContent .rightOrLowerPart .webList .titleAndButton .close {
     width: 4.7rem;
     height: 1.8rem;
     font-size: 7.4pt;
   }
 }
-@media (orientation: portrait) and (min-width: 1023px) and (max-width: 1099px) {
+@media (orientation: portrait) and (min-width: 1023px) and (max-width: 1100px) {
   .container .mainContent .rightOrLowerPart .webList .titleAndButton .close {
     width: 7rem;
     height: 2.5rem;
     font-size: 10pt;
   }
 }
-@media (min-width: 1099px) and (max-width: 1200px) {
+@media (min-width: 1100px) and (max-width: 1200px) {
   .container .mainContent .rightOrLowerPart .webList .titleAndButton .close {
     width: 5.1rem;
     height: 1.9rem;

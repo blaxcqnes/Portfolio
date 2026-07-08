@@ -7,16 +7,13 @@ import guessGame from '../images/mainContent_rightOrLowerPart/guessGame.png';
 
 export default function MainContent({
   isContactFormOpen,
-  isSkillListOpen,
-  isEducationListOpen,
-  isCyberListOpen,
-  isWebListOpen,
   toggleContactForm,
   toggleSkillList,
   toggleEducationList,
   toggleCyberList,
   toggleWebList,
   activeList,
+  setActiveList,
 }) {
   return (
     <main
@@ -26,31 +23,20 @@ export default function MainContent({
       <LeftOrUpperPart
         me={me}
         isContactFormOpen={isContactFormOpen}
-        isSkillListOpen={isSkillListOpen}
-        isEducationListOpen={isEducationListOpen}
-        isCyberListOpen={isCyberListOpen}
-        isWebListOpen={isWebListOpen}
         activeList={activeList}
+        setActiveList={setActiveList}
         //
-        toggleContactForm={toggleContactForm}
         toggleSkillList={toggleSkillList}
         toggleEducationList={toggleEducationList}
-        toggleCyberList={toggleCyberList}
-        toggleWebList={toggleWebList}
       />
       <RightOrLowerPart
         kaffa={kaffa}
         veila={veila}
         guessGame={guessGame}
         isContactFormOpen={isContactFormOpen}
-        isSkillListOpen={isSkillListOpen}
-        isEducationListOpen={isEducationListOpen}
-        isCyberListOpen={isCyberListOpen}
-        isWebListOpen={isWebListOpen}
         activeList={activeList}
+        setActiveList={setActiveList}
         //
-        toggleSkillList={toggleSkillList}
-        toggleEducationList={toggleEducationList}
         toggleCyberList={toggleCyberList}
         toggleWebList={toggleWebList}
       />
