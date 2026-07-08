@@ -150,7 +150,10 @@ export default function App() {
     <div
       className="container"
       style={{
-        ...(activeList && { height: 'auto', transform: 'scale(98%)' }),
+        ...(activeList && {
+          height: 'auto',
+          transform: 'scale(98%)',
+        }),
         ...(isContactFormOpen && { transform: 'scale(98%)' }),
       }}
     >
