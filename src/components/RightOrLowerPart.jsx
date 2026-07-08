@@ -1,4 +1,4 @@
-import { useState, useLayoutEffect } from 'react';
+import { useSyncExternalStore } from 'react';
 import CyberList from './CyberList';
 import WebList from './WebList';
 
@@ -18,18 +18,14 @@ export default function RightOrLowerPart({
     }
   }
 
-  const [isNarrowScreen, setIsNarrowScreen] = useState(
+  const isNarrowScreen = useSyncExternalStore(
+    (callback) => {
+      const mediaWatcher = window.matchMedia('(max-width: 600px)');
+      mediaWatcher.addEventListener('change', callback);
+      return () => mediaWatcher.removeEventListener('change', callback);
+    },
     () => window.matchMedia('(max-width: 600px)').matches,
   );
-
-  useLayoutEffect(() => {
-    const mediaWatcher = window.matchMedia('(max-width: 600px)');
-
-    const updateScreen = (e) => setIsNarrowScreen(e.matches);
-    mediaWatcher.addEventListener('change', updateScreen);
-
-    return () => mediaWatcher.removeEventListener('change', updateScreen);
-  }, []);
 
   return (
     <main

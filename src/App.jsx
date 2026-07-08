@@ -1,4 +1,4 @@
-import { useState, useLayoutEffect, useRef } from 'react';
+import { useState, useEffect, useLayoutEffect, useRef } from 'react';
 import Loader from './components/Loader';
 import Header from './components/Header';
 import MainContent from './components/MainContent';
@@ -105,22 +105,31 @@ export default function App() {
   }, [activeList]);
 
   // 4 Auto close when scrolled to the top
-  useLayoutEffect(() => {
+  useEffect(() => {
+    let isLoggedActive = true;
+
     const handleScroll = () => {
       const scrollTop = window.scrollY || document.documentElement.scrollTop;
-
       if (scrollTop <= 1) {
-        setActiveList(false);
+        if (isLoggedActive) {
+          setActiveList(false);
+          isLoggedActive = false;
+        }
+      } else {
+        isLoggedActive = true;
       }
     };
 
     window.addEventListener('scroll', handleScroll, { passive: true });
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, [activeList]);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
 
   // 5 Escape key event handler
 
-  useLayoutEffect(() => {
+  useEffect(() => {
     const handleKeyDown = (e) => {
       if (e.key === 'Escape') {
         setIsContactFormOpen(false);
@@ -129,8 +138,11 @@ export default function App() {
     };
 
     window.addEventListener('keydown', handleKeyDown);
-    return () => window.removeEventListener('keydown', handleKeyDown);
-  }, [isContactFormOpen, activeList]);
+
+    return () => {
+      window.removeEventListener('keydown', handleKeyDown);
+    };
+  }, []);
 
   return (
     <div
