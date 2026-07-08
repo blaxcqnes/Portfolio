@@ -76,6 +76,14 @@
     height: auto;
   }
 
+  @media (orientation: landscape) and (min-width: 1500px) and (max-width: 1600px) and (min-height: 694px) {
+    height: 100dvh;
+  }
+
+  @media (orientation: landscape) and (min-width: 1500px) and (max-width: 1600px) and (max-height: 694px) {
+    height: auto;
+  }
+
   @media (orientation: portrait) and (min-width: 1100px) and (min-height: 1500px) {
     height: 100dvh;
   }
@@ -112,7 +120,7 @@
       justify-content: space-between;
       align-items: center;
       width: 100%;
-      padding: 1.5rem 2rem;
+      padding: 1.2rem 2rem;
       background-color: #5c4f43;
       border-radius: 0.5rem;
 
@@ -157,7 +165,7 @@
       }
 
       @media (min-width: 1500px) and (max-width: 1600px) {
-        padding: 1.7rem 2rem;
+        padding: 1.2rem 2rem;
       }
 
       .nameAndProfession {
@@ -181,7 +189,7 @@
         }
 
         .name {
-          font-size: 20pt;
+          font-size: 19pt;
           font-weight: 500;
 
           @media (min-width: 300px) and (max-width: 400px) {
@@ -229,7 +237,7 @@
           }
 
           @media (min-width: 1500px) and (max-width: 1600px) {
-            font-size: 21pt;
+            font-size: 19pt;
           }
         }
 
@@ -280,12 +288,8 @@
       .locationAndContact {
         display: flex;
         flex-direction: row;
-        column-gap: 2.2rem;
+        column-gap: 1.5rem;
         align-items: center;
-
-        @media (min-width: 600px) and (max-width: 767px) {
-          column-gap: 1.5rem;
-        }
 
         @media (min-width: 767px) and (max-width: 900px) {
           column-gap: 1.3rem;
@@ -293,10 +297,6 @@
 
         @media (min-width: 900px) and (max-width: 1023px) {
           column-gap: 1rem;
-        }
-
-        @media (min-width: 1023px) and (max-width: 1200px) {
-          column-gap: 1.5rem;
         }
 
         .location {
@@ -424,10 +424,10 @@
       display: flex;
       flex-direction: column;
       row-gap: 1rem;
-      width: min(22.3rem, 22.3rem);
-      height: min(31.5rem, 31.5rem);
+      width: 22.2rem;
+      height: 29.6rem;
       position: absolute;
-      top: 6.75rem;
+      top: 6.2rem;
       right: 0;
       transform: scale(102%);
       animation: contactForm 0.2s linear;
@@ -445,11 +445,11 @@
           transform: scale(100%);
         }
         50% {
-          top: 3.375rem;
+          top: 3.1rem;
           transform: scale(101%);
         }
         100% {
-          top: 6.75rem;
+          top: 6.2rem;
           transform: scale(102%);
           opacity: 1;
         }
@@ -579,8 +579,8 @@
 
       @media (min-width: 1023px) and (max-width: 1100px) {
         row-gap: 0.5rem;
-        width: 24.5%;
-        height: 19.9rem;
+        width: 24.2%;
+        height: 20rem;
         top: 3.6rem;
 
         @keyframes contactForm {
@@ -603,8 +603,8 @@
 
       @media (min-width: 1100px) and (max-width: 1200px) {
         row-gap: 0.7rem;
-        width: 24.5%;
-        height: 22rem;
+        width: 24.2%;
+        height: 22.1rem;
         top: 4.3rem;
 
         @keyframes contactForm {
@@ -628,7 +628,7 @@
       @media (min-width: 1200px) and (max-width: 1300px) {
         row-gap: 0.7rem;
         width: 24%;
-        height: 24.4rem;
+        height: 24.3rem;
         top: 4.65rem;
 
         @keyframes contactForm {
@@ -697,10 +697,11 @@
         }
       }
 
-      @media (min-width: 1570px) and (max-width: 1670px) {
-        width: min(24%, 24%);
+      @media (min-width: 1500px) and (max-width: 1600px) {
+        width: 22.2rem;
+        height: 29.6rem;
         position: absolute;
-        top: 7.4rem;
+        top: 6.2rem;
 
         @keyframes contactForm {
           0% {
@@ -709,11 +710,11 @@
             transform: scale(100%);
           }
           50% {
-            top: 3.7rem;
+            top: 3.1rem;
             transform: scale(101%);
           }
           100% {
-            top: 7.4rem;
+            top: 6.2rem;
             transform: scale(102%);
             opacity: 1;
           }
@@ -790,7 +791,7 @@
           }
 
           @media (min-width: 1500px) and (max-width: 1600px) {
-            font-size: 15.5pt;
+            font-size: 15pt;
           }
         }
 
@@ -1326,7 +1327,7 @@
 
         .textArea {
           width: min(95%, 95%);
-          height: min(10rem, 10rem);
+          height: 7.5rem;
           padding: 0.5rem;
           align-self: center;
           border: 0.1rem solid #515042;
@@ -1370,6 +1371,10 @@
           @media (min-width: 1400px) and (max-width: 1500px) {
             height: 7rem;
           }
+
+          @media (min-width: 1500px) and (max-width: 1600px) {
+            height: 7.5rem;
+          }
         }
 
         .buttons {
@@ -1405,6 +1410,10 @@
 
           @media (min-width: 1400px) and (max-width: 1500px) {
             top: 19.5rem;
+          }
+
+          @media (min-width: 1500px) and (max-width: 1600px) {
+            top: 20.3rem;
           }
 
           .send {
@@ -1746,19 +1755,23 @@
           }
 
           @media (min-width: 1023px) and (max-width: 1100px) {
-            column-gap: 1.4%;
+            column-gap: 0.4rem;
           }
 
           @media (orientation: portrait) and (min-width: 1023px) and (max-width: 1100px) {
-            column-gap: 2%;
+            column-gap: 1.2rem;
           }
 
           @media (min-width: 1100px) and (max-width: 1200px) {
-            column-gap: 1.5%;
+            column-gap: 0.5rem;
           }
 
           @media (width: 1200px) {
-            column-gap: 2%;
+            column-gap: 0.8rem;
+          }
+
+          @media (min-width: 1200px) and (max-width: 1300px) {
+            column-gap: 0.8rem;
           }
 
           @media (min-width: 1300px) and (max-width: 1400px) {
@@ -1768,9 +1781,9 @@
           .aboutMe {
             display: flex;
             flex-direction: column;
-            row-gap: 2rem;
+            row-gap: 1.2rem;
             width: min(66%, 66%);
-            height: min(18.75rem, 18.75rem);
+            height: 17.2rem;
             padding: 2rem;
             position: relative;
             border-radius: 0.5rem;
@@ -1906,8 +1919,9 @@
             }
 
             @media (min-width: 1500px) and (max-width: 1600px) {
-              height: min(20rem, 20rem);
-              padding: 2.5rem 2rem;
+              row-gap: 1.2rem;
+              height: 17.2rem;
+              padding: 2rem;
             }
 
             .title {
@@ -1948,7 +1962,7 @@
               }
 
               @media (min-width: 1500px) and (max-width: 1600px) {
-                font-size: 15.5pt;
+                font-size: 15pt;
               }
             }
 
@@ -2068,7 +2082,7 @@
               }
 
               @media (min-width: 1500px) and (max-width: 1600px) {
-                font-size: 10.5pt;
+                font-size: 10pt;
               }
             }
 
@@ -2318,7 +2332,7 @@
             }
 
             @media (min-width: 1500px) and (max-width: 1600px) {
-              height: min(20rem, 20rem);
+              height: 17.2rem;
             }
           }
         }
@@ -2380,15 +2394,15 @@
           }
 
           @media (min-width: 1023px) and (max-width: 1100px) {
-            column-gap: 1.4%;
+            column-gap: 0.4rem;
           }
 
           @media (orientation: portrait) and (min-width: 1023px) and (max-width: 1100px) {
-            column-gap: 2%;
+            column-gap: 1.2rem;
           }
 
           @media (min-width: 1100px) and (max-width: 1200px) {
-            column-gap: 1.5%;
+            column-gap: 0.5rem;
           }
 
           @media (min-width: 1023px) {
@@ -2396,7 +2410,11 @@
           }
 
           @media (width: 1200px) {
-            column-gap: 2%;
+            column-gap: 0.8rem;
+          }
+
+          @media (min-width: 1200px) and (max-width: 1300px) {
+            column-gap: 0.8rem;
           }
 
           @media (min-width: 1300px) and (max-width: 1400px) {
@@ -2406,10 +2424,10 @@
           .skills {
             display: flex;
             flex-direction: column;
-            row-gap: 2rem;
-            width: min(49%, 49%);
-            height: min(18.75rem, 18.75rem);
-            padding: 2rem;
+            row-gap: 1.2rem;
+            width: 49%;
+            height: 18rem;
+            padding: 1.4rem 2rem;
             position: relative;
             border-radius: 0.5rem;
             background-color: #5c4f43;
@@ -2527,8 +2545,9 @@
             }
 
             @media (min-width: 1500px) and (max-width: 1600px) {
-              height: min(21rem, 21rem);
-              padding: 2.5rem 2rem;
+              row-gap: 1.2rem;
+              height: 18rem;
+              padding: 1.4rem 2rem;
             }
 
             .titleAndButton {
@@ -2576,7 +2595,7 @@
                 }
 
                 @media (min-width: 1500px) and (max-width: 1600px) {
-                  font-size: 15.5pt;
+                  font-size: 15pt;
                 }
               }
 
@@ -2746,7 +2765,7 @@
               }
 
               @media (min-width: 1500px) and (max-width: 1600px) {
-                font-size: 10.5pt;
+                font-size: 10pt;
               }
             }
           }
@@ -2754,10 +2773,10 @@
           .education {
             display: flex;
             flex-direction: column;
-            row-gap: 1.5rem;
-            width: min(49%, 49%);
-            height: min(18.75rem, 18.75rem);
-            padding: 2rem;
+            row-gap: 1.1rem;
+            width: 49%;
+            height: 18rem;
+            padding: 1.4rem 2rem;
             position: relative;
             border-radius: 0.5rem;
             background-color: #515042;
@@ -2881,8 +2900,9 @@
             }
 
             @media (min-width: 1500px) and (max-width: 1600px) {
-              height: min(21rem, 21rem);
-              padding: 2.5rem 2rem;
+              row-gap: 1.1rem;
+              height: 18rem;
+              padding: 1.4rem 2rem;
             }
 
             .titleAndButton {
@@ -2930,7 +2950,7 @@
                 }
 
                 @media (min-width: 1500px) and (max-width: 1600px) {
-                  font-size: 15.5pt;
+                  font-size: 15pt;
                 }
               }
 
@@ -3123,7 +3143,7 @@
               }
 
               .degree {
-                font-size: 9pt;
+                font-size: 10pt;
                 color: #ebebeb;
 
                 @media (min-width: 300px) and (max-width: 400px) {
@@ -3167,7 +3187,7 @@
                 }
 
                 @media (min-width: 1500px) and (max-width: 1600px) {
-                  font-size: 9.5pt;
+                  font-size: 10pt;
                 }
               }
             }
@@ -3286,7 +3306,7 @@
             }
 
             @media (min-width: 1500px) and (max-width: 1600px) {
-              font-size: 15.5pt;
+              font-size: 15pt;
             }
           }
 
@@ -4842,7 +4862,7 @@
             }
 
             @media (min-width: 1500px) and (max-width: 1600px) {
-              font-size: 15.5pt;
+              font-size: 15pt;
             }
           }
 
@@ -5469,7 +5489,7 @@
           flex-direction: row;
           column-gap: 1rem;
           width: 100%;
-          height: min(32rem, 32rem);
+          height: 30.2rem;
 
           @media (min-width: 300px) and (max-width: 600px) {
             flex-direction: column-reverse;
@@ -5519,22 +5539,27 @@
           }
 
           @media (min-width: 1023px) and (max-width: 1100px) {
-            column-gap: 1.4%;
+            column-gap: 0.4rem;
             height: 20.4rem;
           }
 
           @media (orientation: portrait) and (min-width: 1023px) and (max-width: 1100px) {
-            column-gap: 2%;
+            column-gap: 1.2rem;
             height: 29rem;
           }
 
           @media (min-width: 1100px) and (max-width: 1200px) {
-            column-gap: 1.5%;
+            column-gap: 0.5rem;
             height: 22.6rem;
           }
 
+          @media (width: 1200px) {
+            column-gap: 0.8rem;
+            height: 24.8rem;
+          }
+
           @media (min-width: 1200px) and (max-width: 1300px) {
-            column-gap: 2%;
+            column-gap: 0.8rem;
             height: 24.8rem;
           }
 
@@ -5548,16 +5573,16 @@
           }
 
           @media (min-width: 1500px) and (max-width: 1600px) {
-            height: min(34rem, 34rem);
+            height: 30.2rem;
           }
 
           .cyber {
             display: flex;
             flex-direction: column;
-            row-gap: 2rem;
-            width: min(49%, 49%);
+            row-gap: 1.5rem;
+            width: 49%;
             height: auto;
-            padding: 2rem 2rem 0 2rem;
+            padding: 2rem;
             position: relative;
             border-radius: 0.5rem;
             background-color: #5c4f43;
@@ -5663,7 +5688,8 @@
             }
 
             @media (min-width: 1500px) and (max-width: 1600px) {
-              padding: 2.5rem 2rem;
+              row-gap: 1.5rem;
+              padding: 2rem;
             }
 
             .title {
@@ -5697,10 +5723,12 @@
               }
 
               @media (min-width: 1200px) and (max-width: 1300px) {
+                align-self: center;
                 font-size: 12pt;
               }
 
               @media (min-width: 1300px) and (max-width: 1400px) {
+                align-self: center;
                 font-size: 14pt;
               }
 
@@ -5709,7 +5737,7 @@
               }
 
               @media (min-width: 1500px) and (max-width: 1600px) {
-                font-size: 15.5pt;
+                align-self: center;
               }
             }
 
@@ -5847,7 +5875,7 @@
               height: 2.5rem;
               align-self: center;
               position: absolute;
-              bottom: 1.5rem;
+              bottom: 1.2rem;
               background-color: #232323;
               border: none;
               border-radius: 0.5rem;
@@ -5941,23 +5969,27 @@
                 width: 5.1rem;
                 height: 1.9rem;
                 right: 1rem;
-                bottom: 1rem;
+                bottom: 0.7rem;
                 font-size: 8pt;
               }
 
               @media (min-width: 1200px) and (max-width: 1300px) {
                 width: 5.5rem;
                 height: 2rem;
+                bottom: 0.8rem;
                 font-size: 8pt;
               }
 
               @media (min-width: 1300px) and (max-width: 1400px) {
                 width: 6.2rem;
                 height: 2.2rem;
-                align-self: end;
+                align-self: center;
                 bottom: 1rem;
-                right: 2rem;
                 font-size: 9pt;
+              }
+
+              @media (min-width: 1500px) and (max-width: 1600px) {
+                bottom: 1.2rem;
               }
             }
           }
@@ -5968,7 +6000,7 @@
             row-gap: 2rem;
             width: min(49%, 49%);
             height: auto;
-            padding: 2rem 2rem 0 2rem;
+            padding: 2rem;
             position: relative;
             border-radius: 0.5rem;
             background-color: #515042;
@@ -6073,7 +6105,7 @@
             }
 
             @media (min-width: 1500px) and (max-width: 1600px) {
-              padding: 2.5rem 2rem;
+              padding: 2rem;
             }
 
             .title {
@@ -6107,10 +6139,12 @@
               }
 
               @media (min-width: 1200px) and (max-width: 1300px) {
+                align-self: center;
                 font-size: 12pt;
               }
 
               @media (min-width: 1300px) and (max-width: 1400px) {
+                align-self: center;
                 font-size: 14pt;
               }
 
@@ -6119,7 +6153,7 @@
               }
 
               @media (min-width: 1500px) and (max-width: 1600px) {
-                font-size: 15.5pt;
+                align-self: center;
               }
             }
 
@@ -6129,8 +6163,8 @@
               row-gap: 0.5rem;
               align-items: center;
               align-self: center;
-              width: min(18.5rem, 18.5rem);
-              height: min(19.32rem, 19.32rem);
+              width: 14.5rem;
+              height: 18rem;
               border-radius: 0.5rem;
               overflow-y: auto;
               overflow-x: hidden;
@@ -6211,13 +6245,13 @@
               }
 
               @media (min-width: 1500px) and (max-width: 1600px) {
-                width: 100%;
-                height: min(22rem, 22rem);
+                width: 14.5rem;
+                height: 18rem;
               }
 
               img {
-                width: min(15rem, 15rem);
-                height: min(8rem, 8rem);
+                width: 13rem;
+                height: 7rem;
                 border-radius: 0.5rem;
 
                 @media (min-width: 300px) and (max-width: 350px) {
@@ -6269,6 +6303,11 @@
                   width: 14rem;
                   height: 7rem;
                 }
+
+                @media (min-width: 1500px) and (max-width: 1600px) {
+                  width: 13rem;
+                  height: 7rem;
+                }
               }
             }
 
@@ -6277,7 +6316,7 @@
               height: 2.5rem;
               align-self: center;
               position: absolute;
-              bottom: 1.5rem;
+              bottom: 1.2rem;
               background-color: #232323;
               border: none;
               border-radius: 0.5rem;
@@ -6371,23 +6410,27 @@
                 width: 5.1rem;
                 height: 1.9rem;
                 right: 1rem;
-                bottom: 1rem;
+                bottom: 0.7rem;
                 font-size: 8pt;
               }
 
               @media (min-width: 1200px) and (max-width: 1300px) {
                 width: 5.5rem;
                 height: 2rem;
+                bottom: 0.8rem;
                 font-size: 8pt;
               }
 
               @media (min-width: 1300px) and (max-width: 1400px) {
                 width: 6.2rem;
                 height: 2.2rem;
-                align-self: end;
+                align-self: center;
                 bottom: 1rem;
-                right: 2rem;
                 font-size: 9pt;
+              }
+
+              @media (min-width: 1500px) and (max-width: 1600px) {
+                bottom: 1.2rem;
               }
             }
           }
@@ -6396,7 +6439,7 @@
         .footer {
           display: flex;
           width: 100%;
-          height: 5.5rem;
+          height: 4.906rem;
           padding: 1rem;
           border-radius: 0.5rem;
           background-color: #5c4f43;
@@ -6467,7 +6510,7 @@
           }
 
           @media (min-width: 1500px) and (max-width: 1600px) {
-            height: min(7rem, 7rem);
+            height: 4.906rem;
           }
 
           .wrapper {
@@ -6779,7 +6822,7 @@
             }
 
             @media (min-width: 1500px) and (max-width: 1600px) {
-              font-size: 15.5pt;
+              font-size: 15pt;
             }
           }
 
@@ -6970,7 +7013,7 @@
             }
 
             @media (min-width: 1500px) and (max-width: 1600px) {
-              font-size: 15.5pt;
+              font-size: 15pt;
             }
           }
 

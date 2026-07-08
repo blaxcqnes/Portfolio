@@ -7,18 +7,6 @@
   width: 100%;
   height: 90dvh;
   background-color: #232323;
-  animation: loaderContainer 0.5s linear;
-  animation-iteration-count: 1;
-
-  @keyframes loaderContainer {
-    from {
-      filter: opacity(0.5) grayscale(10%) blur(0.05rem) brightness(80%);
-      transform: scale(100%);
-    }
-    100% {
-      opacity: 1;
-    }
-  }
 
   .loader {
     display: flex;
@@ -34,7 +22,7 @@
       width: 6rem;
       height: 6rem;
       border: 0.5rem solid;
-      border-color: #635445 transparent #635445 transparent;
+      border-color: #635445 transparent #5c4f43 transparent;
       border-radius: 50%;
       animation: spinnerBrownAnimation 1.5s linear infinite;
     }
@@ -44,7 +32,7 @@
       height: 10rem;
       position: fixed;
       border: 0.5rem solid;
-      border-color: #4f4d41 transparent #4f4d41 transparent;
+      border-color: #4f4d41 transparent #515042 transparent;
       border-radius: 50%;
       animation: spinnerOliveAnimation 1.5s linear infinite;
     }
