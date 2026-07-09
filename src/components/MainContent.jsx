@@ -8,7 +8,7 @@ import guessGame from '../images/mainContent_rightOrLowerPart/guessGame.png';
 export default function MainContent({
   isContactFormOpen,
   toggleContactForm,
-  toggleSkillList,
+  toggleSkillsList,
   toggleEducationList,
   toggleCyberList,
   toggleWebList,
@@ -26,7 +26,7 @@ export default function MainContent({
         activeList={activeList}
         setActiveList={setActiveList}
         //
-        toggleSkillList={toggleSkillList}
+        toggleSkillsList={toggleSkillsList}
         toggleEducationList={toggleEducationList}
       />
       <RightOrLowerPart

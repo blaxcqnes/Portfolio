@@ -32,9 +32,7 @@ export default function Header({
         {/*  */}
         <div className="nameAndProfession">
           <p className="name">Mahmoud Taha</p>
-          <p className="profession">
-            Cybersecurity Professional & Web Developer
-          </p>
+          <p className="profession">Cybersecurity Specialist & Web Developer</p>
         </div>
         {/*  */}
         <div className="locationAndContact">

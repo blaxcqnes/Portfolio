@@ -53,8 +53,8 @@ export default function App() {
     );
   }
 
-  function toggleSkillList() {
-    setActiveList((prev) => (prev === 'skillList' ? false : 'skillList'));
+  function toggleSkillsList() {
+    setActiveList((prev) => (prev === 'skillsList' ? false : 'skillsList'));
   }
 
   function toggleCyberList() {
@@ -157,6 +157,7 @@ export default function App() {
         ...(isContactFormOpen && { transform: 'scale(98%)' }),
       }}
     >
+      <Loader />
       {loading ? (
         <Loader />
       ) : (
@@ -175,7 +176,7 @@ export default function App() {
             //
             toggleContactForm={toggleContactForm}
             toggleEducationList={toggleEducationList}
-            toggleSkillList={toggleSkillList}
+            toggleSkillsList={toggleSkillsList}
             toggleCyberList={toggleCyberList}
             toggleWebList={toggleWebList}
           />

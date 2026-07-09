@@ -1,5 +1,5 @@
 import { useSyncExternalStore } from 'react';
-import SkillList from './SkillList';
+import SkillsList from './SkillsList';
 import EducationList from './EducationList';
 
 export default function LeftOrUpperPart({
@@ -7,7 +7,7 @@ export default function LeftOrUpperPart({
   isContactFormOpen,
   activeList,
   setActiveList,
-  toggleSkillList,
+  toggleSkillsList,
   toggleEducationList,
 }) {
   function closeList() {
@@ -69,7 +69,7 @@ export default function LeftOrUpperPart({
           {/*  */}
           <div className="forSmallerScreens">
             <img src={me} className="smallerImg" loading="lazy" />
-            <p>Cybersecurity Professional & Web Developer</p>
+            <p>Cybersecurity Specialist & Web Developer</p>
           </div>
           {/*  */}
           <img src={me} className="regularImg" loading="lazy" />
@@ -98,7 +98,7 @@ export default function LeftOrUpperPart({
                   Fluency
                 </button>
               ) : (
-                <button className="fluency" onClick={toggleSkillList}>
+                <button className="fluency" onClick={toggleSkillsList}>
                   Fluency
                 </button>
               )}
@@ -169,8 +169,8 @@ export default function LeftOrUpperPart({
         <EducationList toggleEducationList={toggleEducationList} />
       )}
 
-      {activeList === 'skillList' && (
-        <SkillList toggleSkillList={toggleSkillList} />
+      {activeList === 'skillsList' && (
+        <SkillsList toggleSkillsList={toggleSkillsList} />
       )}
     </main>
   );
