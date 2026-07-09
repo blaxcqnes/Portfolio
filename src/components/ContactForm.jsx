@@ -83,7 +83,7 @@ export default function ContactForm({ isContactFormOpen, toggleContactForm }) {
         {/*  */}
       </div>
       {/*  */}
-      <form ref={form} onSubmit={sendAnEmail}>
+      <form ref={form} onSubmit={sendAnEmail} autoComplete="on">
         {statusMessage && <p className={statusType}>{statusMessage}</p>}
         {/* <p className="fail">{statusMessage}</p> */}
         <div className="namesAndSubject">
