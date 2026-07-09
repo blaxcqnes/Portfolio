@@ -157,7 +157,6 @@ export default function App() {
         ...(isContactFormOpen && { transform: 'scale(98%)' }),
       }}
     >
-      <Loader />
       {loading ? (
         <Loader />
       ) : (
