@@ -59,6 +59,7 @@ export default function RightOrLowerPart({
                   flexDirection: 'column',
                   rowGap: '1rem',
                   animation: 'projectsSwapped 0.5s linear 1',
+                  transition: 'all 2s ease',
                 }
               : undefined
           }

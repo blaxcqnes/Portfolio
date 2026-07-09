@@ -551,7 +551,7 @@
   display: flex;
   flex-direction: column;
   row-gap: 1rem;
-  width: 22.2rem;
+  width: 22.3rem;
   height: 29.6rem;
   position: absolute;
   top: 6.2rem;
@@ -831,7 +831,7 @@
 }
 @media (min-width: 1500px) and (max-width: 1600px) {
   .container .header .contactForm {
-    width: 22.2rem;
+    width: 22.3rem;
     height: 29.6rem;
     position: absolute;
     top: 6.2rem;
@@ -3563,6 +3563,16 @@ input[type=email]) {
     font-size: 8.5pt;
   }
 }
+@media (min-width: 1200px) and (max-width: 1300px) {
+  .container .mainContent .leftOrUpperPart .leftOrUpperPartContainer .skillsAndEducation .education .allInOneEducation .degree {
+    font-size: 9pt;
+  }
+}
+@media (width: 1200px) {
+  .container .mainContent .leftOrUpperPart .leftOrUpperPartContainer .skillsAndEducation .education .allInOneEducation .degree {
+    font-size: 8.5pt;
+  }
+}
 @media (min-width: 1400px) and (max-width: 1500px) {
   .container .mainContent .leftOrUpperPart .leftOrUpperPartContainer .skillsAndEducation .education .allInOneEducation .degree {
     font-size: 9.5pt;
@@ -3582,6 +3592,7 @@ input[type=email]) {
   transform: scale(102%);
   animation: skillList 0.5s linear;
   animation-iteration-count: 1;
+  scroll-margin-bottom: 1rem;
   background-color: #232323;
   border-radius: 0.5rem;
   border: 0.1rem solid #515042;
@@ -3604,30 +3615,21 @@ input[type=email]) {
 @media (min-width: 300px) and (max-width: 400px) {
   .container .mainContent .leftOrUpperPart .skillList {
     height: 30rem;
-    scroll-margin-top: 1rem;
   }
 }
 @media (min-width: 400px) and (max-width: 500px) {
   .container .mainContent .leftOrUpperPart .skillList {
     height: 30rem;
-    scroll-margin-top: 1rem;
   }
 }
 @media (min-width: 500px) and (max-width: 600px) {
   .container .mainContent .leftOrUpperPart .skillList {
     height: 32rem;
-    scroll-margin-top: 1rem;
   }
 }
 @media (min-width: 600px) and (max-width: 700px) {
   .container .mainContent .leftOrUpperPart .skillList {
     height: 22rem;
-    scroll-margin-top: 1rem;
-  }
-}
-@media (min-width: 700px) and (max-width: 1023px) {
-  .container .mainContent .leftOrUpperPart .skillList {
-    scroll-margin-top: 1rem;
   }
 }
 .container .mainContent .leftOrUpperPart .skillList .titleAndButton {
@@ -5138,7 +5140,7 @@ input[type=email]) {
   transform: scale(102%);
   animation: educationList 0.5s linear;
   animation-iteration-count: 1;
-  transform: scale(102%);
+  scroll-margin-bottom: 1rem;
   background-color: #232323;
   border-radius: 0.5rem;
   border: 0.1rem solid #5c4f43;
@@ -5161,30 +5163,30 @@ input[type=email]) {
 @media (min-width: 300px) and (max-width: 400px) {
   .container .mainContent .leftOrUpperPart .educationList {
     height: 30rem;
-    scroll-margin-top: 1rem;
+    scroll-margin-bottom: 1rem;
   }
 }
 @media (min-width: 400px) and (max-width: 500px) {
   .container .mainContent .leftOrUpperPart .educationList {
     height: 30rem;
-    scroll-margin-top: 1rem;
+    scroll-margin-bottom: 1rem;
   }
 }
 @media (min-width: 500px) and (max-width: 600px) {
   .container .mainContent .leftOrUpperPart .educationList {
     height: 32rem;
-    scroll-margin-top: 1rem;
+    scroll-margin-bottom: 1rem;
   }
 }
 @media (min-width: 600px) and (max-width: 700px) {
   .container .mainContent .leftOrUpperPart .educationList {
     height: 22rem;
-    scroll-margin-top: 1rem;
+    scroll-margin-bottom: 1rem;
   }
 }
 @media (min-width: 700px) and (max-width: 1023px) {
   .container .mainContent .leftOrUpperPart .educationList {
-    scroll-margin-top: 1rem;
+    scroll-margin-bottom: 1rem;
   }
 }
 .container .mainContent .leftOrUpperPart .educationList .titleAndButton {
@@ -6141,9 +6143,21 @@ input[type=email]) {
     padding: 2.8rem 2rem;
   }
 }
-@media (min-width: 1100px) and (max-width: 1200px) {
+@media (min-width: 1100px) and (max-width: 1107px) {
   .container .mainContent .rightOrLowerPart .rightOrLowerPartContainer .projects .cyber {
     row-gap: 0.6rem;
+    padding: 0.9rem;
+  }
+}
+@media (min-width: 1107px) and (max-width: 1120px) {
+  .container .mainContent .rightOrLowerPart .rightOrLowerPartContainer .projects .cyber {
+    row-gap: 0.7rem;
+    padding: 1rem;
+  }
+}
+@media (min-width: 1120px) and (max-width: 1200px) {
+  .container .mainContent .rightOrLowerPart .rightOrLowerPartContainer .projects .cyber {
+    row-gap: 1rem;
     padding: 1rem;
   }
 }
@@ -6204,6 +6218,7 @@ input[type=email]) {
 }
 @media (min-width: 1100px) and (max-width: 1200px) {
   .container .mainContent .rightOrLowerPart .rightOrLowerPartContainer .projects .cyber .title {
+    align-self: center;
     font-size: 11pt;
   }
 }
@@ -6328,6 +6343,11 @@ input[type=email]) {
 @media (min-width: 1023px) and (max-width: 1100px) {
   .container .mainContent .rightOrLowerPart .rightOrLowerPartContainer .projects .cyber .allInOneCyber .points {
     row-gap: 0.6rem;
+  }
+}
+@media (width: 1100px) {
+  .container .mainContent .rightOrLowerPart .rightOrLowerPartContainer .projects .cyber .allInOneCyber .points {
+    row-gap: 0.5rem;
   }
 }
 .container .mainContent .rightOrLowerPart .rightOrLowerPartContainer .projects .cyber .allInOneCyber .points li {
@@ -6473,7 +6493,7 @@ input[type=email]) {
     width: 4.7rem;
     height: 1.8rem;
     right: 0.8rem;
-    bottom: 0.8rem;
+    bottom: 0.7rem;
     font-size: 7.4pt;
   }
 }
@@ -6490,7 +6510,7 @@ input[type=email]) {
   .container .mainContent .rightOrLowerPart .rightOrLowerPartContainer .projects .cyber .extras {
     width: 5.1rem;
     height: 1.9rem;
-    right: 1rem;
+    right: unset;
     bottom: 0.7rem;
     font-size: 8pt;
   }
@@ -6677,6 +6697,7 @@ input[type=email]) {
 }
 @media (min-width: 1100px) and (max-width: 1200px) {
   .container .mainContent .rightOrLowerPart .rightOrLowerPartContainer .projects .web .title {
+    align-self: center;
     font-size: 11pt;
   }
 }
@@ -6973,7 +6994,7 @@ input[type=email]) {
     width: 4.7rem;
     height: 1.8rem;
     right: 0.8rem;
-    bottom: 0.8rem;
+    bottom: 0.7rem;
     font-size: 7.4pt;
   }
 }
@@ -6990,7 +7011,7 @@ input[type=email]) {
   .container .mainContent .rightOrLowerPart .rightOrLowerPartContainer .projects .web .more {
     width: 5.1rem;
     height: 1.9rem;
-    right: 1rem;
+    right: unset;
     bottom: 0.7rem;
     font-size: 8pt;
   }
@@ -7180,7 +7201,7 @@ input[type=email]) {
 }
 @media (min-width: 1100px) and (max-width: 1200px) {
   .container .mainContent .rightOrLowerPart .rightOrLowerPartContainer .footer .wrapper .leftPart {
-    column-gap: 1rem;
+    column-gap: 1.5rem;
     width: auto;
   }
 }
@@ -7314,7 +7335,7 @@ input[type=email]) {
 }
 @media (min-width: 1100px) and (max-width: 1200px) {
   .container .mainContent .rightOrLowerPart .rightOrLowerPartContainer .footer .wrapper .rightPart {
-    column-gap: 1rem;
+    column-gap: 1.5rem;
     width: auto;
   }
 }
@@ -7373,6 +7394,7 @@ input[type=email]) {
   transform: scale(102%);
   animation: cyberList 0.5s linear;
   animation-iteration-count: 1;
+  scroll-margin-bottom: 1rem;
   background-color: #232323;
   border-radius: 0.5rem;
   border: 0.1rem solid #515042;
@@ -7581,6 +7603,7 @@ input[type=email]) {
   transform: scale(102%);
   animation: webList 0.5s linear;
   animation-iteration-count: 1;
+  scroll-margin-bottom: 1rem;
   background-color: #232323;
   border-radius: 0.5rem;
   border: 0.1rem solid #515042;
