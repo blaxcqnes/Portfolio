@@ -2233,14 +2233,14 @@ input[type=email]) {
     line-height: 1.6rem;
   }
 }
-@media (min-width: 607px) and (max-width: 665px) {
+@media (min-width: 607px) and (max-width: 669px) {
   .container .mainContent .leftOrUpperPart .leftOrUpperPartContainer .aboutMeAndImage .aboutMe .aboutMeDescription {
     line-height: 1.7rem;
   }
 }
-@media (min-width: 665px) and (max-width: 700px) {
+@media (min-width: 669px) and (max-width: 700px) {
   .container .mainContent .leftOrUpperPart .leftOrUpperPartContainer .aboutMeAndImage .aboutMe .aboutMeDescription {
-    line-height: 1.9rem;
+    line-height: 1.8rem;
   }
 }
 @media (min-width: 700px) and (max-width: 789px) {
@@ -2501,7 +2501,7 @@ input[type=email]) {
 }
 .container .mainContent .leftOrUpperPart .leftOrUpperPartContainer .aboutMeAndImage .regularImg {
   width: 32%;
-  height: 18.75rem;
+  height: 17.2rem;
   object-fit: cover;
   border-radius: 0.5rem;
   animation: regularImg 0.5s linear;
@@ -3409,177 +3409,232 @@ input[type=email]) {
     font-size: 9pt;
   }
 }
-.container .mainContent .leftOrUpperPart .leftOrUpperPartContainer .skillsAndEducation .education .allInOneEducation {
+.container .mainContent .leftOrUpperPart .leftOrUpperPartContainer .skillsAndEducation .education .allInOneEducationContainer {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1.1rem;
+}
+@media (min-width: 360px) and (max-width: 500px) {
+  .container .mainContent .leftOrUpperPart .leftOrUpperPartContainer .skillsAndEducation .education .allInOneEducationContainer {
+    row-gap: 1.8rem;
+  }
+}
+@media (min-width: 550px) and (max-width: 600px) {
+  .container .mainContent .leftOrUpperPart .leftOrUpperPartContainer .skillsAndEducation .education .allInOneEducationContainer {
+    row-gap: 1.8rem;
+  }
+}
+@media (width: 600px) {
+  .container .mainContent .leftOrUpperPart .leftOrUpperPartContainer .skillsAndEducation .education .allInOneEducationContainer {
+    row-gap: 1.1rem;
+  }
+}
+@media (min-width: 700px) and (max-width: 800px) {
+  .container .mainContent .leftOrUpperPart .leftOrUpperPartContainer .skillsAndEducation .education .allInOneEducationContainer {
+    row-gap: 1.8rem;
+  }
+}
+@media (min-width: 800px) and (max-width: 1023px) {
+  .container .mainContent .leftOrUpperPart .leftOrUpperPartContainer .skillsAndEducation .education .allInOneEducationContainer {
+    row-gap: 1.5rem;
+  }
+}
+@media (min-width: 1023px) and (max-width: 1100px) {
+  .container .mainContent .leftOrUpperPart .leftOrUpperPartContainer .skillsAndEducation .education .allInOneEducationContainer {
+    row-gap: 0.5rem;
+  }
+}
+@media (min-width: 1100px) and (max-width: 1200px) {
+  .container .mainContent .leftOrUpperPart .leftOrUpperPartContainer .skillsAndEducation .education .allInOneEducationContainer {
+    row-gap: 0.6rem;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1300px) {
+  .container .mainContent .leftOrUpperPart .leftOrUpperPartContainer .skillsAndEducation .education .allInOneEducationContainer {
+    row-gap: 0.8rem;
+  }
+}
+@media (min-width: 1300px) and (max-width: 1400px) {
+  .container .mainContent .leftOrUpperPart .leftOrUpperPartContainer .skillsAndEducation .education .allInOneEducationContainer {
+    row-gap: 0.7rem;
+  }
+}
+@media (min-width: 1400px) and (max-width: 1500px) {
+  .container .mainContent .leftOrUpperPart .leftOrUpperPartContainer .skillsAndEducation .education .allInOneEducationContainer {
+    row-gap: 0.9rem;
+  }
+}
+.container .mainContent .leftOrUpperPart .leftOrUpperPartContainer .skillsAndEducation .education .allInOneEducationContainer .allInOneEducation {
   display: flex;
   flex-direction: column;
   row-gap: 0.313rem;
 }
-.container .mainContent .leftOrUpperPart .leftOrUpperPartContainer .skillsAndEducation .education .allInOneEducation .wrapper {
+.container .mainContent .leftOrUpperPart .leftOrUpperPartContainer .skillsAndEducation .education .allInOneEducationContainer .allInOneEducation .wrapper {
   display: flex;
   flex-direction: row;
   column-gap: 0.5rem;
   align-items: center;
 }
 @media (min-width: 1023px) and (max-width: 1200px) {
-  .container .mainContent .leftOrUpperPart .leftOrUpperPartContainer .skillsAndEducation .education .allInOneEducation .wrapper {
+  .container .mainContent .leftOrUpperPart .leftOrUpperPartContainer .skillsAndEducation .education .allInOneEducationContainer .allInOneEducation .wrapper {
     column-gap: 0.3rem;
   }
 }
 @media (orientation: portrait) and (min-width: 1023px) and (max-width: 1100px) {
-  .container .mainContent .leftOrUpperPart .leftOrUpperPartContainer .skillsAndEducation .education .allInOneEducation .wrapper {
+  .container .mainContent .leftOrUpperPart .leftOrUpperPartContainer .skillsAndEducation .education .allInOneEducationContainer .allInOneEducation .wrapper {
     column-gap: 0.3rem;
   }
 }
-.container .mainContent .leftOrUpperPart .leftOrUpperPartContainer .skillsAndEducation .education .allInOneEducation .wrapper h4 {
-  font-size: 11pt;
+.container .mainContent .leftOrUpperPart .leftOrUpperPartContainer .skillsAndEducation .education .allInOneEducationContainer .allInOneEducation .wrapper h4 {
+  font-size: 11.5pt;
   font-weight: 500;
   color: #ffffff;
 }
 @media (min-width: 500px) and (max-width: 600px) {
-  .container .mainContent .leftOrUpperPart .leftOrUpperPartContainer .skillsAndEducation .education .allInOneEducation .wrapper h4 {
+  .container .mainContent .leftOrUpperPart .leftOrUpperPartContainer .skillsAndEducation .education .allInOneEducationContainer .allInOneEducation .wrapper h4 {
     font-size: 12pt;
   }
 }
 @media (min-width: 900px) and (max-width: 1000px) {
-  .container .mainContent .leftOrUpperPart .leftOrUpperPartContainer .skillsAndEducation .education .allInOneEducation .wrapper h4 {
+  .container .mainContent .leftOrUpperPart .leftOrUpperPartContainer .skillsAndEducation .education .allInOneEducationContainer .allInOneEducation .wrapper h4 {
     font-size: 11.5pt;
   }
 }
 @media (min-width: 1000px) and (max-width: 1023px) {
-  .container .mainContent .leftOrUpperPart .leftOrUpperPartContainer .skillsAndEducation .education .allInOneEducation .wrapper h4 {
+  .container .mainContent .leftOrUpperPart .leftOrUpperPartContainer .skillsAndEducation .education .allInOneEducationContainer .allInOneEducation .wrapper h4 {
     font-size: 12pt;
   }
 }
 @media (min-width: 1023px) and (max-width: 1100px) {
-  .container .mainContent .leftOrUpperPart .leftOrUpperPartContainer .skillsAndEducation .education .allInOneEducation .wrapper h4 {
+  .container .mainContent .leftOrUpperPart .leftOrUpperPartContainer .skillsAndEducation .education .allInOneEducationContainer .allInOneEducation .wrapper h4 {
     font-size: 8.5pt;
   }
 }
 @media (orientation: portrait) and (min-width: 1023px) and (max-width: 1100px) {
-  .container .mainContent .leftOrUpperPart .leftOrUpperPartContainer .skillsAndEducation .education .allInOneEducation .wrapper h4 {
+  .container .mainContent .leftOrUpperPart .leftOrUpperPartContainer .skillsAndEducation .education .allInOneEducationContainer .allInOneEducation .wrapper h4 {
     font-size: 12pt;
   }
 }
 @media (min-width: 1100px) and (max-width: 1200px) {
-  .container .mainContent .leftOrUpperPart .leftOrUpperPartContainer .skillsAndEducation .education .allInOneEducation .wrapper h4 {
+  .container .mainContent .leftOrUpperPart .leftOrUpperPartContainer .skillsAndEducation .education .allInOneEducationContainer .allInOneEducation .wrapper h4 {
     font-size: 9pt;
   }
 }
 @media (min-width: 1200px) and (max-width: 1300px) {
-  .container .mainContent .leftOrUpperPart .leftOrUpperPartContainer .skillsAndEducation .education .allInOneEducation .wrapper h4 {
+  .container .mainContent .leftOrUpperPart .leftOrUpperPartContainer .skillsAndEducation .education .allInOneEducationContainer .allInOneEducation .wrapper h4 {
     font-size: 10pt;
   }
 }
 @media (min-width: 1500px) and (max-width: 1600px) {
-  .container .mainContent .leftOrUpperPart .leftOrUpperPartContainer .skillsAndEducation .education .allInOneEducation .wrapper h4 {
+  .container .mainContent .leftOrUpperPart .leftOrUpperPartContainer .skillsAndEducation .education .allInOneEducationContainer .allInOneEducation .wrapper h4 {
     font-size: 11.5pt;
   }
 }
-.container .mainContent .leftOrUpperPart .leftOrUpperPartContainer .skillsAndEducation .education .allInOneEducation .wrapper .location {
+.container .mainContent .leftOrUpperPart .leftOrUpperPartContainer .skillsAndEducation .education .allInOneEducationContainer .allInOneEducation .wrapper .location {
   font-size: 9pt;
   color: #ebebeb;
 }
 @media (min-width: 400px) and (max-width: 500px) {
-  .container .mainContent .leftOrUpperPart .leftOrUpperPartContainer .skillsAndEducation .education .allInOneEducation .wrapper .location {
+  .container .mainContent .leftOrUpperPart .leftOrUpperPartContainer .skillsAndEducation .education .allInOneEducationContainer .allInOneEducation .wrapper .location {
     font-size: 9.5pt;
   }
 }
 @media (min-width: 500px) and (max-width: 600px) {
-  .container .mainContent .leftOrUpperPart .leftOrUpperPartContainer .skillsAndEducation .education .allInOneEducation .wrapper .location {
+  .container .mainContent .leftOrUpperPart .leftOrUpperPartContainer .skillsAndEducation .education .allInOneEducationContainer .allInOneEducation .wrapper .location {
     font-size: 10pt;
   }
 }
 @media (min-width: 900px) and (max-width: 1023px) {
-  .container .mainContent .leftOrUpperPart .leftOrUpperPartContainer .skillsAndEducation .education .allInOneEducation .wrapper .location {
+  .container .mainContent .leftOrUpperPart .leftOrUpperPartContainer .skillsAndEducation .education .allInOneEducationContainer .allInOneEducation .wrapper .location {
     font-size: 10pt;
   }
 }
 @media (min-width: 1023px) and (max-width: 1100px) {
-  .container .mainContent .leftOrUpperPart .leftOrUpperPartContainer .skillsAndEducation .education .allInOneEducation .wrapper .location {
+  .container .mainContent .leftOrUpperPart .leftOrUpperPartContainer .skillsAndEducation .education .allInOneEducationContainer .allInOneEducation .wrapper .location {
     font-size: 8pt;
   }
 }
 @media (orientation: portrait) and (min-width: 1023px) and (max-width: 1100px) {
-  .container .mainContent .leftOrUpperPart .leftOrUpperPartContainer .skillsAndEducation .education .allInOneEducation .wrapper .location {
+  .container .mainContent .leftOrUpperPart .leftOrUpperPartContainer .skillsAndEducation .education .allInOneEducationContainer .allInOneEducation .wrapper .location {
     font-size: 9.5pt;
   }
 }
 @media (min-width: 1100px) and (max-width: 1200px) {
-  .container .mainContent .leftOrUpperPart .leftOrUpperPartContainer .skillsAndEducation .education .allInOneEducation .wrapper .location {
+  .container .mainContent .leftOrUpperPart .leftOrUpperPartContainer .skillsAndEducation .education .allInOneEducationContainer .allInOneEducation .wrapper .location {
     font-size: 8.5pt;
   }
 }
 @media (min-width: 1500px) and (max-width: 1600px) {
-  .container .mainContent .leftOrUpperPart .leftOrUpperPartContainer .skillsAndEducation .education .allInOneEducation .wrapper .location {
+  .container .mainContent .leftOrUpperPart .leftOrUpperPartContainer .skillsAndEducation .education .allInOneEducationContainer .allInOneEducation .wrapper .location {
     font-size: 9.5pt;
   }
 }
-.container .mainContent .leftOrUpperPart .leftOrUpperPartContainer .skillsAndEducation .education .allInOneEducation .degree {
+.container .mainContent .leftOrUpperPart .leftOrUpperPartContainer .skillsAndEducation .education .allInOneEducationContainer .allInOneEducation .degree {
   font-size: 10pt;
   color: #ebebeb;
 }
 @media (min-width: 300px) and (max-width: 400px) {
-  .container .mainContent .leftOrUpperPart .leftOrUpperPartContainer .skillsAndEducation .education .allInOneEducation .degree {
+  .container .mainContent .leftOrUpperPart .leftOrUpperPartContainer .skillsAndEducation .education .allInOneEducationContainer .allInOneEducation .degree {
     font-size: 10pt;
   }
 }
 @media (min-width: 400px) and (max-width: 500px) {
-  .container .mainContent .leftOrUpperPart .leftOrUpperPartContainer .skillsAndEducation .education .allInOneEducation .degree {
+  .container .mainContent .leftOrUpperPart .leftOrUpperPartContainer .skillsAndEducation .education .allInOneEducationContainer .allInOneEducation .degree {
     font-size: 10pt;
   }
 }
 @media (min-width: 500px) and (max-width: 600px) {
-  .container .mainContent .leftOrUpperPart .leftOrUpperPartContainer .skillsAndEducation .education .allInOneEducation .degree {
+  .container .mainContent .leftOrUpperPart .leftOrUpperPartContainer .skillsAndEducation .education .allInOneEducationContainer .allInOneEducation .degree {
     font-size: 11pt;
   }
 }
 @media (min-width: 600px) and (max-width: 900px) {
-  .container .mainContent .leftOrUpperPart .leftOrUpperPartContainer .skillsAndEducation .education .allInOneEducation .degree {
+  .container .mainContent .leftOrUpperPart .leftOrUpperPartContainer .skillsAndEducation .education .allInOneEducationContainer .allInOneEducation .degree {
     font-size: 10pt;
   }
 }
 @media (min-width: 900px) and (max-width: 1000px) {
-  .container .mainContent .leftOrUpperPart .leftOrUpperPartContainer .skillsAndEducation .education .allInOneEducation .degree {
+  .container .mainContent .leftOrUpperPart .leftOrUpperPartContainer .skillsAndEducation .education .allInOneEducationContainer .allInOneEducation .degree {
     font-size: 10.5pt;
   }
 }
 @media (min-width: 1000px) and (max-width: 1023px) {
-  .container .mainContent .leftOrUpperPart .leftOrUpperPartContainer .skillsAndEducation .education .allInOneEducation .degree {
+  .container .mainContent .leftOrUpperPart .leftOrUpperPartContainer .skillsAndEducation .education .allInOneEducationContainer .allInOneEducation .degree {
     font-size: 11pt;
   }
 }
 @media (min-width: 1023px) and (max-width: 1100px) {
-  .container .mainContent .leftOrUpperPart .leftOrUpperPartContainer .skillsAndEducation .education .allInOneEducation .degree {
+  .container .mainContent .leftOrUpperPart .leftOrUpperPartContainer .skillsAndEducation .education .allInOneEducationContainer .allInOneEducation .degree {
     font-size: 8.1pt;
   }
 }
 @media (orientation: portrait) and (min-width: 1023px) and (max-width: 1100px) {
-  .container .mainContent .leftOrUpperPart .leftOrUpperPartContainer .skillsAndEducation .education .allInOneEducation .degree {
+  .container .mainContent .leftOrUpperPart .leftOrUpperPartContainer .skillsAndEducation .education .allInOneEducationContainer .allInOneEducation .degree {
     font-size: 10.5pt;
   }
 }
 @media (min-width: 1100px) and (max-width: 1200px) {
-  .container .mainContent .leftOrUpperPart .leftOrUpperPartContainer .skillsAndEducation .education .allInOneEducation .degree {
+  .container .mainContent .leftOrUpperPart .leftOrUpperPartContainer .skillsAndEducation .education .allInOneEducationContainer .allInOneEducation .degree {
     font-size: 8.5pt;
   }
 }
 @media (min-width: 1200px) and (max-width: 1300px) {
-  .container .mainContent .leftOrUpperPart .leftOrUpperPartContainer .skillsAndEducation .education .allInOneEducation .degree {
+  .container .mainContent .leftOrUpperPart .leftOrUpperPartContainer .skillsAndEducation .education .allInOneEducationContainer .allInOneEducation .degree {
     font-size: 9pt;
   }
 }
 @media (width: 1200px) {
-  .container .mainContent .leftOrUpperPart .leftOrUpperPartContainer .skillsAndEducation .education .allInOneEducation .degree {
+  .container .mainContent .leftOrUpperPart .leftOrUpperPartContainer .skillsAndEducation .education .allInOneEducationContainer .allInOneEducation .degree {
     font-size: 8.5pt;
   }
 }
 @media (min-width: 1400px) and (max-width: 1500px) {
-  .container .mainContent .leftOrUpperPart .leftOrUpperPartContainer .skillsAndEducation .education .allInOneEducation .degree {
+  .container .mainContent .leftOrUpperPart .leftOrUpperPartContainer .skillsAndEducation .education .allInOneEducationContainer .allInOneEducation .degree {
     font-size: 9.5pt;
   }
 }
 @media (min-width: 1500px) and (max-width: 1600px) {
-  .container .mainContent .leftOrUpperPart .leftOrUpperPartContainer .skillsAndEducation .education .allInOneEducation .degree {
+  .container .mainContent .leftOrUpperPart .leftOrUpperPartContainer .skillsAndEducation .education .allInOneEducationContainer .allInOneEducation .degree {
     font-size: 10pt;
   }
 }
@@ -6186,62 +6241,54 @@ input[type=email]) {
   }
 }
 .container .mainContent .rightOrLowerPart .rightOrLowerPartContainer .projects .cyber .title {
-  align-self: start;
+  align-self: center;
   font-size: 15pt;
   font-weight: 600;
   color: #ffffff;
 }
 @media (min-width: 300px) and (max-width: 400px) {
   .container .mainContent .rightOrLowerPart .rightOrLowerPartContainer .projects .cyber .title {
+    align-self: start;
     font-size: 13pt;
   }
 }
 @media (min-width: 400px) and (max-width: 500px) {
   .container .mainContent .rightOrLowerPart .rightOrLowerPartContainer .projects .cyber .title {
+    align-self: start;
     font-size: 14pt;
   }
 }
 @media (min-width: 1000px) and (max-width: 1023px) {
   .container .mainContent .rightOrLowerPart .rightOrLowerPartContainer .projects .cyber .title {
+    align-self: start;
     font-size: 16pt;
   }
 }
 @media (min-width: 1023px) and (max-width: 1100px) {
   .container .mainContent .rightOrLowerPart .rightOrLowerPartContainer .projects .cyber .title {
+    align-self: start;
     font-size: 10pt;
   }
 }
 @media (orientation: portrait) and (min-width: 1023px) and (max-width: 1100px) {
   .container .mainContent .rightOrLowerPart .rightOrLowerPartContainer .projects .cyber .title {
+    align-self: start;
     font-size: 16pt;
   }
 }
 @media (min-width: 1100px) and (max-width: 1200px) {
   .container .mainContent .rightOrLowerPart .rightOrLowerPartContainer .projects .cyber .title {
-    align-self: center;
     font-size: 11pt;
   }
 }
 @media (min-width: 1200px) and (max-width: 1300px) {
   .container .mainContent .rightOrLowerPart .rightOrLowerPartContainer .projects .cyber .title {
-    align-self: center;
     font-size: 12pt;
   }
 }
 @media (min-width: 1300px) and (max-width: 1400px) {
   .container .mainContent .rightOrLowerPart .rightOrLowerPartContainer .projects .cyber .title {
-    align-self: center;
     font-size: 14pt;
-  }
-}
-@media (min-width: 1400px) and (max-width: 1500px) {
-  .container .mainContent .rightOrLowerPart .rightOrLowerPartContainer .projects .cyber .title {
-    align-self: center;
-  }
-}
-@media (min-width: 1500px) and (max-width: 1600px) {
-  .container .mainContent .rightOrLowerPart .rightOrLowerPartContainer .projects .cyber .title {
-    align-self: center;
   }
 }
 .container .mainContent .rightOrLowerPart .rightOrLowerPartContainer .projects .cyber .allInOneCyber {
@@ -6290,7 +6337,7 @@ input[type=email]) {
   }
 }
 .container .mainContent .rightOrLowerPart .rightOrLowerPartContainer .projects .cyber .allInOneCyber h4 {
-  font-size: 11pt;
+  font-size: 11.5pt;
   font-weight: 500;
   color: #ffffff;
 }
@@ -6665,62 +6712,54 @@ input[type=email]) {
   }
 }
 .container .mainContent .rightOrLowerPart .rightOrLowerPartContainer .projects .web .title {
-  align-self: start;
+  align-self: center;
   font-size: 15pt;
   font-weight: 600;
   color: #ffffff;
 }
 @media (min-width: 300px) and (max-width: 400px) {
   .container .mainContent .rightOrLowerPart .rightOrLowerPartContainer .projects .web .title {
+    align-self: start;
     font-size: 13pt;
   }
 }
 @media (min-width: 400px) and (max-width: 500px) {
   .container .mainContent .rightOrLowerPart .rightOrLowerPartContainer .projects .web .title {
+    align-self: start;
     font-size: 14pt;
   }
 }
 @media (min-width: 1000px) and (max-width: 1023px) {
   .container .mainContent .rightOrLowerPart .rightOrLowerPartContainer .projects .web .title {
+    align-self: start;
     font-size: 16pt;
   }
 }
 @media (min-width: 1023px) and (max-width: 1100px) {
   .container .mainContent .rightOrLowerPart .rightOrLowerPartContainer .projects .web .title {
+    align-self: start;
     font-size: 10pt;
   }
 }
 @media (orientation: portrait) and (min-width: 1023px) and (max-width: 1100px) {
   .container .mainContent .rightOrLowerPart .rightOrLowerPartContainer .projects .web .title {
+    align-self: start;
     font-size: 16pt;
   }
 }
 @media (min-width: 1100px) and (max-width: 1200px) {
   .container .mainContent .rightOrLowerPart .rightOrLowerPartContainer .projects .web .title {
-    align-self: center;
     font-size: 11pt;
   }
 }
 @media (min-width: 1200px) and (max-width: 1300px) {
   .container .mainContent .rightOrLowerPart .rightOrLowerPartContainer .projects .web .title {
-    align-self: center;
     font-size: 12pt;
   }
 }
 @media (min-width: 1300px) and (max-width: 1400px) {
   .container .mainContent .rightOrLowerPart .rightOrLowerPartContainer .projects .web .title {
-    align-self: center;
     font-size: 14pt;
-  }
-}
-@media (min-width: 1400px) and (max-width: 1500px) {
-  .container .mainContent .rightOrLowerPart .rightOrLowerPartContainer .projects .web .title {
-    align-self: center;
-  }
-}
-@media (min-width: 1500px) and (max-width: 1600px) {
-  .container .mainContent .rightOrLowerPart .rightOrLowerPartContainer .projects .web .title {
-    align-self: center;
   }
 }
 .container .mainContent .rightOrLowerPart .rightOrLowerPartContainer .projects .web .carousel {
@@ -7061,6 +7100,15 @@ input[type=email]) {
     opacity: 1;
   }
 }
+@keyframes footerHidden {
+  from {
+    opacity: 1;
+  }
+  to {
+    transform: scale(100%);
+    opacity: 0;
+  }
+}
 @media (min-width: 300px) and (max-width: 400px) {
   .container .mainContent .rightOrLowerPart .rightOrLowerPartContainer .footer {
     align-items: center;
@@ -7206,7 +7254,7 @@ input[type=email]) {
   }
 }
 .container .mainContent .rightOrLowerPart .rightOrLowerPartContainer .footer .wrapper .leftPart a {
-  font-size: 11pt;
+  font-size: 11.5pt;
   font-weight: 500;
   text-decoration: none;
   color: #ffffff;
@@ -7268,7 +7316,7 @@ input[type=email]) {
   }
 }
 .container .mainContent .rightOrLowerPart .rightOrLowerPartContainer .footer .wrapper .separator a {
-  font-size: 11pt;
+  font-size: 11.5pt;
   font-weight: 500;
   text-decoration: none;
   color: #ffffff;
@@ -7340,7 +7388,7 @@ input[type=email]) {
   }
 }
 .container .mainContent .rightOrLowerPart .rightOrLowerPartContainer .footer .wrapper .rightPart a {
-  font-size: 11pt;
+  font-size: 11.5pt;
   font-weight: 500;
   text-decoration: none;
   color: #ffffff;

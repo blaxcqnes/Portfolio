@@ -83,7 +83,8 @@ export default function LeftOrUpperPart({
               ? {
                   flexDirection: 'column',
                   rowGap: '1rem',
-                  animation: 'skillsAndEducationSwapped 0.5s linear 1',
+                  animation: 'skillsAndEducationSwapped 0.5s linear',
+                  animationIterationCount: '1',
                 }
               : undefined
           }
@@ -128,32 +129,34 @@ export default function LeftOrUpperPart({
               )}
             </div>
             {/*  */}
-            <div className="allInOneEducation">
-              <span className="wrapper">
-                <h4>Ozone Int. School</h4>
-                <p className="location">- RUH, KSA</p>
-              </span>
-              <p className="degree">High School - 2015</p>
-            </div>
-            {/*  */}
-            <div className="allInOneEducation">
-              <span className="wrapper">
-                <h4>Osmania University</h4>
-                <p className="location">- HYD, INDIA</p>
-              </span>
-              <p className="degree">
-                Bachelor’s of Science (B.Sc. - MSCS) - 2020
-              </p>
-            </div>
-            {/*  */}
-            <div className="allInOneEducation">
-              <span className="wrapper">
-                <h4>RKDF University</h4>
-                <p className="location">- BHO, INDIA</p>
-              </span>
-              <p className="degree">
-                Master’s of Computer Applicptions (MCA) - 2025
-              </p>
+            <div className="allInOneEducationContainer">
+              <div className="allInOneEducation">
+                <span className="wrapper">
+                  <h4>Ozone Int. School</h4>
+                  <p className="location">- RUH, KSA</p>
+                </span>
+                <p className="degree">High School - 2015</p>
+              </div>
+              {/*  */}
+              <div className="allInOneEducation">
+                <span className="wrapper">
+                  <h4>Osmania University</h4>
+                  <p className="location">- HYD, INDIA</p>
+                </span>
+                <p className="degree">
+                  Bachelor’s of Science (B.Sc. - MSCS) - 2020
+                </p>
+              </div>
+              {/*  */}
+              <div className="allInOneEducation">
+                <span className="wrapper">
+                  <h4>RKDF University</h4>
+                  <p className="location">- BHO, INDIA</p>
+                </span>
+                <p className="degree">
+                  Master’s of Computer Applicptions (MCA) - 2025
+                </p>
+              </div>
             </div>
             {/*  */}
           </div>
