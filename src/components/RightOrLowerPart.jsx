@@ -89,7 +89,7 @@ export default function RightOrLowerPart({
             </div>
             {/*  */}
             {activeList || isContactFormOpen ? (
-              <button className="extras" disabled>
+              <button className="unfocusedProjectsButtons" onClick={closeList}>
                 Extras
               </button>
             ) : (
@@ -121,7 +121,7 @@ export default function RightOrLowerPart({
                 rel="noopener noreferrer"
                 className="firstImg"
               >
-                <img src={kaffa} loading="lazy" />
+                <img src={kaffa} fetchPriority="high" />
               </a>
               {/*  */}
               <a
@@ -130,7 +130,7 @@ export default function RightOrLowerPart({
                 rel="noopener noreferrer"
                 className="secondImg"
               >
-                <img src={veila} loading="lazy" />
+                <img src={veila} fetchPriority="high" />
               </a>
               {/*  */}
               <a
@@ -139,13 +139,13 @@ export default function RightOrLowerPart({
                 rel="noopener noreferrer"
                 className="thirdImg"
               >
-                <img src={guessGame} loading="lazy" />
+                <img src={guessGame} fetchPriority="high" />
               </a>
               {/*  */}
             </div>
             {/*  */}
             {activeList || isContactFormOpen ? (
-              <button className="more" disabled>
+              <button className="unfocusedProjectsButtons" onClick={closeList}>
                 More
               </button>
             ) : (

@@ -51,11 +51,18 @@ export default function LeftOrUpperPart({
         {/*  */}
         <section className="aboutMeAndImage">
           {/*  */}
+          <div className="forSmallerScreens">
+            <img src={me} className="smallerImg" fetchPriority="high" />
+            <p>Cybersecurity Specialist & Web Developer</p>
+          </div>
+          {/*  */}
+          <img src={me} className="regularImg" fetchPriority="high" />
+          {/*  */}
           <div className="aboutMe">
             <p className="title">About Me</p>
             <p className="aboutMeDescription">
-              Highly results-oriented Cybersecurity Analyst with knowledge and
-              hands-on experience in network security principles, threat
+              Highly results-oriented Cybersecurity Specialist with knowledge
+              and hands-on experience in network security principles, threat
               analysis, identifying vulnerabilities, performing security
               assessments, and implementing measures to protect sensitive data
               and systems.
@@ -66,13 +73,6 @@ export default function LeftOrUpperPart({
             </p>
             <p className="locationForSmallerScreens">Riyadh, Saudi Arabia</p>
           </div>
-          {/*  */}
-          <div className="forSmallerScreens">
-            <img src={me} className="smallerImg" loading="lazy" />
-            <p>Cybersecurity Specialist & Web Developer</p>
-          </div>
-          {/*  */}
-          <img src={me} className="regularImg" loading="lazy" />
           {/*  */}
         </section>
         {/*  */}
@@ -94,7 +94,10 @@ export default function LeftOrUpperPart({
             <div className="titleAndButton">
               <p className="title">Skills</p>
               {activeList || isContactFormOpen ? (
-                <button className="fluency" disabled>
+                <button
+                  className="unfocusedSkillsAndEducationButtons"
+                  onClick={closeList}
+                >
                   Fluency
                 </button>
               ) : (
@@ -119,7 +122,10 @@ export default function LeftOrUpperPart({
             <div className="titleAndButton">
               <p className="title">Education</p>
               {activeList || isContactFormOpen ? (
-                <button className="courses" disabled>
+                <button
+                  className="unfocusedSkillsAndEducationButtons"
+                  onClick={closeList}
+                >
                   Courses
                 </button>
               ) : (
@@ -160,6 +166,7 @@ export default function LeftOrUpperPart({
             </div>
             {/*  */}
           </div>
+          {/*  */}
           {/*  */}
         </section>
         {/*  */}

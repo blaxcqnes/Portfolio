@@ -165,6 +165,7 @@ export default function App() {
             isContactFormOpen={isContactFormOpen}
             activeList={activeList}
             setActiveList={setActiveList}
+            setIsContactFormOpen={setIsContactFormOpen}
             //
             toggleContactForm={toggleContactForm}
           />

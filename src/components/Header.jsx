@@ -1,7 +1,9 @@
+// import {useState} from 'react'
 import ContactForm from './ContactForm';
 
 export default function Header({
   isContactFormOpen,
+  setIsContactFormOpen,
   toggleContactForm,
   activeList,
   setActiveList,
@@ -10,7 +12,7 @@ export default function Header({
     if (activeList) {
       setActiveList(false);
     } else if (isContactFormOpen) {
-      toggleContactForm();
+      setIsContactFormOpen(false);
     }
   }
   return (
@@ -38,7 +40,7 @@ export default function Header({
         <div className="locationAndContact">
           <p className="location">Riyadh, Saudi Arabia</p>
           {activeList || isContactFormOpen ? (
-            <button className="contact" disabled>
+            <button className="unfocusedContactButton" onClick={closeList}>
               Contact
             </button>
           ) : (
