@@ -462,16 +462,12 @@
         right: unset;
 
         @keyframes contactForm {
-          0% {
+          from {
             top: 0;
             filter: opacity(0.5) grayscale(10%) blur(0.05rem) brightness(80%);
             transform: scale(100%);
           }
-          50% {
-            top: 3rem;
-            transform: scale(101%);
-          }
-          100% {
+          to {
             top: 6rem;
             transform: scale(102%);
             opacity: 1;
@@ -479,26 +475,144 @@
         }
       }
 
-      @media (min-width: 300px) and (max-width: 1023px) {
-        cursor: default;
-      }
-
-      @media (min-width: 600px) and (max-width: 700px) {
-        width: min(75%, 75%);
-        top: 7.5rem;
-        left: 13%;
+      @media (min-width: 400px) and (max-width: 500px) {
+        width: 80%;
+        height: 27.3rem;
+        top: 6.25rem;
+        right: unset;
+        translate: 12% 0;
 
         @keyframes contactForm {
-          0% {
+          from {
             top: 0;
             filter: opacity(0.5) grayscale(10%) blur(0.05rem) brightness(80%);
             transform: scale(100%);
           }
-          50% {
-            top: 3.75rem;
-            transform: scale(101%);
+          to {
+            top: 6.25rem;
+            transform: scale(102%);
+            opacity: 1;
           }
-          100% {
+        }
+      }
+
+      @media (width: 400px) {
+        width: 100%;
+        height: 27.3rem;
+        top: 6rem;
+        right: unset;
+        translate: unset;
+        @keyframes contactForm {
+          from {
+            top: 0;
+            filter: opacity(0.5) grayscale(10%) blur(0.05rem) brightness(80%);
+            transform: scale(100%);
+          }
+          to {
+            top: 6rem;
+            transform: scale(102%);
+            opacity: 1;
+          }
+        }
+      }
+
+      @media (min-width: 500px) and (max-width: 600px) {
+        width: 70%;
+        height: 27.3rem;
+        top: 6.8rem;
+        right: unset;
+        translate: 21% 0;
+
+        @keyframes contactForm {
+          from {
+            top: 0;
+            filter: opacity(0.5) grayscale(10%) blur(0.05rem) brightness(80%);
+            transform: scale(100%);
+          }
+          to {
+            top: 6.8rem;
+            transform: scale(102%);
+            opacity: 1;
+          }
+        }
+      }
+
+      @media (width: 500px) {
+        width: 80%;
+        height: 27.3rem;
+        top: 6.8rem;
+        right: unset;
+        translate: 12% 0;
+
+        @keyframes contactForm {
+          from {
+            top: 0;
+            filter: opacity(0.5) grayscale(10%) blur(0.05rem) brightness(80%);
+            transform: scale(100%);
+          }
+          to {
+            top: 6.8rem;
+            transform: scale(102%);
+            opacity: 1;
+          }
+        }
+      }
+
+      @media (min-width: 600px) and (max-width: 700px) {
+        width: 60%;
+        height: 27.3rem;
+        top: 6.8rem;
+        right: unset;
+        translate: 33.5% 0;
+
+        @keyframes contactForm {
+          from {
+            top: 0;
+            filter: opacity(0.5) grayscale(10%) blur(0.05rem) brightness(80%);
+            transform: scale(100%);
+          }
+          to {
+            top: 6.8rem;
+            transform: scale(102%);
+            opacity: 1;
+          }
+        }
+      }
+
+      @media (min-width: 700px) and (max-width: 800px) {
+        width: 50%;
+        height: 27.3rem;
+        top: 7.6rem;
+        right: unset;
+        translate: 50% 0;
+
+        @keyframes contactForm {
+          from {
+            top: 0;
+            filter: opacity(0.5) grayscale(10%) blur(0.05rem) brightness(80%);
+            transform: scale(100%);
+          }
+          to {
+            top: 7.6rem;
+            transform: scale(102%);
+            opacity: 1;
+          }
+        }
+      }
+
+      @media (min-width: 800px) and (max-width: 900px) {
+        width: 42%;
+        top: 6.9rem;
+        right: unset;
+        translate: 71% 0;
+
+        @keyframes contactForm {
+          from {
+            top: 0;
+            filter: opacity(0.5) grayscale(10%) blur(0.05rem) brightness(80%);
+            transform: scale(100%);
+          }
+          to {
             top: 7.5rem;
             transform: scale(102%);
             opacity: 1;
@@ -506,95 +620,146 @@
         }
       }
 
-      @media (min-width: 700px) and (max-width: 767px) {
-        width: min(75%, 75%);
-        top: 8.1rem;
-        left: 13%;
+      @media (width: 800px) {
+        width: 42%;
+        height: 27.3rem;
+        top: 7.5rem;
+        right: unset;
+        translate: 70% 0;
 
         @keyframes contactForm {
-          0% {
+          from {
             top: 0;
             filter: opacity(0.5) grayscale(10%) blur(0.05rem) brightness(80%);
             transform: scale(100%);
           }
-          50% {
-            top: 4.05rem;
-            transform: scale(101%);
-          }
-          100% {
-            top: 8.1rem;
+          to {
+            top: 7.5rem;
             transform: scale(102%);
             opacity: 1;
           }
         }
       }
 
-      @media (min-width: 767px) and (max-width: 1023px) {
-        width: min(75%, 75%);
-        top: 8.2rem;
-        left: 13%;
+      @media (min-width: 900px) and (max-width: 1000px) {
+        width: 37%;
+        top: 7.1rem;
+        right: unset;
+        translate: 86% 0;
 
         @keyframes contactForm {
-          0% {
+          from {
             top: 0;
             filter: opacity(0.5) grayscale(10%) blur(0.05rem) brightness(80%);
             transform: scale(100%);
           }
-          50% {
-            top: 4.1rem;
-            transform: scale(101%);
-          }
-          100% {
-            top: 8.2rem;
+          to {
+            top: 7.1rem;
             transform: scale(102%);
             opacity: 1;
           }
         }
       }
 
-      @media (min-width: 740px) and (max-width: 800px) {
-        width: min(73%, 73%);
-        left: 14%;
+      @media (width: 900px) {
+        width: 42%;
+        top: 7rem;
+        right: unset;
+        translate: 71% 0;
+
+        @keyframes contactForm {
+          from {
+            top: 0;
+            filter: opacity(0.5) grayscale(10%) blur(0.05rem) brightness(80%);
+            transform: scale(100%);
+          }
+          to {
+            top: 7rem;
+            transform: scale(102%);
+            opacity: 1;
+          }
+        }
       }
 
-      @media (min-width: 800px) and (max-width: 860px) {
-        width: min(71%, 71%);
-        left: 14.5%;
+      @media (min-width: 1000px) and (max-width: 1023px) {
+        row-gap: 1rem;
+        width: 37%;
+        height: 29.6rem;
+        top: 7.1rem;
+        right: unset;
+        translate: 86% 0;
+
+        @keyframes contactForm {
+          from {
+            top: 0;
+            filter: opacity(0.5) grayscale(10%) blur(0.05rem) brightness(80%);
+            transform: scale(100%);
+          }
+          to {
+            top: 7.1rem;
+            transform: scale(102%);
+            opacity: 1;
+          }
+        }
       }
 
-      @media (min-width: 860px) and (max-width: 920px) {
-        width: min(67%, 67%);
-        left: 16.5%;
-      }
+      @media (width: 1000px) {
+        row-gap: 1rem;
+        width: 37%;
+        height: 29.6rem;
+        top: 7.1rem;
+        right: unset;
+        translate: 85% 0;
 
-      @media (min-width: 920px) and (max-width: 980px) {
-        width: min(65%, 65%);
-        left: 17%;
+        @keyframes contactForm {
+          from {
+            top: 0;
+            filter: opacity(0.5) grayscale(10%) blur(0.05rem) brightness(80%);
+            transform: scale(100%);
+          }
+          to {
+            top: 7.1rem;
+            transform: scale(102%);
+            opacity: 1;
+          }
+        }
       }
-
-      @media (min-width: 980px) and (max-width: 1023px) {
-        width: min(63%, 63%);
-        left: 18%;
-      }
-
       @media (min-width: 1023px) and (max-width: 1100px) {
         row-gap: 0.5rem;
-        width: 24.2%;
+        width: 24.4%;
         height: 20rem;
         top: 3.6rem;
 
         @keyframes contactForm {
-          0% {
+          from {
             top: 0;
             filter: opacity(0.5) grayscale(10%) blur(0.05rem) brightness(80%);
             transform: scale(100%);
           }
-          50% {
-            top: 1.8rem;
-            transform: scale(101%);
-          }
-          100% {
+          to {
             top: 3.6rem;
+            transform: scale(102%);
+            opacity: 1;
+          }
+        }
+      }
+
+      @media (orientation: portrait) and (min-width: 1023px) and (max-width: 1100px) {
+        row-gap: 1rem;
+        width: 38%;
+        height: 29.6rem;
+        top: 7rem;
+        right: unset;
+        translate: 86% 0;
+
+        @keyframes contactForm {
+          from {
+            top: 0;
+            filter: opacity(0.5) grayscale(10%) blur(0.05rem) brightness(80%);
+            transform: scale(100%);
+          }
+          to {
+            top: 7rem;
             transform: scale(102%);
             opacity: 1;
           }
@@ -608,16 +773,12 @@
         top: 4.3rem;
 
         @keyframes contactForm {
-          0% {
+          from {
             top: 0;
             filter: opacity(0.5) grayscale(10%) blur(0.05rem) brightness(80%);
             transform: scale(100%);
           }
-          50% {
-            top: 2.15rem;
-            transform: scale(101%);
-          }
-          100% {
+          to {
             top: 4.3rem;
             transform: scale(102%);
             opacity: 1;
@@ -632,16 +793,12 @@
         top: 4.65rem;
 
         @keyframes contactForm {
-          0% {
+          from {
             top: 0;
             filter: opacity(0.5) grayscale(10%) blur(0.05rem) brightness(80%);
             transform: scale(100%);
           }
-          50% {
-            top: 2.325rem;
-            transform: scale(101%);
-          }
-          100% {
+          to {
             top: 4.65rem;
             transform: scale(102%);
             opacity: 1;
@@ -656,16 +813,12 @@
         top: 5.3rem;
 
         @keyframes contactForm {
-          0% {
+          from {
             top: 0;
             filter: opacity(0.5) grayscale(10%) blur(0.05rem) brightness(80%);
             transform: scale(100%);
           }
-          50% {
-            top: 2.65rem;
-            transform: scale(101%);
-          }
-          100% {
+          to {
             top: 5.3rem;
             transform: scale(102%);
             opacity: 1;
@@ -676,21 +829,37 @@
       @media (min-width: 1400px) and (max-width: 1500px) {
         row-gap: 0.8rem;
         width: 24%;
-        height: 28.2rem;
-        top: 5.9rem;
+        height: 28.3rem;
+        top: 5.8rem;
 
         @keyframes contactForm {
-          0% {
+          from {
             top: 0;
             filter: opacity(0.5) grayscale(10%) blur(0.05rem) brightness(80%);
             transform: scale(100%);
           }
-          50% {
-            top: 2.95rem;
-            transform: scale(101%);
+          to {
+            top: 5.8rem;
+            transform: scale(102%);
+            opacity: 1;
           }
-          100% {
-            top: 5.9rem;
+        }
+      }
+
+      @media (width: 1400px) {
+        row-gap: 0.8rem;
+        width: 24.1%;
+        height: 28.3rem;
+        top: 5.3rem;
+
+        @keyframes contactForm {
+          from {
+            top: 0;
+            filter: opacity(0.5) grayscale(10%) blur(0.05rem) brightness(80%);
+            transform: scale(100%);
+          }
+          to {
+            top: 5.3rem;
             transform: scale(102%);
             opacity: 1;
           }
@@ -704,16 +873,12 @@
         top: 6.2rem;
 
         @keyframes contactForm {
-          0% {
+          from {
             top: 0;
             filter: opacity(0.5) grayscale(10%) blur(0.05rem) brightness(80%);
             transform: scale(100%);
           }
-          50% {
-            top: 3.1rem;
-            transform: scale(101%);
-          }
-          100% {
+          to {
             top: 6.2rem;
             transform: scale(102%);
             opacity: 1;
@@ -730,20 +895,20 @@
         background-color: #5c4f43;
         border-radius: 0.4rem 0.4rem 0 0;
 
-        @media (min-width: 300px) and (max-width: 400px) {
-          padding: 0.8rem 1rem;
-        }
-
         @media (min-width: 400px) and (max-width: 600px) {
           padding: 0.8rem 1.2rem;
         }
 
         @media (width: 600px) {
-          padding: 0.8rem 2rem;
+          padding: 0.8rem 1.2rem;
         }
 
         @media (min-width: 1023px) and (max-width: 1200px) {
           padding: 0.5rem 0.7rem;
+        }
+
+        @media (orientation: portrait) and (min-width: 1023px) and (max-width: 1100px) {
+          padding: 0.8rem 1rem;
         }
 
         @media (min-width: 1200px) and (max-width: 1300px) {
@@ -880,11 +1045,12 @@
           align-items: center;
           width: 100%;
           height: 4.1rem;
-          padding: 1rem 0.5rem;
+          padding: 0.8rem 1rem;
           position: absolute;
           top: -5.15rem;
           background-color: #5c4f43;
           border-radius: 0.5rem 0.5rem 0 0;
+          font-size: 15pt;
           opacity: 0;
           z-index: 2;
           animation: info 3s linear;
@@ -927,11 +1093,57 @@
             }
           }
 
+          @media (min-width: 300px) and (max-width: 400px) {
+            height: 4rem;
+            top: -4.9rem;
+            font-size: 13pt;
+          }
+
+          @media (min-width: 400px) and (max-width: 500px) {
+            height: 4.1rem;
+            padding: 0.8rem 1.2rem;
+            top: -5.12rem;
+            font-size: 14pt;
+          }
+
+          @media (width: 400px) {
+            height: 4rem;
+            top: -4.9rem;
+            font-size: 13pt;
+          }
+
+          @media (min-width: 500px) and (max-width: 600px) {
+            height: 4rem;
+            top: -5.1rem;
+          }
+
+          @media (min-width: 600px) and (max-width: 700px) {
+            height: 4.1rem;
+            top: -5.1rem;
+          }
+
+          @media (width: 600px) {
+            height: 4.1rem;
+            padding: 0.8rem 1.2rem;
+            top: -5.1rem;
+          }
+
+          @media (min-width: 700px) and (max-width: 1023px) {
+            top: -5.1rem;
+          }
+
           @media (min-width: 1023px) and (max-width: 1100px) {
             height: 2.799rem;
             padding: 0.5rem 0.7rem;
             top: -3.3rem;
             font-size: 10pt;
+          }
+
+          @media (orientation: portrait) and (min-width: 1023px) and (max-width: 1100px) {
+            height: 4rem;
+            padding: 0.8rem 1rem;
+            top: -5.1rem;
+            font-size: 16pt;
           }
 
           @media (min-width: 1100px) and (max-width: 1200px) {
@@ -955,11 +1167,12 @@
           align-items: center;
           width: 100%;
           height: 4.1rem;
-          padding: 1rem 0.5rem;
+          padding: 0.8rem 1rem;
           position: absolute;
           top: -5.15rem;
           background-color: #545146;
           border-radius: 0.5rem 0.5rem 0 0;
+          font-size: 15pt;
           opacity: 0;
           z-index: 2;
           animation: success 5s linear;
@@ -1002,11 +1215,57 @@
             }
           }
 
+          @media (min-width: 300px) and (max-width: 400px) {
+            height: 4rem;
+            top: -4.9rem;
+            font-size: 13pt;
+          }
+
+          @media (min-width: 400px) and (max-width: 500px) {
+            height: 4.1rem;
+            padding: 0.8rem 1.2rem;
+            top: -5.12rem;
+            font-size: 14pt;
+          }
+
+          @media (width: 400px) {
+            height: 4rem;
+            top: -4.9rem;
+            font-size: 13pt;
+          }
+
+          @media (min-width: 500px) and (max-width: 600px) {
+            height: 4rem;
+            top: -5.1rem;
+          }
+
+          @media (min-width: 600px) and (max-width: 700px) {
+            height: 4.1rem;
+            top: -5.1rem;
+          }
+
+          @media (width: 600px) {
+            height: 4.1rem;
+            padding: 0.8rem 1.2rem;
+            top: -5.1rem;
+          }
+
+          @media (min-width: 700px) and (max-width: 1023px) {
+            top: -5.1rem;
+          }
+
           @media (min-width: 1023px) and (max-width: 1100px) {
             height: 2.799rem;
             padding: 0.5rem 0.7rem;
             top: -3.3rem;
             font-size: 10pt;
+          }
+
+          @media (orientation: portrait) and (min-width: 1023px) and (max-width: 1100px) {
+            height: 4rem;
+            padding: 0.8rem 1rem;
+            top: -5.1rem;
+            font-size: 16pt;
           }
 
           @media (min-width: 1100px) and (max-width: 1200px) {
@@ -1030,11 +1289,12 @@
           align-items: center;
           width: 100%;
           height: 4.1rem;
-          padding: 1rem 0.5rem;
+          padding: 0.8rem 1rem;
           position: absolute;
           top: -5.15rem;
           background-color: #91372b;
           border-radius: 0.5rem 0.5rem 0 0;
+          font-size: 15pt;
           opacity: 0;
           z-index: 2;
           animation: fail 5s linear;
@@ -1077,11 +1337,57 @@
             }
           }
 
+          @media (min-width: 300px) and (max-width: 400px) {
+            height: 4rem;
+            top: -4.9rem;
+            font-size: 13pt;
+          }
+
+          @media (min-width: 400px) and (max-width: 500px) {
+            height: 4.1rem;
+            padding: 0.8rem 1.2rem;
+            top: -5.12rem;
+            font-size: 14pt;
+          }
+
+          @media (width: 400px) {
+            height: 4rem;
+            top: -4.9rem;
+            font-size: 13pt;
+          }
+
+          @media (min-width: 500px) and (max-width: 600px) {
+            height: 4rem;
+            top: -5.1rem;
+          }
+
+          @media (min-width: 600px) and (max-width: 700px) {
+            height: 4.1rem;
+            top: -5.1rem;
+          }
+
+          @media (width: 600px) {
+            height: 4.1rem;
+            padding: 0.8rem 1.2rem;
+            top: -5.1rem;
+          }
+
+          @media (min-width: 700px) and (max-width: 1023px) {
+            top: -5.1rem;
+          }
+
           @media (min-width: 1023px) and (max-width: 1100px) {
             height: 2.799rem;
             padding: 0.5rem 0.7rem;
             top: -3.3rem;
             font-size: 10pt;
+          }
+
+          @media (orientation: portrait) and (min-width: 1023px) and (max-width: 1100px) {
+            height: 4rem;
+            padding: 0.8rem 1rem;
+            top: -5.1rem;
+            font-size: 16pt;
           }
 
           @media (min-width: 1100px) and (max-width: 1200px) {
@@ -1152,13 +1458,18 @@
                 color: #a6a6a6;
               }
 
-              @media (min-width: 300px) and (max-width: 400px) {
+              @media (min-width: 300px) and (max-width: 800px) {
                 height: 2.5rem;
               }
 
               @media (min-width: 1023px) and (max-width: 1100px) {
                 height: 2rem;
                 font-size: 8.2pt;
+              }
+
+              @media (orientation: portrait) and (min-width: 1023px) and (max-width: 1100px) {
+                height: 3rem;
+                font-size: 10pt;
               }
 
               @media (min-width: 1100px) and (max-width: 1200px) {
@@ -1201,13 +1512,18 @@
                 color: #a6a6a6;
               }
 
-              @media (min-width: 300px) and (max-width: 400px) {
+              @media (min-width: 300px) and (max-width: 800px) {
                 height: 2.5rem;
               }
 
               @media (min-width: 1023px) and (max-width: 1100px) {
                 height: 2rem;
                 font-size: 8.2pt;
+              }
+
+              @media (orientation: portrait) and (min-width: 1023px) and (max-width: 1100px) {
+                height: 3rem;
+                font-size: 10pt;
               }
 
               @media (min-width: 1100px) and (max-width: 1200px) {
@@ -1251,13 +1567,18 @@
               color: #a6a6a6;
             }
 
-            @media (min-width: 300px) and (max-width: 400px) {
+            @media (min-width: 300px) and (max-width: 800px) {
               height: 2.5rem;
             }
 
             @media (min-width: 1023px) and (max-width: 1100px) {
               height: 2rem;
               font-size: 8.2pt;
+            }
+
+            @media (orientation: portrait) and (min-width: 1023px) and (max-width: 1100px) {
+              height: 3rem;
+              font-size: 10pt;
             }
 
             @media (min-width: 1100px) and (max-width: 1200px) {
@@ -1301,13 +1622,18 @@
             color: #a6a6a6;
           }
 
-          @media (min-width: 300px) and (max-width: 400px) {
+          @media (min-width: 300px) and (max-width: 800px) {
             height: 2.5rem;
           }
 
           @media (min-width: 1023px) and (max-width: 1100px) {
             height: 2rem;
             font-size: 8.2pt;
+          }
+
+          @media (orientation: portrait) and (min-width: 1023px) and (max-width: 1100px) {
+            height: 3rem;
+            font-size: 10pt;
           }
 
           @media (min-width: 1100px) and (max-width: 1200px) {
@@ -1354,6 +1680,10 @@
             font-size: 9pt;
           }
 
+          @media (orientation: portrait) and (min-width: 1023px) and (max-width: 1100px) {
+            height: 9.5rem;
+          }
+
           @media (min-width: 1100px) and (max-width: 1200px) {
             height: 6.5rem;
             font-size: 10pt;
@@ -1387,13 +1717,28 @@
           top: 22.7rem;
 
           @media (min-width: 300px) and (max-width: 400px) {
-            margin-top: 0.4rem;
-            position: unset;
-            font-size: 9pt;
+            position: absolute;
+            top: 19rem;
+          }
+
+          @media (min-width: 400px) and (max-width: 800px) {
+            top: 18.5rem;
+          }
+
+          @media (min-width: 800px) and (max-width: 1023px) {
+            top: 20.3rem;
+          }
+
+          @media (width: 800px) {
+            top: 18.5rem;
           }
 
           @media (min-width: 1023px) and (max-width: 1100px) {
             top: 13.7rem;
+          }
+
+          @media (orientation: portrait) and (min-width: 1023px) and (max-width: 1100px) {
+            top: 20.8rem;
           }
 
           @media (min-width: 1100px) and (max-width: 1200px) {
@@ -1446,21 +1791,11 @@
             @media (min-width: 300px) and (max-width: 400px) {
               width: min(6rem, 6rem);
               height: min(2.3rem, 2.3rem);
-              font-size: 9pt;
-            }
-
-            @media (min-width: 400px) and (max-width: 600px) {
-              bottom: -19.375rem;
-            }
-
-            @media (min-width: 600px) and (max-width: 700px) {
-              bottom: -19rem;
             }
 
             @media (width: 700px) {
               width: min(6rem, 6rem);
               font-size: 9pt;
-              bottom: 0 !important;
             }
 
             @media (min-width: 700px) and (max-width: 767px) {
@@ -1468,14 +1803,16 @@
               font-size: 9pt;
             }
 
-            @media (min-width: 300px) and (max-width: 1023px) {
-              cursor: default;
-            }
-
             @media (min-width: 1023px) and (max-width: 1100px) {
               width: 4.7rem;
               height: 1.8rem;
               font-size: 7.4pt;
+            }
+
+            @media (orientation: portrait) and (min-width: 1023px) and (max-width: 1100px) {
+              width: 7rem;
+              height: 2.5rem;
+              font-size: 10pt;
             }
 
             @media (min-width: 1100px) and (max-width: 1200px) {
@@ -1522,21 +1859,11 @@
             @media (min-width: 300px) and (max-width: 400px) {
               width: min(6rem, 6rem);
               height: min(2.3rem, 2.3rem);
-              font-size: 9pt;
-            }
-
-            @media (min-width: 400px) and (max-width: 600px) {
-              bottom: -19.375rem;
-            }
-
-            @media (min-width: 600px) and (max-width: 700px) {
-              bottom: -19rem;
             }
 
             @media (width: 700px) {
               width: min(6rem, 6rem);
               font-size: 9pt;
-              bottom: 0 !important;
             }
 
             @media (min-width: 700px) and (max-width: 767px) {
@@ -1548,6 +1875,12 @@
               width: 4.7rem;
               height: 1.8rem;
               font-size: 7.4pt;
+            }
+
+            @media (orientation: portrait) and (min-width: 1023px) and (max-width: 1100px) {
+              width: 7rem;
+              height: 2.5rem;
+              font-size: 10pt;
             }
 
             @media (min-width: 1100px) and (max-width: 1200px) {
@@ -1599,21 +1932,11 @@
             @media (min-width: 300px) and (max-width: 400px) {
               width: min(6rem, 6rem);
               height: min(2.3rem, 2.3rem);
-              font-size: 9pt;
-            }
-
-            @media (min-width: 400px) and (max-width: 600px) {
-              bottom: -19.375rem;
-            }
-
-            @media (min-width: 600px) and (max-width: 700px) {
-              bottom: -19rem;
             }
 
             @media (width: 700px) {
               width: min(6rem, 6rem);
               font-size: 9pt;
-              bottom: 0 !important;
             }
 
             @media (min-width: 700px) and (max-width: 767px) {
@@ -1621,14 +1944,16 @@
               font-size: 9pt;
             }
 
-            @media (min-width: 300px) and (max-width: 1023px) {
-              cursor: default;
-            }
-
             @media (min-width: 1023px) and (max-width: 1100px) {
               width: 4.7rem;
               height: 1.8rem;
               font-size: 7.4pt;
+            }
+
+            @media (orientation: portrait) and (min-width: 1023px) and (max-width: 1100px) {
+              width: 7rem;
+              height: 2.5rem;
+              font-size: 10pt;
             }
 
             @media (min-width: 1100px) and (max-width: 1200px) {
