@@ -7,6 +7,7 @@ const IMAGES_TO_PRELOAD = [...(MainContent.assets || [])];
 
 export default function App() {
   const [loading, setLoading] = useState(true);
+  const [progress, setProgress] = useState(0);
   const [isContactFormOpen, setIsContactFormOpen] = useState(false);
   const [activeList, setActiveList] = useState(false);
   const scrollTimeoutRef = useRef(null);
@@ -14,12 +15,51 @@ export default function App() {
   const originalScrollRef = useRef({ x: 0, y: 0 });
 
   // True dynamic Image Preloader
+  // useLayoutEffect(() => {
+  //   const preloadImage = (src) => {
+  //     return new Promise((resolve, reject) => {
+  //       const img = new Image();
+  //       img.onload = resolve;
+  //       img.onerror = reject;
+  //       img.src = src;
+  //     });
+  //   };
+
+  //   const minDelay = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
+
+  //   const loadAssets = async () => {
+  //     try {
+  //       await Promise.all([
+  //         ...IMAGES_TO_PRELOAD.map((src) => preloadImage(src)),
+  //         minDelay(3000),
+  //       ]);
+  //     } catch (error) {
+  //       console.error('One or more images failed to preload safely:', error);
+  //     } finally {
+  //       setLoading(false);
+  //     }
+  //   };
+
+  //   loadAssets();
+  // }, []);
+
   useLayoutEffect(() => {
+    let loadedCount = 0;
+    const totalImages = IMAGES_TO_PRELOAD.length;
+
     const preloadImage = (src) => {
-      return new Promise((resolve, reject) => {
+      return new Promise((resolve) => {
         const img = new Image();
-        img.onload = resolve;
-        img.onerror = reject;
+
+        const handleImageCounter = () => {
+          loadedCount++;
+          const percentage = Math.round((loadedCount / totalImages) * 100);
+          setProgress(percentage);
+          resolve();
+        };
+
+        img.onload = handleImageCounter;
+        img.onerror = handleImageCounter;
         img.src = src;
       });
     };
@@ -33,8 +73,9 @@ export default function App() {
           minDelay(3000),
         ]);
       } catch (error) {
-        console.error('One or more images failed to preload safely:', error);
+        console.error('Error during asset loading:', error);
       } finally {
+        setProgress(100);
         setLoading(false);
       }
     };
@@ -158,7 +199,7 @@ export default function App() {
       }}
     >
       {loading ? (
-        <Loader />
+        <Loader progress={progress} />
       ) : (
         <>
           <Header
