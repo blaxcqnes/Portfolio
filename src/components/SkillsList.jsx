@@ -53,117 +53,83 @@ export default function SkillsList({ toggleSkillsList }) {
 
         {pageNumber < 2 ? (
           <div className="titleAndFluencies">
-            <h4 className="titleOne">Fluency in Cybersecurity</h4>
-            <div className="fluencyOne">
-              <p className="name">WireShark</p>
-              <div className="statusBar">
-                <div className="bottom"></div>
-                <p className="percentage">70%</p>
-                <div
-                  // className={isLightModeOn ? 'topOneLight' : 'topOne'}
-                  className="topOne"
-                ></div>
+            <h4 className="title">Fluency in Cybersecurity</h4>
+            <div className="fluenciesOne">
+              <div className="fluencyOne">
+                <p className="name">WireShark</p>
+                <div className="statusBar">
+                  <div className="bottom"></div>
+                  <p className="percentage">70%</p>
+                  <div className="topOne"></div>
+                </div>
               </div>
-            </div>
-
-            {/* */}
-
-            <div className="fluencyTwo">
-              <p className="name">Nmap</p>
-              <div className="statusBar">
-                <div className="bottom"></div>
-                <p className="percentage">80%</p>
-                <div
-                  // className={isLightModeOn ? 'topTwoLight' : 'topTwo'}
-                  className="topTwo"
-                ></div>
+              {/* */}
+              <div className="fluencyTwo">
+                <p className="name">Nmap</p>
+                <div className="statusBar">
+                  <div className="bottom"></div>
+                  <p className="percentage">80%</p>
+                  <div className="topTwo"></div>
+                </div>
               </div>
-            </div>
-
-            {/* */}
-
-            <div className="fluencyThree">
-              <p className="name">Metasploit</p>
-              <div className="statusBar">
-                <div className="bottom"></div>
-                <p className="percentage">65%</p>
-                <div
-                  // className={isLightModeOn ? 'topThreeLight' : 'topThree'}
-                  className="topThree"
-                ></div>
+              {/* */}
+              <div className="fluencyThree">
+                <p className="name">Metasploit</p>
+                <div className="statusBar">
+                  <div className="bottom"></div>
+                  <p className="percentage">65%</p>
+                  <div className="topThree"></div>
+                </div>
               </div>
-            </div>
-
-            {/* */}
-
-            <div className="fluencyFour">
-              <p className="name">Burp Suite</p>
-              <div className="statusBar">
-                <div className="bottom"></div>
-                <p className="percentage">75%</p>
-                <div
-                  // className={isLightModeOn ? 'topFourLight' : 'topFour'}
-                  className="topFour"
-                ></div>
+              {/* */}
+              <div className="fluencyFour">
+                <p className="name">Burp Suite</p>
+                <div className="statusBar">
+                  <div className="bottom"></div>
+                  <p className="percentage">75%</p>
+                  <div className="topFour"></div>
+                </div>
               </div>
             </div>
           </div>
         ) : (
           <div className="titleAndFluencies">
-            <h4 className="titleTwo">Fluency in Front-End</h4>
-            <div className="fluencyFive">
-              <p className="name">HTML</p>
-              <div className="statusBar">
-                <div className="bottom"></div>
-                <p className="percentage">100%</p>
-                <div
-                  // className={isLightModeOn ? 'topFiveLight' : 'topFive'}
-                  className="topFive"
-                ></div>
+            <h4 className="title">Fluency in Front-End</h4>
+            <div className="fluenciesTwo">
+              <div className="fluencyOne">
+                <p className="name">HTML</p>
+                <div className="statusBar">
+                  <div className="bottom"></div>
+                  <p className="percentage">100%</p>
+                  <div className="topOne"></div>
+                </div>
               </div>
-            </div>
-
-            {/* */}
-
-            <div className="fluencySix">
-              <span className="name">
-                CSS&nbsp;<p>&</p>&nbsp;SCSS
-              </span>
-              <div className="statusBar">
-                <div className="bottom"></div>
-                <p className="percentage">90%</p>
-                <div
-                  // className={isLightModeOn ? 'topSixLight' : 'topSix'}
-                  className="topSix"
-                ></div>
+              {/* */}
+              <div className="fluencyTwo">
+                <span className="name">CSS & SCSS</span>
+                <div className="statusBar">
+                  <div className="bottom"></div>
+                  <p className="percentage">90%</p>
+                  <div className="topTwo"></div>
+                </div>
               </div>
-            </div>
-
-            {/* */}
-
-            <div className="fluencySeven">
-              <p className="name">JavaScript</p>
-              <div className="statusBar">
-                <div className="bottom"></div>
-                <p className="percentage">70%</p>
-                <div
-                  // className={isLightModeOn ? 'topSevenLight' : 'topSeven'}
-                  className="topSeven"
-                ></div>
+              {/* */}
+              <div className="fluencyThree">
+                <p className="name">JavaScript</p>
+                <div className="statusBar">
+                  <div className="bottom"></div>
+                  <p className="percentage">70%</p>
+                  <div className="topThree"></div>
+                </div>
               </div>
-            </div>
-
-            {/* */}
-
-            <div className="fluencyEight">
-              <p className="name">React</p>
-              <div className="statusBar">
-                <div className="bottom"></div>
-                <p className="percentage">80%</p>
-                <div
-                  // className={isLightModeOn ? 'topEightLight' : 'topEight'}
-                  className="topEight"
-                ></div>
+              {/* */}
+              <div className="fluencyFour">
+                <p className="name">React</p>
+                <div className="statusBar">
+                  <div className="bottom"></div>
+                  <p className="percentage">80%</p>
+                  <div className="topFour"></div>
+                </div>
               </div>
             </div>
           </div>

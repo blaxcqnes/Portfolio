@@ -3572,7 +3572,7 @@
         flex-direction: column;
         row-gap: 2%;
         width: 100%;
-        height: min(20rem, 20rem);
+        height: 20rem;
         transform: scale(102%);
         animation: skillsList 0.5s linear;
         animation-iteration-count: 1;
@@ -3597,20 +3597,30 @@
           }
         }
 
-        @media (min-width: 300px) and (max-width: 400px) {
+        @media (min-width: 300px) and (max-width: 500px) {
           height: min(30rem, 30rem);
-        }
-
-        @media (min-width: 400px) and (max-width: 500px) {
-          height: min(30rem, 30rem);
+          scroll-margin-bottom: 2rem;
         }
 
         @media (min-width: 500px) and (max-width: 600px) {
           height: min(32rem, 32rem);
+          scroll-margin-bottom: 2rem;
         }
 
         @media (min-width: 600px) and (max-width: 700px) {
           height: min(22rem, 22rem);
+        }
+
+        @media (min-width: 1023px) and (max-width: 1200px) {
+          height: 16rem;
+        }
+
+        @media (orientation: portrait) and (min-width: 1023px) and (max-width: 1100px) {
+          height: 20rem;
+        }
+
+        @media (min-width: 1200px) and (max-width: 1300px) {
+          height: 18rem;
         }
 
         .titleAndButton {
@@ -3618,13 +3628,9 @@
           flex-direction: row;
           justify-content: space-between;
           align-items: center;
-          padding: 0.8rem 2rem;
+          padding: 0.8rem 1rem;
           background-color: #5c4f43;
           border-radius: 0.4rem 0.4rem 0 0;
-
-          @media (min-width: 300px) and (max-width: 400px) {
-            padding: 0.8rem 1rem;
-          }
 
           @media (min-width: 400px) and (max-width: 600px) {
             padding: 0.8rem 1.2rem;
@@ -3632,6 +3638,18 @@
 
           @media (width: 600px) {
             padding: 0.8rem 2rem;
+          }
+
+          @media (min-width: 1023px) and (max-width: 1200px) {
+            padding: 0.5rem 0.7rem;
+          }
+
+          @media (orientation: portrait) and (min-width: 1023px) and (max-width: 1100px) {
+            padding: 0.8rem 1rem;
+          }
+
+          @media (min-width: 1200px) and (max-width: 1300px) {
+            padding: 0.6rem 1rem;
           }
 
           h4 {
@@ -3703,9 +3721,15 @@
               height: 2.3rem;
             }
 
-            @media (min-width: 700px) and (max-width: 763px) {
+            @media (min-width: 700px) and (max-width: 800px) {
               width: 6rem;
               font-size: 9pt;
+            }
+
+            @media (width: 800px) {
+              width: 7rem;
+              height: 2.5rem;
+              font-size: 10pt;
             }
 
             @media (min-width: 300px) and (max-width: 1023px) {
@@ -3735,6 +3759,12 @@
               height: 2rem;
               font-size: 8pt;
             }
+
+            @media (min-width: 1300px) and (max-width: 1400px) {
+              width: 6.2rem;
+              height: 2.2rem;
+              font-size: 9pt;
+            }
           }
         }
 
@@ -3746,39 +3776,57 @@
           align-self: center;
           align-items: center;
           width: 98%;
-          height: 75.5%;
+          height: 14.9rem;
           position: relative;
           background-color: #2a2a2a;
           border-radius: 0.5rem;
 
           @media (min-width: 300px) and (max-width: 400px) {
+            width: 95%;
+            height: 24.65rem;
             align-items: unset;
-            width: min(95%, 95%);
-            height: min(83.5%, 83.5%);
           }
 
-          @media (min-width: 400px) and (max-width: 550px) {
+          @media (min-width: 400px) and (max-width: 500px) {
+            width: 96%;
+            height: 24.55rem;
             align-items: unset;
-            width: min(97%, 97%);
-            height: min(83%, 83%);
           }
 
-          @media (min-width: 550px) and (max-width: 600px) {
+          @media (min-width: 500px) and (max-width: 600px) {
+            width: 96%;
+            height: 26.4rem;
             align-items: unset;
-            width: min(97%, 97%);
-            height: min(84%, 84%);
           }
 
-          @media (min-width: 600px) and (max-width: 750px) {
-            height: min(77%, 77%);
+          @media (min-width: 600px) and (max-width: 700px) {
+            width: 97.5%;
+            height: 16.8rem;
           }
 
           @media (min-width: 1023px) and (max-width: 1200px) {
-            height: min(75%, 75%);
+            height: 12.3rem;
           }
 
-          @media (min-width: 1200px) and (max-width: 1349px) {
-            height: min(74.5%, 74.5%);
+          @media (orientation: portrait) and (min-width: 1023px) and (max-width: 1100px) {
+            width: 98.5%;
+            height: 14.9rem;
+          }
+
+          @media (min-width: 1200px) and (max-width: 1300px) {
+            height: 13.9rem;
+          }
+
+          @media (min-width: 1300px) and (max-width: 1400px) {
+            height: 15.2rem;
+          }
+
+          @media (width: 1300px) {
+            height: 13.7rem;
+          }
+
+          @media (width: 1400px) {
+            height: 15.2rem;
           }
 
           .previousDisabled {
@@ -3796,14 +3844,33 @@
             cursor: default;
             transition: all 0.2s ease;
 
-            @media (min-width: 300px) and (max-width: 600px) {
-              width: min(6rem, 6rem);
-              height: min(2.3rem, 2.3rem);
+            @media (min-width: 300px) and (max-width: 350px) {
+              width: 5.7rem;
+              height: 2.3rem;
               bottom: 1rem;
               left: 0.5rem;
               background-color: #232323;
               color: #a6a6a6;
-              font-size: 9pt;
+              font-size: 9.5pt;
+            }
+
+            @media (min-width: 350px) and (max-width: 400px) {
+              width: 6rem;
+              height: 2.3rem;
+              bottom: 1rem;
+              left: 0.5rem;
+              background-color: #232323;
+              color: #a6a6a6;
+              font-size: 9.5pt;
+            }
+
+            @media (min-width: 400px) and (max-width: 600px) {
+              width: 7rem;
+              height: 2.5rem;
+              bottom: 1rem;
+              left: 0.5rem;
+              background-color: #232323;
+              color: #a6a6a6;
             }
 
             @media (width: 600px) {
@@ -3814,16 +3881,56 @@
               left: 2rem;
               background-color: #2a2a2a;
               color: #2a2a2a;
-              font-size: 10pt;
+            }
+
+            @media (min-width: 700px) and (max-width: 800px) {
+              height: 6rem;
+              top: unset;
+              bottom: unset;
+              left: 2rem;
+            }
+
+            @media (width: 800px) {
+              width: 2.5rem;
+              height: 7rem;
+              top: unset;
+              bottom: unset;
+              left: 2rem;
+              font-size: 9.5pt;
             }
 
             @media (min-width: 300px) and (max-width: 1023px) {
               cursor: default;
             }
 
-            @media (min-width: 1023px) and (max-width: 1400px) {
-              width: min(2.3rem, 2.3rem);
-              height: min(6rem, 6rem);
+            @media (min-width: 1023px) and (max-width: 1100px) {
+              width: 1.8rem;
+              height: 4.7rem;
+              font-size: 7.4pt;
+              left: 1rem;
+            }
+
+            @media (orientation: portrait) and (min-width: 1023px) and (max-width: 1100px) {
+              width: 2.5rem;
+              height: 7rem;
+              font-size: 10pt;
+            }
+
+            @media (min-width: 1100px) and (max-width: 1200px) {
+              width: 1.9rem;
+              height: 5.1rem;
+              font-size: 8pt;
+            }
+
+            @media (min-width: 1200px) and (max-width: 1300px) {
+              width: 2rem;
+              height: 5.5rem;
+              font-size: 8pt;
+            }
+
+            @media (min-width: 1300px) and (max-width: 1400px) {
+              width: 2.2rem;
+              height: 6.2rem;
               font-size: 9pt;
             }
           }
@@ -3847,16 +3954,27 @@
               background-color: #5c4f43;
             }
 
-            @media (min-width: 300px) and (max-width: 600px) {
-              width: min(6rem, 6rem);
-              height: min(2.3rem, 2.3rem);
+            @media (min-width: 300px) and (max-width: 350px) {
+              width: 5.7rem;
+              height: 2.3rem;
               bottom: 1rem;
               left: 0.5rem;
-              font-size: 9pt;
+              font-size: 9.5pt;
+            }
 
-              &:hover {
-                background-color: unset;
-              }
+            @media (min-width: 350px) and (max-width: 400px) {
+              width: 6rem;
+              height: 2.3rem;
+              bottom: 1rem;
+              left: 0.5rem;
+              font-size: 9.5pt;
+            }
+
+            @media (min-width: 400px) and (max-width: 600px) {
+              width: 7rem;
+              height: 2.5rem;
+              bottom: 1rem;
+              left: 0.5rem;
             }
 
             @media (width: 600px) {
@@ -3865,16 +3983,56 @@
               top: unset;
               bottom: unset;
               left: 2rem;
-              font-size: 10pt;
+            }
+
+            @media (min-width: 700px) and (max-width: 800px) {
+              height: 6rem;
+              top: unset;
+              bottom: unset;
+              left: 2rem;
+            }
+
+            @media (width: 800px) {
+              width: 2.5rem;
+              height: 7rem;
+              top: unset;
+              bottom: unset;
+              left: 2rem;
+              font-size: 9.5pt;
             }
 
             @media (min-width: 300px) and (max-width: 1023px) {
               cursor: default;
             }
 
-            @media (min-width: 1023px) and (max-width: 1400px) {
-              width: min(2.3rem, 2.3rem);
-              height: min(6rem, 6rem);
+            @media (min-width: 1023px) and (max-width: 1100px) {
+              width: 1.8rem;
+              height: 4.7rem;
+              font-size: 7.4pt;
+              left: 1rem;
+            }
+
+            @media (orientation: portrait) and (min-width: 1023px) and (max-width: 1100px) {
+              width: 2.5rem;
+              height: 7rem;
+              font-size: 10pt;
+            }
+
+            @media (min-width: 1100px) and (max-width: 1200px) {
+              width: 1.9rem;
+              height: 5.1rem;
+              font-size: 8pt;
+            }
+
+            @media (min-width: 1200px) and (max-width: 1300px) {
+              width: 2rem;
+              height: 5.5rem;
+              font-size: 8pt;
+            }
+
+            @media (min-width: 1300px) and (max-width: 1400px) {
+              width: 2.2rem;
+              height: 6.2rem;
               font-size: 9pt;
             }
           }
@@ -3882,16 +4040,10 @@
           .titleAndFluencies {
             display: flex;
             flex-direction: column;
-            row-gap: 1.2rem;
+            row-gap: 1.5rem;
             width: 70%;
 
-            @media (min-width: 300px) and (max-width: 350px) {
-              row-gap: 0.7rem;
-              width: 90%;
-              margin-top: 2.5rem;
-            }
-
-            @media (min-width: 350px) and (max-width: 600px) {
+            @media (min-width: 300px) and (max-width: 600px) {
               row-gap: 1.5rem;
               width: 90%;
               margin-top: 2.5rem;
@@ -3903,26 +4055,81 @@
               margin-top: 1.5rem;
             }
 
-            @media (min-width: 870px) and (max-width: 1023px) {
-              width: 45%;
+            @media (min-width: 600px) and (max-width: 700px) {
+              width: 60%;
+            }
+
+            @media (min-width: 700px) and (max-width: 900px) {
+              width: 65%;
+            }
+
+            @media (min-width: 900px) and (max-width: 1000px) {
+              width: 60%;
+            }
+
+            @media (min-width: 1000px) and (max-width: 1023px) {
+              width: 50%;
             }
 
             @media (min-width: 1023px) and (max-width: 1100px) {
               width: 60%;
             }
 
-            .titleOne {
-              display: flex;
-              flex-direction: row;
-              align-items: center;
-              margin-bottom: 0.5rem;
-              font-size: 13pt;
+            @media (orientation: portrait) and (min-width: 1023px) and (max-width: 1100px) {
+              width: 45%;
+            }
+
+            .title {
+              font-size: 15pt;
               font-weight: 600;
               color: #ffffff;
-              animation: titleOne 0.5s linear;
+
+              @media (min-width: 300px) and (max-width: 400px) {
+                font-size: 13pt;
+              }
+
+              @media (min-width: 400px) and (max-width: 500px) {
+                font-size: 14pt;
+              }
+
+              @media (min-width: 1000px) and (max-width: 1023px) {
+                font-size: 16pt;
+              }
+
+              @media (min-width: 1023px) and (max-width: 1100px) {
+                font-size: 10pt;
+              }
+
+              @media (orientation: portrait) and (min-width: 1023px) and (max-width: 1100px) {
+                font-size: 16pt;
+              }
+
+              @media (min-width: 1100px) and (max-width: 1200px) {
+                font-size: 11pt;
+              }
+
+              @media (min-width: 1200px) and (max-width: 1300px) {
+                font-size: 12pt;
+              }
+
+              @media (min-width: 1300px) and (max-width: 1400px) {
+                font-size: 14pt;
+              }
+
+              @media (min-width: 1500px) and (max-width: 1600px) {
+                font-size: 15pt;
+              }
+            }
+
+            .fluenciesOne {
+              display: flex;
+              flex-direction: column;
+              row-gap: 1.2rem;
+              margin-left: 1rem;
+              animation: fluenciesOne 0.5s linear;
               animation-iteration-count: 1;
 
-              @keyframes titleOne {
+              @keyframes fluenciesOne {
                 0% {
                   opacity: 0;
                 }
@@ -3932,102 +4139,76 @@
               }
 
               @media (min-width: 300px) and (max-width: 400px) {
-                margin-bottom: 0.7rem;
-              }
-            }
-
-            .fluencyOne {
-              display: flex;
-              flex-direction: row;
-              column-gap: 5rem;
-              align-items: center;
-              margin-left: 1rem;
-              animation: fluencyOne 0.5s linear;
-              animation-iteration-count: 1;
-
-              @keyframes fluencyOne {
-                0% {
-                  opacity: 0;
-                }
-                100% {
-                  opacity: 1;
-                }
+                margin-left: 0.5rem;
               }
 
-              @media (min-width: 300px) and (max-width: 350px) {
-                flex-direction: column;
-                row-gap: 0.5rem;
-                align-self: start;
-                align-items: start;
-                margin-left: unset;
+              @media (min-width: 300px) and (max-width: 600px) {
+                row-gap: 1.5rem;
               }
 
-              @media (min-width: 350px) and (max-width: 600px) {
-                flex-direction: row;
-                column-gap: unset;
-                justify-content: space-between;
-                width: 100%;
-              }
-
-              @media (min-width: 1023px) and (max-width: 1100px) {
-                flex-direction: row;
-                column-gap: unset;
-                justify-content: space-between;
-                width: 100%;
-              }
-
-              .name {
-                width: 25%;
-                font-size: 11pt;
-                font-weight: 500;
-                color: #ebebeb;
-                position: unset;
-
-                @media (min-width: 300px) and (max-width: 350px) {
-                  width: unset;
-                }
-              }
-
-              .statusBar {
+              .fluencyOne {
                 display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
 
-                .bottom {
-                  width: 10rem;
-                  height: 1.5rem;
-                  border-radius: 0.5rem;
-                  background-color: #545146;
-
-                  @media (min-width: 300px) and (max-width: 400px) {
-                    width: 9rem;
-                  }
+                .name {
+                  font-size: 11pt;
+                  font-weight: 500;
+                  color: #ebebeb;
+                  position: unset;
                 }
 
-                .topOne {
-                  width: 7.5rem;
-                  height: 1.5rem;
-                  position: absolute;
-                  border-radius: 0.5rem;
-                  border: 0.1rem solid #656565;
-                  background-color: #5c4f43;
-                  animation: topOne 1s cubic-bezier(0.1, -0.6, 0.2, 0) 0s 3
-                    alternate none;
-                  z-index: 1;
+                .statusBar {
+                  display: flex;
+                  position: relative;
 
-                  @keyframes topOne {
-                    from {
-                      width: 0rem;
-                      background-color: #545146;
-                      opacity: 0;
-                    }
-                    to {
+                  .bottom {
+                    width: 10rem;
+                    height: 1.5rem;
+                    border-radius: 0.5rem;
+                    background-color: #545146;
+
+                    @media (min-width: 300px) and (max-width: 330px) {
                       width: 7.5rem;
-                      background-color: #5c4f43;
-                      opacity: 1;
+                    }
+
+                    @media (min-width: 330px) and (max-width: 350px) {
+                      width: 8.5rem;
+                    }
+
+                    @media (min-width: 350px) and (max-width: 360px) {
+                      width: 9rem;
                     }
                   }
 
-                  @media (min-width: 300px) and (max-width: 400px) {
-                    width: 6.5rem;
+                  .percentage {
+                    display: flex;
+                    height: fit-content;
+                    width: fit-content;
+                    position: absolute;
+                    top: 12%;
+                    left: 40%;
+                    font-size: 11pt;
+                    font-weight: 500;
+                    color: #ebebeb;
+                    z-index: 2;
+
+                    @media (min-width: 300px) and (max-width: 600px) {
+                      top: 10%;
+                    }
+                  }
+
+                  .topOne {
+                    width: 7rem;
+                    height: 1.5rem;
+                    position: absolute;
+                    border-radius: 0.5rem;
+                    border: 0.1rem solid #656565;
+                    background-color: #5c4f43;
+                    animation: topOne 1s cubic-bezier(0.1, -0.6, 0.2, 0) 0s 3
+                      alternate none;
+                    z-index: 1;
 
                     @keyframes topOne {
                       from {
@@ -4036,651 +4217,138 @@
                         opacity: 0;
                       }
                       to {
-                        width: 6.5rem;
+                        width: 7rem;
                         background-color: #5c4f43;
                         opacity: 1;
                       }
                     }
+
+                    @media (min-width: 300px) and (max-width: 330px) {
+                      width: 5.25rem;
+
+                      @keyframes topOne {
+                        from {
+                          width: 0rem;
+                          background-color: #545146;
+                          opacity: 0;
+                        }
+                        to {
+                          width: 5.25rem;
+                          background-color: #5c4f43;
+                          opacity: 1;
+                        }
+                      }
+                    }
+
+                    @media (min-width: 330px) and (max-width: 350px) {
+                      width: 5.95rem;
+
+                      @keyframes topOne {
+                        from {
+                          width: 0rem;
+                          background-color: #545146;
+                          opacity: 0;
+                        }
+                        to {
+                          width: 5.95rem;
+                          background-color: #5c4f43;
+                          opacity: 1;
+                        }
+                      }
+                    }
+
+                    @media (min-width: 350px) and (max-width: 360px) {
+                      width: 6.3rem;
+
+                      @keyframes topOne {
+                        from {
+                          width: 0rem;
+                          background-color: #545146;
+                          opacity: 0;
+                        }
+                        to {
+                          width: 6.3rem;
+                          background-color: #5c4f43;
+                          opacity: 1;
+                        }
+                      }
+                    }
                   }
                 }
+              }
 
-                .percentage {
-                  display: flex;
-                  align-self: center;
-                  transform: translate(-5.5rem);
+              .fluencyTwo {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+
+                @media (min-width: 1023px) and (max-width: 1100px) {
+                  flex-direction: row;
+                  column-gap: unset;
+                  justify-content: space-between;
+                  width: 100%;
+                }
+
+                .name {
                   font-size: 11pt;
                   font-weight: 500;
                   color: #ebebeb;
                   position: unset;
-                  z-index: 2;
-                }
-              }
-            }
-
-            .fluencyTwo {
-              display: flex;
-              flex-direction: row;
-              column-gap: 5rem;
-              align-items: center;
-              margin-left: 1rem;
-              animation: fluencyTwo 0.5s linear;
-              animation-iteration-count: 1;
-
-              @keyframes fluencyTwo {
-                0% {
-                  opacity: 0;
-                }
-                100% {
-                  opacity: 1;
-                }
-              }
-
-              @media (min-width: 300px) and (max-width: 350px) {
-                flex-direction: column;
-                row-gap: 0.5rem;
-                align-self: start;
-                align-items: start;
-                margin-left: unset;
-              }
-
-              @media (min-width: 350px) and (max-width: 600px) {
-                flex-direction: row;
-                column-gap: unset;
-                justify-content: space-between;
-                width: 100%;
-              }
-
-              @media (width: 600px) {
-                align-items: center;
-                row-gap: 1.3rem;
-              }
-
-              @media (min-width: 1023px) and (max-width: 1100px) {
-                flex-direction: row;
-                column-gap: unset;
-                justify-content: space-between;
-                width: 100%;
-              }
-
-              .name {
-                width: 25%;
-                font-size: 11pt;
-                font-weight: 500;
-                color: #ebebeb;
-                position: unset;
-
-                @media (min-width: 300px) and (max-width: 350px) {
-                  width: unset;
-                }
-              }
-
-              .statusBar {
-                display: flex;
-
-                .bottom {
-                  width: 10rem;
-                  height: 1.5rem;
-                  border-radius: 0.5rem;
-                  background-color: #545146;
-
-                  @media (min-width: 300px) and (max-width: 400px) {
-                    width: 9rem;
-                  }
                 }
 
-                .topTwo {
-                  width: 8rem;
-                  height: 1.5rem;
-                  position: absolute;
-                  border-radius: 0.5rem;
-                  border: 0.1rem solid #656565;
-                  background-color: #5c4f43;
-                  animation: topTwo 0.8s cubic-bezier(0.1, -0.6, 0.2, 0) 0s 3
-                    alternate none;
-                  z-index: 1;
+                .statusBar {
+                  display: flex;
+                  position: relative;
 
-                  @keyframes topTwo {
-                    from {
-                      width: 0rem;
-                      background-color: #545146;
-                      opacity: 0;
+                  .bottom {
+                    width: 10rem;
+                    height: 1.5rem;
+                    border-radius: 0.5rem;
+                    background-color: #545146;
+
+                    @media (min-width: 300px) and (max-width: 330px) {
+                      width: 7.5rem;
                     }
-                    to {
-                      width: 8rem;
-                      background-color: #5c4f43;
-                      opacity: 1;
+
+                    @media (min-width: 330px) and (max-width: 350px) {
+                      width: 8.5rem;
+                    }
+
+                    @media (min-width: 350px) and (max-width: 360px) {
+                      width: 9rem;
                     }
                   }
 
-                  @media (min-width: 300px) and (max-width: 400px) {
-                    width: 7.1rem;
+                  .percentage {
+                    display: flex;
+                    height: fit-content;
+                    width: fit-content;
+                    position: absolute;
+                    top: 12%;
+                    left: 40%;
+                    font-size: 11pt;
+                    font-weight: 500;
+                    color: #ebebeb;
+                    z-index: 2;
+
+                    @media (min-width: 300px) and (max-width: 600px) {
+                      top: 10%;
+                    }
+                  }
+
+                  .topTwo {
+                    width: 8rem;
+                    height: 1.5rem;
+                    position: absolute;
+                    border-radius: 0.5rem;
+                    border: 0.1rem solid #656565;
+                    background-color: #5c4f43;
+                    animation: topTwo 1s cubic-bezier(0.1, -0.6, 0.2, 0) 0s 3
+                      alternate none;
+                    z-index: 1;
 
                     @keyframes topTwo {
-                      from {
-                        width: 0rem;
-                        background-color: #545146;
-                        opacity: 0;
-                      }
-                      to {
-                        width: 7.1rem;
-                        background-color: #5c4f43;
-                        opacity: 1;
-                      }
-                    }
-                  }
-                }
-
-                .percentage {
-                  display: flex;
-                  align-self: center;
-                  transform: translate(-5.5rem);
-                  font-size: 11pt;
-                  font-weight: 500;
-                  color: #ebebeb;
-                  position: unset;
-                  z-index: 2;
-                }
-              }
-            }
-
-            .fluencyThree {
-              display: flex;
-              flex-direction: row;
-              column-gap: 5rem;
-              align-items: center;
-              margin-left: 1rem;
-              animation: fluencyThree 0.5s linear;
-              animation-iteration-count: 1;
-
-              @keyframes fluencyThree {
-                0% {
-                  opacity: 0;
-                }
-                100% {
-                  opacity: 1;
-                }
-              }
-
-              @media (min-width: 300px) and (max-width: 350px) {
-                flex-direction: column;
-                row-gap: 0.5rem;
-                align-self: start;
-                align-items: start;
-                margin-left: unset;
-              }
-
-              @media (min-width: 350px) and (max-width: 600px) {
-                flex-direction: row;
-                column-gap: unset;
-                justify-content: space-between;
-                width: 100%;
-              }
-
-              @media (width: 600px) {
-                align-items: center;
-                row-gap: 1.3rem;
-              }
-
-              @media (min-width: 1023px) and (max-width: 1100px) {
-                flex-direction: row;
-                column-gap: unset;
-                justify-content: space-between;
-                width: 100%;
-              }
-
-              .name {
-                width: 25%;
-                font-size: 11pt;
-                font-weight: 500;
-                color: #ebebeb;
-                position: unset;
-
-                @media (min-width: 300px) and (max-width: 400px) {
-                  width: unset;
-                }
-              }
-
-              .statusBar {
-                display: flex;
-
-                .bottom {
-                  width: 10rem;
-                  height: 1.5rem;
-                  border-radius: 0.5rem;
-                  background-color: #545146;
-
-                  @media (min-width: 300px) and (max-width: 400px) {
-                    width: 9rem;
-                  }
-                }
-
-                .topThree {
-                  width: 6.5rem;
-                  height: 1.5rem;
-                  position: absolute;
-                  border-radius: 0.5rem;
-                  border: 0.1rem solid #656565;
-                  background-color: #5c4f43;
-                  animation: topThree 1s cubic-bezier(0.1, -0.6, 0.2, 0) 0s 3
-                    alternate none;
-                  z-index: 1;
-
-                  @keyframes topThree {
-                    from {
-                      width: 0rem;
-                      background-color: #545146;
-                      opacity: 0;
-                    }
-                    to {
-                      width: 6.5rem;
-                      background-color: #5c4f43;
-                      opacity: 1;
-                    }
-                  }
-
-                  @media (min-width: 300px) and (max-width: 400px) {
-                    width: 6.2rem;
-
-                    @keyframes topThree {
-                      from {
-                        width: 0rem;
-                        background-color: #545146;
-                        opacity: 0;
-                      }
-                      to {
-                        width: 6.2rem;
-                        background-color: #5c4f43;
-                        opacity: 1;
-                      }
-                    }
-                  }
-                }
-
-                .percentage {
-                  display: flex;
-                  align-self: center;
-                  transform: translate(-5.5rem);
-                  font-size: 11pt;
-                  font-weight: 500;
-                  color: #ebebeb;
-                  position: unset;
-                  z-index: 2;
-                }
-              }
-            }
-
-            .fluencyFour {
-              display: flex;
-              flex-direction: row;
-              column-gap: 5rem;
-              align-items: center;
-              margin-left: 1rem;
-              animation: fluencyFour 0.5s linear;
-              animation-iteration-count: 1;
-
-              @keyframes fluencyFour {
-                0% {
-                  opacity: 0;
-                }
-                100% {
-                  opacity: 1;
-                }
-              }
-
-              @media (min-width: 300px) and (max-width: 350px) {
-                flex-direction: column;
-                row-gap: 0.5rem;
-                align-self: start;
-                align-items: start;
-                margin-left: unset;
-              }
-
-              @media (min-width: 350px) and (max-width: 600px) {
-                flex-direction: row;
-                column-gap: unset;
-                justify-content: space-between;
-                width: 100%;
-              }
-
-              @media (min-width: 1023px) and (max-width: 1100px) {
-                flex-direction: row;
-                column-gap: unset;
-                justify-content: space-between;
-                width: 100%;
-              }
-
-              .name {
-                width: 25%;
-                font-size: 11pt;
-                font-weight: 500;
-                color: #ebebeb;
-                position: unset;
-
-                @media (min-width: 300px) and (max-width: 600px) {
-                  width: unset;
-                }
-              }
-
-              .statusBar {
-                display: flex;
-
-                .bottom {
-                  width: 10rem;
-                  height: 1.5rem;
-                  border-radius: 0.5rem;
-                  background-color: #545146;
-
-                  @media (min-width: 300px) and (max-width: 400px) {
-                    width: 9rem;
-                  }
-                }
-
-                .topFour {
-                  width: 7.8rem;
-                  height: 1.5rem;
-                  position: absolute;
-                  border-radius: 0.5rem;
-                  border: 0.1rem solid #656565;
-                  background-color: #5c4f43;
-                  animation: topFour 0.8s cubic-bezier(0.1, -0.6, 0.2, 0) 0s 3
-                    alternate none;
-                  z-index: 1;
-
-                  @keyframes topFour {
-                    from {
-                      width: 0rem;
-                      background-color: #545146;
-                      opacity: 0;
-                    }
-                    to {
-                      width: 7.8rem;
-                      background-color: #5c4f43;
-                      opacity: 1;
-                    }
-                  }
-
-                  @media (min-width: 300px) and (max-width: 400px) {
-                    width: 6.8rem;
-
-                    @keyframes topFour {
-                      from {
-                        width: 0rem;
-                        background-color: #545146;
-                        opacity: 0;
-                      }
-                      to {
-                        width: 6.8rem;
-                        background-color: #5c4f43;
-                        opacity: 1;
-                      }
-                    }
-                  }
-                }
-
-                .percentage {
-                  display: flex;
-                  align-self: center;
-                  transform: translate(-5.5rem);
-                  font-size: 11pt;
-                  font-weight: 500;
-                  color: #ebebeb;
-                  position: unset;
-                  z-index: 2;
-                }
-              }
-            }
-
-            .titleTwo {
-              display: flex;
-              flex-direction: row;
-              align-items: center;
-              margin-bottom: 0.5rem;
-              font-size: 13pt;
-              font-weight: 600;
-              color: #ffffff;
-              animation: titleTwo 0.5s linear;
-              animation-iteration-count: 1;
-
-              @keyframes titleTwo {
-                0% {
-                  opacity: 0;
-                }
-                100% {
-                  opacity: 1;
-                }
-              }
-
-              @media (min-width: 300px) and (max-width: 400px) {
-                margin-bottom: 0.7rem;
-              }
-            }
-
-            .fluencyFive {
-              display: flex;
-              flex-direction: row;
-              column-gap: 5rem;
-              align-items: center;
-              margin-left: 1rem;
-              animation: fluencyFive 0.5s linear;
-              animation-iteration-count: 1;
-
-              @keyframes fluencyFive {
-                0% {
-                  opacity: 0;
-                }
-                100% {
-                  opacity: 1;
-                }
-              }
-
-              @media (min-width: 300px) and (max-width: 350px) {
-                flex-direction: column;
-                row-gap: 0.5rem;
-                align-self: start;
-                align-items: start;
-                margin-left: unset;
-              }
-
-              @media (min-width: 350px) and (max-width: 600px) {
-                flex-direction: row;
-                column-gap: unset;
-                justify-content: space-between;
-                width: 100%;
-              }
-
-              @media (min-width: 1023px) and (max-width: 1100px) {
-                flex-direction: row;
-                column-gap: unset;
-                justify-content: space-between;
-                width: 100%;
-              }
-
-              .name {
-                width: 25%;
-                font-size: 11pt;
-                font-weight: 500;
-                color: #ebebeb;
-                position: unset;
-
-                @media (min-width: 300px) and (max-width: 350px) {
-                  width: unset;
-                }
-              }
-
-              .statusBar {
-                display: flex;
-
-                .bottom {
-                  width: 10rem;
-                  height: 1.5rem;
-                  border-radius: 0.5rem;
-                  background-color: #545146;
-
-                  @media (min-width: 300px) and (max-width: 400px) {
-                    width: 9rem;
-                  }
-                }
-
-                .topFive {
-                  width: 10rem;
-                  height: 1.5rem;
-                  position: absolute;
-                  border-radius: 0.5rem;
-                  border: 0.1rem solid #656565;
-                  background-color: #5c4f43;
-                  animation: topFive 1s cubic-bezier(0.1, -0.6, 0.2, 0) 0s 3
-                    alternate none;
-                  z-index: 1;
-
-                  @keyframes topFive {
-                    from {
-                      width: 0rem;
-                      background-color: #545146;
-                      opacity: 0;
-                    }
-                    to {
-                      width: 10rem;
-                      background-color: #5c4f43;
-                      opacity: 1;
-                    }
-                  }
-
-                  @media (min-width: 300px) and (max-width: 400px) {
-                    width: 9rem;
-
-                    @keyframes topFive {
-                      from {
-                        width: 0rem;
-                        background-color: #545146;
-                        opacity: 0;
-                      }
-                      to {
-                        width: 9rem;
-                        background-color: #5c4f43;
-                        opacity: 1;
-                      }
-                    }
-                  }
-                }
-
-                .percentage {
-                  display: flex;
-                  align-self: center;
-                  transform: translate(-5.5rem);
-                  font-size: 11pt;
-                  font-weight: 500;
-                  color: #ebebeb;
-                  position: unset;
-                  z-index: 2;
-
-                  @media (min-width: 300px) and (max-width: 600px) {
-                    width: 1.85rem;
-                  }
-                }
-              }
-            }
-
-            .fluencySix {
-              display: flex;
-              flex-direction: row;
-              column-gap: 5rem;
-              align-items: center;
-              margin-left: 1rem;
-              animation: fluencySix 0.5s linear;
-              animation-iteration-count: 1;
-
-              @keyframes fluencySix {
-                0% {
-                  opacity: 0;
-                }
-                100% {
-                  opacity: 1;
-                }
-              }
-
-              @media (min-width: 300px) and (max-width: 350px) {
-                flex-direction: column;
-                row-gap: 0.5rem;
-                align-self: start;
-                align-items: start;
-                margin-left: unset;
-              }
-
-              @media (min-width: 350px) and (max-width: 600px) {
-                flex-direction: row;
-                column-gap: unset;
-                justify-content: space-between;
-                width: 100%;
-              }
-
-              @media (min-width: 1023px) and (max-width: 1100px) {
-                flex-direction: row;
-                column-gap: unset;
-                justify-content: space-between;
-                width: 100%;
-              }
-
-              .name {
-                display: flex;
-                flex-direction: row;
-                align-items: center;
-                width: 25%;
-                font-size: 11pt;
-                font-weight: 500;
-                color: #ebebeb;
-                position: unset;
-
-                @media (min-width: 300px) and (max-width: 350px) {
-                  width: unset;
-                }
-
-                p {
-                  position: unset;
-                }
-              }
-
-              .statusBar {
-                display: flex;
-
-                .bottom {
-                  width: 10rem;
-                  height: 1.5rem;
-                  border-radius: 0.5rem;
-                  background-color: #545146;
-
-                  @media (min-width: 300px) and (max-width: 400px) {
-                    width: 9rem;
-                  }
-                }
-
-                .topSix {
-                  width: 9rem;
-                  height: 1.5rem;
-                  position: absolute;
-                  border-radius: 0.5rem;
-                  border: 0.1rem solid #656565;
-                  background-color: #5c4f43;
-                  animation: topSix 0.8s cubic-bezier(0.1, -0.6, 0.2, 0) 0s 3
-                    alternate none;
-                  z-index: 1;
-
-                  @keyframes topSix {
-                    from {
-                      width: 0rem;
-                      background-color: #545146;
-                      opacity: 0;
-                    }
-                    to {
-                      width: 9rem;
-                      background-color: #5c4f43;
-                      opacity: 1;
-                    }
-                  }
-
-                  @media (min-width: 300px) and (max-width: 400px) {
-                    width: 8rem;
-
-                    @keyframes topSix {
                       from {
                         width: 0rem;
                         background-color: #545146;
@@ -4692,32 +4360,347 @@
                         opacity: 1;
                       }
                     }
+
+                    @media (min-width: 300px) and (max-width: 330px) {
+                      width: 6rem;
+
+                      @keyframes topTwo {
+                        from {
+                          width: 0rem;
+                          background-color: #545146;
+                          opacity: 0;
+                        }
+                        to {
+                          width: 6rem;
+                          background-color: #5c4f43;
+                          opacity: 1;
+                        }
+                      }
+                    }
+
+                    @media (min-width: 330px) and (max-width: 350px) {
+                      width: 6.8rem;
+
+                      @keyframes topTwo {
+                        from {
+                          width: 0rem;
+                          background-color: #545146;
+                          opacity: 0;
+                        }
+                        to {
+                          width: 6.8rem;
+                          background-color: #5c4f43;
+                          opacity: 1;
+                        }
+                      }
+                    }
+
+                    @media (min-width: 350px) and (max-width: 360px) {
+                      width: 7.2rem;
+
+                      @keyframes topTwo {
+                        from {
+                          width: 0rem;
+                          background-color: #545146;
+                          opacity: 0;
+                        }
+                        to {
+                          width: 7.2rem;
+                          background-color: #5c4f43;
+                          opacity: 1;
+                        }
+                      }
+                    }
                   }
                 }
+              }
 
-                .percentage {
-                  display: flex;
-                  align-self: center;
-                  transform: translate(-5.5rem);
+              .fluencyThree {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+
+                @media (min-width: 1023px) and (max-width: 1100px) {
+                  flex-direction: row;
+                  column-gap: unset;
+                  justify-content: space-between;
+                  width: 100%;
+                }
+
+                .name {
                   font-size: 11pt;
                   font-weight: 500;
                   color: #ebebeb;
                   position: unset;
-                  z-index: 2;
+                }
+
+                .statusBar {
+                  display: flex;
+                  position: relative;
+
+                  .bottom {
+                    width: 10rem;
+                    height: 1.5rem;
+                    border-radius: 0.5rem;
+                    background-color: #545146;
+
+                    @media (min-width: 300px) and (max-width: 330px) {
+                      width: 7.5rem;
+                    }
+
+                    @media (min-width: 330px) and (max-width: 350px) {
+                      width: 8.5rem;
+                    }
+
+                    @media (min-width: 350px) and (max-width: 360px) {
+                      width: 9rem;
+                    }
+                  }
+
+                  .percentage {
+                    display: flex;
+                    height: fit-content;
+                    width: fit-content;
+                    position: absolute;
+                    top: 12%;
+                    left: 40%;
+                    font-size: 11pt;
+                    font-weight: 500;
+                    color: #ebebeb;
+                    z-index: 2;
+
+                    @media (min-width: 300px) and (max-width: 600px) {
+                      top: 10%;
+                    }
+                  }
+
+                  .topThree {
+                    width: 6.5rem;
+                    height: 1.5rem;
+                    position: absolute;
+                    border-radius: 0.5rem;
+                    border: 0.1rem solid #656565;
+                    background-color: #5c4f43;
+                    animation: topThree 1s cubic-bezier(0.1, -0.6, 0.2, 0) 0s 3
+                      alternate none;
+                    z-index: 1;
+
+                    @keyframes topThree {
+                      from {
+                        width: 0rem;
+                        background-color: #545146;
+                        opacity: 0;
+                      }
+                      to {
+                        width: 6.5rem;
+                        background-color: #5c4f43;
+                        opacity: 1;
+                      }
+                    }
+
+                    @media (min-width: 300px) and (max-width: 330px) {
+                      width: 4.875rem;
+
+                      @keyframes topThree {
+                        from {
+                          width: 0rem;
+                          background-color: #545146;
+                          opacity: 0;
+                        }
+                        to {
+                          width: 4.875rem;
+                          background-color: #5c4f43;
+                          opacity: 1;
+                        }
+                      }
+                    }
+
+                    @media (min-width: 330px) and (max-width: 350px) {
+                      width: 5.525rem;
+
+                      @keyframes topThree {
+                        from {
+                          width: 0rem;
+                          background-color: #545146;
+                          opacity: 0;
+                        }
+                        to {
+                          width: 5.525rem;
+                          background-color: #5c4f43;
+                          opacity: 1;
+                        }
+                      }
+                    }
+
+                    @media (min-width: 350px) and (max-width: 360px) {
+                      width: 5.85rem;
+
+                      @keyframes topThree {
+                        from {
+                          width: 0rem;
+                          background-color: #545146;
+                          opacity: 0;
+                        }
+                        to {
+                          width: 5.85rem;
+                          background-color: #5c4f43;
+                          opacity: 1;
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+
+              .fluencyFour {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+
+                @media (min-width: 1023px) and (max-width: 1100px) {
+                  flex-direction: row;
+                  column-gap: unset;
+                  justify-content: space-between;
+                  width: 100%;
+                }
+
+                .name {
+                  font-size: 11pt;
+                  font-weight: 500;
+                  color: #ebebeb;
+                  position: unset;
+                }
+
+                .statusBar {
+                  display: flex;
+                  position: relative;
+
+                  .bottom {
+                    width: 10rem;
+                    height: 1.5rem;
+                    border-radius: 0.5rem;
+                    background-color: #545146;
+
+                    @media (min-width: 300px) and (max-width: 330px) {
+                      width: 7.5rem;
+                    }
+
+                    @media (min-width: 330px) and (max-width: 350px) {
+                      width: 8.5rem;
+                    }
+
+                    @media (min-width: 350px) and (max-width: 360px) {
+                      width: 9rem;
+                    }
+                  }
+
+                  .percentage {
+                    display: flex;
+                    height: fit-content;
+                    width: fit-content;
+                    position: absolute;
+                    top: 12%;
+                    left: 40%;
+                    font-size: 11pt;
+                    font-weight: 500;
+                    color: #ebebeb;
+                    z-index: 2;
+
+                    @media (min-width: 300px) and (max-width: 600px) {
+                      top: 10%;
+                    }
+                  }
+
+                  .topFour {
+                    width: 7.5rem;
+                    height: 1.5rem;
+                    position: absolute;
+                    border-radius: 0.5rem;
+                    border: 0.1rem solid #656565;
+                    background-color: #5c4f43;
+                    animation: topFour 1s cubic-bezier(0.1, -0.6, 0.2, 0) 0s 3
+                      alternate none;
+                    z-index: 1;
+
+                    @keyframes topFour {
+                      from {
+                        width: 0rem;
+                        background-color: #545146;
+                        opacity: 0;
+                      }
+                      to {
+                        width: 7.5rem;
+                        background-color: #5c4f43;
+                        opacity: 1;
+                      }
+                    }
+
+                    @media (min-width: 300px) and (max-width: 330px) {
+                      width: 5.625rem;
+
+                      @keyframes topFour {
+                        from {
+                          width: 0rem;
+                          background-color: #545146;
+                          opacity: 0;
+                        }
+                        to {
+                          width: 5.625rem;
+                          background-color: #5c4f43;
+                          opacity: 1;
+                        }
+                      }
+                    }
+
+                    @media (min-width: 330px) and (max-width: 350px) {
+                      width: 6.375rem;
+
+                      @keyframes topFour {
+                        from {
+                          width: 0rem;
+                          background-color: #545146;
+                          opacity: 0;
+                        }
+                        to {
+                          width: 6.375rem;
+                          background-color: #5c4f43;
+                          opacity: 1;
+                        }
+                      }
+                    }
+
+                    @media (min-width: 350px) and (max-width: 360px) {
+                      width: 6.75rem;
+
+                      @keyframes topFour {
+                        from {
+                          width: 0rem;
+                          background-color: #545146;
+                          opacity: 0;
+                        }
+                        to {
+                          width: 6.75rem;
+                          background-color: #5c4f43;
+                          opacity: 1;
+                        }
+                      }
+                    }
+                  }
                 }
               }
             }
 
-            .fluencySeven {
+            .fluenciesTwo {
               display: flex;
-              flex-direction: row;
-              column-gap: 5rem;
-              align-items: center;
+              flex-direction: column;
+              row-gap: 1.2rem;
               margin-left: 1rem;
-              animation: fluencySeven 0.5s linear;
+              animation: fluenciesTwo 0.5s linear;
               animation-iteration-count: 1;
 
-              @keyframes fluencySeven {
+              @keyframes fluenciesTwo {
                 0% {
                   opacity: 0;
                 }
@@ -4726,85 +4709,353 @@
                 }
               }
 
-              @media (min-width: 300px) and (max-width: 350px) {
-                flex-direction: column;
-                row-gap: 0.5rem;
-                align-self: start;
-                align-items: start;
-                margin-left: unset;
+              @media (min-width: 300px) and (max-width: 400px) {
+                margin-left: 0.5rem;
               }
 
-              @media (min-width: 350px) and (max-width: 600px) {
-                flex-direction: row;
-                column-gap: unset;
-                justify-content: space-between;
-                width: 100%;
+              @media (min-width: 300px) and (max-width: 600px) {
+                row-gap: 1.5rem;
               }
 
-              @media (width: 600px) {
-                align-items: center;
-                row-gap: 1.3rem;
-              }
-
-              @media (min-width: 1023px) and (max-width: 1100px) {
-                flex-direction: row;
-                column-gap: unset;
-                justify-content: space-between;
-                width: 100%;
-              }
-
-              .name {
-                width: 25%;
-                font-size: 11pt;
-                font-weight: 500;
-                color: #ebebeb;
-                position: unset;
-
-                @media (min-width: 300px) and (max-width: 350px) {
-                  width: unset;
-                }
-              }
-
-              .statusBar {
+              .fluencyOne {
                 display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
 
-                .bottom {
-                  width: 10rem;
-                  height: 1.5rem;
-                  border-radius: 0.5rem;
-                  background-color: #545146;
-
-                  @media (min-width: 300px) and (max-width: 400px) {
-                    width: 9rem;
-                  }
+                .name {
+                  font-size: 11pt;
+                  font-weight: 500;
+                  color: #ebebeb;
+                  position: unset;
                 }
 
-                .topSeven {
-                  width: 7.5rem;
-                  height: 1.5rem;
-                  position: absolute;
-                  border-radius: 0.5rem;
-                  border: 0.1rem solid #656565;
-                  background-color: #5c4f43;
-                  animation: topSeven 1s cubic-bezier(0.1, -0.6, 0.2, 0) 0s 3
-                    alternate none;
-                  z-index: 1;
+                .statusBar {
+                  display: flex;
+                  position: relative;
 
-                  @keyframes topSeven {
-                    from {
-                      width: 0rem;
-                      background-color: #545146;
-                      opacity: 0;
-                    }
-                    to {
+                  .bottom {
+                    width: 10rem;
+                    height: 1.5rem;
+                    border-radius: 0.5rem;
+                    background-color: #545146;
+
+                    @media (min-width: 300px) and (max-width: 330px) {
                       width: 7.5rem;
-                      background-color: #5c4f43;
-                      opacity: 1;
+                    }
+
+                    @media (min-width: 330px) and (max-width: 350px) {
+                      width: 8.5rem;
+                    }
+
+                    @media (min-width: 350px) and (max-width: 360px) {
+                      width: 9rem;
                     }
                   }
 
-                  @media (min-width: 300px) and (max-width: 400px) {
-                    width: 6.3rem;
+                  .percentage {
+                    display: flex;
+                    height: fit-content;
+                    width: fit-content;
+                    position: absolute;
+                    top: 12%;
+                    left: 40%;
+                    font-size: 11pt;
+                    font-weight: 500;
+                    color: #ebebeb;
+                    z-index: 2;
+
+                    @media (min-width: 300px) and (max-width: 600px) {
+                      top: 10%;
+                    }
+                  }
+
+                  .topOne {
+                    width: 10rem;
+                    height: 1.5rem;
+                    position: absolute;
+                    border-radius: 0.5rem;
+                    border: 0.1rem solid #656565;
+                    background-color: #5c4f43;
+                    animation: topFive 1s cubic-bezier(0.1, -0.6, 0.2, 0) 0s 3
+                      alternate none;
+                    z-index: 1;
+
+                    @keyframes topFive {
+                      from {
+                        width: 0rem;
+                        background-color: #545146;
+                        opacity: 0;
+                      }
+                      to {
+                        width: 10rem;
+                        background-color: #5c4f43;
+                        opacity: 1;
+                      }
+                    }
+
+                    @media (min-width: 300px) and (max-width: 330px) {
+                      width: 7.5rem;
+
+                      @keyframes topFive {
+                        from {
+                          width: 0rem;
+                          background-color: #545146;
+                          opacity: 0;
+                        }
+                        to {
+                          width: 7.5rem;
+                          background-color: #5c4f43;
+                          opacity: 1;
+                        }
+                      }
+                    }
+
+                    @media (min-width: 330px) and (max-width: 350px) {
+                      width: 8.5rem;
+
+                      @keyframes topFive {
+                        from {
+                          width: 0rem;
+                          background-color: #545146;
+                          opacity: 0;
+                        }
+                        to {
+                          width: 8.5rem;
+                          background-color: #5c4f43;
+                          opacity: 1;
+                        }
+                      }
+                    }
+
+                    @media (min-width: 350px) and (max-width: 360px) {
+                      width: 9rem;
+
+                      @keyframes topFive {
+                        from {
+                          width: 0rem;
+                          background-color: #545146;
+                          opacity: 0;
+                        }
+                        to {
+                          width: 9rem;
+                          background-color: #5c4f43;
+                          opacity: 1;
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+
+              .fluencyTwo {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+
+                @media (min-width: 1023px) and (max-width: 1100px) {
+                  flex-direction: row;
+                  column-gap: unset;
+                  justify-content: space-between;
+                  width: 100%;
+                }
+
+                .name {
+                  font-size: 11pt;
+                  font-weight: 500;
+                  color: #ebebeb;
+                  position: unset;
+                }
+
+                .statusBar {
+                  display: flex;
+                  position: relative;
+
+                  .bottom {
+                    width: 10rem;
+                    height: 1.5rem;
+                    border-radius: 0.5rem;
+                    background-color: #545146;
+
+                    @media (min-width: 300px) and (max-width: 330px) {
+                      width: 7.5rem;
+                    }
+
+                    @media (min-width: 330px) and (max-width: 350px) {
+                      width: 8.5rem;
+                    }
+
+                    @media (min-width: 350px) and (max-width: 360px) {
+                      width: 9rem;
+                    }
+                  }
+
+                  .percentage {
+                    display: flex;
+                    height: fit-content;
+                    width: fit-content;
+                    position: absolute;
+                    top: 12%;
+                    left: 40%;
+                    font-size: 11pt;
+                    font-weight: 500;
+                    color: #ebebeb;
+                    z-index: 2;
+
+                    @media (min-width: 300px) and (max-width: 600px) {
+                      top: 10%;
+                    }
+                  }
+
+                  .topTwo {
+                    width: 9rem;
+                    height: 1.5rem;
+                    position: absolute;
+                    border-radius: 0.5rem;
+                    border: 0.1rem solid #656565;
+                    background-color: #5c4f43;
+                    animation: topSix 1s cubic-bezier(0.1, -0.6, 0.2, 0) 0s 3
+                      alternate none;
+                    z-index: 1;
+
+                    @keyframes topSix {
+                      from {
+                        width: 0rem;
+                        background-color: #545146;
+                        opacity: 0;
+                      }
+                      to {
+                        width: 9rem;
+                        background-color: #5c4f43;
+                        opacity: 1;
+                      }
+                    }
+
+                    @media (min-width: 300px) and (max-width: 330px) {
+                      width: 6.75rem;
+
+                      @keyframes topSix {
+                        from {
+                          width: 0rem;
+                          background-color: #545146;
+                          opacity: 0;
+                        }
+                        to {
+                          width: 6.75rem;
+                          background-color: #5c4f43;
+                          opacity: 1;
+                        }
+                      }
+                    }
+
+                    @media (min-width: 330px) and (max-width: 350px) {
+                      width: 7.65rem;
+
+                      @keyframes topSix {
+                        from {
+                          width: 0rem;
+                          background-color: #545146;
+                          opacity: 0;
+                        }
+                        to {
+                          width: 7.65rem;
+                          background-color: #5c4f43;
+                          opacity: 1;
+                        }
+                      }
+                    }
+
+                    @media (min-width: 350px) and (max-width: 360px) {
+                      width: 8.1rem;
+
+                      @keyframes topSix {
+                        from {
+                          width: 0rem;
+                          background-color: #545146;
+                          opacity: 0;
+                        }
+                        to {
+                          width: 8.1rem;
+                          background-color: #5c4f43;
+                          opacity: 1;
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+
+              .fluencyThree {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+
+                @media (min-width: 1023px) and (max-width: 1100px) {
+                  flex-direction: row;
+                  column-gap: unset;
+                  justify-content: space-between;
+                  width: 100%;
+                }
+
+                .name {
+                  font-size: 11pt;
+                  font-weight: 500;
+                  color: #ebebeb;
+                  position: unset;
+                }
+
+                .statusBar {
+                  display: flex;
+                  position: relative;
+
+                  .bottom {
+                    width: 10rem;
+                    height: 1.5rem;
+                    border-radius: 0.5rem;
+                    background-color: #545146;
+
+                    @media (min-width: 300px) and (max-width: 330px) {
+                      width: 7.5rem;
+                    }
+
+                    @media (min-width: 330px) and (max-width: 350px) {
+                      width: 8.5rem;
+                    }
+
+                    @media (min-width: 350px) and (max-width: 360px) {
+                      width: 9rem;
+                    }
+                  }
+
+                  .percentage {
+                    display: flex;
+                    height: fit-content;
+                    width: fit-content;
+                    position: absolute;
+                    top: 12%;
+                    left: 40%;
+                    font-size: 11pt;
+                    font-weight: 500;
+                    color: #ebebeb;
+                    z-index: 2;
+
+                    @media (min-width: 300px) and (max-width: 600px) {
+                      top: 10%;
+                    }
+                  }
+
+                  .topThree {
+                    width: 7rem;
+                    height: 1.5rem;
+                    position: absolute;
+                    border-radius: 0.5rem;
+                    border: 0.1rem solid #656565;
+                    background-color: #5c4f43;
+                    animation: topSeven 1s cubic-bezier(0.1, -0.6, 0.2, 0) 0s 3
+                      alternate none;
+                    z-index: 1;
 
                     @keyframes topSeven {
                       from {
@@ -4813,124 +5064,136 @@
                         opacity: 0;
                       }
                       to {
-                        width: 6.3rem;
+                        width: 7rem;
                         background-color: #5c4f43;
                         opacity: 1;
                       }
                     }
+
+                    @media (min-width: 300px) and (max-width: 330px) {
+                      width: 5.25rem;
+
+                      @keyframes topSeven {
+                        from {
+                          width: 0rem;
+                          background-color: #545146;
+                          opacity: 0;
+                        }
+                        to {
+                          width: 5.25rem;
+                          background-color: #5c4f43;
+                          opacity: 1;
+                        }
+                      }
+                    }
+
+                    @media (min-width: 330px) and (max-width: 350px) {
+                      width: 5.95rem;
+
+                      @keyframes topSeven {
+                        from {
+                          width: 0rem;
+                          background-color: #545146;
+                          opacity: 0;
+                        }
+                        to {
+                          width: 5.95rem;
+                          background-color: #5c4f43;
+                          opacity: 1;
+                        }
+                      }
+                    }
+
+                    @media (min-width: 350px) and (max-width: 360px) {
+                      width: 6.3rem;
+
+                      @keyframes topSeven {
+                        from {
+                          width: 0rem;
+                          background-color: #545146;
+                          opacity: 0;
+                        }
+                        to {
+                          width: 6.3rem;
+                          background-color: #5c4f43;
+                          opacity: 1;
+                        }
+                      }
+                    }
                   }
                 }
+              }
 
-                .percentage {
-                  display: flex;
-                  align-self: center;
-                  transform: translate(-5.5rem);
+              .fluencyFour {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+
+                @media (min-width: 1023px) and (max-width: 1100px) {
+                  flex-direction: row;
+                  column-gap: unset;
+                  justify-content: space-between;
+                  width: 100%;
+                }
+
+                .name {
                   font-size: 11pt;
                   font-weight: 500;
                   color: #ebebeb;
                   position: unset;
-                  z-index: 2;
-                }
-              }
-            }
-
-            .fluencyEight {
-              display: flex;
-              flex-direction: row;
-              column-gap: 5rem;
-              align-items: center;
-              margin-left: 1rem;
-              animation: fluencyEight 0.5s linear;
-              animation-iteration-count: 1;
-
-              @keyframes fluencyEight {
-                0% {
-                  opacity: 0;
-                }
-                100% {
-                  opacity: 1;
-                }
-              }
-
-              @media (min-width: 300px) and (max-width: 350px) {
-                flex-direction: column;
-                row-gap: 0.5rem;
-                align-self: start;
-                align-items: start;
-                margin-left: unset;
-              }
-
-              @media (min-width: 350px) and (max-width: 600px) {
-                flex-direction: row;
-                column-gap: unset;
-                justify-content: space-between;
-                width: 100%;
-              }
-
-              @media (width: 600px) {
-                align-items: center;
-                row-gap: 1.3rem;
-              }
-
-              @media (min-width: 1023px) and (max-width: 1100px) {
-                flex-direction: row;
-                column-gap: unset;
-                justify-content: space-between;
-                width: 100%;
-              }
-
-              .name {
-                width: 25%;
-                font-size: 11pt;
-                font-weight: 500;
-                color: #ebebeb;
-                position: unset;
-
-                @media (min-width: 300px) and (max-width: 400px) {
-                  width: unset;
-                }
-              }
-
-              .statusBar {
-                display: flex;
-
-                .bottom {
-                  width: 10rem;
-                  height: 1.5rem;
-                  border-radius: 0.5rem;
-                  background-color: #545146;
-
-                  @media (min-width: 300px) and (max-width: 400px) {
-                    width: 9rem;
-                  }
                 }
 
-                .topEight {
-                  width: 8.2rem;
-                  height: 1.5rem;
-                  position: absolute;
-                  border-radius: 0.5rem;
-                  border: 0.1rem solid #656565;
-                  background-color: #5c4f43;
-                  animation: topEight 0.8s cubic-bezier(0.1, -0.6, 0.2, 0) 0s 3
-                    alternate none;
-                  z-index: 1;
+                .statusBar {
+                  display: flex;
+                  position: relative;
 
-                  @keyframes topEight {
-                    from {
-                      width: 0rem;
-                      background-color: #545146;
-                      opacity: 0;
+                  .bottom {
+                    width: 10rem;
+                    height: 1.5rem;
+                    border-radius: 0.5rem;
+                    background-color: #545146;
+
+                    @media (min-width: 300px) and (max-width: 330px) {
+                      width: 7.5rem;
                     }
-                    to {
-                      width: 8.2rem;
-                      background-color: #5c4f43;
-                      opacity: 1;
+
+                    @media (min-width: 330px) and (max-width: 350px) {
+                      width: 8.5rem;
+                    }
+
+                    @media (min-width: 350px) and (max-width: 360px) {
+                      width: 9rem;
                     }
                   }
 
-                  @media (min-width: 300px) and (max-width: 400px) {
-                    width: 7.2rem;
+                  .percentage {
+                    display: flex;
+                    height: fit-content;
+                    width: fit-content;
+                    position: absolute;
+                    top: 12%;
+                    left: 40%;
+                    font-size: 11pt;
+                    font-weight: 500;
+                    color: #ebebeb;
+                    z-index: 2;
+
+                    @media (min-width: 300px) and (max-width: 600px) {
+                      top: 10%;
+                    }
+                  }
+
+                  .topFour {
+                    width: 8rem;
+                    height: 1.5rem;
+                    position: absolute;
+                    border-radius: 0.5rem;
+                    border: 0.1rem solid #656565;
+                    background-color: #5c4f43;
+                    animation: topEight 1s cubic-bezier(0.1, -0.6, 0.2, 0) 0s 3
+                      alternate none;
+                    z-index: 1;
 
                     @keyframes topEight {
                       from {
@@ -4939,23 +5202,63 @@
                         opacity: 0;
                       }
                       to {
-                        width: 7.2rem;
+                        width: 8rem;
                         background-color: #5c4f43;
                         opacity: 1;
                       }
                     }
-                  }
-                }
 
-                .percentage {
-                  display: flex;
-                  align-self: center;
-                  transform: translate(-5.5rem);
-                  font-size: 11pt;
-                  font-weight: 500;
-                  color: #ebebeb;
-                  position: unset;
-                  z-index: 2;
+                    @media (min-width: 300px) and (max-width: 330px) {
+                      width: 6rem;
+
+                      @keyframes topEight {
+                        from {
+                          width: 0rem;
+                          background-color: #545146;
+                          opacity: 0;
+                        }
+                        to {
+                          width: 6rem;
+                          background-color: #5c4f43;
+                          opacity: 1;
+                        }
+                      }
+                    }
+
+                    @media (min-width: 330px) and (max-width: 350px) {
+                      width: 6.8rem;
+
+                      @keyframes topEight {
+                        from {
+                          width: 0rem;
+                          background-color: #545146;
+                          opacity: 0;
+                        }
+                        to {
+                          width: 6.8rem;
+                          background-color: #5c4f43;
+                          opacity: 1;
+                        }
+                      }
+                    }
+
+                    @media (min-width: 350px) and (max-width: 360px) {
+                      width: 7.2rem;
+
+                      @keyframes topEight {
+                        from {
+                          width: 0rem;
+                          background-color: #545146;
+                          opacity: 0;
+                        }
+                        to {
+                          width: 7.2rem;
+                          background-color: #5c4f43;
+                          opacity: 1;
+                        }
+                      }
+                    }
+                  }
                 }
               }
             }
@@ -5112,7 +5415,7 @@
         flex-direction: column;
         row-gap: 2%;
         width: 100%;
-        height: min(20rem, 20rem);
+        height: 20rem;
         transform: scale(102%);
         animation: educationList 0.5s linear;
         animation-iteration-count: 1;
@@ -5139,10 +5442,12 @@
 
         @media (min-width: 300px) and (max-width: 500px) {
           height: min(30rem, 30rem);
+          scroll-margin-bottom: 10rem;
         }
 
         @media (min-width: 500px) and (max-width: 600px) {
           height: min(32rem, 32rem);
+          scroll-margin-bottom: 10rem;
         }
 
         @media (min-width: 600px) and (max-width: 700px) {
@@ -5154,10 +5459,6 @@
         }
 
         @media (orientation: portrait) and (min-width: 1023px) and (max-width: 1100px) {
-          height: 20rem;
-        }
-
-        @media (width: 1200px) {
           height: 20rem;
         }
 
@@ -5173,10 +5474,6 @@
           padding: 0.8rem 1rem;
           background-color: #545146;
           border-radius: 0.4rem 0.4rem 0 0;
-
-          @media (min-width: 300px) and (max-width: 400px) {
-            padding: 0.8rem 1rem;
-          }
 
           @media (min-width: 400px) and (max-width: 600px) {
             padding: 0.8rem 1.2rem;
@@ -5328,16 +5625,19 @@
           @media (min-width: 300px) and (max-width: 400px) {
             width: 95%;
             height: 24.65rem;
+            align-items: unset;
           }
 
           @media (min-width: 400px) and (max-width: 500px) {
             width: 96%;
             height: 24.55rem;
+            align-items: unset;
           }
 
           @media (min-width: 500px) and (max-width: 600px) {
             width: 96%;
             height: 26.4rem;
+            align-items: unset;
           }
 
           @media (min-width: 600px) and (max-width: 700px) {
