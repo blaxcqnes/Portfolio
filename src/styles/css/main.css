@@ -4601,7 +4601,7 @@ input[type=email]) {
   display: flex;
   flex-direction: column;
   row-gap: 1.5rem;
-  width: 70%;
+  width: 60%;
 }
 @media (min-width: 300px) and (max-width: 600px) {
   .container .mainContent .leftOrUpperPart .skillsList .content .titleAndFluencies {
@@ -4617,19 +4617,9 @@ input[type=email]) {
     margin-top: 1.5rem;
   }
 }
-@media (min-width: 600px) and (max-width: 700px) {
-  .container .mainContent .leftOrUpperPart .skillsList .content .titleAndFluencies {
-    width: 60%;
-  }
-}
 @media (min-width: 700px) and (max-width: 900px) {
   .container .mainContent .leftOrUpperPart .skillsList .content .titleAndFluencies {
     width: 65%;
-  }
-}
-@media (min-width: 900px) and (max-width: 1000px) {
-  .container .mainContent .leftOrUpperPart .skillsList .content .titleAndFluencies {
-    width: 60%;
   }
 }
 @media (min-width: 1000px) and (max-width: 1023px) {
@@ -4637,9 +4627,9 @@ input[type=email]) {
     width: 50%;
   }
 }
-@media (min-width: 1023px) and (max-width: 1100px) {
+@media (min-width: 1023px) and (max-width: 1200px) {
   .container .mainContent .leftOrUpperPart .skillsList .content .titleAndFluencies {
-    width: 60%;
+    width: 57%;
   }
 }
 @media (orientation: portrait) and (min-width: 1023px) and (max-width: 1100px) {
@@ -4723,6 +4713,16 @@ input[type=email]) {
     row-gap: 1.5rem;
   }
 }
+@media (min-width: 1023px) and (max-width: 1100px) {
+  .container .mainContent .leftOrUpperPart .skillsList .content .titleAndFluencies .fluenciesOne {
+    row-gap: 0.7rem;
+  }
+}
+@media (min-width: 1100px) and (max-width: 1200px) {
+  .container .mainContent .leftOrUpperPart .skillsList .content .titleAndFluencies .fluenciesOne {
+    row-gap: 0.8rem;
+  }
+}
 .container .mainContent .leftOrUpperPart .skillsList .content .titleAndFluencies .fluenciesOne .fluencyOne {
   display: flex;
   flex-direction: row;
@@ -4730,10 +4730,50 @@ input[type=email]) {
   align-items: center;
 }
 .container .mainContent .leftOrUpperPart .skillsList .content .titleAndFluencies .fluenciesOne .fluencyOne .name {
-  font-size: 11pt;
+  font-size: 11.5pt;
   font-weight: 500;
-  color: #ebebeb;
+  color: #ffffff;
   position: unset;
+}
+@media (min-width: 500px) and (max-width: 600px) {
+  .container .mainContent .leftOrUpperPart .skillsList .content .titleAndFluencies .fluenciesOne .fluencyOne .name {
+    font-size: 12pt;
+  }
+}
+@media (min-width: 900px) and (max-width: 1000px) {
+  .container .mainContent .leftOrUpperPart .skillsList .content .titleAndFluencies .fluenciesOne .fluencyOne .name {
+    font-size: 11.5pt;
+  }
+}
+@media (min-width: 1000px) and (max-width: 1023px) {
+  .container .mainContent .leftOrUpperPart .skillsList .content .titleAndFluencies .fluenciesOne .fluencyOne .name {
+    font-size: 12pt;
+  }
+}
+@media (min-width: 1023px) and (max-width: 1100px) {
+  .container .mainContent .leftOrUpperPart .skillsList .content .titleAndFluencies .fluenciesOne .fluencyOne .name {
+    font-size: 8.5pt;
+  }
+}
+@media (orientation: portrait) and (min-width: 1023px) and (max-width: 1100px) {
+  .container .mainContent .leftOrUpperPart .skillsList .content .titleAndFluencies .fluenciesOne .fluencyOne .name {
+    font-size: 12pt;
+  }
+}
+@media (min-width: 1100px) and (max-width: 1200px) {
+  .container .mainContent .leftOrUpperPart .skillsList .content .titleAndFluencies .fluenciesOne .fluencyOne .name {
+    font-size: 9pt;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1300px) {
+  .container .mainContent .leftOrUpperPart .skillsList .content .titleAndFluencies .fluenciesOne .fluencyOne .name {
+    font-size: 10pt;
+  }
+}
+@media (min-width: 1500px) and (max-width: 1600px) {
+  .container .mainContent .leftOrUpperPart .skillsList .content .titleAndFluencies .fluenciesOne .fluencyOne .name {
+    font-size: 11.5pt;
+  }
 }
 .container .mainContent .leftOrUpperPart .skillsList .content .titleAndFluencies .fluenciesOne .fluencyOne .statusBar {
   display: flex;
@@ -4760,14 +4800,19 @@ input[type=email]) {
     width: 9rem;
   }
 }
+@media (min-width: 1023px) and (max-width: 1200px) {
+  .container .mainContent .leftOrUpperPart .skillsList .content .titleAndFluencies .fluenciesOne .fluencyOne .statusBar .bottom {
+    width: 9rem;
+  }
+}
 .container .mainContent .leftOrUpperPart .skillsList .content .titleAndFluencies .fluenciesOne .fluencyOne .statusBar .percentage {
   display: flex;
   height: fit-content;
   width: fit-content;
   position: absolute;
   top: 12%;
-  left: 40%;
-  font-size: 11pt;
+  left: 45%;
+  font-size: 10pt;
   font-weight: 500;
   color: #ebebeb;
   z-index: 2;
@@ -4775,6 +4820,13 @@ input[type=email]) {
 @media (min-width: 300px) and (max-width: 600px) {
   .container .mainContent .leftOrUpperPart .skillsList .content .titleAndFluencies .fluenciesOne .fluencyOne .statusBar .percentage {
     top: 10%;
+  }
+}
+@media (min-width: 1023px) and (max-width: 1300px) {
+  .container .mainContent .leftOrUpperPart .skillsList .content .titleAndFluencies .fluenciesOne .fluencyOne .statusBar .percentage {
+    top: 17%;
+    left: 45%;
+    font-size: 9pt;
   }
 }
 .container .mainContent .leftOrUpperPart .skillsList .content .titleAndFluencies .fluenciesOne .fluencyOne .statusBar .topOne {
@@ -4850,6 +4902,23 @@ input[type=email]) {
     }
   }
 }
+@media (min-width: 1023px) and (max-width: 1200px) {
+  .container .mainContent .leftOrUpperPart .skillsList .content .titleAndFluencies .fluenciesOne .fluencyOne .statusBar .topOne {
+    width: 6.3rem;
+  }
+  @keyframes topOne {
+    from {
+      width: 0rem;
+      background-color: #545146;
+      opacity: 0;
+    }
+    to {
+      width: 6.3rem;
+      background-color: #5c4f43;
+      opacity: 1;
+    }
+  }
+}
 .container .mainContent .leftOrUpperPart .skillsList .content .titleAndFluencies .fluenciesOne .fluencyTwo {
   display: flex;
   flex-direction: row;
@@ -4865,10 +4934,50 @@ input[type=email]) {
   }
 }
 .container .mainContent .leftOrUpperPart .skillsList .content .titleAndFluencies .fluenciesOne .fluencyTwo .name {
-  font-size: 11pt;
+  font-size: 11.5pt;
   font-weight: 500;
-  color: #ebebeb;
+  color: #ffffff;
   position: unset;
+}
+@media (min-width: 500px) and (max-width: 600px) {
+  .container .mainContent .leftOrUpperPart .skillsList .content .titleAndFluencies .fluenciesOne .fluencyTwo .name {
+    font-size: 12pt;
+  }
+}
+@media (min-width: 900px) and (max-width: 1000px) {
+  .container .mainContent .leftOrUpperPart .skillsList .content .titleAndFluencies .fluenciesOne .fluencyTwo .name {
+    font-size: 11.5pt;
+  }
+}
+@media (min-width: 1000px) and (max-width: 1023px) {
+  .container .mainContent .leftOrUpperPart .skillsList .content .titleAndFluencies .fluenciesOne .fluencyTwo .name {
+    font-size: 12pt;
+  }
+}
+@media (min-width: 1023px) and (max-width: 1100px) {
+  .container .mainContent .leftOrUpperPart .skillsList .content .titleAndFluencies .fluenciesOne .fluencyTwo .name {
+    font-size: 8.5pt;
+  }
+}
+@media (orientation: portrait) and (min-width: 1023px) and (max-width: 1100px) {
+  .container .mainContent .leftOrUpperPart .skillsList .content .titleAndFluencies .fluenciesOne .fluencyTwo .name {
+    font-size: 12pt;
+  }
+}
+@media (min-width: 1100px) and (max-width: 1200px) {
+  .container .mainContent .leftOrUpperPart .skillsList .content .titleAndFluencies .fluenciesOne .fluencyTwo .name {
+    font-size: 9pt;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1300px) {
+  .container .mainContent .leftOrUpperPart .skillsList .content .titleAndFluencies .fluenciesOne .fluencyTwo .name {
+    font-size: 10pt;
+  }
+}
+@media (min-width: 1500px) and (max-width: 1600px) {
+  .container .mainContent .leftOrUpperPart .skillsList .content .titleAndFluencies .fluenciesOne .fluencyTwo .name {
+    font-size: 11.5pt;
+  }
 }
 .container .mainContent .leftOrUpperPart .skillsList .content .titleAndFluencies .fluenciesOne .fluencyTwo .statusBar {
   display: flex;
@@ -4895,14 +5004,19 @@ input[type=email]) {
     width: 9rem;
   }
 }
+@media (min-width: 1023px) and (max-width: 1200px) {
+  .container .mainContent .leftOrUpperPart .skillsList .content .titleAndFluencies .fluenciesOne .fluencyTwo .statusBar .bottom {
+    width: 9rem;
+  }
+}
 .container .mainContent .leftOrUpperPart .skillsList .content .titleAndFluencies .fluenciesOne .fluencyTwo .statusBar .percentage {
   display: flex;
   height: fit-content;
   width: fit-content;
   position: absolute;
   top: 12%;
-  left: 40%;
-  font-size: 11pt;
+  left: 45%;
+  font-size: 10pt;
   font-weight: 500;
   color: #ebebeb;
   z-index: 2;
@@ -4910,6 +5024,13 @@ input[type=email]) {
 @media (min-width: 300px) and (max-width: 600px) {
   .container .mainContent .leftOrUpperPart .skillsList .content .titleAndFluencies .fluenciesOne .fluencyTwo .statusBar .percentage {
     top: 10%;
+  }
+}
+@media (min-width: 1023px) and (max-width: 1300px) {
+  .container .mainContent .leftOrUpperPart .skillsList .content .titleAndFluencies .fluenciesOne .fluencyTwo .statusBar .percentage {
+    top: 17%;
+    left: 45%;
+    font-size: 9pt;
   }
 }
 .container .mainContent .leftOrUpperPart .skillsList .content .titleAndFluencies .fluenciesOne .fluencyTwo .statusBar .topTwo {
@@ -4985,6 +5106,23 @@ input[type=email]) {
     }
   }
 }
+@media (min-width: 1023px) and (max-width: 1200px) {
+  .container .mainContent .leftOrUpperPart .skillsList .content .titleAndFluencies .fluenciesOne .fluencyTwo .statusBar .topTwo {
+    width: 7.2rem;
+  }
+  @keyframes topTwo {
+    from {
+      width: 0rem;
+      background-color: #545146;
+      opacity: 0;
+    }
+    to {
+      width: 7.2rem;
+      background-color: #5c4f43;
+      opacity: 1;
+    }
+  }
+}
 .container .mainContent .leftOrUpperPart .skillsList .content .titleAndFluencies .fluenciesOne .fluencyThree {
   display: flex;
   flex-direction: row;
@@ -5000,10 +5138,50 @@ input[type=email]) {
   }
 }
 .container .mainContent .leftOrUpperPart .skillsList .content .titleAndFluencies .fluenciesOne .fluencyThree .name {
-  font-size: 11pt;
+  font-size: 11.5pt;
   font-weight: 500;
-  color: #ebebeb;
+  color: #ffffff;
   position: unset;
+}
+@media (min-width: 500px) and (max-width: 600px) {
+  .container .mainContent .leftOrUpperPart .skillsList .content .titleAndFluencies .fluenciesOne .fluencyThree .name {
+    font-size: 12pt;
+  }
+}
+@media (min-width: 900px) and (max-width: 1000px) {
+  .container .mainContent .leftOrUpperPart .skillsList .content .titleAndFluencies .fluenciesOne .fluencyThree .name {
+    font-size: 11.5pt;
+  }
+}
+@media (min-width: 1000px) and (max-width: 1023px) {
+  .container .mainContent .leftOrUpperPart .skillsList .content .titleAndFluencies .fluenciesOne .fluencyThree .name {
+    font-size: 12pt;
+  }
+}
+@media (min-width: 1023px) and (max-width: 1100px) {
+  .container .mainContent .leftOrUpperPart .skillsList .content .titleAndFluencies .fluenciesOne .fluencyThree .name {
+    font-size: 8.5pt;
+  }
+}
+@media (orientation: portrait) and (min-width: 1023px) and (max-width: 1100px) {
+  .container .mainContent .leftOrUpperPart .skillsList .content .titleAndFluencies .fluenciesOne .fluencyThree .name {
+    font-size: 12pt;
+  }
+}
+@media (min-width: 1100px) and (max-width: 1200px) {
+  .container .mainContent .leftOrUpperPart .skillsList .content .titleAndFluencies .fluenciesOne .fluencyThree .name {
+    font-size: 9pt;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1300px) {
+  .container .mainContent .leftOrUpperPart .skillsList .content .titleAndFluencies .fluenciesOne .fluencyThree .name {
+    font-size: 10pt;
+  }
+}
+@media (min-width: 1500px) and (max-width: 1600px) {
+  .container .mainContent .leftOrUpperPart .skillsList .content .titleAndFluencies .fluenciesOne .fluencyThree .name {
+    font-size: 11.5pt;
+  }
 }
 .container .mainContent .leftOrUpperPart .skillsList .content .titleAndFluencies .fluenciesOne .fluencyThree .statusBar {
   display: flex;
@@ -5030,14 +5208,19 @@ input[type=email]) {
     width: 9rem;
   }
 }
+@media (min-width: 1023px) and (max-width: 1200px) {
+  .container .mainContent .leftOrUpperPart .skillsList .content .titleAndFluencies .fluenciesOne .fluencyThree .statusBar .bottom {
+    width: 9rem;
+  }
+}
 .container .mainContent .leftOrUpperPart .skillsList .content .titleAndFluencies .fluenciesOne .fluencyThree .statusBar .percentage {
   display: flex;
   height: fit-content;
   width: fit-content;
   position: absolute;
   top: 12%;
-  left: 40%;
-  font-size: 11pt;
+  left: 45%;
+  font-size: 10pt;
   font-weight: 500;
   color: #ebebeb;
   z-index: 2;
@@ -5045,6 +5228,13 @@ input[type=email]) {
 @media (min-width: 300px) and (max-width: 600px) {
   .container .mainContent .leftOrUpperPart .skillsList .content .titleAndFluencies .fluenciesOne .fluencyThree .statusBar .percentage {
     top: 10%;
+  }
+}
+@media (min-width: 1023px) and (max-width: 1300px) {
+  .container .mainContent .leftOrUpperPart .skillsList .content .titleAndFluencies .fluenciesOne .fluencyThree .statusBar .percentage {
+    top: 17%;
+    left: 45%;
+    font-size: 9pt;
   }
 }
 .container .mainContent .leftOrUpperPart .skillsList .content .titleAndFluencies .fluenciesOne .fluencyThree .statusBar .topThree {
@@ -5120,6 +5310,23 @@ input[type=email]) {
     }
   }
 }
+@media (min-width: 1023px) and (max-width: 1200px) {
+  .container .mainContent .leftOrUpperPart .skillsList .content .titleAndFluencies .fluenciesOne .fluencyThree .statusBar .topThree {
+    width: 5.85rem;
+  }
+  @keyframes topThree {
+    from {
+      width: 0rem;
+      background-color: #545146;
+      opacity: 0;
+    }
+    to {
+      width: 5.85rem;
+      background-color: #5c4f43;
+      opacity: 1;
+    }
+  }
+}
 .container .mainContent .leftOrUpperPart .skillsList .content .titleAndFluencies .fluenciesOne .fluencyFour {
   display: flex;
   flex-direction: row;
@@ -5135,10 +5342,50 @@ input[type=email]) {
   }
 }
 .container .mainContent .leftOrUpperPart .skillsList .content .titleAndFluencies .fluenciesOne .fluencyFour .name {
-  font-size: 11pt;
+  font-size: 11.5pt;
   font-weight: 500;
-  color: #ebebeb;
+  color: #ffffff;
   position: unset;
+}
+@media (min-width: 500px) and (max-width: 600px) {
+  .container .mainContent .leftOrUpperPart .skillsList .content .titleAndFluencies .fluenciesOne .fluencyFour .name {
+    font-size: 12pt;
+  }
+}
+@media (min-width: 900px) and (max-width: 1000px) {
+  .container .mainContent .leftOrUpperPart .skillsList .content .titleAndFluencies .fluenciesOne .fluencyFour .name {
+    font-size: 11.5pt;
+  }
+}
+@media (min-width: 1000px) and (max-width: 1023px) {
+  .container .mainContent .leftOrUpperPart .skillsList .content .titleAndFluencies .fluenciesOne .fluencyFour .name {
+    font-size: 12pt;
+  }
+}
+@media (min-width: 1023px) and (max-width: 1100px) {
+  .container .mainContent .leftOrUpperPart .skillsList .content .titleAndFluencies .fluenciesOne .fluencyFour .name {
+    font-size: 8.5pt;
+  }
+}
+@media (orientation: portrait) and (min-width: 1023px) and (max-width: 1100px) {
+  .container .mainContent .leftOrUpperPart .skillsList .content .titleAndFluencies .fluenciesOne .fluencyFour .name {
+    font-size: 12pt;
+  }
+}
+@media (min-width: 1100px) and (max-width: 1200px) {
+  .container .mainContent .leftOrUpperPart .skillsList .content .titleAndFluencies .fluenciesOne .fluencyFour .name {
+    font-size: 9pt;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1300px) {
+  .container .mainContent .leftOrUpperPart .skillsList .content .titleAndFluencies .fluenciesOne .fluencyFour .name {
+    font-size: 10pt;
+  }
+}
+@media (min-width: 1500px) and (max-width: 1600px) {
+  .container .mainContent .leftOrUpperPart .skillsList .content .titleAndFluencies .fluenciesOne .fluencyFour .name {
+    font-size: 11.5pt;
+  }
 }
 .container .mainContent .leftOrUpperPart .skillsList .content .titleAndFluencies .fluenciesOne .fluencyFour .statusBar {
   display: flex;
@@ -5165,14 +5412,19 @@ input[type=email]) {
     width: 9rem;
   }
 }
+@media (min-width: 1023px) and (max-width: 1200px) {
+  .container .mainContent .leftOrUpperPart .skillsList .content .titleAndFluencies .fluenciesOne .fluencyFour .statusBar .bottom {
+    width: 9rem;
+  }
+}
 .container .mainContent .leftOrUpperPart .skillsList .content .titleAndFluencies .fluenciesOne .fluencyFour .statusBar .percentage {
   display: flex;
   height: fit-content;
   width: fit-content;
   position: absolute;
   top: 12%;
-  left: 40%;
-  font-size: 11pt;
+  left: 45%;
+  font-size: 10pt;
   font-weight: 500;
   color: #ebebeb;
   z-index: 2;
@@ -5180,6 +5432,13 @@ input[type=email]) {
 @media (min-width: 300px) and (max-width: 600px) {
   .container .mainContent .leftOrUpperPart .skillsList .content .titleAndFluencies .fluenciesOne .fluencyFour .statusBar .percentage {
     top: 10%;
+  }
+}
+@media (min-width: 1023px) and (max-width: 1300px) {
+  .container .mainContent .leftOrUpperPart .skillsList .content .titleAndFluencies .fluenciesOne .fluencyFour .statusBar .percentage {
+    top: 17%;
+    left: 45%;
+    font-size: 9pt;
   }
 }
 .container .mainContent .leftOrUpperPart .skillsList .content .titleAndFluencies .fluenciesOne .fluencyFour .statusBar .topFour {
@@ -5255,6 +5514,23 @@ input[type=email]) {
     }
   }
 }
+@media (min-width: 1023px) and (max-width: 1200px) {
+  .container .mainContent .leftOrUpperPart .skillsList .content .titleAndFluencies .fluenciesOne .fluencyFour .statusBar .topFour {
+    width: 6.75rem;
+  }
+  @keyframes topFour {
+    from {
+      width: 0rem;
+      background-color: #545146;
+      opacity: 0;
+    }
+    to {
+      width: 6.75rem;
+      background-color: #5c4f43;
+      opacity: 1;
+    }
+  }
+}
 .container .mainContent .leftOrUpperPart .skillsList .content .titleAndFluencies .fluenciesTwo {
   display: flex;
   flex-direction: column;
@@ -5281,6 +5557,16 @@ input[type=email]) {
     row-gap: 1.5rem;
   }
 }
+@media (min-width: 1023px) and (max-width: 1100px) {
+  .container .mainContent .leftOrUpperPart .skillsList .content .titleAndFluencies .fluenciesTwo {
+    row-gap: 0.7rem;
+  }
+}
+@media (min-width: 1100px) and (max-width: 1200px) {
+  .container .mainContent .leftOrUpperPart .skillsList .content .titleAndFluencies .fluenciesTwo {
+    row-gap: 0.8rem;
+  }
+}
 .container .mainContent .leftOrUpperPart .skillsList .content .titleAndFluencies .fluenciesTwo .fluencyOne {
   display: flex;
   flex-direction: row;
@@ -5288,10 +5574,50 @@ input[type=email]) {
   align-items: center;
 }
 .container .mainContent .leftOrUpperPart .skillsList .content .titleAndFluencies .fluenciesTwo .fluencyOne .name {
-  font-size: 11pt;
+  font-size: 11.5pt;
   font-weight: 500;
-  color: #ebebeb;
+  color: #ffffff;
   position: unset;
+}
+@media (min-width: 500px) and (max-width: 600px) {
+  .container .mainContent .leftOrUpperPart .skillsList .content .titleAndFluencies .fluenciesTwo .fluencyOne .name {
+    font-size: 12pt;
+  }
+}
+@media (min-width: 900px) and (max-width: 1000px) {
+  .container .mainContent .leftOrUpperPart .skillsList .content .titleAndFluencies .fluenciesTwo .fluencyOne .name {
+    font-size: 11.5pt;
+  }
+}
+@media (min-width: 1000px) and (max-width: 1023px) {
+  .container .mainContent .leftOrUpperPart .skillsList .content .titleAndFluencies .fluenciesTwo .fluencyOne .name {
+    font-size: 12pt;
+  }
+}
+@media (min-width: 1023px) and (max-width: 1100px) {
+  .container .mainContent .leftOrUpperPart .skillsList .content .titleAndFluencies .fluenciesTwo .fluencyOne .name {
+    font-size: 8.5pt;
+  }
+}
+@media (orientation: portrait) and (min-width: 1023px) and (max-width: 1100px) {
+  .container .mainContent .leftOrUpperPart .skillsList .content .titleAndFluencies .fluenciesTwo .fluencyOne .name {
+    font-size: 12pt;
+  }
+}
+@media (min-width: 1100px) and (max-width: 1200px) {
+  .container .mainContent .leftOrUpperPart .skillsList .content .titleAndFluencies .fluenciesTwo .fluencyOne .name {
+    font-size: 9pt;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1300px) {
+  .container .mainContent .leftOrUpperPart .skillsList .content .titleAndFluencies .fluenciesTwo .fluencyOne .name {
+    font-size: 10pt;
+  }
+}
+@media (min-width: 1500px) and (max-width: 1600px) {
+  .container .mainContent .leftOrUpperPart .skillsList .content .titleAndFluencies .fluenciesTwo .fluencyOne .name {
+    font-size: 11.5pt;
+  }
 }
 .container .mainContent .leftOrUpperPart .skillsList .content .titleAndFluencies .fluenciesTwo .fluencyOne .statusBar {
   display: flex;
@@ -5318,21 +5644,33 @@ input[type=email]) {
     width: 9rem;
   }
 }
+@media (min-width: 1023px) and (max-width: 1200px) {
+  .container .mainContent .leftOrUpperPart .skillsList .content .titleAndFluencies .fluenciesTwo .fluencyOne .statusBar .bottom {
+    width: 9rem;
+  }
+}
 .container .mainContent .leftOrUpperPart .skillsList .content .titleAndFluencies .fluenciesTwo .fluencyOne .statusBar .percentage {
   display: flex;
   height: fit-content;
   width: fit-content;
   position: absolute;
   top: 12%;
-  left: 40%;
-  font-size: 11pt;
+  left: 44%;
+  font-size: 10pt;
   font-weight: 500;
   color: #ebebeb;
   z-index: 2;
 }
-@media (min-width: 300px) and (max-width: 600px) {
+@media (min-width: 300px) and (max-width: 1023px) {
   .container .mainContent .leftOrUpperPart .skillsList .content .titleAndFluencies .fluenciesTwo .fluencyOne .statusBar .percentage {
     top: 10%;
+    left: 42%;
+  }
+}
+@media (min-width: 1023px) and (max-width: 1300px) {
+  .container .mainContent .leftOrUpperPart .skillsList .content .titleAndFluencies .fluenciesTwo .fluencyOne .statusBar .percentage {
+    top: 17%;
+    font-size: 9pt;
   }
 }
 .container .mainContent .leftOrUpperPart .skillsList .content .titleAndFluencies .fluenciesTwo .fluencyOne .statusBar .topOne {
@@ -5408,6 +5746,23 @@ input[type=email]) {
     }
   }
 }
+@media (min-width: 1023px) and (max-width: 1200px) {
+  .container .mainContent .leftOrUpperPart .skillsList .content .titleAndFluencies .fluenciesTwo .fluencyOne .statusBar .topOne {
+    width: 9rem;
+  }
+  @keyframes topFive {
+    from {
+      width: 0rem;
+      background-color: #545146;
+      opacity: 0;
+    }
+    to {
+      width: 9rem;
+      background-color: #5c4f43;
+      opacity: 1;
+    }
+  }
+}
 .container .mainContent .leftOrUpperPart .skillsList .content .titleAndFluencies .fluenciesTwo .fluencyTwo {
   display: flex;
   flex-direction: row;
@@ -5423,10 +5778,50 @@ input[type=email]) {
   }
 }
 .container .mainContent .leftOrUpperPart .skillsList .content .titleAndFluencies .fluenciesTwo .fluencyTwo .name {
-  font-size: 11pt;
+  font-size: 11.5pt;
   font-weight: 500;
-  color: #ebebeb;
+  color: #ffffff;
   position: unset;
+}
+@media (min-width: 500px) and (max-width: 600px) {
+  .container .mainContent .leftOrUpperPart .skillsList .content .titleAndFluencies .fluenciesTwo .fluencyTwo .name {
+    font-size: 12pt;
+  }
+}
+@media (min-width: 900px) and (max-width: 1000px) {
+  .container .mainContent .leftOrUpperPart .skillsList .content .titleAndFluencies .fluenciesTwo .fluencyTwo .name {
+    font-size: 11.5pt;
+  }
+}
+@media (min-width: 1000px) and (max-width: 1023px) {
+  .container .mainContent .leftOrUpperPart .skillsList .content .titleAndFluencies .fluenciesTwo .fluencyTwo .name {
+    font-size: 12pt;
+  }
+}
+@media (min-width: 1023px) and (max-width: 1100px) {
+  .container .mainContent .leftOrUpperPart .skillsList .content .titleAndFluencies .fluenciesTwo .fluencyTwo .name {
+    font-size: 8.5pt;
+  }
+}
+@media (orientation: portrait) and (min-width: 1023px) and (max-width: 1100px) {
+  .container .mainContent .leftOrUpperPart .skillsList .content .titleAndFluencies .fluenciesTwo .fluencyTwo .name {
+    font-size: 12pt;
+  }
+}
+@media (min-width: 1100px) and (max-width: 1200px) {
+  .container .mainContent .leftOrUpperPart .skillsList .content .titleAndFluencies .fluenciesTwo .fluencyTwo .name {
+    font-size: 9pt;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1300px) {
+  .container .mainContent .leftOrUpperPart .skillsList .content .titleAndFluencies .fluenciesTwo .fluencyTwo .name {
+    font-size: 10pt;
+  }
+}
+@media (min-width: 1500px) and (max-width: 1600px) {
+  .container .mainContent .leftOrUpperPart .skillsList .content .titleAndFluencies .fluenciesTwo .fluencyTwo .name {
+    font-size: 11.5pt;
+  }
 }
 .container .mainContent .leftOrUpperPart .skillsList .content .titleAndFluencies .fluenciesTwo .fluencyTwo .statusBar {
   display: flex;
@@ -5453,14 +5848,19 @@ input[type=email]) {
     width: 9rem;
   }
 }
+@media (min-width: 1023px) and (max-width: 1200px) {
+  .container .mainContent .leftOrUpperPart .skillsList .content .titleAndFluencies .fluenciesTwo .fluencyTwo .statusBar .bottom {
+    width: 9rem;
+  }
+}
 .container .mainContent .leftOrUpperPart .skillsList .content .titleAndFluencies .fluenciesTwo .fluencyTwo .statusBar .percentage {
   display: flex;
   height: fit-content;
   width: fit-content;
   position: absolute;
   top: 12%;
-  left: 40%;
-  font-size: 11pt;
+  left: 45%;
+  font-size: 10pt;
   font-weight: 500;
   color: #ebebeb;
   z-index: 2;
@@ -5468,6 +5868,13 @@ input[type=email]) {
 @media (min-width: 300px) and (max-width: 600px) {
   .container .mainContent .leftOrUpperPart .skillsList .content .titleAndFluencies .fluenciesTwo .fluencyTwo .statusBar .percentage {
     top: 10%;
+  }
+}
+@media (min-width: 1023px) and (max-width: 1300px) {
+  .container .mainContent .leftOrUpperPart .skillsList .content .titleAndFluencies .fluenciesTwo .fluencyTwo .statusBar .percentage {
+    top: 17%;
+    left: 45%;
+    font-size: 9pt;
   }
 }
 .container .mainContent .leftOrUpperPart .skillsList .content .titleAndFluencies .fluenciesTwo .fluencyTwo .statusBar .topTwo {
@@ -5543,6 +5950,23 @@ input[type=email]) {
     }
   }
 }
+@media (min-width: 1023px) and (max-width: 1200px) {
+  .container .mainContent .leftOrUpperPart .skillsList .content .titleAndFluencies .fluenciesTwo .fluencyTwo .statusBar .topTwo {
+    width: 8.1rem;
+  }
+  @keyframes topSix {
+    from {
+      width: 0rem;
+      background-color: #545146;
+      opacity: 0;
+    }
+    to {
+      width: 8.1rem;
+      background-color: #5c4f43;
+      opacity: 1;
+    }
+  }
+}
 .container .mainContent .leftOrUpperPart .skillsList .content .titleAndFluencies .fluenciesTwo .fluencyThree {
   display: flex;
   flex-direction: row;
@@ -5558,10 +5982,50 @@ input[type=email]) {
   }
 }
 .container .mainContent .leftOrUpperPart .skillsList .content .titleAndFluencies .fluenciesTwo .fluencyThree .name {
-  font-size: 11pt;
+  font-size: 11.5pt;
   font-weight: 500;
-  color: #ebebeb;
+  color: #ffffff;
   position: unset;
+}
+@media (min-width: 500px) and (max-width: 600px) {
+  .container .mainContent .leftOrUpperPart .skillsList .content .titleAndFluencies .fluenciesTwo .fluencyThree .name {
+    font-size: 12pt;
+  }
+}
+@media (min-width: 900px) and (max-width: 1000px) {
+  .container .mainContent .leftOrUpperPart .skillsList .content .titleAndFluencies .fluenciesTwo .fluencyThree .name {
+    font-size: 11.5pt;
+  }
+}
+@media (min-width: 1000px) and (max-width: 1023px) {
+  .container .mainContent .leftOrUpperPart .skillsList .content .titleAndFluencies .fluenciesTwo .fluencyThree .name {
+    font-size: 12pt;
+  }
+}
+@media (min-width: 1023px) and (max-width: 1100px) {
+  .container .mainContent .leftOrUpperPart .skillsList .content .titleAndFluencies .fluenciesTwo .fluencyThree .name {
+    font-size: 8.5pt;
+  }
+}
+@media (orientation: portrait) and (min-width: 1023px) and (max-width: 1100px) {
+  .container .mainContent .leftOrUpperPart .skillsList .content .titleAndFluencies .fluenciesTwo .fluencyThree .name {
+    font-size: 12pt;
+  }
+}
+@media (min-width: 1100px) and (max-width: 1200px) {
+  .container .mainContent .leftOrUpperPart .skillsList .content .titleAndFluencies .fluenciesTwo .fluencyThree .name {
+    font-size: 9pt;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1300px) {
+  .container .mainContent .leftOrUpperPart .skillsList .content .titleAndFluencies .fluenciesTwo .fluencyThree .name {
+    font-size: 10pt;
+  }
+}
+@media (min-width: 1500px) and (max-width: 1600px) {
+  .container .mainContent .leftOrUpperPart .skillsList .content .titleAndFluencies .fluenciesTwo .fluencyThree .name {
+    font-size: 11.5pt;
+  }
 }
 .container .mainContent .leftOrUpperPart .skillsList .content .titleAndFluencies .fluenciesTwo .fluencyThree .statusBar {
   display: flex;
@@ -5588,14 +6052,19 @@ input[type=email]) {
     width: 9rem;
   }
 }
+@media (min-width: 1023px) and (max-width: 1200px) {
+  .container .mainContent .leftOrUpperPart .skillsList .content .titleAndFluencies .fluenciesTwo .fluencyThree .statusBar .bottom {
+    width: 9rem;
+  }
+}
 .container .mainContent .leftOrUpperPart .skillsList .content .titleAndFluencies .fluenciesTwo .fluencyThree .statusBar .percentage {
   display: flex;
   height: fit-content;
   width: fit-content;
   position: absolute;
   top: 12%;
-  left: 40%;
-  font-size: 11pt;
+  left: 45%;
+  font-size: 10pt;
   font-weight: 500;
   color: #ebebeb;
   z-index: 2;
@@ -5603,6 +6072,13 @@ input[type=email]) {
 @media (min-width: 300px) and (max-width: 600px) {
   .container .mainContent .leftOrUpperPart .skillsList .content .titleAndFluencies .fluenciesTwo .fluencyThree .statusBar .percentage {
     top: 10%;
+  }
+}
+@media (min-width: 1023px) and (max-width: 1300px) {
+  .container .mainContent .leftOrUpperPart .skillsList .content .titleAndFluencies .fluenciesTwo .fluencyThree .statusBar .percentage {
+    top: 17%;
+    left: 45%;
+    font-size: 9pt;
   }
 }
 .container .mainContent .leftOrUpperPart .skillsList .content .titleAndFluencies .fluenciesTwo .fluencyThree .statusBar .topThree {
@@ -5678,6 +6154,23 @@ input[type=email]) {
     }
   }
 }
+@media (min-width: 1023px) and (max-width: 1200px) {
+  .container .mainContent .leftOrUpperPart .skillsList .content .titleAndFluencies .fluenciesTwo .fluencyThree .statusBar .topThree {
+    width: 6.3rem;
+  }
+  @keyframes topSeven {
+    from {
+      width: 0rem;
+      background-color: #545146;
+      opacity: 0;
+    }
+    to {
+      width: 6.3rem;
+      background-color: #5c4f43;
+      opacity: 1;
+    }
+  }
+}
 .container .mainContent .leftOrUpperPart .skillsList .content .titleAndFluencies .fluenciesTwo .fluencyFour {
   display: flex;
   flex-direction: row;
@@ -5693,10 +6186,50 @@ input[type=email]) {
   }
 }
 .container .mainContent .leftOrUpperPart .skillsList .content .titleAndFluencies .fluenciesTwo .fluencyFour .name {
-  font-size: 11pt;
+  font-size: 11.5pt;
   font-weight: 500;
-  color: #ebebeb;
+  color: #ffffff;
   position: unset;
+}
+@media (min-width: 500px) and (max-width: 600px) {
+  .container .mainContent .leftOrUpperPart .skillsList .content .titleAndFluencies .fluenciesTwo .fluencyFour .name {
+    font-size: 12pt;
+  }
+}
+@media (min-width: 900px) and (max-width: 1000px) {
+  .container .mainContent .leftOrUpperPart .skillsList .content .titleAndFluencies .fluenciesTwo .fluencyFour .name {
+    font-size: 11.5pt;
+  }
+}
+@media (min-width: 1000px) and (max-width: 1023px) {
+  .container .mainContent .leftOrUpperPart .skillsList .content .titleAndFluencies .fluenciesTwo .fluencyFour .name {
+    font-size: 12pt;
+  }
+}
+@media (min-width: 1023px) and (max-width: 1100px) {
+  .container .mainContent .leftOrUpperPart .skillsList .content .titleAndFluencies .fluenciesTwo .fluencyFour .name {
+    font-size: 8.5pt;
+  }
+}
+@media (orientation: portrait) and (min-width: 1023px) and (max-width: 1100px) {
+  .container .mainContent .leftOrUpperPart .skillsList .content .titleAndFluencies .fluenciesTwo .fluencyFour .name {
+    font-size: 12pt;
+  }
+}
+@media (min-width: 1100px) and (max-width: 1200px) {
+  .container .mainContent .leftOrUpperPart .skillsList .content .titleAndFluencies .fluenciesTwo .fluencyFour .name {
+    font-size: 9pt;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1300px) {
+  .container .mainContent .leftOrUpperPart .skillsList .content .titleAndFluencies .fluenciesTwo .fluencyFour .name {
+    font-size: 10pt;
+  }
+}
+@media (min-width: 1500px) and (max-width: 1600px) {
+  .container .mainContent .leftOrUpperPart .skillsList .content .titleAndFluencies .fluenciesTwo .fluencyFour .name {
+    font-size: 11.5pt;
+  }
 }
 .container .mainContent .leftOrUpperPart .skillsList .content .titleAndFluencies .fluenciesTwo .fluencyFour .statusBar {
   display: flex;
@@ -5723,14 +6256,19 @@ input[type=email]) {
     width: 9rem;
   }
 }
+@media (min-width: 1023px) and (max-width: 1200px) {
+  .container .mainContent .leftOrUpperPart .skillsList .content .titleAndFluencies .fluenciesTwo .fluencyFour .statusBar .bottom {
+    width: 9rem;
+  }
+}
 .container .mainContent .leftOrUpperPart .skillsList .content .titleAndFluencies .fluenciesTwo .fluencyFour .statusBar .percentage {
   display: flex;
   height: fit-content;
   width: fit-content;
   position: absolute;
   top: 12%;
-  left: 40%;
-  font-size: 11pt;
+  left: 45%;
+  font-size: 10pt;
   font-weight: 500;
   color: #ebebeb;
   z-index: 2;
@@ -5738,6 +6276,13 @@ input[type=email]) {
 @media (min-width: 300px) and (max-width: 600px) {
   .container .mainContent .leftOrUpperPart .skillsList .content .titleAndFluencies .fluenciesTwo .fluencyFour .statusBar .percentage {
     top: 10%;
+  }
+}
+@media (min-width: 1023px) and (max-width: 1300px) {
+  .container .mainContent .leftOrUpperPart .skillsList .content .titleAndFluencies .fluenciesTwo .fluencyFour .statusBar .percentage {
+    top: 17%;
+    left: 45%;
+    font-size: 9pt;
   }
 }
 .container .mainContent .leftOrUpperPart .skillsList .content .titleAndFluencies .fluenciesTwo .fluencyFour .statusBar .topFour {
@@ -5813,6 +6358,23 @@ input[type=email]) {
     }
   }
 }
+@media (min-width: 1023px) and (max-width: 1200px) {
+  .container .mainContent .leftOrUpperPart .skillsList .content .titleAndFluencies .fluenciesTwo .fluencyFour .statusBar .topFour {
+    width: 7.2rem;
+  }
+  @keyframes topEight {
+    from {
+      width: 0rem;
+      background-color: #545146;
+      opacity: 0;
+    }
+    to {
+      width: 7.2rem;
+      background-color: #5c4f43;
+      opacity: 1;
+    }
+  }
+}
 .container .mainContent .leftOrUpperPart .skillsList .content .nextDisabled {
   width: 2.5rem;
   height: 7rem;
@@ -5867,10 +6429,39 @@ input[type=email]) {
     cursor: default;
   }
 }
-@media (min-width: 1023px) and (max-width: 1400px) {
+@media (min-width: 1023px) and (max-width: 1100px) {
   .container .mainContent .leftOrUpperPart .skillsList .content .nextDisabled {
-    width: 2.3rem;
-    height: 6rem;
+    width: 1.8rem;
+    height: 4.7rem;
+    font-size: 7.4pt;
+    right: 1rem;
+  }
+}
+@media (orientation: portrait) and (min-width: 1023px) and (max-width: 1100px) {
+  .container .mainContent .leftOrUpperPart .skillsList .content .nextDisabled {
+    width: 2.5rem;
+    height: 7rem;
+    font-size: 10pt;
+  }
+}
+@media (min-width: 1100px) and (max-width: 1200px) {
+  .container .mainContent .leftOrUpperPart .skillsList .content .nextDisabled {
+    width: 1.9rem;
+    height: 5.1rem;
+    font-size: 8pt;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1300px) {
+  .container .mainContent .leftOrUpperPart .skillsList .content .nextDisabled {
+    width: 2rem;
+    height: 5.5rem;
+    font-size: 8pt;
+  }
+}
+@media (min-width: 1300px) and (max-width: 1400px) {
+  .container .mainContent .leftOrUpperPart .skillsList .content .nextDisabled {
+    width: 2.2rem;
+    height: 6.2rem;
     font-size: 9pt;
   }
 }
@@ -5900,9 +6491,6 @@ input[type=email]) {
     left: 7rem;
     font-size: 9pt;
   }
-  .container .mainContent .leftOrUpperPart .skillsList .content .next:hover {
-    background-color: unset;
-  }
 }
 @media (min-width: 350px) and (max-width: 600px) {
   .container .mainContent .leftOrUpperPart .skillsList .content .next {
@@ -5911,9 +6499,6 @@ input[type=email]) {
     bottom: 1rem;
     left: 8rem;
     font-size: 9pt;
-  }
-  .container .mainContent .leftOrUpperPart .skillsList .content .next:hover {
-    background-color: unset;
   }
 }
 @media (width: 600px) {
@@ -5931,10 +6516,39 @@ input[type=email]) {
     cursor: default;
   }
 }
-@media (min-width: 1023px) and (max-width: 1400px) {
+@media (min-width: 1023px) and (max-width: 1100px) {
   .container .mainContent .leftOrUpperPart .skillsList .content .next {
-    width: 2.3rem;
-    height: 6rem;
+    width: 1.8rem;
+    height: 4.7rem;
+    font-size: 7.4pt;
+    right: 1rem;
+  }
+}
+@media (orientation: portrait) and (min-width: 1023px) and (max-width: 1100px) {
+  .container .mainContent .leftOrUpperPart .skillsList .content .next {
+    width: 2.5rem;
+    height: 7rem;
+    font-size: 10pt;
+  }
+}
+@media (min-width: 1100px) and (max-width: 1200px) {
+  .container .mainContent .leftOrUpperPart .skillsList .content .next {
+    width: 1.9rem;
+    height: 5.1rem;
+    font-size: 8pt;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1300px) {
+  .container .mainContent .leftOrUpperPart .skillsList .content .next {
+    width: 2rem;
+    height: 5.5rem;
+    font-size: 8pt;
+  }
+}
+@media (min-width: 1300px) and (max-width: 1400px) {
+  .container .mainContent .leftOrUpperPart .skillsList .content .next {
+    width: 2.2rem;
+    height: 6.2rem;
     font-size: 9pt;
   }
 }
@@ -5952,16 +6566,65 @@ input[type=email]) {
     font-size: 8.5pt;
   }
 }
-@media (min-width: 350px) and (max-width: 600px) {
+@media (min-width: 350px) and (max-width: 400px) {
   .container .mainContent .leftOrUpperPart .skillsList .content p {
     right: 1rem;
     bottom: 1.5rem;
+  }
+}
+@media (min-width: 400px) and (max-width: 500px) {
+  .container .mainContent .leftOrUpperPart .skillsList .content p {
+    font-size: 9.5pt;
+  }
+}
+@media (min-width: 500px) and (max-width: 600px) {
+  .container .mainContent .leftOrUpperPart .skillsList .content p {
+    font-size: 10pt;
   }
 }
 @media (width: 600px) {
   .container .mainContent .leftOrUpperPart .skillsList .content p {
     right: 2.5rem;
     bottom: 1rem;
+  }
+}
+@media (min-width: 900px) and (max-width: 1023px) {
+  .container .mainContent .leftOrUpperPart .skillsList .content p {
+    font-size: 10pt;
+  }
+}
+@media (min-width: 1023px) and (max-width: 1100px) {
+  .container .mainContent .leftOrUpperPart .skillsList .content p {
+    right: 1.3rem;
+    font-size: 8pt;
+  }
+}
+@media (orientation: portrait) and (min-width: 1023px) and (max-width: 1100px) {
+  .container .mainContent .leftOrUpperPart .skillsList .content p {
+    font-size: 9.5pt;
+  }
+}
+@media (min-width: 1100px) and (max-width: 1200px) {
+  .container .mainContent .leftOrUpperPart .skillsList .content p {
+    right: 2.3rem;
+    font-size: 8.5pt;
+  }
+}
+@media (width: 1100px) {
+  .container .mainContent .leftOrUpperPart .skillsList .content p {
+    right: 1.4rem;
+    font-size: 8.5pt;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1300px) {
+  .container .mainContent .leftOrUpperPart .skillsList .content p {
+    right: 2.4rem;
+    font-size: 8.5pt;
+  }
+}
+@media (min-width: 1500px) and (max-width: 1600px) {
+  .container .mainContent .leftOrUpperPart .skillsList .content p {
+    font-size: 9.5pt;
   }
 }
 .container .mainContent .leftOrUpperPart .educationList {
@@ -5996,13 +6659,13 @@ input[type=email]) {
 @media (min-width: 300px) and (max-width: 500px) {
   .container .mainContent .leftOrUpperPart .educationList {
     height: 30rem;
-    scroll-margin-bottom: 10rem;
+    scroll-margin-bottom: 3rem;
   }
 }
 @media (min-width: 500px) and (max-width: 600px) {
   .container .mainContent .leftOrUpperPart .educationList {
     height: 32rem;
-    scroll-margin-bottom: 10rem;
+    scroll-margin-bottom: 3rem;
   }
 }
 @media (min-width: 600px) and (max-width: 700px) {
@@ -7140,16 +7803,42 @@ input[type=email]) {
     font-size: 8.5pt;
   }
 }
-@media (min-width: 350px) and (max-width: 600px) {
+@media (min-width: 350px) and (max-width: 400px) {
   .container .mainContent .leftOrUpperPart .educationList .content p {
     right: 1rem;
     bottom: 1.5rem;
+  }
+}
+@media (min-width: 400px) and (max-width: 500px) {
+  .container .mainContent .leftOrUpperPart .educationList .content p {
+    font-size: 9.5pt;
+  }
+}
+@media (min-width: 500px) and (max-width: 600px) {
+  .container .mainContent .leftOrUpperPart .educationList .content p {
+    font-size: 10pt;
+  }
+}
+@media (width: 600px) {
+  .container .mainContent .leftOrUpperPart .educationList .content p {
+    right: 2.5rem;
+    bottom: 1rem;
+  }
+}
+@media (min-width: 900px) and (max-width: 1023px) {
+  .container .mainContent .leftOrUpperPart .educationList .content p {
+    font-size: 10pt;
   }
 }
 @media (min-width: 1023px) and (max-width: 1100px) {
   .container .mainContent .leftOrUpperPart .educationList .content p {
     right: 1.3rem;
     font-size: 8pt;
+  }
+}
+@media (orientation: portrait) and (min-width: 1023px) and (max-width: 1100px) {
+  .container .mainContent .leftOrUpperPart .educationList .content p {
+    font-size: 9.5pt;
   }
 }
 @media (min-width: 1100px) and (max-width: 1200px) {
@@ -7160,8 +7849,19 @@ input[type=email]) {
 }
 @media (width: 1100px) {
   .container .mainContent .leftOrUpperPart .educationList .content p {
-    right: 1.3rem;
-    font-size: 8pt;
+    right: 1.4rem;
+    font-size: 8.5pt;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1300px) {
+  .container .mainContent .leftOrUpperPart .educationList .content p {
+    right: 2.4rem;
+    font-size: 8.5pt;
+  }
+}
+@media (min-width: 1500px) and (max-width: 1600px) {
+  .container .mainContent .leftOrUpperPart .educationList .content p {
+    font-size: 9.5pt;
   }
 }
 .container .mainContent .rightOrLowerPart {
