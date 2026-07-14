@@ -31,7 +31,7 @@ export default function RightOrLowerPart({
     <main
       className="rightOrLowerPart"
       onClick={
-        activeList === 'educationList' || activeList === 'skillList'
+        activeList === 'educationList' || activeList === 'skillsList'
           ? closeList
           : undefined
       }
