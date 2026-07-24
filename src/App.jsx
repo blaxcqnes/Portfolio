@@ -195,6 +195,8 @@ export default function App() {
           height: 'auto',
           overflowY: 'auto',
           transform: 'scale(98%)',
+          animation: 'container 0.5s linear',
+          animationIterationCount: '1',
         }),
         ...(isContactFormOpen && { transform: 'scale(98%)' }),
       }}

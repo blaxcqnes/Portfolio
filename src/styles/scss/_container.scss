@@ -9,6 +9,18 @@
   position: relative;
   scroll-behavior: smooth;
 
+  @keyframes container {
+    0% {
+      transform: scale(100%);
+    }
+    50% {
+      transform: scale(99%);
+    }
+    100% {
+      transform: scale(98%);
+    }
+  }
+
   @media (min-width: 300px) and (max-width: 600px) {
     height: auto;
     overflow-x: hidden;
