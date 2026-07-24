@@ -58,8 +58,7 @@ export default function RightOrLowerPart({
               ? {
                   flexDirection: 'column',
                   rowGap: '1rem',
-                  animation: 'projectsSwapped 0.5s linear',
-                  animationIterationCount: '1',
+                  animation: 'projectsSwapped 0.5s linear 1',
                   transition: 'all 2s ease',
                 }
               : undefined
@@ -168,8 +167,7 @@ export default function RightOrLowerPart({
                   height: '0',
                   padding: '0',
                   borderRadius: '0',
-                  animation: 'footerHidden 0.5s linear',
-                  animationIterationCount: '1',
+                  animation: 'footerHidden 0.5s linear 1',
                   transition: 'all 0.2s ease',
                   opacity: '0',
                 }

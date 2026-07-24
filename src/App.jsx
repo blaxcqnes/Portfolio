@@ -191,14 +191,24 @@ export default function App() {
     <div
       className="container"
       style={{
-        ...(activeList && {
-          height: 'auto',
-          overflowY: 'auto',
-          transform: 'scale(98%)',
-          animation: 'container 0.5s linear',
-          animationIterationCount: '1',
-        }),
-        ...(isContactFormOpen && { transform: 'scale(98%)' }),
+        ...(activeList
+          ? {
+              height: 'auto',
+              overflowY: 'auto',
+              transform: 'scale(98%)',
+              animation: 'activeLists 0.2s linear 1',
+            }
+          : {
+              animation: 'nonActiveLists 0.2s linear 1',
+            }),
+        ...(isContactFormOpen
+          ? {
+              transform: 'scale(98%)',
+              animation: 'activeLists 0.2s linear 1',
+            }
+          : {
+              animation: 'nonActiveLists 0.2s linear 1',
+            }),
       }}
     >
       {loading ? (

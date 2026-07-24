@@ -83,8 +83,7 @@ export default function LeftOrUpperPart({
               ? {
                   flexDirection: 'column',
                   rowGap: '1rem',
-                  animation: 'skillsAndEducationSwapped 0.5s linear',
-                  animationIterationCount: '1',
+                  animation: 'skillsAndEducationSwapped 0.5s linear 1',
                 }
               : undefined
           }
