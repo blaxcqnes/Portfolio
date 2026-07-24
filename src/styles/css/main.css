@@ -680,12 +680,56 @@
     opacity: 1;
   }
 }
-@media (min-width: 300px) and (max-width: 400px) {
+@media (min-width: 300px) and (max-width: 330px) {
   .container .header .contactForm {
     width: 100%;
     height: 27.3rem;
     top: 6rem;
     right: unset;
+  }
+  @keyframes contactForm {
+    from {
+      top: 0;
+      filter: opacity(0.5) grayscale(10%) blur(0.05rem) brightness(80%);
+      transform: scale(100%);
+    }
+    to {
+      top: 6rem;
+      transform: scale(102%);
+      opacity: 1;
+    }
+  }
+}
+@media (min-width: 330px) and (max-width: 380px) {
+  .container .header .contactForm {
+    width: 90%;
+    height: 27.3rem;
+    top: 6rem;
+    right: unset;
+    left: 50%;
+    translate: -50% 0;
+  }
+  @keyframes contactForm {
+    from {
+      top: 0;
+      filter: opacity(0.5) grayscale(10%) blur(0.05rem) brightness(80%);
+      transform: scale(100%);
+    }
+    to {
+      top: 6rem;
+      transform: scale(102%);
+      opacity: 1;
+    }
+  }
+}
+@media (min-width: 380px) and (max-width: 400px) {
+  .container .header .contactForm {
+    width: 80%;
+    height: 27.3rem;
+    top: 6rem;
+    right: unset;
+    left: 50%;
+    translate: -50% 0;
   }
   @keyframes contactForm {
     from {
@@ -706,7 +750,8 @@
     height: 27.3rem;
     top: 6.25rem;
     right: unset;
-    translate: 12% 0;
+    left: 50%;
+    translate: -50% 0;
   }
   @keyframes contactForm {
     from {
@@ -723,11 +768,12 @@
 }
 @media (width: 400px) {
   .container .header .contactForm {
-    width: 100%;
+    width: 80%;
     height: 27.3rem;
     top: 6rem;
     right: unset;
-    translate: unset;
+    left: 50%;
+    translate: -50% 0;
   }
   @keyframes contactForm {
     from {
@@ -748,7 +794,8 @@
     height: 27.3rem;
     top: 6.8rem;
     right: unset;
-    translate: 21% 0;
+    left: 50%;
+    translate: -50% 0;
   }
   @keyframes contactForm {
     from {
@@ -769,7 +816,8 @@
     height: 27.3rem;
     top: 6.8rem;
     right: unset;
-    translate: 12% 0;
+    left: 50%;
+    translate: -50% 0;
   }
   @keyframes contactForm {
     from {
@@ -790,7 +838,8 @@
     height: 27.3rem;
     top: 6.8rem;
     right: unset;
-    translate: 33.5% 0;
+    left: 50%;
+    translate: -50% 0;
   }
   @keyframes contactForm {
     from {
@@ -811,7 +860,8 @@
     height: 27.3rem;
     top: 7.6rem;
     right: unset;
-    translate: 50% 0;
+    left: 50%;
+    translate: -50% 0;
   }
   @keyframes contactForm {
     from {
@@ -831,7 +881,8 @@
     width: 42%;
     top: 6.9rem;
     right: unset;
-    translate: 71% 0;
+    left: 50%;
+    translate: -50% 0;
   }
   @keyframes contactForm {
     from {
@@ -852,7 +903,8 @@
     height: 27.3rem;
     top: 7.5rem;
     right: unset;
-    translate: 70% 0;
+    left: 50%;
+    translate: -50% 0;
   }
   @keyframes contactForm {
     from {
@@ -872,7 +924,8 @@
     width: 37%;
     top: 7.1rem;
     right: unset;
-    translate: 86% 0;
+    left: 50%;
+    translate: -50% 0;
   }
   @keyframes contactForm {
     from {
@@ -892,7 +945,8 @@
     width: 42%;
     top: 7rem;
     right: unset;
-    translate: 71% 0;
+    left: 50%;
+    translate: -50% 0;
   }
   @keyframes contactForm {
     from {
@@ -914,7 +968,8 @@
     height: 29.6rem;
     top: 7.1rem;
     right: unset;
-    translate: 86% 0;
+    left: 50%;
+    translate: -50% 0;
   }
   @keyframes contactForm {
     from {
@@ -936,7 +991,8 @@
     height: 29.6rem;
     top: 7.1rem;
     right: unset;
-    translate: 85% 0;
+    left: 50%;
+    translate: -50% 0;
   }
   @keyframes contactForm {
     from {
@@ -978,7 +1034,8 @@
     height: 29.6rem;
     top: 7rem;
     right: unset;
-    translate: 86% 0;
+    left: 50%;
+    translate: -50% 0;
   }
   @keyframes contactForm {
     from {
@@ -9394,6 +9451,38 @@ input[type=email]) {
     opacity: 1;
   }
 }
+@media (min-width: 300px) and (max-width: 500px) {
+  .container .mainContent .rightOrLowerPart .cyberList {
+    height: 30rem;
+    scroll-margin-bottom: 3rem;
+  }
+}
+@media (min-width: 500px) and (max-width: 600px) {
+  .container .mainContent .rightOrLowerPart .cyberList {
+    height: 32rem;
+    scroll-margin-bottom: 3rem;
+  }
+}
+@media (min-width: 600px) and (max-width: 700px) {
+  .container .mainContent .rightOrLowerPart .cyberList {
+    height: 22rem;
+  }
+}
+@media (min-width: 1023px) and (max-width: 1200px) {
+  .container .mainContent .rightOrLowerPart .cyberList {
+    height: 16rem;
+  }
+}
+@media (orientation: portrait) and (min-width: 1023px) and (max-width: 1100px) {
+  .container .mainContent .rightOrLowerPart .cyberList {
+    height: 20rem;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1300px) {
+  .container .mainContent .rightOrLowerPart .cyberList {
+    height: 18rem;
+  }
+}
 .container .mainContent .rightOrLowerPart .cyberList .titleAndButton {
   display: flex;
   flex-direction: row;
@@ -9403,9 +9492,29 @@ input[type=email]) {
   background-color: #5c4f43;
   border-radius: 0.4rem 0.4rem 0 0;
 }
-@media (min-width: 300px) and (max-width: 600px) {
+@media (min-width: 400px) and (max-width: 600px) {
+  .container .mainContent .rightOrLowerPart .cyberList .titleAndButton {
+    padding: 0.8rem 1.2rem;
+  }
+}
+@media (width: 600px) {
+  .container .mainContent .rightOrLowerPart .cyberList .titleAndButton {
+    padding: 0.8rem 2rem;
+  }
+}
+@media (min-width: 1023px) and (max-width: 1200px) {
+  .container .mainContent .rightOrLowerPart .cyberList .titleAndButton {
+    padding: 0.5rem 0.7rem;
+  }
+}
+@media (orientation: portrait) and (min-width: 1023px) and (max-width: 1100px) {
   .container .mainContent .rightOrLowerPart .cyberList .titleAndButton {
     padding: 0.8rem 1rem;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1300px) {
+  .container .mainContent .rightOrLowerPart .cyberList .titleAndButton {
+    padding: 0.6rem 1rem;
   }
 }
 .container .mainContent .rightOrLowerPart .cyberList .titleAndButton h4 {
@@ -9460,8 +9569,6 @@ input[type=email]) {
 .container .mainContent .rightOrLowerPart .cyberList .titleAndButton .close {
   width: 7rem;
   height: 2.5rem;
-  position: relative;
-  align-self: center;
   background-color: #232323;
   border: none;
   border-radius: 0.5rem;
@@ -9486,10 +9593,17 @@ input[type=email]) {
     height: 2.3rem;
   }
 }
-@media (min-width: 700px) and (max-width: 763px) {
+@media (min-width: 700px) and (max-width: 800px) {
   .container .mainContent .rightOrLowerPart .cyberList .titleAndButton .close {
     width: 6rem;
     font-size: 9pt;
+  }
+}
+@media (width: 800px) {
+  .container .mainContent .rightOrLowerPart .cyberList .titleAndButton .close {
+    width: 7rem;
+    height: 2.5rem;
+    font-size: 10pt;
   }
 }
 @media (min-width: 300px) and (max-width: 1023px) {
@@ -9525,6 +9639,13 @@ input[type=email]) {
     font-size: 8pt;
   }
 }
+@media (min-width: 1300px) and (max-width: 1400px) {
+  .container .mainContent .rightOrLowerPart .cyberList .titleAndButton .close {
+    width: 6.2rem;
+    height: 2.2rem;
+    font-size: 9pt;
+  }
+}
 .container .mainContent .rightOrLowerPart .cyberList .content {
   display: flex;
   flex-direction: row;
@@ -9533,45 +9654,548 @@ input[type=email]) {
   align-self: center;
   align-items: center;
   width: 98%;
-  height: 75.5%;
+  height: 14.9rem;
   position: relative;
   background-color: #2a2a2a;
   border-radius: 0.5rem;
 }
 @media (min-width: 300px) and (max-width: 400px) {
   .container .mainContent .rightOrLowerPart .cyberList .content {
-    align-items: unset;
     width: 95%;
-    height: 83.5%;
-  }
-}
-@media (min-width: 400px) and (max-width: 550px) {
-  .container .mainContent .rightOrLowerPart .cyberList .content {
+    height: 24.65rem;
     align-items: unset;
-    width: 97%;
-    height: 83%;
   }
 }
-@media (min-width: 550px) and (max-width: 600px) {
+@media (min-width: 400px) and (max-width: 500px) {
   .container .mainContent .rightOrLowerPart .cyberList .content {
+    width: 96%;
+    height: 24.55rem;
     align-items: unset;
-    width: 97%;
-    height: 84%;
   }
 }
-@media (min-width: 600px) and (max-width: 750px) {
+@media (min-width: 500px) and (max-width: 600px) {
   .container .mainContent .rightOrLowerPart .cyberList .content {
-    height: 77%;
+    width: 96%;
+    height: 26.4rem;
+    align-items: unset;
+  }
+}
+@media (min-width: 600px) and (max-width: 700px) {
+  .container .mainContent .rightOrLowerPart .cyberList .content {
+    width: 97.5%;
+    height: 16.8rem;
   }
 }
 @media (min-width: 1023px) and (max-width: 1200px) {
   .container .mainContent .rightOrLowerPart .cyberList .content {
-    height: 75%;
+    height: 12.3rem;
   }
 }
-@media (min-width: 1200px) and (max-width: 1349px) {
+@media (orientation: portrait) and (min-width: 1023px) and (max-width: 1100px) {
   .container .mainContent .rightOrLowerPart .cyberList .content {
-    height: 74.5%;
+    width: 98.5%;
+    height: 14.9rem;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1300px) {
+  .container .mainContent .rightOrLowerPart .cyberList .content {
+    height: 13.9rem;
+  }
+}
+@media (min-width: 1300px) and (max-width: 1400px) {
+  .container .mainContent .rightOrLowerPart .cyberList .content {
+    height: 15.2rem;
+  }
+}
+@media (width: 1300px) {
+  .container .mainContent .rightOrLowerPart .cyberList .content {
+    height: 13.7rem;
+  }
+}
+@media (width: 1400px) {
+  .container .mainContent .rightOrLowerPart .cyberList .content {
+    height: 15.2rem;
+  }
+}
+.container .mainContent .rightOrLowerPart .cyberList .content .previousDisabled {
+  width: 2.5rem;
+  height: 7rem;
+  position: absolute;
+  left: 2rem;
+  align-self: center;
+  background-color: #2a2a2a;
+  border: none;
+  border-radius: 0.5rem;
+  font-size: 10pt;
+  font-weight: 500;
+  color: #2a2a2a;
+  cursor: default;
+  transition: all 0.2s ease;
+}
+@media (min-width: 300px) and (max-width: 350px) {
+  .container .mainContent .rightOrLowerPart .cyberList .content .previousDisabled {
+    width: 5.7rem;
+    height: 2.3rem;
+    bottom: 1rem;
+    left: 0.5rem;
+    background-color: #232323;
+    color: #a6a6a6;
+    font-size: 9.5pt;
+  }
+}
+@media (min-width: 350px) and (max-width: 400px) {
+  .container .mainContent .rightOrLowerPart .cyberList .content .previousDisabled {
+    width: 6rem;
+    height: 2.3rem;
+    bottom: 1rem;
+    left: 0.5rem;
+    background-color: #232323;
+    color: #a6a6a6;
+    font-size: 9.5pt;
+  }
+}
+@media (min-width: 400px) and (max-width: 600px) {
+  .container .mainContent .rightOrLowerPart .cyberList .content .previousDisabled {
+    width: 7rem;
+    height: 2.5rem;
+    bottom: 1rem;
+    left: 0.5rem;
+    background-color: #232323;
+    color: #a6a6a6;
+  }
+}
+@media (width: 600px) {
+  .container .mainContent .rightOrLowerPart .cyberList .content .previousDisabled {
+    width: 2.5rem;
+    height: 7rem;
+    top: unset;
+    bottom: unset;
+    left: 2rem;
+    background-color: #2a2a2a;
+    color: #2a2a2a;
+  }
+}
+@media (min-width: 700px) and (max-width: 800px) {
+  .container .mainContent .rightOrLowerPart .cyberList .content .previousDisabled {
+    height: 6rem;
+    top: unset;
+    bottom: unset;
+    left: 2rem;
+  }
+}
+@media (width: 800px) {
+  .container .mainContent .rightOrLowerPart .cyberList .content .previousDisabled {
+    width: 2.5rem;
+    height: 7rem;
+    top: unset;
+    bottom: unset;
+    left: 2rem;
+    font-size: 9.5pt;
+  }
+}
+@media (min-width: 300px) and (max-width: 1023px) {
+  .container .mainContent .rightOrLowerPart .cyberList .content .previousDisabled {
+    cursor: default;
+  }
+}
+@media (min-width: 1023px) and (max-width: 1100px) {
+  .container .mainContent .rightOrLowerPart .cyberList .content .previousDisabled {
+    width: 1.8rem;
+    height: 4.7rem;
+    font-size: 7.4pt;
+    left: 1rem;
+  }
+}
+@media (orientation: portrait) and (min-width: 1023px) and (max-width: 1100px) {
+  .container .mainContent .rightOrLowerPart .cyberList .content .previousDisabled {
+    width: 2.5rem;
+    height: 7rem;
+    font-size: 10pt;
+  }
+}
+@media (min-width: 1100px) and (max-width: 1200px) {
+  .container .mainContent .rightOrLowerPart .cyberList .content .previousDisabled {
+    width: 1.9rem;
+    height: 5.1rem;
+    font-size: 8pt;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1300px) {
+  .container .mainContent .rightOrLowerPart .cyberList .content .previousDisabled {
+    width: 2rem;
+    height: 5.5rem;
+    font-size: 8pt;
+  }
+}
+@media (min-width: 1300px) and (max-width: 1400px) {
+  .container .mainContent .rightOrLowerPart .cyberList .content .previousDisabled {
+    width: 2.2rem;
+    height: 6.2rem;
+    font-size: 9pt;
+  }
+}
+.container .mainContent .rightOrLowerPart .cyberList .content .previous {
+  width: 2.5rem;
+  height: 7rem;
+  position: absolute;
+  left: 2rem;
+  align-self: center;
+  background-color: #545146;
+  border: none;
+  border-radius: 0.5rem;
+  font-size: 10pt;
+  font-weight: 500;
+  color: #ebebeb;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+.container .mainContent .rightOrLowerPart .cyberList .content .previous:hover {
+  background-color: #5c4f43;
+}
+@media (min-width: 300px) and (max-width: 350px) {
+  .container .mainContent .rightOrLowerPart .cyberList .content .previous {
+    width: 5.7rem;
+    height: 2.3rem;
+    bottom: 1rem;
+    left: 0.5rem;
+    font-size: 9.5pt;
+  }
+}
+@media (min-width: 350px) and (max-width: 400px) {
+  .container .mainContent .rightOrLowerPart .cyberList .content .previous {
+    width: 6rem;
+    height: 2.3rem;
+    bottom: 1rem;
+    left: 0.5rem;
+    font-size: 9.5pt;
+  }
+}
+@media (min-width: 400px) and (max-width: 600px) {
+  .container .mainContent .rightOrLowerPart .cyberList .content .previous {
+    width: 7rem;
+    height: 2.5rem;
+    bottom: 1rem;
+    left: 0.5rem;
+  }
+}
+@media (width: 600px) {
+  .container .mainContent .rightOrLowerPart .cyberList .content .previous {
+    width: 2.5rem;
+    height: 7rem;
+    top: unset;
+    bottom: unset;
+    left: 2rem;
+  }
+}
+@media (min-width: 700px) and (max-width: 800px) {
+  .container .mainContent .rightOrLowerPart .cyberList .content .previous {
+    height: 6rem;
+    top: unset;
+    bottom: unset;
+    left: 2rem;
+  }
+}
+@media (width: 800px) {
+  .container .mainContent .rightOrLowerPart .cyberList .content .previous {
+    width: 2.5rem;
+    height: 7rem;
+    top: unset;
+    bottom: unset;
+    left: 2rem;
+    font-size: 9.5pt;
+  }
+}
+@media (min-width: 300px) and (max-width: 1023px) {
+  .container .mainContent .rightOrLowerPart .cyberList .content .previous {
+    cursor: default;
+  }
+}
+@media (min-width: 1023px) and (max-width: 1100px) {
+  .container .mainContent .rightOrLowerPart .cyberList .content .previous {
+    width: 1.8rem;
+    height: 4.7rem;
+    font-size: 7.4pt;
+    left: 1rem;
+  }
+}
+@media (orientation: portrait) and (min-width: 1023px) and (max-width: 1100px) {
+  .container .mainContent .rightOrLowerPart .cyberList .content .previous {
+    width: 2.5rem;
+    height: 7rem;
+    font-size: 10pt;
+  }
+}
+@media (min-width: 1100px) and (max-width: 1200px) {
+  .container .mainContent .rightOrLowerPart .cyberList .content .previous {
+    width: 1.9rem;
+    height: 5.1rem;
+    font-size: 8pt;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1300px) {
+  .container .mainContent .rightOrLowerPart .cyberList .content .previous {
+    width: 2rem;
+    height: 5.5rem;
+    font-size: 8pt;
+  }
+}
+@media (min-width: 1300px) and (max-width: 1400px) {
+  .container .mainContent .rightOrLowerPart .cyberList .content .previous {
+    width: 2.2rem;
+    height: 6.2rem;
+    font-size: 9pt;
+  }
+}
+.container .mainContent .rightOrLowerPart .cyberList .content .nextDisabled {
+  width: 2.5rem;
+  height: 7rem;
+  position: absolute;
+  right: 2rem;
+  align-self: center;
+  background-color: #2a2a2a;
+  border: none;
+  border-radius: 0.5rem;
+  font-size: 10pt;
+  font-weight: 500;
+  color: #2a2a2a;
+  cursor: default;
+  transition: all 0.2s ease;
+}
+@media (min-width: 300px) and (max-width: 350px) {
+  .container .mainContent .rightOrLowerPart .cyberList .content .nextDisabled {
+    width: 6rem;
+    height: 2.3rem;
+    bottom: 1rem;
+    left: 7rem;
+    background-color: #232323;
+    color: #a6a6a6;
+    font-size: 9pt;
+  }
+}
+@media (min-width: 350px) and (max-width: 600px) {
+  .container .mainContent .rightOrLowerPart .cyberList .content .nextDisabled {
+    width: 6rem;
+    height: 2.3rem;
+    bottom: 1rem;
+    left: 8rem;
+    background-color: #232323;
+    color: #a6a6a6;
+    font-size: 9pt;
+  }
+}
+@media (width: 600px) {
+  .container .mainContent .rightOrLowerPart .cyberList .content .nextDisabled {
+    width: 2.5rem;
+    height: 7rem;
+    bottom: unset;
+    right: 2rem;
+    left: unset;
+    background-color: #2a2a2a;
+    color: #2a2a2a;
+    font-size: 10pt;
+  }
+}
+@media (min-width: 300px) and (max-width: 1023px) {
+  .container .mainContent .rightOrLowerPart .cyberList .content .nextDisabled {
+    cursor: default;
+  }
+}
+@media (min-width: 1023px) and (max-width: 1100px) {
+  .container .mainContent .rightOrLowerPart .cyberList .content .nextDisabled {
+    width: 1.8rem;
+    height: 4.7rem;
+    font-size: 7.4pt;
+    right: 1rem;
+  }
+}
+@media (orientation: portrait) and (min-width: 1023px) and (max-width: 1100px) {
+  .container .mainContent .rightOrLowerPart .cyberList .content .nextDisabled {
+    width: 2.5rem;
+    height: 7rem;
+    font-size: 10pt;
+  }
+}
+@media (min-width: 1100px) and (max-width: 1200px) {
+  .container .mainContent .rightOrLowerPart .cyberList .content .nextDisabled {
+    width: 1.9rem;
+    height: 5.1rem;
+    font-size: 8pt;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1300px) {
+  .container .mainContent .rightOrLowerPart .cyberList .content .nextDisabled {
+    width: 2rem;
+    height: 5.5rem;
+    font-size: 8pt;
+  }
+}
+@media (min-width: 1300px) and (max-width: 1400px) {
+  .container .mainContent .rightOrLowerPart .cyberList .content .nextDisabled {
+    width: 2.2rem;
+    height: 6.2rem;
+    font-size: 9pt;
+  }
+}
+.container .mainContent .rightOrLowerPart .cyberList .content .next {
+  width: 2.5rem;
+  height: 7rem;
+  position: absolute;
+  right: 2rem;
+  align-self: center;
+  background-color: #545146;
+  border: none;
+  border-radius: 0.5rem;
+  font-size: 10pt;
+  font-weight: 500;
+  color: #ebebeb;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+.container .mainContent .rightOrLowerPart .cyberList .content .next:hover {
+  background-color: #5c4f43;
+}
+@media (min-width: 300px) and (max-width: 350px) {
+  .container .mainContent .rightOrLowerPart .cyberList .content .next {
+    width: 6rem;
+    height: 2.3rem;
+    bottom: 1rem;
+    left: 7rem;
+    font-size: 9pt;
+  }
+}
+@media (min-width: 350px) and (max-width: 600px) {
+  .container .mainContent .rightOrLowerPart .cyberList .content .next {
+    width: 6rem;
+    height: 2.3rem;
+    bottom: 1rem;
+    left: 8rem;
+    font-size: 9pt;
+  }
+}
+@media (width: 600px) {
+  .container .mainContent .rightOrLowerPart .cyberList .content .next {
+    width: 2.5rem;
+    height: 7rem;
+    bottom: unset;
+    right: 2rem;
+    left: unset;
+    font-size: 10pt;
+  }
+}
+@media (min-width: 300px) and (max-width: 1023px) {
+  .container .mainContent .rightOrLowerPart .cyberList .content .next {
+    cursor: default;
+  }
+}
+@media (min-width: 1023px) and (max-width: 1100px) {
+  .container .mainContent .rightOrLowerPart .cyberList .content .next {
+    width: 1.8rem;
+    height: 4.7rem;
+    font-size: 7.4pt;
+    right: 1rem;
+  }
+}
+@media (orientation: portrait) and (min-width: 1023px) and (max-width: 1100px) {
+  .container .mainContent .rightOrLowerPart .cyberList .content .next {
+    width: 2.5rem;
+    height: 7rem;
+    font-size: 10pt;
+  }
+}
+@media (min-width: 1100px) and (max-width: 1200px) {
+  .container .mainContent .rightOrLowerPart .cyberList .content .next {
+    width: 1.9rem;
+    height: 5.1rem;
+    font-size: 8pt;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1300px) {
+  .container .mainContent .rightOrLowerPart .cyberList .content .next {
+    width: 2rem;
+    height: 5.5rem;
+    font-size: 8pt;
+  }
+}
+@media (min-width: 1300px) and (max-width: 1400px) {
+  .container .mainContent .rightOrLowerPart .cyberList .content .next {
+    width: 2.2rem;
+    height: 6.2rem;
+    font-size: 9pt;
+  }
+}
+.container .mainContent .rightOrLowerPart .cyberList .content p {
+  position: absolute;
+  right: 2.5rem;
+  bottom: 1rem;
+  font-size: 9pt;
+  color: #a6a6a6;
+}
+@media (min-width: 300px) and (max-width: 350px) {
+  .container .mainContent .rightOrLowerPart .cyberList .content p {
+    right: 0.8rem;
+    bottom: 1.8rem;
+    font-size: 8.5pt;
+  }
+}
+@media (min-width: 350px) and (max-width: 400px) {
+  .container .mainContent .rightOrLowerPart .cyberList .content p {
+    right: 1rem;
+    bottom: 1.5rem;
+  }
+}
+@media (min-width: 400px) and (max-width: 500px) {
+  .container .mainContent .rightOrLowerPart .cyberList .content p {
+    font-size: 9.5pt;
+  }
+}
+@media (min-width: 500px) and (max-width: 600px) {
+  .container .mainContent .rightOrLowerPart .cyberList .content p {
+    font-size: 10pt;
+  }
+}
+@media (width: 600px) {
+  .container .mainContent .rightOrLowerPart .cyberList .content p {
+    right: 2.5rem;
+    bottom: 1rem;
+  }
+}
+@media (min-width: 900px) and (max-width: 1023px) {
+  .container .mainContent .rightOrLowerPart .cyberList .content p {
+    font-size: 10pt;
+  }
+}
+@media (min-width: 1023px) and (max-width: 1100px) {
+  .container .mainContent .rightOrLowerPart .cyberList .content p {
+    right: 1.3rem;
+    font-size: 8pt;
+  }
+}
+@media (orientation: portrait) and (min-width: 1023px) and (max-width: 1100px) {
+  .container .mainContent .rightOrLowerPart .cyberList .content p {
+    font-size: 9.5pt;
+  }
+}
+@media (min-width: 1100px) and (max-width: 1200px) {
+  .container .mainContent .rightOrLowerPart .cyberList .content p {
+    right: 2.3rem;
+    font-size: 8.5pt;
+  }
+}
+@media (width: 1100px) {
+  .container .mainContent .rightOrLowerPart .cyberList .content p {
+    right: 1.4rem;
+    font-size: 8.5pt;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1300px) {
+  .container .mainContent .rightOrLowerPart .cyberList .content p {
+    right: 2.4rem;
+    font-size: 8.5pt;
+  }
+}
+@media (min-width: 1500px) and (max-width: 1600px) {
+  .container .mainContent .rightOrLowerPart .cyberList .content p {
+    font-size: 9.5pt;
   }
 }
 .container .mainContent .rightOrLowerPart .webList {
@@ -9586,7 +10210,7 @@ input[type=email]) {
   scroll-margin-bottom: 1rem;
   background-color: #232323;
   border-radius: 0.5rem;
-  border: 0.1rem solid #545146;
+  border: 0.1rem solid #5c4f43;
   z-index: 1;
   filter: none;
 }
@@ -9603,6 +10227,38 @@ input[type=email]) {
     opacity: 1;
   }
 }
+@media (min-width: 300px) and (max-width: 500px) {
+  .container .mainContent .rightOrLowerPart .webList {
+    height: 30rem;
+    scroll-margin-bottom: 3rem;
+  }
+}
+@media (min-width: 500px) and (max-width: 600px) {
+  .container .mainContent .rightOrLowerPart .webList {
+    height: 32rem;
+    scroll-margin-bottom: 3rem;
+  }
+}
+@media (min-width: 600px) and (max-width: 700px) {
+  .container .mainContent .rightOrLowerPart .webList {
+    height: 22rem;
+  }
+}
+@media (min-width: 1023px) and (max-width: 1200px) {
+  .container .mainContent .rightOrLowerPart .webList {
+    height: 16rem;
+  }
+}
+@media (orientation: portrait) and (min-width: 1023px) and (max-width: 1100px) {
+  .container .mainContent .rightOrLowerPart .webList {
+    height: 20rem;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1300px) {
+  .container .mainContent .rightOrLowerPart .webList {
+    height: 18rem;
+  }
+}
 .container .mainContent .rightOrLowerPart .webList .titleAndButton {
   display: flex;
   flex-direction: row;
@@ -9612,9 +10268,29 @@ input[type=email]) {
   background-color: #545146;
   border-radius: 0.4rem 0.4rem 0 0;
 }
-@media (min-width: 300px) and (max-width: 600px) {
+@media (min-width: 400px) and (max-width: 600px) {
+  .container .mainContent .rightOrLowerPart .webList .titleAndButton {
+    padding: 0.8rem 1.2rem;
+  }
+}
+@media (width: 600px) {
+  .container .mainContent .rightOrLowerPart .webList .titleAndButton {
+    padding: 0.8rem 2rem;
+  }
+}
+@media (min-width: 1023px) and (max-width: 1200px) {
+  .container .mainContent .rightOrLowerPart .webList .titleAndButton {
+    padding: 0.5rem 0.7rem;
+  }
+}
+@media (orientation: portrait) and (min-width: 1023px) and (max-width: 1100px) {
   .container .mainContent .rightOrLowerPart .webList .titleAndButton {
     padding: 0.8rem 1rem;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1300px) {
+  .container .mainContent .rightOrLowerPart .webList .titleAndButton {
+    padding: 0.6rem 1rem;
   }
 }
 .container .mainContent .rightOrLowerPart .webList .titleAndButton h4 {
@@ -9669,8 +10345,6 @@ input[type=email]) {
 .container .mainContent .rightOrLowerPart .webList .titleAndButton .close {
   width: 7rem;
   height: 2.5rem;
-  position: relative;
-  align-self: center;
   background-color: #232323;
   border: none;
   border-radius: 0.5rem;
@@ -9695,10 +10369,17 @@ input[type=email]) {
     height: 2.3rem;
   }
 }
-@media (min-width: 700px) and (max-width: 763px) {
+@media (min-width: 700px) and (max-width: 800px) {
   .container .mainContent .rightOrLowerPart .webList .titleAndButton .close {
     width: 6rem;
     font-size: 9pt;
+  }
+}
+@media (width: 800px) {
+  .container .mainContent .rightOrLowerPart .webList .titleAndButton .close {
+    width: 7rem;
+    height: 2.5rem;
+    font-size: 10pt;
   }
 }
 @media (min-width: 300px) and (max-width: 1023px) {
@@ -9734,6 +10415,13 @@ input[type=email]) {
     font-size: 8pt;
   }
 }
+@media (min-width: 1300px) and (max-width: 1400px) {
+  .container .mainContent .rightOrLowerPart .webList .titleAndButton .close {
+    width: 6.2rem;
+    height: 2.2rem;
+    font-size: 9pt;
+  }
+}
 .container .mainContent .rightOrLowerPart .webList .content {
   display: flex;
   flex-direction: row;
@@ -9742,45 +10430,603 @@ input[type=email]) {
   align-self: center;
   align-items: center;
   width: 98%;
-  height: 75.5%;
+  height: 14.9rem;
   position: relative;
   background-color: #2a2a2a;
   border-radius: 0.5rem;
 }
 @media (min-width: 300px) and (max-width: 400px) {
   .container .mainContent .rightOrLowerPart .webList .content {
-    align-items: unset;
     width: 95%;
-    height: 83.5%;
-  }
-}
-@media (min-width: 400px) and (max-width: 550px) {
-  .container .mainContent .rightOrLowerPart .webList .content {
+    height: 24.65rem;
     align-items: unset;
-    width: 97%;
-    height: 83%;
   }
 }
-@media (min-width: 550px) and (max-width: 600px) {
+@media (min-width: 400px) and (max-width: 500px) {
   .container .mainContent .rightOrLowerPart .webList .content {
+    width: 96%;
+    height: 24.55rem;
     align-items: unset;
-    width: 97%;
-    height: 84%;
   }
 }
-@media (min-width: 600px) and (max-width: 750px) {
+@media (min-width: 500px) and (max-width: 600px) {
   .container .mainContent .rightOrLowerPart .webList .content {
-    height: 77%;
+    width: 96%;
+    height: 26.4rem;
+    align-items: unset;
+  }
+}
+@media (min-width: 600px) and (max-width: 700px) {
+  .container .mainContent .rightOrLowerPart .webList .content {
+    width: 97.5%;
+    height: 16.8rem;
   }
 }
 @media (min-width: 1023px) and (max-width: 1200px) {
   .container .mainContent .rightOrLowerPart .webList .content {
-    height: 75%;
+    height: 12.3rem;
   }
 }
-@media (min-width: 1200px) and (max-width: 1349px) {
+@media (orientation: portrait) and (min-width: 1023px) and (max-width: 1100px) {
   .container .mainContent .rightOrLowerPart .webList .content {
-    height: 74.5%;
+    width: 98.5%;
+    height: 14.9rem;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1300px) {
+  .container .mainContent .rightOrLowerPart .webList .content {
+    height: 13.9rem;
+  }
+}
+@media (min-width: 1300px) and (max-width: 1400px) {
+  .container .mainContent .rightOrLowerPart .webList .content {
+    height: 15.2rem;
+  }
+}
+@media (width: 1300px) {
+  .container .mainContent .rightOrLowerPart .webList .content {
+    height: 13.7rem;
+  }
+}
+@media (width: 1400px) {
+  .container .mainContent .rightOrLowerPart .webList .content {
+    height: 15.2rem;
+  }
+}
+.container .mainContent .rightOrLowerPart .webList .content .previousDisabled {
+  width: 2.5rem;
+  height: 7rem;
+  position: absolute;
+  left: 2rem;
+  align-self: center;
+  background-color: #2a2a2a;
+  border: none;
+  border-radius: 0.5rem;
+  font-size: 10pt;
+  font-weight: 500;
+  color: #2a2a2a;
+  cursor: default;
+  transition: all 0.2s ease;
+}
+@media (min-width: 300px) and (max-width: 350px) {
+  .container .mainContent .rightOrLowerPart .webList .content .previousDisabled {
+    width: 5.7rem;
+    height: 2.3rem;
+    bottom: 1rem;
+    left: 0.5rem;
+    background-color: #232323;
+    color: #a6a6a6;
+    font-size: 9.5pt;
+  }
+}
+@media (min-width: 350px) and (max-width: 400px) {
+  .container .mainContent .rightOrLowerPart .webList .content .previousDisabled {
+    width: 6rem;
+    height: 2.3rem;
+    bottom: 1rem;
+    left: 0.5rem;
+    background-color: #232323;
+    color: #a6a6a6;
+    font-size: 9.5pt;
+  }
+}
+@media (min-width: 400px) and (max-width: 600px) {
+  .container .mainContent .rightOrLowerPart .webList .content .previousDisabled {
+    width: 7rem;
+    height: 2.5rem;
+    bottom: 1rem;
+    left: 0.5rem;
+    background-color: #232323;
+    color: #a6a6a6;
+  }
+}
+@media (width: 600px) {
+  .container .mainContent .rightOrLowerPart .webList .content .previousDisabled {
+    width: 2.5rem;
+    height: 7rem;
+    top: unset;
+    bottom: unset;
+    left: 2rem;
+    background-color: #2a2a2a;
+    color: #2a2a2a;
+  }
+}
+@media (min-width: 700px) and (max-width: 800px) {
+  .container .mainContent .rightOrLowerPart .webList .content .previousDisabled {
+    height: 6rem;
+    top: unset;
+    bottom: unset;
+    left: 2rem;
+  }
+}
+@media (width: 800px) {
+  .container .mainContent .rightOrLowerPart .webList .content .previousDisabled {
+    width: 2.5rem;
+    height: 7rem;
+    top: unset;
+    bottom: unset;
+    left: 2rem;
+    font-size: 9.5pt;
+  }
+}
+@media (min-width: 300px) and (max-width: 1023px) {
+  .container .mainContent .rightOrLowerPart .webList .content .previousDisabled {
+    cursor: default;
+  }
+}
+@media (min-width: 1023px) and (max-width: 1100px) {
+  .container .mainContent .rightOrLowerPart .webList .content .previousDisabled {
+    width: 1.8rem;
+    height: 4.7rem;
+    font-size: 7.4pt;
+    left: 1rem;
+  }
+}
+@media (orientation: portrait) and (min-width: 1023px) and (max-width: 1100px) {
+  .container .mainContent .rightOrLowerPart .webList .content .previousDisabled {
+    width: 2.5rem;
+    height: 7rem;
+    font-size: 10pt;
+  }
+}
+@media (min-width: 1100px) and (max-width: 1200px) {
+  .container .mainContent .rightOrLowerPart .webList .content .previousDisabled {
+    width: 1.9rem;
+    height: 5.1rem;
+    font-size: 8pt;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1300px) {
+  .container .mainContent .rightOrLowerPart .webList .content .previousDisabled {
+    width: 2rem;
+    height: 5.5rem;
+    font-size: 8pt;
+  }
+}
+@media (min-width: 1300px) and (max-width: 1400px) {
+  .container .mainContent .rightOrLowerPart .webList .content .previousDisabled {
+    width: 2.2rem;
+    height: 6.2rem;
+    font-size: 9pt;
+  }
+}
+.container .mainContent .rightOrLowerPart .webList .content .previous {
+  width: 2.5rem;
+  height: 7rem;
+  position: absolute;
+  left: 2rem;
+  align-self: center;
+  background-color: #5c4f43;
+  border: none;
+  border-radius: 0.5rem;
+  font-size: 10pt;
+  font-weight: 500;
+  color: #ebebeb;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+.container .mainContent .rightOrLowerPart .webList .content .previous:hover {
+  background-color: #545146;
+}
+@media (min-width: 300px) and (max-width: 350px) {
+  .container .mainContent .rightOrLowerPart .webList .content .previous {
+    width: 5.7rem;
+    height: 2.3rem;
+    bottom: 1rem;
+    left: 0.5rem;
+    font-size: 9.5pt;
+  }
+}
+@media (min-width: 350px) and (max-width: 400px) {
+  .container .mainContent .rightOrLowerPart .webList .content .previous {
+    width: 6rem;
+    height: 2.3rem;
+    bottom: 1rem;
+    left: 0.5rem;
+    font-size: 9.5pt;
+  }
+}
+@media (min-width: 400px) and (max-width: 600px) {
+  .container .mainContent .rightOrLowerPart .webList .content .previous {
+    width: 7rem;
+    height: 2.5rem;
+    bottom: 1rem;
+    left: 0.5rem;
+  }
+}
+@media (width: 600px) {
+  .container .mainContent .rightOrLowerPart .webList .content .previous {
+    width: 2.5rem;
+    height: 7rem;
+    top: unset;
+    bottom: unset;
+    left: 2rem;
+  }
+}
+@media (min-width: 700px) and (max-width: 800px) {
+  .container .mainContent .rightOrLowerPart .webList .content .previous {
+    height: 6rem;
+    top: unset;
+    bottom: unset;
+    left: 2rem;
+  }
+}
+@media (width: 800px) {
+  .container .mainContent .rightOrLowerPart .webList .content .previous {
+    width: 2.5rem;
+    height: 7rem;
+    top: unset;
+    bottom: unset;
+    left: 2rem;
+    font-size: 9.5pt;
+  }
+}
+@media (min-width: 300px) and (max-width: 1023px) {
+  .container .mainContent .rightOrLowerPart .webList .content .previous {
+    cursor: default;
+  }
+}
+@media (min-width: 1023px) and (max-width: 1100px) {
+  .container .mainContent .rightOrLowerPart .webList .content .previous {
+    width: 1.8rem;
+    height: 4.7rem;
+    font-size: 7.4pt;
+    left: 1rem;
+  }
+}
+@media (orientation: portrait) and (min-width: 1023px) and (max-width: 1100px) {
+  .container .mainContent .rightOrLowerPart .webList .content .previous {
+    width: 2.5rem;
+    height: 7rem;
+    font-size: 10pt;
+  }
+}
+@media (min-width: 1100px) and (max-width: 1200px) {
+  .container .mainContent .rightOrLowerPart .webList .content .previous {
+    width: 1.9rem;
+    height: 5.1rem;
+    font-size: 8pt;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1300px) {
+  .container .mainContent .rightOrLowerPart .webList .content .previous {
+    width: 2rem;
+    height: 5.5rem;
+    font-size: 8pt;
+  }
+}
+@media (min-width: 1300px) and (max-width: 1400px) {
+  .container .mainContent .rightOrLowerPart .webList .content .previous {
+    width: 2.2rem;
+    height: 6.2rem;
+    font-size: 9pt;
+  }
+}
+.container .mainContent .rightOrLowerPart .webList .content .nextDisabled {
+  width: 2.5rem;
+  height: 7rem;
+  position: absolute;
+  right: 2rem;
+  align-self: center;
+  background-color: #2a2a2a;
+  border: none;
+  border-radius: 0.5rem;
+  font-size: 10pt;
+  font-weight: 500;
+  color: #2a2a2a;
+  cursor: default;
+  transition: all 0.2s ease;
+}
+@media (min-width: 300px) and (max-width: 350px) {
+  .container .mainContent .rightOrLowerPart .webList .content .nextDisabled {
+    width: 5.7rem;
+    height: 2.3rem;
+    bottom: 1rem;
+    left: 7rem;
+    background-color: #232323;
+    color: #a6a6a6;
+    font-size: 9.5pt;
+  }
+}
+@media (min-width: 350px) and (max-width: 400px) {
+  .container .mainContent .rightOrLowerPart .webList .content .nextDisabled {
+    width: 6rem;
+    height: 2.3rem;
+    bottom: 1rem;
+    left: 7rem;
+    background-color: #232323;
+    color: #a6a6a6;
+    font-size: 9.5pt;
+  }
+}
+@media (min-width: 400px) and (max-width: 600px) {
+  .container .mainContent .rightOrLowerPart .webList .content .nextDisabled {
+    width: 7rem;
+    height: 2.5rem;
+    bottom: 1rem;
+    left: 8.5rem;
+    background-color: #232323;
+    color: #a6a6a6;
+  }
+}
+@media (width: 600px) {
+  .container .mainContent .rightOrLowerPart .webList .content .nextDisabled {
+    width: 2.5rem;
+    height: 7rem;
+    top: unset;
+    bottom: unset;
+    right: 2rem;
+    left: unset;
+    background-color: #2a2a2a;
+    color: #2a2a2a;
+    font-size: 10pt;
+  }
+}
+@media (min-width: 700px) and (max-width: 800px) {
+  .container .mainContent .rightOrLowerPart .webList .content .nextDisabled {
+    height: 6rem;
+    top: unset;
+    bottom: unset;
+    right: 2rem;
+  }
+}
+@media (width: 800px) {
+  .container .mainContent .rightOrLowerPart .webList .content .nextDisabled {
+    width: 2.5rem;
+    height: 7rem;
+    top: unset;
+    bottom: unset;
+    right: 2rem;
+    font-size: 9.5pt;
+  }
+}
+@media (min-width: 300px) and (max-width: 1023px) {
+  .container .mainContent .rightOrLowerPart .webList .content .nextDisabled {
+    cursor: default;
+  }
+}
+@media (min-width: 1023px) and (max-width: 1100px) {
+  .container .mainContent .rightOrLowerPart .webList .content .nextDisabled {
+    width: 1.8rem;
+    height: 4.7rem;
+    font-size: 7.4pt;
+    right: 1rem;
+  }
+}
+@media (orientation: portrait) and (min-width: 1023px) and (max-width: 1100px) {
+  .container .mainContent .rightOrLowerPart .webList .content .nextDisabled {
+    width: 2.5rem;
+    height: 7rem;
+    font-size: 10pt;
+  }
+}
+@media (min-width: 1100px) and (max-width: 1200px) {
+  .container .mainContent .rightOrLowerPart .webList .content .nextDisabled {
+    width: 1.9rem;
+    height: 5.1rem;
+    font-size: 8pt;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1300px) {
+  .container .mainContent .rightOrLowerPart .webList .content .nextDisabled {
+    width: 2rem;
+    height: 5.5rem;
+    font-size: 8pt;
+  }
+}
+@media (min-width: 1300px) and (max-width: 1400px) {
+  .container .mainContent .rightOrLowerPart .webList .content .nextDisabled {
+    width: 2.2rem;
+    height: 6.2rem;
+    font-size: 9pt;
+  }
+}
+.container .mainContent .rightOrLowerPart .webList .content .next {
+  width: 2.5rem;
+  height: 7rem;
+  position: absolute;
+  right: 2rem;
+  align-self: center;
+  background-color: #5c4f43;
+  border: none;
+  border-radius: 0.5rem;
+  font-size: 10pt;
+  font-weight: 500;
+  color: #ebebeb;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+.container .mainContent .rightOrLowerPart .webList .content .next:hover {
+  background-color: #545146;
+}
+@media (min-width: 300px) and (max-width: 350px) {
+  .container .mainContent .rightOrLowerPart .webList .content .next {
+    width: 5.7rem;
+    height: 2.3rem;
+    bottom: 1rem;
+    left: 7rem;
+    font-size: 9.5pt;
+  }
+}
+@media (min-width: 350px) and (max-width: 400px) {
+  .container .mainContent .rightOrLowerPart .webList .content .next {
+    width: 6rem;
+    height: 2.3rem;
+    bottom: 1rem;
+    left: 7rem;
+    font-size: 9.5pt;
+  }
+}
+@media (min-width: 400px) and (max-width: 600px) {
+  .container .mainContent .rightOrLowerPart .webList .content .next {
+    width: 7rem;
+    height: 2.5rem;
+    bottom: 1rem;
+    left: 8.5rem;
+  }
+}
+@media (width: 600px) {
+  .container .mainContent .rightOrLowerPart .webList .content .next {
+    width: 2.5rem;
+    height: 7rem;
+    top: unset;
+    bottom: unset;
+    right: 2rem;
+    left: unset;
+  }
+}
+@media (min-width: 700px) and (max-width: 800px) {
+  .container .mainContent .rightOrLowerPart .webList .content .next {
+    height: 6rem;
+    top: unset;
+    bottom: unset;
+    right: 2rem;
+  }
+}
+@media (width: 800px) {
+  .container .mainContent .rightOrLowerPart .webList .content .next {
+    width: 2.5rem;
+    height: 7rem;
+    top: unset;
+    bottom: unset;
+    right: 2rem;
+    font-size: 9.5pt;
+  }
+}
+@media (min-width: 300px) and (max-width: 1023px) {
+  .container .mainContent .rightOrLowerPart .webList .content .next {
+    cursor: default;
+  }
+}
+@media (min-width: 1023px) and (max-width: 1100px) {
+  .container .mainContent .rightOrLowerPart .webList .content .next {
+    width: 1.8rem;
+    height: 4.7rem;
+    font-size: 7.4pt;
+    right: 1rem;
+  }
+}
+@media (orientation: portrait) and (min-width: 1023px) and (max-width: 1100px) {
+  .container .mainContent .rightOrLowerPart .webList .content .next {
+    width: 2.5rem;
+    height: 7rem;
+    font-size: 10pt;
+  }
+}
+@media (min-width: 1100px) and (max-width: 1200px) {
+  .container .mainContent .rightOrLowerPart .webList .content .next {
+    width: 1.9rem;
+    height: 5.1rem;
+    font-size: 8pt;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1300px) {
+  .container .mainContent .rightOrLowerPart .webList .content .next {
+    width: 2rem;
+    height: 5.5rem;
+    font-size: 8pt;
+  }
+}
+@media (min-width: 1300px) and (max-width: 1400px) {
+  .container .mainContent .rightOrLowerPart .webList .content .next {
+    width: 2.2rem;
+    height: 6.2rem;
+    font-size: 9pt;
+  }
+}
+.container .mainContent .rightOrLowerPart .webList .content p {
+  position: absolute;
+  right: 2.5rem;
+  bottom: 1rem;
+  font-size: 9pt;
+  color: #a6a6a6;
+}
+@media (min-width: 300px) and (max-width: 350px) {
+  .container .mainContent .rightOrLowerPart .webList .content p {
+    right: 0.8rem;
+    bottom: 1.8rem;
+    font-size: 8.5pt;
+  }
+}
+@media (min-width: 350px) and (max-width: 400px) {
+  .container .mainContent .rightOrLowerPart .webList .content p {
+    right: 1rem;
+    bottom: 1.5rem;
+  }
+}
+@media (min-width: 400px) and (max-width: 500px) {
+  .container .mainContent .rightOrLowerPart .webList .content p {
+    font-size: 9.5pt;
+  }
+}
+@media (min-width: 500px) and (max-width: 600px) {
+  .container .mainContent .rightOrLowerPart .webList .content p {
+    font-size: 10pt;
+  }
+}
+@media (width: 600px) {
+  .container .mainContent .rightOrLowerPart .webList .content p {
+    right: 2.5rem;
+    bottom: 1rem;
+  }
+}
+@media (min-width: 900px) and (max-width: 1023px) {
+  .container .mainContent .rightOrLowerPart .webList .content p {
+    font-size: 10pt;
+  }
+}
+@media (min-width: 1023px) and (max-width: 1100px) {
+  .container .mainContent .rightOrLowerPart .webList .content p {
+    right: 1.3rem;
+    font-size: 8pt;
+  }
+}
+@media (orientation: portrait) and (min-width: 1023px) and (max-width: 1100px) {
+  .container .mainContent .rightOrLowerPart .webList .content p {
+    font-size: 9.5pt;
+  }
+}
+@media (min-width: 1100px) and (max-width: 1200px) {
+  .container .mainContent .rightOrLowerPart .webList .content p {
+    right: 2.3rem;
+    font-size: 8.5pt;
+  }
+}
+@media (width: 1100px) {
+  .container .mainContent .rightOrLowerPart .webList .content p {
+    right: 1.4rem;
+    font-size: 8.5pt;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1300px) {
+  .container .mainContent .rightOrLowerPart .webList .content p {
+    right: 2.4rem;
+    font-size: 8.5pt;
+  }
+}
+@media (min-width: 1500px) and (max-width: 1600px) {
+  .container .mainContent .rightOrLowerPart .webList .content p {
+    font-size: 9.5pt;
   }
 }
 .container .unfocusedContactButton {
@@ -10100,4 +11346,10 @@ input[type=email]) {
 body {
   background-color: #232323;
   scroll-behavior: smooth;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
 }

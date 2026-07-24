@@ -193,6 +193,7 @@ export default function App() {
       style={{
         ...(activeList && {
           height: 'auto',
+          overflowY: 'auto',
           transform: 'scale(98%)',
         }),
         ...(isContactFormOpen && { transform: 'scale(98%)' }),
