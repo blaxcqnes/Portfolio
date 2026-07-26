@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-export default function WebList({ toggleWebList }) {
+export default function WebList({ setActiveList }) {
   const [pageNumber, setPageNumber] = useState(1);
 
   useEffect(() => {
@@ -33,10 +33,16 @@ export default function WebList({ toggleWebList }) {
   }
 
   return (
-    <main className="webList" id="webList">
+    <main className="webList" id="webList" onClick={(e) => e.stopPropagation()}>
       <div className="titleAndButton">
         <h4>More</h4>
-        <button className="close" onClick={toggleWebList}>
+        <button
+          className="close"
+          onClick={(e) => {
+            e.stopPropagation();
+            setActiveList(false);
+          }}
+        >
           Close
         </button>
       </div>

@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-export default function SkillsList({ toggleSkillsList }) {
+export default function SkillsList({ setActiveList }) {
   const [pageNumber, setPageNumber] = useState(1);
 
   useEffect(() => {
@@ -33,10 +33,20 @@ export default function SkillsList({ toggleSkillsList }) {
   }
 
   return (
-    <main className="skillsList" id="skillsList">
+    <main
+      className="skillsList"
+      id="skillsList"
+      onClick={(e) => e.stopPropagation()}
+    >
       <div className="titleAndButton">
         <h4>Fluency</h4>
-        <button className="close" onClick={toggleSkillsList}>
+        <button
+          className="close"
+          onClick={(e) => {
+            e.stopPropagation();
+            setActiveList(false);
+          }}
+        >
           Close
         </button>
       </div>

@@ -1,4 +1,5 @@
-import { useSyncExternalStore } from 'react';
+import { useSyncExternalStore, useCallback } from 'react';
+import EstimatesList from './EstimatesList';
 import SkillsList from './SkillsList';
 import EducationList from './EducationList';
 
@@ -7,6 +8,7 @@ export default function LeftOrUpperPart({
   isContactFormOpen,
   activeList,
   setActiveList,
+  toggleEstimatesList,
   toggleSkillsList,
   toggleEducationList,
 }) {
@@ -16,79 +18,159 @@ export default function LeftOrUpperPart({
     }
   }
 
-  const isNarrowScreen = useSyncExternalStore(
-    (callback) => {
-      const mediaWatcher = window.matchMedia('(max-width: 600px)');
-      mediaWatcher.addEventListener('change', callback);
-      return () => mediaWatcher.removeEventListener('change', callback);
-    },
-    () => window.matchMedia('(max-width: 600px)').matches,
+  function useMediaQuery(query) {
+    const subscribe = useCallback(
+      (callback) => {
+        const matchMedia = window.matchMedia(query);
+        matchMedia.addEventListener('change', callback);
+        return () => matchMedia.removeEventListener('change', callback);
+      },
+      [query],
+    );
+
+    const getSnapshot = () => window.matchMedia(query).matches;
+
+    return useSyncExternalStore(subscribe, getSnapshot);
+  }
+  const mobileScreens = useMediaQuery('(max-width: 600px)');
+  const exactMobileWidth = useMediaQuery('(width: 600px)');
+  const tabAndLargeScreensLandscape = useMediaQuery(
+    '(orientation: landscape) and (min-width: 600px)',
+  );
+  const tabAndLargeScreensPortrait = useMediaQuery(
+    '(orientation: portrait) and (min-width: 600px)',
+  );
+  //
+  const tabsForEstimatesLandscape = useMediaQuery(
+    '(orientation: landscape) and (min-width: 600px) and (max-width: 1023px)',
+  );
+  const portraitForEstimates = useMediaQuery(
+    '(orientation: portrait) and (min-width: 600px)',
   );
 
   return (
-    <main
-      className="leftOrUpperPart"
-      onClick={
-        activeList === 'cyberList' || activeList === 'webList'
-          ? closeList
-          : undefined
-      }
-    >
+    <main className="leftOrUpperPart" onClick={closeList}>
       {/*  */}
-      <div
-        className="leftOrUpperPartContainer"
-        id="leftOrUpperPartContainer"
-        style={
-          activeList || isContactFormOpen
-            ? {
-                filter:
-                  'opacity(0.5) grayscale(10%) blur(0.05rem) brightness(80%)',
-              }
-            : null
-        }
-        onClick={closeList}
-      >
-        {/*  */}
-        <section className="aboutMeAndImage">
+      <section className="aboutMeAndImagesAndEstimatesList">
+        <div className="aboutMeAndImage">
           {/*  */}
           <div className="forSmallerScreens">
-            <img src={me} className="smallerImg" fetchPriority="high" />
-            <p>Cybersecurity Specialist & Web Developer</p>
-          </div>
-          {/*  */}
-          <img src={me} className="regularImg" fetchPriority="high" />
-          {/*  */}
-          <div className="aboutMe">
-            <p className="title">About Me</p>
-            <p className="aboutMeDescription">
-              Highly results-oriented Cybersecurity Specialist with knowledge
-              and hands-on experience in network security principles, threat
-              analysis, identifying vulnerabilities, performing security
-              assessments, and implementing measures to protect sensitive data
-              and systems.
-              <br />
-              <br />
-              Web developer with high proficiency in coding, web app testing and
-              designing.
+            <img
+              src={me}
+              className="smallerImg"
+              fetchPriority="high"
+              style={
+                activeList || isContactFormOpen
+                  ? {
+                      filter:
+                        'opacity(0.5) grayscale(10%) blur(0.05rem) brightness(80%)',
+                    }
+                  : null
+              }
+            />
+            <p
+              style={
+                activeList || isContactFormOpen
+                  ? {
+                      filter:
+                        'opacity(0.5) grayscale(10%) blur(0.05rem) brightness(80%)',
+                    }
+                  : null
+              }
+            >
+              Cybersecurity Specialist & Web Developer
             </p>
-            <p className="locationForSmallerScreens">Riyadh, Saudi Arabia</p>
           </div>
           {/*  */}
-        </section>
+          <img
+            src={me}
+            className="regularImg"
+            fetchPriority="high"
+            style={
+              activeList || isContactFormOpen
+                ? {
+                    filter:
+                      'opacity(0.5) grayscale(10%) blur(0.05rem) brightness(80%)',
+                  }
+                : null
+            }
+          />
+          {/*  */}
+          <div className="aboutMeAndEstimatesList">
+            <div
+              className="aboutMe"
+              style={
+                activeList || isContactFormOpen
+                  ? {
+                      filter:
+                        'opacity(0.5) grayscale(10%) blur(0.05rem) brightness(80%)',
+                    }
+                  : null
+              }
+            >
+              <div className="titleAndButton">
+                <p className="title">About Me</p>
+                {activeList || isContactFormOpen ? (
+                  <button
+                    className="unfocusedAboutMeAndImageButtons"
+                    onClick={closeList}
+                  >
+                    Estimates
+                  </button>
+                ) : (
+                  <button
+                    className="estimates"
+                    onClick={(e) => {
+                      e.stopPropagation();
+                      toggleEstimatesList();
+                    }}
+                  >
+                    Estimates
+                  </button>
+                )}
+              </div>
+              <p className="aboutMeDescription">
+                Highly results-oriented Cybersecurity Specialist who designs and
+                builds websites while keeping them safe. I deliver robust
+                solutions by performing security assessments and implementing
+                measures to protect sensitive data, all while providing highly
+                optimised and responsive digital user experiences.
+              </p>
+              <p className="locationForSmallerScreens">Riyadh, Saudi Arabia</p>
+            </div>
+            {/*  */}
+            {!exactMobileWidth &&
+              mobileScreens &&
+              activeList === 'estimatesList' && (
+                <EstimatesList setActiveList={setActiveList} />
+              )}
+            {/*  */}
+          </div>
+          {/*  */}
+        </div>
+        {((exactMobileWidth && activeList === 'estimatesList') ||
+          (portraitForEstimates && activeList === 'estimatesList') ||
+          (tabsForEstimatesLandscape && activeList === 'estimatesList')) && (
+          <EstimatesList setActiveList={setActiveList} />
+        )}
+
         {/*  */}
-        <section
-          className="skillsAndEducation"
-          style={
-            isNarrowScreen && activeList === 'educationList'
-              ? {
-                  flexDirection: 'column',
-                  rowGap: '1rem',
-                  animation: 'skillsAndEducationSwapped 0.5s linear 1',
-                }
-              : undefined
-          }
-        >
-          <div className="skills">
+      </section>
+      {/*  */}
+      <section className="skillsAndEducation">
+        {/*  */}
+        <div className="skillsAndSkillsList">
+          <div
+            className="skills"
+            style={
+              activeList || isContactFormOpen
+                ? {
+                    filter:
+                      'opacity(0.5) grayscale(10%) blur(0.05rem) brightness(80%)',
+                  }
+                : null
+            }
+          >
             {/*  */}
             <div className="titleAndButton">
               <p className="title">Skills</p>
@@ -100,12 +182,17 @@ export default function LeftOrUpperPart({
                   Fluency
                 </button>
               ) : (
-                <button className="fluency" onClick={toggleSkillsList}>
+                <button
+                  className="fluency"
+                  onClick={(e) => {
+                    e.stopPropagation();
+                    toggleSkillsList();
+                  }}
+                >
                   Fluency
                 </button>
               )}
             </div>
-            {/*  */}
             <p className="skillsDescription">
               HTML CSS & SCSS <br />
               JavaScript & React.js <br />
@@ -113,10 +200,27 @@ export default function LeftOrUpperPart({
               Ethical Hacking Fundamentals Network Security Threat Analysis &
               Risk Management OWASP TOP 10 Web Application Vulnerabilities
             </p>
-            {/*  */}
           </div>
           {/*  */}
-          <div className="education" id="education">
+          {(exactMobileWidth && activeList === 'skillsList'
+            ? undefined
+            : mobileScreens && activeList === 'skillsList') && (
+            <SkillsList setActiveList={setActiveList} />
+          )}
+        </div>
+        <div className="educationAndEducationList">
+          <div
+            className="education"
+            id="education"
+            style={
+              activeList || isContactFormOpen
+                ? {
+                    filter:
+                      'opacity(0.5) grayscale(10%) blur(0.05rem) brightness(80%)',
+                  }
+                : null
+            }
+          >
             {/*  */}
             <div className="titleAndButton">
               <p className="title">Education</p>
@@ -128,7 +232,13 @@ export default function LeftOrUpperPart({
                   Courses
                 </button>
               ) : (
-                <button className="courses" onClick={toggleEducationList}>
+                <button
+                  className="courses"
+                  onClick={(e) => {
+                    e.stopPropagation();
+                    toggleEducationList();
+                  }}
+                >
                   Courses
                 </button>
               )}
@@ -166,18 +276,26 @@ export default function LeftOrUpperPart({
             {/*  */}
           </div>
           {/*  */}
-          {/*  */}
-        </section>
-        {/*  */}
-      </div>
-      {/*  */}
-      {activeList === 'educationList' && (
-        <EducationList toggleEducationList={toggleEducationList} />
-      )}
+          {(exactMobileWidth && activeList === 'educationList'
+            ? undefined
+            : mobileScreens && activeList === 'educationList') && (
+            <EducationList setActiveList={setActiveList} />
+          )}
 
-      {activeList === 'skillsList' && (
-        <SkillsList toggleSkillsList={toggleSkillsList} />
+          {/*  */}
+        </div>
+      </section>
+      {/*  */}
+      {((tabAndLargeScreensPortrait && activeList === 'skillsList') ||
+        (tabAndLargeScreensLandscape && activeList === 'skillsList')) && (
+        <SkillsList setActiveList={setActiveList} />
       )}
+      {/*  */}
+      {((tabAndLargeScreensPortrait && activeList === 'educationList') ||
+        (tabAndLargeScreensLandscape && activeList === 'educationList')) && (
+        <EducationList setActiveList={setActiveList} />
+      )}
+      {/*  */}
     </main>
   );
 }

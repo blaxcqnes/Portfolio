@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-export default function CyberList({ toggleCyberList }) {
+export default function CyberList({ setActiveList }) {
   const [pageNumber, setPageNumber] = useState(1);
 
   useEffect(() => {
@@ -33,10 +33,20 @@ export default function CyberList({ toggleCyberList }) {
   }
 
   return (
-    <main className="cyberList" id="cyberList">
+    <main
+      className="cyberList"
+      id="cyberList"
+      onClick={(e) => e.stopPropagation()}
+    >
       <div className="titleAndButton">
         <h4>Extras</h4>
-        <button className="close" onClick={toggleCyberList}>
+        <button
+          className="close"
+          onClick={(e) => {
+            e.stopPropagation();
+            setActiveList(false);
+          }}
+        >
           Close
         </button>
       </div>

@@ -1,4 +1,11 @@
-import { useState, useEffect, useLayoutEffect, useRef } from 'react';
+import {
+  useState,
+  useEffect,
+  useLayoutEffect,
+  useRef,
+  useSyncExternalStore,
+  useCallback,
+} from 'react';
 import Loader from './components/Loader';
 import Header from './components/Header';
 import MainContent from './components/MainContent';
@@ -13,6 +20,32 @@ export default function App() {
   const scrollTimeoutRef = useRef(null);
   const activeListRef = useRef(null);
   const originalScrollRef = useRef({ x: 0, y: 0 });
+
+  function useMediaQuery(query) {
+    const subscribe = useCallback(
+      (callback) => {
+        const matchMedia = window.matchMedia(query);
+        matchMedia.addEventListener('change', callback);
+        return () => matchMedia.removeEventListener('change', callback);
+      },
+      [query],
+    );
+
+    const getSnapshot = () => window.matchMedia(query).matches;
+
+    return useSyncExternalStore(subscribe, getSnapshot);
+  }
+
+  const forContactFormAndEstimatesLandscapeLargeFixed = useMediaQuery(
+    '(orientation: landscape) and (min-width: 1023px)',
+  );
+  const forContactFormPortraitFixed = useMediaQuery(
+    '(orientation: portrait) and (min-width: 1100px) and (min-height: 1500px)',
+  );
+  const forContactFormPortraitAuto = useMediaQuery(
+    '(orientation: portrait) and (max-width: 1100px) and (max-height: 1500px)',
+  );
+  const exactTabAndLargeWidth = useMediaQuery('(width: 1023px)');
 
   // True dynamic Image Preloader
   // useLayoutEffect(() => {
@@ -88,14 +121,20 @@ export default function App() {
     setIsContactFormOpen((prev) => !prev);
   }
 
-  function toggleEducationList() {
+  function toggleEstimatesList() {
     setActiveList((prev) =>
-      prev === 'educationList' ? false : 'educationList',
+      prev === 'estimatesList' ? false : 'estimatesList',
     );
   }
 
   function toggleSkillsList() {
     setActiveList((prev) => (prev === 'skillsList' ? false : 'skillsList'));
+  }
+
+  function toggleEducationList() {
+    setActiveList((prev) =>
+      prev === 'educationList' ? false : 'educationList',
+    );
   }
 
   function toggleCyberList() {
@@ -190,26 +229,30 @@ export default function App() {
   return (
     <div
       className="container"
-      style={{
-        ...(activeList
+      style={
+        activeList || isContactFormOpen
           ? {
-              height: 'auto',
-              overflowY: 'auto',
+              height:
+                (!exactTabAndLargeWidth &&
+                  forContactFormAndEstimatesLandscapeLargeFixed &&
+                  activeList === 'estimatesList') ||
+                (forContactFormAndEstimatesLandscapeLargeFixed &&
+                  isContactFormOpen) ||
+                (forContactFormPortraitFixed && isContactFormOpen) ||
+                (!forContactFormPortraitAuto && isContactFormOpen)
+                  ? '100vh'
+                  : 'auto',
+              overflowY:
+                activeList === 'estimatesList' || isContactFormOpen
+                  ? 'unset'
+                  : 'auto',
               transform: 'scale(98%)',
               animation: 'activeLists 0.2s linear 1',
             }
           : {
               animation: 'nonActiveLists 0.2s linear 1',
-            }),
-        ...(isContactFormOpen
-          ? {
-              transform: 'scale(98%)',
-              animation: 'activeLists 0.2s linear 1',
             }
-          : {
-              animation: 'nonActiveLists 0.2s linear 1',
-            }),
-      }}
+      }
     >
       {loading ? (
         <Loader progress={progress} />
@@ -229,8 +272,9 @@ export default function App() {
             setActiveList={setActiveList}
             //
             toggleContactForm={toggleContactForm}
-            toggleEducationList={toggleEducationList}
+            toggleEstimatesList={toggleEstimatesList}
             toggleSkillsList={toggleSkillsList}
+            toggleEducationList={toggleEducationList}
             toggleCyberList={toggleCyberList}
             toggleWebList={toggleWebList}
           />

@@ -8,6 +8,7 @@ import guessGame from '../images/mainContent_rightOrLowerPart/guessGame.png';
 export default function MainContent({
   isContactFormOpen,
   toggleContactForm,
+  toggleEstimatesList,
   toggleSkillsList,
   toggleEducationList,
   toggleCyberList,
@@ -26,6 +27,7 @@ export default function MainContent({
         activeList={activeList}
         setActiveList={setActiveList}
         //
+        toggleEstimatesList={toggleEstimatesList}
         toggleSkillsList={toggleSkillsList}
         toggleEducationList={toggleEducationList}
       />
@@ -37,6 +39,7 @@ export default function MainContent({
         activeList={activeList}
         setActiveList={setActiveList}
         //
+        toggleEstimatesList={toggleEstimatesList}
         toggleCyberList={toggleCyberList}
         toggleWebList={toggleWebList}
       />
