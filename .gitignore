@@ -37,3 +37,6 @@ coverage/
 # OS generated files
 .DS_Store
 Thumbs.db
+
+# Styles
+src/styles/scss
