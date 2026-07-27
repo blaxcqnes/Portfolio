@@ -39,6 +39,9 @@ export default function App() {
   const forContactFormAndEstimatesLandscapeLargeFixed = useMediaQuery(
     '(orientation: landscape) and (min-width: 1023px)',
   );
+  const forContactFormLandscapeSmallToMediumAuto = useMediaQuery(
+    '(orientation: landscape) and (min-width: 300px) and (max-width: 1023px)',
+  );
   const forContactFormPortraitFixed = useMediaQuery(
     '(orientation: portrait) and (min-width: 1100px) and (min-height: 1500px)',
   );
@@ -232,15 +235,16 @@ export default function App() {
       style={
         activeList || isContactFormOpen
           ? {
-              height:
-                (!exactTabAndLargeWidth &&
-                  forContactFormAndEstimatesLandscapeLargeFixed &&
-                  activeList === 'estimatesList') ||
-                (forContactFormAndEstimatesLandscapeLargeFixed &&
-                  isContactFormOpen) ||
-                (forContactFormPortraitFixed && isContactFormOpen) ||
-                (!forContactFormPortraitAuto && isContactFormOpen)
-                  ? '100vh'
+              height: forContactFormLandscapeSmallToMediumAuto
+                ? 'auto'
+                : (!exactTabAndLargeWidth &&
+                      forContactFormAndEstimatesLandscapeLargeFixed &&
+                      activeList === 'estimatesList') ||
+                    (forContactFormAndEstimatesLandscapeLargeFixed &&
+                      isContactFormOpen) ||
+                    (forContactFormPortraitFixed && isContactFormOpen) ||
+                    (!forContactFormPortraitAuto && isContactFormOpen)
+                  ? '100dvh'
                   : 'auto',
               overflowY:
                 activeList === 'estimatesList' || isContactFormOpen

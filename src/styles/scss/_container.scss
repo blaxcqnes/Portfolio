@@ -58,6 +58,7 @@
 
   @media (orientation: landscape) and (max-width: 1023px) and (max-height: 1550px) {
     height: auto;
+    overflow-x: hidden;
   }
 
   @media (orientation: landscape) and (min-width: 1023px) and (max-width: 1100px) and (min-height: 449px) {
@@ -3600,7 +3601,7 @@
             width: 100%;
             height: 20rem;
             transform: scale(102%);
-            animation: skillsList 0.5s linear;
+            animation: skillsList 0.2s linear;
             animation-iteration-count: 1;
             scroll-margin-bottom: 7rem;
             background-color: #232323;
@@ -5790,7 +5791,7 @@
             width: 100%;
             height: 20rem;
             transform: scale(102%);
-            animation: educationList 0.5s linear;
+            animation: educationList 0.2s linear;
             animation-iteration-count: 1;
             scroll-margin-bottom: 7rem;
             background-color: #232323;
@@ -6462,7 +6463,7 @@
         width: 100%;
         height: 20rem;
         transform: scale(102%);
-        animation: skillsList 0.5s linear;
+        animation: skillsList 0.2s linear;
         animation-iteration-count: 1;
         scroll-margin-bottom: 5rem;
         background-color: #232323;
@@ -8065,7 +8066,7 @@
         width: 100%;
         height: 20rem;
         transform: scale(102%);
-        animation: educationList 0.5s linear;
+        animation: educationList 0.2s linear;
         animation-iteration-count: 1;
         scroll-margin-bottom: 5rem;
         background-color: #232323;
@@ -9661,7 +9662,7 @@
               width: 100%;
               height: 20rem;
               transform: scale(102%);
-              animation: webList 0.5s linear;
+              animation: webList 0.2s linear;
               animation-iteration-count: 1;
               scroll-margin-bottom: 7rem;
               background-color: #232323;
@@ -10908,7 +10909,7 @@
         width: 100%;
         height: 20rem;
         transform: scale(102%);
-        animation: cyberList 0.5s linear;
+        animation: cyberList 0.2s linear;
         animation-iteration-count: 1;
         scroll-margin-bottom: 7rem;
         background-color: #232323;
@@ -11606,7 +11607,7 @@
         width: 100%;
         height: 20rem;
         transform: scale(102%);
-        animation: webList 0.5s linear;
+        animation: webList 0.2s linear;
         animation-iteration-count: 1;
         scroll-margin-bottom: 5rem;
         background-color: #232323;
@@ -12239,6 +12240,7 @@
   .unfocusedAboutMeAndImageButtons {
     width: 7rem;
     height: 2.5rem;
+    position: relative;
     background-color: #232323;
     border: none;
     border-radius: 0.5rem;
