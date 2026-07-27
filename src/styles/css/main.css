@@ -12873,11 +12873,6 @@ input[type=email]) {
     font-size: 9pt;
   }
 }
-@media (min-width: 1500px) and (max-width: 1600px) {
-  .container .unfocusedProjectsButtons {
-    bottom: 1.2rem;
-  }
-}
 
 * {
   margin: 0;
