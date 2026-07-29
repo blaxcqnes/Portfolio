@@ -289,6 +289,7 @@
 .container .header {
   display: flex;
   width: 100%;
+  height: -moz-fit-content;
   height: fit-content;
   position: relative;
   animation: header 0.5s linear 1;
@@ -369,7 +370,8 @@
 .container .header .headerContainer .nameAndProfession {
   display: flex;
   flex-direction: row;
-  column-gap: 1.2rem;
+  -moz-column-gap: 1.2rem;
+       column-gap: 1.2rem;
   align-items: center;
 }
 @media (min-width: 600px) and (max-width: 1023px) {
@@ -381,12 +383,14 @@
 }
 @media (width: 1023px) {
   .container .header .headerContainer .nameAndProfession {
-    column-gap: 1.5rem;
+    -moz-column-gap: 1.5rem;
+         column-gap: 1.5rem;
   }
 }
 @media (min-width: 1023px) and (max-width: 1100px) {
   .container .header .headerContainer .nameAndProfession {
-    column-gap: 0.9rem;
+    -moz-column-gap: 0.9rem;
+         column-gap: 0.9rem;
   }
 }
 .container .header .headerContainer .nameAndProfession .name {
@@ -502,17 +506,20 @@
 .container .header .headerContainer .locationAndContact {
   display: flex;
   flex-direction: row;
-  column-gap: 1.5rem;
+  -moz-column-gap: 1.5rem;
+       column-gap: 1.5rem;
   align-items: center;
 }
 @media (min-width: 767px) and (max-width: 900px) {
   .container .header .headerContainer .locationAndContact {
-    column-gap: 1.3rem;
+    -moz-column-gap: 1.3rem;
+         column-gap: 1.3rem;
   }
 }
 @media (min-width: 900px) and (max-width: 1023px) {
   .container .header .headerContainer .locationAndContact {
-    column-gap: 1rem;
+    -moz-column-gap: 1rem;
+         column-gap: 1rem;
   }
 }
 .container .header .headerContainer .locationAndContact .location {
@@ -1736,12 +1743,14 @@
   display: flex;
   flex-direction: row;
   justify-content: center;
-  column-gap: 3%;
+  -moz-column-gap: 3%;
+       column-gap: 3%;
 }
 @media (min-width: 1023px) and (max-width: 1100px) {
   .container .header .contactForm form .namesAndSubject .names {
     justify-content: space-evenly;
-    column-gap: unset;
+    -moz-column-gap: unset;
+         column-gap: unset;
   }
 }
 .container .header .contactForm form .namesAndSubject .names label {
@@ -1761,9 +1770,14 @@ input[type=search],
 input[type=password],
 input[type=url],
 input[type=email]) {
-  appearance: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
   border-style: solid;
   outline: none;
+}
+.container .header .contactForm form .namesAndSubject .names .firstName::-moz-placeholder {
+  color: #a6a6a6;
 }
 .container .header .contactForm form .namesAndSubject .names .firstName::placeholder {
   color: #a6a6a6;
@@ -1816,9 +1830,14 @@ input[type=search],
 input[type=password],
 input[type=url],
 input[type=email]) {
-  appearance: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
   border-style: solid;
   outline: none;
+}
+.container .header .contactForm form .namesAndSubject .names .lastName::-moz-placeholder {
+  color: #a6a6a6;
 }
 .container .header .contactForm form .namesAndSubject .names .lastName::placeholder {
   color: #a6a6a6;
@@ -1871,9 +1890,14 @@ input[type=search],
 input[type=password],
 input[type=url],
 input[type=email]) {
-  appearance: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
   border-style: solid;
   outline: none;
+}
+.container .header .contactForm form .namesAndSubject .subject::-moz-placeholder {
+  color: #a6a6a6;
 }
 .container .header .contactForm form .namesAndSubject .subject::placeholder {
   color: #a6a6a6;
@@ -1926,9 +1950,14 @@ input[type=search],
 input[type=password],
 input[type=url],
 input[type=email]) {
-  appearance: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
   border-style: solid;
   outline: none;
+}
+.container .header .contactForm form .email::-moz-placeholder {
+  color: #a6a6a6;
 }
 .container .header .contactForm form .email::placeholder {
   color: #a6a6a6;
@@ -1978,9 +2007,14 @@ input[type=email]) {
   resize: none;
 }
 .container .header .contactForm form .textArea:focus:where(textarea) {
-  appearance: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
   border-style: solid;
   outline: none;
+}
+.container .header .contactForm form .textArea::-moz-placeholder {
+  color: #a6a6a6;
 }
 .container .header .contactForm form .textArea::placeholder {
   color: #a6a6a6;
@@ -2027,7 +2061,8 @@ input[type=email]) {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  column-gap: 1rem;
+  -moz-column-gap: 1rem;
+       column-gap: 1rem;
   width: 100%;
   position: absolute;
   top: 20.3rem;
@@ -2313,7 +2348,8 @@ input[type=email]) {
 .container .mainContent {
   display: flex;
   flex-direction: row;
-  column-gap: 1rem;
+  -moz-column-gap: 1rem;
+       column-gap: 1rem;
   width: inherit;
   height: auto;
   position: relative;
@@ -2332,7 +2368,8 @@ input[type=email]) {
 }
 @media (min-width: 1023px) and (max-width: 1100px) {
   .container .mainContent {
-    column-gap: 0.4rem;
+    -moz-column-gap: 0.4rem;
+         column-gap: 0.4rem;
   }
 }
 @media (orientation: portrait) and (min-width: 1023px) and (max-width: 1100px) {
@@ -2343,12 +2380,14 @@ input[type=email]) {
 }
 @media (min-width: 1100px) and (max-width: 1200px) {
   .container .mainContent {
-    column-gap: 0.5rem;
+    -moz-column-gap: 0.5rem;
+         column-gap: 0.5rem;
   }
 }
 @media (min-width: 1200px) and (max-width: 1400px) {
   .container .mainContent {
-    column-gap: 0.8rem;
+    -moz-column-gap: 0.8rem;
+         column-gap: 0.8rem;
   }
 }
 .container .mainContent .leftOrUpperPart {
@@ -2392,7 +2431,8 @@ input[type=email]) {
 .container .mainContent .leftOrUpperPart .aboutMeAndImagesAndEstimatesList .aboutMeAndImage {
   display: flex;
   flex-direction: row;
-  column-gap: 1rem;
+  -moz-column-gap: 1rem;
+       column-gap: 1rem;
 }
 @media (min-width: 300px) and (max-width: 600px) {
   .container .mainContent .leftOrUpperPart .aboutMeAndImagesAndEstimatesList .aboutMeAndImage {
@@ -2407,36 +2447,43 @@ input[type=email]) {
 }
 @media (min-width: 1023px) and (max-width: 1100px) {
   .container .mainContent .leftOrUpperPart .aboutMeAndImagesAndEstimatesList .aboutMeAndImage {
-    column-gap: 0.4rem;
+    -moz-column-gap: 0.4rem;
+         column-gap: 0.4rem;
   }
 }
 @media (orientation: portrait) and (min-width: 1023px) and (max-width: 1100px) {
   .container .mainContent .leftOrUpperPart .aboutMeAndImagesAndEstimatesList .aboutMeAndImage {
-    column-gap: 1.2rem;
+    -moz-column-gap: 1.2rem;
+         column-gap: 1.2rem;
   }
 }
 @media (min-width: 1100px) and (max-width: 1200px) {
   .container .mainContent .leftOrUpperPart .aboutMeAndImagesAndEstimatesList .aboutMeAndImage {
-    column-gap: 0.5rem;
+    -moz-column-gap: 0.5rem;
+         column-gap: 0.5rem;
   }
 }
 @media (width: 1200px) {
   .container .mainContent .leftOrUpperPart .aboutMeAndImagesAndEstimatesList .aboutMeAndImage {
-    column-gap: 0.8rem;
+    -moz-column-gap: 0.8rem;
+         column-gap: 0.8rem;
   }
 }
 @media (min-width: 1200px) and (max-width: 1300px) {
   .container .mainContent .leftOrUpperPart .aboutMeAndImagesAndEstimatesList .aboutMeAndImage {
-    column-gap: 0.8rem;
+    -moz-column-gap: 0.8rem;
+         column-gap: 0.8rem;
   }
 }
 @media (min-width: 1300px) and (max-width: 1400px) {
   .container .mainContent .leftOrUpperPart .aboutMeAndImagesAndEstimatesList .aboutMeAndImage {
-    column-gap: 0.8rem;
+    -moz-column-gap: 0.8rem;
+         column-gap: 0.8rem;
   }
 }
 .container .mainContent .leftOrUpperPart .aboutMeAndImagesAndEstimatesList .aboutMeAndImage .forSmallerScreens {
   display: none;
+  height: -moz-fit-content;
   height: fit-content;
   animation: forSmallerScreens 0.5s linear 1;
 }
@@ -2511,7 +2558,8 @@ input[type=email]) {
 .container .mainContent .leftOrUpperPart .aboutMeAndImagesAndEstimatesList .aboutMeAndImage .forSmallerScreens .smallerImg {
   width: 100%;
   height: auto;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   border-radius: 0.5rem;
   animation: smallerImg 0.5s linear 1;
 }
@@ -2569,7 +2617,8 @@ input[type=email]) {
 .container .mainContent .leftOrUpperPart .aboutMeAndImagesAndEstimatesList .aboutMeAndImage .regularImg {
   width: 32%;
   height: 17.2rem;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   border-radius: 0.5rem;
   animation: regularImg 0.5s linear 1;
 }
@@ -3495,7 +3544,8 @@ input[type=email]) {
 .container .mainContent .leftOrUpperPart .skillsAndEducation {
   display: flex;
   flex-direction: row;
-  column-gap: 1rem;
+  -moz-column-gap: 1rem;
+       column-gap: 1rem;
 }
 @media (min-width: 300px) and (max-width: 600px) {
   .container .mainContent .leftOrUpperPart .skillsAndEducation {
@@ -3510,32 +3560,38 @@ input[type=email]) {
 }
 @media (min-width: 1023px) and (max-width: 1100px) {
   .container .mainContent .leftOrUpperPart .skillsAndEducation {
-    column-gap: 0.4rem;
+    -moz-column-gap: 0.4rem;
+         column-gap: 0.4rem;
   }
 }
 @media (orientation: portrait) and (min-width: 1023px) and (max-width: 1100px) {
   .container .mainContent .leftOrUpperPart .skillsAndEducation {
-    column-gap: 1.2rem;
+    -moz-column-gap: 1.2rem;
+         column-gap: 1.2rem;
   }
 }
 @media (min-width: 1100px) and (max-width: 1200px) {
   .container .mainContent .leftOrUpperPart .skillsAndEducation {
-    column-gap: 0.5rem;
+    -moz-column-gap: 0.5rem;
+         column-gap: 0.5rem;
   }
 }
 @media (width: 1200px) {
   .container .mainContent .leftOrUpperPart .skillsAndEducation {
-    column-gap: 0.8rem;
+    -moz-column-gap: 0.8rem;
+         column-gap: 0.8rem;
   }
 }
 @media (min-width: 1200px) and (max-width: 1300px) {
   .container .mainContent .leftOrUpperPart .skillsAndEducation {
-    column-gap: 0.8rem;
+    -moz-column-gap: 0.8rem;
+         column-gap: 0.8rem;
   }
 }
 @media (min-width: 1300px) and (max-width: 1400px) {
   .container .mainContent .leftOrUpperPart .skillsAndEducation {
-    column-gap: 0.8rem;
+    -moz-column-gap: 0.8rem;
+         column-gap: 0.8rem;
   }
 }
 .container .mainContent .leftOrUpperPart .skillsAndEducation .skillsAndSkillsList {
@@ -4041,7 +4097,8 @@ input[type=email]) {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  column-gap: 10%;
+  -moz-column-gap: 10%;
+       column-gap: 10%;
   align-self: center;
   align-items: center;
   width: 98%;
@@ -4293,7 +4350,9 @@ input[type=email]) {
 }
 .container .mainContent .leftOrUpperPart .skillsAndEducation .skillsAndSkillsList .skillsList .content .titleAndFluencies .fluenciesOne .fluencyOne .statusBar .percentage {
   display: flex;
+  height: -moz-fit-content;
   height: fit-content;
+  width: -moz-fit-content;
   width: fit-content;
   position: absolute;
   top: 12%;
@@ -4425,7 +4484,9 @@ input[type=email]) {
 }
 .container .mainContent .leftOrUpperPart .skillsAndEducation .skillsAndSkillsList .skillsList .content .titleAndFluencies .fluenciesOne .fluencyTwo .statusBar .percentage {
   display: flex;
+  height: -moz-fit-content;
   height: fit-content;
+  width: -moz-fit-content;
   width: fit-content;
   position: absolute;
   top: 12%;
@@ -4557,7 +4618,9 @@ input[type=email]) {
 }
 .container .mainContent .leftOrUpperPart .skillsAndEducation .skillsAndSkillsList .skillsList .content .titleAndFluencies .fluenciesOne .fluencyThree .statusBar .percentage {
   display: flex;
+  height: -moz-fit-content;
   height: fit-content;
+  width: -moz-fit-content;
   width: fit-content;
   position: absolute;
   top: 12%;
@@ -4689,7 +4752,9 @@ input[type=email]) {
 }
 .container .mainContent .leftOrUpperPart .skillsAndEducation .skillsAndSkillsList .skillsList .content .titleAndFluencies .fluenciesOne .fluencyFour .statusBar .percentage {
   display: flex;
+  height: -moz-fit-content;
   height: fit-content;
+  width: -moz-fit-content;
   width: fit-content;
   position: absolute;
   top: 12%;
@@ -4846,7 +4911,9 @@ input[type=email]) {
 }
 .container .mainContent .leftOrUpperPart .skillsAndEducation .skillsAndSkillsList .skillsList .content .titleAndFluencies .fluenciesTwo .fluencyOne .statusBar .percentage {
   display: flex;
+  height: -moz-fit-content;
   height: fit-content;
+  width: -moz-fit-content;
   width: fit-content;
   position: absolute;
   top: 12%;
@@ -4979,7 +5046,9 @@ input[type=email]) {
 }
 .container .mainContent .leftOrUpperPart .skillsAndEducation .skillsAndSkillsList .skillsList .content .titleAndFluencies .fluenciesTwo .fluencyTwo .statusBar .percentage {
   display: flex;
+  height: -moz-fit-content;
   height: fit-content;
+  width: -moz-fit-content;
   width: fit-content;
   position: absolute;
   top: 12%;
@@ -5111,7 +5180,9 @@ input[type=email]) {
 }
 .container .mainContent .leftOrUpperPart .skillsAndEducation .skillsAndSkillsList .skillsList .content .titleAndFluencies .fluenciesTwo .fluencyThree .statusBar .percentage {
   display: flex;
+  height: -moz-fit-content;
   height: fit-content;
+  width: -moz-fit-content;
   width: fit-content;
   position: absolute;
   top: 12%;
@@ -5243,7 +5314,9 @@ input[type=email]) {
 }
 .container .mainContent .leftOrUpperPart .skillsAndEducation .skillsAndSkillsList .skillsList .content .titleAndFluencies .fluenciesTwo .fluencyFour .statusBar .percentage {
   display: flex;
+  height: -moz-fit-content;
   height: fit-content;
+  width: -moz-fit-content;
   width: fit-content;
   position: absolute;
   top: 12%;
@@ -5850,17 +5923,20 @@ input[type=email]) {
 .container .mainContent .leftOrUpperPart .skillsAndEducation .educationAndEducationList .education .allInOneEducationContainer .allInOneEducation .wrapper {
   display: flex;
   flex-direction: row;
-  column-gap: 0.5rem;
+  -moz-column-gap: 0.5rem;
+       column-gap: 0.5rem;
   align-items: center;
 }
 @media (min-width: 1023px) and (max-width: 1200px) {
   .container .mainContent .leftOrUpperPart .skillsAndEducation .educationAndEducationList .education .allInOneEducationContainer .allInOneEducation .wrapper {
-    column-gap: 0.3rem;
+    -moz-column-gap: 0.3rem;
+         column-gap: 0.3rem;
   }
 }
 @media (orientation: portrait) and (min-width: 1023px) and (max-width: 1100px) {
   .container .mainContent .leftOrUpperPart .skillsAndEducation .educationAndEducationList .education .allInOneEducationContainer .allInOneEducation .wrapper {
-    column-gap: 0.3rem;
+    -moz-column-gap: 0.3rem;
+         column-gap: 0.3rem;
   }
 }
 .container .mainContent .leftOrUpperPart .skillsAndEducation .educationAndEducationList .education .allInOneEducationContainer .allInOneEducation .wrapper h4 {
@@ -6103,7 +6179,8 @@ input[type=email]) {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  column-gap: 10%;
+  -moz-column-gap: 10%;
+       column-gap: 10%;
   align-self: center;
   align-items: center;
   width: 98%;
@@ -6735,7 +6812,8 @@ input[type=email]) {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  column-gap: 10%;
+  -moz-column-gap: 10%;
+       column-gap: 10%;
   align-self: center;
   align-items: center;
   width: 98%;
@@ -7081,7 +7159,9 @@ input[type=email]) {
 }
 .container .mainContent .leftOrUpperPart .skillsList .content .titleAndFluencies .fluenciesOne .fluencyOne .statusBar .percentage {
   display: flex;
+  height: -moz-fit-content;
   height: fit-content;
+  width: -moz-fit-content;
   width: fit-content;
   position: absolute;
   top: 12%;
@@ -7145,7 +7225,8 @@ input[type=email]) {
 @media (min-width: 1023px) and (max-width: 1100px) {
   .container .mainContent .leftOrUpperPart .skillsList .content .titleAndFluencies .fluenciesOne .fluencyTwo {
     flex-direction: row;
-    column-gap: unset;
+    -moz-column-gap: unset;
+         column-gap: unset;
     justify-content: space-between;
     width: 100%;
   }
@@ -7193,7 +7274,9 @@ input[type=email]) {
 }
 .container .mainContent .leftOrUpperPart .skillsList .content .titleAndFluencies .fluenciesOne .fluencyTwo .statusBar .percentage {
   display: flex;
+  height: -moz-fit-content;
   height: fit-content;
+  width: -moz-fit-content;
   width: fit-content;
   position: absolute;
   top: 12%;
@@ -7257,7 +7340,8 @@ input[type=email]) {
 @media (min-width: 1023px) and (max-width: 1100px) {
   .container .mainContent .leftOrUpperPart .skillsList .content .titleAndFluencies .fluenciesOne .fluencyThree {
     flex-direction: row;
-    column-gap: unset;
+    -moz-column-gap: unset;
+         column-gap: unset;
     justify-content: space-between;
     width: 100%;
   }
@@ -7305,7 +7389,9 @@ input[type=email]) {
 }
 .container .mainContent .leftOrUpperPart .skillsList .content .titleAndFluencies .fluenciesOne .fluencyThree .statusBar .percentage {
   display: flex;
+  height: -moz-fit-content;
   height: fit-content;
+  width: -moz-fit-content;
   width: fit-content;
   position: absolute;
   top: 12%;
@@ -7369,7 +7455,8 @@ input[type=email]) {
 @media (min-width: 1023px) and (max-width: 1100px) {
   .container .mainContent .leftOrUpperPart .skillsList .content .titleAndFluencies .fluenciesOne .fluencyFour {
     flex-direction: row;
-    column-gap: unset;
+    -moz-column-gap: unset;
+         column-gap: unset;
     justify-content: space-between;
     width: 100%;
   }
@@ -7417,7 +7504,9 @@ input[type=email]) {
 }
 .container .mainContent .leftOrUpperPart .skillsList .content .titleAndFluencies .fluenciesOne .fluencyFour .statusBar .percentage {
   display: flex;
+  height: -moz-fit-content;
   height: fit-content;
+  width: -moz-fit-content;
   width: fit-content;
   position: absolute;
   top: 12%;
@@ -7546,7 +7635,9 @@ input[type=email]) {
 }
 .container .mainContent .leftOrUpperPart .skillsList .content .titleAndFluencies .fluenciesTwo .fluencyOne .statusBar .percentage {
   display: flex;
+  height: -moz-fit-content;
   height: fit-content;
+  width: -moz-fit-content;
   width: fit-content;
   position: absolute;
   top: 12%;
@@ -7610,7 +7701,8 @@ input[type=email]) {
 @media (min-width: 1023px) and (max-width: 1100px) {
   .container .mainContent .leftOrUpperPart .skillsList .content .titleAndFluencies .fluenciesTwo .fluencyTwo {
     flex-direction: row;
-    column-gap: unset;
+    -moz-column-gap: unset;
+         column-gap: unset;
     justify-content: space-between;
     width: 100%;
   }
@@ -7658,7 +7750,9 @@ input[type=email]) {
 }
 .container .mainContent .leftOrUpperPart .skillsList .content .titleAndFluencies .fluenciesTwo .fluencyTwo .statusBar .percentage {
   display: flex;
+  height: -moz-fit-content;
   height: fit-content;
+  width: -moz-fit-content;
   width: fit-content;
   position: absolute;
   top: 12%;
@@ -7722,7 +7816,8 @@ input[type=email]) {
 @media (min-width: 1023px) and (max-width: 1100px) {
   .container .mainContent .leftOrUpperPart .skillsList .content .titleAndFluencies .fluenciesTwo .fluencyThree {
     flex-direction: row;
-    column-gap: unset;
+    -moz-column-gap: unset;
+         column-gap: unset;
     justify-content: space-between;
     width: 100%;
   }
@@ -7770,7 +7865,9 @@ input[type=email]) {
 }
 .container .mainContent .leftOrUpperPart .skillsList .content .titleAndFluencies .fluenciesTwo .fluencyThree .statusBar .percentage {
   display: flex;
+  height: -moz-fit-content;
   height: fit-content;
+  width: -moz-fit-content;
   width: fit-content;
   position: absolute;
   top: 12%;
@@ -7834,7 +7931,8 @@ input[type=email]) {
 @media (min-width: 1023px) and (max-width: 1100px) {
   .container .mainContent .leftOrUpperPart .skillsList .content .titleAndFluencies .fluenciesTwo .fluencyFour {
     flex-direction: row;
-    column-gap: unset;
+    -moz-column-gap: unset;
+         column-gap: unset;
     justify-content: space-between;
     width: 100%;
   }
@@ -7882,7 +7980,9 @@ input[type=email]) {
 }
 .container .mainContent .leftOrUpperPart .skillsList .content .titleAndFluencies .fluenciesTwo .fluencyFour .statusBar .percentage {
   display: flex;
+  height: -moz-fit-content;
   height: fit-content;
+  width: -moz-fit-content;
   width: fit-content;
   position: absolute;
   top: 12%;
@@ -8327,7 +8427,8 @@ input[type=email]) {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  column-gap: 10%;
+  -moz-column-gap: 10%;
+       column-gap: 10%;
   align-self: center;
   align-items: center;
   width: 98%;
@@ -9272,7 +9373,8 @@ input[type=email]) {
 .container .mainContent .rightOrLowerPart .rightOrLowerPartContainer .projects {
   display: flex;
   flex-direction: row;
-  column-gap: 1rem;
+  -moz-column-gap: 1rem;
+       column-gap: 1rem;
   width: 100%;
   height: 30.2rem;
 }
@@ -9295,38 +9397,44 @@ input[type=email]) {
 }
 @media (min-width: 1023px) and (max-width: 1100px) {
   .container .mainContent .rightOrLowerPart .rightOrLowerPartContainer .projects {
-    column-gap: 0.4rem;
+    -moz-column-gap: 0.4rem;
+         column-gap: 0.4rem;
     height: 20.4rem;
   }
 }
 @media (orientation: portrait) and (min-width: 1023px) and (max-width: 1100px) {
   .container .mainContent .rightOrLowerPart .rightOrLowerPartContainer .projects {
     flex-direction: row-reverse;
-    column-gap: 1.2rem;
+    -moz-column-gap: 1.2rem;
+         column-gap: 1.2rem;
     height: 29rem;
   }
 }
 @media (min-width: 1100px) and (max-width: 1200px) {
   .container .mainContent .rightOrLowerPart .rightOrLowerPartContainer .projects {
-    column-gap: 0.5rem;
+    -moz-column-gap: 0.5rem;
+         column-gap: 0.5rem;
     height: 22.6rem;
   }
 }
 @media (width: 1200px) {
   .container .mainContent .rightOrLowerPart .rightOrLowerPartContainer .projects {
-    column-gap: 0.8rem;
+    -moz-column-gap: 0.8rem;
+         column-gap: 0.8rem;
     height: 24.8rem;
   }
 }
 @media (min-width: 1200px) and (max-width: 1300px) {
   .container .mainContent .rightOrLowerPart .rightOrLowerPartContainer .projects {
-    column-gap: 0.8rem;
+    -moz-column-gap: 0.8rem;
+         column-gap: 0.8rem;
     height: 24.8rem;
   }
 }
 @media (min-width: 1300px) and (max-width: 1400px) {
   .container .mainContent .rightOrLowerPart .rightOrLowerPartContainer .projects {
-    column-gap: 0.8rem;
+    -moz-column-gap: 0.8rem;
+         column-gap: 0.8rem;
     height: 27.8rem;
   }
 }
@@ -9916,7 +10024,8 @@ input[type=email]) {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  column-gap: 10%;
+  -moz-column-gap: 10%;
+       column-gap: 10%;
   align-self: center;
   align-items: center;
   width: 98%;
@@ -10812,24 +10921,28 @@ input[type=email]) {
 @media (width: 600px) {
   .container .mainContent .rightOrLowerPart .rightOrLowerPartContainer .footer .wrapper {
     flex-direction: row;
-    column-gap: 0.8rem;
+    -moz-column-gap: 0.8rem;
+         column-gap: 0.8rem;
   }
 }
 @media (min-width: 1023px) and (max-width: 1100px) {
   .container .mainContent .rightOrLowerPart .rightOrLowerPartContainer .footer .wrapper {
     justify-content: center;
-    column-gap: 1.3rem;
+    -moz-column-gap: 1.3rem;
+         column-gap: 1.3rem;
   }
 }
 @media (orientation: portrait) and (min-width: 1023px) and (max-width: 1100px) {
   .container .mainContent .rightOrLowerPart .rightOrLowerPartContainer .footer .wrapper {
-    column-gap: 2rem;
+    -moz-column-gap: 2rem;
+         column-gap: 2rem;
   }
 }
 @media (min-width: 1100px) and (max-width: 1200px) {
   .container .mainContent .rightOrLowerPart .rightOrLowerPartContainer .footer .wrapper {
     justify-content: center;
-    column-gap: 1.2rem;
+    -moz-column-gap: 1.2rem;
+         column-gap: 1.2rem;
   }
 }
 .container .mainContent .rightOrLowerPart .rightOrLowerPartContainer .footer .wrapper .leftPart {
@@ -10842,31 +10955,36 @@ input[type=email]) {
   .container .mainContent .rightOrLowerPart .rightOrLowerPartContainer .footer .wrapper .leftPart {
     justify-content: center;
     flex-wrap: wrap;
-    column-gap: 1.5rem;
+    -moz-column-gap: 1.5rem;
+         column-gap: 1.5rem;
     width: inherit;
     line-height: 2rem;
   }
 }
 @media (min-width: 350px) and (max-width: 600px) {
   .container .mainContent .rightOrLowerPart .rightOrLowerPartContainer .footer .wrapper .leftPart {
-    column-gap: 0.8rem;
+    -moz-column-gap: 0.8rem;
+         column-gap: 0.8rem;
     width: inherit;
   }
 }
 @media (min-width: 1023px) and (max-width: 1100px) {
   .container .mainContent .rightOrLowerPart .rightOrLowerPartContainer .footer .wrapper .leftPart {
-    column-gap: 1rem;
+    -moz-column-gap: 1rem;
+         column-gap: 1rem;
     width: auto;
   }
 }
 @media (orientation: portrait) and (min-width: 1023px) and (max-width: 1100px) {
   .container .mainContent .rightOrLowerPart .rightOrLowerPartContainer .footer .wrapper .leftPart {
-    column-gap: 3rem;
+    -moz-column-gap: 3rem;
+         column-gap: 3rem;
   }
 }
 @media (min-width: 1100px) and (max-width: 1200px) {
   .container .mainContent .rightOrLowerPart .rightOrLowerPartContainer .footer .wrapper .leftPart {
-    column-gap: 1.5rem;
+    -moz-column-gap: 1.5rem;
+         column-gap: 1.5rem;
     width: auto;
   }
 }
@@ -10957,7 +11075,8 @@ input[type=email]) {
 @media (min-width: 300px) and (max-width: 350px) {
   .container .mainContent .rightOrLowerPart .rightOrLowerPartContainer .footer .wrapper .rightPart {
     justify-content: center;
-    column-gap: 2rem;
+    -moz-column-gap: 2rem;
+         column-gap: 2rem;
     width: inherit;
   }
 }
@@ -10965,42 +11084,49 @@ input[type=email]) {
   .container .mainContent .rightOrLowerPart .rightOrLowerPartContainer .footer .wrapper .rightPart {
     justify-content: center;
     width: inherit;
-    column-gap: 1.8rem;
+    -moz-column-gap: 1.8rem;
+         column-gap: 1.8rem;
   }
 }
 @media (min-width: 400px) and (max-width: 500px) {
   .container .mainContent .rightOrLowerPart .rightOrLowerPartContainer .footer .wrapper .rightPart {
     justify-content: center;
     width: inherit;
-    column-gap: 1.5rem;
+    -moz-column-gap: 1.5rem;
+         column-gap: 1.5rem;
   }
 }
 @media (min-width: 500px) and (max-width: 600px) {
   .container .mainContent .rightOrLowerPart .rightOrLowerPartContainer .footer .wrapper .rightPart {
     justify-content: center;
     width: inherit;
-    column-gap: 3rem;
+    -moz-column-gap: 3rem;
+         column-gap: 3rem;
   }
 }
 @media (width: 600px) {
   .container .mainContent .rightOrLowerPart .rightOrLowerPartContainer .footer .wrapper .rightPart {
-    column-gap: 0.8rem;
+    -moz-column-gap: 0.8rem;
+         column-gap: 0.8rem;
   }
 }
 @media (min-width: 1023px) and (max-width: 1100px) {
   .container .mainContent .rightOrLowerPart .rightOrLowerPartContainer .footer .wrapper .rightPart {
-    column-gap: 1rem;
+    -moz-column-gap: 1rem;
+         column-gap: 1rem;
     width: auto;
   }
 }
 @media (orientation: portrait) and (min-width: 1023px) and (max-width: 1100px) {
   .container .mainContent .rightOrLowerPart .rightOrLowerPartContainer .footer .wrapper .rightPart {
-    column-gap: 3rem;
+    -moz-column-gap: 3rem;
+         column-gap: 3rem;
   }
 }
 @media (min-width: 1100px) and (max-width: 1200px) {
   .container .mainContent .rightOrLowerPart .rightOrLowerPartContainer .footer .wrapper .rightPart {
-    column-gap: 1.5rem;
+    -moz-column-gap: 1.5rem;
+         column-gap: 1.5rem;
     width: auto;
   }
 }
@@ -11262,7 +11388,8 @@ input[type=email]) {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  column-gap: 10%;
+  -moz-column-gap: 10%;
+       column-gap: 10%;
   align-self: center;
   align-items: center;
   width: 98%;
@@ -12034,7 +12161,8 @@ input[type=email]) {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  column-gap: 10%;
+  -moz-column-gap: 10%;
+       column-gap: 10%;
   align-self: center;
   align-items: center;
   width: 98%;
@@ -12878,7 +13006,9 @@ input[type=email]) {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  user-select: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
   font-family: "Alan Sans", sans-serif;
   font-weight: 400;
   color: #ffffff;
