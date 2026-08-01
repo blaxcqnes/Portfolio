@@ -11,7 +11,7 @@ export default function Loader({ progress }) {
         <div className="spinnerOlive"></div>
       </div>
       {/*  */}
-      <p className="disclaimer">Loading phase depends on your internet speed</p>
+      <p className="disclaimer">Loading Components</p>
       {/*  */}
     </div>
   );

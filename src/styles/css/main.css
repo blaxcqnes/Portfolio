@@ -105,16 +105,6 @@
   line-height: 1.7rem;
   color: #ffffff;
 }
-@media (min-width: 300px) and (max-width: 345px) {
-  .loaderContainer .disclaimer {
-    width: 80%;
-  }
-}
-@media (min-width: 345px) and (max-width: 370px) {
-  .loaderContainer .disclaimer {
-    width: 75%;
-  }
-}
 @media (min-width: 500px) and (max-width: 600px) {
   .loaderContainer .disclaimer {
     font-size: 12pt;
@@ -2160,6 +2150,11 @@ input[type=email]) {
     font-size: 9pt;
   }
 }
+@media (min-width: 300px) and (max-width: 1023px) {
+  .container .header .contactForm form .buttons .send {
+    cursor: default;
+  }
+}
 @media (min-width: 1023px) and (max-width: 1100px) {
   .container .header .contactForm form .buttons .send {
     width: 4.7rem;
@@ -2231,6 +2226,11 @@ input[type=email]) {
   .container .header .contactForm form .buttons .sendDisabled {
     width: 6rem;
     font-size: 9pt;
+  }
+}
+@media (min-width: 300px) and (max-width: 1023px) {
+  .container .header .contactForm form .buttons .sendDisabled {
+    cursor: default;
   }
 }
 @media (min-width: 1023px) and (max-width: 1100px) {
@@ -2308,6 +2308,11 @@ input[type=email]) {
   .container .header .contactForm form .buttons .reset {
     width: 6rem;
     font-size: 9pt;
+  }
+}
+@media (min-width: 300px) and (max-width: 1023px) {
+  .container .header .contactForm form .buttons .reset {
+    cursor: default;
   }
 }
 @media (min-width: 1023px) and (max-width: 1100px) {
@@ -2991,36 +2996,20 @@ input[type=email]) {
 .container .mainContent .leftOrUpperPart .aboutMeAndImagesAndEstimatesList .aboutMeAndImage .aboutMeAndEstimatesList .aboutMe .titleAndButton .estimates:hover {
   background-color: #545146;
 }
-@media (min-width: 300px) and (max-width: 350px) {
+@media (min-width: 300px) and (max-width: 600px) {
   .container .mainContent .leftOrUpperPart .aboutMeAndImagesAndEstimatesList .aboutMeAndImage .aboutMeAndEstimatesList .aboutMe .titleAndButton .estimates {
-    width: 5.7rem;
-    height: 2.3rem;
-    bottom: -20rem;
-    font-size: 9.5pt;
-  }
-}
-@media (min-width: 350px) and (max-width: 400px) {
-  .container .mainContent .leftOrUpperPart .aboutMeAndImagesAndEstimatesList .aboutMeAndImage .aboutMeAndEstimatesList .aboutMe .titleAndButton .estimates {
-    width: 6rem;
-    height: 2.3rem;
-    bottom: -19rem;
-  }
-}
-@media (min-width: 400px) and (max-width: 600px) {
-  .container .mainContent .leftOrUpperPart .aboutMeAndImagesAndEstimatesList .aboutMeAndImage .aboutMeAndEstimatesList .aboutMe .titleAndButton .estimates {
-    bottom: -19.375rem;
+    display: none;
   }
 }
 @media (width: 600px) {
   .container .mainContent .leftOrUpperPart .aboutMeAndImagesAndEstimatesList .aboutMeAndImage .aboutMeAndEstimatesList .aboutMe .titleAndButton .estimates {
-    bottom: unset;
+    display: block;
   }
 }
 @media (min-width: 600px) and (max-width: 800px) {
   .container .mainContent .leftOrUpperPart .aboutMeAndImagesAndEstimatesList .aboutMeAndImage .aboutMeAndEstimatesList .aboutMe .titleAndButton .estimates {
     width: 6rem;
     font-size: 9pt;
-    bottom: unset;
   }
 }
 @media (width: 800px) {
@@ -3228,32 +3217,97 @@ input[type=email]) {
     line-height: 1.8rem;
   }
 }
-.container .mainContent .leftOrUpperPart .aboutMeAndImagesAndEstimatesList .aboutMeAndImage .aboutMeAndEstimatesList .aboutMe .locationForSmallerScreens {
+.container .mainContent .leftOrUpperPart .aboutMeAndImagesAndEstimatesList .aboutMeAndImage .aboutMeAndEstimatesList .aboutMe .locationAndEstimatesButton {
   display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: inherit;
+  padding-inline: 2rem;
   position: absolute;
-  bottom: 2rem;
+  left: 50%;
+  translate: -50% 0;
+}
+@media (min-width: 300px) and (max-width: 350px) {
+  .container .mainContent .leftOrUpperPart .aboutMeAndImagesAndEstimatesList .aboutMeAndImage .aboutMeAndEstimatesList .aboutMe .locationAndEstimatesButton {
+    padding-inline: 0.8rem;
+    bottom: 1.2em;
+  }
+}
+@media (min-width: 350px) and (max-width: 400px) {
+  .container .mainContent .leftOrUpperPart .aboutMeAndImagesAndEstimatesList .aboutMeAndImage .aboutMeAndEstimatesList .aboutMe .locationAndEstimatesButton {
+    padding-inline: 0.8rem;
+    bottom: 1.7rem;
+  }
+}
+@media (min-width: 400px) and (max-width: 500px) {
+  .container .mainContent .leftOrUpperPart .aboutMeAndImagesAndEstimatesList .aboutMeAndImage .aboutMeAndEstimatesList .aboutMe .locationAndEstimatesButton {
+    padding-inline: 1rem;
+    bottom: 2.6rem;
+  }
+}
+@media (min-width: 500px) and (max-width: 600px) {
+  .container .mainContent .leftOrUpperPart .aboutMeAndImagesAndEstimatesList .aboutMeAndImage .aboutMeAndEstimatesList .aboutMe .locationAndEstimatesButton {
+    padding-inline: 2rem;
+    bottom: 1.4rem;
+  }
+}
+@media (min-width: 600px) {
+  .container .mainContent .leftOrUpperPart .aboutMeAndImagesAndEstimatesList .aboutMeAndImage .aboutMeAndEstimatesList .aboutMe .locationAndEstimatesButton {
+    display: none;
+  }
+}
+.container .mainContent .leftOrUpperPart .aboutMeAndImagesAndEstimatesList .aboutMeAndImage .aboutMeAndEstimatesList .aboutMe .locationAndEstimatesButton .locationForSmallerScreens {
+  display: flex;
   font-size: 10pt;
   color: #efefef;
 }
 @media (min-width: 300px) and (max-width: 400px) {
-  .container .mainContent .leftOrUpperPart .aboutMeAndImagesAndEstimatesList .aboutMeAndImage .aboutMeAndEstimatesList .aboutMe .locationForSmallerScreens {
+  .container .mainContent .leftOrUpperPart .aboutMeAndImagesAndEstimatesList .aboutMeAndImage .aboutMeAndEstimatesList .aboutMe .locationAndEstimatesButton .locationForSmallerScreens {
     font-size: 10pt;
   }
 }
 @media (min-width: 400px) and (max-width: 500px) {
-  .container .mainContent .leftOrUpperPart .aboutMeAndImagesAndEstimatesList .aboutMeAndImage .aboutMeAndEstimatesList .aboutMe .locationForSmallerScreens {
+  .container .mainContent .leftOrUpperPart .aboutMeAndImagesAndEstimatesList .aboutMeAndImage .aboutMeAndEstimatesList .aboutMe .locationAndEstimatesButton .locationForSmallerScreens {
     font-size: 10pt;
   }
 }
 @media (min-width: 500px) and (max-width: 600px) {
-  .container .mainContent .leftOrUpperPart .aboutMeAndImagesAndEstimatesList .aboutMeAndImage .aboutMeAndEstimatesList .aboutMe .locationForSmallerScreens {
+  .container .mainContent .leftOrUpperPart .aboutMeAndImagesAndEstimatesList .aboutMeAndImage .aboutMeAndEstimatesList .aboutMe .locationAndEstimatesButton .locationForSmallerScreens {
     font-size: 11pt;
     bottom: 2.5rem;
   }
 }
-@media (min-width: 600px) {
-  .container .mainContent .leftOrUpperPart .aboutMeAndImagesAndEstimatesList .aboutMeAndImage .aboutMeAndEstimatesList .aboutMe .locationForSmallerScreens {
-    display: none;
+.container .mainContent .leftOrUpperPart .aboutMeAndImagesAndEstimatesList .aboutMeAndImage .aboutMeAndEstimatesList .aboutMe .locationAndEstimatesButton .estimates {
+  width: 7rem;
+  height: 2.5rem;
+  background-color: #232323;
+  border: none;
+  border-radius: 0.5rem;
+  font-size: 10pt;
+  color: #ebebeb;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+.container .mainContent .leftOrUpperPart .aboutMeAndImagesAndEstimatesList .aboutMeAndImage .aboutMeAndEstimatesList .aboutMe .locationAndEstimatesButton .estimates:hover {
+  background-color: #545146;
+}
+@media (min-width: 300px) and (max-width: 350px) {
+  .container .mainContent .leftOrUpperPart .aboutMeAndImagesAndEstimatesList .aboutMeAndImage .aboutMeAndEstimatesList .aboutMe .locationAndEstimatesButton .estimates {
+    width: 5.7rem;
+    height: 2.3rem;
+    font-size: 9.5pt;
+  }
+}
+@media (min-width: 350px) and (max-width: 400px) {
+  .container .mainContent .leftOrUpperPart .aboutMeAndImagesAndEstimatesList .aboutMeAndImage .aboutMeAndEstimatesList .aboutMe .locationAndEstimatesButton .estimates {
+    width: 6rem;
+    height: 2.3rem;
+  }
+}
+@media (min-width: 300px) and (max-width: 1023px) {
+  .container .mainContent .leftOrUpperPart .aboutMeAndImagesAndEstimatesList .aboutMeAndImage .aboutMeAndEstimatesList .aboutMe .locationAndEstimatesButton .estimates {
+    cursor: default;
   }
 }
 .container .mainContent .leftOrUpperPart .aboutMeAndImagesAndEstimatesList .aboutMeAndImage .aboutMeAndEstimatesList .estimatesList {
@@ -3359,6 +3413,11 @@ input[type=email]) {
   .container .mainContent .leftOrUpperPart .aboutMeAndImagesAndEstimatesList .aboutMeAndImage .aboutMeAndEstimatesList .estimatesList .titleAndButton .close {
     width: 6rem;
     height: 2.3rem;
+  }
+}
+@media (min-width: 300px) and (max-width: 1023px) {
+  .container .mainContent .leftOrUpperPart .aboutMeAndImagesAndEstimatesList .aboutMeAndImage .aboutMeAndEstimatesList .estimatesList .titleAndButton .close {
+    cursor: default;
   }
 }
 .container .mainContent .leftOrUpperPart .aboutMeAndImagesAndEstimatesList .estimatesList {
@@ -6773,6 +6832,11 @@ input[type=email]) {
     font-size: 10pt;
   }
 }
+@media (min-width: 300px) and (max-width: 1023px) {
+  .container .mainContent .leftOrUpperPart .skillsList .titleAndButton .close {
+    cursor: default;
+  }
+}
 @media (min-width: 1023px) and (max-width: 1100px) {
   .container .mainContent .leftOrUpperPart .skillsList .titleAndButton .close {
     width: 4.7rem;
@@ -6906,6 +6970,11 @@ input[type=email]) {
     font-size: 9.5pt;
   }
 }
+@media (min-width: 300px) and (max-width: 1023px) {
+  .container .mainContent .leftOrUpperPart .skillsList .content .previousDisabled {
+    cursor: default;
+  }
+}
 @media (min-width: 1023px) and (max-width: 1100px) {
   .container .mainContent .leftOrUpperPart .skillsList .content .previousDisabled {
     width: 1.8rem;
@@ -6994,6 +7063,11 @@ input[type=email]) {
     bottom: unset;
     left: 2rem;
     font-size: 9.5pt;
+  }
+}
+@media (min-width: 300px) and (max-width: 1023px) {
+  .container .mainContent .leftOrUpperPart .skillsList .content .previous {
+    cursor: default;
   }
 }
 @media (min-width: 1023px) and (max-width: 1100px) {
@@ -8091,6 +8165,11 @@ input[type=email]) {
     font-size: 9.5pt;
   }
 }
+@media (min-width: 300px) and (max-width: 1023px) {
+  .container .mainContent .leftOrUpperPart .skillsList .content .nextDisabled {
+    cursor: default;
+  }
+}
 @media (min-width: 1023px) and (max-width: 1100px) {
   .container .mainContent .leftOrUpperPart .skillsList .content .nextDisabled {
     width: 1.8rem;
@@ -8180,6 +8259,11 @@ input[type=email]) {
     bottom: unset;
     right: 2rem;
     font-size: 9.5pt;
+  }
+}
+@media (min-width: 300px) and (max-width: 1023px) {
+  .container .mainContent .leftOrUpperPart .skillsList .content .next {
+    cursor: default;
   }
 }
 @media (min-width: 1023px) and (max-width: 1100px) {
@@ -8388,6 +8472,11 @@ input[type=email]) {
     font-size: 10pt;
   }
 }
+@media (min-width: 300px) and (max-width: 1023px) {
+  .container .mainContent .leftOrUpperPart .educationList .titleAndButton .close {
+    cursor: default;
+  }
+}
 @media (min-width: 1023px) and (max-width: 1100px) {
   .container .mainContent .leftOrUpperPart .educationList .titleAndButton .close {
     width: 4.7rem;
@@ -8521,6 +8610,11 @@ input[type=email]) {
     font-size: 9.5pt;
   }
 }
+@media (min-width: 300px) and (max-width: 1023px) {
+  .container .mainContent .leftOrUpperPart .educationList .content .previousDisabled {
+    cursor: default;
+  }
+}
 @media (min-width: 1023px) and (max-width: 1100px) {
   .container .mainContent .leftOrUpperPart .educationList .content .previousDisabled {
     width: 1.8rem;
@@ -8609,6 +8703,11 @@ input[type=email]) {
     bottom: unset;
     left: 2rem;
     font-size: 9.5pt;
+  }
+}
+@media (min-width: 300px) and (max-width: 1023px) {
+  .container .mainContent .leftOrUpperPart .educationList .content .previous {
+    cursor: default;
   }
 }
 @media (min-width: 1023px) and (max-width: 1100px) {
@@ -8973,6 +9072,11 @@ input[type=email]) {
     font-size: 9.5pt;
   }
 }
+@media (min-width: 300px) and (max-width: 1023px) {
+  .container .mainContent .leftOrUpperPart .educationList .content .nextDisabled {
+    cursor: default;
+  }
+}
 @media (min-width: 1023px) and (max-width: 1100px) {
   .container .mainContent .leftOrUpperPart .educationList .content .nextDisabled {
     width: 1.8rem;
@@ -9062,6 +9166,11 @@ input[type=email]) {
     bottom: unset;
     right: 2rem;
     font-size: 9.5pt;
+  }
+}
+@media (min-width: 300px) and (max-width: 1023px) {
+  .container .mainContent .leftOrUpperPart .educationList .content .next {
+    cursor: default;
   }
 }
 @media (min-width: 1023px) and (max-width: 1100px) {
@@ -9537,6 +9646,11 @@ input[type=email]) {
 @media (min-width: 900px) and (max-width: 1023px) {
   .container .mainContent .rightOrLowerPart .rightOrLowerPartContainer .projects .webAndWebList .web {
     padding: 3rem 2rem;
+  }
+}
+@media (min-width: 300px) and (max-width: 1023px) {
+  .container .mainContent .rightOrLowerPart .rightOrLowerPartContainer .projects .webAndWebList .web {
+    cursor: default;
   }
 }
 @media (min-width: 1023px) and (max-width: 1100px) {
@@ -12122,6 +12236,11 @@ input[type=email]) {
     font-size: 10pt;
   }
 }
+@media (min-width: 300px) and (max-width: 1023px) {
+  .container .mainContent .rightOrLowerPart .webList .titleAndButton .close {
+    cursor: default;
+  }
+}
 @media (min-width: 1023px) and (max-width: 1100px) {
   .container .mainContent .rightOrLowerPart .webList .titleAndButton .close {
     width: 4.7rem;
@@ -12255,6 +12374,11 @@ input[type=email]) {
     font-size: 9.5pt;
   }
 }
+@media (min-width: 300px) and (max-width: 1023px) {
+  .container .mainContent .rightOrLowerPart .webList .content .previousDisabled {
+    cursor: default;
+  }
+}
 @media (min-width: 1023px) and (max-width: 1100px) {
   .container .mainContent .rightOrLowerPart .webList .content .previousDisabled {
     width: 1.8rem;
@@ -12343,6 +12467,11 @@ input[type=email]) {
     bottom: unset;
     left: 2rem;
     font-size: 9.5pt;
+  }
+}
+@media (min-width: 300px) and (max-width: 1023px) {
+  .container .mainContent .rightOrLowerPart .webList .content .previous {
+    cursor: default;
   }
 }
 @media (min-width: 1023px) and (max-width: 1100px) {
@@ -12435,6 +12564,11 @@ input[type=email]) {
     font-size: 9.5pt;
   }
 }
+@media (min-width: 300px) and (max-width: 1023px) {
+  .container .mainContent .rightOrLowerPart .webList .content .nextDisabled {
+    cursor: default;
+  }
+}
 @media (min-width: 1023px) and (max-width: 1100px) {
   .container .mainContent .rightOrLowerPart .webList .content .nextDisabled {
     width: 1.8rem;
@@ -12524,6 +12658,11 @@ input[type=email]) {
     bottom: unset;
     right: 2rem;
     font-size: 9.5pt;
+  }
+}
+@media (min-width: 300px) and (max-width: 1023px) {
+  .container .mainContent .rightOrLowerPart .webList .content .next {
+    cursor: default;
   }
 }
 @media (min-width: 1023px) and (max-width: 1100px) {

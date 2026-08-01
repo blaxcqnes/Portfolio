@@ -62,9 +62,9 @@ export default function LeftOrUpperPart({
               style={
                 activeList || isContactFormOpen
                   ? {
-                      filter:
-                        'opacity(0.5) grayscale(10%) blur(0.05rem) brightness(80%)',
-                    }
+                    filter:
+                      'opacity(0.5) grayscale(10%) blur(0.05rem) brightness(80%)',
+                  }
                   : null
               }
             />
@@ -72,9 +72,9 @@ export default function LeftOrUpperPart({
               style={
                 activeList || isContactFormOpen
                   ? {
-                      filter:
-                        'opacity(0.5) grayscale(10%) blur(0.05rem) brightness(80%)',
-                    }
+                    filter:
+                      'opacity(0.5) grayscale(10%) blur(0.05rem) brightness(80%)',
+                  }
                   : null
               }
             >
@@ -89,9 +89,9 @@ export default function LeftOrUpperPart({
             style={
               activeList || isContactFormOpen
                 ? {
-                    filter:
-                      'opacity(0.5) grayscale(10%) blur(0.05rem) brightness(80%)',
-                  }
+                  filter:
+                    'opacity(0.5) grayscale(10%) blur(0.05rem) brightness(80%)',
+                }
                 : null
             }
           />
@@ -102,9 +102,9 @@ export default function LeftOrUpperPart({
               style={
                 activeList || isContactFormOpen
                   ? {
-                      filter:
-                        'opacity(0.5) grayscale(10%) blur(0.05rem) brightness(80%)',
-                    }
+                    filter:
+                      'opacity(0.5) grayscale(10%) blur(0.05rem) brightness(80%)',
+                  }
                   : null
               }
             >
@@ -130,13 +130,33 @@ export default function LeftOrUpperPart({
                 )}
               </div>
               <p className="aboutMeDescription">
-                Highly results-oriented Cybersecurity Specialist who designs and
+                Highly results-oriented Cyber-security Specialist who designs and
                 builds websites while keeping them safe. I deliver robust
                 solutions by performing security assessments and implementing
                 measures to protect sensitive data, all while providing highly
                 optimised and responsive digital user experiences.
               </p>
-              <p className="locationForSmallerScreens">Riyadh, Saudi Arabia</p>
+              <div className="locationAndEstimatesButton">
+                <p className="locationForSmallerScreens">Riyadh, Saudi Arabia</p>
+                {activeList || isContactFormOpen ? (
+                  <button
+                    className="unfocusedAboutMeAndImageButtons"
+                    onClick={closeList}
+                  >
+                    Estimates
+                  </button>
+                ) : (
+                  <button
+                    className="estimates"
+                    onClick={(e) => {
+                      e.stopPropagation();
+                      toggleEstimatesList();
+                    }}
+                  >
+                    Estimates
+                  </button>
+                )}
+              </div>
             </div>
             {/*  */}
             {!exactMobileWidth &&
@@ -151,8 +171,8 @@ export default function LeftOrUpperPart({
         {((exactMobileWidth && activeList === 'estimatesList') ||
           (portraitForEstimates && activeList === 'estimatesList') ||
           (tabsForEstimatesLandscape && activeList === 'estimatesList')) && (
-          <EstimatesList setActiveList={setActiveList} />
-        )}
+            <EstimatesList setActiveList={setActiveList} />
+          )}
 
         {/*  */}
       </section>
@@ -165,9 +185,9 @@ export default function LeftOrUpperPart({
             style={
               activeList || isContactFormOpen
                 ? {
-                    filter:
-                      'opacity(0.5) grayscale(10%) blur(0.05rem) brightness(80%)',
-                  }
+                  filter:
+                    'opacity(0.5) grayscale(10%) blur(0.05rem) brightness(80%)',
+                }
                 : null
             }
           >
@@ -205,8 +225,8 @@ export default function LeftOrUpperPart({
           {(exactMobileWidth && activeList === 'skillsList'
             ? undefined
             : mobileScreens && activeList === 'skillsList') && (
-            <SkillsList setActiveList={setActiveList} />
-          )}
+              <SkillsList setActiveList={setActiveList} />
+            )}
         </div>
         <div className="educationAndEducationList">
           <div
@@ -215,9 +235,9 @@ export default function LeftOrUpperPart({
             style={
               activeList || isContactFormOpen
                 ? {
-                    filter:
-                      'opacity(0.5) grayscale(10%) blur(0.05rem) brightness(80%)',
-                  }
+                  filter:
+                    'opacity(0.5) grayscale(10%) blur(0.05rem) brightness(80%)',
+                }
                 : null
             }
           >
@@ -279,8 +299,8 @@ export default function LeftOrUpperPart({
           {(exactMobileWidth && activeList === 'educationList'
             ? undefined
             : mobileScreens && activeList === 'educationList') && (
-            <EducationList setActiveList={setActiveList} />
-          )}
+              <EducationList setActiveList={setActiveList} />
+            )}
 
           {/*  */}
         </div>
@@ -288,13 +308,13 @@ export default function LeftOrUpperPart({
       {/*  */}
       {((tabAndLargeScreensPortrait && activeList === 'skillsList') ||
         (tabAndLargeScreensLandscape && activeList === 'skillsList')) && (
-        <SkillsList setActiveList={setActiveList} />
-      )}
+          <SkillsList setActiveList={setActiveList} />
+        )}
       {/*  */}
       {((tabAndLargeScreensPortrait && activeList === 'educationList') ||
         (tabAndLargeScreensLandscape && activeList === 'educationList')) && (
-        <EducationList setActiveList={setActiveList} />
-      )}
+          <EducationList setActiveList={setActiveList} />
+        )}
       {/*  */}
     </main>
   );

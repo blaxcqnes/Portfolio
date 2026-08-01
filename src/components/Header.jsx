@@ -24,9 +24,9 @@ export default function Header({
         style={
           activeList || isContactFormOpen
             ? {
-                filter:
-                  'opacity(0.5) grayscale(10%) blur(0.05rem) brightness(80%)',
-              }
+              filter:
+                'opacity(0.5) grayscale(10%) blur(0.05rem) brightness(80%)',
+            }
             : null
         }
         onClick={closeList}
@@ -34,7 +34,7 @@ export default function Header({
         {/*  */}
         <div className="nameAndProfession">
           <p className="name">Mahmoud Taha</p>
-          <p className="profession">Cybersecurity Specialist & Web Developer</p>
+          <p className="profession">Cyber-security Specialist & Web Developer</p>
         </div>
         {/*  */}
         <div className="locationAndContact">
