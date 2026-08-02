@@ -709,7 +709,7 @@
 }
 @media (min-width: 330px) and (max-width: 380px) {
   .container .header .contactForm {
-    width: 98%;
+    width: 99%;
     height: 27.3rem;
     top: 6rem;
     right: unset;
@@ -731,7 +731,7 @@
 }
 @media (min-width: 380px) and (max-width: 400px) {
   .container .header .contactForm {
-    width: 98%;
+    width: 99%;
     height: 27.3rem;
     top: 6rem;
     right: unset;
