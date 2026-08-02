@@ -9885,6 +9885,7 @@ input[type=email]) {
   scrollbar-color: #999999 #545146;
   scroll-snap-type: y mandatory;
   scroll-behavior: smooth;
+  scrollbar-gutter: stable both-edges;
 }
 @media (min-width: 300px) and (max-width: 350px) {
   .container .mainContent .rightOrLowerPart .rightOrLowerPartContainer .projects .webAndWebList .web .carousel {
