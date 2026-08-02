@@ -130,7 +130,7 @@ export default function LeftOrUpperPart({
                 )}
               </div>
               <p className="aboutMeDescription">
-                Highly results-oriented Cyber-security Specialist who designs and
+                Highly results-oriented Cybersecurity Specialist who designs and
                 builds websites while keeping them safe. I deliver robust
                 solutions by performing security assessments and implementing
                 measures to protect sensitive data, all while providing highly

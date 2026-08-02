@@ -4,23 +4,19 @@ import emailjs from '@emailjs/browser';
 export default function ContactForm({ isContactFormOpen, toggleContactForm }) {
   const [statusMessage, setStatusMessage] = useState('');
   const [statusType, setStatusType] = useState('');
-  // ..
-  const [firstNameValue, setFirstNameInputValue] = useState('');
-  const [lastNameValue, setLastNameInputValue] = useState('');
+  const [nameValue, setNameInputValue] = useState('');
   const [subjectValue, setSubjectInputValue] = useState('');
   const [emailValue, setEmailInputValue] = useState('');
   const [textAreaValue, setTextAreaInputValue] = useState('');
 
   const isFormValid =
-    firstNameValue.length === 0 &&
-    lastNameValue.length === 0 &&
+    nameValue.length === 0 &&
     subjectValue.length === 0 &&
     emailValue.length === 0 &&
     textAreaValue.length === 0;
 
   const handleReset = () => {
-    setFirstNameInputValue('');
-    setLastNameInputValue('');
+    setNameInputValue('');
     setSubjectInputValue('');
     setEmailInputValue('');
     setTextAreaInputValue('');
@@ -49,7 +45,7 @@ export default function ContactForm({ isContactFormOpen, toggleContactForm }) {
 
           setTimeout(() => {
             setStatusMessage('');
-          }, 5000000000000);
+          }, 5000);
         },
         (error) => {
           const errorMessage =
@@ -62,7 +58,7 @@ export default function ContactForm({ isContactFormOpen, toggleContactForm }) {
 
           setTimeout(() => {
             setStatusMessage('');
-          }, 5000000000000);
+          }, 5000);
         },
       );
     e.target.reset();
@@ -86,32 +82,19 @@ export default function ContactForm({ isContactFormOpen, toggleContactForm }) {
       <form ref={form} onSubmit={sendAnEmail} autoComplete="on">
         {statusMessage && <p className={statusType}>{statusMessage}</p>}
         {/* <p className="fail">{statusMessage}</p> */}
-        <div className="namesAndSubject">
+        <div className="allInOneForm">
           {/* */}
-          <span className="names">
-            <label htmlFor="firstName"></label>
-            <input
-              id="firstName"
-              name="firstName"
-              type="text"
-              placeholder="First Name"
-              className="firstName"
-              value={firstNameValue}
-              onChange={(e) => setFirstNameInputValue(e.target.value)}
-            />
-            {/* */}
-            <label htmlFor="lastName"></label>
-            <input
-              id="lastName"
-              name="lastName"
-              type="text"
-              placeholder="Last Name"
-              className="lastName"
-              value={lastNameValue}
-              onChange={(e) => setLastNameInputValue(e.target.value)}
-            />
-            {/* */}
-          </span>
+          <label htmlFor="name"></label>
+          <input
+            id="name"
+            name="name"
+            type="text"
+            placeholder="Your Name"
+            className="name"
+            value={nameValue}
+            onChange={(e) => setNameInputValue(e.target.value)}
+          />
+          {/* */}
           <label htmlFor="subject"></label>
           <input
             id="subject"
@@ -123,27 +106,27 @@ export default function ContactForm({ isContactFormOpen, toggleContactForm }) {
             onChange={(e) => setSubjectInputValue(e.target.value)}
           />
           {/* */}
+          <label htmlFor="email"></label>
+          <input
+            id="email"
+            name="email"
+            type="email"
+            placeholder="Your Email"
+            className="email"
+            value={emailValue}
+            onChange={(e) => setEmailInputValue(e.target.value)}
+          />
+          {/*  */}
+          <textarea
+            id="textArea"
+            name="textArea"
+            placeholder="Your Message"
+            className="textArea"
+            value={textAreaValue}
+            onChange={(e) => setTextAreaInputValue(e.target.value)}
+          ></textarea>
+          {/*  */}
         </div>
-        {/*  */}
-        <label htmlFor="email"></label>
-        <input
-          id="email"
-          name="email"
-          type="email"
-          placeholder="Your Email"
-          className="email"
-          value={emailValue}
-          onChange={(e) => setEmailInputValue(e.target.value)}
-        />
-        {/*  */}
-        <textarea
-          id="textArea"
-          name="textArea"
-          placeholder="Your Message"
-          className="textArea"
-          value={textAreaValue}
-          onChange={(e) => setTextAreaInputValue(e.target.value)}
-        ></textarea>
         {/*  */}
         <div className="buttons">
           {/*  */}

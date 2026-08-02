@@ -7,7 +7,7 @@
   width: 100%;
   height: 90dvh;
   position: relative;
-  background-color: #232323;
+  background-color: #1e1e1e;
 }
 .loaderContainer .loader {
   display: flex;
@@ -578,8 +578,8 @@
 .container .header .headerContainer .locationAndContact .contact {
   width: 7rem;
   height: 2.5rem;
-  background-color: #232323;
-  border: none;
+  background-color: #1e1e1e;
+  border: 0.1px solid transparent;
   border-radius: 0.5rem;
   font-size: 10pt;
   color: #ebebeb;
@@ -588,6 +588,7 @@
 }
 .container .header .headerContainer .locationAndContact .contact:hover {
   background-color: #545146;
+  border: 0.1rem solid #8B8B8B;
 }
 @media (min-width: 300px) and (max-width: 350px) {
   .container .header .headerContainer .locationAndContact .contact {
@@ -666,7 +667,7 @@
   right: 0;
   transform: scale(102%);
   animation: contactForm 0.2s linear 1;
-  background-color: #232323;
+  background-color: #1e1e1e;
   border-radius: 0.5rem;
   border: 0.1rem solid #545146;
   z-index: 2;
@@ -1245,8 +1246,8 @@
   height: 2.5rem;
   position: relative;
   align-self: center;
-  background-color: #232323;
-  border: none;
+  background-color: #1e1e1e;
+  border: 0.1rem solid transparent;
   border-radius: 0.5rem;
   font-size: 10pt;
   color: #ebebeb;
@@ -1255,6 +1256,7 @@
 }
 .container .header .contactForm .titleAndButton .close:hover {
   background-color: #545146;
+  border: 0.1rem solid #8B8B8B;
 }
 @media (min-width: 300px) and (max-width: 350px) {
   .container .header .contactForm .titleAndButton .close {
@@ -1716,166 +1718,29 @@
     font-size: 12pt;
   }
 }
-.container .header .contactForm form label {
-  display: none;
-}
-.container .header .contactForm form .namesAndSubject {
+.container .header .contactForm form .allInOneForm {
   display: flex;
   flex-direction: column;
   row-gap: 0.8rem;
 }
 @media (min-width: 1023px) and (max-width: 1100px) {
-  .container .header .contactForm form .namesAndSubject {
+  .container .header .contactForm form .allInOneForm {
     row-gap: 0.5rem;
   }
 }
-.container .header .contactForm form .namesAndSubject .names {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  -moz-column-gap: 3%;
-       column-gap: 3%;
-}
-@media (min-width: 1023px) and (max-width: 1100px) {
-  .container .header .contactForm form .namesAndSubject .names {
-    justify-content: space-evenly;
-    -moz-column-gap: unset;
-         column-gap: unset;
-  }
-}
-.container .header .contactForm form .namesAndSubject .names label {
+.container .header .contactForm form .allInOneForm label {
   display: none;
 }
-.container .header .contactForm form .namesAndSubject .names .firstName {
-  width: 46%;
-  height: 3rem;
-  padding: 0.5rem;
-  align-self: center;
-  border: 0.1rem solid #545146;
-  border-radius: 0.5rem;
-  background-color: #2a2a2a;
-}
-.container .header .contactForm form .namesAndSubject .names .firstName:focus:where(input[type=text],
-input[type=search],
-input[type=password],
-input[type=url],
-input[type=email]) {
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
-  border-style: solid;
-  outline: none;
-}
-.container .header .contactForm form .namesAndSubject .names .firstName::-moz-placeholder {
-  color: #a6a6a6;
-}
-.container .header .contactForm form .namesAndSubject .names .firstName::placeholder {
-  color: #a6a6a6;
-}
-@media (min-width: 300px) and (max-width: 800px) {
-  .container .header .contactForm form .namesAndSubject .names .firstName {
-    height: 2.5rem;
-  }
-}
-@media (min-width: 1023px) and (max-width: 1100px) {
-  .container .header .contactForm form .namesAndSubject .names .firstName {
-    height: 2rem;
-    font-size: 8.2pt;
-  }
-}
-@media (orientation: portrait) and (min-width: 1023px) and (max-width: 1100px) {
-  .container .header .contactForm form .namesAndSubject .names .firstName {
-    height: 3rem;
-    font-size: 10pt;
-  }
-}
-@media (min-width: 1100px) and (max-width: 1200px) {
-  .container .header .contactForm form .namesAndSubject .names .firstName {
-    height: 2rem;
-    font-size: 9pt;
-  }
-}
-@media (min-width: 1200px) and (max-width: 1300px) {
-  .container .header .contactForm form .namesAndSubject .names .firstName {
-    height: 2.3rem;
-    font-size: 9pt;
-  }
-}
-@media (min-width: 1300px) and (max-width: 1400px) {
-  .container .header .contactForm form .namesAndSubject .names .firstName {
-    height: 2.5rem;
-  }
-}
-.container .header .contactForm form .namesAndSubject .names .lastName {
-  width: 46%;
-  height: 3rem;
-  padding: 0.5rem;
-  align-self: center;
-  border: 0.1rem solid #545146;
-  border-radius: 0.5rem;
-  background-color: #2a2a2a;
-}
-.container .header .contactForm form .namesAndSubject .names .lastName:focus:where(input[type=text],
-input[type=search],
-input[type=password],
-input[type=url],
-input[type=email]) {
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
-  border-style: solid;
-  outline: none;
-}
-.container .header .contactForm form .namesAndSubject .names .lastName::-moz-placeholder {
-  color: #a6a6a6;
-}
-.container .header .contactForm form .namesAndSubject .names .lastName::placeholder {
-  color: #a6a6a6;
-}
-@media (min-width: 300px) and (max-width: 800px) {
-  .container .header .contactForm form .namesAndSubject .names .lastName {
-    height: 2.5rem;
-  }
-}
-@media (min-width: 1023px) and (max-width: 1100px) {
-  .container .header .contactForm form .namesAndSubject .names .lastName {
-    height: 2rem;
-    font-size: 8.2pt;
-  }
-}
-@media (orientation: portrait) and (min-width: 1023px) and (max-width: 1100px) {
-  .container .header .contactForm form .namesAndSubject .names .lastName {
-    height: 3rem;
-    font-size: 10pt;
-  }
-}
-@media (min-width: 1100px) and (max-width: 1200px) {
-  .container .header .contactForm form .namesAndSubject .names .lastName {
-    height: 2rem;
-    font-size: 9pt;
-  }
-}
-@media (min-width: 1200px) and (max-width: 1300px) {
-  .container .header .contactForm form .namesAndSubject .names .lastName {
-    height: 2.3rem;
-    font-size: 9pt;
-  }
-}
-@media (min-width: 1300px) and (max-width: 1400px) {
-  .container .header .contactForm form .namesAndSubject .names .lastName {
-    height: 2.5rem;
-  }
-}
-.container .header .contactForm form .namesAndSubject .subject {
+.container .header .contactForm form .allInOneForm .name {
   width: 95%;
   height: 3rem;
   padding: 0.5rem;
   align-self: center;
   border: 0.1rem solid #545146;
   border-radius: 0.5rem;
-  background-color: #2a2a2a;
+  background-color: #232323;
 }
-.container .header .contactForm form .namesAndSubject .subject:focus:where(input[type=text],
+.container .header .contactForm form .allInOneForm .name:focus:where(input[type=text],
 input[type=search],
 input[type=password],
 input[type=url],
@@ -1886,56 +1751,56 @@ input[type=email]) {
   border-style: solid;
   outline: none;
 }
-.container .header .contactForm form .namesAndSubject .subject::-moz-placeholder {
-  color: #a6a6a6;
+.container .header .contactForm form .allInOneForm .name::-moz-placeholder {
+  color: #8B8B8B;
 }
-.container .header .contactForm form .namesAndSubject .subject::placeholder {
-  color: #a6a6a6;
+.container .header .contactForm form .allInOneForm .name::placeholder {
+  color: #8B8B8B;
 }
 @media (min-width: 300px) and (max-width: 800px) {
-  .container .header .contactForm form .namesAndSubject .subject {
+  .container .header .contactForm form .allInOneForm .name {
     height: 2.5rem;
   }
 }
 @media (min-width: 1023px) and (max-width: 1100px) {
-  .container .header .contactForm form .namesAndSubject .subject {
+  .container .header .contactForm form .allInOneForm .name {
     height: 2rem;
     font-size: 8.2pt;
   }
 }
 @media (orientation: portrait) and (min-width: 1023px) and (max-width: 1100px) {
-  .container .header .contactForm form .namesAndSubject .subject {
+  .container .header .contactForm form .allInOneForm .name {
     height: 3rem;
     font-size: 10pt;
   }
 }
 @media (min-width: 1100px) and (max-width: 1200px) {
-  .container .header .contactForm form .namesAndSubject .subject {
+  .container .header .contactForm form .allInOneForm .name {
     height: 2rem;
     font-size: 9pt;
   }
 }
 @media (min-width: 1200px) and (max-width: 1300px) {
-  .container .header .contactForm form .namesAndSubject .subject {
+  .container .header .contactForm form .allInOneForm .name {
     height: 2.3rem;
     font-size: 9pt;
   }
 }
 @media (min-width: 1300px) and (max-width: 1400px) {
-  .container .header .contactForm form .namesAndSubject .subject {
+  .container .header .contactForm form .allInOneForm .name {
     height: 2.5rem;
   }
 }
-.container .header .contactForm form .email {
+.container .header .contactForm form .allInOneForm .subject {
   width: 95%;
   height: 3rem;
   padding: 0.5rem;
   align-self: center;
   border: 0.1rem solid #545146;
   border-radius: 0.5rem;
-  background-color: #2a2a2a;
+  background-color: #232323;
 }
-.container .header .contactForm form .email:focus:where(input[type=text],
+.container .header .contactForm form .allInOneForm .subject:focus:where(input[type=text],
 input[type=search],
 input[type=password],
 input[type=url],
@@ -1946,104 +1811,164 @@ input[type=email]) {
   border-style: solid;
   outline: none;
 }
-.container .header .contactForm form .email::-moz-placeholder {
-  color: #a6a6a6;
+.container .header .contactForm form .allInOneForm .subject::-moz-placeholder {
+  color: #8B8B8B;
 }
-.container .header .contactForm form .email::placeholder {
-  color: #a6a6a6;
+.container .header .contactForm form .allInOneForm .subject::placeholder {
+  color: #8B8B8B;
 }
 @media (min-width: 300px) and (max-width: 800px) {
-  .container .header .contactForm form .email {
+  .container .header .contactForm form .allInOneForm .subject {
     height: 2.5rem;
   }
 }
 @media (min-width: 1023px) and (max-width: 1100px) {
-  .container .header .contactForm form .email {
+  .container .header .contactForm form .allInOneForm .subject {
     height: 2rem;
     font-size: 8.2pt;
   }
 }
 @media (orientation: portrait) and (min-width: 1023px) and (max-width: 1100px) {
-  .container .header .contactForm form .email {
+  .container .header .contactForm form .allInOneForm .subject {
     height: 3rem;
     font-size: 10pt;
   }
 }
 @media (min-width: 1100px) and (max-width: 1200px) {
-  .container .header .contactForm form .email {
+  .container .header .contactForm form .allInOneForm .subject {
     height: 2rem;
     font-size: 9pt;
   }
 }
 @media (min-width: 1200px) and (max-width: 1300px) {
-  .container .header .contactForm form .email {
+  .container .header .contactForm form .allInOneForm .subject {
     height: 2.3rem;
     font-size: 9pt;
   }
 }
 @media (min-width: 1300px) and (max-width: 1400px) {
-  .container .header .contactForm form .email {
+  .container .header .contactForm form .allInOneForm .subject {
     height: 2.5rem;
   }
 }
-.container .header .contactForm form .textArea {
+.container .header .contactForm form .allInOneForm .email {
+  width: 95%;
+  height: 3rem;
+  padding: 0.5rem;
+  align-self: center;
+  border: 0.1rem solid #545146;
+  border-radius: 0.5rem;
+  background-color: #232323;
+}
+.container .header .contactForm form .allInOneForm .email:focus:where(input[type=text],
+input[type=search],
+input[type=password],
+input[type=url],
+input[type=email]) {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  border-style: solid;
+  outline: none;
+}
+.container .header .contactForm form .allInOneForm .email::-moz-placeholder {
+  color: #8B8B8B;
+}
+.container .header .contactForm form .allInOneForm .email::placeholder {
+  color: #8B8B8B;
+}
+@media (min-width: 300px) and (max-width: 800px) {
+  .container .header .contactForm form .allInOneForm .email {
+    height: 2.5rem;
+  }
+}
+@media (min-width: 1023px) and (max-width: 1100px) {
+  .container .header .contactForm form .allInOneForm .email {
+    height: 2rem;
+    font-size: 8.2pt;
+  }
+}
+@media (orientation: portrait) and (min-width: 1023px) and (max-width: 1100px) {
+  .container .header .contactForm form .allInOneForm .email {
+    height: 3rem;
+    font-size: 10pt;
+  }
+}
+@media (min-width: 1100px) and (max-width: 1200px) {
+  .container .header .contactForm form .allInOneForm .email {
+    height: 2rem;
+    font-size: 9pt;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1300px) {
+  .container .header .contactForm form .allInOneForm .email {
+    height: 2.3rem;
+    font-size: 9pt;
+  }
+}
+@media (min-width: 1300px) and (max-width: 1400px) {
+  .container .header .contactForm form .allInOneForm .email {
+    height: 2.5rem;
+  }
+}
+.container .header .contactForm form .allInOneForm .textArea {
   width: 95%;
   height: 7.5rem;
   padding: 0.5rem;
   align-self: center;
   border: 0.1rem solid #545146;
   border-radius: 0.5rem;
-  background-color: #2a2a2a;
+  background-color: #232323;
   resize: none;
 }
-.container .header .contactForm form .textArea:focus:where(textarea) {
+.container .header .contactForm form .allInOneForm .textArea:focus:where(textarea) {
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
   border-style: solid;
   outline: none;
 }
-.container .header .contactForm form .textArea::-moz-placeholder {
-  color: #a6a6a6;
+.container .header .contactForm form .allInOneForm .textArea::-moz-placeholder {
+  color: #8B8B8B;
 }
-.container .header .contactForm form .textArea::placeholder {
-  color: #a6a6a6;
+.container .header .contactForm form .allInOneForm .textArea::placeholder {
+  color: #8B8B8B;
 }
 @media (min-width: 300px) and (max-width: 400px) {
-  .container .header .contactForm form .textArea {
+  .container .header .contactForm form .allInOneForm .textArea {
     height: 8rem;
   }
 }
 @media (min-width: 1023px) and (max-width: 1100px) {
-  .container .header .contactForm form .textArea {
+  .container .header .contactForm form .allInOneForm .textArea {
     height: 5.5rem;
     font-size: 9pt;
   }
 }
 @media (orientation: portrait) and (min-width: 1023px) and (max-width: 1100px) {
-  .container .header .contactForm form .textArea {
+  .container .header .contactForm form .allInOneForm .textArea {
     height: 9.5rem;
   }
 }
 @media (min-width: 1100px) and (max-width: 1200px) {
-  .container .header .contactForm form .textArea {
+  .container .header .contactForm form .allInOneForm .textArea {
     height: 6.5rem;
     font-size: 10pt;
   }
 }
 @media (min-width: 1200px) and (max-width: 1300px) {
-  .container .header .contactForm form .textArea {
+  .container .header .contactForm form .allInOneForm .textArea {
     height: 6.8rem;
     font-size: 10pt;
   }
 }
 @media (min-width: 1300px) and (max-width: 1400px) {
-  .container .header .contactForm form .textArea {
+  .container .header .contactForm form .allInOneForm .textArea {
     height: 8rem;
   }
 }
 @media (min-width: 1400px) and (max-width: 1500px) {
-  .container .header .contactForm form .textArea {
+  .container .header .contactForm form .allInOneForm .textArea {
     height: 7rem;
   }
 }
@@ -2118,7 +2043,7 @@ input[type=email]) {
   height: 2.5rem;
   align-self: center;
   background-color: #5c4f43;
-  border: none;
+  border: 0.1rem solid transparent;
   border-radius: 0.5rem;
   font-size: 10pt;
   color: #ebebeb;
@@ -2136,6 +2061,7 @@ input[type=email]) {
 }
 .container .header .contactForm form .buttons .send:hover {
   background-color: #545146;
+  border: 0.1rem solid #8B8B8B;
 }
 @media (min-width: 300px) and (max-width: 400px) {
   .container .header .contactForm form .buttons .send {
@@ -2278,7 +2204,7 @@ input[type=email]) {
   height: 2.5rem;
   align-self: center;
   background-color: #91372b;
-  border: none;
+  border: 0.1rem solid transparent;
   border-radius: 0.5rem;
   font-size: 10pt;
   color: #ebebeb;
@@ -2296,6 +2222,7 @@ input[type=email]) {
 }
 .container .header .contactForm form .buttons .reset:hover {
   background-color: #722f26;
+  border: 0.1rem solid #8B8B8B;
 }
 @media (min-width: 300px) and (max-width: 400px) {
   .container .header .contactForm form .buttons .reset {
@@ -2990,8 +2917,8 @@ input[type=email]) {
   width: 7rem;
   height: 2.5rem;
   position: relative;
-  background-color: #232323;
-  border: none;
+  background-color: #1e1e1e;
+  border: 0.1rem solid transparent;
   border-radius: 0.5rem;
   font-size: 10pt;
   color: #ebebeb;
@@ -3000,6 +2927,7 @@ input[type=email]) {
 }
 .container .mainContent .leftOrUpperPart .aboutMeAndImagesAndEstimatesList .aboutMeAndImage .aboutMeAndEstimatesList .aboutMe .titleAndButton .estimates:hover {
   background-color: #545146;
+  border: 0.1rem solid #8B8B8B;
 }
 @media (min-width: 300px) and (max-width: 600px) {
   .container .mainContent .leftOrUpperPart .aboutMeAndImagesAndEstimatesList .aboutMeAndImage .aboutMeAndEstimatesList .aboutMe .titleAndButton .estimates {
@@ -3286,8 +3214,8 @@ input[type=email]) {
 .container .mainContent .leftOrUpperPart .aboutMeAndImagesAndEstimatesList .aboutMeAndImage .aboutMeAndEstimatesList .aboutMe .locationAndEstimatesButton .estimates {
   width: 7rem;
   height: 2.5rem;
-  background-color: #232323;
-  border: none;
+  background-color: #1e1e1e;
+  border: 0.1rem solid transparent;
   border-radius: 0.5rem;
   font-size: 10pt;
   color: #ebebeb;
@@ -3296,6 +3224,7 @@ input[type=email]) {
 }
 .container .mainContent .leftOrUpperPart .aboutMeAndImagesAndEstimatesList .aboutMeAndImage .aboutMeAndEstimatesList .aboutMe .locationAndEstimatesButton .estimates:hover {
   background-color: #545146;
+  border: 0.1rem solid #8B8B8B;
 }
 @media (min-width: 300px) and (max-width: 350px) {
   .container .mainContent .leftOrUpperPart .aboutMeAndImagesAndEstimatesList .aboutMeAndImage .aboutMeAndEstimatesList .aboutMe .locationAndEstimatesButton .estimates {
@@ -3324,7 +3253,7 @@ input[type=email]) {
   transform: scale(102%);
   animation: estimatesList 0.2s linear 1;
   scroll-margin-bottom: 5rem;
-  background-color: #232323;
+  background-color: #1e1e1e;
   border-radius: 0.5rem;
   border: 0.1rem solid #545146;
   z-index: 1;
@@ -3396,8 +3325,8 @@ input[type=email]) {
   height: 2.5rem;
   position: relative;
   align-self: center;
-  background-color: #232323;
-  border: none;
+  background-color: #1e1e1e;
+  border: 0.1rem solid transparent;
   border-radius: 0.5rem;
   font-size: 10pt;
   color: #ebebeb;
@@ -3406,6 +3335,7 @@ input[type=email]) {
 }
 .container .mainContent .leftOrUpperPart .aboutMeAndImagesAndEstimatesList .aboutMeAndImage .aboutMeAndEstimatesList .estimatesList .titleAndButton .close:hover {
   background-color: #545146;
+  border: 0.1rem solid #8B8B8B;
 }
 @media (min-width: 300px) and (max-width: 350px) {
   .container .mainContent .leftOrUpperPart .aboutMeAndImagesAndEstimatesList .aboutMeAndImage .aboutMeAndEstimatesList .estimatesList .titleAndButton .close {
@@ -3436,7 +3366,7 @@ input[type=email]) {
   width: 98%;
   height: 14.9rem;
   position: relative;
-  background-color: #2a2a2a;
+  background-color: #232323;
   border-radius: 0.5rem;
 }
 @media (min-width: 300px) and (max-width: 400px) {
@@ -3469,7 +3399,7 @@ input[type=email]) {
   transform: scale(102%);
   animation: estimatesList 0.2s linear 1;
   scroll-margin-bottom: 5rem;
-  background-color: #232323;
+  background-color: #1e1e1e;
   border-radius: 0.5rem;
   border: 0.1rem solid #545146;
   z-index: 1;
@@ -3571,8 +3501,8 @@ input[type=email]) {
   height: 2.5rem;
   position: relative;
   align-self: center;
-  background-color: #232323;
-  border: none;
+  background-color: #1e1e1e;
+  border: 0.1rem solid transparent;
   border-radius: 0.5rem;
   font-size: 10pt;
   color: #ebebeb;
@@ -3581,6 +3511,7 @@ input[type=email]) {
 }
 .container .mainContent .leftOrUpperPart .aboutMeAndImagesAndEstimatesList .estimatesList .titleAndButton .close:hover {
   background-color: #545146;
+  border: 0.1rem solid #8B8B8B;
 }
 @media (min-width: 600px) and (max-width: 800px) {
   .container .mainContent .leftOrUpperPart .aboutMeAndImagesAndEstimatesList .estimatesList .titleAndButton .close {
@@ -3646,7 +3577,7 @@ input[type=email]) {
   width: 98%;
   height: 84.5%;
   position: relative;
-  background-color: #2a2a2a;
+  background-color: #232323;
   border-radius: 0.5rem;
 }
 @media (min-width: 600px) and (max-width: 1023px) {
@@ -3925,8 +3856,8 @@ input[type=email]) {
   width: 7rem;
   height: 2.5rem;
   position: relative;
-  background-color: #232323;
-  border: none;
+  background-color: #1e1e1e;
+  border: 0.1rem solid transparent;
   border-radius: 0.5rem;
   font-size: 10pt;
   color: #ebebeb;
@@ -3935,6 +3866,7 @@ input[type=email]) {
 }
 .container .mainContent .leftOrUpperPart .skillsAndEducation .skillsAndSkillsList .skills .titleAndButton .fluency:hover {
   background-color: #545146;
+  border: 0.1rem solid #8B8B8B;
 }
 @media (min-width: 300px) and (max-width: 350px) {
   .container .mainContent .leftOrUpperPart .skillsAndEducation .skillsAndSkillsList .skills .titleAndButton .fluency {
@@ -4122,7 +4054,7 @@ input[type=email]) {
   transform: scale(102%);
   animation: skillsList 0.2s linear 1;
   scroll-margin-bottom: 7rem;
-  background-color: #232323;
+  background-color: #1e1e1e;
   border-radius: 0.5rem;
   border: 0.1rem solid #545146;
   z-index: 1;
@@ -4189,8 +4121,8 @@ input[type=email]) {
   height: 2.5rem;
   position: relative;
   align-self: center;
-  background-color: #232323;
-  border: none;
+  background-color: #1e1e1e;
+  border: 0.1rem solid transparent;
   border-radius: 0.5rem;
   font-size: 10pt;
   color: #ebebeb;
@@ -4199,6 +4131,7 @@ input[type=email]) {
 }
 .container .mainContent .leftOrUpperPart .skillsAndEducation .skillsAndSkillsList .skillsList .titleAndButton .close:hover {
   background-color: #545146;
+  border: 0.1rem solid #8B8B8B;
 }
 @media (min-width: 300px) and (max-width: 350px) {
   .container .mainContent .leftOrUpperPart .skillsAndEducation .skillsAndSkillsList .skillsList .titleAndButton .close {
@@ -4229,7 +4162,7 @@ input[type=email]) {
   width: 98%;
   height: 14.9rem;
   position: relative;
-  background-color: #2a2a2a;
+  background-color: #232323;
   border-radius: 0.5rem;
 }
 @media (min-width: 300px) and (max-width: 400px) {
@@ -4264,7 +4197,7 @@ input[type=email]) {
   border-radius: 0.5rem;
   font-size: 10pt;
   font-weight: 500;
-  color: #2a2a2a;
+  color: #000000;
   cursor: default;
   transition: all 0.2s ease;
 }
@@ -4274,8 +4207,7 @@ input[type=email]) {
     height: 2.3rem;
     bottom: 1rem;
     left: 0.5rem;
-    background-color: #232323;
-    color: #a6a6a6;
+    background-color: #1e1e1e;
     font-size: 9.5pt;
   }
 }
@@ -4285,8 +4217,7 @@ input[type=email]) {
     height: 2.3rem;
     bottom: 1rem;
     left: 0.5rem;
-    background-color: #232323;
-    color: #a6a6a6;
+    background-color: #1e1e1e;
     font-size: 9.5pt;
   }
 }
@@ -4296,8 +4227,7 @@ input[type=email]) {
     height: 2.5rem;
     bottom: 1rem;
     left: 0.5rem;
-    background-color: #232323;
-    color: #a6a6a6;
+    background-color: #1e1e1e;
   }
 }
 @media (width: 600px) {
@@ -4308,7 +4238,6 @@ input[type=email]) {
     bottom: unset;
     left: 2rem;
     background-color: #2a2a2a;
-    color: #2a2a2a;
   }
 }
 @media (min-width: 300px) and (max-width: 1023px) {
@@ -4323,7 +4252,7 @@ input[type=email]) {
   left: 2rem;
   align-self: center;
   background-color: #545146;
-  border: none;
+  border: 0.1rem solid transparent;
   border-radius: 0.5rem;
   font-size: 10pt;
   font-weight: 500;
@@ -4333,6 +4262,7 @@ input[type=email]) {
 }
 .container .mainContent .leftOrUpperPart .skillsAndEducation .skillsAndSkillsList .skillsList .content .previous:hover {
   background-color: #5c4f43;
+  border: 0.1rem solid #8B8B8B;
 }
 @media (min-width: 300px) and (max-width: 350px) {
   .container .mainContent .leftOrUpperPart .skillsAndEducation .skillsAndSkillsList .skillsList .content .previous {
@@ -5540,7 +5470,7 @@ input[type=email]) {
   border-radius: 0.5rem;
   font-size: 10pt;
   font-weight: 500;
-  color: #2a2a2a;
+  color: #000000;
   cursor: default;
   transition: all 0.2s ease;
 }
@@ -5550,8 +5480,7 @@ input[type=email]) {
     height: 2.3rem;
     bottom: 1rem;
     left: 7rem;
-    background-color: #232323;
-    color: #a6a6a6;
+    background-color: #1e1e1e;
     font-size: 9.5pt;
   }
 }
@@ -5561,8 +5490,7 @@ input[type=email]) {
     height: 2.3rem;
     bottom: 1rem;
     left: 7rem;
-    background-color: #232323;
-    color: #a6a6a6;
+    background-color: #1e1e1e;
     font-size: 9.5pt;
   }
 }
@@ -5572,8 +5500,7 @@ input[type=email]) {
     height: 2.5rem;
     bottom: 1rem;
     left: 8.5rem;
-    background-color: #232323;
-    color: #a6a6a6;
+    background-color: #1e1e1e;
   }
 }
 @media (width: 600px) {
@@ -5585,7 +5512,6 @@ input[type=email]) {
     right: 2rem;
     left: unset;
     background-color: #2a2a2a;
-    color: #2a2a2a;
     font-size: 10pt;
   }
 }
@@ -5601,7 +5527,7 @@ input[type=email]) {
   right: 2rem;
   align-self: center;
   background-color: #545146;
-  border: none;
+  border: 0.1rem solid transparent;
   border-radius: 0.5rem;
   font-size: 10pt;
   font-weight: 500;
@@ -5611,6 +5537,7 @@ input[type=email]) {
 }
 .container .mainContent .leftOrUpperPart .skillsAndEducation .skillsAndSkillsList .skillsList .content .next:hover {
   background-color: #5c4f43;
+  border: 0.1rem solid #8B8B8B;
 }
 @media (min-width: 300px) and (max-width: 350px) {
   .container .mainContent .leftOrUpperPart .skillsAndEducation .skillsAndSkillsList .skillsList .content .next {
@@ -5658,7 +5585,7 @@ input[type=email]) {
   right: 2.5rem;
   bottom: 1rem;
   font-size: 9pt;
-  color: #a6a6a6;
+  color: #8B8B8B;
 }
 @media (min-width: 300px) and (max-width: 350px) {
   .container .mainContent .leftOrUpperPart .skillsAndEducation .skillsAndSkillsList .skillsList .content p {
@@ -5888,8 +5815,8 @@ input[type=email]) {
   width: 7rem;
   height: 2.5rem;
   position: relative;
-  background-color: #232323;
-  border: none;
+  background-color: #1e1e1e;
+  border: 0.1rem solid transparent;
   border-radius: 0.5rem;
   font-size: 10pt;
   color: #ebebeb;
@@ -5898,6 +5825,7 @@ input[type=email]) {
 }
 .container .mainContent .leftOrUpperPart .skillsAndEducation .educationAndEducationList .education .titleAndButton .courses:hover {
   background-color: #5c4f43;
+  border: 0.1rem solid #8B8B8B;
 }
 @media (min-width: 300px) and (max-width: 350px) {
   .container .mainContent .leftOrUpperPart .skillsAndEducation .educationAndEducationList .education .titleAndButton .courses {
@@ -6206,7 +6134,7 @@ input[type=email]) {
   transform: scale(102%);
   animation: educationList 0.2s linear 1;
   scroll-margin-bottom: 7rem;
-  background-color: #232323;
+  background-color: #1e1e1e;
   border-radius: 0.5rem;
   border: 0.1rem solid #5c4f43;
   z-index: 1;
@@ -6271,8 +6199,8 @@ input[type=email]) {
 .container .mainContent .leftOrUpperPart .skillsAndEducation .educationAndEducationList .educationList .titleAndButton .close {
   width: 7rem;
   height: 2.5rem;
-  background-color: #232323;
-  border: none;
+  background-color: #1e1e1e;
+  border: 0.1rem solid transparent;
   border-radius: 0.5rem;
   font-size: 10pt;
   color: #ebebeb;
@@ -6281,6 +6209,7 @@ input[type=email]) {
 }
 .container .mainContent .leftOrUpperPart .skillsAndEducation .educationAndEducationList .educationList .titleAndButton .close:hover {
   background-color: #5c4f43;
+  border: 0.1rem solid #8B8B8B;
 }
 @media (min-width: 300px) and (max-width: 350px) {
   .container .mainContent .leftOrUpperPart .skillsAndEducation .educationAndEducationList .educationList .titleAndButton .close {
@@ -6311,7 +6240,7 @@ input[type=email]) {
   width: 98%;
   height: 14.9rem;
   position: relative;
-  background-color: #2a2a2a;
+  background-color: #232323;
   border-radius: 0.5rem;
 }
 @media (min-width: 300px) and (max-width: 400px) {
@@ -6346,7 +6275,7 @@ input[type=email]) {
   border-radius: 0.5rem;
   font-size: 10pt;
   font-weight: 500;
-  color: #2a2a2a;
+  color: #000000;
   cursor: default;
   transition: all 0.2s ease;
 }
@@ -6356,8 +6285,7 @@ input[type=email]) {
     height: 2.3rem;
     bottom: 1rem;
     left: 0.5rem;
-    background-color: #232323;
-    color: #a6a6a6;
+    background-color: #1e1e1e;
     font-size: 9.5pt;
   }
 }
@@ -6367,8 +6295,7 @@ input[type=email]) {
     height: 2.3rem;
     bottom: 1rem;
     left: 0.5rem;
-    background-color: #232323;
-    color: #a6a6a6;
+    background-color: #1e1e1e;
     font-size: 9.5pt;
   }
 }
@@ -6378,8 +6305,7 @@ input[type=email]) {
     height: 2.5rem;
     bottom: 1rem;
     left: 0.5rem;
-    background-color: #232323;
-    color: #a6a6a6;
+    background-color: #1e1e1e;
   }
 }
 @media (width: 600px) {
@@ -6390,7 +6316,6 @@ input[type=email]) {
     bottom: unset;
     left: 2rem;
     background-color: #2a2a2a;
-    color: #2a2a2a;
   }
 }
 @media (min-width: 300px) and (max-width: 1023px) {
@@ -6405,7 +6330,7 @@ input[type=email]) {
   left: 2rem;
   align-self: center;
   background-color: #5c4f43;
-  border: none;
+  border: 0.1rem solid transparent;
   border-radius: 0.5rem;
   font-size: 10pt;
   font-weight: 500;
@@ -6415,6 +6340,7 @@ input[type=email]) {
 }
 .container .mainContent .leftOrUpperPart .skillsAndEducation .educationAndEducationList .educationList .content .previous:hover {
   background-color: #545146;
+  border: 0.1rem solid #8B8B8B;
 }
 @media (min-width: 300px) and (max-width: 350px) {
   .container .mainContent .leftOrUpperPart .skillsAndEducation .educationAndEducationList .educationList .content .previous {
@@ -6625,7 +6551,7 @@ input[type=email]) {
   border-radius: 0.5rem;
   font-size: 10pt;
   font-weight: 500;
-  color: #2a2a2a;
+  color: #000000;
   cursor: default;
   transition: all 0.2s ease;
 }
@@ -6635,8 +6561,7 @@ input[type=email]) {
     height: 2.3rem;
     bottom: 1rem;
     left: 7rem;
-    background-color: #232323;
-    color: #a6a6a6;
+    background-color: #1e1e1e;
     font-size: 9.5pt;
   }
 }
@@ -6646,8 +6571,7 @@ input[type=email]) {
     height: 2.3rem;
     bottom: 1rem;
     left: 7rem;
-    background-color: #232323;
-    color: #a6a6a6;
+    background-color: #1e1e1e;
     font-size: 9.5pt;
   }
 }
@@ -6657,8 +6581,7 @@ input[type=email]) {
     height: 2.5rem;
     bottom: 1rem;
     left: 8.5rem;
-    background-color: #232323;
-    color: #a6a6a6;
+    background-color: #1e1e1e;
   }
 }
 @media (width: 600px) {
@@ -6670,7 +6593,6 @@ input[type=email]) {
     right: 2rem;
     left: unset;
     background-color: #2a2a2a;
-    color: #2a2a2a;
     font-size: 10pt;
   }
 }
@@ -6686,7 +6608,7 @@ input[type=email]) {
   right: 2rem;
   align-self: center;
   background-color: #5c4f43;
-  border: none;
+  border: 0.1rem solid transparent;
   border-radius: 0.5rem;
   font-size: 10pt;
   font-weight: 500;
@@ -6696,6 +6618,7 @@ input[type=email]) {
 }
 .container .mainContent .leftOrUpperPart .skillsAndEducation .educationAndEducationList .educationList .content .next:hover {
   background-color: #545146;
+  border: 0.1rem solid #8B8B8B;
 }
 @media (min-width: 300px) and (max-width: 350px) {
   .container .mainContent .leftOrUpperPart .skillsAndEducation .educationAndEducationList .educationList .content .next {
@@ -6743,7 +6666,7 @@ input[type=email]) {
   right: 2.5rem;
   bottom: 1rem;
   font-size: 9pt;
-  color: #a6a6a6;
+  color: #8B8B8B;
 }
 @media (min-width: 300px) and (max-width: 350px) {
   .container .mainContent .leftOrUpperPart .skillsAndEducation .educationAndEducationList .educationList .content p {
@@ -6777,7 +6700,7 @@ input[type=email]) {
   transform: scale(102%);
   animation: skillsList 0.2s linear 1;
   scroll-margin-bottom: 5rem;
-  background-color: #232323;
+  background-color: #1e1e1e;
   border-radius: 0.5rem;
   border: 0.1rem solid #545146;
   z-index: 1;
@@ -6869,8 +6792,8 @@ input[type=email]) {
   height: 2.5rem;
   position: relative;
   align-self: center;
-  background-color: #232323;
-  border: none;
+  background-color: #1e1e1e;
+  border: 0.1rem solid transparent;
   border-radius: 0.5rem;
   font-size: 10pt;
   color: #ebebeb;
@@ -6879,6 +6802,7 @@ input[type=email]) {
 }
 .container .mainContent .leftOrUpperPart .skillsList .titleAndButton .close:hover {
   background-color: #545146;
+  border: 0.1rem solid #8B8B8B;
 }
 @media (min-width: 600px) and (max-width: 800px) {
   .container .mainContent .leftOrUpperPart .skillsList .titleAndButton .close {
@@ -6944,7 +6868,7 @@ input[type=email]) {
   width: 98%;
   height: 14.9rem;
   position: relative;
-  background-color: #2a2a2a;
+  background-color: #232323;
   border-radius: 0.5rem;
 }
 @media (min-width: 1023px) and (max-width: 1200px) {
@@ -6989,7 +6913,7 @@ input[type=email]) {
   border-radius: 0.5rem;
   font-size: 10pt;
   font-weight: 500;
-  color: #2a2a2a;
+  color: #000000;
   cursor: default;
   transition: all 0.2s ease;
 }
@@ -7001,7 +6925,6 @@ input[type=email]) {
     bottom: unset;
     left: 2rem;
     background-color: #2a2a2a;
-    color: #2a2a2a;
   }
 }
 @media (min-width: 600px) and (max-width: 700px) {
@@ -7079,7 +7002,7 @@ input[type=email]) {
   left: 2rem;
   align-self: center;
   background-color: #545146;
-  border: none;
+  border: 0.1rem solid transparent;
   border-radius: 0.5rem;
   font-size: 10pt;
   font-weight: 500;
@@ -7089,6 +7012,7 @@ input[type=email]) {
 }
 .container .mainContent .leftOrUpperPart .skillsList .content .previous:hover {
   background-color: #5c4f43;
+  border: 0.1rem solid #8B8B8B;
 }
 @media (width: 600px) {
   .container .mainContent .leftOrUpperPart .skillsList .content .previous {
@@ -8183,7 +8107,7 @@ input[type=email]) {
   border-radius: 0.5rem;
   font-size: 10pt;
   font-weight: 500;
-  color: #2a2a2a;
+  color: #000000;
   cursor: default;
   transition: all 0.2s ease;
 }
@@ -8195,7 +8119,6 @@ input[type=email]) {
     right: 2rem;
     left: unset;
     background-color: #2a2a2a;
-    color: #2a2a2a;
     font-size: 10pt;
   }
 }
@@ -8274,7 +8197,7 @@ input[type=email]) {
   right: 2rem;
   align-self: center;
   background-color: #545146;
-  border: none;
+  border: 0.1rem solid transparent;
   border-radius: 0.5rem;
   font-size: 10pt;
   font-weight: 500;
@@ -8284,6 +8207,7 @@ input[type=email]) {
 }
 .container .mainContent .leftOrUpperPart .skillsList .content .next:hover {
   background-color: #5c4f43;
+  border: 0.1rem solid #8B8B8B;
 }
 @media (width: 600px) {
   .container .mainContent .leftOrUpperPart .skillsList .content .next {
@@ -8368,7 +8292,7 @@ input[type=email]) {
   right: 2.5rem;
   bottom: 1rem;
   font-size: 9.5pt;
-  color: #a6a6a6;
+  color: #8B8B8B;
 }
 @media (width: 600px) {
   .container .mainContent .leftOrUpperPart .skillsList .content p {
@@ -8419,7 +8343,7 @@ input[type=email]) {
   transform: scale(102%);
   animation: educationList 0.2s linear 1;
   scroll-margin-bottom: 5rem;
-  background-color: #232323;
+  background-color: #1e1e1e;
   border-radius: 0.5rem;
   border: 0.1rem solid #5c4f43;
   z-index: 1;
@@ -8509,8 +8433,8 @@ input[type=email]) {
 .container .mainContent .leftOrUpperPart .educationList .titleAndButton .close {
   width: 7rem;
   height: 2.5rem;
-  background-color: #232323;
-  border: none;
+  background-color: #1e1e1e;
+  border: 0.1rem solid transparent;
   border-radius: 0.5rem;
   font-size: 10pt;
   color: #ebebeb;
@@ -8519,6 +8443,7 @@ input[type=email]) {
 }
 .container .mainContent .leftOrUpperPart .educationList .titleAndButton .close:hover {
   background-color: #5c4f43;
+  border: 0.1rem solid #8B8B8B;
 }
 @media (min-width: 600px) and (max-width: 800px) {
   .container .mainContent .leftOrUpperPart .educationList .titleAndButton .close {
@@ -8584,7 +8509,7 @@ input[type=email]) {
   width: 98%;
   height: 14.9rem;
   position: relative;
-  background-color: #2a2a2a;
+  background-color: #232323;
   border-radius: 0.5rem;
 }
 @media (min-width: 1023px) and (max-width: 1200px) {
@@ -8629,7 +8554,7 @@ input[type=email]) {
   border-radius: 0.5rem;
   font-size: 10pt;
   font-weight: 500;
-  color: #2a2a2a;
+  color: #000000;
   cursor: default;
   transition: all 0.2s ease;
 }
@@ -8641,7 +8566,6 @@ input[type=email]) {
     bottom: unset;
     left: 2rem;
     background-color: #2a2a2a;
-    color: #2a2a2a;
   }
 }
 @media (min-width: 600px) and (max-width: 700px) {
@@ -8719,7 +8643,7 @@ input[type=email]) {
   left: 2rem;
   align-self: center;
   background-color: #5c4f43;
-  border: none;
+  border: 0.1rem solid transparent;
   border-radius: 0.5rem;
   font-size: 10pt;
   font-weight: 500;
@@ -8729,6 +8653,7 @@ input[type=email]) {
 }
 .container .mainContent .leftOrUpperPart .educationList .content .previous:hover {
   background-color: #545146;
+  border: 0.1rem solid #8B8B8B;
 }
 @media (width: 600px) {
   .container .mainContent .leftOrUpperPart .educationList .content .previous {
@@ -9090,7 +9015,7 @@ input[type=email]) {
   border-radius: 0.5rem;
   font-size: 10pt;
   font-weight: 500;
-  color: #2a2a2a;
+  color: #000000;
   cursor: default;
   transition: all 0.2s ease;
 }
@@ -9103,7 +9028,6 @@ input[type=email]) {
     right: 2rem;
     left: unset;
     background-color: #2a2a2a;
-    color: #2a2a2a;
   }
 }
 @media (min-width: 600px) and (max-width: 700px) {
@@ -9181,7 +9105,7 @@ input[type=email]) {
   right: 2rem;
   align-self: center;
   background-color: #5c4f43;
-  border: none;
+  border: 0.1rem solid transparent;
   border-radius: 0.5rem;
   font-size: 10pt;
   font-weight: 500;
@@ -9191,6 +9115,7 @@ input[type=email]) {
 }
 .container .mainContent .leftOrUpperPart .educationList .content .next:hover {
   background-color: #545146;
+  border: 0.1rem solid #8B8B8B;
 }
 @media (width: 600px) {
   .container .mainContent .leftOrUpperPart .educationList .content .next {
@@ -9275,7 +9200,7 @@ input[type=email]) {
   right: 2.5rem;
   bottom: 1rem;
   font-size: 9.5pt;
-  color: #a6a6a6;
+  color: #8B8B8B;
 }
 @media (width: 600px) {
   .container .mainContent .leftOrUpperPart .educationList .content p {
@@ -9359,7 +9284,7 @@ input[type=email]) {
   height: 100%;
   transform: scale(102%);
   animation: estimatesList 0.2s linear 1;
-  background-color: #232323;
+  background-color: #1e1e1e;
   border-radius: 0.5rem;
   border: 0.1rem solid #545146;
   z-index: 1;
@@ -9459,8 +9384,8 @@ input[type=email]) {
   height: 2.5rem;
   position: relative;
   align-self: center;
-  background-color: #232323;
-  border: none;
+  background-color: #1e1e1e;
+  border: 0.1rem solid transparent;
   border-radius: 0.5rem;
   font-size: 10pt;
   color: #ebebeb;
@@ -9469,6 +9394,7 @@ input[type=email]) {
 }
 .container .mainContent .rightOrLowerPart .estimatesList .titleAndButton .close:hover {
   background-color: #545146;
+  border: 0.1rem solid #8B8B8B;
 }
 @media (min-width: 1023px) and (max-width: 1100px) {
   .container .mainContent .rightOrLowerPart .estimatesList .titleAndButton .close {
@@ -9516,7 +9442,7 @@ input[type=email]) {
   width: 97%;
   height: 84.6%;
   position: relative;
-  background-color: #2a2a2a;
+  background-color: #232323;
   border-radius: 0.5rem;
 }
 @media (min-width: 1023px) and (max-width: 1100px) {
@@ -10027,8 +9953,8 @@ input[type=email]) {
   align-self: center;
   position: absolute;
   bottom: 1.2rem;
-  background-color: #232323;
-  border: none;
+  background-color: #1e1e1e;
+  border: 0.1rem solid transparent;
   border-radius: 0.5rem;
   font-size: 10pt;
   color: #ebebeb;
@@ -10037,6 +9963,7 @@ input[type=email]) {
 }
 .container .mainContent .rightOrLowerPart .rightOrLowerPartContainer .projects .webAndWebList .web .more:hover {
   background-color: #5c4f43;
+  border: 0.1rem solid #8B8B8B;
 }
 @media (min-width: 300px) and (max-width: 350px) {
   .container .mainContent .rightOrLowerPart .rightOrLowerPartContainer .projects .webAndWebList .web .more {
@@ -10164,7 +10091,7 @@ input[type=email]) {
   transform: scale(102%);
   animation: webList 0.2s linear 1;
   scroll-margin-bottom: 7rem;
-  background-color: #232323;
+  background-color: #1e1e1e;
   border-radius: 0.5rem;
   border: 0.1rem solid #5c4f43;
   z-index: 1;
@@ -10229,8 +10156,8 @@ input[type=email]) {
 .container .mainContent .rightOrLowerPart .rightOrLowerPartContainer .projects .webAndWebList .webList .titleAndButton .close {
   width: 7rem;
   height: 2.5rem;
-  background-color: #232323;
-  border: none;
+  background-color: #1e1e1e;
+  border: 0.1rem solid transparent;
   border-radius: 0.5rem;
   font-size: 10pt;
   color: #ebebeb;
@@ -10239,6 +10166,7 @@ input[type=email]) {
 }
 .container .mainContent .rightOrLowerPart .rightOrLowerPartContainer .projects .webAndWebList .webList .titleAndButton .close:hover {
   background-color: #5c4f43;
+  border: 0.1rem solid #8B8B8B;
 }
 @media (min-width: 300px) and (max-width: 350px) {
   .container .mainContent .rightOrLowerPart .rightOrLowerPartContainer .projects .webAndWebList .webList .titleAndButton .close {
@@ -10269,7 +10197,7 @@ input[type=email]) {
   width: 98%;
   height: 14.9rem;
   position: relative;
-  background-color: #2a2a2a;
+  background-color: #232323;
   border-radius: 0.5rem;
 }
 @media (min-width: 300px) and (max-width: 400px) {
@@ -10304,7 +10232,7 @@ input[type=email]) {
   border-radius: 0.5rem;
   font-size: 10pt;
   font-weight: 500;
-  color: #2a2a2a;
+  color: #000000;
   cursor: default;
   transition: all 0.2s ease;
 }
@@ -10314,8 +10242,7 @@ input[type=email]) {
     height: 2.3rem;
     bottom: 1rem;
     left: 0.5rem;
-    background-color: #232323;
-    color: #a6a6a6;
+    background-color: #1e1e1e;
     font-size: 9.5pt;
   }
 }
@@ -10325,8 +10252,7 @@ input[type=email]) {
     height: 2.3rem;
     bottom: 1rem;
     left: 0.5rem;
-    background-color: #232323;
-    color: #a6a6a6;
+    background-color: #1e1e1e;
     font-size: 9.5pt;
   }
 }
@@ -10336,8 +10262,7 @@ input[type=email]) {
     height: 2.5rem;
     bottom: 1rem;
     left: 0.5rem;
-    background-color: #232323;
-    color: #a6a6a6;
+    background-color: #1e1e1e;
   }
 }
 @media (width: 600px) {
@@ -10348,7 +10273,6 @@ input[type=email]) {
     bottom: unset;
     left: 2rem;
     background-color: #2a2a2a;
-    color: #2a2a2a;
   }
 }
 @media (min-width: 300px) and (max-width: 1023px) {
@@ -10363,7 +10287,7 @@ input[type=email]) {
   left: 2rem;
   align-self: center;
   background-color: #5c4f43;
-  border: none;
+  border: 0.1rem solid transparent;
   border-radius: 0.5rem;
   font-size: 10pt;
   font-weight: 500;
@@ -10373,6 +10297,7 @@ input[type=email]) {
 }
 .container .mainContent .rightOrLowerPart .rightOrLowerPartContainer .projects .webAndWebList .webList .content .previous:hover {
   background-color: #545146;
+  border: 0.1rem solid #8B8B8B;
 }
 @media (min-width: 300px) and (max-width: 350px) {
   .container .mainContent .rightOrLowerPart .rightOrLowerPartContainer .projects .webAndWebList .webList .content .previous {
@@ -10425,7 +10350,7 @@ input[type=email]) {
   border-radius: 0.5rem;
   font-size: 10pt;
   font-weight: 500;
-  color: #2a2a2a;
+  color: #000000;
   cursor: default;
   transition: all 0.2s ease;
 }
@@ -10435,8 +10360,7 @@ input[type=email]) {
     height: 2.3rem;
     bottom: 1rem;
     left: 7rem;
-    background-color: #232323;
-    color: #a6a6a6;
+    background-color: #1e1e1e;
     font-size: 9.5pt;
   }
 }
@@ -10446,8 +10370,7 @@ input[type=email]) {
     height: 2.3rem;
     bottom: 1rem;
     left: 7rem;
-    background-color: #232323;
-    color: #a6a6a6;
+    background-color: #1e1e1e;
     font-size: 9.5pt;
   }
 }
@@ -10457,8 +10380,7 @@ input[type=email]) {
     height: 2.5rem;
     bottom: 1rem;
     left: 8.5rem;
-    background-color: #232323;
-    color: #a6a6a6;
+    background-color: #1e1e1e;
   }
 }
 @media (width: 600px) {
@@ -10470,7 +10392,6 @@ input[type=email]) {
     right: 2rem;
     left: unset;
     background-color: #2a2a2a;
-    color: #2a2a2a;
     font-size: 10pt;
   }
 }
@@ -10486,7 +10407,7 @@ input[type=email]) {
   right: 2rem;
   align-self: center;
   background-color: #5c4f43;
-  border: none;
+  border: 0.1rem solid transparent;
   border-radius: 0.5rem;
   font-size: 10pt;
   font-weight: 500;
@@ -10496,6 +10417,7 @@ input[type=email]) {
 }
 .container .mainContent .rightOrLowerPart .rightOrLowerPartContainer .projects .webAndWebList .webList .content .next:hover {
   background-color: #545146;
+  border: 0.1rem solid #8B8B8B;
 }
 @media (min-width: 300px) and (max-width: 350px) {
   .container .mainContent .rightOrLowerPart .rightOrLowerPartContainer .projects .webAndWebList .webList .content .next {
@@ -10543,7 +10465,7 @@ input[type=email]) {
   right: 2.5rem;
   bottom: 1rem;
   font-size: 9pt;
-  color: #a6a6a6;
+  color: #8B8B8B;
 }
 @media (min-width: 300px) and (max-width: 350px) {
   .container .mainContent .rightOrLowerPart .rightOrLowerPartContainer .projects .webAndWebList .webList .content p {
@@ -10915,8 +10837,8 @@ input[type=email]) {
   align-self: center;
   position: absolute;
   bottom: 1.2rem;
-  background-color: #232323;
-  border: none;
+  background-color: #1e1e1e;
+  border: 0.1rem solid transparent;
   border-radius: 0.5rem;
   font-size: 10pt;
   color: #ebebeb;
@@ -10925,6 +10847,7 @@ input[type=email]) {
 }
 .container .mainContent .rightOrLowerPart .rightOrLowerPartContainer .projects .cyber .extras:hover {
   background-color: #545146;
+  border: 0.1rem solid #8B8B8B;
 }
 @media (min-width: 300px) and (max-width: 350px) {
   .container .mainContent .rightOrLowerPart .rightOrLowerPartContainer .projects .cyber .extras {
@@ -11413,7 +11336,7 @@ input[type=email]) {
   transform: scale(102%);
   animation: cyberList 0.2s linear 1;
   scroll-margin-bottom: 7rem;
-  background-color: #232323;
+  background-color: #1e1e1e;
   border-radius: 0.5rem;
   border: 0.1rem solid #545146;
   z-index: 1;
@@ -11540,8 +11463,8 @@ input[type=email]) {
 .container .mainContent .rightOrLowerPart .cyberList .titleAndButton .close {
   width: 7rem;
   height: 2.5rem;
-  background-color: #232323;
-  border: none;
+  background-color: #1e1e1e;
+  border: 0.1rem solid transparent;
   border-radius: 0.5rem;
   font-size: 10pt;
   color: #ebebeb;
@@ -11550,6 +11473,7 @@ input[type=email]) {
 }
 .container .mainContent .rightOrLowerPart .cyberList .titleAndButton .close:hover {
   background-color: #545146;
+  border: 0.1rem solid #8B8B8B;
 }
 @media (min-width: 300px) and (max-width: 350px) {
   .container .mainContent .rightOrLowerPart .cyberList .titleAndButton .close {
@@ -11628,7 +11552,7 @@ input[type=email]) {
   width: 98%;
   height: 14.9rem;
   position: relative;
-  background-color: #2a2a2a;
+  background-color: #232323;
   border-radius: 0.5rem;
 }
 @media (min-width: 300px) and (max-width: 400px) {
@@ -11700,7 +11624,7 @@ input[type=email]) {
   border-radius: 0.5rem;
   font-size: 10pt;
   font-weight: 500;
-  color: #2a2a2a;
+  color: #000000;
   cursor: default;
   transition: all 0.2s ease;
 }
@@ -11710,8 +11634,7 @@ input[type=email]) {
     height: 2.3rem;
     bottom: 1rem;
     left: 0.5rem;
-    background-color: #232323;
-    color: #a6a6a6;
+    background-color: #1e1e1e;
     font-size: 9.5pt;
   }
 }
@@ -11721,8 +11644,7 @@ input[type=email]) {
     height: 2.3rem;
     bottom: 1rem;
     left: 0.5rem;
-    background-color: #232323;
-    color: #a6a6a6;
+    background-color: #1e1e1e;
     font-size: 9.5pt;
   }
 }
@@ -11732,8 +11654,7 @@ input[type=email]) {
     height: 2.5rem;
     bottom: 1rem;
     left: 0.5rem;
-    background-color: #232323;
-    color: #a6a6a6;
+    background-color: #1e1e1e;
   }
 }
 @media (width: 600px) {
@@ -11744,7 +11665,6 @@ input[type=email]) {
     bottom: unset;
     left: 2rem;
     background-color: #2a2a2a;
-    color: #2a2a2a;
   }
 }
 @media (min-width: 600px) and (max-width: 800px) {
@@ -11822,7 +11742,7 @@ input[type=email]) {
   left: 2rem;
   align-self: center;
   background-color: #545146;
-  border: none;
+  border: 0.1rem solid transparent;
   border-radius: 0.5rem;
   font-size: 10pt;
   font-weight: 500;
@@ -11832,6 +11752,7 @@ input[type=email]) {
 }
 .container .mainContent .rightOrLowerPart .cyberList .content .previous:hover {
   background-color: #5c4f43;
+  border: 0.1rem solid #8B8B8B;
 }
 @media (min-width: 300px) and (max-width: 350px) {
   .container .mainContent .rightOrLowerPart .cyberList .content .previous {
@@ -11947,7 +11868,7 @@ input[type=email]) {
   border-radius: 0.5rem;
   font-size: 10pt;
   font-weight: 500;
-  color: #2a2a2a;
+  color: #000000;
   cursor: default;
   transition: all 0.2s ease;
 }
@@ -11957,8 +11878,7 @@ input[type=email]) {
     height: 2.3rem;
     bottom: 1rem;
     left: 7rem;
-    background-color: #232323;
-    color: #a6a6a6;
+    background-color: #1e1e1e;
     font-size: 9pt;
   }
 }
@@ -11968,8 +11888,7 @@ input[type=email]) {
     height: 2.3rem;
     bottom: 1rem;
     left: 8rem;
-    background-color: #232323;
-    color: #a6a6a6;
+    background-color: #1e1e1e;
     font-size: 9pt;
   }
 }
@@ -11981,7 +11900,6 @@ input[type=email]) {
     right: 2rem;
     left: unset;
     background-color: #2a2a2a;
-    color: #2a2a2a;
     font-size: 10pt;
   }
 }
@@ -12060,7 +11978,7 @@ input[type=email]) {
   right: 2rem;
   align-self: center;
   background-color: #545146;
-  border: none;
+  border: 0.1rem solid transparent;
   border-radius: 0.5rem;
   font-size: 10pt;
   font-weight: 500;
@@ -12070,6 +11988,7 @@ input[type=email]) {
 }
 .container .mainContent .rightOrLowerPart .cyberList .content .next:hover {
   background-color: #5c4f43;
+  border: 0.1rem solid #8B8B8B;
 }
 @media (min-width: 300px) and (max-width: 350px) {
   .container .mainContent .rightOrLowerPart .cyberList .content .next {
@@ -12172,7 +12091,7 @@ input[type=email]) {
   right: 2.5rem;
   bottom: 1rem;
   font-size: 9.5pt;
-  color: #a6a6a6;
+  color: #8B8B8B;
 }
 @media (min-width: 300px) and (max-width: 350px) {
   .container .mainContent .rightOrLowerPart .cyberList .content p {
@@ -12241,7 +12160,7 @@ input[type=email]) {
   transform: scale(102%);
   animation: webList 0.2s linear 1;
   scroll-margin-bottom: 5rem;
-  background-color: #232323;
+  background-color: #1e1e1e;
   border-radius: 0.5rem;
   border: 0.1rem solid #5c4f43;
   z-index: 1;
@@ -12331,8 +12250,8 @@ input[type=email]) {
 .container .mainContent .rightOrLowerPart .webList .titleAndButton .close {
   width: 7rem;
   height: 2.5rem;
-  background-color: #232323;
-  border: none;
+  background-color: #1e1e1e;
+  border: 0.1rem solid transparent;
   border-radius: 0.5rem;
   font-size: 10pt;
   color: #ebebeb;
@@ -12341,6 +12260,7 @@ input[type=email]) {
 }
 .container .mainContent .rightOrLowerPart .webList .titleAndButton .close:hover {
   background-color: #5c4f43;
+  border: 0.1rem solid #8B8B8B;
 }
 @media (min-width: 600px) and (max-width: 800px) {
   .container .mainContent .rightOrLowerPart .webList .titleAndButton .close {
@@ -12406,7 +12326,7 @@ input[type=email]) {
   width: 98%;
   height: 14.9rem;
   position: relative;
-  background-color: #2a2a2a;
+  background-color: #232323;
   border-radius: 0.5rem;
 }
 @media (min-width: 1023px) and (max-width: 1200px) {
@@ -12451,7 +12371,7 @@ input[type=email]) {
   border-radius: 0.5rem;
   font-size: 10pt;
   font-weight: 500;
-  color: #2a2a2a;
+  color: #000000;
   cursor: default;
   transition: all 0.2s ease;
 }
@@ -12463,7 +12383,6 @@ input[type=email]) {
     bottom: unset;
     left: 2rem;
     background-color: #2a2a2a;
-    color: #2a2a2a;
   }
 }
 @media (min-width: 600px) and (max-width: 700px) {
@@ -12541,7 +12460,7 @@ input[type=email]) {
   left: 2rem;
   align-self: center;
   background-color: #5c4f43;
-  border: none;
+  border: 0.1rem solid transparent;
   border-radius: 0.5rem;
   font-size: 10pt;
   font-weight: 500;
@@ -12551,6 +12470,7 @@ input[type=email]) {
 }
 .container .mainContent .rightOrLowerPart .webList .content .previous:hover {
   background-color: #545146;
+  border: 0.1rem solid #8B8B8B;
 }
 @media (width: 600px) {
   .container .mainContent .rightOrLowerPart .webList .content .previous {
@@ -12640,7 +12560,7 @@ input[type=email]) {
   border-radius: 0.5rem;
   font-size: 10pt;
   font-weight: 500;
-  color: #2a2a2a;
+  color: #000000;
   cursor: default;
   transition: all 0.2s ease;
 }
@@ -12652,7 +12572,6 @@ input[type=email]) {
     right: 2rem;
     left: unset;
     background-color: #2a2a2a;
-    color: #2a2a2a;
     font-size: 10pt;
   }
 }
@@ -12731,7 +12650,7 @@ input[type=email]) {
   right: 2rem;
   align-self: center;
   background-color: #5c4f43;
-  border: none;
+  border: 0.1rem solid transparent;
   border-radius: 0.5rem;
   font-size: 10pt;
   font-weight: 500;
@@ -12741,6 +12660,7 @@ input[type=email]) {
 }
 .container .mainContent .rightOrLowerPart .webList .content .next:hover {
   background-color: #545146;
+  border: 0.1rem solid #8B8B8B;
 }
 @media (width: 600px) {
   .container .mainContent .rightOrLowerPart .webList .content .next {
@@ -12825,7 +12745,7 @@ input[type=email]) {
   right: 2.5rem;
   bottom: 1rem;
   font-size: 9.5pt;
-  color: #a6a6a6;
+  color: #8B8B8B;
 }
 @media (width: 600px) {
   .container .mainContent .rightOrLowerPart .webList .content p {
@@ -12870,7 +12790,7 @@ input[type=email]) {
 .container .unfocusedContactButton {
   width: 7rem;
   height: 2.5rem;
-  background-color: #232323;
+  background-color: #1e1e1e;
   border: none;
   border-radius: 0.5rem;
   font-size: 10pt;
@@ -12948,7 +12868,7 @@ input[type=email]) {
   width: 7rem;
   height: 2.5rem;
   position: relative;
-  background-color: #232323;
+  background-color: #1e1e1e;
   border: none;
   border-radius: 0.5rem;
   font-size: 10pt;
@@ -13039,7 +12959,7 @@ input[type=email]) {
   width: 7rem;
   height: 2.5rem;
   position: relative;
-  background-color: #232323;
+  background-color: #1e1e1e;
   border: none;
   border-radius: 0.5rem;
   font-size: 10pt;
@@ -13134,7 +13054,7 @@ input[type=email]) {
   align-self: center;
   position: absolute;
   bottom: 1.2rem;
-  background-color: #232323;
+  background-color: #1e1e1e;
   border: none;
   border-radius: 0.5rem;
   font-size: 10pt;
@@ -13274,7 +13194,7 @@ input[type=email]) {
 }
 
 body {
-  background-color: #232323;
+  background-color: #1e1e1e;
   scroll-behavior: smooth;
 }
 
