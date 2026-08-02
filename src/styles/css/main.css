@@ -709,7 +709,7 @@
 }
 @media (min-width: 330px) and (max-width: 380px) {
   .container .header .contactForm {
-    width: 90%;
+    width: 98%;
     height: 27.3rem;
     top: 6rem;
     right: unset;
@@ -731,7 +731,7 @@
 }
 @media (min-width: 380px) and (max-width: 400px) {
   .container .header .contactForm {
-    width: 80%;
+    width: 98%;
     height: 27.3rem;
     top: 6rem;
     right: unset;
@@ -2066,6 +2066,11 @@ input[type=email]) {
 @media (min-width: 400px) and (max-width: 800px) {
   .container .header .contactForm form .buttons {
     top: 18.5rem;
+  }
+}
+@media (width: 400px) {
+  .container .header .contactForm form .buttons {
+    top: 18.9rem;
   }
 }
 @media (min-width: 800px) and (max-width: 1023px) {
@@ -3420,6 +3425,41 @@ input[type=email]) {
     cursor: default;
   }
 }
+.container .mainContent .leftOrUpperPart .aboutMeAndImagesAndEstimatesList .aboutMeAndImage .aboutMeAndEstimatesList .estimatesList .content {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  -moz-column-gap: 10%;
+       column-gap: 10%;
+  align-self: center;
+  align-items: center;
+  width: 98%;
+  height: 14.9rem;
+  position: relative;
+  background-color: #2a2a2a;
+  border-radius: 0.5rem;
+}
+@media (min-width: 300px) and (max-width: 400px) {
+  .container .mainContent .leftOrUpperPart .aboutMeAndImagesAndEstimatesList .aboutMeAndImage .aboutMeAndEstimatesList .estimatesList .content {
+    width: 95%;
+    height: 24.7rem;
+    align-items: unset;
+  }
+}
+@media (min-width: 400px) and (max-width: 500px) {
+  .container .mainContent .leftOrUpperPart .aboutMeAndImagesAndEstimatesList .aboutMeAndImage .aboutMeAndEstimatesList .estimatesList .content {
+    width: 96%;
+    height: 24.5rem;
+    align-items: unset;
+  }
+}
+@media (min-width: 500px) and (max-width: 600px) {
+  .container .mainContent .leftOrUpperPart .aboutMeAndImagesAndEstimatesList .aboutMeAndImage .aboutMeAndEstimatesList .estimatesList .content {
+    width: 96%;
+    height: 26.4rem;
+    align-items: unset;
+  }
+}
 .container .mainContent .leftOrUpperPart .aboutMeAndImagesAndEstimatesList .estimatesList {
   display: flex;
   flex-direction: column;
@@ -3476,11 +3516,6 @@ input[type=email]) {
   padding: 0.8rem 1rem;
   background-color: #5c4f43;
   border-radius: 0.4rem 0.4rem 0 0;
-}
-@media (width: 600px) {
-  .container .mainContent .leftOrUpperPart .aboutMeAndImagesAndEstimatesList .estimatesList .titleAndButton {
-    padding: 0.8rem 2rem;
-  }
 }
 @media (min-width: 1023px) and (max-width: 1200px) {
   .container .mainContent .leftOrUpperPart .aboutMeAndImagesAndEstimatesList .estimatesList .titleAndButton {
@@ -3598,6 +3633,37 @@ input[type=email]) {
     width: 6.2rem;
     height: 2.2rem;
     font-size: 9pt;
+  }
+}
+.container .mainContent .leftOrUpperPart .aboutMeAndImagesAndEstimatesList .estimatesList .content {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  -moz-column-gap: 10%;
+       column-gap: 10%;
+  align-self: center;
+  align-items: center;
+  width: 98%;
+  height: 84.5%;
+  position: relative;
+  background-color: #2a2a2a;
+  border-radius: 0.5rem;
+}
+@media (min-width: 600px) and (max-width: 1023px) {
+  .container .mainContent .leftOrUpperPart .aboutMeAndImagesAndEstimatesList .estimatesList .content {
+    height: 77.2%;
+    align-items: unset;
+  }
+}
+@media (width: 600px) {
+  .container .mainContent .leftOrUpperPart .aboutMeAndImagesAndEstimatesList .estimatesList .content {
+    height: 77.2%;
+    align-items: unset;
+  }
+}
+@media (orientation: portrait) and (min-width: 1023px) and (max-width: 1100px) {
+  .container .mainContent .leftOrUpperPart .aboutMeAndImagesAndEstimatesList .estimatesList .content {
+    height: 75.4%;
   }
 }
 .container .mainContent .leftOrUpperPart .skillsAndEducation {
@@ -6754,11 +6820,6 @@ input[type=email]) {
   background-color: #5c4f43;
   border-radius: 0.4rem 0.4rem 0 0;
 }
-@media (width: 600px) {
-  .container .mainContent .leftOrUpperPart .skillsList .titleAndButton {
-    padding: 0.8rem 2rem;
-  }
-}
 @media (min-width: 1023px) and (max-width: 1200px) {
   .container .mainContent .leftOrUpperPart .skillsList .titleAndButton {
     padding: 0.5rem 0.7rem;
@@ -9444,6 +9505,68 @@ input[type=email]) {
     font-size: 9pt;
   }
 }
+.container .mainContent .rightOrLowerPart .estimatesList .content {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  -moz-column-gap: 10%;
+       column-gap: 10%;
+  align-self: center;
+  align-items: center;
+  width: 97%;
+  height: 84.6%;
+  position: relative;
+  background-color: #2a2a2a;
+  border-radius: 0.5rem;
+}
+@media (min-width: 1023px) and (max-width: 1100px) {
+  .container .mainContent .rightOrLowerPart .estimatesList .content {
+    height: 84%;
+    align-items: unset;
+  }
+}
+@media (width: 1100px) {
+  .container .mainContent .rightOrLowerPart .estimatesList .content {
+    height: 84.8%;
+    align-items: unset;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1300px) {
+  .container .mainContent .rightOrLowerPart .estimatesList .content {
+    height: 84.8%;
+    align-items: unset;
+  }
+}
+@media (width: 1200px) {
+  .container .mainContent .rightOrLowerPart .estimatesList .content {
+    height: 84.8%;
+    align-items: unset;
+  }
+}
+@media (min-width: 1300px) and (max-width: 1400px) {
+  .container .mainContent .rightOrLowerPart .estimatesList .content {
+    height: 84.4%;
+    align-items: unset;
+  }
+}
+@media (width: 1300px) {
+  .container .mainContent .rightOrLowerPart .estimatesList .content {
+    height: 85.5%;
+    align-items: unset;
+  }
+}
+@media (min-width: 1400px) and (max-width: 1500px) {
+  .container .mainContent .rightOrLowerPart .estimatesList .content {
+    height: 83.8%;
+    align-items: unset;
+  }
+}
+@media (width: 1400px) {
+  .container .mainContent .rightOrLowerPart .estimatesList .content {
+    height: 84.8%;
+    align-items: unset;
+  }
+}
 .container .mainContent .rightOrLowerPart .rightOrLowerPartContainer {
   display: flex;
   flex-direction: column;
@@ -11345,18 +11468,13 @@ input[type=email]) {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding: 0.8rem 2rem;
+  padding: 0.8rem 1rem;
   background-color: #5c4f43;
   border-radius: 0.4rem 0.4rem 0 0;
 }
 @media (min-width: 400px) and (max-width: 600px) {
   .container .mainContent .rightOrLowerPart .cyberList .titleAndButton {
     padding: 0.8rem 1.2rem;
-  }
-}
-@media (width: 600px) {
-  .container .mainContent .rightOrLowerPart .cyberList .titleAndButton {
-    padding: 0.8rem 2rem;
   }
 }
 @media (min-width: 1023px) and (max-width: 1200px) {
@@ -12161,7 +12279,7 @@ input[type=email]) {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding: 0.8rem 2rem;
+  padding: 0.8rem 1rem;
   background-color: #545146;
   border-radius: 0.4rem 0.4rem 0 0;
 }
