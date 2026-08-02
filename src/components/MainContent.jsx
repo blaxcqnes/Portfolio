@@ -1,9 +1,9 @@
 import LeftOrUpperPart from './LeftOrUpperPart';
 import RightOrLowerPart from './RightOrLowerPart';
 import me from '../images/mainContent_leftOrUpperPart/me.jpg';
-import kaffa from '../images/mainContent_rightOrLowerPart/kaffa.png';
-import veila from '../images/mainContent_rightOrLowerPart/veila.png';
-import guessGame from '../images/mainContent_rightOrLowerPart/guessGame.png';
+import kaffa from '../images/mainContent_rightOrLowerPart/kaffa.jpg';
+import veila from '../images/mainContent_rightOrLowerPart/veila.jpg';
+import guessGame from '../images/mainContent_rightOrLowerPart/guessGame.jpg';
 
 export default function MainContent({
   isContactFormOpen,
