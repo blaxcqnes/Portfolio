@@ -266,12 +266,12 @@
     height: auto;
   }
 }
-@media (orientation: portrait) and (min-width: 1100px) and (min-height: 1500px) {
+@media (orientation: portrait) and (min-width: 1100px) and (min-height: 1470px) {
   .container {
     height: 100dvh;
   }
 }
-@media (orientation: portrait) and (max-width: 1100px) and (max-height: 1500px) {
+@media (orientation: portrait) and (max-width: 1100px) and (max-height: 1470px) {
   .container {
     height: auto;
   }
@@ -579,7 +579,7 @@
   width: 7rem;
   height: 2.5rem;
   background-color: #1e1e1e;
-  border: 0.1px solid transparent;
+  border: none;
   border-radius: 0.5rem;
   font-size: 10pt;
   color: #ebebeb;
@@ -588,7 +588,7 @@
 }
 .container .header .headerContainer .locationAndContact .contact:hover {
   background-color: #545146;
-  border: 0.1rem solid #8B8B8B;
+  box-shadow: inset 0 0 0 0.1rem #8B8B8B;
 }
 @media (min-width: 300px) and (max-width: 350px) {
   .container .header .headerContainer .locationAndContact .contact {
@@ -620,6 +620,9 @@
   .container .header .headerContainer .locationAndContact .contact {
     cursor: default;
   }
+  .container .header .headerContainer .locationAndContact .contact:hover {
+    box-shadow: none;
+  }
 }
 @media (min-width: 1023px) and (max-width: 1100px) {
   .container .header .headerContainer .locationAndContact .contact {
@@ -633,6 +636,9 @@
     width: 7rem;
     height: 2.5rem;
     font-size: 10pt;
+  }
+  .container .header .headerContainer .locationAndContact .contact:hover {
+    box-shadow: none;
   }
 }
 @media (min-width: 1100px) and (max-width: 1200px) {
@@ -754,7 +760,7 @@
 }
 @media (min-width: 400px) and (max-width: 500px) {
   .container .header .contactForm {
-    width: 80%;
+    width: 20rem;
     height: 27.3rem;
     top: 6.25rem;
     right: unset;
@@ -776,7 +782,7 @@
 }
 @media (width: 400px) {
   .container .header .contactForm {
-    width: 80%;
+    width: 20rem;
     height: 27.3rem;
     top: 6rem;
     right: unset;
@@ -1247,7 +1253,7 @@
   position: relative;
   align-self: center;
   background-color: #1e1e1e;
-  border: 0.1rem solid transparent;
+  border: none;
   border-radius: 0.5rem;
   font-size: 10pt;
   color: #ebebeb;
@@ -1256,7 +1262,7 @@
 }
 .container .header .contactForm .titleAndButton .close:hover {
   background-color: #545146;
-  border: 0.1rem solid #8B8B8B;
+  box-shadow: inset 0 0 0 0.1rem #8B8B8B;
 }
 @media (min-width: 300px) and (max-width: 350px) {
   .container .header .contactForm .titleAndButton .close {
@@ -1271,15 +1277,25 @@
     height: 2.3rem;
   }
 }
-@media (min-width: 700px) and (max-width: 763px) {
+@media (min-width: 600px) and (max-width: 800px) {
   .container .header .contactForm .titleAndButton .close {
     width: 6rem;
     font-size: 9pt;
   }
 }
+@media (width: 800px) {
+  .container .header .contactForm .titleAndButton .close {
+    width: 7rem;
+    height: 2.5rem;
+    font-size: 10pt;
+  }
+}
 @media (min-width: 300px) and (max-width: 1023px) {
   .container .header .contactForm .titleAndButton .close {
     cursor: default;
+  }
+  .container .header .contactForm .titleAndButton .close:hover {
+    box-shadow: none;
   }
 }
 @media (min-width: 1023px) and (max-width: 1100px) {
@@ -1294,6 +1310,9 @@
     width: 7rem;
     height: 2.5rem;
     font-size: 10pt;
+  }
+  .container .header .contactForm .titleAndButton .close:hover {
+    box-shadow: none;
   }
 }
 @media (min-width: 1100px) and (max-width: 1200px) {
@@ -1739,6 +1758,7 @@
   border: 0.1rem solid #545146;
   border-radius: 0.5rem;
   background-color: #232323;
+  font-size: 10pt;
 }
 .container .header .contactForm form .allInOneForm .name:focus:where(input[type=text],
 input[type=search],
@@ -1765,13 +1785,13 @@ input[type=email]) {
 @media (min-width: 1023px) and (max-width: 1100px) {
   .container .header .contactForm form .allInOneForm .name {
     height: 2rem;
-    font-size: 8.2pt;
+    font-size: 8pt;
   }
 }
 @media (orientation: portrait) and (min-width: 1023px) and (max-width: 1100px) {
   .container .header .contactForm form .allInOneForm .name {
     height: 3rem;
-    font-size: 10pt;
+    font-size: 11pt;
   }
 }
 @media (min-width: 1100px) and (max-width: 1200px) {
@@ -1799,6 +1819,7 @@ input[type=email]) {
   border: 0.1rem solid #545146;
   border-radius: 0.5rem;
   background-color: #232323;
+  font-size: 10pt;
 }
 .container .header .contactForm form .allInOneForm .subject:focus:where(input[type=text],
 input[type=search],
@@ -1825,13 +1846,13 @@ input[type=email]) {
 @media (min-width: 1023px) and (max-width: 1100px) {
   .container .header .contactForm form .allInOneForm .subject {
     height: 2rem;
-    font-size: 8.2pt;
+    font-size: 8pt;
   }
 }
 @media (orientation: portrait) and (min-width: 1023px) and (max-width: 1100px) {
   .container .header .contactForm form .allInOneForm .subject {
     height: 3rem;
-    font-size: 10pt;
+    font-size: 11pt;
   }
 }
 @media (min-width: 1100px) and (max-width: 1200px) {
@@ -1859,6 +1880,7 @@ input[type=email]) {
   border: 0.1rem solid #545146;
   border-radius: 0.5rem;
   background-color: #232323;
+  font-size: 10pt;
 }
 .container .header .contactForm form .allInOneForm .email:focus:where(input[type=text],
 input[type=search],
@@ -1885,13 +1907,13 @@ input[type=email]) {
 @media (min-width: 1023px) and (max-width: 1100px) {
   .container .header .contactForm form .allInOneForm .email {
     height: 2rem;
-    font-size: 8.2pt;
+    font-size: 8pt;
   }
 }
 @media (orientation: portrait) and (min-width: 1023px) and (max-width: 1100px) {
   .container .header .contactForm form .allInOneForm .email {
     height: 3rem;
-    font-size: 10pt;
+    font-size: 11pt;
   }
 }
 @media (min-width: 1100px) and (max-width: 1200px) {
@@ -1920,6 +1942,7 @@ input[type=email]) {
   border-radius: 0.5rem;
   background-color: #232323;
   resize: none;
+  font-size: 10pt;
 }
 .container .header .contactForm form .allInOneForm .textArea:focus:where(textarea) {
   -webkit-appearance: none;
@@ -1942,24 +1965,24 @@ input[type=email]) {
 @media (min-width: 1023px) and (max-width: 1100px) {
   .container .header .contactForm form .allInOneForm .textArea {
     height: 5.5rem;
-    font-size: 9pt;
+    font-size: 8pt;
   }
 }
 @media (orientation: portrait) and (min-width: 1023px) and (max-width: 1100px) {
   .container .header .contactForm form .allInOneForm .textArea {
-    height: 9.5rem;
+    height: 9rem;
+    font-size: 11pt;
   }
 }
 @media (min-width: 1100px) and (max-width: 1200px) {
   .container .header .contactForm form .allInOneForm .textArea {
     height: 6.5rem;
-    font-size: 10pt;
+    font-size: 9pt;
   }
 }
 @media (min-width: 1200px) and (max-width: 1300px) {
   .container .header .contactForm form .allInOneForm .textArea {
     height: 6.8rem;
-    font-size: 10pt;
   }
 }
 @media (min-width: 1300px) and (max-width: 1400px) {
@@ -2043,13 +2066,13 @@ input[type=email]) {
   height: 2.5rem;
   align-self: center;
   background-color: #5c4f43;
-  border: 0.1rem solid transparent;
+  border: none;
   border-radius: 0.5rem;
   font-size: 10pt;
   color: #ebebeb;
   cursor: pointer;
   animation: send 0.1s linear 1;
-  transition: all 0.1s ease;
+  transition: all 0.2s ease;
 }
 @keyframes send {
   0% {
@@ -2061,7 +2084,7 @@ input[type=email]) {
 }
 .container .header .contactForm form .buttons .send:hover {
   background-color: #545146;
-  border: 0.1rem solid #8B8B8B;
+  box-shadow: inset 0 0 0 0.1rem #8B8B8B;
 }
 @media (min-width: 300px) and (max-width: 400px) {
   .container .header .contactForm form .buttons .send {
@@ -2085,6 +2108,9 @@ input[type=email]) {
   .container .header .contactForm form .buttons .send {
     cursor: default;
   }
+  .container .header .contactForm form .buttons .send:hover {
+    box-shadow: none;
+  }
 }
 @media (min-width: 1023px) and (max-width: 1100px) {
   .container .header .contactForm form .buttons .send {
@@ -2098,6 +2124,9 @@ input[type=email]) {
     width: 7rem;
     height: 2.5rem;
     font-size: 10pt;
+  }
+  .container .header .contactForm form .buttons .send:hover {
+    box-shadow: none;
   }
 }
 @media (min-width: 1100px) and (max-width: 1200px) {
@@ -2131,7 +2160,7 @@ input[type=email]) {
   font-size: 10pt;
   color: #000000;
   animation: sendDisabled 0.1s linear 1;
-  transition: all 0.1s ease;
+  transition: all 0.2s ease;
 }
 @keyframes sendDisabled {
   0% {
@@ -2204,13 +2233,13 @@ input[type=email]) {
   height: 2.5rem;
   align-self: center;
   background-color: #91372b;
-  border: 0.1rem solid transparent;
+  border: none;
   border-radius: 0.5rem;
   font-size: 10pt;
   color: #ebebeb;
   cursor: pointer;
   animation: reset 0.1s linear 1;
-  transition: all 0.1s ease;
+  transition: all 0.2s ease;
 }
 @keyframes reset {
   0% {
@@ -2222,7 +2251,7 @@ input[type=email]) {
 }
 .container .header .contactForm form .buttons .reset:hover {
   background-color: #722f26;
-  border: 0.1rem solid #8B8B8B;
+  box-shadow: inset 0 0 0 0.1rem #8B8B8B;
 }
 @media (min-width: 300px) and (max-width: 400px) {
   .container .header .contactForm form .buttons .reset {
@@ -2246,6 +2275,9 @@ input[type=email]) {
   .container .header .contactForm form .buttons .reset {
     cursor: default;
   }
+  .container .header .contactForm form .buttons .reset:hover {
+    box-shadow: none;
+  }
 }
 @media (min-width: 1023px) and (max-width: 1100px) {
   .container .header .contactForm form .buttons .reset {
@@ -2259,6 +2291,9 @@ input[type=email]) {
     width: 7rem;
     height: 2.5rem;
     font-size: 10pt;
+  }
+  .container .header .contactForm form .buttons .reset:hover {
+    box-shadow: none;
   }
 }
 @media (min-width: 1100px) and (max-width: 1200px) {
@@ -2918,7 +2953,7 @@ input[type=email]) {
   height: 2.5rem;
   position: relative;
   background-color: #1e1e1e;
-  border: 0.1rem solid transparent;
+  border: none;
   border-radius: 0.5rem;
   font-size: 10pt;
   color: #ebebeb;
@@ -2927,7 +2962,7 @@ input[type=email]) {
 }
 .container .mainContent .leftOrUpperPart .aboutMeAndImagesAndEstimatesList .aboutMeAndImage .aboutMeAndEstimatesList .aboutMe .titleAndButton .estimates:hover {
   background-color: #545146;
-  border: 0.1rem solid #8B8B8B;
+  box-shadow: inset 0 0 0 0.1rem #8B8B8B;
 }
 @media (min-width: 300px) and (max-width: 600px) {
   .container .mainContent .leftOrUpperPart .aboutMeAndImagesAndEstimatesList .aboutMeAndImage .aboutMeAndEstimatesList .aboutMe .titleAndButton .estimates {
@@ -2956,6 +2991,9 @@ input[type=email]) {
   .container .mainContent .leftOrUpperPart .aboutMeAndImagesAndEstimatesList .aboutMeAndImage .aboutMeAndEstimatesList .aboutMe .titleAndButton .estimates {
     cursor: default;
   }
+  .container .mainContent .leftOrUpperPart .aboutMeAndImagesAndEstimatesList .aboutMeAndImage .aboutMeAndEstimatesList .aboutMe .titleAndButton .estimates:hover {
+    box-shadow: none;
+  }
 }
 @media (min-width: 1023px) and (max-width: 1100px) {
   .container .mainContent .leftOrUpperPart .aboutMeAndImagesAndEstimatesList .aboutMeAndImage .aboutMeAndEstimatesList .aboutMe .titleAndButton .estimates {
@@ -2969,6 +3007,9 @@ input[type=email]) {
     width: 7rem;
     height: 2.5rem;
     font-size: 10pt;
+  }
+  .container .mainContent .leftOrUpperPart .aboutMeAndImagesAndEstimatesList .aboutMeAndImage .aboutMeAndEstimatesList .aboutMe .titleAndButton .estimates:hover {
+    box-shadow: none;
   }
 }
 @media (min-width: 1100px) and (max-width: 1200px) {
@@ -3215,7 +3256,7 @@ input[type=email]) {
   width: 7rem;
   height: 2.5rem;
   background-color: #1e1e1e;
-  border: 0.1rem solid transparent;
+  border: none;
   border-radius: 0.5rem;
   font-size: 10pt;
   color: #ebebeb;
@@ -3224,7 +3265,7 @@ input[type=email]) {
 }
 .container .mainContent .leftOrUpperPart .aboutMeAndImagesAndEstimatesList .aboutMeAndImage .aboutMeAndEstimatesList .aboutMe .locationAndEstimatesButton .estimates:hover {
   background-color: #545146;
-  border: 0.1rem solid #8B8B8B;
+  box-shadow: inset 0 0 0 0.1rem #8B8B8B;
 }
 @media (min-width: 300px) and (max-width: 350px) {
   .container .mainContent .leftOrUpperPart .aboutMeAndImagesAndEstimatesList .aboutMeAndImage .aboutMeAndEstimatesList .aboutMe .locationAndEstimatesButton .estimates {
@@ -3243,6 +3284,9 @@ input[type=email]) {
   .container .mainContent .leftOrUpperPart .aboutMeAndImagesAndEstimatesList .aboutMeAndImage .aboutMeAndEstimatesList .aboutMe .locationAndEstimatesButton .estimates {
     cursor: default;
   }
+  .container .mainContent .leftOrUpperPart .aboutMeAndImagesAndEstimatesList .aboutMeAndImage .aboutMeAndEstimatesList .aboutMe .locationAndEstimatesButton .estimates:hover {
+    box-shadow: none;
+  }
 }
 .container .mainContent .leftOrUpperPart .aboutMeAndImagesAndEstimatesList .aboutMeAndImage .aboutMeAndEstimatesList .estimatesList {
   display: flex;
@@ -3252,7 +3296,7 @@ input[type=email]) {
   height: 100%;
   transform: scale(102%);
   animation: estimatesList 0.2s linear 1;
-  scroll-margin-bottom: 5rem;
+  scroll-margin-bottom: 7rem;
   background-color: #1e1e1e;
   border-radius: 0.5rem;
   border: 0.1rem solid #545146;
@@ -3280,11 +3324,6 @@ input[type=email]) {
 @media (min-width: 500px) and (max-width: 600px) {
   .container .mainContent .leftOrUpperPart .aboutMeAndImagesAndEstimatesList .aboutMeAndImage .aboutMeAndEstimatesList .estimatesList {
     height: 32rem;
-  }
-}
-@media (width: 600px) {
-  .container .mainContent .leftOrUpperPart .aboutMeAndImagesAndEstimatesList .aboutMeAndImage .aboutMeAndEstimatesList .estimatesList {
-    height: 22rem;
   }
 }
 .container .mainContent .leftOrUpperPart .aboutMeAndImagesAndEstimatesList .aboutMeAndImage .aboutMeAndEstimatesList .estimatesList .titleAndButton {
@@ -3326,7 +3365,7 @@ input[type=email]) {
   position: relative;
   align-self: center;
   background-color: #1e1e1e;
-  border: 0.1rem solid transparent;
+  border: none;
   border-radius: 0.5rem;
   font-size: 10pt;
   color: #ebebeb;
@@ -3335,7 +3374,7 @@ input[type=email]) {
 }
 .container .mainContent .leftOrUpperPart .aboutMeAndImagesAndEstimatesList .aboutMeAndImage .aboutMeAndEstimatesList .estimatesList .titleAndButton .close:hover {
   background-color: #545146;
-  border: 0.1rem solid #8B8B8B;
+  box-shadow: inset 0 0 0 0.1rem #8B8B8B;
 }
 @media (min-width: 300px) and (max-width: 350px) {
   .container .mainContent .leftOrUpperPart .aboutMeAndImagesAndEstimatesList .aboutMeAndImage .aboutMeAndEstimatesList .estimatesList .titleAndButton .close {
@@ -3353,6 +3392,9 @@ input[type=email]) {
 @media (min-width: 300px) and (max-width: 1023px) {
   .container .mainContent .leftOrUpperPart .aboutMeAndImagesAndEstimatesList .aboutMeAndImage .aboutMeAndEstimatesList .estimatesList .titleAndButton .close {
     cursor: default;
+  }
+  .container .mainContent .leftOrUpperPart .aboutMeAndImagesAndEstimatesList .aboutMeAndImage .aboutMeAndEstimatesList .estimatesList .titleAndButton .close:hover {
+    box-shadow: none;
   }
 }
 .container .mainContent .leftOrUpperPart .aboutMeAndImagesAndEstimatesList .aboutMeAndImage .aboutMeAndEstimatesList .estimatesList .content {
@@ -3395,7 +3437,7 @@ input[type=email]) {
   flex-direction: column;
   row-gap: 2%;
   width: 100%;
-  height: 100%;
+  height: 20rem;
   transform: scale(102%);
   animation: estimatesList 0.2s linear 1;
   scroll-margin-bottom: 5rem;
@@ -3416,11 +3458,6 @@ input[type=email]) {
   100% {
     transform: scale(102%);
     opacity: 1;
-  }
-}
-@media (min-width: 600px) and (max-width: 1023px) {
-  .container .mainContent .leftOrUpperPart .aboutMeAndImagesAndEstimatesList .estimatesList {
-    height: 22rem;
   }
 }
 @media (min-width: 1023px) and (max-width: 1200px) {
@@ -3466,11 +3503,6 @@ input[type=email]) {
   font-size: 15pt;
   font-weight: 600;
 }
-@media (min-width: 1000px) and (max-width: 1023px) {
-  .container .mainContent .leftOrUpperPart .aboutMeAndImagesAndEstimatesList .estimatesList .titleAndButton h4 {
-    font-size: 16pt;
-  }
-}
 @media (min-width: 1023px) and (max-width: 1100px) {
   .container .mainContent .leftOrUpperPart .aboutMeAndImagesAndEstimatesList .estimatesList .titleAndButton h4 {
     font-size: 10pt;
@@ -3502,7 +3534,7 @@ input[type=email]) {
   position: relative;
   align-self: center;
   background-color: #1e1e1e;
-  border: 0.1rem solid transparent;
+  border: none;
   border-radius: 0.5rem;
   font-size: 10pt;
   color: #ebebeb;
@@ -3511,7 +3543,7 @@ input[type=email]) {
 }
 .container .mainContent .leftOrUpperPart .aboutMeAndImagesAndEstimatesList .estimatesList .titleAndButton .close:hover {
   background-color: #545146;
-  border: 0.1rem solid #8B8B8B;
+  box-shadow: inset 0 0 0 0.1rem #8B8B8B;
 }
 @media (min-width: 600px) and (max-width: 800px) {
   .container .mainContent .leftOrUpperPart .aboutMeAndImagesAndEstimatesList .estimatesList .titleAndButton .close {
@@ -3530,6 +3562,9 @@ input[type=email]) {
   .container .mainContent .leftOrUpperPart .aboutMeAndImagesAndEstimatesList .estimatesList .titleAndButton .close {
     cursor: default;
   }
+  .container .mainContent .leftOrUpperPart .aboutMeAndImagesAndEstimatesList .estimatesList .titleAndButton .close:hover {
+    box-shadow: none;
+  }
 }
 @media (min-width: 1023px) and (max-width: 1100px) {
   .container .mainContent .leftOrUpperPart .aboutMeAndImagesAndEstimatesList .estimatesList .titleAndButton .close {
@@ -3543,6 +3578,9 @@ input[type=email]) {
     width: 7rem;
     height: 2.5rem;
     font-size: 10pt;
+  }
+  .container .mainContent .leftOrUpperPart .aboutMeAndImagesAndEstimatesList .estimatesList .titleAndButton .close:hover {
+    box-shadow: none;
   }
 }
 @media (min-width: 1100px) and (max-width: 1200px) {
@@ -3575,26 +3613,15 @@ input[type=email]) {
   align-self: center;
   align-items: center;
   width: 98%;
-  height: 84.5%;
+  height: 14.9rem;
   position: relative;
   background-color: #232323;
   border-radius: 0.5rem;
 }
-@media (min-width: 600px) and (max-width: 1023px) {
-  .container .mainContent .leftOrUpperPart .aboutMeAndImagesAndEstimatesList .estimatesList .content {
-    height: 77.2%;
-    align-items: unset;
-  }
-}
-@media (width: 600px) {
-  .container .mainContent .leftOrUpperPart .aboutMeAndImagesAndEstimatesList .estimatesList .content {
-    height: 77.2%;
-    align-items: unset;
-  }
-}
 @media (orientation: portrait) and (min-width: 1023px) and (max-width: 1100px) {
   .container .mainContent .leftOrUpperPart .aboutMeAndImagesAndEstimatesList .estimatesList .content {
-    height: 75.4%;
+    width: 98.5%;
+    height: 14.9rem;
   }
 }
 .container .mainContent .leftOrUpperPart .skillsAndEducation {
@@ -3857,7 +3884,7 @@ input[type=email]) {
   height: 2.5rem;
   position: relative;
   background-color: #1e1e1e;
-  border: 0.1rem solid transparent;
+  border: none;
   border-radius: 0.5rem;
   font-size: 10pt;
   color: #ebebeb;
@@ -3866,7 +3893,7 @@ input[type=email]) {
 }
 .container .mainContent .leftOrUpperPart .skillsAndEducation .skillsAndSkillsList .skills .titleAndButton .fluency:hover {
   background-color: #545146;
-  border: 0.1rem solid #8B8B8B;
+  box-shadow: inset 0 0 0 0.1rem #8B8B8B;
 }
 @media (min-width: 300px) and (max-width: 350px) {
   .container .mainContent .leftOrUpperPart .skillsAndEducation .skillsAndSkillsList .skills .titleAndButton .fluency {
@@ -3913,6 +3940,9 @@ input[type=email]) {
   .container .mainContent .leftOrUpperPart .skillsAndEducation .skillsAndSkillsList .skills .titleAndButton .fluency {
     cursor: default;
   }
+  .container .mainContent .leftOrUpperPart .skillsAndEducation .skillsAndSkillsList .skills .titleAndButton .fluency:hover {
+    box-shadow: none;
+  }
 }
 @media (min-width: 1023px) and (max-width: 1100px) {
   .container .mainContent .leftOrUpperPart .skillsAndEducation .skillsAndSkillsList .skills .titleAndButton .fluency {
@@ -3926,6 +3956,9 @@ input[type=email]) {
     width: 7rem;
     height: 2.5rem;
     font-size: 10pt;
+  }
+  .container .mainContent .leftOrUpperPart .skillsAndEducation .skillsAndSkillsList .skills .titleAndButton .fluency:hover {
+    box-shadow: none;
   }
 }
 @media (min-width: 1100px) and (max-width: 1200px) {
@@ -4122,7 +4155,7 @@ input[type=email]) {
   position: relative;
   align-self: center;
   background-color: #1e1e1e;
-  border: 0.1rem solid transparent;
+  border: none;
   border-radius: 0.5rem;
   font-size: 10pt;
   color: #ebebeb;
@@ -4131,7 +4164,7 @@ input[type=email]) {
 }
 .container .mainContent .leftOrUpperPart .skillsAndEducation .skillsAndSkillsList .skillsList .titleAndButton .close:hover {
   background-color: #545146;
-  border: 0.1rem solid #8B8B8B;
+  box-shadow: inset 0 0 0 0.1rem #8B8B8B;
 }
 @media (min-width: 300px) and (max-width: 350px) {
   .container .mainContent .leftOrUpperPart .skillsAndEducation .skillsAndSkillsList .skillsList .titleAndButton .close {
@@ -4149,6 +4182,9 @@ input[type=email]) {
 @media (min-width: 300px) and (max-width: 1023px) {
   .container .mainContent .leftOrUpperPart .skillsAndEducation .skillsAndSkillsList .skillsList .titleAndButton .close {
     cursor: default;
+  }
+  .container .mainContent .leftOrUpperPart .skillsAndEducation .skillsAndSkillsList .skillsList .titleAndButton .close:hover {
+    box-shadow: none;
   }
 }
 .container .mainContent .leftOrUpperPart .skillsAndEducation .skillsAndSkillsList .skillsList .content {
@@ -4252,7 +4288,7 @@ input[type=email]) {
   left: 2rem;
   align-self: center;
   background-color: #545146;
-  border: 0.1rem solid transparent;
+  border: none;
   border-radius: 0.5rem;
   font-size: 10pt;
   font-weight: 500;
@@ -4262,7 +4298,7 @@ input[type=email]) {
 }
 .container .mainContent .leftOrUpperPart .skillsAndEducation .skillsAndSkillsList .skillsList .content .previous:hover {
   background-color: #5c4f43;
-  border: 0.1rem solid #8B8B8B;
+  box-shadow: inset 0 0 0 0.1rem #8B8B8B;
 }
 @media (min-width: 300px) and (max-width: 350px) {
   .container .mainContent .leftOrUpperPart .skillsAndEducation .skillsAndSkillsList .skillsList .content .previous {
@@ -4302,6 +4338,9 @@ input[type=email]) {
 @media (min-width: 300px) and (max-width: 1023px) {
   .container .mainContent .leftOrUpperPart .skillsAndEducation .skillsAndSkillsList .skillsList .content .previous {
     cursor: default;
+  }
+  .container .mainContent .leftOrUpperPart .skillsAndEducation .skillsAndSkillsList .skillsList .content .previous:hover {
+    box-shadow: none;
   }
 }
 .container .mainContent .leftOrUpperPart .skillsAndEducation .skillsAndSkillsList .skillsList .content .titleAndFluencies {
@@ -5527,7 +5566,7 @@ input[type=email]) {
   right: 2rem;
   align-self: center;
   background-color: #545146;
-  border: 0.1rem solid transparent;
+  border: none;
   border-radius: 0.5rem;
   font-size: 10pt;
   font-weight: 500;
@@ -5537,7 +5576,7 @@ input[type=email]) {
 }
 .container .mainContent .leftOrUpperPart .skillsAndEducation .skillsAndSkillsList .skillsList .content .next:hover {
   background-color: #5c4f43;
-  border: 0.1rem solid #8B8B8B;
+  box-shadow: inset 0 0 0 0.1rem #8B8B8B;
 }
 @media (min-width: 300px) and (max-width: 350px) {
   .container .mainContent .leftOrUpperPart .skillsAndEducation .skillsAndSkillsList .skillsList .content .next {
@@ -5578,6 +5617,9 @@ input[type=email]) {
 @media (min-width: 300px) and (max-width: 1023px) {
   .container .mainContent .leftOrUpperPart .skillsAndEducation .skillsAndSkillsList .skillsList .content .next {
     cursor: default;
+  }
+  .container .mainContent .leftOrUpperPart .skillsAndEducation .skillsAndSkillsList .skillsList .content .next:hover {
+    box-shadow: none;
   }
 }
 .container .mainContent .leftOrUpperPart .skillsAndEducation .skillsAndSkillsList .skillsList .content p {
@@ -5816,7 +5858,7 @@ input[type=email]) {
   height: 2.5rem;
   position: relative;
   background-color: #1e1e1e;
-  border: 0.1rem solid transparent;
+  border: none;
   border-radius: 0.5rem;
   font-size: 10pt;
   color: #ebebeb;
@@ -5825,7 +5867,7 @@ input[type=email]) {
 }
 .container .mainContent .leftOrUpperPart .skillsAndEducation .educationAndEducationList .education .titleAndButton .courses:hover {
   background-color: #5c4f43;
-  border: 0.1rem solid #8B8B8B;
+  box-shadow: 0 0 0 0.1rem #8B8B8B;
 }
 @media (min-width: 300px) and (max-width: 350px) {
   .container .mainContent .leftOrUpperPart .skillsAndEducation .educationAndEducationList .education .titleAndButton .courses {
@@ -5872,6 +5914,9 @@ input[type=email]) {
   .container .mainContent .leftOrUpperPart .skillsAndEducation .educationAndEducationList .education .titleAndButton .courses {
     cursor: default;
   }
+  .container .mainContent .leftOrUpperPart .skillsAndEducation .educationAndEducationList .education .titleAndButton .courses:hover {
+    box-shadow: none;
+  }
 }
 @media (min-width: 1023px) and (max-width: 1100px) {
   .container .mainContent .leftOrUpperPart .skillsAndEducation .educationAndEducationList .education .titleAndButton .courses {
@@ -5885,6 +5930,9 @@ input[type=email]) {
     width: 7rem;
     height: 2.5rem;
     font-size: 10pt;
+  }
+  .container .mainContent .leftOrUpperPart .skillsAndEducation .educationAndEducationList .education .titleAndButton .courses:hover {
+    box-shadow: none;
   }
 }
 @media (min-width: 1100px) and (max-width: 1200px) {
@@ -6200,7 +6248,7 @@ input[type=email]) {
   width: 7rem;
   height: 2.5rem;
   background-color: #1e1e1e;
-  border: 0.1rem solid transparent;
+  border: none;
   border-radius: 0.5rem;
   font-size: 10pt;
   color: #ebebeb;
@@ -6209,7 +6257,7 @@ input[type=email]) {
 }
 .container .mainContent .leftOrUpperPart .skillsAndEducation .educationAndEducationList .educationList .titleAndButton .close:hover {
   background-color: #5c4f43;
-  border: 0.1rem solid #8B8B8B;
+  box-shadow: inset 0 0 0 0.1rem #8B8B8B;
 }
 @media (min-width: 300px) and (max-width: 350px) {
   .container .mainContent .leftOrUpperPart .skillsAndEducation .educationAndEducationList .educationList .titleAndButton .close {
@@ -6227,6 +6275,9 @@ input[type=email]) {
 @media (min-width: 300px) and (max-width: 1023px) {
   .container .mainContent .leftOrUpperPart .skillsAndEducation .educationAndEducationList .educationList .titleAndButton .close {
     cursor: default;
+  }
+  .container .mainContent .leftOrUpperPart .skillsAndEducation .educationAndEducationList .educationList .titleAndButton .close:hover {
+    box-shadow: none;
   }
 }
 .container .mainContent .leftOrUpperPart .skillsAndEducation .educationAndEducationList .educationList .content {
@@ -6330,7 +6381,7 @@ input[type=email]) {
   left: 2rem;
   align-self: center;
   background-color: #5c4f43;
-  border: 0.1rem solid transparent;
+  border: none;
   border-radius: 0.5rem;
   font-size: 10pt;
   font-weight: 500;
@@ -6340,7 +6391,7 @@ input[type=email]) {
 }
 .container .mainContent .leftOrUpperPart .skillsAndEducation .educationAndEducationList .educationList .content .previous:hover {
   background-color: #545146;
-  border: 0.1rem solid #8B8B8B;
+  box-shadow: inset 0 0 0 0.1rem #8B8B8B;
 }
 @media (min-width: 300px) and (max-width: 350px) {
   .container .mainContent .leftOrUpperPart .skillsAndEducation .educationAndEducationList .educationList .content .previous {
@@ -6380,6 +6431,9 @@ input[type=email]) {
 @media (min-width: 300px) and (max-width: 1023px) {
   .container .mainContent .leftOrUpperPart .skillsAndEducation .educationAndEducationList .educationList .content .previous {
     cursor: default;
+  }
+  .container .mainContent .leftOrUpperPart .skillsAndEducation .educationAndEducationList .educationList .content .previous:hover {
+    box-shadow: none;
   }
 }
 .container .mainContent .leftOrUpperPart .skillsAndEducation .educationAndEducationList .educationList .content .pageOne {
@@ -6608,7 +6662,7 @@ input[type=email]) {
   right: 2rem;
   align-self: center;
   background-color: #5c4f43;
-  border: 0.1rem solid transparent;
+  border: none;
   border-radius: 0.5rem;
   font-size: 10pt;
   font-weight: 500;
@@ -6618,7 +6672,7 @@ input[type=email]) {
 }
 .container .mainContent .leftOrUpperPart .skillsAndEducation .educationAndEducationList .educationList .content .next:hover {
   background-color: #545146;
-  border: 0.1rem solid #8B8B8B;
+  box-shadow: inset 0 0 0 0.1rem #8B8B8B;
 }
 @media (min-width: 300px) and (max-width: 350px) {
   .container .mainContent .leftOrUpperPart .skillsAndEducation .educationAndEducationList .educationList .content .next {
@@ -6659,6 +6713,9 @@ input[type=email]) {
 @media (min-width: 300px) and (max-width: 1023px) {
   .container .mainContent .leftOrUpperPart .skillsAndEducation .educationAndEducationList .educationList .content .next {
     cursor: default;
+  }
+  .container .mainContent .leftOrUpperPart .skillsAndEducation .educationAndEducationList .educationList .content .next:hover {
+    box-shadow: none;
   }
 }
 .container .mainContent .leftOrUpperPart .skillsAndEducation .educationAndEducationList .educationList .content p {
@@ -6793,7 +6850,7 @@ input[type=email]) {
   position: relative;
   align-self: center;
   background-color: #1e1e1e;
-  border: 0.1rem solid transparent;
+  border: none;
   border-radius: 0.5rem;
   font-size: 10pt;
   color: #ebebeb;
@@ -6802,7 +6859,7 @@ input[type=email]) {
 }
 .container .mainContent .leftOrUpperPart .skillsList .titleAndButton .close:hover {
   background-color: #545146;
-  border: 0.1rem solid #8B8B8B;
+  box-shadow: inset 0 0 0 0.1rem #8B8B8B;
 }
 @media (min-width: 600px) and (max-width: 800px) {
   .container .mainContent .leftOrUpperPart .skillsList .titleAndButton .close {
@@ -6821,6 +6878,9 @@ input[type=email]) {
   .container .mainContent .leftOrUpperPart .skillsList .titleAndButton .close {
     cursor: default;
   }
+  .container .mainContent .leftOrUpperPart .skillsList .titleAndButton .close:hover {
+    box-shadow: none;
+  }
 }
 @media (min-width: 1023px) and (max-width: 1100px) {
   .container .mainContent .leftOrUpperPart .skillsList .titleAndButton .close {
@@ -6834,6 +6894,9 @@ input[type=email]) {
     width: 7rem;
     height: 2.5rem;
     font-size: 10pt;
+  }
+  .container .mainContent .leftOrUpperPart .skillsList .titleAndButton .close:hover {
+    box-shadow: none;
   }
 }
 @media (min-width: 1100px) and (max-width: 1200px) {
@@ -7002,7 +7065,7 @@ input[type=email]) {
   left: 2rem;
   align-self: center;
   background-color: #545146;
-  border: 0.1rem solid transparent;
+  border: none;
   border-radius: 0.5rem;
   font-size: 10pt;
   font-weight: 500;
@@ -7012,7 +7075,7 @@ input[type=email]) {
 }
 .container .mainContent .leftOrUpperPart .skillsList .content .previous:hover {
   background-color: #5c4f43;
-  border: 0.1rem solid #8B8B8B;
+  box-shadow: inset 0 0 0 0.1rem #8B8B8B;
 }
 @media (width: 600px) {
   .container .mainContent .leftOrUpperPart .skillsList .content .previous {
@@ -7054,6 +7117,9 @@ input[type=email]) {
   .container .mainContent .leftOrUpperPart .skillsList .content .previous {
     cursor: default;
   }
+  .container .mainContent .leftOrUpperPart .skillsList .content .previous:hover {
+    box-shadow: none;
+  }
 }
 @media (min-width: 1023px) and (max-width: 1100px) {
   .container .mainContent .leftOrUpperPart .skillsList .content .previous {
@@ -7068,6 +7134,9 @@ input[type=email]) {
     width: 2.5rem;
     height: 7rem;
     font-size: 10pt;
+  }
+  .container .mainContent .leftOrUpperPart .skillsList .content .previous:hover {
+    box-shadow: none;
   }
 }
 @media (min-width: 1100px) and (max-width: 1200px) {
@@ -8197,7 +8266,7 @@ input[type=email]) {
   right: 2rem;
   align-self: center;
   background-color: #545146;
-  border: 0.1rem solid transparent;
+  border: none;
   border-radius: 0.5rem;
   font-size: 10pt;
   font-weight: 500;
@@ -8207,7 +8276,7 @@ input[type=email]) {
 }
 .container .mainContent .leftOrUpperPart .skillsList .content .next:hover {
   background-color: #5c4f43;
-  border: 0.1rem solid #8B8B8B;
+  box-shadow: inset 0 0 0 0.1rem #8B8B8B;
 }
 @media (width: 600px) {
   .container .mainContent .leftOrUpperPart .skillsList .content .next {
@@ -8250,6 +8319,9 @@ input[type=email]) {
   .container .mainContent .leftOrUpperPart .skillsList .content .next {
     cursor: default;
   }
+  .container .mainContent .leftOrUpperPart .skillsList .content .next:hover {
+    box-shadow: none;
+  }
 }
 @media (min-width: 1023px) and (max-width: 1100px) {
   .container .mainContent .leftOrUpperPart .skillsList .content .next {
@@ -8264,6 +8336,9 @@ input[type=email]) {
     width: 2.5rem;
     height: 7rem;
     font-size: 10pt;
+  }
+  .container .mainContent .leftOrUpperPart .skillsList .content .next:hover {
+    box-shadow: none;
   }
 }
 @media (min-width: 1100px) and (max-width: 1200px) {
@@ -8434,7 +8509,7 @@ input[type=email]) {
   width: 7rem;
   height: 2.5rem;
   background-color: #1e1e1e;
-  border: 0.1rem solid transparent;
+  border: none;
   border-radius: 0.5rem;
   font-size: 10pt;
   color: #ebebeb;
@@ -8443,7 +8518,7 @@ input[type=email]) {
 }
 .container .mainContent .leftOrUpperPart .educationList .titleAndButton .close:hover {
   background-color: #5c4f43;
-  border: 0.1rem solid #8B8B8B;
+  box-shadow: inset 0 0 0 0.1rem #8B8B8B;
 }
 @media (min-width: 600px) and (max-width: 800px) {
   .container .mainContent .leftOrUpperPart .educationList .titleAndButton .close {
@@ -8462,6 +8537,9 @@ input[type=email]) {
   .container .mainContent .leftOrUpperPart .educationList .titleAndButton .close {
     cursor: default;
   }
+  .container .mainContent .leftOrUpperPart .educationList .titleAndButton .close:hover {
+    box-shadow: none;
+  }
 }
 @media (min-width: 1023px) and (max-width: 1100px) {
   .container .mainContent .leftOrUpperPart .educationList .titleAndButton .close {
@@ -8475,6 +8553,9 @@ input[type=email]) {
     width: 7rem;
     height: 2.5rem;
     font-size: 10pt;
+  }
+  .container .mainContent .leftOrUpperPart .educationList .titleAndButton .close:hover {
+    box-shadow: none;
   }
 }
 @media (min-width: 1100px) and (max-width: 1200px) {
@@ -8643,7 +8724,7 @@ input[type=email]) {
   left: 2rem;
   align-self: center;
   background-color: #5c4f43;
-  border: 0.1rem solid transparent;
+  border: none;
   border-radius: 0.5rem;
   font-size: 10pt;
   font-weight: 500;
@@ -8653,7 +8734,7 @@ input[type=email]) {
 }
 .container .mainContent .leftOrUpperPart .educationList .content .previous:hover {
   background-color: #545146;
-  border: 0.1rem solid #8B8B8B;
+  box-shadow: inset 0 0 0 0.1rem #8B8B8B;
 }
 @media (width: 600px) {
   .container .mainContent .leftOrUpperPart .educationList .content .previous {
@@ -8695,6 +8776,9 @@ input[type=email]) {
   .container .mainContent .leftOrUpperPart .educationList .content .previous {
     cursor: default;
   }
+  .container .mainContent .leftOrUpperPart .educationList .content .previous:hover {
+    box-shadow: none;
+  }
 }
 @media (min-width: 1023px) and (max-width: 1100px) {
   .container .mainContent .leftOrUpperPart .educationList .content .previous {
@@ -8709,6 +8793,9 @@ input[type=email]) {
     width: 2.5rem;
     height: 7rem;
     font-size: 10pt;
+  }
+  .container .mainContent .leftOrUpperPart .educationList .content .previous:hover {
+    box-shadow: none;
   }
 }
 @media (min-width: 1100px) and (max-width: 1200px) {
@@ -9105,7 +9192,7 @@ input[type=email]) {
   right: 2rem;
   align-self: center;
   background-color: #5c4f43;
-  border: 0.1rem solid transparent;
+  border: none;
   border-radius: 0.5rem;
   font-size: 10pt;
   font-weight: 500;
@@ -9115,7 +9202,7 @@ input[type=email]) {
 }
 .container .mainContent .leftOrUpperPart .educationList .content .next:hover {
   background-color: #545146;
-  border: 0.1rem solid #8B8B8B;
+  box-shadow: inset 0 0 0 0.1rem #8B8B8B;
 }
 @media (width: 600px) {
   .container .mainContent .leftOrUpperPart .educationList .content .next {
@@ -9158,6 +9245,9 @@ input[type=email]) {
   .container .mainContent .leftOrUpperPart .educationList .content .next {
     cursor: default;
   }
+  .container .mainContent .leftOrUpperPart .educationList .content .next:hover {
+    box-shadow: none;
+  }
 }
 @media (min-width: 1023px) and (max-width: 1100px) {
   .container .mainContent .leftOrUpperPart .educationList .content .next {
@@ -9172,6 +9262,9 @@ input[type=email]) {
     width: 2.5rem;
     height: 7rem;
     font-size: 10pt;
+  }
+  .container .mainContent .leftOrUpperPart .educationList .content .next:hover {
+    box-shadow: none;
   }
 }
 @media (min-width: 1100px) and (max-width: 1200px) {
@@ -9279,7 +9372,7 @@ input[type=email]) {
 .container .mainContent .rightOrLowerPart .estimatesList {
   display: flex;
   flex-direction: column;
-  row-gap: 2%;
+  row-gap: 1%;
   width: 100%;
   height: 100%;
   transform: scale(102%);
@@ -9321,11 +9414,6 @@ input[type=email]) {
     }
   }
 }
-@media (orientation: portrait) and (min-width: 1023px) and (max-width: 1100px) {
-  .container .mainContent .rightOrLowerPart .estimatesList {
-    height: 20rem;
-  }
-}
 .container .mainContent .rightOrLowerPart .estimatesList .titleAndButton {
   display: flex;
   flex-direction: row;
@@ -9340,11 +9428,6 @@ input[type=email]) {
     padding: 0.5rem 0.7rem;
   }
 }
-@media (orientation: portrait) and (min-width: 1023px) and (max-width: 1100px) {
-  .container .mainContent .rightOrLowerPart .estimatesList .titleAndButton {
-    padding: 0.8rem 1rem;
-  }
-}
 @media (min-width: 1200px) and (max-width: 1300px) {
   .container .mainContent .rightOrLowerPart .estimatesList .titleAndButton {
     padding: 0.6rem 1rem;
@@ -9357,11 +9440,6 @@ input[type=email]) {
 @media (min-width: 1023px) and (max-width: 1100px) {
   .container .mainContent .rightOrLowerPart .estimatesList .titleAndButton h4 {
     font-size: 10pt;
-  }
-}
-@media (orientation: portrait) and (min-width: 1023px) and (max-width: 1100px) {
-  .container .mainContent .rightOrLowerPart .estimatesList .titleAndButton h4 {
-    font-size: 16pt;
   }
 }
 @media (min-width: 1100px) and (max-width: 1200px) {
@@ -9385,7 +9463,7 @@ input[type=email]) {
   position: relative;
   align-self: center;
   background-color: #1e1e1e;
-  border: 0.1rem solid transparent;
+  border: none;
   border-radius: 0.5rem;
   font-size: 10pt;
   color: #ebebeb;
@@ -9394,20 +9472,13 @@ input[type=email]) {
 }
 .container .mainContent .rightOrLowerPart .estimatesList .titleAndButton .close:hover {
   background-color: #545146;
-  border: 0.1rem solid #8B8B8B;
+  box-shadow: inset 0 0 0 0.1rem #8B8B8B;
 }
 @media (min-width: 1023px) and (max-width: 1100px) {
   .container .mainContent .rightOrLowerPart .estimatesList .titleAndButton .close {
     width: 4.7rem;
     height: 1.8rem;
     font-size: 7.4pt;
-  }
-}
-@media (orientation: portrait) and (min-width: 1023px) and (max-width: 1100px) {
-  .container .mainContent .rightOrLowerPart .estimatesList .titleAndButton .close {
-    width: 7rem;
-    height: 2.5rem;
-    font-size: 10pt;
   }
 }
 @media (min-width: 1100px) and (max-width: 1200px) {
@@ -9439,58 +9510,45 @@ input[type=email]) {
        column-gap: 10%;
   align-self: center;
   align-items: center;
-  width: 97%;
-  height: 84.6%;
+  width: 98%;
+  height: 31.168rem;
   position: relative;
   background-color: #232323;
   border-radius: 0.5rem;
 }
 @media (min-width: 1023px) and (max-width: 1100px) {
   .container .mainContent .rightOrLowerPart .estimatesList .content {
-    height: 84%;
-    align-items: unset;
+    height: 20.25rem;
   }
 }
-@media (width: 1100px) {
+@media (min-width: 1100px) and (max-width: 1200px) {
   .container .mainContent .rightOrLowerPart .estimatesList .content {
-    height: 84.8%;
-    align-items: unset;
+    height: 22.831rem;
   }
 }
 @media (min-width: 1200px) and (max-width: 1300px) {
   .container .mainContent .rightOrLowerPart .estimatesList .content {
-    height: 84.8%;
-    align-items: unset;
-  }
-}
-@media (width: 1200px) {
-  .container .mainContent .rightOrLowerPart .estimatesList .content {
-    height: 84.8%;
-    align-items: unset;
+    height: 25.271rem;
   }
 }
 @media (min-width: 1300px) and (max-width: 1400px) {
   .container .mainContent .rightOrLowerPart .estimatesList .content {
-    height: 84.4%;
-    align-items: unset;
+    height: 28.27rem;
   }
 }
 @media (width: 1300px) {
   .container .mainContent .rightOrLowerPart .estimatesList .content {
-    height: 85.5%;
-    align-items: unset;
+    height: 28.5rem;
   }
 }
 @media (min-width: 1400px) and (max-width: 1500px) {
   .container .mainContent .rightOrLowerPart .estimatesList .content {
-    height: 83.8%;
-    align-items: unset;
+    height: 29.451rem;
   }
 }
 @media (width: 1400px) {
   .container .mainContent .rightOrLowerPart .estimatesList .content {
-    height: 84.8%;
-    align-items: unset;
+    height: 29.75rem;
   }
 }
 .container .mainContent .rightOrLowerPart .rightOrLowerPartContainer {
@@ -9954,7 +10012,7 @@ input[type=email]) {
   position: absolute;
   bottom: 1.2rem;
   background-color: #1e1e1e;
-  border: 0.1rem solid transparent;
+  border: none;
   border-radius: 0.5rem;
   font-size: 10pt;
   color: #ebebeb;
@@ -9963,7 +10021,7 @@ input[type=email]) {
 }
 .container .mainContent .rightOrLowerPart .rightOrLowerPartContainer .projects .webAndWebList .web .more:hover {
   background-color: #5c4f43;
-  border: 0.1rem solid #8B8B8B;
+  box-shadow: inset 0 0 0 0.1rem #8B8B8B;
 }
 @media (min-width: 300px) and (max-width: 350px) {
   .container .mainContent .rightOrLowerPart .rightOrLowerPartContainer .projects .webAndWebList .web .more {
@@ -10037,6 +10095,9 @@ input[type=email]) {
   .container .mainContent .rightOrLowerPart .rightOrLowerPartContainer .projects .webAndWebList .web .more {
     cursor: default;
   }
+  .container .mainContent .rightOrLowerPart .rightOrLowerPartContainer .projects .webAndWebList .web .more:hover {
+    box-shadow: none;
+  }
 }
 @media (min-width: 1023px) and (max-width: 1100px) {
   .container .mainContent .rightOrLowerPart .rightOrLowerPartContainer .projects .webAndWebList .web .more {
@@ -10054,6 +10115,9 @@ input[type=email]) {
     right: 2rem;
     bottom: 2rem;
     font-size: 10pt;
+  }
+  .container .mainContent .rightOrLowerPart .rightOrLowerPartContainer .projects .webAndWebList .web .more:hover {
+    box-shadow: none;
   }
 }
 @media (min-width: 1100px) and (max-width: 1200px) {
@@ -10157,7 +10221,7 @@ input[type=email]) {
   width: 7rem;
   height: 2.5rem;
   background-color: #1e1e1e;
-  border: 0.1rem solid transparent;
+  border: none;
   border-radius: 0.5rem;
   font-size: 10pt;
   color: #ebebeb;
@@ -10166,7 +10230,7 @@ input[type=email]) {
 }
 .container .mainContent .rightOrLowerPart .rightOrLowerPartContainer .projects .webAndWebList .webList .titleAndButton .close:hover {
   background-color: #5c4f43;
-  border: 0.1rem solid #8B8B8B;
+  box-shadow: inset 0 0 0 0.1rem #8B8B8B;
 }
 @media (min-width: 300px) and (max-width: 350px) {
   .container .mainContent .rightOrLowerPart .rightOrLowerPartContainer .projects .webAndWebList .webList .titleAndButton .close {
@@ -10184,6 +10248,9 @@ input[type=email]) {
 @media (min-width: 300px) and (max-width: 1023px) {
   .container .mainContent .rightOrLowerPart .rightOrLowerPartContainer .projects .webAndWebList .webList .titleAndButton .close {
     cursor: default;
+  }
+  .container .mainContent .rightOrLowerPart .rightOrLowerPartContainer .projects .webAndWebList .webList .titleAndButton .close:hover {
+    box-shadow: none;
   }
 }
 .container .mainContent .rightOrLowerPart .rightOrLowerPartContainer .projects .webAndWebList .webList .content {
@@ -10287,7 +10354,7 @@ input[type=email]) {
   left: 2rem;
   align-self: center;
   background-color: #5c4f43;
-  border: 0.1rem solid transparent;
+  border: none;
   border-radius: 0.5rem;
   font-size: 10pt;
   font-weight: 500;
@@ -10297,7 +10364,7 @@ input[type=email]) {
 }
 .container .mainContent .rightOrLowerPart .rightOrLowerPartContainer .projects .webAndWebList .webList .content .previous:hover {
   background-color: #545146;
-  border: 0.1rem solid #8B8B8B;
+  box-shadow: inset 0 0 0 0.1rem #8B8B8B;
 }
 @media (min-width: 300px) and (max-width: 350px) {
   .container .mainContent .rightOrLowerPart .rightOrLowerPartContainer .projects .webAndWebList .webList .content .previous {
@@ -10337,6 +10404,9 @@ input[type=email]) {
 @media (min-width: 300px) and (max-width: 1023px) {
   .container .mainContent .rightOrLowerPart .rightOrLowerPartContainer .projects .webAndWebList .webList .content .previous {
     cursor: default;
+  }
+  .container .mainContent .rightOrLowerPart .rightOrLowerPartContainer .projects .webAndWebList .webList .content .previous:hover {
+    box-shadow: none;
   }
 }
 .container .mainContent .rightOrLowerPart .rightOrLowerPartContainer .projects .webAndWebList .webList .content .nextDisabled {
@@ -10407,7 +10477,7 @@ input[type=email]) {
   right: 2rem;
   align-self: center;
   background-color: #5c4f43;
-  border: 0.1rem solid transparent;
+  border: none;
   border-radius: 0.5rem;
   font-size: 10pt;
   font-weight: 500;
@@ -10417,7 +10487,7 @@ input[type=email]) {
 }
 .container .mainContent .rightOrLowerPart .rightOrLowerPartContainer .projects .webAndWebList .webList .content .next:hover {
   background-color: #545146;
-  border: 0.1rem solid #8B8B8B;
+  box-shadow: inset 0 0 0 0.1rem #8B8B8B;
 }
 @media (min-width: 300px) and (max-width: 350px) {
   .container .mainContent .rightOrLowerPart .rightOrLowerPartContainer .projects .webAndWebList .webList .content .next {
@@ -10458,6 +10528,9 @@ input[type=email]) {
 @media (min-width: 300px) and (max-width: 1023px) {
   .container .mainContent .rightOrLowerPart .rightOrLowerPartContainer .projects .webAndWebList .webList .content .next {
     cursor: default;
+  }
+  .container .mainContent .rightOrLowerPart .rightOrLowerPartContainer .projects .webAndWebList .webList .content .next:hover {
+    box-shadow: none;
   }
 }
 .container .mainContent .rightOrLowerPart .rightOrLowerPartContainer .projects .webAndWebList .webList .content p {
@@ -10838,7 +10911,7 @@ input[type=email]) {
   position: absolute;
   bottom: 1.2rem;
   background-color: #1e1e1e;
-  border: 0.1rem solid transparent;
+  border: none;
   border-radius: 0.5rem;
   font-size: 10pt;
   color: #ebebeb;
@@ -10847,7 +10920,7 @@ input[type=email]) {
 }
 .container .mainContent .rightOrLowerPart .rightOrLowerPartContainer .projects .cyber .extras:hover {
   background-color: #545146;
-  border: 0.1rem solid #8B8B8B;
+  box-shadow: inset 0 0 0 0.1rem #8B8B8B;
 }
 @media (min-width: 300px) and (max-width: 350px) {
   .container .mainContent .rightOrLowerPart .rightOrLowerPartContainer .projects .cyber .extras {
@@ -10921,6 +10994,9 @@ input[type=email]) {
   .container .mainContent .rightOrLowerPart .rightOrLowerPartContainer .projects .cyber .extras {
     cursor: default;
   }
+  .container .mainContent .rightOrLowerPart .rightOrLowerPartContainer .projects .cyber .extras:hover {
+    box-shadow: none;
+  }
 }
 @media (min-width: 1023px) and (max-width: 1100px) {
   .container .mainContent .rightOrLowerPart .rightOrLowerPartContainer .projects .cyber .extras {
@@ -10938,6 +11014,9 @@ input[type=email]) {
     right: 2rem;
     bottom: 2rem;
     font-size: 10pt;
+  }
+  .container .mainContent .rightOrLowerPart .rightOrLowerPartContainer .projects .cyber .extras:hover {
+    box-shadow: none;
   }
 }
 @media (min-width: 1100px) and (max-width: 1200px) {
@@ -11160,6 +11239,11 @@ input[type=email]) {
     font-size: 12pt;
   }
 }
+@media (width: 600px) {
+  .container .mainContent .rightOrLowerPart .rightOrLowerPartContainer .footer .wrapper .leftPart a {
+    font-size: 11.5pt;
+  }
+}
 @media (min-width: 1000px) and (max-width: 1023px) {
   .container .mainContent .rightOrLowerPart .rightOrLowerPartContainer .footer .wrapper .leftPart a {
     font-size: 12pt;
@@ -11300,6 +11384,11 @@ input[type=email]) {
 @media (min-width: 500px) and (max-width: 600px) {
   .container .mainContent .rightOrLowerPart .rightOrLowerPartContainer .footer .wrapper .rightPart a {
     font-size: 12pt;
+  }
+}
+@media (width: 600px) {
+  .container .mainContent .rightOrLowerPart .rightOrLowerPartContainer .footer .wrapper .rightPart a {
+    font-size: 11.5pt;
   }
 }
 @media (min-width: 1000px) and (max-width: 1023px) {
@@ -11464,7 +11553,7 @@ input[type=email]) {
   width: 7rem;
   height: 2.5rem;
   background-color: #1e1e1e;
-  border: 0.1rem solid transparent;
+  border: none;
   border-radius: 0.5rem;
   font-size: 10pt;
   color: #ebebeb;
@@ -11473,7 +11562,7 @@ input[type=email]) {
 }
 .container .mainContent .rightOrLowerPart .cyberList .titleAndButton .close:hover {
   background-color: #545146;
-  border: 0.1rem solid #8B8B8B;
+  box-shadow: inset 0 0 0 0.1rem #8B8B8B;
 }
 @media (min-width: 300px) and (max-width: 350px) {
   .container .mainContent .rightOrLowerPart .cyberList .titleAndButton .close {
@@ -11505,6 +11594,9 @@ input[type=email]) {
   .container .mainContent .rightOrLowerPart .cyberList .titleAndButton .close {
     cursor: default;
   }
+  .container .mainContent .rightOrLowerPart .cyberList .titleAndButton .close:hover {
+    box-shadow: none;
+  }
 }
 @media (min-width: 1023px) and (max-width: 1100px) {
   .container .mainContent .rightOrLowerPart .cyberList .titleAndButton .close {
@@ -11518,6 +11610,9 @@ input[type=email]) {
     width: 7rem;
     height: 2.5rem;
     font-size: 10pt;
+  }
+  .container .mainContent .rightOrLowerPart .cyberList .titleAndButton .close:hover {
+    box-shadow: none;
   }
 }
 @media (min-width: 1100px) and (max-width: 1200px) {
@@ -11742,7 +11837,7 @@ input[type=email]) {
   left: 2rem;
   align-self: center;
   background-color: #545146;
-  border: 0.1rem solid transparent;
+  border: none;
   border-radius: 0.5rem;
   font-size: 10pt;
   font-weight: 500;
@@ -11752,7 +11847,7 @@ input[type=email]) {
 }
 .container .mainContent .rightOrLowerPart .cyberList .content .previous:hover {
   background-color: #5c4f43;
-  border: 0.1rem solid #8B8B8B;
+  box-shadow: inset 0 0 0 0.1rem #8B8B8B;
 }
 @media (min-width: 300px) and (max-width: 350px) {
   .container .mainContent .rightOrLowerPart .cyberList .content .previous {
@@ -11820,6 +11915,9 @@ input[type=email]) {
   .container .mainContent .rightOrLowerPart .cyberList .content .previous {
     cursor: default;
   }
+  .container .mainContent .rightOrLowerPart .cyberList .content .previous:hover {
+    box-shadow: none;
+  }
 }
 @media (min-width: 1023px) and (max-width: 1100px) {
   .container .mainContent .rightOrLowerPart .cyberList .content .previous {
@@ -11834,6 +11932,9 @@ input[type=email]) {
     width: 2.5rem;
     height: 7rem;
     font-size: 10pt;
+  }
+  .container .mainContent .rightOrLowerPart .cyberList .content .previous:hover {
+    box-shadow: none;
   }
 }
 @media (min-width: 1100px) and (max-width: 1200px) {
@@ -11978,7 +12079,7 @@ input[type=email]) {
   right: 2rem;
   align-self: center;
   background-color: #545146;
-  border: 0.1rem solid transparent;
+  border: none;
   border-radius: 0.5rem;
   font-size: 10pt;
   font-weight: 500;
@@ -11988,7 +12089,7 @@ input[type=email]) {
 }
 .container .mainContent .rightOrLowerPart .cyberList .content .next:hover {
   background-color: #5c4f43;
-  border: 0.1rem solid #8B8B8B;
+  box-shadow: inset 0 0 0 0.1rem #8B8B8B;
 }
 @media (min-width: 300px) and (max-width: 350px) {
   .container .mainContent .rightOrLowerPart .cyberList .content .next {
@@ -12049,6 +12150,9 @@ input[type=email]) {
   .container .mainContent .rightOrLowerPart .cyberList .content .next {
     cursor: default;
   }
+  .container .mainContent .rightOrLowerPart .cyberList .content .next:hover {
+    box-shadow: none;
+  }
 }
 @media (min-width: 1023px) and (max-width: 1100px) {
   .container .mainContent .rightOrLowerPart .cyberList .content .next {
@@ -12063,6 +12167,9 @@ input[type=email]) {
     width: 2.5rem;
     height: 7rem;
     font-size: 10pt;
+  }
+  .container .mainContent .rightOrLowerPart .cyberList .content .next:hover {
+    box-shadow: none;
   }
 }
 @media (min-width: 1100px) and (max-width: 1200px) {
@@ -12251,7 +12358,7 @@ input[type=email]) {
   width: 7rem;
   height: 2.5rem;
   background-color: #1e1e1e;
-  border: 0.1rem solid transparent;
+  border: none;
   border-radius: 0.5rem;
   font-size: 10pt;
   color: #ebebeb;
@@ -12260,7 +12367,7 @@ input[type=email]) {
 }
 .container .mainContent .rightOrLowerPart .webList .titleAndButton .close:hover {
   background-color: #5c4f43;
-  border: 0.1rem solid #8B8B8B;
+  box-shadow: inset 0 0 0 0.1rem #8B8B8B;
 }
 @media (min-width: 600px) and (max-width: 800px) {
   .container .mainContent .rightOrLowerPart .webList .titleAndButton .close {
@@ -12279,6 +12386,9 @@ input[type=email]) {
   .container .mainContent .rightOrLowerPart .webList .titleAndButton .close {
     cursor: default;
   }
+  .container .mainContent .rightOrLowerPart .webList .titleAndButton .close:hover {
+    box-shadow: none;
+  }
 }
 @media (min-width: 1023px) and (max-width: 1100px) {
   .container .mainContent .rightOrLowerPart .webList .titleAndButton .close {
@@ -12292,6 +12402,9 @@ input[type=email]) {
     width: 7rem;
     height: 2.5rem;
     font-size: 10pt;
+  }
+  .container .mainContent .rightOrLowerPart .webList .titleAndButton .close:hover {
+    box-shadow: none;
   }
 }
 @media (min-width: 1100px) and (max-width: 1200px) {
@@ -12460,7 +12573,7 @@ input[type=email]) {
   left: 2rem;
   align-self: center;
   background-color: #5c4f43;
-  border: 0.1rem solid transparent;
+  border: none;
   border-radius: 0.5rem;
   font-size: 10pt;
   font-weight: 500;
@@ -12470,7 +12583,7 @@ input[type=email]) {
 }
 .container .mainContent .rightOrLowerPart .webList .content .previous:hover {
   background-color: #545146;
-  border: 0.1rem solid #8B8B8B;
+  box-shadow: inset 0 0 0 0.1rem #8B8B8B;
 }
 @media (width: 600px) {
   .container .mainContent .rightOrLowerPart .webList .content .previous {
@@ -12512,6 +12625,9 @@ input[type=email]) {
   .container .mainContent .rightOrLowerPart .webList .content .previous {
     cursor: default;
   }
+  .container .mainContent .rightOrLowerPart .webList .content .previous:hover {
+    box-shadow: none;
+  }
 }
 @media (min-width: 1023px) and (max-width: 1100px) {
   .container .mainContent .rightOrLowerPart .webList .content .previous {
@@ -12526,6 +12642,9 @@ input[type=email]) {
     width: 2.5rem;
     height: 7rem;
     font-size: 10pt;
+  }
+  .container .mainContent .rightOrLowerPart .webList .content .previous:hover {
+    box-shadow: none;
   }
 }
 @media (min-width: 1100px) and (max-width: 1200px) {
@@ -12650,7 +12769,7 @@ input[type=email]) {
   right: 2rem;
   align-self: center;
   background-color: #5c4f43;
-  border: 0.1rem solid transparent;
+  border: none;
   border-radius: 0.5rem;
   font-size: 10pt;
   font-weight: 500;
@@ -12660,7 +12779,7 @@ input[type=email]) {
 }
 .container .mainContent .rightOrLowerPart .webList .content .next:hover {
   background-color: #545146;
-  border: 0.1rem solid #8B8B8B;
+  box-shadow: inset 0 0 0 0.1rem #8B8B8B;
 }
 @media (width: 600px) {
   .container .mainContent .rightOrLowerPart .webList .content .next {
@@ -12703,6 +12822,9 @@ input[type=email]) {
   .container .mainContent .rightOrLowerPart .webList .content .next {
     cursor: default;
   }
+  .container .mainContent .rightOrLowerPart .webList .content .next:hover {
+    box-shadow: none;
+  }
 }
 @media (min-width: 1023px) and (max-width: 1100px) {
   .container .mainContent .rightOrLowerPart .webList .content .next {
@@ -12717,6 +12839,9 @@ input[type=email]) {
     width: 2.5rem;
     height: 7rem;
     font-size: 10pt;
+  }
+  .container .mainContent .rightOrLowerPart .webList .content .next:hover {
+    box-shadow: none;
   }
 }
 @media (min-width: 1100px) and (max-width: 1200px) {
@@ -12824,11 +12949,6 @@ input[type=email]) {
     font-size: 10pt;
   }
 }
-@media (min-width: 300px) and (max-width: 1023px) {
-  .container .unfocusedContactButton {
-    cursor: default;
-  }
-}
 @media (min-width: 1023px) and (max-width: 1100px) {
   .container .unfocusedContactButton {
     width: 4.7rem;
@@ -12913,11 +13033,6 @@ input[type=email]) {
     width: 7rem;
     height: 2.5rem;
     font-size: 10pt;
-  }
-}
-@media (min-width: 300px) and (max-width: 1023px) {
-  .container .unfocusedAboutMeAndImageButtons {
-    cursor: default;
   }
 }
 @media (min-width: 1023px) and (max-width: 1100px) {
@@ -13006,11 +13121,6 @@ input[type=email]) {
     width: 7rem;
     height: 2.5rem;
     font-size: 10pt;
-  }
-}
-@media (min-width: 300px) and (max-width: 1023px) {
-  .container .unfocusedSkillsAndEducationButtons {
-    cursor: default;
   }
 }
 @media (min-width: 1023px) and (max-width: 1100px) {
@@ -13128,11 +13238,6 @@ input[type=email]) {
   .container .unfocusedProjectsButtons {
     align-self: end;
     bottom: 1.8rem;
-  }
-}
-@media (min-width: 300px) and (max-width: 1023px) {
-  .container .unfocusedProjectsButtons {
-    cursor: default;
   }
 }
 @media (min-width: 1023px) and (max-width: 1100px) {
