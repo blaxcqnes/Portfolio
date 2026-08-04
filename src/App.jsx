@@ -36,48 +36,19 @@ export default function App() {
     return useSyncExternalStore(subscribe, getSnapshot);
   }
 
-  const forContactFormAndEstimatesLandscapeLargeFixed = useMediaQuery(
+  const fixedLargeForContactFormAndEstimatesLandscape = useMediaQuery(
     '(orientation: landscape) and (min-width: 1023px)',
   );
-  const forContactFormLandscapeSmallToMediumAuto = useMediaQuery(
+  const autoLargeForContactFormAndEstimatesLandscape = useMediaQuery(
     '(orientation: landscape) and (min-width: 300px) and (max-width: 1023px)',
   );
-  const forContactFormPortraitFixed = useMediaQuery(
-    '(orientation: portrait) and (min-width: 1100px) and (min-height: 1500px)',
+  const fixedContactFormPortrait = useMediaQuery(
+    '(orientation: portrait) and (min-width: 1100px) and (min-height: 1470px)',
   );
-  const forContactFormPortraitAuto = useMediaQuery(
-    '(orientation: portrait) and (max-width: 1100px) and (max-height: 1500px)',
+  const autoContactFormPortrait = useMediaQuery(
+    '(orientation: portrait) and (max-width: 1100px) and (max-height: 1470px)',
   );
-  const exactTabAndLargeWidth = useMediaQuery('(width: 1023px)');
-
-  // True dynamic Image Preloader
-  // useLayoutEffect(() => {
-  //   const preloadImage = (src) => {
-  //     return new Promise((resolve, reject) => {
-  //       const img = new Image();
-  //       img.onload = resolve;
-  //       img.onerror = reject;
-  //       img.src = src;
-  //     });
-  //   };
-
-  //   const minDelay = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
-
-  //   const loadAssets = async () => {
-  //     try {
-  //       await Promise.all([
-  //         ...IMAGES_TO_PRELOAD.map((src) => preloadImage(src)),
-  //         minDelay(3000),
-  //       ]);
-  //     } catch (error) {
-  //       console.error('One or more images failed to preload safely:', error);
-  //     } finally {
-  //       setLoading(false);
-  //     }
-  //   };
-
-  //   loadAssets();
-  // }, []);
+  const exactLargeWidth = useMediaQuery('(width: 1023px)');
 
   useLayoutEffect(() => {
     let loadedCount = 0;
@@ -235,27 +206,27 @@ export default function App() {
       style={
         activeList || isContactFormOpen
           ? {
-              height: forContactFormLandscapeSmallToMediumAuto
-                ? 'auto'
-                : (!exactTabAndLargeWidth &&
-                      forContactFormAndEstimatesLandscapeLargeFixed &&
-                      activeList === 'estimatesList') ||
-                    (forContactFormAndEstimatesLandscapeLargeFixed &&
-                      isContactFormOpen) ||
-                    (forContactFormPortraitFixed && isContactFormOpen) ||
-                    (!forContactFormPortraitAuto && isContactFormOpen)
-                  ? '100dvh'
-                  : 'auto',
-              overflowY:
-                activeList === 'estimatesList' || isContactFormOpen
-                  ? 'unset'
-                  : 'auto',
-              transform: 'scale(98%)',
-              animation: 'activeLists 0.2s linear 1',
-            }
+            height: autoLargeForContactFormAndEstimatesLandscape
+              ? 'auto'
+              : (!exactLargeWidth &&
+                fixedLargeForContactFormAndEstimatesLandscape &&
+                activeList === 'estimatesList') ||
+                (fixedLargeForContactFormAndEstimatesLandscape &&
+                  isContactFormOpen) ||
+                (fixedContactFormPortrait && isContactFormOpen) ||
+                (!autoContactFormPortrait && isContactFormOpen)
+                ? '100dvh'
+                : 'auto',
+            overflowY:
+              activeList === 'estimatesList' || isContactFormOpen
+                ? 'unset'
+                : 'auto',
+            transform: 'scale(98%)',
+            animation: 'activeLists 0.2s linear 1',
+          }
           : {
-              animation: 'nonActiveLists 0.2s linear 1',
-            }
+            animation: 'nonActiveLists 0.2s linear 1',
+          }
       }
     >
       {loading ? (

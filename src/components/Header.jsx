@@ -1,4 +1,3 @@
-// import {useState} from 'react'
 import ContactForm from './ContactForm';
 
 export default function Header({
@@ -17,10 +16,9 @@ export default function Header({
   }
   return (
     <main className="header">
-      {/*  */}
+
       <section
         className="headerContainer"
-        id="headerContainer"
         style={
           activeList || isContactFormOpen
             ? {
@@ -31,16 +29,16 @@ export default function Header({
         }
         onClick={closeList}
       >
-        {/*  */}
+
         <div className="nameAndProfession">
           <p className="name">Mahmoud Taha</p>
           <p className="profession">Cybersecurity Specialist & Web Developer</p>
         </div>
-        {/*  */}
+
         <div className="locationAndContact">
           <p className="location">Riyadh, Saudi Arabia</p>
           {activeList || isContactFormOpen ? (
-            <button className="unfocusedContactButton" onClick={closeList}>
+            <button className="contactDisabled" onClick={closeList}>
               Contact
             </button>
           ) : (
@@ -50,7 +48,7 @@ export default function Header({
           )}
         </div>
       </section>
-      {/*  */}
+
       {isContactFormOpen && (
         <ContactForm
           isContactFormOpen={isContactFormOpen}

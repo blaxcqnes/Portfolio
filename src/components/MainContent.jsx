@@ -1,5 +1,5 @@
-import LeftOrUpperPart from './LeftOrUpperPart';
-import RightOrLowerPart from './RightOrLowerPart';
+import SectionOne from './SectionOne';
+import SectionTwo from './SectionTwo';
 import me from '../images/mainContent_leftOrUpperPart/me.jpg';
 import kaffa from '../images/mainContent_rightOrLowerPart/kaffa.jpg';
 import veila from '../images/mainContent_rightOrLowerPart/veila.jpg';
@@ -21,7 +21,7 @@ export default function MainContent({
       className="mainContent"
       onClick={isContactFormOpen ? toggleContactForm : undefined}
     >
-      <LeftOrUpperPart
+      <SectionOne
         me={me}
         isContactFormOpen={isContactFormOpen}
         activeList={activeList}
@@ -31,7 +31,7 @@ export default function MainContent({
         toggleSkillsList={toggleSkillsList}
         toggleEducationList={toggleEducationList}
       />
-      <RightOrLowerPart
+      <SectionTwo
         kaffa={kaffa}
         veila={veila}
         guessGame={guessGame}
