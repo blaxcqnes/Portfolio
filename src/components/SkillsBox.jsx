@@ -96,7 +96,7 @@ export default function SkillsBox({
             : null),
           animation:
             activeList || isContactFormOpen
-              ? 'none'
+              ? undefined
               : animationDelay
                 ? 'skillsBox 0.5s linear 1'
                 : !animationDelay &&
@@ -152,8 +152,7 @@ export default function SkillsBox({
           style={{
             ...(timeLeft === 15
               ? { animation: 'nextSkillsLoader 1s linear 1' }
-              : {}),
-            // display: activeList || isContactFormOpen ? 'none' : 'flex',
+              : undefined),
           }}
         >
           <div
@@ -163,9 +162,9 @@ export default function SkillsBox({
               ...(animationDelay
                 ? { animation: 'nextSkillsStops 1s linear 1' }
                 : { animation: 'nextSkillsOval 1.5s linear infinite' }),
-              ...(animationDelay
+              ...(!activeList && !isContactFormOpen && animationDelay
                 ? { animation: 'nextSkillsGlow 3s linear infinite' }
-                : {}),
+                : undefined),
             }}
           ></div>
 
@@ -174,7 +173,7 @@ export default function SkillsBox({
               className="nextSkillsTimer"
               style={{
                 opacity: activeList || isContactFormOpen ? 0 : 1,
-                ...(timeLeft
+                ...(!activeList && !isContactFormOpen && timeLeft
                   ? { animation: 'nextSkillsTimer 1s linear 1' }
                   : undefined),
               }}

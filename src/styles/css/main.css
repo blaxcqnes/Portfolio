@@ -3176,7 +3176,7 @@ input[type=email]) {
   height: 100%;
   transform: scale(102%);
   animation: estimatesList 0.2s linear 1;
-  scroll-margin-bottom: 7rem;
+  scroll-margin: 0 0 7rem 0;
   background-color: #1e1e1e;
   border-radius: 0.5rem;
   border: 0.1rem solid #545146;
@@ -3319,7 +3319,7 @@ input[type=email]) {
   height: 20rem;
   transform: scale(102%);
   animation: estimatesList 0.2s linear 1;
-  scroll-margin-bottom: 5rem;
+  scroll-margin: 0 0 7rem 0;
   background-color: #1e1e1e;
   border-radius: 0.5rem;
   border: 0.1rem solid #545146;
@@ -4136,7 +4136,7 @@ input[type=email]) {
   height: 20rem;
   transform: scale(102%);
   animation: skillsList 0.2s linear 1;
-  scroll-margin-bottom: 7rem;
+  scroll-margin: 0 0 7rem 0;
   background-color: #1e1e1e;
   border-radius: 0.5rem;
   border: 0.1rem solid #545146;
@@ -6210,7 +6210,7 @@ input[type=email]) {
   width: 100%;
   height: 20rem;
   transform: scale(102%);
-  scroll-margin-bottom: 7rem;
+  scroll-margin: 0 0 7rem 0;
   background-color: #1e1e1e;
   border-radius: 0.5rem;
   border: 0.1rem solid #5c4f43;
@@ -6784,7 +6784,7 @@ input[type=email]) {
   width: 100%;
   height: 20rem;
   transform: scale(102%);
-  scroll-margin-bottom: 5rem;
+  scroll-margin: 0 0 7rem 0;
   background-color: #1e1e1e;
   border-radius: 0.5rem;
   border: 0.1rem solid #545146;
@@ -8422,7 +8422,7 @@ input[type=email]) {
   width: 100%;
   height: 20rem;
   transform: scale(102%);
-  scroll-margin-bottom: 5rem;
+  scroll-margin: 0 0 7rem 0;
   background-color: #1e1e1e;
   border-radius: 0.5rem;
   border: 0.1rem solid #5c4f43;
@@ -10150,7 +10150,7 @@ input[type=email]) {
   width: 100%;
   height: 20rem;
   transform: scale(102%);
-  scroll-margin-bottom: 7rem;
+  scroll-margin: 0 0 7rem 0;
   background-color: #1e1e1e;
   border-radius: 0.5rem;
   border: 0.1rem solid #5c4f43;
@@ -11402,7 +11402,7 @@ input[type=email]) {
   width: 100%;
   height: 20rem;
   transform: scale(102%);
-  scroll-margin-bottom: 7rem;
+  scroll-margin: 0 0 7rem 0;
   background-color: #1e1e1e;
   border-radius: 0.5rem;
   border: 0.1rem solid #545146;
@@ -12243,7 +12243,7 @@ input[type=email]) {
   width: 100%;
   height: 20rem;
   transform: scale(102%);
-  scroll-margin-bottom: 5rem;
+  scroll-margin: 0 0 7rem 0;
   background-color: #1e1e1e;
   border-radius: 0.5rem;
   border: 0.1rem solid #5c4f43;
