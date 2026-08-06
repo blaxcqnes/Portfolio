@@ -56,7 +56,7 @@ export default function SectionTwo({
       <div
         className="projectsAndFooter"
         style={
-          largeLandscape && activeList === 'estimatesList'
+          largeForEstimatesLandscape && activeList === 'estimatesList'
             ? {
               position: 'absolute',
               transform: 'scale(90%)',

@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import SkillsList from './SkillsList';
 
 export default function SkillsBox({
@@ -9,56 +9,105 @@ export default function SkillsBox({
   closeList,
   mobileScreens,
   largeLandscape,
-  largePortrait
+  largePortrait,
 }) {
-
+  const timerRef = useRef(null);
+  const isInitialLoad = useRef(true);
+  //
   const [timeLeft, setTimeLeft] = useState(15);
+  const [animationDelay, setAnimationDelay] = useState(6);
+  //
   const [skillPage, setSkillPage] = useState(1);
 
+  // Related to skills timer
   useEffect(() => {
-    const timerId = setInterval(() => {
-      setTimeLeft((prevTime) => {
-        if (isContactFormOpen || activeList) {
-          return 15;
-        }
-        if (prevTime <= 0) {
-          return 15;
-        }
-        return prevTime - 1;
-      });
-    }, 1000);
+    let timerId;
+    let timeoutId;
 
-    return () => clearInterval(timerId);
+    const startTimer = () => {
+      timerId = setInterval(() => {
+        setTimeLeft((prev) => {
+          if (isContactFormOpen || activeList) {
+            return prev;
+          }
+          if (prev <= 0) {
+            return 15;
+          }
+          return prev - 1;
+        });
+      }, 1000);
+    };
+
+    if (isInitialLoad.current) {
+      timeoutId = setTimeout(() => {
+        startTimer();
+        isInitialLoad.current = false;
+      }, 6000);
+    } else {
+      startTimer();
+    }
+
+    return () => {
+      clearTimeout(timeoutId);
+      clearInterval(timerId);
+    };
   }, [isContactFormOpen, activeList]);
 
+  // Related to loader animation delay and glow effect
+  useEffect(() => {
+    const timeoutId = setTimeout(() => {
+      timerRef.current = setInterval(() => {
+        setAnimationDelay((prev) => {
+          if (prev <= 0) {
+            clearInterval(timerRef.current);
+            return 0;
+          }
+          return prev - 1;
+        });
+      }, 1000);
+    });
+
+    return () => {
+      clearTimeout(timeoutId);
+      clearInterval(timerRef.current);
+    };
+  }, []);
+
+  // Related to the skills auto page change
   useEffect(() => {
     if (timeLeft === 0 && skillPage <= 2) {
-      setSkillPage(prev => prev + 1);
+      setSkillPage((prev) => prev + 1);
       setTimeLeft(15);
-    } if (skillPage >= 3) return setSkillPage(1);
-  }, [timeLeft])
+    }
+    if (skillPage >= 3) return setSkillPage(1);
+  }, [timeLeft]);
 
   return (
     <div className="skillsAndSkillsList">
       <div
+        key={timeLeft - { animationDelay }}
         className="skillsBox"
-        style={
-          activeList || isContactFormOpen
+        style={{
+          ...(activeList || isContactFormOpen
             ? {
-              filter:
-                'opacity(0.5) grayscale(10%) blur(0.05rem) brightness(80%)',
-            }
-            : null
-        }
+                filter:
+                  'opacity(0.5) grayscale(10%) blur(0.05rem) brightness(80%)',
+              }
+            : null),
+          animation:
+            activeList || isContactFormOpen
+              ? 'none'
+              : animationDelay
+                ? 'skillsBox 0.5s linear 1'
+                : !animationDelay &&
+                  timeLeft === 15 &&
+                  'skillsAlternate 1s ease 1',
+        }}
       >
-
         <div className="titleAndButton">
           <p className="title">Skills</p>
           {activeList || isContactFormOpen ? (
-            <button
-              className="fluencyDisabled"
-              onClick={closeList}
-            >
+            <button className="fluencyDisabled" onClick={closeList}>
               Fluency
             </button>
           ) : (
@@ -74,42 +123,74 @@ export default function SkillsBox({
           )}
         </div>
 
-        {skillPage === 1 && (<div className="skillsContainer">
-          <h4 className="skillsTitle">Cybersecurity</h4>
-          <ol className="skillsOrder">
-            <li>Ethical Hacking Fundamentals</li>
-            <li>Network Security</li>
-            <li>Threat Analysis & Risk Management</li>
-            <li>OWASP TOP 10 Web Application Vulnerabilities</li>
-          </ol>
-        </div>)}
+        {skillPage === 1 && (
+          <div className="skillsContainer">
+            <h4 className="skillsTitle">Cybersecurity</h4>
+            <ol className="skillsOrder">
+              <li>WireShark</li>
+              <li>Nmap</li>
+              <li>Metasploit</li>
+              <li>Burp Suite</li>
+            </ol>
+          </div>
+        )}
 
-        {skillPage === 2 && (<div className="skillsContainer">
-          <h4 className="skillsTitle">Web Development</h4>
-          <ol className="skillsOrder">
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>SCSS</li>
-            <li>JavaScript</li>
-            <li>React.js</li>
-          </ol>
-        </div>)}
+        {skillPage === 2 && (
+          <div className="skillsContainer">
+            <h4 className="skillsTitle">Web Development</h4>
+            <ol className="skillsOrder">
+              <li>HTML</li>
+              <li>CSS & SCSS</li>
+              <li>JavaScript</li>
+              <li>React</li>
+            </ol>
+          </div>
+        )}
 
         <div
           className="nextSkillsLoader"
           style={{
-            ...(timeLeft === 15 ? { animation: 'nextSkillsLoader 1s linear 1' } : {}),
-            display: activeList || isContactFormOpen ? 'none' : 'flex'
-          }}>
+            ...(timeLeft === 15
+              ? { animation: 'nextSkillsLoader 1s linear 1' }
+              : {}),
+            // display: activeList || isContactFormOpen ? 'none' : 'flex',
+          }}
+        >
+          <div
+            className="nextSkillsOval"
+            style={{
+              opacity: activeList || isContactFormOpen ? 0 : 1,
+              ...(animationDelay
+                ? { animation: 'nextSkillsStops 1s linear 1' }
+                : { animation: 'nextSkillsOval 1.5s linear infinite' }),
+              ...(animationDelay
+                ? { animation: 'nextSkillsGlow 3s linear infinite' }
+                : {}),
+            }}
+          ></div>
 
-          <div className="nextSkillsOval" style={timeLeft === 0 ? { animation: 'nextSkillsStops 1s linear 1' } : { animation: 'nextSkillsOval 1.5s linear infinite' }}></div>
-
-          <div className='nextSkillsTimer' style={timeLeft === 0 ? { animation: 'nextSkillsTimer 1s linear 1' } : {}}>{timeLeft}</div>
+          {!animationDelay && (
+            <div
+              className="nextSkillsTimer"
+              style={{
+                opacity: activeList || isContactFormOpen ? 0 : 1,
+                ...(timeLeft
+                  ? { animation: 'nextSkillsTimer 1s linear 1' }
+                  : undefined),
+              }}
+            >
+              {timeLeft}
+            </div>
+          )}
         </div>
       </div>
 
-      {(largeLandscape || largePortrait) ? undefined : (mobileScreens && activeList === 'skillsList') && (
-        <SkillsList setActiveList={setActiveList} />)}
+      {largeLandscape || largePortrait
+        ? undefined
+        : mobileScreens &&
+          activeList === 'skillsList' && (
+            <SkillsList setActiveList={setActiveList} />
+          )}
     </div>
-  )
+  );
 }

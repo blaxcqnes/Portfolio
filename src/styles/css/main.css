@@ -280,7 +280,6 @@
 .header {
   display: flex;
   width: 100%;
-  height: -moz-fit-content;
   height: fit-content;
   position: relative;
   animation: header 0.5s linear 1;
@@ -361,8 +360,7 @@
 .header .headerContainer .nameAndProfession {
   display: flex;
   flex-direction: row;
-  -moz-column-gap: 1.2rem;
-       column-gap: 1.2rem;
+  column-gap: 1.2rem;
   align-items: center;
 }
 @media (min-width: 600px) and (max-width: 1023px) {
@@ -374,14 +372,12 @@
 }
 @media (width: 1023px) {
   .header .headerContainer .nameAndProfession {
-    -moz-column-gap: 1.5rem;
-         column-gap: 1.5rem;
+    column-gap: 1.5rem;
   }
 }
 @media (min-width: 1023px) and (max-width: 1100px) {
   .header .headerContainer .nameAndProfession {
-    -moz-column-gap: 0.9rem;
-         column-gap: 0.9rem;
+    column-gap: 0.9rem;
   }
 }
 .header .headerContainer .nameAndProfession .name {
@@ -497,20 +493,17 @@
 .header .headerContainer .locationAndContact {
   display: flex;
   flex-direction: row;
-  -moz-column-gap: 1.5rem;
-       column-gap: 1.5rem;
+  column-gap: 1.5rem;
   align-items: center;
 }
 @media (min-width: 767px) and (max-width: 900px) {
   .header .headerContainer .locationAndContact {
-    -moz-column-gap: 1.3rem;
-         column-gap: 1.3rem;
+    column-gap: 1.3rem;
   }
 }
 @media (min-width: 900px) and (max-width: 1023px) {
   .header .headerContainer .locationAndContact {
-    -moz-column-gap: 1rem;
-         column-gap: 1rem;
+    column-gap: 1rem;
   }
 }
 .header .headerContainer .locationAndContact .location {
@@ -1766,14 +1759,9 @@ input[type=search],
 input[type=password],
 input[type=url],
 input[type=email]) {
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
+  appearance: none;
   border-style: solid;
   outline: none;
-}
-.header .contactForm form .allInOneForm .name::-moz-placeholder {
-  color: #8B8B8B;
 }
 .header .contactForm form .allInOneForm .name::placeholder {
   color: #8B8B8B;
@@ -1827,14 +1815,9 @@ input[type=search],
 input[type=password],
 input[type=url],
 input[type=email]) {
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
+  appearance: none;
   border-style: solid;
   outline: none;
-}
-.header .contactForm form .allInOneForm .subject::-moz-placeholder {
-  color: #8B8B8B;
 }
 .header .contactForm form .allInOneForm .subject::placeholder {
   color: #8B8B8B;
@@ -1888,14 +1871,9 @@ input[type=search],
 input[type=password],
 input[type=url],
 input[type=email]) {
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
+  appearance: none;
   border-style: solid;
   outline: none;
-}
-.header .contactForm form .allInOneForm .email::-moz-placeholder {
-  color: #8B8B8B;
 }
 .header .contactForm form .allInOneForm .email::placeholder {
   color: #8B8B8B;
@@ -1946,14 +1924,9 @@ input[type=email]) {
   font-size: 10pt;
 }
 .header .contactForm form .allInOneForm .textArea:focus:where(textarea) {
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
+  appearance: none;
   border-style: solid;
   outline: none;
-}
-.header .contactForm form .allInOneForm .textArea::-moz-placeholder {
-  color: #8B8B8B;
 }
 .header .contactForm form .allInOneForm .textArea::placeholder {
   color: #8B8B8B;
@@ -2000,8 +1973,7 @@ input[type=email]) {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  -moz-column-gap: 1rem;
-       column-gap: 1rem;
+  column-gap: 1rem;
   width: 100%;
   position: absolute;
   top: 20.3rem;
@@ -2322,8 +2294,7 @@ input[type=email]) {
 .mainContent {
   display: flex;
   flex-direction: row;
-  -moz-column-gap: 1rem;
-       column-gap: 1rem;
+  column-gap: 1rem;
   width: inherit;
   height: auto;
   position: relative;
@@ -2342,8 +2313,7 @@ input[type=email]) {
 }
 @media (min-width: 1023px) and (max-width: 1100px) {
   .mainContent {
-    -moz-column-gap: 0.4rem;
-         column-gap: 0.4rem;
+    column-gap: 0.4rem;
   }
 }
 @media (orientation: portrait) and (min-width: 1023px) and (max-width: 1100px) {
@@ -2354,14 +2324,12 @@ input[type=email]) {
 }
 @media (min-width: 1100px) and (max-width: 1200px) {
   .mainContent {
-    -moz-column-gap: 0.5rem;
-         column-gap: 0.5rem;
+    column-gap: 0.5rem;
   }
 }
 @media (min-width: 1200px) and (max-width: 1400px) {
   .mainContent {
-    -moz-column-gap: 0.8rem;
-         column-gap: 0.8rem;
+    column-gap: 0.8rem;
   }
 }
 .mainContent .sectionOne {
@@ -2405,8 +2373,7 @@ input[type=email]) {
 .mainContent .sectionOne .bio .imageAndDescription {
   display: flex;
   flex-direction: row;
-  -moz-column-gap: 1rem;
-       column-gap: 1rem;
+  column-gap: 1rem;
 }
 @media (min-width: 300px) and (max-width: 600px) {
   .mainContent .sectionOne .bio .imageAndDescription {
@@ -2421,38 +2388,32 @@ input[type=email]) {
 }
 @media (min-width: 1023px) and (max-width: 1100px) {
   .mainContent .sectionOne .bio .imageAndDescription {
-    -moz-column-gap: 0.4rem;
-         column-gap: 0.4rem;
+    column-gap: 0.4rem;
   }
 }
 @media (orientation: portrait) and (min-width: 1023px) and (max-width: 1100px) {
   .mainContent .sectionOne .bio .imageAndDescription {
-    -moz-column-gap: 1.2rem;
-         column-gap: 1.2rem;
+    column-gap: 1.2rem;
   }
 }
 @media (min-width: 1100px) and (max-width: 1200px) {
   .mainContent .sectionOne .bio .imageAndDescription {
-    -moz-column-gap: 0.5rem;
-         column-gap: 0.5rem;
+    column-gap: 0.5rem;
   }
 }
 @media (width: 1200px) {
   .mainContent .sectionOne .bio .imageAndDescription {
-    -moz-column-gap: 0.8rem;
-         column-gap: 0.8rem;
+    column-gap: 0.8rem;
   }
 }
 @media (min-width: 1200px) and (max-width: 1300px) {
   .mainContent .sectionOne .bio .imageAndDescription {
-    -moz-column-gap: 0.8rem;
-         column-gap: 0.8rem;
+    column-gap: 0.8rem;
   }
 }
 @media (min-width: 1300px) and (max-width: 1400px) {
   .mainContent .sectionOne .bio .imageAndDescription {
-    -moz-column-gap: 0.8rem;
-         column-gap: 0.8rem;
+    column-gap: 0.8rem;
   }
 }
 .mainContent .sectionOne .bio .imageAndDescription .imageAndTitle {
@@ -2482,8 +2443,7 @@ input[type=email]) {
   .mainContent .sectionOne .bio .imageAndDescription .imageAndTitle {
     width: 100%;
     height: auto;
-    -o-object-fit: cover;
-       object-fit: cover;
+    object-fit: cover;
     border-radius: 0.5rem;
   }
 }
@@ -2574,8 +2534,7 @@ input[type=email]) {
 .mainContent .sectionOne .bio .imageAndDescription .imageAndTitle .mainImage {
   width: 100%;
   height: inherit;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   border-radius: 0.5rem;
 }
 .mainContent .sectionOne .bio .imageAndDescription .imageAndTitle .title {
@@ -2883,7 +2842,7 @@ input[type=email]) {
 }
 .mainContent .sectionOne .bio .imageAndDescription .descriptionAndEstimatesList .descriptionBox .titleAndButton .estimates:hover {
   background-color: #545146;
-  box-shadow: inset 0 0 0 0.1rem #8B8B8B;
+  box-shadow: inset 0 0 0 0.1rem #8b8b8b;
 }
 @media (min-width: 300px) and (max-width: 600px) {
   .mainContent .sectionOne .bio .imageAndDescription .descriptionAndEstimatesList .descriptionBox .titleAndButton .estimates {
@@ -3186,7 +3145,7 @@ input[type=email]) {
 }
 .mainContent .sectionOne .bio .imageAndDescription .descriptionAndEstimatesList .descriptionBox .locationAndEstimatesButton .estimates:hover {
   background-color: #545146;
-  box-shadow: inset 0 0 0 0.1rem #8B8B8B;
+  box-shadow: inset 0 0 0 0.1rem #8b8b8b;
 }
 @media (min-width: 300px) and (max-width: 350px) {
   .mainContent .sectionOne .bio .imageAndDescription .descriptionAndEstimatesList .descriptionBox .locationAndEstimatesButton .estimates {
@@ -3295,7 +3254,7 @@ input[type=email]) {
 }
 .mainContent .sectionOne .bio .imageAndDescription .descriptionAndEstimatesList .estimatesList .titleAndButton .close:hover {
   background-color: #545146;
-  box-shadow: inset 0 0 0 0.1rem #8B8B8B;
+  box-shadow: inset 0 0 0 0.1rem #8b8b8b;
 }
 @media (min-width: 300px) and (max-width: 350px) {
   .mainContent .sectionOne .bio .imageAndDescription .descriptionAndEstimatesList .estimatesList .titleAndButton .close {
@@ -3322,8 +3281,7 @@ input[type=email]) {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  -moz-column-gap: 10%;
-       column-gap: 10%;
+  column-gap: 10%;
   align-self: center;
   align-items: center;
   width: 98%;
@@ -3464,7 +3422,7 @@ input[type=email]) {
 }
 .mainContent .sectionOne .bio .estimatesList .titleAndButton .close:hover {
   background-color: #545146;
-  box-shadow: inset 0 0 0 0.1rem #8B8B8B;
+  box-shadow: inset 0 0 0 0.1rem #8b8b8b;
 }
 @media (min-width: 600px) and (max-width: 800px) {
   .mainContent .sectionOne .bio .estimatesList .titleAndButton .close {
@@ -3529,8 +3487,7 @@ input[type=email]) {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  -moz-column-gap: 10%;
-       column-gap: 10%;
+  column-gap: 10%;
   align-self: center;
   align-items: center;
   width: 98%;
@@ -3548,8 +3505,7 @@ input[type=email]) {
 .mainContent .sectionOne .skillsAndEducation {
   display: flex;
   flex-direction: row;
-  -moz-column-gap: 1rem;
-       column-gap: 1rem;
+  column-gap: 1rem;
 }
 @media (min-width: 300px) and (max-width: 600px) {
   .mainContent .sectionOne .skillsAndEducation {
@@ -3564,38 +3520,32 @@ input[type=email]) {
 }
 @media (min-width: 1023px) and (max-width: 1100px) {
   .mainContent .sectionOne .skillsAndEducation {
-    -moz-column-gap: 0.4rem;
-         column-gap: 0.4rem;
+    column-gap: 0.4rem;
   }
 }
 @media (orientation: portrait) and (min-width: 1023px) and (max-width: 1100px) {
   .mainContent .sectionOne .skillsAndEducation {
-    -moz-column-gap: 1.2rem;
-         column-gap: 1.2rem;
+    column-gap: 1.2rem;
   }
 }
 @media (min-width: 1100px) and (max-width: 1200px) {
   .mainContent .sectionOne .skillsAndEducation {
-    -moz-column-gap: 0.5rem;
-         column-gap: 0.5rem;
+    column-gap: 0.5rem;
   }
 }
 @media (width: 1200px) {
   .mainContent .sectionOne .skillsAndEducation {
-    -moz-column-gap: 0.8rem;
-         column-gap: 0.8rem;
+    column-gap: 0.8rem;
   }
 }
 @media (min-width: 1200px) and (max-width: 1300px) {
   .mainContent .sectionOne .skillsAndEducation {
-    -moz-column-gap: 0.8rem;
-         column-gap: 0.8rem;
+    column-gap: 0.8rem;
   }
 }
 @media (min-width: 1300px) and (max-width: 1400px) {
   .mainContent .sectionOne .skillsAndEducation {
-    -moz-column-gap: 0.8rem;
-         column-gap: 0.8rem;
+    column-gap: 0.8rem;
   }
 }
 .mainContent .sectionOne .skillsAndEducation .skillsAndSkillsList {
@@ -3635,7 +3585,7 @@ input[type=email]) {
   border-radius: 0.5rem;
   overflow: hidden;
   background-color: #5c4f43;
-  animation: skillsBox 0.5s linear 1;
+  transition: background-color 1s ease;
 }
 @keyframes skillsBox {
   0% {
@@ -3648,6 +3598,17 @@ input[type=email]) {
   100% {
     transform: scale(100%);
     opacity: 1;
+  }
+}
+@keyframes skillsAlternate {
+  0% {
+    background-color: #5c4f43;
+  }
+  50% {
+    background-color: #545146;
+  }
+  100% {
+    background-color: #5c4f43;
   }
 }
 @media (min-width: 300px) and (max-width: 350px) {
@@ -3815,7 +3776,7 @@ input[type=email]) {
 }
 .mainContent .sectionOne .skillsAndEducation .skillsAndSkillsList .skillsBox .titleAndButton .fluency:hover {
   background-color: #545146;
-  box-shadow: inset 0 0 0 0.1rem #8B8B8B;
+  box-shadow: inset 0 0 0 0.1rem #8b8b8b;
 }
 @media (min-width: 300px) and (max-width: 350px) {
   .mainContent .sectionOne .skillsAndEducation .skillsAndSkillsList .skillsBox .titleAndButton .fluency {
@@ -4073,15 +4034,27 @@ input[type=email]) {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  width: -moz-fit-content;
   width: fit-content;
-  height: -moz-fit-content;
   height: fit-content;
   align-items: center;
   position: absolute;
   right: 1.5rem;
   bottom: 1.5rem;
   z-index: 1;
+}
+@media (min-width: 300px) and (max-width: 1023px) {
+  .mainContent .sectionOne .skillsAndEducation .skillsAndSkillsList .skillsBox .nextSkillsLoader {
+    left: 2rem;
+    right: unset;
+    bottom: 2rem;
+  }
+}
+@media (orientation: portrait) and (min-width: 1023px) and (max-width: 1100px) {
+  .mainContent .sectionOne .skillsAndEducation .skillsAndSkillsList .skillsBox .nextSkillsLoader {
+    left: 2rem;
+    right: unset;
+    bottom: 2rem;
+  }
 }
 @keyframes nextSkillsLoader {
   0% {
@@ -4095,10 +4068,11 @@ input[type=email]) {
   display: flex;
   width: 2rem;
   height: 2rem;
-  position: fixed;
+  position: absolute;
   border: 0.15rem solid;
-  border-color: #8B8B8B transparent #8B8B8B transparent;
+  border-color: #8b8b8b transparent #8b8b8b transparent;
   border-radius: 50%;
+  transform: border-color 0.2s ease, transform 0.2s ease;
 }
 @keyframes nextSkillsOval {
   from {
@@ -4116,18 +4090,42 @@ input[type=email]) {
     opacity: 0;
   }
 }
+@keyframes nextSkillsGlow {
+  0% {
+    border-color: #5c4f43;
+    opacity: 0;
+  }
+  25% {
+    border-color: #ffffff transparent #ffffff transparent;
+    transform: rotate(-90deg);
+    opacity: 1;
+  }
+  50% {
+    transform: rotate(-180deg);
+    opacity: 0;
+  }
+  75% {
+    border-color: #ffffff transparent #ffffff transparent;
+    transform: rotate(-270deg);
+    opacity: 1;
+  }
+  100% {
+    transform: rotate(-360deg);
+    opacity: 0;
+  }
+}
 .mainContent .sectionOne .skillsAndEducation .skillsAndSkillsList .skillsBox .nextSkillsLoader .nextSkillsTimer {
   display: flex;
-  position: fixed;
+  position: absolute;
   font-size: 10pt;
-  color: #8B8B8B;
+  color: #8b8b8b;
 }
 @keyframes nextSkillsTimer {
   from {
-    opacity: 1;
+    opacity: 0;
   }
   to {
-    opacity: 0;
+    opacity: 1;
   }
 }
 .mainContent .sectionOne .skillsAndEducation .skillsAndSkillsList .skillsList {
@@ -4216,7 +4214,7 @@ input[type=email]) {
 }
 .mainContent .sectionOne .skillsAndEducation .skillsAndSkillsList .skillsList .titleAndButton .close:hover {
   background-color: #545146;
-  box-shadow: inset 0 0 0 0.1rem #8B8B8B;
+  box-shadow: inset 0 0 0 0.1rem #8b8b8b;
 }
 @media (min-width: 300px) and (max-width: 350px) {
   .mainContent .sectionOne .skillsAndEducation .skillsAndSkillsList .skillsList .titleAndButton .close {
@@ -4243,8 +4241,7 @@ input[type=email]) {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  -moz-column-gap: 10%;
-       column-gap: 10%;
+  column-gap: 10%;
   align-self: center;
   align-items: center;
   width: 98%;
@@ -4350,7 +4347,7 @@ input[type=email]) {
 }
 .mainContent .sectionOne .skillsAndEducation .skillsAndSkillsList .skillsList .content .previous:hover {
   background-color: #5c4f43;
-  box-shadow: inset 0 0 0 0.1rem #8B8B8B;
+  box-shadow: inset 0 0 0 0.1rem #8b8b8b;
 }
 @media (min-width: 300px) and (max-width: 350px) {
   .mainContent .sectionOne .skillsAndEducation .skillsAndSkillsList .skillsList .content .previous {
@@ -4496,9 +4493,7 @@ input[type=email]) {
 }
 .mainContent .sectionOne .skillsAndEducation .skillsAndSkillsList .skillsList .content .titleAndFluencies .fluenciesOne .fluencyOne .statusBar .percentage {
   display: flex;
-  height: -moz-fit-content;
   height: fit-content;
-  width: -moz-fit-content;
   width: fit-content;
   position: absolute;
   top: 12%;
@@ -4630,9 +4625,7 @@ input[type=email]) {
 }
 .mainContent .sectionOne .skillsAndEducation .skillsAndSkillsList .skillsList .content .titleAndFluencies .fluenciesOne .fluencyTwo .statusBar .percentage {
   display: flex;
-  height: -moz-fit-content;
   height: fit-content;
-  width: -moz-fit-content;
   width: fit-content;
   position: absolute;
   top: 12%;
@@ -4764,9 +4757,7 @@ input[type=email]) {
 }
 .mainContent .sectionOne .skillsAndEducation .skillsAndSkillsList .skillsList .content .titleAndFluencies .fluenciesOne .fluencyThree .statusBar .percentage {
   display: flex;
-  height: -moz-fit-content;
   height: fit-content;
-  width: -moz-fit-content;
   width: fit-content;
   position: absolute;
   top: 12%;
@@ -4898,9 +4889,7 @@ input[type=email]) {
 }
 .mainContent .sectionOne .skillsAndEducation .skillsAndSkillsList .skillsList .content .titleAndFluencies .fluenciesOne .fluencyFour .statusBar .percentage {
   display: flex;
-  height: -moz-fit-content;
   height: fit-content;
-  width: -moz-fit-content;
   width: fit-content;
   position: absolute;
   top: 12%;
@@ -5057,9 +5046,7 @@ input[type=email]) {
 }
 .mainContent .sectionOne .skillsAndEducation .skillsAndSkillsList .skillsList .content .titleAndFluencies .fluenciesTwo .fluencyOne .statusBar .percentage {
   display: flex;
-  height: -moz-fit-content;
   height: fit-content;
-  width: -moz-fit-content;
   width: fit-content;
   position: absolute;
   top: 12%;
@@ -5192,9 +5179,7 @@ input[type=email]) {
 }
 .mainContent .sectionOne .skillsAndEducation .skillsAndSkillsList .skillsList .content .titleAndFluencies .fluenciesTwo .fluencyTwo .statusBar .percentage {
   display: flex;
-  height: -moz-fit-content;
   height: fit-content;
-  width: -moz-fit-content;
   width: fit-content;
   position: absolute;
   top: 12%;
@@ -5326,9 +5311,7 @@ input[type=email]) {
 }
 .mainContent .sectionOne .skillsAndEducation .skillsAndSkillsList .skillsList .content .titleAndFluencies .fluenciesTwo .fluencyThree .statusBar .percentage {
   display: flex;
-  height: -moz-fit-content;
   height: fit-content;
-  width: -moz-fit-content;
   width: fit-content;
   position: absolute;
   top: 12%;
@@ -5460,9 +5443,7 @@ input[type=email]) {
 }
 .mainContent .sectionOne .skillsAndEducation .skillsAndSkillsList .skillsList .content .titleAndFluencies .fluenciesTwo .fluencyFour .statusBar .percentage {
   display: flex;
-  height: -moz-fit-content;
   height: fit-content;
-  width: -moz-fit-content;
   width: fit-content;
   position: absolute;
   top: 12%;
@@ -5628,7 +5609,7 @@ input[type=email]) {
 }
 .mainContent .sectionOne .skillsAndEducation .skillsAndSkillsList .skillsList .content .next:hover {
   background-color: #5c4f43;
-  box-shadow: inset 0 0 0 0.1rem #8B8B8B;
+  box-shadow: inset 0 0 0 0.1rem #8b8b8b;
 }
 @media (min-width: 300px) and (max-width: 350px) {
   .mainContent .sectionOne .skillsAndEducation .skillsAndSkillsList .skillsList .content .next {
@@ -5679,7 +5660,7 @@ input[type=email]) {
   right: 2.5rem;
   bottom: 1rem;
   font-size: 9pt;
-  color: #8B8B8B;
+  color: #8b8b8b;
 }
 @media (min-width: 300px) and (max-width: 350px) {
   .mainContent .sectionOne .skillsAndEducation .skillsAndSkillsList .skillsList .content p {
@@ -5919,7 +5900,7 @@ input[type=email]) {
 }
 .mainContent .sectionOne .skillsAndEducation .educationAndEducationList .educationBox .titleAndButton .courses:hover {
   background-color: #5c4f43;
-  box-shadow: 0 0 0 0.1rem #8B8B8B;
+  box-shadow: 0 0 0 0.1rem #8b8b8b;
 }
 @media (min-width: 300px) and (max-width: 350px) {
   .mainContent .sectionOne .skillsAndEducation .educationAndEducationList .educationBox .titleAndButton .courses {
@@ -6076,20 +6057,17 @@ input[type=email]) {
 .mainContent .sectionOne .skillsAndEducation .educationAndEducationList .educationBox .educationContainer .institutionAndDegree .wrapper {
   display: flex;
   flex-direction: row;
-  -moz-column-gap: 0.5rem;
-       column-gap: 0.5rem;
+  column-gap: 0.5rem;
   align-items: center;
 }
 @media (min-width: 1023px) and (max-width: 1200px) {
   .mainContent .sectionOne .skillsAndEducation .educationAndEducationList .educationBox .educationContainer .institutionAndDegree .wrapper {
-    -moz-column-gap: 0.3rem;
-         column-gap: 0.3rem;
+    column-gap: 0.3rem;
   }
 }
 @media (orientation: portrait) and (min-width: 1023px) and (max-width: 1100px) {
   .mainContent .sectionOne .skillsAndEducation .educationAndEducationList .educationBox .educationContainer .institutionAndDegree .wrapper {
-    -moz-column-gap: 0.3rem;
-         column-gap: 0.3rem;
+    column-gap: 0.3rem;
   }
 }
 .mainContent .sectionOne .skillsAndEducation .educationAndEducationList .educationBox .educationContainer .institutionAndDegree .wrapper .institution {
@@ -6309,7 +6287,7 @@ input[type=email]) {
 }
 .mainContent .sectionOne .skillsAndEducation .educationAndEducationList .educationList .titleAndButton .close:hover {
   background-color: #5c4f43;
-  box-shadow: inset 0 0 0 0.1rem #8B8B8B;
+  box-shadow: inset 0 0 0 0.1rem #8b8b8b;
 }
 @media (min-width: 300px) and (max-width: 350px) {
   .mainContent .sectionOne .skillsAndEducation .educationAndEducationList .educationList .titleAndButton .close {
@@ -6336,8 +6314,7 @@ input[type=email]) {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  -moz-column-gap: 10%;
-       column-gap: 10%;
+  column-gap: 10%;
   align-self: center;
   align-items: center;
   width: 98%;
@@ -6443,7 +6420,7 @@ input[type=email]) {
 }
 .mainContent .sectionOne .skillsAndEducation .educationAndEducationList .educationList .content .previous:hover {
   background-color: #545146;
-  box-shadow: inset 0 0 0 0.1rem #8B8B8B;
+  box-shadow: inset 0 0 0 0.1rem #8b8b8b;
 }
 @media (min-width: 300px) and (max-width: 350px) {
   .mainContent .sectionOne .skillsAndEducation .educationAndEducationList .educationList .content .previous {
@@ -6724,7 +6701,7 @@ input[type=email]) {
 }
 .mainContent .sectionOne .skillsAndEducation .educationAndEducationList .educationList .content .next:hover {
   background-color: #545146;
-  box-shadow: inset 0 0 0 0.1rem #8B8B8B;
+  box-shadow: inset 0 0 0 0.1rem #8b8b8b;
 }
 @media (min-width: 300px) and (max-width: 350px) {
   .mainContent .sectionOne .skillsAndEducation .educationAndEducationList .educationList .content .next {
@@ -6775,7 +6752,7 @@ input[type=email]) {
   right: 2.5rem;
   bottom: 1rem;
   font-size: 9pt;
-  color: #8B8B8B;
+  color: #8b8b8b;
 }
 @media (min-width: 300px) and (max-width: 350px) {
   .mainContent .sectionOne .skillsAndEducation .educationAndEducationList .educationList .content p {
@@ -6911,7 +6888,7 @@ input[type=email]) {
 }
 .mainContent .sectionOne .skillsList .titleAndButton .close:hover {
   background-color: #545146;
-  box-shadow: inset 0 0 0 0.1rem #8B8B8B;
+  box-shadow: inset 0 0 0 0.1rem #8b8b8b;
 }
 @media (min-width: 600px) and (max-width: 800px) {
   .mainContent .sectionOne .skillsList .titleAndButton .close {
@@ -6976,8 +6953,7 @@ input[type=email]) {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  -moz-column-gap: 10%;
-       column-gap: 10%;
+  column-gap: 10%;
   align-self: center;
   align-items: center;
   width: 98%;
@@ -7127,7 +7103,7 @@ input[type=email]) {
 }
 .mainContent .sectionOne .skillsList .content .previous:hover {
   background-color: #5c4f43;
-  box-shadow: inset 0 0 0 0.1rem #8B8B8B;
+  box-shadow: inset 0 0 0 0.1rem #8b8b8b;
 }
 @media (width: 600px) {
   .mainContent .sectionOne .skillsList .content .previous {
@@ -7339,9 +7315,7 @@ input[type=email]) {
 }
 .mainContent .sectionOne .skillsList .content .titleAndFluencies .fluenciesOne .fluencyOne .statusBar .percentage {
   display: flex;
-  height: -moz-fit-content;
   height: fit-content;
-  width: -moz-fit-content;
   width: fit-content;
   position: absolute;
   top: 12%;
@@ -7405,8 +7379,7 @@ input[type=email]) {
 @media (min-width: 1023px) and (max-width: 1100px) {
   .mainContent .sectionOne .skillsList .content .titleAndFluencies .fluenciesOne .fluencyTwo {
     flex-direction: row;
-    -moz-column-gap: unset;
-         column-gap: unset;
+    column-gap: unset;
     justify-content: space-between;
     width: 100%;
   }
@@ -7454,9 +7427,7 @@ input[type=email]) {
 }
 .mainContent .sectionOne .skillsList .content .titleAndFluencies .fluenciesOne .fluencyTwo .statusBar .percentage {
   display: flex;
-  height: -moz-fit-content;
   height: fit-content;
-  width: -moz-fit-content;
   width: fit-content;
   position: absolute;
   top: 12%;
@@ -7520,8 +7491,7 @@ input[type=email]) {
 @media (min-width: 1023px) and (max-width: 1100px) {
   .mainContent .sectionOne .skillsList .content .titleAndFluencies .fluenciesOne .fluencyThree {
     flex-direction: row;
-    -moz-column-gap: unset;
-         column-gap: unset;
+    column-gap: unset;
     justify-content: space-between;
     width: 100%;
   }
@@ -7569,9 +7539,7 @@ input[type=email]) {
 }
 .mainContent .sectionOne .skillsList .content .titleAndFluencies .fluenciesOne .fluencyThree .statusBar .percentage {
   display: flex;
-  height: -moz-fit-content;
   height: fit-content;
-  width: -moz-fit-content;
   width: fit-content;
   position: absolute;
   top: 12%;
@@ -7635,8 +7603,7 @@ input[type=email]) {
 @media (min-width: 1023px) and (max-width: 1100px) {
   .mainContent .sectionOne .skillsList .content .titleAndFluencies .fluenciesOne .fluencyFour {
     flex-direction: row;
-    -moz-column-gap: unset;
-         column-gap: unset;
+    column-gap: unset;
     justify-content: space-between;
     width: 100%;
   }
@@ -7684,9 +7651,7 @@ input[type=email]) {
 }
 .mainContent .sectionOne .skillsList .content .titleAndFluencies .fluenciesOne .fluencyFour .statusBar .percentage {
   display: flex;
-  height: -moz-fit-content;
   height: fit-content;
-  width: -moz-fit-content;
   width: fit-content;
   position: absolute;
   top: 12%;
@@ -7815,9 +7780,7 @@ input[type=email]) {
 }
 .mainContent .sectionOne .skillsList .content .titleAndFluencies .fluenciesTwo .fluencyOne .statusBar .percentage {
   display: flex;
-  height: -moz-fit-content;
   height: fit-content;
-  width: -moz-fit-content;
   width: fit-content;
   position: absolute;
   top: 12%;
@@ -7881,8 +7844,7 @@ input[type=email]) {
 @media (min-width: 1023px) and (max-width: 1100px) {
   .mainContent .sectionOne .skillsList .content .titleAndFluencies .fluenciesTwo .fluencyTwo {
     flex-direction: row;
-    -moz-column-gap: unset;
-         column-gap: unset;
+    column-gap: unset;
     justify-content: space-between;
     width: 100%;
   }
@@ -7930,9 +7892,7 @@ input[type=email]) {
 }
 .mainContent .sectionOne .skillsList .content .titleAndFluencies .fluenciesTwo .fluencyTwo .statusBar .percentage {
   display: flex;
-  height: -moz-fit-content;
   height: fit-content;
-  width: -moz-fit-content;
   width: fit-content;
   position: absolute;
   top: 12%;
@@ -7996,8 +7956,7 @@ input[type=email]) {
 @media (min-width: 1023px) and (max-width: 1100px) {
   .mainContent .sectionOne .skillsList .content .titleAndFluencies .fluenciesTwo .fluencyThree {
     flex-direction: row;
-    -moz-column-gap: unset;
-         column-gap: unset;
+    column-gap: unset;
     justify-content: space-between;
     width: 100%;
   }
@@ -8045,9 +8004,7 @@ input[type=email]) {
 }
 .mainContent .sectionOne .skillsList .content .titleAndFluencies .fluenciesTwo .fluencyThree .statusBar .percentage {
   display: flex;
-  height: -moz-fit-content;
   height: fit-content;
-  width: -moz-fit-content;
   width: fit-content;
   position: absolute;
   top: 12%;
@@ -8111,8 +8068,7 @@ input[type=email]) {
 @media (min-width: 1023px) and (max-width: 1100px) {
   .mainContent .sectionOne .skillsList .content .titleAndFluencies .fluenciesTwo .fluencyFour {
     flex-direction: row;
-    -moz-column-gap: unset;
-         column-gap: unset;
+    column-gap: unset;
     justify-content: space-between;
     width: 100%;
   }
@@ -8160,9 +8116,7 @@ input[type=email]) {
 }
 .mainContent .sectionOne .skillsList .content .titleAndFluencies .fluenciesTwo .fluencyFour .statusBar .percentage {
   display: flex;
-  height: -moz-fit-content;
   height: fit-content;
-  width: -moz-fit-content;
   width: fit-content;
   position: absolute;
   top: 12%;
@@ -8328,7 +8282,7 @@ input[type=email]) {
 }
 .mainContent .sectionOne .skillsList .content .next:hover {
   background-color: #5c4f43;
-  box-shadow: inset 0 0 0 0.1rem #8B8B8B;
+  box-shadow: inset 0 0 0 0.1rem #8b8b8b;
 }
 @media (width: 600px) {
   .mainContent .sectionOne .skillsList .content .next {
@@ -8419,7 +8373,7 @@ input[type=email]) {
   right: 2.5rem;
   bottom: 1rem;
   font-size: 9.5pt;
-  color: #8B8B8B;
+  color: #8b8b8b;
 }
 @media (width: 600px) {
   .mainContent .sectionOne .skillsList .content p {
@@ -8570,7 +8524,7 @@ input[type=email]) {
 }
 .mainContent .sectionOne .educationList .titleAndButton .close:hover {
   background-color: #5c4f43;
-  box-shadow: inset 0 0 0 0.1rem #8B8B8B;
+  box-shadow: inset 0 0 0 0.1rem #8b8b8b;
 }
 @media (min-width: 600px) and (max-width: 800px) {
   .mainContent .sectionOne .educationList .titleAndButton .close {
@@ -8635,8 +8589,7 @@ input[type=email]) {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  -moz-column-gap: 10%;
-       column-gap: 10%;
+  column-gap: 10%;
   align-self: center;
   align-items: center;
   width: 98%;
@@ -8786,7 +8739,7 @@ input[type=email]) {
 }
 .mainContent .sectionOne .educationList .content .previous:hover {
   background-color: #545146;
-  box-shadow: inset 0 0 0 0.1rem #8B8B8B;
+  box-shadow: inset 0 0 0 0.1rem #8b8b8b;
 }
 @media (width: 600px) {
   .mainContent .sectionOne .educationList .content .previous {
@@ -9254,7 +9207,7 @@ input[type=email]) {
 }
 .mainContent .sectionOne .educationList .content .next:hover {
   background-color: #545146;
-  box-shadow: inset 0 0 0 0.1rem #8B8B8B;
+  box-shadow: inset 0 0 0 0.1rem #8b8b8b;
 }
 @media (width: 600px) {
   .mainContent .sectionOne .educationList .content .next {
@@ -9345,7 +9298,7 @@ input[type=email]) {
   right: 2.5rem;
   bottom: 1rem;
   font-size: 9.5pt;
-  color: #8B8B8B;
+  color: #8b8b8b;
 }
 @media (width: 600px) {
   .mainContent .sectionOne .educationList .content p {
@@ -9524,7 +9477,7 @@ input[type=email]) {
 }
 .mainContent .sectionTwo .estimatesList .titleAndButton .close:hover {
   background-color: #545146;
-  box-shadow: inset 0 0 0 0.1rem #8B8B8B;
+  box-shadow: inset 0 0 0 0.1rem #8b8b8b;
 }
 @media (min-width: 1023px) and (max-width: 1100px) {
   .mainContent .sectionTwo .estimatesList .titleAndButton .close {
@@ -9558,8 +9511,7 @@ input[type=email]) {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  -moz-column-gap: 10%;
-       column-gap: 10%;
+  column-gap: 10%;
   align-self: center;
   align-items: center;
   width: 98%;
@@ -9641,8 +9593,7 @@ input[type=email]) {
 .mainContent .sectionTwo .projectsAndFooter .projects {
   display: flex;
   flex-direction: row;
-  -moz-column-gap: 1rem;
-       column-gap: 1rem;
+  column-gap: 1rem;
   width: 100%;
   height: 30.2rem;
 }
@@ -9665,44 +9616,38 @@ input[type=email]) {
 }
 @media (min-width: 1023px) and (max-width: 1100px) {
   .mainContent .sectionTwo .projectsAndFooter .projects {
-    -moz-column-gap: 0.4rem;
-         column-gap: 0.4rem;
+    column-gap: 0.4rem;
     height: 20.4rem;
   }
 }
 @media (orientation: portrait) and (min-width: 1023px) and (max-width: 1100px) {
   .mainContent .sectionTwo .projectsAndFooter .projects {
     flex-direction: row-reverse;
-    -moz-column-gap: 1.2rem;
-         column-gap: 1.2rem;
+    column-gap: 1.2rem;
     height: 29rem;
   }
 }
 @media (min-width: 1100px) and (max-width: 1200px) {
   .mainContent .sectionTwo .projectsAndFooter .projects {
-    -moz-column-gap: 0.5rem;
-         column-gap: 0.5rem;
+    column-gap: 0.5rem;
     height: 22.6rem;
   }
 }
 @media (width: 1200px) {
   .mainContent .sectionTwo .projectsAndFooter .projects {
-    -moz-column-gap: 0.8rem;
-         column-gap: 0.8rem;
+    column-gap: 0.8rem;
     height: 24.8rem;
   }
 }
 @media (min-width: 1200px) and (max-width: 1300px) {
   .mainContent .sectionTwo .projectsAndFooter .projects {
-    -moz-column-gap: 0.8rem;
-         column-gap: 0.8rem;
+    column-gap: 0.8rem;
     height: 24.8rem;
   }
 }
 @media (min-width: 1300px) and (max-width: 1400px) {
   .mainContent .sectionTwo .projectsAndFooter .projects {
-    -moz-column-gap: 0.8rem;
-         column-gap: 0.8rem;
+    column-gap: 0.8rem;
     height: 27.8rem;
   }
 }
@@ -10073,7 +10018,7 @@ input[type=email]) {
 }
 .mainContent .sectionTwo .projectsAndFooter .projects .webAndWebList .webBox .more:hover {
   background-color: #5c4f43;
-  box-shadow: inset 0 0 0 0.1rem #8B8B8B;
+  box-shadow: inset 0 0 0 0.1rem #8b8b8b;
 }
 @media (min-width: 300px) and (max-width: 350px) {
   .mainContent .sectionTwo .projectsAndFooter .projects .webAndWebList .webBox .more {
@@ -10282,7 +10227,7 @@ input[type=email]) {
 }
 .mainContent .sectionTwo .projectsAndFooter .projects .webAndWebList .webList .titleAndButton .close:hover {
   background-color: #5c4f43;
-  box-shadow: inset 0 0 0 0.1rem #8B8B8B;
+  box-shadow: inset 0 0 0 0.1rem #8b8b8b;
 }
 @media (min-width: 300px) and (max-width: 350px) {
   .mainContent .sectionTwo .projectsAndFooter .projects .webAndWebList .webList .titleAndButton .close {
@@ -10309,8 +10254,7 @@ input[type=email]) {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  -moz-column-gap: 10%;
-       column-gap: 10%;
+  column-gap: 10%;
   align-self: center;
   align-items: center;
   width: 98%;
@@ -10416,7 +10360,7 @@ input[type=email]) {
 }
 .mainContent .sectionTwo .projectsAndFooter .projects .webAndWebList .webList .content .previous:hover {
   background-color: #545146;
-  box-shadow: inset 0 0 0 0.1rem #8B8B8B;
+  box-shadow: inset 0 0 0 0.1rem #8b8b8b;
 }
 @media (min-width: 300px) and (max-width: 350px) {
   .mainContent .sectionTwo .projectsAndFooter .projects .webAndWebList .webList .content .previous {
@@ -10539,7 +10483,7 @@ input[type=email]) {
 }
 .mainContent .sectionTwo .projectsAndFooter .projects .webAndWebList .webList .content .next:hover {
   background-color: #545146;
-  box-shadow: inset 0 0 0 0.1rem #8B8B8B;
+  box-shadow: inset 0 0 0 0.1rem #8b8b8b;
 }
 @media (min-width: 300px) and (max-width: 350px) {
   .mainContent .sectionTwo .projectsAndFooter .projects .webAndWebList .webList .content .next {
@@ -10590,7 +10534,7 @@ input[type=email]) {
   right: 2.5rem;
   bottom: 1rem;
   font-size: 9pt;
-  color: #8B8B8B;
+  color: #8b8b8b;
 }
 @media (min-width: 300px) and (max-width: 350px) {
   .mainContent .sectionTwo .projectsAndFooter .projects .webAndWebList .webList .content p {
@@ -10972,7 +10916,7 @@ input[type=email]) {
 }
 .mainContent .sectionTwo .projectsAndFooter .projects .cyberBox .extras:hover {
   background-color: #545146;
-  box-shadow: inset 0 0 0 0.1rem #8B8B8B;
+  box-shadow: inset 0 0 0 0.1rem #8b8b8b;
 }
 @media (min-width: 300px) and (max-width: 350px) {
   .mainContent .sectionTwo .projectsAndFooter .projects .cyberBox .extras {
@@ -11213,28 +11157,24 @@ input[type=email]) {
 @media (width: 600px) {
   .mainContent .sectionTwo .projectsAndFooter .footer .wrapper {
     flex-direction: row;
-    -moz-column-gap: 0.8rem;
-         column-gap: 0.8rem;
+    column-gap: 0.8rem;
   }
 }
 @media (min-width: 1023px) and (max-width: 1100px) {
   .mainContent .sectionTwo .projectsAndFooter .footer .wrapper {
     justify-content: center;
-    -moz-column-gap: 1.3rem;
-         column-gap: 1.3rem;
+    column-gap: 1.3rem;
   }
 }
 @media (orientation: portrait) and (min-width: 1023px) and (max-width: 1100px) {
   .mainContent .sectionTwo .projectsAndFooter .footer .wrapper {
-    -moz-column-gap: 2rem;
-         column-gap: 2rem;
+    column-gap: 2rem;
   }
 }
 @media (min-width: 1100px) and (max-width: 1200px) {
   .mainContent .sectionTwo .projectsAndFooter .footer .wrapper {
     justify-content: center;
-    -moz-column-gap: 1.2rem;
-         column-gap: 1.2rem;
+    column-gap: 1.2rem;
   }
 }
 .mainContent .sectionTwo .projectsAndFooter .footer .wrapper .leftPart {
@@ -11247,36 +11187,31 @@ input[type=email]) {
   .mainContent .sectionTwo .projectsAndFooter .footer .wrapper .leftPart {
     justify-content: center;
     flex-wrap: wrap;
-    -moz-column-gap: 1.5rem;
-         column-gap: 1.5rem;
+    column-gap: 1.5rem;
     width: inherit;
     line-height: 2rem;
   }
 }
 @media (min-width: 350px) and (max-width: 600px) {
   .mainContent .sectionTwo .projectsAndFooter .footer .wrapper .leftPart {
-    -moz-column-gap: 0.8rem;
-         column-gap: 0.8rem;
+    column-gap: 0.8rem;
     width: inherit;
   }
 }
 @media (min-width: 1023px) and (max-width: 1100px) {
   .mainContent .sectionTwo .projectsAndFooter .footer .wrapper .leftPart {
-    -moz-column-gap: 1rem;
-         column-gap: 1rem;
+    column-gap: 1rem;
     width: auto;
   }
 }
 @media (orientation: portrait) and (min-width: 1023px) and (max-width: 1100px) {
   .mainContent .sectionTwo .projectsAndFooter .footer .wrapper .leftPart {
-    -moz-column-gap: 3rem;
-         column-gap: 3rem;
+    column-gap: 3rem;
   }
 }
 @media (min-width: 1100px) and (max-width: 1200px) {
   .mainContent .sectionTwo .projectsAndFooter .footer .wrapper .leftPart {
-    -moz-column-gap: 1.5rem;
-         column-gap: 1.5rem;
+    column-gap: 1.5rem;
     width: auto;
   }
 }
@@ -11372,8 +11307,7 @@ input[type=email]) {
 @media (min-width: 300px) and (max-width: 350px) {
   .mainContent .sectionTwo .projectsAndFooter .footer .wrapper .rightPart {
     justify-content: center;
-    -moz-column-gap: 2rem;
-         column-gap: 2rem;
+    column-gap: 2rem;
     width: inherit;
   }
 }
@@ -11381,49 +11315,42 @@ input[type=email]) {
   .mainContent .sectionTwo .projectsAndFooter .footer .wrapper .rightPart {
     justify-content: center;
     width: inherit;
-    -moz-column-gap: 1.8rem;
-         column-gap: 1.8rem;
+    column-gap: 1.8rem;
   }
 }
 @media (min-width: 400px) and (max-width: 500px) {
   .mainContent .sectionTwo .projectsAndFooter .footer .wrapper .rightPart {
     justify-content: center;
     width: inherit;
-    -moz-column-gap: 1.5rem;
-         column-gap: 1.5rem;
+    column-gap: 1.5rem;
   }
 }
 @media (min-width: 500px) and (max-width: 600px) {
   .mainContent .sectionTwo .projectsAndFooter .footer .wrapper .rightPart {
     justify-content: center;
     width: inherit;
-    -moz-column-gap: 3rem;
-         column-gap: 3rem;
+    column-gap: 3rem;
   }
 }
 @media (width: 600px) {
   .mainContent .sectionTwo .projectsAndFooter .footer .wrapper .rightPart {
-    -moz-column-gap: 0.8rem;
-         column-gap: 0.8rem;
+    column-gap: 0.8rem;
   }
 }
 @media (min-width: 1023px) and (max-width: 1100px) {
   .mainContent .sectionTwo .projectsAndFooter .footer .wrapper .rightPart {
-    -moz-column-gap: 1rem;
-         column-gap: 1rem;
+    column-gap: 1rem;
     width: auto;
   }
 }
 @media (orientation: portrait) and (min-width: 1023px) and (max-width: 1100px) {
   .mainContent .sectionTwo .projectsAndFooter .footer .wrapper .rightPart {
-    -moz-column-gap: 3rem;
-         column-gap: 3rem;
+    column-gap: 3rem;
   }
 }
 @media (min-width: 1100px) and (max-width: 1200px) {
   .mainContent .sectionTwo .projectsAndFooter .footer .wrapper .rightPart {
-    -moz-column-gap: 1.5rem;
-         column-gap: 1.5rem;
+    column-gap: 1.5rem;
     width: auto;
   }
 }
@@ -11614,7 +11541,7 @@ input[type=email]) {
 }
 .mainContent .sectionTwo .cyberList .titleAndButton .close:hover {
   background-color: #545146;
-  box-shadow: inset 0 0 0 0.1rem #8B8B8B;
+  box-shadow: inset 0 0 0 0.1rem #8b8b8b;
 }
 @media (min-width: 300px) and (max-width: 350px) {
   .mainContent .sectionTwo .cyberList .titleAndButton .close {
@@ -11692,8 +11619,7 @@ input[type=email]) {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  -moz-column-gap: 10%;
-       column-gap: 10%;
+  column-gap: 10%;
   align-self: center;
   align-items: center;
   width: 98%;
@@ -11899,7 +11825,7 @@ input[type=email]) {
 }
 .mainContent .sectionTwo .cyberList .content .previous:hover {
   background-color: #5c4f43;
-  box-shadow: inset 0 0 0 0.1rem #8B8B8B;
+  box-shadow: inset 0 0 0 0.1rem #8b8b8b;
 }
 @media (min-width: 300px) and (max-width: 350px) {
   .mainContent .sectionTwo .cyberList .content .previous {
@@ -12141,7 +12067,7 @@ input[type=email]) {
 }
 .mainContent .sectionTwo .cyberList .content .next:hover {
   background-color: #5c4f43;
-  box-shadow: inset 0 0 0 0.1rem #8B8B8B;
+  box-shadow: inset 0 0 0 0.1rem #8b8b8b;
 }
 @media (min-width: 300px) and (max-width: 350px) {
   .mainContent .sectionTwo .cyberList .content .next {
@@ -12250,7 +12176,7 @@ input[type=email]) {
   right: 2.5rem;
   bottom: 1rem;
   font-size: 9.5pt;
-  color: #8B8B8B;
+  color: #8b8b8b;
 }
 @media (min-width: 300px) and (max-width: 350px) {
   .mainContent .sectionTwo .cyberList .content p {
@@ -12419,7 +12345,7 @@ input[type=email]) {
 }
 .mainContent .sectionTwo .webList .titleAndButton .close:hover {
   background-color: #5c4f43;
-  box-shadow: inset 0 0 0 0.1rem #8B8B8B;
+  box-shadow: inset 0 0 0 0.1rem #8b8b8b;
 }
 @media (min-width: 600px) and (max-width: 800px) {
   .mainContent .sectionTwo .webList .titleAndButton .close {
@@ -12484,8 +12410,7 @@ input[type=email]) {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  -moz-column-gap: 10%;
-       column-gap: 10%;
+  column-gap: 10%;
   align-self: center;
   align-items: center;
   width: 98%;
@@ -12635,7 +12560,7 @@ input[type=email]) {
 }
 .mainContent .sectionTwo .webList .content .previous:hover {
   background-color: #545146;
-  box-shadow: inset 0 0 0 0.1rem #8B8B8B;
+  box-shadow: inset 0 0 0 0.1rem #8b8b8b;
 }
 @media (width: 600px) {
   .mainContent .sectionTwo .webList .content .previous {
@@ -12831,7 +12756,7 @@ input[type=email]) {
 }
 .mainContent .sectionTwo .webList .content .next:hover {
   background-color: #545146;
-  box-shadow: inset 0 0 0 0.1rem #8B8B8B;
+  box-shadow: inset 0 0 0 0.1rem #8b8b8b;
 }
 @media (width: 600px) {
   .mainContent .sectionTwo .webList .content .next {
@@ -12922,7 +12847,7 @@ input[type=email]) {
   right: 2.5rem;
   bottom: 1rem;
   font-size: 9.5pt;
-  color: #8B8B8B;
+  color: #8b8b8b;
 }
 @media (width: 600px) {
   .mainContent .sectionTwo .webList .content p {
@@ -13547,9 +13472,7 @@ input[type=email]) {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-          user-select: none;
+  user-select: none;
   font-family: "Alan Sans", sans-serif;
   font-weight: 400;
   color: #ffffff;
