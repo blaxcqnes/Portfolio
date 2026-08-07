@@ -9903,7 +9903,7 @@ input[type=email]) {
 }
 .mainContent .sectionTwo .projectsAndFooter .projects .webAndWebList .webBox .carousel {
   display: flex;
-  flex-direction: column-reverse;
+  flex-direction: column;
   row-gap: 0.5rem;
   align-items: center;
   align-self: center;
