@@ -9723,7 +9723,7 @@ input[type=email]) {
   position: relative;
   border-radius: 0.5rem;
   background-color: #545146;
-  animation: webBox 0.5s linear 1;
+  transition: background-color 1s ease, filter 0.2s ease;
 }
 @keyframes webBox {
   0% {
@@ -9736,6 +9736,17 @@ input[type=email]) {
   100% {
     transform: scale(100%);
     opacity: 1;
+  }
+}
+@keyframes webAlternate {
+  0% {
+    background-color: #545146;
+  }
+  50% {
+    background-color: #5c4f43;
+  }
+  100% {
+    background-color: #545146;
   }
 }
 @media (min-width: 300px) and (max-width: 350px) {
@@ -9892,19 +9903,22 @@ input[type=email]) {
 }
 .mainContent .sectionTwo .projectsAndFooter .projects .webAndWebList .webBox .carousel {
   display: flex;
-  flex-direction: column;
+  flex-direction: column-reverse;
   row-gap: 0.5rem;
   align-items: center;
   align-self: center;
   width: 14.5rem;
   height: 18rem;
+  position: absolute;
+  bottom: 50%;
+  transform: translate(0, 50%);
   border-radius: 0.5rem;
   overflow-y: auto;
   overflow-x: hidden;
   overscroll-behavior-y: contain;
   scrollbar-width: thin;
   scrollbar-color: #999999 #545146;
-  scroll-snap-type: y mandatory;
+  scroll-snap-type: both mandatory;
   scroll-behavior: smooth;
   scrollbar-gutter: stable both-edges;
 }
@@ -9987,60 +10001,128 @@ input[type=email]) {
     width: 15.5rem;
   }
 }
-.mainContent .sectionTwo .projectsAndFooter .projects .webAndWebList .webBox .carousel img {
+.mainContent .sectionTwo .projectsAndFooter .projects .webAndWebList .webBox .carousel .linkActive {
   width: 13rem;
   height: 7rem;
-  border-radius: 0.5rem;
+  scroll-snap-align: start;
 }
 @media (min-width: 300px) and (max-width: 350px) {
-  .mainContent .sectionTwo .projectsAndFooter .projects .webAndWebList .webBox .carousel img {
+  .mainContent .sectionTwo .projectsAndFooter .projects .webAndWebList .webBox .carousel .linkActive {
     width: 12rem;
   }
 }
 @media (min-width: 350px) and (max-width: 400px) {
-  .mainContent .sectionTwo .projectsAndFooter .projects .webAndWebList .webBox .carousel img {
+  .mainContent .sectionTwo .projectsAndFooter .projects .webAndWebList .webBox .carousel .linkActive {
     height: 8rem;
   }
 }
 @media (min-width: 400px) and (max-width: 500px) {
-  .mainContent .sectionTwo .projectsAndFooter .projects .webAndWebList .webBox .carousel img {
+  .mainContent .sectionTwo .projectsAndFooter .projects .webAndWebList .webBox .carousel .linkActive {
     width: 14rem;
     height: 8.5rem;
   }
 }
 @media (min-width: 1023px) and (max-width: 1100px) {
-  .mainContent .sectionTwo .projectsAndFooter .projects .webAndWebList .webBox .carousel img {
+  .mainContent .sectionTwo .projectsAndFooter .projects .webAndWebList .webBox .carousel .linkActive {
     width: 8.5rem;
     height: 4.5rem;
   }
 }
 @media (orientation: portrait) and (min-width: 1023px) and (max-width: 1100px) {
-  .mainContent .sectionTwo .projectsAndFooter .projects .webAndWebList .webBox .carousel img {
+  .mainContent .sectionTwo .projectsAndFooter .projects .webAndWebList .webBox .carousel .linkActive {
     width: 12rem;
     height: 7rem;
   }
 }
 @media (min-width: 1100px) and (max-width: 1200px) {
-  .mainContent .sectionTwo .projectsAndFooter .projects .webAndWebList .webBox .carousel img {
+  .mainContent .sectionTwo .projectsAndFooter .projects .webAndWebList .webBox .carousel .linkActive {
     width: 10.5rem;
     height: 5.5rem;
   }
 }
 @media (min-width: 1200px) and (max-width: 1300px) {
-  .mainContent .sectionTwo .projectsAndFooter .projects .webAndWebList .webBox .carousel img {
+  .mainContent .sectionTwo .projectsAndFooter .projects .webAndWebList .webBox .carousel .linkActive {
     width: 9.5rem;
     height: 5rem;
   }
 }
 @media (min-width: 1300px) and (max-width: 1400px) {
-  .mainContent .sectionTwo .projectsAndFooter .projects .webAndWebList .webBox .carousel img {
+  .mainContent .sectionTwo .projectsAndFooter .projects .webAndWebList .webBox .carousel .linkActive {
     width: 12.5rem;
   }
 }
 @media (min-width: 1400px) and (max-width: 1500px) {
-  .mainContent .sectionTwo .projectsAndFooter .projects .webAndWebList .webBox .carousel img {
+  .mainContent .sectionTwo .projectsAndFooter .projects .webAndWebList .webBox .carousel .linkActive {
     width: 14rem;
   }
+}
+.mainContent .sectionTwo .projectsAndFooter .projects .webAndWebList .webBox .carousel .linkActive img {
+  width: 100%;
+  height: 100%;
+  border-radius: 0.5rem;
+}
+.mainContent .sectionTwo .projectsAndFooter .projects .webAndWebList .webBox .carousel .linkNonActive {
+  width: 13rem;
+  height: 7rem;
+}
+@media (min-width: 300px) and (max-width: 350px) {
+  .mainContent .sectionTwo .projectsAndFooter .projects .webAndWebList .webBox .carousel .linkNonActive {
+    width: 12rem;
+  }
+}
+@media (min-width: 350px) and (max-width: 400px) {
+  .mainContent .sectionTwo .projectsAndFooter .projects .webAndWebList .webBox .carousel .linkNonActive {
+    height: 8rem;
+  }
+}
+@media (min-width: 400px) and (max-width: 500px) {
+  .mainContent .sectionTwo .projectsAndFooter .projects .webAndWebList .webBox .carousel .linkNonActive {
+    width: 14rem;
+    height: 8.5rem;
+  }
+}
+@media (min-width: 1023px) and (max-width: 1100px) {
+  .mainContent .sectionTwo .projectsAndFooter .projects .webAndWebList .webBox .carousel .linkNonActive {
+    width: 8.5rem;
+    height: 4.5rem;
+  }
+}
+@media (orientation: portrait) and (min-width: 1023px) and (max-width: 1100px) {
+  .mainContent .sectionTwo .projectsAndFooter .projects .webAndWebList .webBox .carousel .linkNonActive {
+    width: 12rem;
+    height: 7rem;
+  }
+}
+@media (min-width: 1100px) and (max-width: 1200px) {
+  .mainContent .sectionTwo .projectsAndFooter .projects .webAndWebList .webBox .carousel .linkNonActive {
+    width: 10.5rem;
+    height: 5.5rem;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1300px) {
+  .mainContent .sectionTwo .projectsAndFooter .projects .webAndWebList .webBox .carousel .linkNonActive {
+    width: 9.5rem;
+    height: 5rem;
+  }
+}
+@media (min-width: 1300px) and (max-width: 1400px) {
+  .mainContent .sectionTwo .projectsAndFooter .projects .webAndWebList .webBox .carousel .linkNonActive {
+    width: 12.5rem;
+  }
+}
+@media (min-width: 1400px) and (max-width: 1500px) {
+  .mainContent .sectionTwo .projectsAndFooter .projects .webAndWebList .webBox .carousel .linkNonActive {
+    width: 14rem;
+  }
+}
+.mainContent .sectionTwo .projectsAndFooter .projects .webAndWebList .webBox .carousel .linkNonActive {
+  filter: opacity(0.5) grayscale(10%) blur(0.05rem) brightness(80%);
+  transition: filter 0.2s ease;
+}
+.mainContent .sectionTwo .projectsAndFooter .projects .webAndWebList .webBox .carousel .linkNonActive img {
+  width: 100%;
+  height: 100%;
+  border-radius: 0.5rem;
 }
 .mainContent .sectionTwo .projectsAndFooter .projects .webAndWebList .webBox .more {
   width: 7rem;
@@ -10181,6 +10263,137 @@ input[type=email]) {
     align-self: center;
     bottom: 1rem;
     font-size: 9pt;
+  }
+}
+.mainContent .sectionTwo .projectsAndFooter .projects .webAndWebList .webBox .nextWebLoader {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: fit-content;
+  height: fit-content;
+  align-items: center;
+  position: absolute;
+  right: 1.5rem;
+  bottom: 1.5rem;
+  z-index: 1;
+}
+@media (min-width: 300px) and (max-width: 1023px) {
+  .mainContent .sectionTwo .projectsAndFooter .projects .webAndWebList .webBox .nextWebLoader {
+    left: 2rem;
+    right: unset;
+    bottom: 2rem;
+  }
+}
+@media (orientation: portrait) and (min-width: 1023px) and (max-width: 1100px) {
+  .mainContent .sectionTwo .projectsAndFooter .projects .webAndWebList .webBox .nextWebLoader {
+    left: 2rem;
+    right: unset;
+    bottom: 2rem;
+  }
+}
+@keyframes nextWebLoader {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.mainContent .sectionTwo .projectsAndFooter .projects .webAndWebList .webBox .nextWebLoader .nextWebOval {
+  display: flex;
+  width: 2rem;
+  height: 2rem;
+  position: absolute;
+  border: 0.15rem solid;
+  border-color: #8b8b8b transparent #8b8b8b transparent;
+  border-radius: 50%;
+  transform: border-color 0.2s ease, transform 0.2s ease;
+}
+@keyframes nextWebOval {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes nextWebStops {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+@keyframes nextWebGlow {
+  0% {
+    border-color: #5c4f43;
+    opacity: 0;
+  }
+  25% {
+    border-color: #ffffff transparent #ffffff transparent;
+    transform: rotate(-90deg);
+    opacity: 1;
+  }
+  50% {
+    transform: rotate(-180deg);
+    opacity: 0;
+  }
+  75% {
+    border-color: #ffffff transparent #ffffff transparent;
+    transform: rotate(-270deg);
+    opacity: 1;
+  }
+  100% {
+    transform: rotate(-360deg);
+    opacity: 0;
+  }
+}
+@media (min-width: 1023px) and (max-width: 1100px) {
+  .mainContent .sectionTwo .projectsAndFooter .projects .webAndWebList .webBox .nextWebLoader .nextWebOval {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+}
+@media (min-width: 1100px) and (max-width: 1300px) {
+  .mainContent .sectionTwo .projectsAndFooter .projects .webAndWebList .webBox .nextWebLoader .nextWebOval {
+    width: 1.7rem;
+    height: 1.7rem;
+  }
+}
+@media (orientation: portrait) and (min-width: 1023px) and (max-width: 1100px) {
+  .mainContent .sectionTwo .projectsAndFooter .projects .webAndWebList .webBox .nextWebLoader .nextWebOval {
+    width: 2.2rem;
+    height: 2.2rem;
+  }
+}
+.mainContent .sectionTwo .projectsAndFooter .projects .webAndWebList .webBox .nextWebLoader .nextWebTimer {
+  display: flex;
+  position: absolute;
+  font-size: 10pt;
+  color: #8b8b8b;
+}
+@keyframes nextWebTimer {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@media (min-width: 1023px) and (max-width: 1100px) {
+  .mainContent .sectionTwo .projectsAndFooter .projects .webAndWebList .webBox .nextWebLoader .nextWebTimer {
+    font-size: 7.5pt;
+  }
+}
+@media (min-width: 1100px) and (max-width: 1300px) {
+  .mainContent .sectionTwo .projectsAndFooter .projects .webAndWebList .webBox .nextWebLoader .nextWebTimer {
+    font-size: 8.5pt;
+  }
+}
+@media (orientation: portrait) and (min-width: 1023px) and (max-width: 1100px) {
+  .mainContent .sectionTwo .projectsAndFooter .projects .webAndWebList .webBox .nextWebLoader .nextWebTimer {
+    font-size: 10pt;
   }
 }
 .mainContent .sectionTwo .projectsAndFooter .projects .webAndWebList .webList {
