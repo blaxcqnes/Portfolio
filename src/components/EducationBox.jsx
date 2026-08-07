@@ -5,7 +5,6 @@ export default function EducationBox({
   activeList,
   setActiveList,
   toggleEducationList,
-  closeList,
   mobileScreens,
   largeLandscape,
   largePortrait,
@@ -26,9 +25,7 @@ export default function EducationBox({
         <div className="titleAndButton">
           <p className="title">Education</p>
           {activeList || isContactFormOpen ? (
-            <button className="coursesDisabled" onClick={closeList}>
-              Courses
-            </button>
+            <button className="coursesDisabled">Courses</button>
           ) : (
             <button
               className="courses"

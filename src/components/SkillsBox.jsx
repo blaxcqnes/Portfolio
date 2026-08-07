@@ -6,7 +6,6 @@ export default function SkillsBox({
   activeList,
   setActiveList,
   toggleSkillsList,
-  closeList,
   mobileScreens,
   largeLandscape,
   largePortrait,
@@ -107,9 +106,7 @@ export default function SkillsBox({
         <div className="titleAndButton">
           <p className="title">Skills</p>
           {activeList || isContactFormOpen ? (
-            <button className="fluencyDisabled" onClick={closeList}>
-              Fluency
-            </button>
+            <button className="fluencyDisabled">Fluency</button>
           ) : (
             <button
               className="fluency"

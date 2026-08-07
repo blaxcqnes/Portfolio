@@ -7,7 +7,6 @@ export default function WebBox({
   activeList,
   setActiveList,
   toggleWebList,
-  closeList,
   mobileScreens,
   largeLandscape,
   largePortrait,
@@ -63,9 +62,7 @@ export default function WebBox({
           </a>
         </div>
         {activeList || isContactFormOpen ? (
-          <button className="moreDisabled" onClick={closeList}>
-            More
-          </button>
+          <button className="moreDisabled">More</button>
         ) : (
           <button
             className="more"

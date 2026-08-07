@@ -14,15 +14,8 @@ export default function SectionOne({
   setActiveList,
   toggleEstimatesList,
   toggleSkillsList,
-  toggleEducationList
+  toggleEducationList,
 }) {
-
-  function closeList() {
-    if (activeList) {
-      setActiveList(false);
-    }
-  }
-
   function useMediaQuery(query) {
     const subscribe = useCallback(
       (callback) => {
@@ -50,12 +43,9 @@ export default function SectionOne({
   );
 
   return (
-    <main className="sectionOne" onClick={closeList}>
-
+    <main className="sectionOne">
       <section className="bio">
-
         <div className="imageAndDescription">
-
           <MainImage
             me={me}
             isContactFormOpen={isContactFormOpen}
@@ -67,28 +57,25 @@ export default function SectionOne({
             activeList={activeList}
             setActiveList={setActiveList}
             toggleEstimatesList={toggleEstimatesList}
-            closeList={closeList}
             mobileScreens={mobileScreens}
             largeLandscape={largeLandscape}
             largePortrait={largePortrait}
           />
-
         </div>
 
         {/* Estimates list appears above width: 600px for larger portrait screens */}
-        {((largePortrait && activeList === 'estimatesList') || (largeForEstimatesLandscape && activeList === 'estimatesList')) && (
+        {((largePortrait && activeList === 'estimatesList') ||
+          (largeForEstimatesLandscape && activeList === 'estimatesList')) && (
           <EstimatesList setActiveList={setActiveList} />
         )}
-
       </section>
 
       <section className="skillsAndEducation">
-
-        <SkillsBox isContactFormOpen={isContactFormOpen}
+        <SkillsBox
+          isContactFormOpen={isContactFormOpen}
           activeList={activeList}
           setActiveList={setActiveList}
           toggleSkillsList={toggleSkillsList}
-          closeList={closeList}
           mobileScreens={mobileScreens}
           largeLandscape={largeLandscape}
           largePortrait={largePortrait}
@@ -99,23 +86,21 @@ export default function SectionOne({
           activeList={activeList}
           setActiveList={setActiveList}
           toggleEducationList={toggleEducationList}
-          closeList={closeList}
           mobileScreens={mobileScreens}
           largeLandscape={largeLandscape}
+          largePortrait={largePortrait}
         />
-
       </section>
 
       {((largePortrait && activeList === 'skillsList') ||
         (largeLandscape && activeList === 'skillsList')) && (
-          <SkillsList setActiveList={setActiveList} />
-        )}
+        <SkillsList setActiveList={setActiveList} />
+      )}
 
       {((largePortrait && activeList === 'educationList') ||
         (largeLandscape && activeList === 'educationList')) && (
-          <EducationList setActiveList={setActiveList} />
-        )}
-
-    </main >
+        <EducationList setActiveList={setActiveList} />
+      )}
+    </main>
   );
 }

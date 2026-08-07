@@ -90,6 +90,13 @@ export default function App() {
     loadAssets();
   }, []);
 
+  function closeList() {
+    if (activeList || isContactFormOpen) {
+      setIsContactFormOpen(false);
+      setActiveList(false);
+    }
+  }
+
   // Toggle functions
   function toggleContactForm() {
     setIsContactFormOpen((prev) => !prev);
@@ -203,30 +210,31 @@ export default function App() {
   return (
     <div
       className="container"
+      onClick={closeList}
       style={
         activeList || isContactFormOpen
           ? {
-            height: autoLargeForContactFormAndEstimatesLandscape
-              ? 'auto'
-              : (!exactLargeWidth &&
-                fixedLargeForContactFormAndEstimatesLandscape &&
-                activeList === 'estimatesList') ||
-                (fixedLargeForContactFormAndEstimatesLandscape &&
-                  isContactFormOpen) ||
-                (fixedContactFormPortrait && isContactFormOpen) ||
-                (!autoContactFormPortrait && isContactFormOpen)
-                ? '100dvh'
-                : 'auto',
-            overflowY:
-              activeList === 'estimatesList' || isContactFormOpen
-                ? 'unset'
-                : 'auto',
-            transform: 'scale(98%)',
-            animation: 'activeLists 0.2s linear 1',
-          }
+              height: autoLargeForContactFormAndEstimatesLandscape
+                ? 'auto'
+                : (!exactLargeWidth &&
+                      fixedLargeForContactFormAndEstimatesLandscape &&
+                      activeList === 'estimatesList') ||
+                    (fixedLargeForContactFormAndEstimatesLandscape &&
+                      isContactFormOpen) ||
+                    (fixedContactFormPortrait && isContactFormOpen) ||
+                    (!autoContactFormPortrait && isContactFormOpen)
+                  ? '100dvh'
+                  : 'auto',
+              overflowY:
+                activeList === 'estimatesList' || isContactFormOpen
+                  ? 'unset'
+                  : 'auto',
+              transform: 'scale(98%)',
+              animation: 'activeLists 0.2s linear 1',
+            }
           : {
-            animation: 'nonActiveLists 0.2s linear 1',
-          }
+              animation: 'nonActiveLists 0.2s linear 1',
+            }
       }
     >
       {loading ? (
@@ -237,16 +245,15 @@ export default function App() {
             isContactFormOpen={isContactFormOpen}
             activeList={activeList}
             setActiveList={setActiveList}
-            setIsContactFormOpen={setIsContactFormOpen}
             //
             toggleContactForm={toggleContactForm}
+            closeList={closeList}
           />
           <MainContent
             isContactFormOpen={isContactFormOpen}
             activeList={activeList}
             setActiveList={setActiveList}
             //
-            toggleContactForm={toggleContactForm}
             toggleEstimatesList={toggleEstimatesList}
             toggleSkillsList={toggleSkillsList}
             toggleEducationList={toggleEducationList}

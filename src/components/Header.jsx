@@ -2,34 +2,24 @@ import ContactForm from './ContactForm';
 
 export default function Header({
   isContactFormOpen,
-  setIsContactFormOpen,
-  toggleContactForm,
   activeList,
   setActiveList,
+  toggleContactForm,
+  closeList,
 }) {
-  function closeList() {
-    if (activeList) {
-      setActiveList(false);
-    } else if (isContactFormOpen) {
-      setIsContactFormOpen(false);
-    }
-  }
   return (
     <main className="header">
-
       <section
         className="headerContainer"
         style={
           activeList || isContactFormOpen
             ? {
-              filter:
-                'opacity(0.5) grayscale(10%) blur(0.05rem) brightness(80%)',
-            }
+                filter:
+                  'opacity(0.5) grayscale(10%) blur(0.05rem) brightness(80%)',
+              }
             : null
         }
-        onClick={closeList}
       >
-
         <div className="nameAndProfession">
           <p className="name">Mahmoud Taha</p>
           <p className="profession">Cybersecurity Specialist & Web Developer</p>
@@ -38,11 +28,15 @@ export default function Header({
         <div className="locationAndContact">
           <p className="location">Riyadh, Saudi Arabia</p>
           {activeList || isContactFormOpen ? (
-            <button className="contactDisabled" onClick={closeList}>
-              Contact
-            </button>
+            <button className="contactDisabled">Contact</button>
           ) : (
-            <button className="contact" onClick={toggleContactForm}>
+            <button
+              className="contact"
+              onClick={(e) => {
+                e.stopPropagation();
+                toggleContactForm();
+              }}
+            >
               Contact
             </button>
           )}
@@ -52,7 +46,7 @@ export default function Header({
       {isContactFormOpen && (
         <ContactForm
           isContactFormOpen={isContactFormOpen}
-          toggleContactForm={toggleContactForm}
+          closeList={closeList}
         />
       )}
     </main>

@@ -2,7 +2,6 @@ export default function CyberBox({
   isContactFormOpen,
   activeList,
   toggleCyberList,
-  closeList,
 }) {
   return (
     <div
@@ -10,9 +9,9 @@ export default function CyberBox({
       style={
         activeList || isContactFormOpen
           ? {
-            filter:
-              'opacity(0.5) grayscale(10%) blur(0.05rem) brightness(80%)',
-          }
+              filter:
+                'opacity(0.5) grayscale(10%) blur(0.05rem) brightness(80%)',
+            }
           : null
       }
     >
@@ -36,9 +35,7 @@ export default function CyberBox({
         </ol>
       </div>
       {activeList || isContactFormOpen ? (
-        <button className="extrasDisabled" onClick={closeList}>
-          Extras
-        </button>
+        <button className="extrasDisabled">Extras</button>
       ) : (
         <button
           className="extras"

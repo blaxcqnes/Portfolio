@@ -7,20 +7,16 @@ import guessGame from '../images/mainContent_rightOrLowerPart/guessGame.jpg';
 
 export default function MainContent({
   isContactFormOpen,
-  toggleContactForm,
+  activeList,
+  setActiveList,
   toggleEstimatesList,
   toggleSkillsList,
   toggleEducationList,
   toggleCyberList,
   toggleWebList,
-  activeList,
-  setActiveList,
 }) {
   return (
-    <main
-      className="mainContent"
-      onClick={isContactFormOpen ? toggleContactForm : undefined}
-    >
+    <main className="mainContent">
       <SectionOne
         me={me}
         isContactFormOpen={isContactFormOpen}

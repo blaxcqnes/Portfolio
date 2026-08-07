@@ -16,12 +16,6 @@ export default function SectionTwo({
   toggleCyberList,
   toggleWebList,
 }) {
-  function closeList() {
-    if (activeList) {
-      setActiveList(false);
-    }
-  }
-
   function useMediaQuery(query) {
     const subscribe = useCallback(
       (callback) => {
@@ -49,7 +43,7 @@ export default function SectionTwo({
   );
 
   return (
-    <main className="sectionTwo" onClick={closeList}>
+    <main className="sectionTwo">
       {largeForEstimatesLandscape && activeList === 'estimatesList' && (
         <EstimatesList setActiveList={setActiveList} />
       )}
@@ -58,21 +52,18 @@ export default function SectionTwo({
         style={
           largeForEstimatesLandscape && activeList === 'estimatesList'
             ? {
-              position: 'absolute',
-              transform: 'scale(90%)',
-              animation: 'estimatesActive 0.2s linear 1',
-            }
+                position: 'absolute',
+                transform: 'scale(90%)',
+                animation: 'estimatesActive 0.2s linear 1',
+              }
             : null
         }
-        onClick={closeList}
       >
         <section className="projects">
-
           <CyberBox
             isContactFormOpen={isContactFormOpen}
             activeList={activeList}
             toggleCyberList={toggleCyberList}
-            closeList={closeList}
           />
 
           <WebBox
@@ -83,27 +74,23 @@ export default function SectionTwo({
             activeList={activeList}
             setActiveList={setActiveList}
             toggleWebList={toggleWebList}
-            closeList={closeList}
             mobileScreens={mobileScreens}
             largeLandscape={largeLandscape}
             largePortrait={largePortrait}
           />
-
         </section>
 
         <Footer isContactFormOpen={isContactFormOpen} activeList={activeList} />
-
       </div>
 
-      {((activeList === 'cyberList')) && (
+      {activeList === 'cyberList' && (
         <CyberList setActiveList={setActiveList} />
       )}
 
       {((largePortrait && activeList === 'webList') ||
         (largeLandscape && activeList === 'webList')) && (
-          <WebList setActiveList={setActiveList} />
-        )}
-
+        <WebList setActiveList={setActiveList} />
+      )}
     </main>
   );
 }

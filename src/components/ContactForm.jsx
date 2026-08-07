@@ -1,7 +1,7 @@
 import { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
 
-export default function ContactForm({ isContactFormOpen, toggleContactForm }) {
+export default function ContactForm({ isContactFormOpen, closeList }) {
   const [statusMessage, setStatusMessage] = useState('');
   const [statusType, setStatusType] = useState('');
   const [nameValue, setNameInputValue] = useState('');
@@ -65,15 +65,16 @@ export default function ContactForm({ isContactFormOpen, toggleContactForm }) {
   };
 
   return (
-    <main className="contactForm" id="contactForm">
+    <main
+      className="contactForm"
+      id="contactForm"
+      onClick={(e) => e.stopPropagation()}
+    >
       {/*  */}
       <div className="titleAndButton">
         <h4>Get in touch</h4>
         {/*  */}
-        <button
-          className="close"
-          onClick={isContactFormOpen ? toggleContactForm : undefined}
-        >
+        <button className="close" onClick={closeList}>
           Close
         </button>
         {/*  */}

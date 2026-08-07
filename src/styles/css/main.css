@@ -582,7 +582,7 @@
 }
 .header .headerContainer .locationAndContact .contact:hover {
   background-color: #545146;
-  box-shadow: inset 0 0 0 0.1rem #8B8B8B;
+  box-shadow: inset 0 0 0 0.1rem #8b8b8b;
 }
 @media (min-width: 300px) and (max-width: 350px) {
   .header .headerContainer .locationAndContact .contact {
@@ -660,7 +660,7 @@
   display: flex;
   flex-direction: column;
   row-gap: 1rem;
-  width: 22.3rem;
+  width: 24%;
   height: 29.6rem;
   position: absolute;
   top: 6.2rem;
@@ -1081,7 +1081,6 @@
 @media (min-width: 1200px) and (max-width: 1300px) {
   .header .contactForm {
     row-gap: 0.7rem;
-    width: 24%;
     height: 24.3rem;
     top: 4.65rem;
   }
@@ -1101,7 +1100,6 @@
 @media (min-width: 1300px) and (max-width: 1400px) {
   .header .contactForm {
     row-gap: 0.8rem;
-    width: 24%;
     height: 27.2rem;
     top: 5.3rem;
   }
@@ -1121,7 +1119,6 @@
 @media (min-width: 1400px) and (max-width: 1500px) {
   .header .contactForm {
     row-gap: 0.8rem;
-    width: 24%;
     height: 28.3rem;
     top: 5.8rem;
   }
@@ -1256,7 +1253,7 @@
 }
 .header .contactForm .titleAndButton .close:hover {
   background-color: #545146;
-  box-shadow: inset 0 0 0 0.1rem #8B8B8B;
+  box-shadow: inset 0 0 0 0.1rem #8b8b8b;
 }
 @media (min-width: 300px) and (max-width: 350px) {
   .header .contactForm .titleAndButton .close {
@@ -1764,7 +1761,7 @@ input[type=email]) {
   outline: none;
 }
 .header .contactForm form .allInOneForm .name::placeholder {
-  color: #8B8B8B;
+  color: #8b8b8b;
 }
 @media (min-width: 300px) and (max-width: 800px) {
   .header .contactForm form .allInOneForm .name {
@@ -1820,7 +1817,7 @@ input[type=email]) {
   outline: none;
 }
 .header .contactForm form .allInOneForm .subject::placeholder {
-  color: #8B8B8B;
+  color: #8b8b8b;
 }
 @media (min-width: 300px) and (max-width: 800px) {
   .header .contactForm form .allInOneForm .subject {
@@ -1876,7 +1873,7 @@ input[type=email]) {
   outline: none;
 }
 .header .contactForm form .allInOneForm .email::placeholder {
-  color: #8B8B8B;
+  color: #8b8b8b;
 }
 @media (min-width: 300px) and (max-width: 800px) {
   .header .contactForm form .allInOneForm .email {
@@ -1929,7 +1926,7 @@ input[type=email]) {
   outline: none;
 }
 .header .contactForm form .allInOneForm .textArea::placeholder {
-  color: #8B8B8B;
+  color: #8b8b8b;
 }
 @media (min-width: 300px) and (max-width: 400px) {
   .header .contactForm form .allInOneForm .textArea {
@@ -2057,7 +2054,7 @@ input[type=email]) {
 }
 .header .contactForm form .buttons .send:hover {
   background-color: #545146;
-  box-shadow: inset 0 0 0 0.1rem #8B8B8B;
+  box-shadow: inset 0 0 0 0.1rem #8b8b8b;
 }
 @media (min-width: 300px) and (max-width: 400px) {
   .header .contactForm form .buttons .send {
@@ -2224,7 +2221,7 @@ input[type=email]) {
 }
 .header .contactForm form .buttons .reset:hover {
   background-color: #722f26;
-  box-shadow: inset 0 0 0 0.1rem #8B8B8B;
+  box-shadow: inset 0 0 0 0.1rem #8b8b8b;
 }
 @media (min-width: 300px) and (max-width: 400px) {
   .header .contactForm form .buttons .reset {
@@ -3585,7 +3582,7 @@ input[type=email]) {
   border-radius: 0.5rem;
   overflow: hidden;
   background-color: #5c4f43;
-  transition: background-color 1s ease;
+  transition: background-color 1s ease, filter 0.2s ease;
 }
 @keyframes skillsBox {
   0% {
@@ -4126,6 +4123,12 @@ input[type=email]) {
     height: 1.7rem;
   }
 }
+@media (orientation: portrait) and (min-width: 1023px) and (max-width: 1100px) {
+  .mainContent .sectionOne .skillsAndEducation .skillsAndSkillsList .skillsBox .nextSkillsLoader .nextSkillsOval {
+    width: 2.2rem;
+    height: 2.2rem;
+  }
+}
 .mainContent .sectionOne .skillsAndEducation .skillsAndSkillsList .skillsBox .nextSkillsLoader .nextSkillsTimer {
   display: flex;
   position: absolute;
@@ -4148,6 +4151,11 @@ input[type=email]) {
 @media (min-width: 1100px) and (max-width: 1300px) {
   .mainContent .sectionOne .skillsAndEducation .skillsAndSkillsList .skillsBox .nextSkillsLoader .nextSkillsTimer {
     font-size: 8.5pt;
+  }
+}
+@media (orientation: portrait) and (min-width: 1023px) and (max-width: 1100px) {
+  .mainContent .sectionOne .skillsAndEducation .skillsAndSkillsList .skillsBox .nextSkillsLoader .nextSkillsTimer {
+    font-size: 10pt;
   }
 }
 .mainContent .sectionOne .skillsAndEducation .skillsAndSkillsList .skillsList {
