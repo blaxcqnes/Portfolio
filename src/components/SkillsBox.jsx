@@ -14,6 +14,7 @@ export default function SkillsBox({
   const isInitialLoad = useRef(true);
   //
   const [timeLeft, setTimeLeft] = useState(15);
+  const [isPaused, setIsPaused] = useState(false);
   const [animationDelay, setAnimationDelay] = useState(6);
   //
   const [skillPage, setSkillPage] = useState(1);
@@ -23,12 +24,14 @@ export default function SkillsBox({
     let timerId;
     let timeoutId;
 
+    if (isPaused || isContactFormOpen || activeList) return;
+
     const startTimer = () => {
       timerId = setInterval(() => {
         setTimeLeft((prev) => {
-          if (isContactFormOpen || activeList) {
-            return prev;
-          }
+          // if (isContactFormOpen || activeList) {
+          //   return prev;
+          // }
           if (prev <= 0) {
             return 15;
           }
@@ -50,7 +53,7 @@ export default function SkillsBox({
       clearTimeout(timeoutId);
       clearInterval(timerId);
     };
-  }, [isContactFormOpen, activeList]);
+  }, [isPaused, isContactFormOpen, activeList]);
 
   // Related to loader animation delay and glow effect
   useEffect(() => {
@@ -102,6 +105,8 @@ export default function SkillsBox({
                   timeLeft === 15 &&
                   'skillsAlternate 1s ease 1',
         }}
+        onPointerEnter={() => setIsPaused(true)}
+        onPointerLeave={() => setIsPaused(false)}
       >
         <div className="titleAndButton">
           <p className="title">Skills</p>
