@@ -1,3 +1,4 @@
+import WebList from './WebList';
 export default function WebBox({
   kaffa,
   veila,
@@ -18,9 +19,9 @@ export default function WebBox({
         style={
           activeList || isContactFormOpen
             ? {
-              filter:
-                'opacity(0.5) grayscale(10%) blur(0.05rem) brightness(80%)',
-            }
+                filter:
+                  'opacity(0.5) grayscale(10%) blur(0.05rem) brightness(80%)',
+              }
             : null
         }
       >
@@ -30,9 +31,9 @@ export default function WebBox({
           style={
             activeList
               ? {
-                overflowY: 'hidden',
-                overscrollBehaviorY: 'unset',
-              }
+                  overflowY: 'hidden',
+                  overscrollBehaviorY: 'unset',
+                }
               : undefined
           }
         >
@@ -62,10 +63,7 @@ export default function WebBox({
           </a>
         </div>
         {activeList || isContactFormOpen ? (
-          <button
-            className="moreDisabled"
-            onClick={closeList}
-          >
+          <button className="moreDisabled" onClick={closeList}>
             More
           </button>
         ) : (
@@ -80,9 +78,10 @@ export default function WebBox({
           </button>
         )}
       </div>
-      {(largeLandscape || largePortrait) ? undefined : (mobileScreens && activeList === 'webList') && (
-        <WebList setActiveList={setActiveList} />
-      )}
+      {largeLandscape || largePortrait
+        ? undefined
+        : mobileScreens &&
+          activeList === 'webList' && <WebList setActiveList={setActiveList} />}
     </div>
-  )
+  );
 }

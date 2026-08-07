@@ -1,4 +1,4 @@
-import EducationList from "./EducationList";
+import EducationList from './EducationList';
 
 export default function EducationBox({
   isContactFormOpen,
@@ -8,7 +8,7 @@ export default function EducationBox({
   closeList,
   mobileScreens,
   largeLandscape,
-  largePortrait
+  largePortrait,
 }) {
   return (
     <div className="educationAndEducationList">
@@ -17,20 +17,16 @@ export default function EducationBox({
         style={
           activeList || isContactFormOpen
             ? {
-              filter:
-                'opacity(0.5) grayscale(10%) blur(0.05rem) brightness(80%)',
-            }
+                filter:
+                  'opacity(0.5) grayscale(10%) blur(0.05rem) brightness(80%)',
+              }
             : null
         }
       >
-
         <div className="titleAndButton">
           <p className="title">Education</p>
           {activeList || isContactFormOpen ? (
-            <button
-              className="coursesDisabled"
-              onClick={closeList}
-            >
+            <button className="coursesDisabled" onClick={closeList}>
               Courses
             </button>
           ) : (
@@ -60,9 +56,7 @@ export default function EducationBox({
               <h4 className="institution">Osmania University</h4>
               <p className="location">- HYD, INDIA</p>
             </span>
-            <p className="degree">
-              Bachelors of Science (B.Sc - MSCS) - 2020
-            </p>
+            <p className="degree">Bachelors of Science (B.Sc - MSCS) - 2020</p>
           </div>
 
           <div className="institutionAndDegree">
@@ -75,11 +69,14 @@ export default function EducationBox({
             </p>
           </div>
         </div>
-
-        {(largeLandscape || largePortrait) ? undefined : (mobileScreens && activeList === 'educationList') && (
-          <EducationList setActiveList={setActiveList} />
-        )}
       </div>
+
+      {largeLandscape || largePortrait
+        ? undefined
+        : mobileScreens &&
+          activeList === 'educationList' && (
+            <EducationList setActiveList={setActiveList} />
+          )}
     </div>
-  )
+  );
 }

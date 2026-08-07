@@ -10186,7 +10186,7 @@ input[type=email]) {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding: 0.8rem 2rem;
+  padding: 0.8rem 1rem;
   background-color: #545146;
   border-radius: 0.4rem 0.4rem 0 0;
 }
