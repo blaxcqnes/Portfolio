@@ -156,10 +156,10 @@ export default function SkillsBox({
             className="nextSkillsOval"
             style={{
               opacity: activeList || isContactFormOpen ? 0 : 1,
-              ...(glow
+              ...(glow || isPaused
                 ? { animation: 'nextSkillsStops 1s linear 1' }
                 : { animation: 'nextSkillsOval 1.5s linear infinite' }),
-              ...(!activeList && !isContactFormOpen && glow
+              ...((!activeList && !isContactFormOpen && glow) || isPaused
                 ? { animation: 'nextSkillsGlow 3s linear infinite' }
                 : undefined),
             }}
@@ -169,7 +169,7 @@ export default function SkillsBox({
             <div
               className="nextSkillsTimer"
               style={{
-                opacity: activeList || isContactFormOpen ? 0 : 1,
+                opacity: activeList || isContactFormOpen || isPaused ? 0 : 1,
                 ...(!activeList && !isContactFormOpen && timeLeft
                   ? { animation: 'nextSkillsTimer 1s linear 1' }
                   : undefined),

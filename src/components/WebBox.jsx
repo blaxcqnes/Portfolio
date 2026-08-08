@@ -98,6 +98,8 @@ export default function WebBox({
 
   // Carousel images auto scroll
   useEffect(() => {
+    if (isPaused) return;
+
     const container = containerRef.current;
     const targetImage = imageRefs.current[currentIndex];
 
@@ -112,7 +114,7 @@ export default function WebBox({
         behavior: 'smooth',
       });
     }
-  }, [nextImg]);
+  }, [isPaused, nextImg, currentIndex]);
 
   return (
     <div className="webAndWebList">
@@ -133,6 +135,8 @@ export default function WebBox({
                 ? 'webBox 0.5s linear 1'
                 : !glow && timeLeft === 5 && 'webAlternate 1s ease 1',
         }}
+        onPointerEnter={() => setIsPaused(true)}
+        onPointerLeave={() => setIsPaused(false)}
       >
         <p className="title">Web Dev. Projects</p>
         <div
@@ -146,8 +150,6 @@ export default function WebBox({
                 }
               : undefined
           }
-          onPointerEnter={() => setIsPaused(true)}
-          onPointerLeave={() => setIsPaused(false)}
         >
           {carouselData.map((item, index) => (
             <a
@@ -156,14 +158,20 @@ export default function WebBox({
               target="_blank"
               rel="noopener noreferrer"
               className={
-                activeList || isContactFormOpen
-                  ? 'linkNonActive'
+                isPaused || activeList || isContactFormOpen
+                  ? 'linkActive'
                   : index === currentIndex
                     ? 'linkActive'
                     : 'linkNonActive'
               }
               ref={(el) => {
                 imageRefs.current[index] = el;
+              }}
+              style={{
+                scrollSnapAlign:
+                  isPaused || isContactFormOpen || activeList
+                    ? 'unset'
+                    : 'start',
               }}
             >
               <img src={item.src} fetchPriority="high" />
@@ -196,10 +204,10 @@ export default function WebBox({
             className="nextWebOval"
             style={{
               opacity: activeList || isContactFormOpen ? 0 : 1,
-              ...(glow
+              ...(glow || isPaused
                 ? { animation: 'nextWebStops 1s linear 1' }
                 : { animation: 'nextWebOval 1.5s linear infinite' }),
-              ...(!activeList && !isContactFormOpen && glow
+              ...((!activeList && !isContactFormOpen && glow) || isPaused
                 ? { animation: 'nextWebGlow 3s linear infinite' }
                 : undefined),
             }}
@@ -209,7 +217,7 @@ export default function WebBox({
             <div
               className="nextWebTimer"
               style={{
-                opacity: activeList || isContactFormOpen ? 0 : 1,
+                opacity: activeList || isContactFormOpen || isPaused ? 0 : 1,
                 ...(!activeList && !isContactFormOpen && timeLeft
                   ? { animation: 'nextWebTimer 1s linear 1' }
                   : undefined),
