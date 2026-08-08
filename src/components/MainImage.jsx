@@ -1,10 +1,4 @@
 export default function MainImage({ me, isContactFormOpen, activeList }) {
-  const protectedImage = document.getElementById('me');
-
-  protectedImage.addEventListener('contextmenu', function (event) {
-    event.preventDefault();
-  });
-
   return (
     <div className="imageAndTitle">
       <img
@@ -12,7 +6,7 @@ export default function MainImage({ me, isContactFormOpen, activeList }) {
         src={me}
         className="mainImage"
         fetchPriority="high"
-        oncontextmenu="return false;"
+        onContextMenu={(e) => e.preventDefault()}
         style={
           activeList || isContactFormOpen
             ? {
