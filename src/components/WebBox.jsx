@@ -172,6 +172,8 @@ export default function WebBox({
                   isPaused || isContactFormOpen || activeList
                     ? 'unset'
                     : 'start',
+                pointerEvents:
+                  isContactFormOpen || activeList ? 'none' : 'auto',
               }}
             >
               <img src={item.src} fetchPriority="high" />
