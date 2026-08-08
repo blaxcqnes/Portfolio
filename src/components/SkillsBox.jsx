@@ -15,7 +15,7 @@ export default function SkillsBox({
   //
   const [timeLeft, setTimeLeft] = useState(15);
   const [isPaused, setIsPaused] = useState(false);
-  const [glow, setAnimationDelay] = useState(6);
+  const [glow, setGlow] = useState(6);
   //
   const [skillPage, setSkillPage] = useState(1);
 
@@ -56,7 +56,7 @@ export default function SkillsBox({
   useEffect(() => {
     const timeoutId = setTimeout(() => {
       timerRef.current = setInterval(() => {
-        setAnimationDelay((prev) => {
+        setGlow((prev) => {
           if (prev <= 0) {
             clearInterval(timerRef.current);
             return 0;
@@ -155,11 +155,10 @@ export default function SkillsBox({
           <div
             className="nextSkillsOval"
             style={{
-              opacity: activeList || isContactFormOpen ? 0 : 1,
               ...(glow || isPaused
                 ? { animation: 'nextSkillsStops 1s linear 1' }
                 : { animation: 'nextSkillsOval 1.5s linear infinite' }),
-              ...((!activeList && !isContactFormOpen && glow) || isPaused
+              ...(activeList || isContactFormOpen || glow || isPaused
                 ? { animation: 'nextSkillsGlow 3s linear infinite' }
                 : undefined),
             }}

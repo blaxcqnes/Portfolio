@@ -203,11 +203,10 @@ export default function WebBox({
           <div
             className="nextWebOval"
             style={{
-              opacity: activeList || isContactFormOpen ? 0 : 1,
               ...(glow || isPaused
                 ? { animation: 'nextWebStops 1s linear 1' }
                 : { animation: 'nextWebOval 1.5s linear infinite' }),
-              ...((!activeList && !isContactFormOpen && glow) || isPaused
+              ...(activeList || isContactFormOpen || glow || isPaused
                 ? { animation: 'nextWebGlow 3s linear infinite' }
                 : undefined),
             }}
