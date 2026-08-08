@@ -2533,6 +2533,7 @@ input[type=email]) {
   height: inherit;
   object-fit: cover;
   border-radius: 0.5rem;
+  pointer-events: none;
 }
 .mainContent .sectionOne .bio .imageAndDescription .imageAndTitle .title {
   padding: 2rem 0;
