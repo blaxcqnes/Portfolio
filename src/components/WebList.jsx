@@ -69,7 +69,7 @@ export default function WebList({ setActiveList }) {
           </button>
         )}
 
-        <p>{pageNumber} / 2</p>
+        <p className="pageNumber">{pageNumber} / 2</p>
       </div>
     </main>
   );

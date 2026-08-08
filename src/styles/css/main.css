@@ -5686,7 +5686,7 @@ input[type=email]) {
     box-shadow: none;
   }
 }
-.mainContent .sectionOne .skillsAndEducation .skillsAndSkillsList .skillsList .content p {
+.mainContent .sectionOne .skillsAndEducation .skillsAndSkillsList .skillsList .content .pageNumber {
   position: absolute;
   right: 2.5rem;
   bottom: 1rem;
@@ -5694,25 +5694,25 @@ input[type=email]) {
   color: #8b8b8b;
 }
 @media (min-width: 300px) and (max-width: 350px) {
-  .mainContent .sectionOne .skillsAndEducation .skillsAndSkillsList .skillsList .content p {
+  .mainContent .sectionOne .skillsAndEducation .skillsAndSkillsList .skillsList .content .pageNumber {
     right: 0.8rem;
     bottom: 1.8rem;
     font-size: 8.5pt;
   }
 }
 @media (min-width: 350px) and (max-width: 400px) {
-  .mainContent .sectionOne .skillsAndEducation .skillsAndSkillsList .skillsList .content p {
+  .mainContent .sectionOne .skillsAndEducation .skillsAndSkillsList .skillsList .content .pageNumber {
     right: 1rem;
     bottom: 1.5rem;
   }
 }
 @media (min-width: 400px) and (max-width: 500px) {
-  .mainContent .sectionOne .skillsAndEducation .skillsAndSkillsList .skillsList .content p {
+  .mainContent .sectionOne .skillsAndEducation .skillsAndSkillsList .skillsList .content .pageNumber {
     font-size: 9.5pt;
   }
 }
 @media (min-width: 500px) and (max-width: 600px) {
-  .mainContent .sectionOne .skillsAndEducation .skillsAndSkillsList .skillsList .content p {
+  .mainContent .sectionOne .skillsAndEducation .skillsAndSkillsList .skillsList .content .pageNumber {
     font-size: 10pt;
   }
 }
@@ -6788,7 +6788,7 @@ input[type=email]) {
     box-shadow: none;
   }
 }
-.mainContent .sectionOne .skillsAndEducation .educationAndEducationList .educationList .content p {
+.mainContent .sectionOne .skillsAndEducation .educationAndEducationList .educationList .content .pageNumber {
   position: absolute;
   right: 2.5rem;
   bottom: 1rem;
@@ -6796,25 +6796,25 @@ input[type=email]) {
   color: #8b8b8b;
 }
 @media (min-width: 300px) and (max-width: 350px) {
-  .mainContent .sectionOne .skillsAndEducation .educationAndEducationList .educationList .content p {
+  .mainContent .sectionOne .skillsAndEducation .educationAndEducationList .educationList .content .pageNumber {
     right: 0.8rem;
     bottom: 1.8rem;
     font-size: 8.5pt;
   }
 }
 @media (min-width: 350px) and (max-width: 400px) {
-  .mainContent .sectionOne .skillsAndEducation .educationAndEducationList .educationList .content p {
+  .mainContent .sectionOne .skillsAndEducation .educationAndEducationList .educationList .content .pageNumber {
     right: 1rem;
     bottom: 1.5rem;
   }
 }
 @media (min-width: 400px) and (max-width: 500px) {
-  .mainContent .sectionOne .skillsAndEducation .educationAndEducationList .educationList .content p {
+  .mainContent .sectionOne .skillsAndEducation .educationAndEducationList .educationList .content .pageNumber {
     font-size: 9.5pt;
   }
 }
 @media (min-width: 500px) and (max-width: 600px) {
-  .mainContent .sectionOne .skillsAndEducation .educationAndEducationList .educationList .content p {
+  .mainContent .sectionOne .skillsAndEducation .educationAndEducationList .educationList .content .pageNumber {
     font-size: 10pt;
   }
 }
@@ -8409,7 +8409,7 @@ input[type=email]) {
     font-size: 9pt;
   }
 }
-.mainContent .sectionOne .skillsList .content p {
+.mainContent .sectionOne .skillsList .content .pageNumber {
   position: absolute;
   right: 2.5rem;
   bottom: 1rem;
@@ -8417,41 +8417,41 @@ input[type=email]) {
   color: #8b8b8b;
 }
 @media (width: 600px) {
-  .mainContent .sectionOne .skillsList .content p {
+  .mainContent .sectionOne .skillsList .content .pageNumber {
     right: 2.5rem;
     bottom: 1rem;
   }
 }
 @media (min-width: 900px) and (max-width: 1023px) {
-  .mainContent .sectionOne .skillsList .content p {
+  .mainContent .sectionOne .skillsList .content .pageNumber {
     font-size: 10pt;
   }
 }
 @media (min-width: 1023px) and (max-width: 1100px) {
-  .mainContent .sectionOne .skillsList .content p {
+  .mainContent .sectionOne .skillsList .content .pageNumber {
     right: 1.3rem;
     font-size: 8pt;
   }
 }
 @media (orientation: portrait) and (min-width: 1023px) and (max-width: 1100px) {
-  .mainContent .sectionOne .skillsList .content p {
+  .mainContent .sectionOne .skillsList .content .pageNumber {
     font-size: 9.5pt;
   }
 }
 @media (min-width: 1100px) and (max-width: 1200px) {
-  .mainContent .sectionOne .skillsList .content p {
+  .mainContent .sectionOne .skillsList .content .pageNumber {
     right: 2.3rem;
     font-size: 8.5pt;
   }
 }
 @media (width: 1100px) {
-  .mainContent .sectionOne .skillsList .content p {
+  .mainContent .sectionOne .skillsList .content .pageNumber {
     right: 1.4rem;
     font-size: 8.5pt;
   }
 }
 @media (min-width: 1200px) and (max-width: 1300px) {
-  .mainContent .sectionOne .skillsList .content p {
+  .mainContent .sectionOne .skillsList .content .pageNumber {
     right: 2.4rem;
     font-size: 8.5pt;
   }
@@ -9334,7 +9334,7 @@ input[type=email]) {
     font-size: 9pt;
   }
 }
-.mainContent .sectionOne .educationList .content p {
+.mainContent .sectionOne .educationList .content .pageNumber {
   position: absolute;
   right: 2.5rem;
   bottom: 1rem;
@@ -9342,41 +9342,41 @@ input[type=email]) {
   color: #8b8b8b;
 }
 @media (width: 600px) {
-  .mainContent .sectionOne .educationList .content p {
+  .mainContent .sectionOne .educationList .content .pageNumber {
     right: 2.5rem;
     bottom: 1rem;
   }
 }
 @media (min-width: 900px) and (max-width: 1023px) {
-  .mainContent .sectionOne .educationList .content p {
+  .mainContent .sectionOne .educationList .content .pageNumber {
     font-size: 10pt;
   }
 }
 @media (min-width: 1023px) and (max-width: 1100px) {
-  .mainContent .sectionOne .educationList .content p {
+  .mainContent .sectionOne .educationList .content .pageNumber {
     right: 1.3rem;
     font-size: 8pt;
   }
 }
 @media (orientation: portrait) and (min-width: 1023px) and (max-width: 1100px) {
-  .mainContent .sectionOne .educationList .content p {
+  .mainContent .sectionOne .educationList .content .pageNumber {
     font-size: 9.5pt;
   }
 }
 @media (min-width: 1100px) and (max-width: 1200px) {
-  .mainContent .sectionOne .educationList .content p {
+  .mainContent .sectionOne .educationList .content .pageNumber {
     right: 2.3rem;
     font-size: 8.5pt;
   }
 }
 @media (width: 1100px) {
-  .mainContent .sectionOne .educationList .content p {
+  .mainContent .sectionOne .educationList .content .pageNumber {
     right: 1.4rem;
     font-size: 8.5pt;
   }
 }
 @media (min-width: 1200px) and (max-width: 1300px) {
-  .mainContent .sectionOne .educationList .content p {
+  .mainContent .sectionOne .educationList .content .pageNumber {
     right: 2.4rem;
     font-size: 8.5pt;
   }
@@ -10783,7 +10783,7 @@ input[type=email]) {
     box-shadow: none;
   }
 }
-.mainContent .sectionTwo .projectsAndFooter .projects .webAndWebList .webList .content p {
+.mainContent .sectionTwo .projectsAndFooter .projects .webAndWebList .webList .content .pageNumber {
   position: absolute;
   right: 2.5rem;
   bottom: 1rem;
@@ -10791,25 +10791,25 @@ input[type=email]) {
   color: #8b8b8b;
 }
 @media (min-width: 300px) and (max-width: 350px) {
-  .mainContent .sectionTwo .projectsAndFooter .projects .webAndWebList .webList .content p {
+  .mainContent .sectionTwo .projectsAndFooter .projects .webAndWebList .webList .content .pageNumber {
     right: 0.8rem;
     bottom: 1.8rem;
     font-size: 8.5pt;
   }
 }
 @media (min-width: 350px) and (max-width: 400px) {
-  .mainContent .sectionTwo .projectsAndFooter .projects .webAndWebList .webList .content p {
+  .mainContent .sectionTwo .projectsAndFooter .projects .webAndWebList .webList .content .pageNumber {
     right: 1rem;
     bottom: 1.5rem;
   }
 }
 @media (min-width: 400px) and (max-width: 500px) {
-  .mainContent .sectionTwo .projectsAndFooter .projects .webAndWebList .webList .content p {
+  .mainContent .sectionTwo .projectsAndFooter .projects .webAndWebList .webList .content .pageNumber {
     font-size: 9.5pt;
   }
 }
 @media (min-width: 500px) and (max-width: 600px) {
-  .mainContent .sectionTwo .projectsAndFooter .projects .webAndWebList .webList .content p {
+  .mainContent .sectionTwo .projectsAndFooter .projects .webAndWebList .webList .content .pageNumber {
     font-size: 10pt;
   }
 }
@@ -12425,7 +12425,7 @@ input[type=email]) {
     font-size: 9pt;
   }
 }
-.mainContent .sectionTwo .cyberList .content p {
+.mainContent .sectionTwo .cyberList .content .pageNumber {
   position: absolute;
   right: 2.5rem;
   bottom: 1rem;
@@ -12433,59 +12433,59 @@ input[type=email]) {
   color: #8b8b8b;
 }
 @media (min-width: 300px) and (max-width: 350px) {
-  .mainContent .sectionTwo .cyberList .content p {
+  .mainContent .sectionTwo .cyberList .content .pageNumber {
     right: 0.8rem;
     bottom: 1.8rem;
     font-size: 8.5pt;
   }
 }
 @media (min-width: 350px) and (max-width: 400px) {
-  .mainContent .sectionTwo .cyberList .content p {
+  .mainContent .sectionTwo .cyberList .content .pageNumber {
     right: 1rem;
     bottom: 1.5rem;
   }
 }
 @media (min-width: 500px) and (max-width: 600px) {
-  .mainContent .sectionTwo .cyberList .content p {
+  .mainContent .sectionTwo .cyberList .content .pageNumber {
     font-size: 10pt;
   }
 }
 @media (width: 600px) {
-  .mainContent .sectionTwo .cyberList .content p {
+  .mainContent .sectionTwo .cyberList .content .pageNumber {
     right: 2.5rem;
     bottom: 1rem;
   }
 }
 @media (min-width: 900px) and (max-width: 1023px) {
-  .mainContent .sectionTwo .cyberList .content p {
+  .mainContent .sectionTwo .cyberList .content .pageNumber {
     font-size: 10pt;
   }
 }
 @media (min-width: 1023px) and (max-width: 1100px) {
-  .mainContent .sectionTwo .cyberList .content p {
+  .mainContent .sectionTwo .cyberList .content .pageNumber {
     right: 1.3rem;
     font-size: 8pt;
   }
 }
 @media (orientation: portrait) and (min-width: 1023px) and (max-width: 1100px) {
-  .mainContent .sectionTwo .cyberList .content p {
+  .mainContent .sectionTwo .cyberList .content .pageNumber {
     font-size: 9.5pt;
   }
 }
 @media (min-width: 1100px) and (max-width: 1200px) {
-  .mainContent .sectionTwo .cyberList .content p {
+  .mainContent .sectionTwo .cyberList .content .pageNumber {
     right: 2.3rem;
     font-size: 8.5pt;
   }
 }
 @media (width: 1100px) {
-  .mainContent .sectionTwo .cyberList .content p {
+  .mainContent .sectionTwo .cyberList .content .pageNumber {
     right: 1.4rem;
     font-size: 8.5pt;
   }
 }
 @media (min-width: 1200px) and (max-width: 1300px) {
-  .mainContent .sectionTwo .cyberList .content p {
+  .mainContent .sectionTwo .cyberList .content .pageNumber {
     right: 2.4rem;
     font-size: 8.5pt;
   }
@@ -13096,7 +13096,7 @@ input[type=email]) {
     font-size: 9pt;
   }
 }
-.mainContent .sectionTwo .webList .content p {
+.mainContent .sectionTwo .webList .content .pageNumber {
   position: absolute;
   right: 2.5rem;
   bottom: 1rem;
@@ -13104,41 +13104,41 @@ input[type=email]) {
   color: #8b8b8b;
 }
 @media (width: 600px) {
-  .mainContent .sectionTwo .webList .content p {
+  .mainContent .sectionTwo .webList .content .pageNumber {
     right: 2.5rem;
     bottom: 1rem;
   }
 }
 @media (min-width: 900px) and (max-width: 1023px) {
-  .mainContent .sectionTwo .webList .content p {
+  .mainContent .sectionTwo .webList .content .pageNumber {
     font-size: 10pt;
   }
 }
 @media (min-width: 1023px) and (max-width: 1100px) {
-  .mainContent .sectionTwo .webList .content p {
+  .mainContent .sectionTwo .webList .content .pageNumber {
     right: 1.3rem;
     font-size: 8pt;
   }
 }
 @media (orientation: portrait) and (min-width: 1023px) and (max-width: 1100px) {
-  .mainContent .sectionTwo .webList .content p {
+  .mainContent .sectionTwo .webList .content .pageNumber {
     font-size: 9.5pt;
   }
 }
 @media (min-width: 1100px) and (max-width: 1200px) {
-  .mainContent .sectionTwo .webList .content p {
+  .mainContent .sectionTwo .webList .content .pageNumber {
     right: 2.3rem;
     font-size: 8.5pt;
   }
 }
 @media (width: 1100px) {
-  .mainContent .sectionTwo .webList .content p {
+  .mainContent .sectionTwo .webList .content .pageNumber {
     right: 1.4rem;
     font-size: 8.5pt;
   }
 }
 @media (min-width: 1200px) and (max-width: 1300px) {
-  .mainContent .sectionTwo .webList .content p {
+  .mainContent .sectionTwo .webList .content .pageNumber {
     right: 2.4rem;
     font-size: 8.5pt;
   }
