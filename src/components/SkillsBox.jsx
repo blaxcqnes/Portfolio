@@ -41,7 +41,7 @@ export default function SkillsBox({
       timeoutId = setTimeout(() => {
         startTimer();
         isInitialLoad.current = false;
-      }, 7000);
+      }, 5000);
     } else {
       startTimer();
     }
