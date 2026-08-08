@@ -1,4 +1,5 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, Fragment } from 'react';
+import { cyberOne, webOne } from '../data/skillsList';
 export default function SkillsList({ setActiveList }) {
   const [pageNumber, setPageNumber] = useState(1);
 
@@ -65,82 +66,36 @@ export default function SkillsList({ setActiveList }) {
           <div className="titleAndFluencies">
             <h4 className="title">Fluency in Cybersecurity</h4>
             <div className="fluenciesOne">
-              <div className="fluencyOne">
-                <p className="name">WireShark</p>
-                <div className="statusBar">
-                  <div className="bottom"></div>
-                  <p className="percentage">70%</p>
-                  <div className="topOne"></div>
-                </div>
-              </div>
-              {/* */}
-              <div className="fluencyTwo">
-                <p className="name">Nmap</p>
-                <div className="statusBar">
-                  <div className="bottom"></div>
-                  <p className="percentage">80%</p>
-                  <div className="topTwo"></div>
-                </div>
-              </div>
-              {/* */}
-              <div className="fluencyThree">
-                <p className="name">Metasploit</p>
-                <div className="statusBar">
-                  <div className="bottom"></div>
-                  <p className="percentage">65%</p>
-                  <div className="topThree"></div>
-                </div>
-              </div>
-              {/* */}
-              <div className="fluencyFour">
-                <p className="name">Burp Suite</p>
-                <div className="statusBar">
-                  <div className="bottom"></div>
-                  <p className="percentage">75%</p>
-                  <div className="topFour"></div>
-                </div>
-              </div>
+              {cyberOne.map((skills) => (
+                <Fragment key={skills.id}>
+                  <div className={skills.classFluency}>
+                    <p className={skills.className}>{skills.name}</p>
+                    <div className={skills.classStatusBar}>
+                      <div className={skills.classBottom}></div>
+                      <p className={skills.classPercentage}>{skills.value}</p>
+                      <div className={skills.classTop}></div>
+                    </div>
+                  </div>
+                </Fragment>
+              ))}
             </div>
           </div>
         ) : (
           <div className="titleAndFluencies">
             <h4 className="title">Fluency in Front-End</h4>
             <div className="fluenciesTwo">
-              <div className="fluencyOne">
-                <p className="name">HTML</p>
-                <div className="statusBar">
-                  <div className="bottom"></div>
-                  <p className="percentage">100%</p>
-                  <div className="topOne"></div>
-                </div>
-              </div>
-              {/* */}
-              <div className="fluencyTwo">
-                <span className="name">CSS & SCSS</span>
-                <div className="statusBar">
-                  <div className="bottom"></div>
-                  <p className="percentage">90%</p>
-                  <div className="topTwo"></div>
-                </div>
-              </div>
-              {/* */}
-              <div className="fluencyThree">
-                <p className="name">JavaScript</p>
-                <div className="statusBar">
-                  <div className="bottom"></div>
-                  <p className="percentage">70%</p>
-                  <div className="topThree"></div>
-                </div>
-              </div>
-              {/* */}
-              <div className="fluencyFour">
-                <p className="name">React</p>
-                <div className="statusBar">
-                  <div className="bottom"></div>
-                  <p className="percentage">80%</p>
-                  <div className="topFour"></div>
-                </div>
-              </div>
+              {webOne.map((web) => (
+                <Fragment key={web.id}>
+                  <div className={web.classFluency}>
+                    <p className={web.className}>{web.name}</p>
+                    <div className={web.classStatusBar}>
+                      <div className={web.classBottom}></div>
+                      <p className={web.classPercentage}>{web.value}</p>
+                      <div className={web.classTop}></div>
+                    </div>
+                  </div>
+                </Fragment>
+              ))}
             </div>
           </div>
         )}

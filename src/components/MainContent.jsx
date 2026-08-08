@@ -1,9 +1,9 @@
 import SectionOne from './SectionOne';
 import SectionTwo from './SectionTwo';
-import me from '../images/mainContent_leftOrUpperPart/me.jpg';
-import kaffa from '../images/mainContent_rightOrLowerPart/kaffa.jpg';
-import veila from '../images/mainContent_rightOrLowerPart/veila.jpg';
-import guessGame from '../images/mainContent_rightOrLowerPart/guessGame.jpg';
+import me from '../images/sectionOne/me.jpg';
+import kaffa from '../images/sectionTwo/kaffa.jpg';
+import veila from '../images/sectionTwo/veila.jpg';
+import guessGame from '../images/sectionTwo/guessGame.jpg';
 
 export default function MainContent({
   isContactFormOpen,

@@ -1,4 +1,5 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, Fragment } from 'react';
+import { pageOne, pageTwo } from '../data/educationList';
 export default function EducationList({ setActiveList }) {
   const [pageNumber, setPageNumber] = useState(1);
 
@@ -63,40 +64,23 @@ export default function EducationList({ setActiveList }) {
 
         {pageNumber < 2 ? (
           <ol className="pageOne">
-            <li>
-              <span>Cybersecurity Professional</span> - (Hacker School - HYD,
-              INDIA) - 2026
-            </li>
-            <li>
-              <span>React</span> - (SCRIMBA) - 2026
-            </li>
-            <li>
-              <span>Advanced React</span> - (SCRIMBA) - 2026
-            </li>
-            <li>
-              <span>Backend Path</span> - (SCRIMBA) - 2026
-            </li>
-            <li>
-              <span>SQL</span> - (SCRIMBA) - 2026
-            </li>
+            {pageOne.map((one) => (
+              <Fragment key={one.id}>
+                <li>
+                  <span>{one.eduName}</span> - ({one.where}) - {one.year}
+                </li>
+              </Fragment>
+            ))}
           </ol>
         ) : (
           <ol className="pageTwo">
-            <li>
-              <span>Express.JS</span> - (SCRIMBA) - 2026
-            </li>
-            <li>
-              <span>Node.JS</span> - (SCRIMBA) - 2026
-            </li>
-            <li>
-              <span>FullStack Web Development</span> - (Udemy) - 2025
-            </li>
-            <li>
-              <span>JavaScript</span> - (Udemy) - 2025
-            </li>
-            <li>
-              <span>MongoDB</span> - (Udemy) - 2025
-            </li>
+            {pageTwo.map((two) => (
+              <Fragment key={two.id}>
+                <li>
+                  <span>{two.eduName}</span> - ({two.where}) - {two.year}
+                </li>
+              </Fragment>
+            ))}
           </ol>
         )}
 

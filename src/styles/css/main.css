@@ -1338,52 +1338,283 @@
     row-gap: 0.5rem;
   }
 }
-.header .contactForm form .info {
+.header .contactForm form .status {
   display: flex;
+  flex-direction: row;
   justify-content: center;
+  column-gap: 0.5rem;
   align-items: center;
   width: 100%;
   height: 4.1rem;
   padding: 0.8rem 1rem;
   position: absolute;
   top: -5.15rem;
-  background-color: #5c4f43;
   border-radius: 0.5rem 0.5rem 0 0;
-  font-size: 15pt;
   opacity: 0;
   z-index: 2;
-  animation: info 3s linear 1;
+  animation: status 7s linear 1;
+  transition: all 0s ease-in-out;
+}
+@keyframes status {
+  0% {
+    opacity: 0;
+  }
+  5% {
+    opacity: 1;
+  }
+  10% {
+    opacity: 1;
+  }
+  15% {
+    opacity: 1;
+  }
+  20% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 1;
+  }
+  30% {
+    opacity: 1;
+  }
+  35% {
+    opacity: 1;
+  }
+  40% {
+    opacity: 1;
+  }
+  45% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 1;
+  }
+  55% {
+    opacity: 1;
+  }
+  60% {
+    opacity: 1;
+  }
+  65% {
+    opacity: 1;
+  }
+  70% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 1;
+  }
+  85% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  95% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@media (min-width: 300px) and (max-width: 400px) {
+  .header .contactForm form .status {
+    height: 4rem;
+    top: -4.9rem;
+    font-size: 13pt;
+  }
+}
+@media (min-width: 400px) and (max-width: 500px) {
+  .header .contactForm form .status {
+    height: 4.1rem;
+    padding: 0.8rem 1.2rem;
+    top: -5.12rem;
+    font-size: 14pt;
+  }
+}
+@media (width: 400px) {
+  .header .contactForm form .status {
+    height: 4rem;
+    top: -4.9rem;
+    font-size: 13pt;
+  }
+}
+@media (min-width: 500px) and (max-width: 600px) {
+  .header .contactForm form .status {
+    height: 4rem;
+    top: -5.1rem;
+  }
+}
+@media (min-width: 600px) and (max-width: 700px) {
+  .header .contactForm form .status {
+    height: 4.1rem;
+    top: -5.1rem;
+  }
+}
+@media (width: 600px) {
+  .header .contactForm form .status {
+    height: 4.1rem;
+    padding: 0.8rem 1.2rem;
+    top: -5.1rem;
+  }
+}
+@media (min-width: 700px) and (max-width: 1023px) {
+  .header .contactForm form .status {
+    top: -5.1rem;
+  }
+}
+@media (min-width: 1023px) and (max-width: 1100px) {
+  .header .contactForm form .status {
+    height: 2.799rem;
+    padding: 0.5rem 0.7rem;
+    top: -3.3rem;
+    font-size: 10pt;
+  }
+}
+@media (orientation: portrait) and (min-width: 1023px) and (max-width: 1100px) {
+  .header .contactForm form .status {
+    height: 4rem;
+    padding: 0.8rem 1rem;
+    top: -5.1rem;
+    font-size: 16pt;
+  }
+}
+@media (min-width: 1100px) and (max-width: 1200px) {
+  .header .contactForm form .status {
+    height: 2.95rem;
+    padding: 0.5rem 0.7rem;
+    top: -3.65rem;
+    font-size: 11pt;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1300px) {
+  .header .contactForm form .status {
+    height: 3.2rem;
+    padding: 0.6rem 1rem;
+    top: -3.9rem;
+    font-size: 12pt;
+  }
+}
+.header .contactForm form .status .oval {
+  display: flex;
+  width: 2rem;
+  height: 2rem;
+  border: 0.15rem solid;
+  border-color: #ffffff transparent #ffffff transparent;
+  border-radius: 50%;
+  animation: oval 3s linear infinite;
+  transform: border-color 0.2s ease, transform 0.2s ease;
+}
+@keyframes oval {
+  0% {
+    border-color: #5c4f43;
+    opacity: 0;
+  }
+  25% {
+    border-color: #ffffff transparent #ffffff transparent;
+    transform: rotate(-90deg);
+    opacity: 1;
+  }
+  50% {
+    transform: rotate(-180deg);
+    opacity: 0;
+  }
+  75% {
+    border-color: #ffffff transparent #ffffff transparent;
+    transform: rotate(-270deg);
+    opacity: 1;
+  }
+  100% {
+    transform: rotate(-360deg);
+    opacity: 0;
+  }
+}
+@media (min-width: 1023px) and (max-width: 1100px) {
+  .header .contactForm form .status .oval {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+}
+@media (min-width: 1100px) and (max-width: 1300px) {
+  .header .contactForm form .status .oval {
+    width: 1.7rem;
+    height: 1.7rem;
+  }
+}
+@media (orientation: portrait) and (min-width: 1023px) and (max-width: 1100px) {
+  .header .contactForm form .status .oval {
+    width: 2.2rem;
+    height: 2.2rem;
+  }
+}
+.header .contactForm form .status .info {
+  font-size: 15pt;
+  color: #ffffff;
+  animation: info 7s linear 1;
   transition: all 0s ease-in-out;
 }
 @keyframes info {
   0% {
     opacity: 0;
   }
+  5% {
+    opacity: 1;
+  }
   10% {
+    opacity: 1;
+  }
+  15% {
     opacity: 1;
   }
   20% {
     opacity: 1;
   }
+  25% {
+    opacity: 1;
+  }
   30% {
+    opacity: 1;
+  }
+  35% {
     opacity: 1;
   }
   40% {
     opacity: 1;
   }
+  45% {
+    opacity: 1;
+  }
   50% {
+    opacity: 1;
+  }
+  55% {
     opacity: 1;
   }
   60% {
     opacity: 1;
   }
+  65% {
+    opacity: 1;
+  }
   70% {
+    opacity: 1;
+  }
+  75% {
     opacity: 1;
   }
   80% {
     opacity: 1;
   }
+  85% {
+    opacity: 1;
+  }
   90% {
+    opacity: 1;
+  }
+  95% {
     opacity: 1;
   }
   100% {
@@ -1391,129 +1622,100 @@
   }
 }
 @media (min-width: 300px) and (max-width: 400px) {
-  .header .contactForm form .info {
-    height: 4rem;
-    top: -4.9rem;
+  .header .contactForm form .status .info {
     font-size: 13pt;
   }
 }
-@media (min-width: 400px) and (max-width: 500px) {
-  .header .contactForm form .info {
-    height: 4.1rem;
-    padding: 0.8rem 1.2rem;
-    top: -5.12rem;
+@media (min-width: 400px) and (max-width: 700px) {
+  .header .contactForm form .status .info {
     font-size: 14pt;
   }
 }
-@media (width: 400px) {
-  .header .contactForm form .info {
-    height: 4rem;
-    top: -4.9rem;
-    font-size: 13pt;
-  }
-}
-@media (min-width: 500px) and (max-width: 600px) {
-  .header .contactForm form .info {
-    height: 4rem;
-    top: -5.1rem;
-  }
-}
-@media (min-width: 600px) and (max-width: 700px) {
-  .header .contactForm form .info {
-    height: 4.1rem;
-    top: -5.1rem;
-  }
-}
-@media (width: 600px) {
-  .header .contactForm form .info {
-    height: 4.1rem;
-    padding: 0.8rem 1.2rem;
-    top: -5.1rem;
-  }
-}
-@media (min-width: 700px) and (max-width: 1023px) {
-  .header .contactForm form .info {
-    top: -5.1rem;
-  }
-}
 @media (min-width: 1023px) and (max-width: 1100px) {
-  .header .contactForm form .info {
-    height: 2.799rem;
-    padding: 0.5rem 0.7rem;
-    top: -3.3rem;
+  .header .contactForm form .status .info {
     font-size: 10pt;
   }
 }
 @media (orientation: portrait) and (min-width: 1023px) and (max-width: 1100px) {
-  .header .contactForm form .info {
-    height: 4rem;
-    padding: 0.8rem 1rem;
-    top: -5.1rem;
-    font-size: 16pt;
+  .header .contactForm form .status .info {
+    font-size: 15pt;
   }
 }
 @media (min-width: 1100px) and (max-width: 1200px) {
-  .header .contactForm form .info {
-    height: 2.95rem;
-    padding: 0.5rem 0.7rem;
-    top: -3.65rem;
+  .header .contactForm form .status .info {
     font-size: 11pt;
   }
 }
 @media (min-width: 1200px) and (max-width: 1300px) {
-  .header .contactForm form .info {
-    height: 3.2rem;
-    padding: 0.6rem 1rem;
-    top: -3.9rem;
+  .header .contactForm form .status .info {
     font-size: 12pt;
   }
 }
-.header .contactForm form .success {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 4.1rem;
-  padding: 0.8rem 1rem;
-  position: absolute;
-  top: -5.15rem;
-  background-color: #545146;
-  border-radius: 0.5rem 0.5rem 0 0;
+.header .contactForm form .status .success {
   font-size: 15pt;
-  opacity: 0;
-  z-index: 2;
-  animation: success 5s linear 1;
+  color: #ffffff;
+  animation: success 7s linear 1;
   transition: all 0s ease-in-out;
 }
 @keyframes success {
   0% {
     opacity: 0;
   }
+  5% {
+    opacity: 1;
+  }
   10% {
+    opacity: 1;
+  }
+  15% {
     opacity: 1;
   }
   20% {
     opacity: 1;
   }
+  25% {
+    opacity: 1;
+  }
   30% {
+    opacity: 1;
+  }
+  35% {
     opacity: 1;
   }
   40% {
     opacity: 1;
   }
+  45% {
+    opacity: 1;
+  }
   50% {
+    opacity: 1;
+  }
+  55% {
     opacity: 1;
   }
   60% {
     opacity: 1;
   }
+  65% {
+    opacity: 1;
+  }
   70% {
+    opacity: 1;
+  }
+  75% {
     opacity: 1;
   }
   80% {
     opacity: 1;
   }
+  85% {
+    opacity: 1;
+  }
   90% {
+    opacity: 1;
+  }
+  95% {
     opacity: 1;
   }
   100% {
@@ -1521,129 +1723,100 @@
   }
 }
 @media (min-width: 300px) and (max-width: 400px) {
-  .header .contactForm form .success {
-    height: 4rem;
-    top: -4.9rem;
+  .header .contactForm form .status .success {
     font-size: 13pt;
   }
 }
-@media (min-width: 400px) and (max-width: 500px) {
-  .header .contactForm form .success {
-    height: 4.1rem;
-    padding: 0.8rem 1.2rem;
-    top: -5.12rem;
+@media (min-width: 400px) and (max-width: 700px) {
+  .header .contactForm form .status .success {
     font-size: 14pt;
   }
 }
-@media (width: 400px) {
-  .header .contactForm form .success {
-    height: 4rem;
-    top: -4.9rem;
-    font-size: 13pt;
-  }
-}
-@media (min-width: 500px) and (max-width: 600px) {
-  .header .contactForm form .success {
-    height: 4rem;
-    top: -5.1rem;
-  }
-}
-@media (min-width: 600px) and (max-width: 700px) {
-  .header .contactForm form .success {
-    height: 4.1rem;
-    top: -5.1rem;
-  }
-}
-@media (width: 600px) {
-  .header .contactForm form .success {
-    height: 4.1rem;
-    padding: 0.8rem 1.2rem;
-    top: -5.1rem;
-  }
-}
-@media (min-width: 700px) and (max-width: 1023px) {
-  .header .contactForm form .success {
-    top: -5.1rem;
-  }
-}
 @media (min-width: 1023px) and (max-width: 1100px) {
-  .header .contactForm form .success {
-    height: 2.799rem;
-    padding: 0.5rem 0.7rem;
-    top: -3.3rem;
+  .header .contactForm form .status .success {
     font-size: 10pt;
   }
 }
 @media (orientation: portrait) and (min-width: 1023px) and (max-width: 1100px) {
-  .header .contactForm form .success {
-    height: 4rem;
-    padding: 0.8rem 1rem;
-    top: -5.1rem;
-    font-size: 16pt;
+  .header .contactForm form .status .success {
+    font-size: 15pt;
   }
 }
 @media (min-width: 1100px) and (max-width: 1200px) {
-  .header .contactForm form .success {
-    height: 2.95rem;
-    padding: 0.5rem 0.7rem;
-    top: -3.65rem;
+  .header .contactForm form .status .success {
     font-size: 11pt;
   }
 }
 @media (min-width: 1200px) and (max-width: 1300px) {
-  .header .contactForm form .success {
-    height: 3.2rem;
-    padding: 0.6rem 1rem;
-    top: -3.9rem;
+  .header .contactForm form .status .success {
     font-size: 12pt;
   }
 }
-.header .contactForm form .fail {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 4.1rem;
-  padding: 0.8rem 1rem;
-  position: absolute;
-  top: -5.15rem;
-  background-color: #91372b;
-  border-radius: 0.5rem 0.5rem 0 0;
+.header .contactForm form .status .fail {
   font-size: 15pt;
-  opacity: 0;
-  z-index: 2;
-  animation: fail 5s linear 1;
+  color: #ffffff;
+  animation: fail 7s linear 1;
   transition: all 0s ease-in-out;
 }
 @keyframes fail {
   0% {
     opacity: 0;
   }
+  5% {
+    opacity: 1;
+  }
   10% {
+    opacity: 1;
+  }
+  15% {
     opacity: 1;
   }
   20% {
     opacity: 1;
   }
+  25% {
+    opacity: 1;
+  }
   30% {
+    opacity: 1;
+  }
+  35% {
     opacity: 1;
   }
   40% {
     opacity: 1;
   }
+  45% {
+    opacity: 1;
+  }
   50% {
+    opacity: 1;
+  }
+  55% {
     opacity: 1;
   }
   60% {
     opacity: 1;
   }
+  65% {
+    opacity: 1;
+  }
   70% {
+    opacity: 1;
+  }
+  75% {
     opacity: 1;
   }
   80% {
     opacity: 1;
   }
+  85% {
+    opacity: 1;
+  }
   90% {
+    opacity: 1;
+  }
+  95% {
     opacity: 1;
   }
   100% {
@@ -1651,80 +1824,32 @@
   }
 }
 @media (min-width: 300px) and (max-width: 400px) {
-  .header .contactForm form .fail {
-    height: 4rem;
-    top: -4.9rem;
+  .header .contactForm form .status .fail {
     font-size: 13pt;
   }
 }
-@media (min-width: 400px) and (max-width: 500px) {
-  .header .contactForm form .fail {
-    height: 4.1rem;
-    padding: 0.8rem 1.2rem;
-    top: -5.12rem;
+@media (min-width: 400px) and (max-width: 700px) {
+  .header .contactForm form .status .fail {
     font-size: 14pt;
   }
 }
-@media (width: 400px) {
-  .header .contactForm form .fail {
-    height: 4rem;
-    top: -4.9rem;
-    font-size: 13pt;
-  }
-}
-@media (min-width: 500px) and (max-width: 600px) {
-  .header .contactForm form .fail {
-    height: 4rem;
-    top: -5.1rem;
-  }
-}
-@media (min-width: 600px) and (max-width: 700px) {
-  .header .contactForm form .fail {
-    height: 4.1rem;
-    top: -5.1rem;
-  }
-}
-@media (width: 600px) {
-  .header .contactForm form .fail {
-    height: 4.1rem;
-    padding: 0.8rem 1.2rem;
-    top: -5.1rem;
-  }
-}
-@media (min-width: 700px) and (max-width: 1023px) {
-  .header .contactForm form .fail {
-    top: -5.1rem;
-  }
-}
 @media (min-width: 1023px) and (max-width: 1100px) {
-  .header .contactForm form .fail {
-    height: 2.799rem;
-    padding: 0.5rem 0.7rem;
-    top: -3.3rem;
+  .header .contactForm form .status .fail {
     font-size: 10pt;
   }
 }
 @media (orientation: portrait) and (min-width: 1023px) and (max-width: 1100px) {
-  .header .contactForm form .fail {
-    height: 4rem;
-    padding: 0.8rem 1rem;
-    top: -5.1rem;
-    font-size: 16pt;
+  .header .contactForm form .status .fail {
+    font-size: 15pt;
   }
 }
 @media (min-width: 1100px) and (max-width: 1200px) {
-  .header .contactForm form .fail {
-    height: 2.95rem;
-    padding: 0.5rem 0.7rem;
-    top: -3.65rem;
+  .header .contactForm form .status .fail {
     font-size: 11pt;
   }
 }
 @media (min-width: 1200px) and (max-width: 1300px) {
-  .header .contactForm form .fail {
-    height: 3.2rem;
-    padding: 0.6rem 1rem;
-    top: -3.9rem;
+  .header .contactForm form .status .fail {
     font-size: 12pt;
   }
 }

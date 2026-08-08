@@ -45,7 +45,7 @@ export default function ContactForm({ isContactFormOpen, closeList }) {
 
           setTimeout(() => {
             setStatusMessage('');
-          }, 5000);
+          }, 6000);
         },
         (error) => {
           const errorMessage =
@@ -58,7 +58,7 @@ export default function ContactForm({ isContactFormOpen, closeList }) {
 
           setTimeout(() => {
             setStatusMessage('');
-          }, 5000);
+          }, 6000);
         },
       );
     e.target.reset();
@@ -81,8 +81,22 @@ export default function ContactForm({ isContactFormOpen, closeList }) {
       </div>
       {/*  */}
       <form ref={form} onSubmit={sendAnEmail} autoComplete="on">
-        {statusMessage && <p className={statusType}>{statusMessage}</p>}
-        {/* <p className="fail">{statusMessage}</p> */}
+        {statusMessage ? (
+          <div
+            className="status"
+            style={{
+              backgroundColor:
+                statusType === 'info'
+                  ? '#5c4f43'
+                  : statusType === 'success'
+                    ? '#545146'
+                    : statusType === 'fail' && '#91372b',
+            }}
+          >
+            {statusType === 'info' && <div className="oval"></div>}
+            <p className={statusType}>{statusMessage}</p>
+          </div>
+        ) : undefined}
         <div className="allInOneForm">
           {/* */}
           <label htmlFor="name"></label>

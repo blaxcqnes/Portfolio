@@ -1,4 +1,5 @@
 import { useState, useEffect, useRef, act } from 'react';
+import { carousel } from '../data/webBox';
 import WebList from './WebList';
 
 export default function WebBox({
@@ -18,35 +19,13 @@ export default function WebBox({
   const imageRefs = useRef([]);
   //
   const [currentIndex, setCurrentIndex] = useState(0);
-  const carouselData = [
-    {
-      id: 1,
-      src: kaffa,
-      className: 'activeImg',
-      url: 'https://example.com',
-    },
-    {
-      id: 2,
-      src: veila,
-      className: 'activeImg',
-      url: 'https://example.com',
-    },
-    {
-      id: 3,
-      src: guessGame,
-      className: 'activeImg',
-      url: 'https://example.com',
-    },
-  ];
+  const currentItem = carousel[currentIndex];
   //
-  const currentItem = carouselData[currentIndex];
-  //
+  const [nextImg, setNextImg] = useState(1);
   const isInitialLoad = useRef(true);
   const [timeLeft, setTimeLeft] = useState(5);
   const [isPaused, setIsPaused] = useState(false);
   const [glow, setGlow] = useState(6);
-  //
-  const [nextImg, setNextImg] = useState(1);
 
   // Initial delay only runs once on page start
   useEffect(() => {
@@ -86,7 +65,7 @@ export default function WebBox({
 
       setTimeLeft((prev) => {
         if (prev <= 1) {
-          setCurrentIndex((i) => (i + 1) % carouselData.length);
+          setCurrentIndex((i) => (i + 1) % carousel.length);
           return 5;
         }
         return prev - 1;
@@ -94,7 +73,7 @@ export default function WebBox({
     }, 1000);
 
     return () => clearInterval(timerId);
-  }, [isPaused, isContactFormOpen, activeList, carouselData.length]);
+  }, [isPaused, isContactFormOpen, activeList, carousel.length]);
 
   // Carousel images auto scroll
   useEffect(() => {
@@ -151,7 +130,7 @@ export default function WebBox({
               : undefined
           }
         >
-          {carouselData.map((item, index) => (
+          {carousel.map((item, index) => (
             <a
               key={item.id}
               href={item.url}
