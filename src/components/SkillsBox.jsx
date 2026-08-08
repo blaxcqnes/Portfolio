@@ -15,7 +15,7 @@ export default function SkillsBox({
   //
   const [timeLeft, setTimeLeft] = useState(15);
   const [isPaused, setIsPaused] = useState(false);
-  const [animationDelay, setAnimationDelay] = useState(6);
+  const [glow, setAnimationDelay] = useState(6);
   //
   const [skillPage, setSkillPage] = useState(1);
 
@@ -29,9 +29,6 @@ export default function SkillsBox({
     const startTimer = () => {
       timerId = setInterval(() => {
         setTimeLeft((prev) => {
-          // if (isContactFormOpen || activeList) {
-          //   return prev;
-          // }
           if (prev <= 0) {
             return 15;
           }
@@ -44,7 +41,7 @@ export default function SkillsBox({
       timeoutId = setTimeout(() => {
         startTimer();
         isInitialLoad.current = false;
-      }, 6000);
+      }, 7000);
     } else {
       startTimer();
     }
@@ -87,7 +84,7 @@ export default function SkillsBox({
   return (
     <div className="skillsAndSkillsList">
       <div
-        key={timeLeft - { animationDelay }}
+        key={timeLeft - { glow }}
         className="skillsBox"
         style={{
           ...(activeList || isContactFormOpen
@@ -99,11 +96,9 @@ export default function SkillsBox({
           animation:
             activeList || isContactFormOpen
               ? undefined
-              : animationDelay
+              : glow
                 ? 'skillsBox 0.5s linear 1'
-                : !animationDelay &&
-                  timeLeft === 15 &&
-                  'skillsAlternate 1s ease 1',
+                : !glow && timeLeft === 15 && 'skillsAlternate 1s ease 1',
         }}
         onPointerEnter={() => setIsPaused(true)}
         onPointerLeave={() => setIsPaused(false)}
@@ -161,16 +156,16 @@ export default function SkillsBox({
             className="nextSkillsOval"
             style={{
               opacity: activeList || isContactFormOpen ? 0 : 1,
-              ...(animationDelay
+              ...(glow
                 ? { animation: 'nextSkillsStops 1s linear 1' }
                 : { animation: 'nextSkillsOval 1.5s linear infinite' }),
-              ...(!activeList && !isContactFormOpen && animationDelay
+              ...(!activeList && !isContactFormOpen && glow
                 ? { animation: 'nextSkillsGlow 3s linear infinite' }
                 : undefined),
             }}
           ></div>
 
-          {!animationDelay && (
+          {!glow && (
             <div
               className="nextSkillsTimer"
               style={{
