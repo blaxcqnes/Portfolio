@@ -6,6 +6,8 @@ export default function SkillsBox({
   isContactFormOpen,
   activeList,
   setActiveList,
+  pauseOne,
+  playOne,
   toggleSkillsList,
   mobileScreens,
   largeLandscape,
@@ -205,9 +207,10 @@ export default function SkillsBox({
               className="pausePlay"
               onClick={pausePlay}
               style={{
+                opacity: activeList || isContactFormOpen || isPaused ? 0 : 1,
                 backgroundImage: isPaused
-                  ? `url('src/images/sectionOne/svgs/play.svg')`
-                  : `url('src/images/sectionOne/svgs/pause.svg')`,
+                  ? `url(${playOne})`
+                  : `url(${pauseOne})`,
               }}
             ></div>
           ) : undefined}

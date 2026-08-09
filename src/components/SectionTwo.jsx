@@ -10,6 +10,8 @@ export default function SectionTwo({
   kaffa,
   veila,
   guessGame,
+  pauseTwo,
+  playTwo,
   isContactFormOpen,
   activeList,
   setActiveList,
@@ -70,6 +72,8 @@ export default function SectionTwo({
             kaffa={kaffa}
             veila={veila}
             guessGame={guessGame}
+            pauseTwo={pauseTwo}
+            playTwo={playTwo}
             isContactFormOpen={isContactFormOpen}
             activeList={activeList}
             setActiveList={setActiveList}

@@ -6,6 +6,8 @@ export default function WebBox({
   kaffa,
   veila,
   guessGame,
+  pauseTwo,
+  playTwo,
   isContactFormOpen,
   activeList,
   setActiveList,
@@ -232,9 +234,10 @@ export default function WebBox({
               className="pausePlay"
               onClick={pausePlay}
               style={{
+                opacity: activeList || isContactFormOpen || isPaused ? 0 : 1,
                 backgroundImage: isPaused
-                  ? `url('src/images/sectionTwo/svgs/play.svg')`
-                  : `url('src/images/sectionTwo/svgs/pause.svg')`,
+                  ? `url(${playTwo})`
+                  : `url(${pauseTwo})`,
               }}
             ></div>
           ) : undefined}

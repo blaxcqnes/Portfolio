@@ -4,6 +4,10 @@ import me from '../images/sectionOne/me.jpg';
 import kaffa from '../images/sectionTwo/kaffa.jpg';
 import veila from '../images/sectionTwo/veila.jpg';
 import guessGame from '../images/sectionTwo/guessGame.jpg';
+import pauseOne from '../images/sectionOne/svgs/pause.svg';
+import playOne from '../images/sectionOne/svgs/play.svg';
+import pauseTwo from '../images/sectionTwo/svgs/pause.svg';
+import playTwo from '../images/sectionTwo/svgs/play.svg';
 
 export default function MainContent({
   isContactFormOpen,
@@ -19,6 +23,8 @@ export default function MainContent({
     <main className="mainContent">
       <SectionOne
         me={me}
+        pauseOne={pauseOne}
+        playOne={playOne}
         isContactFormOpen={isContactFormOpen}
         activeList={activeList}
         setActiveList={setActiveList}
@@ -31,6 +37,8 @@ export default function MainContent({
         kaffa={kaffa}
         veila={veila}
         guessGame={guessGame}
+        pauseTwo={pauseTwo}
+        playTwo={playTwo}
         isContactFormOpen={isContactFormOpen}
         activeList={activeList}
         setActiveList={setActiveList}
@@ -43,4 +51,13 @@ export default function MainContent({
   );
 }
 
-MainContent.assets = [me, kaffa, veila, guessGame];
+MainContent.assets = [
+  me,
+  kaffa,
+  veila,
+  guessGame,
+  pauseOne,
+  playOne,
+  pauseTwo,
+  playTwo,
+];
