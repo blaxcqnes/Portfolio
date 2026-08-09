@@ -1,26 +1,32 @@
-export default function Footer({ isContactFormOpen, activeList }) {
+export default function Footer({
+  isContactFormOpen,
+  activeList,
+  mobileScreens,
+}) {
   return (
     <footer
       className="footer"
       style={{
-        ...(activeList === 'cyberList' || activeList === 'webList'
-          ? {
-              display: 'none',
-              width: '100%',
-              height: '0',
-              padding: '0',
-              borderRadius: '0',
-              animation: 'footerHidden 0.5s linear 1',
-              transition: 'all 0.2s ease',
-              opacity: '0',
-            }
-          : undefined),
+        ...(activeList === 'webList' && mobileScreens
+          ? undefined
+          : activeList === 'cyberList' || activeList === 'webList'
+            ? {
+                display: 'none',
+                width: '100%',
+                height: '0',
+                padding: '0',
+                borderRadius: '0',
+                animation: 'footerHidden 0.5s linear 1',
+                transition: 'all 0.2s ease',
+                opacity: '0',
+              }
+            : undefined),
         ...(activeList || isContactFormOpen
           ? {
               filter:
                 'opacity(0.5) grayscale(10%) blur(0.05rem) brightness(80%)',
             }
-          : null),
+          : undefined),
       }}
     >
       <div className="wrapper">

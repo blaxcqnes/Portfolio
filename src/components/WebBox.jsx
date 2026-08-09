@@ -41,7 +41,7 @@ export default function WebBox({
     const timeoutId = setTimeout(() => {
       timerRef.current = setInterval(() => {
         setGlow((prev) => {
-          if (prev <= 0) {
+          if (!prev) {
             clearInterval(timerRef.current);
             return 0;
           }
@@ -56,7 +56,7 @@ export default function WebBox({
     };
   }, []);
 
-  // Related to web timer
+  // Related to images auto scroll timer
   useEffect(() => {
     if (isPaused || isContactFormOpen || activeList) return;
 
@@ -75,7 +75,7 @@ export default function WebBox({
     return () => clearInterval(timerId);
   }, [isPaused, isContactFormOpen, activeList, carousel.length]);
 
-  // Carousel images auto scroll
+  // Carousel images auto scroll logic
   useEffect(() => {
     if (isPaused) return;
 
@@ -198,6 +198,10 @@ export default function WebBox({
               className="nextWebTimer"
               style={{
                 opacity: activeList || isContactFormOpen || isPaused ? 0 : 1,
+                visibility:
+                  activeList || isContactFormOpen || isPaused
+                    ? 'hidden'
+                    : 'visible',
                 ...(!activeList && !isContactFormOpen && timeLeft
                   ? { animation: 'nextWebTimer 1s linear 1' }
                   : undefined),

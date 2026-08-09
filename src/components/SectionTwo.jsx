@@ -80,7 +80,11 @@ export default function SectionTwo({
           />
         </section>
 
-        <Footer isContactFormOpen={isContactFormOpen} activeList={activeList} />
+        <Footer
+          isContactFormOpen={isContactFormOpen}
+          activeList={activeList}
+          mobileScreens={mobileScreens}
+        />
       </div>
 
       {activeList === 'cyberList' && (

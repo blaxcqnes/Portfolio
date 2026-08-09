@@ -19,45 +19,21 @@ export default function SkillsBox({
   //
   const [skillPage, setSkillPage] = useState(1);
 
-  // Related to skills timer
+  // Initial delay only runs once on page start
   useEffect(() => {
-    let timerId;
-    let timeoutId;
+    const timeoutId = setTimeout(() => {
+      isInitialLoad.current = false;
+    }, 7000);
 
-    if (isPaused || isContactFormOpen || activeList) return;
+    return () => clearTimeout(timeoutId);
+  }, []);
 
-    const startTimer = () => {
-      timerId = setInterval(() => {
-        setTimeLeft((prev) => {
-          if (prev <= 0) {
-            return 15;
-          }
-          return prev - 1;
-        });
-      }, 1000);
-    };
-
-    if (isInitialLoad.current) {
-      timeoutId = setTimeout(() => {
-        startTimer();
-        isInitialLoad.current = false;
-      }, 6000);
-    } else {
-      startTimer();
-    }
-
-    return () => {
-      clearTimeout(timeoutId);
-      clearInterval(timerId);
-    };
-  }, [isPaused, isContactFormOpen, activeList]);
-
-  // Related to loader animation delay and glow effect
+  // Related to skills timer
   useEffect(() => {
     const timeoutId = setTimeout(() => {
       timerRef.current = setInterval(() => {
         setGlow((prev) => {
-          if (prev <= 0) {
+          if (!prev) {
             clearInterval(timerRef.current);
             return 0;
           }
@@ -72,14 +48,34 @@ export default function SkillsBox({
     };
   }, []);
 
+  useEffect(() => {
+    if (isPaused || isContactFormOpen || activeList) return;
+
+    const timerId = setInterval(() => {
+      if (isInitialLoad.current) return;
+
+      setTimeLeft((prev) => {
+        if (!prev) {
+          return 15;
+        }
+        return prev - 1;
+      });
+    }, 1000);
+
+    return () => clearInterval(timerId);
+  }, [isPaused, isContactFormOpen, activeList]);
+
   // Related to the skills auto page change
   useEffect(() => {
-    if (timeLeft === 0 && skillPage <= 2) {
+    if (!timeLeft && skillPage <= 1) {
       setSkillPage((prev) => prev + 1);
       setTimeLeft(15);
     }
-    if (skillPage >= 3) return setSkillPage(1);
-  }, [timeLeft]);
+    if (!timeLeft && skillPage >= 2) {
+      setSkillPage((prev) => prev - 1);
+      setTimeLeft(15);
+    }
+  }, [timeLeft, skillPage]);
 
   return (
     <div className="skillsAndSkillsList">
@@ -169,6 +165,10 @@ export default function SkillsBox({
               className="nextSkillsTimer"
               style={{
                 opacity: activeList || isContactFormOpen || isPaused ? 0 : 1,
+                visibility:
+                  activeList || isContactFormOpen || isPaused
+                    ? 'hidden'
+                    : 'visible',
                 ...(!activeList && !isContactFormOpen && timeLeft
                   ? { animation: 'nextSkillsTimer 1s linear 1' }
                   : undefined),
