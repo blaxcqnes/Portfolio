@@ -98,7 +98,6 @@ export default function ContactForm({ isContactFormOpen, closeList }) {
           </div>
         ) : undefined}
         <div className="allInOneForm">
-          {/* */}
           <label htmlFor="name"></label>
           <input
             id="name"
@@ -109,18 +108,6 @@ export default function ContactForm({ isContactFormOpen, closeList }) {
             value={nameValue}
             onChange={(e) => setNameInputValue(e.target.value)}
           />
-          {/* */}
-          <label htmlFor="subject"></label>
-          <input
-            id="subject"
-            name="subject"
-            type="text"
-            placeholder="Subject"
-            className="subject"
-            value={subjectValue}
-            onChange={(e) => setSubjectInputValue(e.target.value)}
-          />
-          {/* */}
           <label htmlFor="email"></label>
           <input
             id="email"
@@ -131,38 +118,40 @@ export default function ContactForm({ isContactFormOpen, closeList }) {
             value={emailValue}
             onChange={(e) => setEmailInputValue(e.target.value)}
           />
-          {/*  */}
+          <label htmlFor="subject"></label>
+          <input
+            id="subject"
+            name="subject"
+            type="text"
+            placeholder="Subject"
+            className="subject"
+            value={subjectValue}
+            onChange={(e) => setSubjectInputValue(e.target.value)}
+          />
           <textarea
             id="textArea"
             name="textArea"
-            placeholder="Your Message"
+            placeholder="Message"
             className="textArea"
             value={textAreaValue}
             onChange={(e) => setTextAreaInputValue(e.target.value)}
           ></textarea>
-          {/*  */}
         </div>
-        {/*  */}
         <div className="buttons">
-          {/*  */}
           {isFormValid ? (
-            <button disabled className="sendDisabled">
+            <button className="sendDisabled" disabled>
               Send
             </button>
           ) : (
             <button className="send">Send</button>
           )}
-          {/*  */}
           {!isFormValid && (
             <button type="reset" className="reset" onClick={handleReset}>
               Reset
             </button>
           )}
-          {/*  */}
         </div>
-        {/*  */}
       </form>
-      {/*  */}
     </main>
   );
 }
