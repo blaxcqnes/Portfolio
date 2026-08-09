@@ -28,7 +28,16 @@ export default function Header({
         <div className="locationAndContact">
           <p className="location">Riyadh, Saudi Arabia</p>
           {activeList || isContactFormOpen ? (
-            <button className="contactDisabled">Contact</button>
+            <button
+              className="contact"
+              style={{
+                pointerEvents:
+                  activeList || isContactFormOpen ? 'none' : 'auto',
+              }}
+              disabled
+            >
+              Contact
+            </button>
           ) : (
             <button
               className="contact"
@@ -46,7 +55,8 @@ export default function Header({
       {isContactFormOpen && (
         <ContactForm
           isContactFormOpen={isContactFormOpen}
-          closeList={closeList}
+          activeList={activeList}
+          toggleContactForm={toggleContactForm}
         />
       )}
     </main>

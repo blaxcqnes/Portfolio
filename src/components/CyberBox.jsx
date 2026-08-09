@@ -35,7 +35,15 @@ export default function CyberBox({
         </ol>
       </div>
       {activeList || isContactFormOpen ? (
-        <button className="extrasDisabled">Extras</button>
+        <button
+          className="extras"
+          style={{
+            pointerEvents: activeList || isContactFormOpen ? 'none' : 'auto',
+          }}
+          disabled
+        >
+          Extras
+        </button>
       ) : (
         <button
           className="extras"

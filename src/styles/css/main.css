@@ -582,7 +582,7 @@
 }
 .header .headerContainer .locationAndContact .contact:hover {
   background-color: #545146;
-  box-shadow: inset 0 0 0 0.1rem #8b8b8b;
+  box-shadow: inset 0 0 0 1.5px #8b8b8b;
 }
 @media (min-width: 300px) and (max-width: 350px) {
   .header .headerContainer .locationAndContact .contact {
@@ -659,7 +659,7 @@
 .header .contactForm {
   display: flex;
   flex-direction: column;
-  row-gap: 1rem;
+  row-gap: 1.2%;
   width: 24%;
   height: 29.6rem;
   position: absolute;
@@ -690,6 +690,7 @@
 }
 @media (min-width: 300px) and (max-width: 330px) {
   .header .contactForm {
+    row-gap: 1.2%;
     width: 100%;
     height: 27.3rem;
     top: 6rem;
@@ -710,6 +711,7 @@
 }
 @media (min-width: 330px) and (max-width: 380px) {
   .header .contactForm {
+    row-gap: 1.2%;
     width: 99%;
     height: 27.3rem;
     top: 6rem;
@@ -732,6 +734,7 @@
 }
 @media (min-width: 380px) and (max-width: 400px) {
   .header .contactForm {
+    row-gap: 1.2%;
     width: 99%;
     height: 27.3rem;
     top: 6rem;
@@ -754,6 +757,7 @@
 }
 @media (min-width: 400px) and (max-width: 500px) {
   .header .contactForm {
+    row-gap: 1.3%;
     width: 20rem;
     height: 27.3rem;
     top: 6.25rem;
@@ -798,6 +802,7 @@
 }
 @media (min-width: 500px) and (max-width: 600px) {
   .header .contactForm {
+    row-gap: 1.4%;
     width: 70%;
     height: 27.3rem;
     top: 6.8rem;
@@ -842,6 +847,7 @@
 }
 @media (min-width: 600px) and (max-width: 700px) {
   .header .contactForm {
+    row-gap: 1.5%;
     width: 60%;
     height: 27.3rem;
     top: 6.8rem;
@@ -864,6 +870,7 @@
 }
 @media (min-width: 700px) and (max-width: 800px) {
   .header .contactForm {
+    row-gap: 1.5%;
     width: 50%;
     height: 27.3rem;
     top: 7.6rem;
@@ -886,6 +893,7 @@
 }
 @media (min-width: 800px) and (max-width: 900px) {
   .header .contactForm {
+    row-gap: 1.3%;
     width: 42%;
     top: 6.9rem;
     right: unset;
@@ -929,6 +937,7 @@
 }
 @media (min-width: 900px) and (max-width: 1000px) {
   .header .contactForm {
+    row-gap: 1.2%;
     width: 37%;
     top: 7.1rem;
     right: unset;
@@ -971,7 +980,7 @@
 }
 @media (min-width: 1000px) and (max-width: 1023px) {
   .header .contactForm {
-    row-gap: 1rem;
+    row-gap: 1.3%;
     width: 37%;
     height: 29.6rem;
     top: 7.1rem;
@@ -994,7 +1003,6 @@
 }
 @media (width: 1000px) {
   .header .contactForm {
-    row-gap: 1rem;
     width: 37%;
     height: 29.6rem;
     top: 7.1rem;
@@ -1017,7 +1025,7 @@
 }
 @media (min-width: 1023px) and (max-width: 1100px) {
   .header .contactForm {
-    row-gap: 0.5rem;
+    row-gap: 1.3%;
     width: 24.4%;
     height: 20rem;
     top: 3.6rem;
@@ -1037,7 +1045,7 @@
 }
 @media (orientation: portrait) and (min-width: 1023px) and (max-width: 1100px) {
   .header .contactForm {
-    row-gap: 1rem;
+    row-gap: 1.2%;
     width: 38%;
     height: 29.6rem;
     top: 7rem;
@@ -1060,7 +1068,7 @@
 }
 @media (min-width: 1100px) and (max-width: 1200px) {
   .header .contactForm {
-    row-gap: 0.7rem;
+    row-gap: 1.3%;
     width: 24.2%;
     height: 22.1rem;
     top: 4.3rem;
@@ -1080,7 +1088,7 @@
 }
 @media (min-width: 1200px) and (max-width: 1300px) {
   .header .contactForm {
-    row-gap: 0.7rem;
+    row-gap: 1.4%;
     height: 24.3rem;
     top: 4.65rem;
   }
@@ -1099,7 +1107,7 @@
 }
 @media (min-width: 1300px) and (max-width: 1400px) {
   .header .contactForm {
-    row-gap: 0.8rem;
+    row-gap: 1.4%;
     height: 27.2rem;
     top: 5.3rem;
   }
@@ -1118,7 +1126,7 @@
 }
 @media (min-width: 1400px) and (max-width: 1500px) {
   .header .contactForm {
-    row-gap: 0.8rem;
+    row-gap: 1.4%;
     height: 28.3rem;
     top: 5.8rem;
   }
@@ -1137,7 +1145,6 @@
 }
 @media (width: 1400px) {
   .header .contactForm {
-    row-gap: 0.8rem;
     width: 24.1%;
     height: 28.3rem;
     top: 5.3rem;
@@ -1253,7 +1260,7 @@
 }
 .header .contactForm .titleAndButton .close:hover {
   background-color: #545146;
-  box-shadow: inset 0 0 0 0.1rem #8b8b8b;
+  box-shadow: inset 0 0 0 1.5px #8b8b8b;
 }
 @media (min-width: 300px) and (max-width: 350px) {
   .header .contactForm .titleAndButton .close {
@@ -1330,12 +1337,90 @@
 .header .contactForm form {
   display: flex;
   flex-direction: column;
-  row-gap: 0.8rem;
+  row-gap: 5.5%;
+  align-self: center;
+  align-items: center;
+  width: 97%;
+  height: 83.4%;
   position: relative;
+  padding: 5% 0;
+  background-color: #232323;
+  border-radius: 0.5rem;
+}
+@media (min-width: 300px) and (max-width: 400px) {
+  .header .contactForm form {
+    height: 83.1%;
+  }
+}
+@media (min-width: 400px) and (max-width: 500px) {
+  .header .contactForm form {
+    height: 82.1%;
+  }
+}
+@media (width: 400px) {
+  .header .contactForm form {
+    height: 83.1%;
+  }
+}
+@media (min-width: 500px) and (max-width: 600px) {
+  .header .contactForm form {
+    height: 82%;
+  }
+}
+@media (width: 500px) {
+  .header .contactForm form {
+    height: 82.1%;
+  }
+}
+@media (min-width: 600px) and (max-width: 800px) {
+  .header .contactForm form {
+    height: 81.6%;
+  }
+}
+@media (width: 600px) {
+  .header .contactForm form {
+    height: 82%;
+  }
+}
+@media (min-width: 900px) and (max-width: 1023px) {
+  .header .contactForm form {
+    height: 83.5%;
+  }
 }
 @media (min-width: 1023px) and (max-width: 1100px) {
   .header .contactForm form {
-    row-gap: 0.5rem;
+    height: 83.2%;
+  }
+}
+@media (orientation: portrait) and (min-width: 1023px) and (max-width: 1100px) {
+  .header .contactForm form {
+    height: 83.4%;
+  }
+}
+@media (min-width: 1100px) and (max-width: 1200px) {
+  .header .contactForm form {
+    height: 84%;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1400px) {
+  .header .contactForm form {
+    height: 83.8%;
+  }
+}
+@media (width: 1200px) {
+  .header .contactForm form {
+    row-gap: 6.5%;
+    height: 84.2%;
+  }
+}
+@media (min-width: 1400px) and (max-width: 1500px) {
+  .header .contactForm form {
+    height: 82.5%;
+  }
+}
+@media (width: 1400px) {
+  .header .contactForm form {
+    height: 84%;
   }
 }
 .header .contactForm form .status {
@@ -1851,8 +1936,9 @@
   display: flex;
   flex-direction: column;
   row-gap: 0.8rem;
+  width: 100%;
 }
-@media (min-width: 1023px) and (max-width: 1100px) {
+@media (min-width: 1023px) and (max-width: 1200px) {
   .header .contactForm form .allInOneForm {
     row-gap: 0.5rem;
   }
@@ -1865,9 +1951,9 @@
   height: 3rem;
   padding: 0.5rem;
   align-self: center;
-  border: 0.1rem solid #545146;
+  border: 0.1rem solid rgba(84, 81, 70, 0.3764705882);
   border-radius: 0.5rem;
-  background-color: #232323;
+  background-color: #1e1e1e;
   font-size: 10pt;
 }
 .header .contactForm form .allInOneForm .name:focus:where(input[type=text],
@@ -1883,14 +1969,14 @@ input[type=email]) {
   color: #8b8b8b;
 }
 .header .contactForm form .allInOneForm .name::selection {
-  background-color: #545146;
+  background-color: #5c4f43;
 }
 @media (min-width: 300px) and (max-width: 800px) {
   .header .contactForm form .allInOneForm .name {
     height: 2.5rem;
   }
 }
-@media (min-width: 1023px) and (max-width: 1100px) {
+@media (min-width: 1023px) and (max-width: 1200px) {
   .header .contactForm form .allInOneForm .name {
     height: 2rem;
     font-size: 8pt;
@@ -1900,12 +1986,6 @@ input[type=email]) {
   .header .contactForm form .allInOneForm .name {
     height: 3rem;
     font-size: 11pt;
-  }
-}
-@media (min-width: 1100px) and (max-width: 1200px) {
-  .header .contactForm form .allInOneForm .name {
-    height: 2rem;
-    font-size: 9pt;
   }
 }
 @media (min-width: 1200px) and (max-width: 1300px) {
@@ -1924,9 +2004,9 @@ input[type=email]) {
   height: 3rem;
   padding: 0.5rem;
   align-self: center;
-  border: 0.1rem solid #545146;
+  border: 0.1rem solid rgba(84, 81, 70, 0.3764705882);
   border-radius: 0.5rem;
-  background-color: #232323;
+  background-color: #1e1e1e;
   font-size: 10pt;
 }
 .header .contactForm form .allInOneForm .email:focus:where(input[type=text],
@@ -1942,14 +2022,14 @@ input[type=email]) {
   color: #8b8b8b;
 }
 .header .contactForm form .allInOneForm .email::selection {
-  background-color: #545146;
+  background-color: #5c4f43;
 }
 @media (min-width: 300px) and (max-width: 800px) {
   .header .contactForm form .allInOneForm .email {
     height: 2.5rem;
   }
 }
-@media (min-width: 1023px) and (max-width: 1100px) {
+@media (min-width: 1023px) and (max-width: 1200px) {
   .header .contactForm form .allInOneForm .email {
     height: 2rem;
     font-size: 8pt;
@@ -1959,12 +2039,6 @@ input[type=email]) {
   .header .contactForm form .allInOneForm .email {
     height: 3rem;
     font-size: 11pt;
-  }
-}
-@media (min-width: 1100px) and (max-width: 1200px) {
-  .header .contactForm form .allInOneForm .email {
-    height: 2rem;
-    font-size: 9pt;
   }
 }
 @media (min-width: 1200px) and (max-width: 1300px) {
@@ -1983,9 +2057,9 @@ input[type=email]) {
   height: 3rem;
   padding: 0.5rem;
   align-self: center;
-  border: 0.1rem solid #545146;
+  border: 0.1rem solid rgba(84, 81, 70, 0.3764705882);
   border-radius: 0.5rem;
-  background-color: #232323;
+  background-color: #1e1e1e;
   font-size: 10pt;
 }
 .header .contactForm form .allInOneForm .subject:focus:where(input[type=text],
@@ -2001,14 +2075,14 @@ input[type=email]) {
   color: #8b8b8b;
 }
 .header .contactForm form .allInOneForm .subject::selection {
-  background-color: #545146;
+  background-color: #5c4f43;
 }
 @media (min-width: 300px) and (max-width: 800px) {
   .header .contactForm form .allInOneForm .subject {
     height: 2.5rem;
   }
 }
-@media (min-width: 1023px) and (max-width: 1100px) {
+@media (min-width: 1023px) and (max-width: 1200px) {
   .header .contactForm form .allInOneForm .subject {
     height: 2rem;
     font-size: 8pt;
@@ -2018,12 +2092,6 @@ input[type=email]) {
   .header .contactForm form .allInOneForm .subject {
     height: 3rem;
     font-size: 11pt;
-  }
-}
-@media (min-width: 1100px) and (max-width: 1200px) {
-  .header .contactForm form .allInOneForm .subject {
-    height: 2rem;
-    font-size: 9pt;
   }
 }
 @media (min-width: 1200px) and (max-width: 1300px) {
@@ -2040,11 +2108,11 @@ input[type=email]) {
 .header .contactForm form .allInOneForm .textArea {
   width: 95%;
   height: 7.5rem;
-  padding: 0.9rem 0.5rem;
+  padding: 0.8rem 0.5rem;
   align-self: center;
-  border: 0.1rem solid #545146;
+  border: 0.1rem solid rgba(84, 81, 70, 0.3764705882);
   border-radius: 0.5rem;
-  background-color: #232323;
+  background-color: #1e1e1e;
   resize: none;
   font-size: 10pt;
 }
@@ -2057,34 +2125,53 @@ input[type=email]) {
   color: #8b8b8b;
 }
 .header .contactForm form .allInOneForm .textArea::selection {
-  background-color: #545146;
+  background-color: #5c4f43;
 }
 @media (min-width: 300px) and (max-width: 400px) {
   .header .contactForm form .allInOneForm .textArea {
-    height: 8rem;
+    height: 7.5rem;
   }
 }
-@media (min-width: 1023px) and (max-width: 1100px) {
+@media (min-width: 400px) and (max-width: 500px) {
   .header .contactForm form .allInOneForm .textArea {
-    height: 5.5rem;
+    height: 7rem;
+  }
+}
+@media (min-width: 500px) and (max-width: 600px) {
+  .header .contactForm form .allInOneForm .textArea {
+    height: 6.8rem;
+  }
+}
+@media (min-width: 600px) and (max-width: 800px) {
+  .header .contactForm form .allInOneForm .textArea {
+    height: 7rem;
+  }
+}
+@media (min-width: 1023px) and (max-width: 1200px) {
+  .header .contactForm form .allInOneForm .textArea {
+    height: 5.2rem;
     font-size: 8pt;
   }
 }
 @media (orientation: portrait) and (min-width: 1023px) and (max-width: 1100px) {
   .header .contactForm form .allInOneForm .textArea {
-    height: 9rem;
+    height: 8.5rem;
     font-size: 11pt;
   }
 }
 @media (min-width: 1100px) and (max-width: 1200px) {
   .header .contactForm form .allInOneForm .textArea {
     height: 6.5rem;
-    font-size: 9pt;
   }
 }
 @media (min-width: 1200px) and (max-width: 1300px) {
   .header .contactForm form .allInOneForm .textArea {
-    height: 6.8rem;
+    height: 6.4rem;
+  }
+}
+@media (width: 1200px) {
+  .header .contactForm form .allInOneForm .textArea {
+    height: 6.7rem;
   }
 }
 @media (min-width: 1300px) and (max-width: 1400px) {
@@ -2094,7 +2181,12 @@ input[type=email]) {
 }
 @media (min-width: 1400px) and (max-width: 1500px) {
   .header .contactForm form .allInOneForm .textArea {
-    height: 7rem;
+    height: 6.3rem;
+  }
+}
+@media (width: 1400px) {
+  .header .contactForm form .allInOneForm .textArea {
+    height: 8.5rem;
   }
 }
 .header .contactForm form .buttons {
@@ -2103,65 +2195,7 @@ input[type=email]) {
   justify-content: center;
   column-gap: 1rem;
   width: 100%;
-  position: absolute;
-  top: 20.3rem;
   transition: all 0.2s ease;
-}
-@media (min-width: 300px) and (max-width: 400px) {
-  .header .contactForm form .buttons {
-    position: absolute;
-    top: 19rem;
-  }
-}
-@media (min-width: 400px) and (max-width: 800px) {
-  .header .contactForm form .buttons {
-    top: 18.5rem;
-  }
-}
-@media (width: 400px) {
-  .header .contactForm form .buttons {
-    top: 18.9rem;
-  }
-}
-@media (min-width: 800px) and (max-width: 1023px) {
-  .header .contactForm form .buttons {
-    top: 20.3rem;
-  }
-}
-@media (width: 800px) {
-  .header .contactForm form .buttons {
-    top: 18.5rem;
-  }
-}
-@media (min-width: 1023px) and (max-width: 1100px) {
-  .header .contactForm form .buttons {
-    top: 13.7rem;
-  }
-}
-@media (orientation: portrait) and (min-width: 1023px) and (max-width: 1100px) {
-  .header .contactForm form .buttons {
-    top: 20.8rem;
-  }
-}
-@media (min-width: 1100px) and (max-width: 1200px) {
-  .header .contactForm form .buttons {
-    top: 15.6rem;
-  }
-}
-@media (min-width: 1200px) and (max-width: 1300px) {
-  .header .contactForm form .buttons {
-    top: 17.2rem;
-  }
-}
-@media (min-width: 1300px) and (max-width: 1400px) {
-  .header .contactForm form .buttons {
-    top: 19.2rem;
-  }
-}
-@media (min-width: 1400px) and (max-width: 1500px) {
-  .header .contactForm form .buttons {
-    top: 19.5rem;
-  }
 }
 .header .contactForm form .buttons .send {
   width: 7rem;
@@ -2186,7 +2220,7 @@ input[type=email]) {
 }
 .header .contactForm form .buttons .send:hover {
   background-color: #5c4f43;
-  box-shadow: inset 0 0 0 0.1rem #8b8b8b;
+  box-shadow: inset 0 0 0 1.5px #8b8b8b;
 }
 @media (min-width: 300px) and (max-width: 400px) {
   .header .contactForm form .buttons .send {
@@ -2275,7 +2309,7 @@ input[type=email]) {
 }
 .header .contactForm form .buttons .reset:hover {
   background-color: #722f26;
-  box-shadow: inset 0 0 0 0.1rem #8b8b8b;
+  box-shadow: inset 0 0 0 1.5px #8b8b8b;
 }
 @media (min-width: 300px) and (max-width: 400px) {
   .header .contactForm form .buttons .reset {
@@ -2894,7 +2928,7 @@ input[type=email]) {
 }
 .mainContent .sectionOne .bio .imageAndDescription .descriptionAndEstimatesList .descriptionBox .titleAndButton .estimates:hover {
   background-color: #545146;
-  box-shadow: inset 0 0 0 0.1rem #8b8b8b;
+  box-shadow: inset 0 0 0 1.5px #8b8b8b;
 }
 @media (min-width: 300px) and (max-width: 600px) {
   .mainContent .sectionOne .bio .imageAndDescription .descriptionAndEstimatesList .descriptionBox .titleAndButton .estimates {
@@ -3197,7 +3231,7 @@ input[type=email]) {
 }
 .mainContent .sectionOne .bio .imageAndDescription .descriptionAndEstimatesList .descriptionBox .locationAndEstimatesButton .estimates:hover {
   background-color: #545146;
-  box-shadow: inset 0 0 0 0.1rem #8b8b8b;
+  box-shadow: inset 0 0 0 1.5px #8b8b8b;
 }
 @media (min-width: 300px) and (max-width: 350px) {
   .mainContent .sectionOne .bio .imageAndDescription .descriptionAndEstimatesList .descriptionBox .locationAndEstimatesButton .estimates {
@@ -3306,7 +3340,7 @@ input[type=email]) {
 }
 .mainContent .sectionOne .bio .imageAndDescription .descriptionAndEstimatesList .estimatesList .titleAndButton .close:hover {
   background-color: #545146;
-  box-shadow: inset 0 0 0 0.1rem #8b8b8b;
+  box-shadow: inset 0 0 0 1.5px #8b8b8b;
 }
 @media (min-width: 300px) and (max-width: 350px) {
   .mainContent .sectionOne .bio .imageAndDescription .descriptionAndEstimatesList .estimatesList .titleAndButton .close {
@@ -3474,7 +3508,7 @@ input[type=email]) {
 }
 .mainContent .sectionOne .bio .estimatesList .titleAndButton .close:hover {
   background-color: #545146;
-  box-shadow: inset 0 0 0 0.1rem #8b8b8b;
+  box-shadow: inset 0 0 0 1.5px #8b8b8b;
 }
 @media (min-width: 600px) and (max-width: 800px) {
   .mainContent .sectionOne .bio .estimatesList .titleAndButton .close {
@@ -3828,7 +3862,7 @@ input[type=email]) {
 }
 .mainContent .sectionOne .skillsAndEducation .skillsAndSkillsList .skillsBox .titleAndButton .fluency:hover {
   background-color: #545146;
-  box-shadow: inset 0 0 0 0.1rem #8b8b8b;
+  box-shadow: inset 0 0 0 1.5px #8b8b8b;
 }
 @media (min-width: 300px) and (max-width: 350px) {
   .mainContent .sectionOne .skillsAndEducation .skillsAndSkillsList .skillsBox .titleAndButton .fluency {
@@ -4299,7 +4333,7 @@ input[type=email]) {
 }
 .mainContent .sectionOne .skillsAndEducation .skillsAndSkillsList .skillsList .titleAndButton .close:hover {
   background-color: #545146;
-  box-shadow: inset 0 0 0 0.1rem #8b8b8b;
+  box-shadow: inset 0 0 0 1.5px #8b8b8b;
 }
 @media (min-width: 300px) and (max-width: 350px) {
   .mainContent .sectionOne .skillsAndEducation .skillsAndSkillsList .skillsList .titleAndButton .close {
@@ -4356,65 +4390,6 @@ input[type=email]) {
     align-items: unset;
   }
 }
-.mainContent .sectionOne .skillsAndEducation .skillsAndSkillsList .skillsList .content .previousDisabled {
-  width: 2.5rem;
-  height: 7rem;
-  position: absolute;
-  left: 2rem;
-  align-self: center;
-  background-color: #2a2a2a;
-  border: none;
-  border-radius: 0.5rem;
-  font-size: 10pt;
-  font-weight: 500;
-  color: #000000;
-  cursor: default;
-  transition: all 0.2s ease;
-}
-@media (min-width: 300px) and (max-width: 350px) {
-  .mainContent .sectionOne .skillsAndEducation .skillsAndSkillsList .skillsList .content .previousDisabled {
-    width: 5.7rem;
-    height: 2.3rem;
-    bottom: 1rem;
-    left: 0.5rem;
-    background-color: #1e1e1e;
-    font-size: 9.5pt;
-  }
-}
-@media (min-width: 350px) and (max-width: 400px) {
-  .mainContent .sectionOne .skillsAndEducation .skillsAndSkillsList .skillsList .content .previousDisabled {
-    width: 6rem;
-    height: 2.3rem;
-    bottom: 1rem;
-    left: 0.5rem;
-    background-color: #1e1e1e;
-    font-size: 9.5pt;
-  }
-}
-@media (min-width: 400px) and (max-width: 600px) {
-  .mainContent .sectionOne .skillsAndEducation .skillsAndSkillsList .skillsList .content .previousDisabled {
-    width: 7rem;
-    height: 2.5rem;
-    bottom: 1rem;
-    left: 0.5rem;
-    background-color: #1e1e1e;
-  }
-}
-@media (width: 600px) {
-  .mainContent .sectionOne .skillsAndEducation .skillsAndSkillsList .skillsList .content .previousDisabled {
-    width: 2.5rem;
-    height: 7rem;
-    top: unset;
-    bottom: unset;
-    left: 2rem;
-    background-color: #2a2a2a;
-  }
-}
-@media (min-width: 300px) and (max-width: 1023px) {
-  .mainContent .sectionOne .skillsAndEducation .skillsAndSkillsList .skillsList .content .previousDisabled {
-    cursor: default;
-  }
-}
 .mainContent .sectionOne .skillsAndEducation .skillsAndSkillsList .skillsList .content .previous {
   width: 2.5rem;
   height: 7rem;
@@ -4422,7 +4397,7 @@ input[type=email]) {
   left: 2rem;
   align-self: center;
   background-color: #545146;
-  border: none;
+  border: unset;
   border-radius: 0.5rem;
   font-size: 10pt;
   font-weight: 500;
@@ -4432,7 +4407,7 @@ input[type=email]) {
 }
 .mainContent .sectionOne .skillsAndEducation .skillsAndSkillsList .skillsList .content .previous:hover {
   background-color: #5c4f43;
-  box-shadow: inset 0 0 0 0.1rem #8b8b8b;
+  box-shadow: inset 0 0 0 1.5px #8b8b8b;
 }
 @media (min-width: 300px) and (max-width: 350px) {
   .mainContent .sectionOne .skillsAndEducation .skillsAndSkillsList .skillsList .content .previous {
@@ -5616,67 +5591,6 @@ input[type=email]) {
     }
   }
 }
-.mainContent .sectionOne .skillsAndEducation .skillsAndSkillsList .skillsList .content .nextDisabled {
-  width: 2.5rem;
-  height: 7rem;
-  position: absolute;
-  right: 2rem;
-  align-self: center;
-  background-color: #2a2a2a;
-  border: none;
-  border-radius: 0.5rem;
-  font-size: 10pt;
-  font-weight: 500;
-  color: #000000;
-  cursor: default;
-  transition: all 0.2s ease;
-}
-@media (min-width: 300px) and (max-width: 350px) {
-  .mainContent .sectionOne .skillsAndEducation .skillsAndSkillsList .skillsList .content .nextDisabled {
-    width: 5.7rem;
-    height: 2.3rem;
-    bottom: 1rem;
-    left: 7rem;
-    background-color: #1e1e1e;
-    font-size: 9.5pt;
-  }
-}
-@media (min-width: 350px) and (max-width: 400px) {
-  .mainContent .sectionOne .skillsAndEducation .skillsAndSkillsList .skillsList .content .nextDisabled {
-    width: 6rem;
-    height: 2.3rem;
-    bottom: 1rem;
-    left: 7rem;
-    background-color: #1e1e1e;
-    font-size: 9.5pt;
-  }
-}
-@media (min-width: 400px) and (max-width: 600px) {
-  .mainContent .sectionOne .skillsAndEducation .skillsAndSkillsList .skillsList .content .nextDisabled {
-    width: 7rem;
-    height: 2.5rem;
-    bottom: 1rem;
-    left: 8.5rem;
-    background-color: #1e1e1e;
-  }
-}
-@media (width: 600px) {
-  .mainContent .sectionOne .skillsAndEducation .skillsAndSkillsList .skillsList .content .nextDisabled {
-    width: 2.5rem;
-    height: 7rem;
-    top: unset;
-    bottom: unset;
-    right: 2rem;
-    left: unset;
-    background-color: #2a2a2a;
-    font-size: 10pt;
-  }
-}
-@media (min-width: 300px) and (max-width: 1023px) {
-  .mainContent .sectionOne .skillsAndEducation .skillsAndSkillsList .skillsList .content .nextDisabled {
-    cursor: default;
-  }
-}
 .mainContent .sectionOne .skillsAndEducation .skillsAndSkillsList .skillsList .content .next {
   width: 2.5rem;
   height: 7rem;
@@ -5694,7 +5608,7 @@ input[type=email]) {
 }
 .mainContent .sectionOne .skillsAndEducation .skillsAndSkillsList .skillsList .content .next:hover {
   background-color: #5c4f43;
-  box-shadow: inset 0 0 0 0.1rem #8b8b8b;
+  box-shadow: inset 0 0 0 1.5px #8b8b8b;
 }
 @media (min-width: 300px) and (max-width: 350px) {
   .mainContent .sectionOne .skillsAndEducation .skillsAndSkillsList .skillsList .content .next {
@@ -5985,7 +5899,7 @@ input[type=email]) {
 }
 .mainContent .sectionOne .skillsAndEducation .educationAndEducationList .educationBox .titleAndButton .courses:hover {
   background-color: #5c4f43;
-  box-shadow: 0 0 0 0.1rem #8b8b8b;
+  box-shadow: inset 0 0 0 1.5px #8b8b8b;
 }
 @media (min-width: 300px) and (max-width: 350px) {
   .mainContent .sectionOne .skillsAndEducation .educationAndEducationList .educationBox .titleAndButton .courses {
@@ -6382,7 +6296,7 @@ input[type=email]) {
 }
 .mainContent .sectionOne .skillsAndEducation .educationAndEducationList .educationList .titleAndButton .close:hover {
   background-color: #5c4f43;
-  box-shadow: inset 0 0 0 0.1rem #8b8b8b;
+  box-shadow: inset 0 0 0 1.5px #8b8b8b;
 }
 @media (min-width: 300px) and (max-width: 350px) {
   .mainContent .sectionOne .skillsAndEducation .educationAndEducationList .educationList .titleAndButton .close {
@@ -6439,65 +6353,6 @@ input[type=email]) {
     align-items: unset;
   }
 }
-.mainContent .sectionOne .skillsAndEducation .educationAndEducationList .educationList .content .previousDisabled {
-  width: 2.5rem;
-  height: 7rem;
-  position: absolute;
-  left: 2rem;
-  align-self: center;
-  background-color: #2a2a2a;
-  border: none;
-  border-radius: 0.5rem;
-  font-size: 10pt;
-  font-weight: 500;
-  color: #000000;
-  cursor: default;
-  transition: all 0.2s ease;
-}
-@media (min-width: 300px) and (max-width: 350px) {
-  .mainContent .sectionOne .skillsAndEducation .educationAndEducationList .educationList .content .previousDisabled {
-    width: 5.7rem;
-    height: 2.3rem;
-    bottom: 1rem;
-    left: 0.5rem;
-    background-color: #1e1e1e;
-    font-size: 9.5pt;
-  }
-}
-@media (min-width: 350px) and (max-width: 400px) {
-  .mainContent .sectionOne .skillsAndEducation .educationAndEducationList .educationList .content .previousDisabled {
-    width: 6rem;
-    height: 2.3rem;
-    bottom: 1rem;
-    left: 0.5rem;
-    background-color: #1e1e1e;
-    font-size: 9.5pt;
-  }
-}
-@media (min-width: 400px) and (max-width: 600px) {
-  .mainContent .sectionOne .skillsAndEducation .educationAndEducationList .educationList .content .previousDisabled {
-    width: 7rem;
-    height: 2.5rem;
-    bottom: 1rem;
-    left: 0.5rem;
-    background-color: #1e1e1e;
-  }
-}
-@media (width: 600px) {
-  .mainContent .sectionOne .skillsAndEducation .educationAndEducationList .educationList .content .previousDisabled {
-    width: 2.5rem;
-    height: 7rem;
-    top: unset;
-    bottom: unset;
-    left: 2rem;
-    background-color: #2a2a2a;
-  }
-}
-@media (min-width: 300px) and (max-width: 1023px) {
-  .mainContent .sectionOne .skillsAndEducation .educationAndEducationList .educationList .content .previousDisabled {
-    cursor: default;
-  }
-}
 .mainContent .sectionOne .skillsAndEducation .educationAndEducationList .educationList .content .previous {
   width: 2.5rem;
   height: 7rem;
@@ -6515,7 +6370,7 @@ input[type=email]) {
 }
 .mainContent .sectionOne .skillsAndEducation .educationAndEducationList .educationList .content .previous:hover {
   background-color: #545146;
-  box-shadow: inset 0 0 0 0.1rem #8b8b8b;
+  box-shadow: inset 0 0 0 1.5px #8b8b8b;
 }
 @media (min-width: 300px) and (max-width: 350px) {
   .mainContent .sectionOne .skillsAndEducation .educationAndEducationList .educationList .content .previous {
@@ -6718,67 +6573,6 @@ input[type=email]) {
     font-size: 12pt;
   }
 }
-.mainContent .sectionOne .skillsAndEducation .educationAndEducationList .educationList .content .nextDisabled {
-  width: 2.5rem;
-  height: 7rem;
-  position: absolute;
-  right: 2rem;
-  align-self: center;
-  background-color: #2a2a2a;
-  border: none;
-  border-radius: 0.5rem;
-  font-size: 10pt;
-  font-weight: 500;
-  color: #000000;
-  cursor: default;
-  transition: all 0.2s ease;
-}
-@media (min-width: 300px) and (max-width: 350px) {
-  .mainContent .sectionOne .skillsAndEducation .educationAndEducationList .educationList .content .nextDisabled {
-    width: 5.7rem;
-    height: 2.3rem;
-    bottom: 1rem;
-    left: 7rem;
-    background-color: #1e1e1e;
-    font-size: 9.5pt;
-  }
-}
-@media (min-width: 350px) and (max-width: 400px) {
-  .mainContent .sectionOne .skillsAndEducation .educationAndEducationList .educationList .content .nextDisabled {
-    width: 6rem;
-    height: 2.3rem;
-    bottom: 1rem;
-    left: 7rem;
-    background-color: #1e1e1e;
-    font-size: 9.5pt;
-  }
-}
-@media (min-width: 400px) and (max-width: 600px) {
-  .mainContent .sectionOne .skillsAndEducation .educationAndEducationList .educationList .content .nextDisabled {
-    width: 7rem;
-    height: 2.5rem;
-    bottom: 1rem;
-    left: 8.5rem;
-    background-color: #1e1e1e;
-  }
-}
-@media (width: 600px) {
-  .mainContent .sectionOne .skillsAndEducation .educationAndEducationList .educationList .content .nextDisabled {
-    width: 2.5rem;
-    height: 7rem;
-    top: unset;
-    bottom: unset;
-    right: 2rem;
-    left: unset;
-    background-color: #2a2a2a;
-    font-size: 10pt;
-  }
-}
-@media (min-width: 300px) and (max-width: 1023px) {
-  .mainContent .sectionOne .skillsAndEducation .educationAndEducationList .educationList .content .nextDisabled {
-    cursor: default;
-  }
-}
 .mainContent .sectionOne .skillsAndEducation .educationAndEducationList .educationList .content .next {
   width: 2.5rem;
   height: 7rem;
@@ -6796,7 +6590,7 @@ input[type=email]) {
 }
 .mainContent .sectionOne .skillsAndEducation .educationAndEducationList .educationList .content .next:hover {
   background-color: #545146;
-  box-shadow: inset 0 0 0 0.1rem #8b8b8b;
+  box-shadow: inset 0 0 0 1.5px #8b8b8b;
 }
 @media (min-width: 300px) and (max-width: 350px) {
   .mainContent .sectionOne .skillsAndEducation .educationAndEducationList .educationList .content .next {
@@ -6983,7 +6777,7 @@ input[type=email]) {
 }
 .mainContent .sectionOne .skillsList .titleAndButton .close:hover {
   background-color: #545146;
-  box-shadow: inset 0 0 0 0.1rem #8b8b8b;
+  box-shadow: inset 0 0 0 1.5px #8b8b8b;
 }
 @media (min-width: 600px) and (max-width: 800px) {
   .mainContent .sectionOne .skillsList .titleAndButton .close {
@@ -7088,99 +6882,6 @@ input[type=email]) {
     height: 15.2rem;
   }
 }
-.mainContent .sectionOne .skillsList .content .previousDisabled {
-  width: 2.5rem;
-  height: 7rem;
-  position: absolute;
-  left: 2rem;
-  align-self: center;
-  background-color: #2a2a2a;
-  border: none;
-  border-radius: 0.5rem;
-  font-size: 10pt;
-  font-weight: 500;
-  color: #000000;
-  cursor: default;
-  transition: all 0.2s ease;
-}
-@media (width: 600px) {
-  .mainContent .sectionOne .skillsList .content .previousDisabled {
-    width: 2.5rem;
-    height: 7rem;
-    top: unset;
-    bottom: unset;
-    left: 2rem;
-    background-color: #2a2a2a;
-  }
-}
-@media (min-width: 600px) and (max-width: 700px) {
-  .mainContent .sectionOne .skillsList .content .previousDisabled {
-    height: 6rem;
-    bottom: unset;
-    left: 2rem;
-    font-size: 9pt;
-  }
-}
-@media (min-width: 700px) and (max-width: 800px) {
-  .mainContent .sectionOne .skillsList .content .previousDisabled {
-    height: 6rem;
-    top: unset;
-    bottom: unset;
-    left: 2rem;
-    font-size: 9pt;
-  }
-}
-@media (width: 800px) {
-  .mainContent .sectionOne .skillsList .content .previousDisabled {
-    width: 2.5rem;
-    height: 7rem;
-    top: unset;
-    bottom: unset;
-    left: 2rem;
-    font-size: 9.5pt;
-  }
-}
-@media (min-width: 300px) and (max-width: 1023px) {
-  .mainContent .sectionOne .skillsList .content .previousDisabled {
-    cursor: default;
-  }
-}
-@media (min-width: 1023px) and (max-width: 1100px) {
-  .mainContent .sectionOne .skillsList .content .previousDisabled {
-    width: 1.8rem;
-    height: 4.7rem;
-    font-size: 7.4pt;
-    left: 1rem;
-  }
-}
-@media (orientation: portrait) and (min-width: 1023px) and (max-width: 1100px) {
-  .mainContent .sectionOne .skillsList .content .previousDisabled {
-    width: 2.5rem;
-    height: 7rem;
-    font-size: 10pt;
-  }
-}
-@media (min-width: 1100px) and (max-width: 1200px) {
-  .mainContent .sectionOne .skillsList .content .previousDisabled {
-    width: 1.9rem;
-    height: 5.1rem;
-    font-size: 8pt;
-  }
-}
-@media (min-width: 1200px) and (max-width: 1300px) {
-  .mainContent .sectionOne .skillsList .content .previousDisabled {
-    width: 2rem;
-    height: 5.5rem;
-    font-size: 8pt;
-  }
-}
-@media (min-width: 1300px) and (max-width: 1400px) {
-  .mainContent .sectionOne .skillsList .content .previousDisabled {
-    width: 2.2rem;
-    height: 6.2rem;
-    font-size: 9pt;
-  }
-}
 .mainContent .sectionOne .skillsList .content .previous {
   width: 2.5rem;
   height: 7rem;
@@ -7198,7 +6899,7 @@ input[type=email]) {
 }
 .mainContent .sectionOne .skillsList .content .previous:hover {
   background-color: #5c4f43;
-  box-shadow: inset 0 0 0 0.1rem #8b8b8b;
+  box-shadow: inset 0 0 0 1.5px #8b8b8b;
 }
 @media (width: 600px) {
   .mainContent .sectionOne .skillsList .content .previous {
@@ -8266,100 +7967,6 @@ input[type=email]) {
     }
   }
 }
-.mainContent .sectionOne .skillsList .content .nextDisabled {
-  width: 2.5rem;
-  height: 7rem;
-  position: absolute;
-  right: 2rem;
-  align-self: center;
-  background-color: #2a2a2a;
-  border: none;
-  border-radius: 0.5rem;
-  font-size: 10pt;
-  font-weight: 500;
-  color: #000000;
-  cursor: default;
-  transition: all 0.2s ease;
-}
-@media (width: 600px) {
-  .mainContent .sectionOne .skillsList .content .nextDisabled {
-    width: 2.5rem;
-    height: 7rem;
-    bottom: unset;
-    right: 2rem;
-    left: unset;
-    background-color: #2a2a2a;
-    font-size: 10pt;
-  }
-}
-@media (min-width: 600px) and (max-width: 700px) {
-  .mainContent .sectionOne .skillsList .content .nextDisabled {
-    height: 6rem;
-    bottom: unset;
-    right: 2rem;
-    font-size: 9pt;
-  }
-}
-@media (min-width: 700px) and (max-width: 800px) {
-  .mainContent .sectionOne .skillsList .content .nextDisabled {
-    height: 6rem;
-    top: unset;
-    bottom: unset;
-    right: 2rem;
-    font-size: 9pt;
-  }
-}
-@media (width: 800px) {
-  .mainContent .sectionOne .skillsList .content .nextDisabled {
-    width: 2.5rem;
-    height: 7rem;
-    top: unset;
-    bottom: unset;
-    right: 2rem;
-    font-size: 9.5pt;
-  }
-}
-@media (min-width: 300px) and (max-width: 1023px) {
-  .mainContent .sectionOne .skillsList .content .nextDisabled {
-    cursor: default;
-  }
-}
-@media (min-width: 1023px) and (max-width: 1100px) {
-  .mainContent .sectionOne .skillsList .content .nextDisabled {
-    width: 1.8rem;
-    height: 4.7rem;
-    font-size: 7.4pt;
-    right: 1rem;
-  }
-}
-@media (orientation: portrait) and (min-width: 1023px) and (max-width: 1100px) {
-  .mainContent .sectionOne .skillsList .content .nextDisabled {
-    width: 2.5rem;
-    height: 7rem;
-    font-size: 10pt;
-  }
-}
-@media (min-width: 1100px) and (max-width: 1200px) {
-  .mainContent .sectionOne .skillsList .content .nextDisabled {
-    width: 1.9rem;
-    height: 5.1rem;
-    font-size: 8pt;
-  }
-}
-@media (min-width: 1200px) and (max-width: 1300px) {
-  .mainContent .sectionOne .skillsList .content .nextDisabled {
-    width: 2rem;
-    height: 5.5rem;
-    font-size: 8pt;
-  }
-}
-@media (min-width: 1300px) and (max-width: 1400px) {
-  .mainContent .sectionOne .skillsList .content .nextDisabled {
-    width: 2.2rem;
-    height: 6.2rem;
-    font-size: 9pt;
-  }
-}
 .mainContent .sectionOne .skillsList .content .next {
   width: 2.5rem;
   height: 7rem;
@@ -8377,7 +7984,7 @@ input[type=email]) {
 }
 .mainContent .sectionOne .skillsList .content .next:hover {
   background-color: #5c4f43;
-  box-shadow: inset 0 0 0 0.1rem #8b8b8b;
+  box-shadow: inset 0 0 0 1.5px #8b8b8b;
 }
 @media (width: 600px) {
   .mainContent .sectionOne .skillsList .content .next {
@@ -8619,7 +8226,7 @@ input[type=email]) {
 }
 .mainContent .sectionOne .educationList .titleAndButton .close:hover {
   background-color: #5c4f43;
-  box-shadow: inset 0 0 0 0.1rem #8b8b8b;
+  box-shadow: inset 0 0 0 1.5px #8b8b8b;
 }
 @media (min-width: 600px) and (max-width: 800px) {
   .mainContent .sectionOne .educationList .titleAndButton .close {
@@ -8724,99 +8331,6 @@ input[type=email]) {
     height: 15.2rem;
   }
 }
-.mainContent .sectionOne .educationList .content .previousDisabled {
-  width: 2.5rem;
-  height: 7rem;
-  position: absolute;
-  left: 2rem;
-  align-self: center;
-  background-color: #2a2a2a;
-  border: none;
-  border-radius: 0.5rem;
-  font-size: 10pt;
-  font-weight: 500;
-  color: #000000;
-  cursor: default;
-  transition: all 0.2s ease;
-}
-@media (width: 600px) {
-  .mainContent .sectionOne .educationList .content .previousDisabled {
-    width: 2.5rem;
-    height: 7rem;
-    top: unset;
-    bottom: unset;
-    left: 2rem;
-    background-color: #2a2a2a;
-  }
-}
-@media (min-width: 600px) and (max-width: 700px) {
-  .mainContent .sectionOne .educationList .content .previousDisabled {
-    height: 6rem;
-    bottom: unset;
-    left: 2rem;
-    font-size: 9pt;
-  }
-}
-@media (min-width: 700px) and (max-width: 800px) {
-  .mainContent .sectionOne .educationList .content .previousDisabled {
-    height: 6rem;
-    top: unset;
-    bottom: unset;
-    left: 2rem;
-    font-size: 9pt;
-  }
-}
-@media (width: 800px) {
-  .mainContent .sectionOne .educationList .content .previousDisabled {
-    width: 2.5rem;
-    height: 7rem;
-    top: unset;
-    bottom: unset;
-    left: 2rem;
-    font-size: 9.5pt;
-  }
-}
-@media (min-width: 300px) and (max-width: 1023px) {
-  .mainContent .sectionOne .educationList .content .previousDisabled {
-    cursor: default;
-  }
-}
-@media (min-width: 1023px) and (max-width: 1100px) {
-  .mainContent .sectionOne .educationList .content .previousDisabled {
-    width: 1.8rem;
-    height: 4.7rem;
-    font-size: 7.4pt;
-    left: 1rem;
-  }
-}
-@media (orientation: portrait) and (min-width: 1023px) and (max-width: 1100px) {
-  .mainContent .sectionOne .educationList .content .previousDisabled {
-    width: 2.5rem;
-    height: 7rem;
-    font-size: 10pt;
-  }
-}
-@media (min-width: 1100px) and (max-width: 1200px) {
-  .mainContent .sectionOne .educationList .content .previousDisabled {
-    width: 1.9rem;
-    height: 5.1rem;
-    font-size: 8pt;
-  }
-}
-@media (min-width: 1200px) and (max-width: 1300px) {
-  .mainContent .sectionOne .educationList .content .previousDisabled {
-    width: 2rem;
-    height: 5.5rem;
-    font-size: 8pt;
-  }
-}
-@media (min-width: 1300px) and (max-width: 1400px) {
-  .mainContent .sectionOne .educationList .content .previousDisabled {
-    width: 2.2rem;
-    height: 6.2rem;
-    font-size: 9pt;
-  }
-}
 .mainContent .sectionOne .educationList .content .previous {
   width: 2.5rem;
   height: 7rem;
@@ -8834,7 +8348,7 @@ input[type=email]) {
 }
 .mainContent .sectionOne .educationList .content .previous:hover {
   background-color: #545146;
-  box-shadow: inset 0 0 0 0.1rem #8b8b8b;
+  box-shadow: inset 0 0 0 1.5px #8b8b8b;
 }
 @media (width: 600px) {
   .mainContent .sectionOne .educationList .content .previous {
@@ -9191,100 +8705,6 @@ input[type=email]) {
     font-size: 10pt;
   }
 }
-.mainContent .sectionOne .educationList .content .nextDisabled {
-  width: 2.5rem;
-  height: 7rem;
-  position: absolute;
-  right: 2rem;
-  align-self: center;
-  background-color: #2a2a2a;
-  border: none;
-  border-radius: 0.5rem;
-  font-size: 10pt;
-  font-weight: 500;
-  color: #000000;
-  cursor: default;
-  transition: all 0.2s ease;
-}
-@media (width: 600px) {
-  .mainContent .sectionOne .educationList .content .nextDisabled {
-    width: 2.5rem;
-    height: 7rem;
-    top: unset;
-    bottom: unset;
-    right: 2rem;
-    left: unset;
-    background-color: #2a2a2a;
-  }
-}
-@media (min-width: 600px) and (max-width: 700px) {
-  .mainContent .sectionOne .educationList .content .nextDisabled {
-    height: 6rem;
-    bottom: unset;
-    right: 2rem;
-    font-size: 9pt;
-  }
-}
-@media (min-width: 700px) and (max-width: 800px) {
-  .mainContent .sectionOne .educationList .content .nextDisabled {
-    height: 6rem;
-    top: unset;
-    bottom: unset;
-    right: 2rem;
-    font-size: 9pt;
-  }
-}
-@media (width: 800px) {
-  .mainContent .sectionOne .educationList .content .nextDisabled {
-    width: 2.5rem;
-    height: 7rem;
-    top: unset;
-    bottom: unset;
-    right: 2rem;
-    font-size: 9.5pt;
-  }
-}
-@media (min-width: 300px) and (max-width: 1023px) {
-  .mainContent .sectionOne .educationList .content .nextDisabled {
-    cursor: default;
-  }
-}
-@media (min-width: 1023px) and (max-width: 1100px) {
-  .mainContent .sectionOne .educationList .content .nextDisabled {
-    width: 1.8rem;
-    height: 4.7rem;
-    font-size: 7.4pt;
-    right: 1rem;
-  }
-}
-@media (orientation: portrait) and (min-width: 1023px) and (max-width: 1100px) {
-  .mainContent .sectionOne .educationList .content .nextDisabled {
-    width: 2.5rem;
-    height: 7rem;
-    font-size: 10pt;
-  }
-}
-@media (min-width: 1100px) and (max-width: 1200px) {
-  .mainContent .sectionOne .educationList .content .nextDisabled {
-    width: 1.9rem;
-    height: 5.1rem;
-    font-size: 8pt;
-  }
-}
-@media (min-width: 1200px) and (max-width: 1300px) {
-  .mainContent .sectionOne .educationList .content .nextDisabled {
-    width: 2rem;
-    height: 5.5rem;
-    font-size: 8pt;
-  }
-}
-@media (min-width: 1300px) and (max-width: 1400px) {
-  .mainContent .sectionOne .educationList .content .nextDisabled {
-    width: 2.2rem;
-    height: 6.2rem;
-    font-size: 9pt;
-  }
-}
 .mainContent .sectionOne .educationList .content .next {
   width: 2.5rem;
   height: 7rem;
@@ -9302,7 +8722,7 @@ input[type=email]) {
 }
 .mainContent .sectionOne .educationList .content .next:hover {
   background-color: #545146;
-  box-shadow: inset 0 0 0 0.1rem #8b8b8b;
+  box-shadow: inset 0 0 0 1.5px #8b8b8b;
 }
 @media (width: 600px) {
   .mainContent .sectionOne .educationList .content .next {
@@ -9572,7 +8992,7 @@ input[type=email]) {
 }
 .mainContent .sectionTwo .estimatesList .titleAndButton .close:hover {
   background-color: #545146;
-  box-shadow: inset 0 0 0 0.1rem #8b8b8b;
+  box-shadow: inset 0 0 0 1.5px #8b8b8b;
 }
 @media (min-width: 1023px) and (max-width: 1100px) {
   .mainContent .sectionTwo .estimatesList .titleAndButton .close {
@@ -10195,7 +9615,7 @@ input[type=email]) {
 }
 .mainContent .sectionTwo .projectsAndFooter .projects .webAndWebList .webBox .more:hover {
   background-color: #5c4f43;
-  box-shadow: inset 0 0 0 0.1rem #8b8b8b;
+  box-shadow: inset 0 0 0 1.5px #8b8b8b;
 }
 @media (min-width: 300px) and (max-width: 350px) {
   .mainContent .sectionTwo .projectsAndFooter .projects .webAndWebList .webBox .more {
@@ -10328,28 +9748,25 @@ input[type=email]) {
   height: fit-content;
   align-items: center;
   position: absolute;
-  right: 1.5rem;
+  left: 1.5rem;
   bottom: 1.5rem;
   z-index: 1;
 }
 @media (min-width: 300px) and (max-width: 1023px) {
   .mainContent .sectionTwo .projectsAndFooter .projects .webAndWebList .webBox .nextWebLoader {
     left: 2rem;
-    right: unset;
     bottom: 2rem;
   }
 }
 @media (min-width: 1023px) and (max-width: 1100px) {
   .mainContent .sectionTwo .projectsAndFooter .projects .webAndWebList .webBox .nextWebLoader {
     left: 1.5rem;
-    right: unset;
     bottom: 1.5rem;
   }
 }
 @media (orientation: portrait) and (min-width: 1023px) and (max-width: 1100px) {
   .mainContent .sectionTwo .projectsAndFooter .projects .webAndWebList .webBox .nextWebLoader {
     left: 2rem;
-    right: unset;
     bottom: 2rem;
   }
 }
@@ -10542,7 +9959,7 @@ input[type=email]) {
 }
 .mainContent .sectionTwo .projectsAndFooter .projects .webAndWebList .webList .titleAndButton .close:hover {
   background-color: #5c4f43;
-  box-shadow: inset 0 0 0 0.1rem #8b8b8b;
+  box-shadow: inset 0 0 0 1.5px #8b8b8b;
 }
 @media (min-width: 300px) and (max-width: 350px) {
   .mainContent .sectionTwo .projectsAndFooter .projects .webAndWebList .webList .titleAndButton .close {
@@ -10599,65 +10016,6 @@ input[type=email]) {
     align-items: unset;
   }
 }
-.mainContent .sectionTwo .projectsAndFooter .projects .webAndWebList .webList .content .previousDisabled {
-  width: 2.5rem;
-  height: 7rem;
-  position: absolute;
-  left: 2rem;
-  align-self: center;
-  background-color: #2a2a2a;
-  border: none;
-  border-radius: 0.5rem;
-  font-size: 10pt;
-  font-weight: 500;
-  color: #000000;
-  cursor: default;
-  transition: all 0.2s ease;
-}
-@media (min-width: 300px) and (max-width: 350px) {
-  .mainContent .sectionTwo .projectsAndFooter .projects .webAndWebList .webList .content .previousDisabled {
-    width: 5.7rem;
-    height: 2.3rem;
-    bottom: 1rem;
-    left: 0.5rem;
-    background-color: #1e1e1e;
-    font-size: 9.5pt;
-  }
-}
-@media (min-width: 350px) and (max-width: 400px) {
-  .mainContent .sectionTwo .projectsAndFooter .projects .webAndWebList .webList .content .previousDisabled {
-    width: 6rem;
-    height: 2.3rem;
-    bottom: 1rem;
-    left: 0.5rem;
-    background-color: #1e1e1e;
-    font-size: 9.5pt;
-  }
-}
-@media (min-width: 400px) and (max-width: 600px) {
-  .mainContent .sectionTwo .projectsAndFooter .projects .webAndWebList .webList .content .previousDisabled {
-    width: 7rem;
-    height: 2.5rem;
-    bottom: 1rem;
-    left: 0.5rem;
-    background-color: #1e1e1e;
-  }
-}
-@media (width: 600px) {
-  .mainContent .sectionTwo .projectsAndFooter .projects .webAndWebList .webList .content .previousDisabled {
-    width: 2.5rem;
-    height: 7rem;
-    top: unset;
-    bottom: unset;
-    left: 2rem;
-    background-color: #2a2a2a;
-  }
-}
-@media (min-width: 300px) and (max-width: 1023px) {
-  .mainContent .sectionTwo .projectsAndFooter .projects .webAndWebList .webList .content .previousDisabled {
-    cursor: default;
-  }
-}
 .mainContent .sectionTwo .projectsAndFooter .projects .webAndWebList .webList .content .previous {
   width: 2.5rem;
   height: 7rem;
@@ -10675,7 +10033,7 @@ input[type=email]) {
 }
 .mainContent .sectionTwo .projectsAndFooter .projects .webAndWebList .webList .content .previous:hover {
   background-color: #545146;
-  box-shadow: inset 0 0 0 0.1rem #8b8b8b;
+  box-shadow: inset 0 0 0 1.5px #8b8b8b;
 }
 @media (min-width: 300px) and (max-width: 350px) {
   .mainContent .sectionTwo .projectsAndFooter .projects .webAndWebList .webList .content .previous {
@@ -10720,67 +10078,6 @@ input[type=email]) {
     box-shadow: none;
   }
 }
-.mainContent .sectionTwo .projectsAndFooter .projects .webAndWebList .webList .content .nextDisabled {
-  width: 2.5rem;
-  height: 7rem;
-  position: absolute;
-  right: 2rem;
-  align-self: center;
-  background-color: #2a2a2a;
-  border: none;
-  border-radius: 0.5rem;
-  font-size: 10pt;
-  font-weight: 500;
-  color: #000000;
-  cursor: default;
-  transition: all 0.2s ease;
-}
-@media (min-width: 300px) and (max-width: 350px) {
-  .mainContent .sectionTwo .projectsAndFooter .projects .webAndWebList .webList .content .nextDisabled {
-    width: 5.7rem;
-    height: 2.3rem;
-    bottom: 1rem;
-    left: 7rem;
-    background-color: #1e1e1e;
-    font-size: 9.5pt;
-  }
-}
-@media (min-width: 350px) and (max-width: 400px) {
-  .mainContent .sectionTwo .projectsAndFooter .projects .webAndWebList .webList .content .nextDisabled {
-    width: 6rem;
-    height: 2.3rem;
-    bottom: 1rem;
-    left: 7rem;
-    background-color: #1e1e1e;
-    font-size: 9.5pt;
-  }
-}
-@media (min-width: 400px) and (max-width: 600px) {
-  .mainContent .sectionTwo .projectsAndFooter .projects .webAndWebList .webList .content .nextDisabled {
-    width: 7rem;
-    height: 2.5rem;
-    bottom: 1rem;
-    left: 8.5rem;
-    background-color: #1e1e1e;
-  }
-}
-@media (width: 600px) {
-  .mainContent .sectionTwo .projectsAndFooter .projects .webAndWebList .webList .content .nextDisabled {
-    width: 2.5rem;
-    height: 7rem;
-    top: unset;
-    bottom: unset;
-    right: 2rem;
-    left: unset;
-    background-color: #2a2a2a;
-    font-size: 10pt;
-  }
-}
-@media (min-width: 300px) and (max-width: 1023px) {
-  .mainContent .sectionTwo .projectsAndFooter .projects .webAndWebList .webList .content .nextDisabled {
-    cursor: default;
-  }
-}
 .mainContent .sectionTwo .projectsAndFooter .projects .webAndWebList .webList .content .next {
   width: 2.5rem;
   height: 7rem;
@@ -10798,7 +10095,7 @@ input[type=email]) {
 }
 .mainContent .sectionTwo .projectsAndFooter .projects .webAndWebList .webList .content .next:hover {
   background-color: #545146;
-  box-shadow: inset 0 0 0 0.1rem #8b8b8b;
+  box-shadow: inset 0 0 0 1.5px #8b8b8b;
 }
 @media (min-width: 300px) and (max-width: 350px) {
   .mainContent .sectionTwo .projectsAndFooter .projects .webAndWebList .webList .content .next {
@@ -10885,6 +10182,7 @@ input[type=email]) {
   border-radius: 0.5rem;
   background-color: #5c4f43;
   animation: cyberBox 0.5s linear 1;
+  transition: background-color 1s ease, filter 0.2s ease;
 }
 @keyframes cyberBox {
   0% {
@@ -11231,7 +10529,7 @@ input[type=email]) {
 }
 .mainContent .sectionTwo .projectsAndFooter .projects .cyberBox .extras:hover {
   background-color: #545146;
-  box-shadow: inset 0 0 0 0.1rem #8b8b8b;
+  box-shadow: inset 0 0 0 1.5px #8b8b8b;
 }
 @media (min-width: 300px) and (max-width: 350px) {
   .mainContent .sectionTwo .projectsAndFooter .projects .cyberBox .extras {
@@ -11856,7 +11154,7 @@ input[type=email]) {
 }
 .mainContent .sectionTwo .cyberList .titleAndButton .close:hover {
   background-color: #545146;
-  box-shadow: inset 0 0 0 0.1rem #8b8b8b;
+  box-shadow: inset 0 0 0 1.5px #8b8b8b;
 }
 @media (min-width: 300px) and (max-width: 350px) {
   .mainContent .sectionTwo .cyberList .titleAndButton .close {
@@ -12001,128 +11299,6 @@ input[type=email]) {
     height: 15.2rem;
   }
 }
-.mainContent .sectionTwo .cyberList .content .previousDisabled {
-  width: 2.5rem;
-  height: 7rem;
-  position: absolute;
-  left: 2rem;
-  align-self: center;
-  background-color: #2a2a2a;
-  border: none;
-  border-radius: 0.5rem;
-  font-size: 10pt;
-  font-weight: 500;
-  color: #000000;
-  cursor: default;
-  transition: all 0.2s ease;
-}
-@media (min-width: 300px) and (max-width: 350px) {
-  .mainContent .sectionTwo .cyberList .content .previousDisabled {
-    width: 5.7rem;
-    height: 2.3rem;
-    bottom: 1rem;
-    left: 0.5rem;
-    background-color: #1e1e1e;
-    font-size: 9.5pt;
-  }
-}
-@media (min-width: 350px) and (max-width: 400px) {
-  .mainContent .sectionTwo .cyberList .content .previousDisabled {
-    width: 6rem;
-    height: 2.3rem;
-    bottom: 1rem;
-    left: 0.5rem;
-    background-color: #1e1e1e;
-    font-size: 9.5pt;
-  }
-}
-@media (min-width: 400px) and (max-width: 600px) {
-  .mainContent .sectionTwo .cyberList .content .previousDisabled {
-    width: 7rem;
-    height: 2.5rem;
-    bottom: 1rem;
-    left: 0.5rem;
-    background-color: #1e1e1e;
-  }
-}
-@media (width: 600px) {
-  .mainContent .sectionTwo .cyberList .content .previousDisabled {
-    width: 2.5rem;
-    height: 7rem;
-    top: unset;
-    bottom: unset;
-    left: 2rem;
-    background-color: #2a2a2a;
-  }
-}
-@media (min-width: 600px) and (max-width: 800px) {
-  .mainContent .sectionTwo .cyberList .content .previousDisabled {
-    height: 6rem;
-    bottom: unset;
-    left: 2rem;
-    font-size: 9pt;
-  }
-}
-@media (min-width: 700px) and (max-width: 800px) {
-  .mainContent .sectionTwo .cyberList .content .previousDisabled {
-    height: 6rem;
-    top: unset;
-    bottom: unset;
-    left: 2rem;
-    font-size: 9pt;
-  }
-}
-@media (width: 800px) {
-  .mainContent .sectionTwo .cyberList .content .previousDisabled {
-    width: 2.5rem;
-    height: 7rem;
-    top: unset;
-    bottom: unset;
-    left: 2rem;
-    font-size: 9.5pt;
-  }
-}
-@media (min-width: 300px) and (max-width: 1023px) {
-  .mainContent .sectionTwo .cyberList .content .previousDisabled {
-    cursor: default;
-  }
-}
-@media (min-width: 1023px) and (max-width: 1100px) {
-  .mainContent .sectionTwo .cyberList .content .previousDisabled {
-    width: 1.8rem;
-    height: 4.7rem;
-    font-size: 7.4pt;
-    left: 1rem;
-  }
-}
-@media (orientation: portrait) and (min-width: 1023px) and (max-width: 1100px) {
-  .mainContent .sectionTwo .cyberList .content .previousDisabled {
-    width: 2.5rem;
-    height: 7rem;
-    font-size: 10pt;
-  }
-}
-@media (min-width: 1100px) and (max-width: 1200px) {
-  .mainContent .sectionTwo .cyberList .content .previousDisabled {
-    width: 1.9rem;
-    height: 5.1rem;
-    font-size: 8pt;
-  }
-}
-@media (min-width: 1200px) and (max-width: 1300px) {
-  .mainContent .sectionTwo .cyberList .content .previousDisabled {
-    width: 2rem;
-    height: 5.5rem;
-    font-size: 8pt;
-  }
-}
-@media (min-width: 1300px) and (max-width: 1400px) {
-  .mainContent .sectionTwo .cyberList .content .previousDisabled {
-    width: 2.2rem;
-    height: 6.2rem;
-    font-size: 9pt;
-  }
-}
 .mainContent .sectionTwo .cyberList .content .previous {
   width: 2.5rem;
   height: 7rem;
@@ -12140,7 +11316,7 @@ input[type=email]) {
 }
 .mainContent .sectionTwo .cyberList .content .previous:hover {
   background-color: #5c4f43;
-  box-shadow: inset 0 0 0 0.1rem #8b8b8b;
+  box-shadow: inset 0 0 0 1.5px #8b8b8b;
 }
 @media (min-width: 300px) and (max-width: 350px) {
   .mainContent .sectionTwo .cyberList .content .previous {
@@ -12246,120 +11422,6 @@ input[type=email]) {
 }
 @media (min-width: 1300px) and (max-width: 1400px) {
   .mainContent .sectionTwo .cyberList .content .previous {
-    width: 2.2rem;
-    height: 6.2rem;
-    font-size: 9pt;
-  }
-}
-.mainContent .sectionTwo .cyberList .content .nextDisabled {
-  width: 2.5rem;
-  height: 7rem;
-  position: absolute;
-  right: 2rem;
-  align-self: center;
-  background-color: #2a2a2a;
-  border: none;
-  border-radius: 0.5rem;
-  font-size: 10pt;
-  font-weight: 500;
-  color: #000000;
-  cursor: default;
-  transition: all 0.2s ease;
-}
-@media (min-width: 300px) and (max-width: 350px) {
-  .mainContent .sectionTwo .cyberList .content .nextDisabled {
-    width: 6rem;
-    height: 2.3rem;
-    bottom: 1rem;
-    left: 7rem;
-    background-color: #1e1e1e;
-    font-size: 9pt;
-  }
-}
-@media (min-width: 350px) and (max-width: 600px) {
-  .mainContent .sectionTwo .cyberList .content .nextDisabled {
-    width: 6rem;
-    height: 2.3rem;
-    bottom: 1rem;
-    left: 8rem;
-    background-color: #1e1e1e;
-    font-size: 9pt;
-  }
-}
-@media (width: 600px) {
-  .mainContent .sectionTwo .cyberList .content .nextDisabled {
-    width: 2.5rem;
-    height: 7rem;
-    bottom: unset;
-    right: 2rem;
-    left: unset;
-    background-color: #2a2a2a;
-    font-size: 10pt;
-  }
-}
-@media (min-width: 600px) and (max-width: 700px) {
-  .mainContent .sectionTwo .cyberList .content .nextDisabled {
-    height: 6rem;
-    bottom: unset;
-    right: 2rem;
-    font-size: 9pt;
-  }
-}
-@media (min-width: 700px) and (max-width: 800px) {
-  .mainContent .sectionTwo .cyberList .content .nextDisabled {
-    height: 6rem;
-    top: unset;
-    bottom: unset;
-    right: 2rem;
-    font-size: 9pt;
-  }
-}
-@media (width: 800px) {
-  .mainContent .sectionTwo .cyberList .content .nextDisabled {
-    width: 2.5rem;
-    height: 7rem;
-    top: unset;
-    bottom: unset;
-    right: 2rem;
-    font-size: 9.5pt;
-  }
-}
-@media (min-width: 300px) and (max-width: 1023px) {
-  .mainContent .sectionTwo .cyberList .content .nextDisabled {
-    cursor: default;
-  }
-}
-@media (min-width: 1023px) and (max-width: 1100px) {
-  .mainContent .sectionTwo .cyberList .content .nextDisabled {
-    width: 1.8rem;
-    height: 4.7rem;
-    font-size: 7.4pt;
-    right: 1rem;
-  }
-}
-@media (orientation: portrait) and (min-width: 1023px) and (max-width: 1100px) {
-  .mainContent .sectionTwo .cyberList .content .nextDisabled {
-    width: 2.5rem;
-    height: 7rem;
-    font-size: 10pt;
-  }
-}
-@media (min-width: 1100px) and (max-width: 1200px) {
-  .mainContent .sectionTwo .cyberList .content .nextDisabled {
-    width: 1.9rem;
-    height: 5.1rem;
-    font-size: 8pt;
-  }
-}
-@media (min-width: 1200px) and (max-width: 1300px) {
-  .mainContent .sectionTwo .cyberList .content .nextDisabled {
-    width: 2rem;
-    height: 5.5rem;
-    font-size: 8pt;
-  }
-}
-@media (min-width: 1300px) and (max-width: 1400px) {
-  .mainContent .sectionTwo .cyberList .content .nextDisabled {
     width: 2.2rem;
     height: 6.2rem;
     font-size: 9pt;
@@ -12382,7 +11444,7 @@ input[type=email]) {
 }
 .mainContent .sectionTwo .cyberList .content .next:hover {
   background-color: #5c4f43;
-  box-shadow: inset 0 0 0 0.1rem #8b8b8b;
+  box-shadow: inset 0 0 0 1.5px #8b8b8b;
 }
 @media (min-width: 300px) and (max-width: 350px) {
   .mainContent .sectionTwo .cyberList .content .next {
@@ -12660,7 +11722,7 @@ input[type=email]) {
 }
 .mainContent .sectionTwo .webList .titleAndButton .close:hover {
   background-color: #5c4f43;
-  box-shadow: inset 0 0 0 0.1rem #8b8b8b;
+  box-shadow: inset 0 0 0 1.5px #8b8b8b;
 }
 @media (min-width: 600px) and (max-width: 800px) {
   .mainContent .sectionTwo .webList .titleAndButton .close {
@@ -12765,99 +11827,6 @@ input[type=email]) {
     height: 15.2rem;
   }
 }
-.mainContent .sectionTwo .webList .content .previousDisabled {
-  width: 2.5rem;
-  height: 7rem;
-  position: absolute;
-  left: 2rem;
-  align-self: center;
-  background-color: #2a2a2a;
-  border: none;
-  border-radius: 0.5rem;
-  font-size: 10pt;
-  font-weight: 500;
-  color: #000000;
-  cursor: default;
-  transition: all 0.2s ease;
-}
-@media (width: 600px) {
-  .mainContent .sectionTwo .webList .content .previousDisabled {
-    width: 2.5rem;
-    height: 7rem;
-    top: unset;
-    bottom: unset;
-    left: 2rem;
-    background-color: #2a2a2a;
-  }
-}
-@media (min-width: 600px) and (max-width: 700px) {
-  .mainContent .sectionTwo .webList .content .previousDisabled {
-    height: 6rem;
-    bottom: unset;
-    left: 2rem;
-    font-size: 9pt;
-  }
-}
-@media (min-width: 700px) and (max-width: 800px) {
-  .mainContent .sectionTwo .webList .content .previousDisabled {
-    height: 6rem;
-    top: unset;
-    bottom: unset;
-    left: 2rem;
-    font-size: 9pt;
-  }
-}
-@media (width: 800px) {
-  .mainContent .sectionTwo .webList .content .previousDisabled {
-    width: 2.5rem;
-    height: 7rem;
-    top: unset;
-    bottom: unset;
-    left: 2rem;
-    font-size: 9.5pt;
-  }
-}
-@media (min-width: 300px) and (max-width: 1023px) {
-  .mainContent .sectionTwo .webList .content .previousDisabled {
-    cursor: default;
-  }
-}
-@media (min-width: 1023px) and (max-width: 1100px) {
-  .mainContent .sectionTwo .webList .content .previousDisabled {
-    width: 1.8rem;
-    height: 4.7rem;
-    font-size: 7.4pt;
-    left: 1rem;
-  }
-}
-@media (orientation: portrait) and (min-width: 1023px) and (max-width: 1100px) {
-  .mainContent .sectionTwo .webList .content .previousDisabled {
-    width: 2.5rem;
-    height: 7rem;
-    font-size: 10pt;
-  }
-}
-@media (min-width: 1100px) and (max-width: 1200px) {
-  .mainContent .sectionTwo .webList .content .previousDisabled {
-    width: 1.9rem;
-    height: 5.1rem;
-    font-size: 8pt;
-  }
-}
-@media (min-width: 1200px) and (max-width: 1300px) {
-  .mainContent .sectionTwo .webList .content .previousDisabled {
-    width: 2rem;
-    height: 5.5rem;
-    font-size: 8pt;
-  }
-}
-@media (min-width: 1300px) and (max-width: 1400px) {
-  .mainContent .sectionTwo .webList .content .previousDisabled {
-    width: 2.2rem;
-    height: 6.2rem;
-    font-size: 9pt;
-  }
-}
 .mainContent .sectionTwo .webList .content .previous {
   width: 2.5rem;
   height: 7rem;
@@ -12875,7 +11844,7 @@ input[type=email]) {
 }
 .mainContent .sectionTwo .webList .content .previous:hover {
   background-color: #545146;
-  box-shadow: inset 0 0 0 0.1rem #8b8b8b;
+  box-shadow: inset 0 0 0 1.5px #8b8b8b;
 }
 @media (width: 600px) {
   .mainContent .sectionTwo .webList .content .previous {
@@ -12955,100 +11924,6 @@ input[type=email]) {
 }
 @media (min-width: 1300px) and (max-width: 1400px) {
   .mainContent .sectionTwo .webList .content .previous {
-    width: 2.2rem;
-    height: 6.2rem;
-    font-size: 9pt;
-  }
-}
-.mainContent .sectionTwo .webList .content .nextDisabled {
-  width: 2.5rem;
-  height: 7rem;
-  position: absolute;
-  right: 2rem;
-  align-self: center;
-  background-color: #2a2a2a;
-  border: none;
-  border-radius: 0.5rem;
-  font-size: 10pt;
-  font-weight: 500;
-  color: #000000;
-  cursor: default;
-  transition: all 0.2s ease;
-}
-@media (width: 600px) {
-  .mainContent .sectionTwo .webList .content .nextDisabled {
-    width: 2.5rem;
-    height: 7rem;
-    bottom: unset;
-    right: 2rem;
-    left: unset;
-    background-color: #2a2a2a;
-    font-size: 10pt;
-  }
-}
-@media (min-width: 600px) and (max-width: 700px) {
-  .mainContent .sectionTwo .webList .content .nextDisabled {
-    height: 6rem;
-    bottom: unset;
-    right: 2rem;
-    font-size: 9pt;
-  }
-}
-@media (min-width: 700px) and (max-width: 800px) {
-  .mainContent .sectionTwo .webList .content .nextDisabled {
-    height: 6rem;
-    top: unset;
-    bottom: unset;
-    right: 2rem;
-    font-size: 9pt;
-  }
-}
-@media (width: 800px) {
-  .mainContent .sectionTwo .webList .content .nextDisabled {
-    width: 2.5rem;
-    height: 7rem;
-    top: unset;
-    bottom: unset;
-    right: 2rem;
-    font-size: 9.5pt;
-  }
-}
-@media (min-width: 300px) and (max-width: 1023px) {
-  .mainContent .sectionTwo .webList .content .nextDisabled {
-    cursor: default;
-  }
-}
-@media (min-width: 1023px) and (max-width: 1100px) {
-  .mainContent .sectionTwo .webList .content .nextDisabled {
-    width: 1.8rem;
-    height: 4.7rem;
-    font-size: 7.4pt;
-    right: 1rem;
-  }
-}
-@media (orientation: portrait) and (min-width: 1023px) and (max-width: 1100px) {
-  .mainContent .sectionTwo .webList .content .nextDisabled {
-    width: 2.5rem;
-    height: 7rem;
-    font-size: 10pt;
-  }
-}
-@media (min-width: 1100px) and (max-width: 1200px) {
-  .mainContent .sectionTwo .webList .content .nextDisabled {
-    width: 1.9rem;
-    height: 5.1rem;
-    font-size: 8pt;
-  }
-}
-@media (min-width: 1200px) and (max-width: 1300px) {
-  .mainContent .sectionTwo .webList .content .nextDisabled {
-    width: 2rem;
-    height: 5.5rem;
-    font-size: 8pt;
-  }
-}
-@media (min-width: 1300px) and (max-width: 1400px) {
-  .mainContent .sectionTwo .webList .content .nextDisabled {
     width: 2.2rem;
     height: 6.2rem;
     font-size: 9pt;
@@ -13071,7 +11946,7 @@ input[type=email]) {
 }
 .mainContent .sectionTwo .webList .content .next:hover {
   background-color: #545146;
-  box-shadow: inset 0 0 0 0.1rem #8b8b8b;
+  box-shadow: inset 0 0 0 1.5px #8b8b8b;
 }
 @media (width: 600px) {
   .mainContent .sectionTwo .webList .content .next {
@@ -13202,663 +12077,6 @@ input[type=email]) {
   .mainContent .sectionTwo .webList .content .pageNumber {
     right: 2.4rem;
     font-size: 8.5pt;
-  }
-}
-
-.contactDisabled {
-  width: 7rem;
-  height: 2.5rem;
-  background-color: #1e1e1e;
-  border: none;
-  border-radius: 0.5rem;
-  font-size: 10pt;
-  color: #ebebeb;
-  cursor: default;
-  transition: all 0.2s ease;
-}
-@media (min-width: 300px) and (max-width: 350px) {
-  .contactDisabled {
-    width: 5.7rem;
-    height: 2.3rem;
-    font-size: 9.5pt;
-  }
-}
-@media (min-width: 350px) and (max-width: 400px) {
-  .contactDisabled {
-    width: 6rem;
-    height: 2.3rem;
-  }
-}
-@media (min-width: 600px) and (max-width: 800px) {
-  .contactDisabled {
-    width: 6rem;
-    font-size: 9pt;
-  }
-}
-@media (width: 800px) {
-  .contactDisabled {
-    width: 7rem;
-    height: 2.5rem;
-    font-size: 10pt;
-  }
-}
-@media (min-width: 1023px) and (max-width: 1100px) {
-  .contactDisabled {
-    width: 4.7rem;
-    height: 1.8rem;
-    font-size: 7.4pt;
-  }
-}
-@media (orientation: portrait) and (min-width: 1023px) and (max-width: 1100px) {
-  .contactDisabled {
-    width: 7rem;
-    height: 2.5rem;
-    font-size: 10pt;
-  }
-}
-@media (min-width: 1100px) and (max-width: 1200px) {
-  .contactDisabled {
-    width: 5.1rem;
-    height: 1.9rem;
-    font-size: 8pt;
-  }
-}
-@media (min-width: 1200px) and (max-width: 1300px) {
-  .contactDisabled {
-    width: 5.5rem;
-    height: 2rem;
-    font-size: 8pt;
-  }
-}
-@media (min-width: 1300px) and (max-width: 1400px) {
-  .contactDisabled {
-    width: 6.2rem;
-    height: 2.2rem;
-    font-size: 9pt;
-  }
-}
-
-.sendDisabled {
-  width: 7rem;
-  height: 2.5rem;
-  align-self: center;
-  background-color: #2a2a2a;
-  border: none;
-  border-radius: 0.5rem;
-  font-size: 10pt;
-  color: #000000;
-  animation: sendDisabled 0.1s linear 1;
-  transition: none;
-}
-@keyframes sendDisabled {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-@media (min-width: 300px) and (max-width: 400px) {
-  .sendDisabled {
-    width: 6rem;
-    height: 2.3rem;
-  }
-}
-@media (width: 700px) {
-  .sendDisabled {
-    width: 6rem;
-    font-size: 9pt;
-  }
-}
-@media (min-width: 700px) and (max-width: 767px) {
-  .sendDisabled {
-    width: 6rem;
-    font-size: 9pt;
-  }
-}
-@media (min-width: 300px) and (max-width: 1023px) {
-  .sendDisabled {
-    cursor: default;
-  }
-}
-@media (min-width: 1023px) and (max-width: 1100px) {
-  .sendDisabled {
-    width: 4.7rem;
-    height: 1.8rem;
-    font-size: 7.4pt;
-  }
-}
-@media (orientation: portrait) and (min-width: 1023px) and (max-width: 1100px) {
-  .sendDisabled {
-    width: 7rem;
-    height: 2.5rem;
-    font-size: 10pt;
-  }
-}
-@media (min-width: 1100px) and (max-width: 1200px) {
-  .sendDisabled {
-    width: 5.1rem;
-    height: 1.9rem;
-    font-size: 8pt;
-  }
-}
-@media (min-width: 1200px) and (max-width: 1300px) {
-  .sendDisabled {
-    width: 5.5rem;
-    height: 2rem;
-    font-size: 8pt;
-  }
-}
-@media (min-width: 1300px) and (max-width: 1400px) {
-  .sendDisabled {
-    width: 6.2rem;
-    height: 2.2rem;
-    font-size: 9pt;
-  }
-}
-
-.estimatesDisabled {
-  width: 7rem;
-  height: 2.5rem;
-  background-color: #1e1e1e;
-  border: none;
-  border-radius: 0.5rem;
-  font-size: 10pt;
-  color: #ebebeb;
-  cursor: default;
-  transition: all 0.2s ease;
-}
-@media (min-width: 300px) and (max-width: 350px) {
-  .estimatesDisabled {
-    width: 5.7rem;
-    height: 2.3rem;
-    font-size: 9.5pt;
-  }
-}
-@media (min-width: 350px) and (max-width: 400px) {
-  .estimatesDisabled {
-    width: 6rem;
-    height: 2.3rem;
-  }
-}
-@media (min-width: 600px) and (max-width: 800px) {
-  .estimatesDisabled {
-    width: 6rem;
-    font-size: 9pt;
-  }
-}
-@media (width: 800px) {
-  .estimatesDisabled {
-    width: 7rem;
-    height: 2.5rem;
-    font-size: 10pt;
-  }
-}
-@media (min-width: 1023px) and (max-width: 1100px) {
-  .estimatesDisabled {
-    width: 4.7rem;
-    height: 1.8rem;
-    font-size: 7.4pt;
-  }
-}
-@media (orientation: portrait) and (min-width: 1023px) and (max-width: 1100px) {
-  .estimatesDisabled {
-    width: 7rem;
-    height: 2.5rem;
-    font-size: 10pt;
-  }
-}
-@media (min-width: 1100px) and (max-width: 1200px) {
-  .estimatesDisabled {
-    width: 5.1rem;
-    height: 1.9rem;
-    font-size: 8pt;
-  }
-}
-@media (min-width: 1200px) and (max-width: 1300px) {
-  .estimatesDisabled {
-    width: 5.5rem;
-    height: 2rem;
-    font-size: 8pt;
-  }
-}
-@media (min-width: 1300px) and (max-width: 1400px) {
-  .estimatesDisabled {
-    width: 6.2rem;
-    height: 2.2rem;
-    font-size: 9pt;
-  }
-}
-
-.fluencyDisabled {
-  width: 7rem;
-  height: 2.5rem;
-  position: relative;
-  background-color: #1e1e1e;
-  border: none;
-  border-radius: 0.5rem;
-  font-size: 10pt;
-  color: #ebebeb;
-  cursor: default;
-  transition: all 0.2s ease;
-}
-@media (min-width: 300px) and (max-width: 350px) {
-  .fluencyDisabled {
-    width: 5.7rem;
-    height: 2.3rem;
-    bottom: -20rem;
-    font-size: 9.5pt;
-  }
-}
-@media (min-width: 350px) and (max-width: 400px) {
-  .fluencyDisabled {
-    width: 6rem;
-    height: 2.3rem;
-    bottom: -19rem;
-  }
-}
-@media (min-width: 400px) and (max-width: 600px) {
-  .fluencyDisabled {
-    bottom: -19.375rem;
-  }
-}
-@media (min-width: 600px) and (max-width: 700px) {
-  .fluencyDisabled {
-    width: 6rem;
-    font-size: 9pt;
-    bottom: -19rem;
-  }
-}
-@media (min-width: 700px) and (max-width: 800px) {
-  .fluencyDisabled {
-    width: 6rem;
-    font-size: 9pt;
-    bottom: unset;
-  }
-}
-@media (width: 800px) {
-  .fluencyDisabled {
-    width: 7rem;
-    height: 2.5rem;
-    font-size: 10pt;
-  }
-}
-@media (min-width: 1023px) and (max-width: 1100px) {
-  .fluencyDisabled {
-    width: 4.7rem;
-    height: 1.8rem;
-    font-size: 7.4pt;
-  }
-}
-@media (orientation: portrait) and (min-width: 1023px) and (max-width: 1100px) {
-  .fluencyDisabled {
-    width: 7rem;
-    height: 2.5rem;
-    font-size: 10pt;
-  }
-}
-@media (min-width: 1100px) and (max-width: 1200px) {
-  .fluencyDisabled {
-    width: 5.1rem;
-    height: 1.9rem;
-    font-size: 8pt;
-  }
-}
-@media (min-width: 1200px) and (max-width: 1300px) {
-  .fluencyDisabled {
-    width: 5.5rem;
-    height: 2rem;
-    font-size: 8pt;
-  }
-}
-@media (min-width: 1300px) and (max-width: 1400px) {
-  .fluencyDisabled {
-    width: 6.2rem;
-    height: 2.2rem;
-    font-size: 9pt;
-  }
-}
-
-.coursesDisabled {
-  width: 7rem;
-  height: 2.5rem;
-  position: relative;
-  background-color: #1e1e1e;
-  border: none;
-  border-radius: 0.5rem;
-  font-size: 10pt;
-  color: #ebebeb;
-  cursor: default;
-  transition: all 0.2s ease;
-}
-@media (min-width: 300px) and (max-width: 350px) {
-  .coursesDisabled {
-    width: 5.7rem;
-    height: 2.3rem;
-    bottom: -20rem;
-    font-size: 9.5pt;
-  }
-}
-@media (min-width: 350px) and (max-width: 400px) {
-  .coursesDisabled {
-    width: 6rem;
-    height: 2.3rem;
-    bottom: -19rem;
-  }
-}
-@media (min-width: 400px) and (max-width: 600px) {
-  .coursesDisabled {
-    bottom: -19.375rem;
-  }
-}
-@media (min-width: 600px) and (max-width: 700px) {
-  .coursesDisabled {
-    width: 6rem;
-    font-size: 9pt;
-    bottom: -19rem;
-  }
-}
-@media (min-width: 700px) and (max-width: 800px) {
-  .coursesDisabled {
-    width: 6rem;
-    font-size: 9pt;
-    bottom: unset;
-  }
-}
-@media (width: 800px) {
-  .coursesDisabled {
-    width: 7rem;
-    height: 2.5rem;
-    font-size: 10pt;
-  }
-}
-@media (min-width: 1023px) and (max-width: 1100px) {
-  .coursesDisabled {
-    width: 4.7rem;
-    height: 1.8rem;
-    font-size: 7.4pt;
-  }
-}
-@media (orientation: portrait) and (min-width: 1023px) and (max-width: 1100px) {
-  .coursesDisabled {
-    width: 7rem;
-    height: 2.5rem;
-    font-size: 10pt;
-  }
-}
-@media (min-width: 1100px) and (max-width: 1200px) {
-  .coursesDisabled {
-    width: 5.1rem;
-    height: 1.9rem;
-    font-size: 8pt;
-  }
-}
-@media (min-width: 1200px) and (max-width: 1300px) {
-  .coursesDisabled {
-    width: 5.5rem;
-    height: 2rem;
-    font-size: 8pt;
-  }
-}
-@media (min-width: 1300px) and (max-width: 1400px) {
-  .coursesDisabled {
-    width: 6.2rem;
-    height: 2.2rem;
-    font-size: 9pt;
-  }
-}
-
-.extrasDisabled {
-  width: 7rem;
-  height: 2.5rem;
-  align-self: center;
-  position: absolute;
-  bottom: 1.2rem;
-  background-color: #1e1e1e;
-  border: none;
-  border-radius: 0.5rem;
-  font-size: 10pt;
-  color: #ebebeb;
-  cursor: default;
-  transition: all 0.2s ease;
-}
-@media (min-width: 300px) and (max-width: 350px) {
-  .extrasDisabled {
-    align-self: end;
-    width: 5.7rem;
-    height: 2.3rem;
-    bottom: 1rem;
-    font-size: 9.5pt;
-  }
-}
-@media (min-width: 350px) and (max-width: 400px) {
-  .extrasDisabled {
-    align-self: end;
-    width: 6rem;
-    height: 2.3rem;
-    bottom: 1.6rem;
-  }
-}
-@media (min-width: 400px) and (max-width: 500px) {
-  .extrasDisabled {
-    align-self: end;
-    bottom: 2.3rem;
-  }
-}
-@media (min-width: 500px) and (max-width: 600px) {
-  .extrasDisabled {
-    align-self: end;
-    bottom: 1.5rem;
-  }
-}
-@media (min-width: 600px) and (max-width: 700px) {
-  .extrasDisabled {
-    width: 6rem;
-    align-self: end;
-    bottom: 1.5rem;
-    font-size: 9pt;
-  }
-}
-@media (width: 700px) {
-  .extrasDisabled {
-    align-self: end;
-    width: 6rem;
-    bottom: 1.3rem;
-    font-size: 9pt;
-  }
-}
-@media (min-width: 700px) and (max-width: 800px) {
-  .extrasDisabled {
-    width: 6rem;
-    align-self: end;
-    bottom: 1.8rem;
-    font-size: 9pt;
-  }
-}
-@media (width: 800px) {
-  .extrasDisabled {
-    align-self: end;
-    width: 7rem;
-    height: 2.5rem;
-    bottom: 1.8rem;
-    font-size: 10pt;
-  }
-}
-@media (min-width: 800px) and (max-width: 1023px) {
-  .extrasDisabled {
-    align-self: end;
-    bottom: 1.8rem;
-  }
-}
-@media (min-width: 1023px) and (max-width: 1100px) {
-  .extrasDisabled {
-    width: 4.7rem;
-    height: 1.8rem;
-    right: 0.8rem;
-    bottom: 0.7rem;
-    font-size: 7.4pt;
-  }
-}
-@media (orientation: portrait) and (min-width: 1023px) and (max-width: 1100px) {
-  .extrasDisabled {
-    width: 7rem;
-    height: 2.5rem;
-    right: 2rem;
-    bottom: 2rem;
-    font-size: 10pt;
-  }
-}
-@media (min-width: 1100px) and (max-width: 1200px) {
-  .extrasDisabled {
-    width: 5.1rem;
-    height: 1.9rem;
-    right: unset;
-    bottom: 0.7rem;
-    font-size: 8pt;
-  }
-}
-@media (min-width: 1200px) and (max-width: 1300px) {
-  .extrasDisabled {
-    width: 5.5rem;
-    height: 2rem;
-    bottom: 0.8rem;
-    font-size: 8pt;
-  }
-}
-@media (min-width: 1300px) and (max-width: 1400px) {
-  .extrasDisabled {
-    width: 6.2rem;
-    height: 2.2rem;
-    align-self: center;
-    bottom: 1rem;
-    font-size: 9pt;
-  }
-}
-
-.moreDisabled {
-  width: 7rem;
-  height: 2.5rem;
-  align-self: center;
-  position: absolute;
-  bottom: 1.2rem;
-  background-color: #1e1e1e;
-  border: none;
-  border-radius: 0.5rem;
-  font-size: 10pt;
-  color: #ebebeb;
-  cursor: default;
-  transition: all 0.2s ease;
-}
-@media (min-width: 300px) and (max-width: 350px) {
-  .moreDisabled {
-    align-self: end;
-    width: 5.7rem;
-    height: 2.3rem;
-    bottom: 1rem;
-    font-size: 9.5pt;
-  }
-}
-@media (min-width: 350px) and (max-width: 400px) {
-  .moreDisabled {
-    align-self: end;
-    width: 6rem;
-    height: 2.3rem;
-    bottom: 1.6rem;
-  }
-}
-@media (min-width: 400px) and (max-width: 500px) {
-  .moreDisabled {
-    align-self: end;
-    bottom: 2.3rem;
-  }
-}
-@media (min-width: 500px) and (max-width: 600px) {
-  .moreDisabled {
-    align-self: end;
-    bottom: 1.5rem;
-  }
-}
-@media (min-width: 600px) and (max-width: 700px) {
-  .moreDisabled {
-    width: 6rem;
-    align-self: end;
-    bottom: 1.5rem;
-    font-size: 9pt;
-  }
-}
-@media (width: 700px) {
-  .moreDisabled {
-    align-self: end;
-    width: 6rem;
-    bottom: 1.3rem;
-    font-size: 9pt;
-  }
-}
-@media (min-width: 700px) and (max-width: 800px) {
-  .moreDisabled {
-    width: 6rem;
-    align-self: end;
-    bottom: 1.8rem;
-    font-size: 9pt;
-  }
-}
-@media (width: 800px) {
-  .moreDisabled {
-    align-self: end;
-    width: 7rem;
-    height: 2.5rem;
-    bottom: 1.8rem;
-    font-size: 10pt;
-  }
-}
-@media (min-width: 800px) and (max-width: 1023px) {
-  .moreDisabled {
-    align-self: end;
-    bottom: 1.8rem;
-  }
-}
-@media (min-width: 1023px) and (max-width: 1100px) {
-  .moreDisabled {
-    width: 4.7rem;
-    height: 1.8rem;
-    right: 0.8rem;
-    bottom: 0.7rem;
-    font-size: 7.4pt;
-  }
-}
-@media (orientation: portrait) and (min-width: 1023px) and (max-width: 1100px) {
-  .moreDisabled {
-    width: 7rem;
-    height: 2.5rem;
-    right: 2rem;
-    bottom: 2rem;
-    font-size: 10pt;
-  }
-}
-@media (min-width: 1100px) and (max-width: 1200px) {
-  .moreDisabled {
-    width: 5.1rem;
-    height: 1.9rem;
-    right: unset;
-    bottom: 0.7rem;
-    font-size: 8pt;
-  }
-}
-@media (min-width: 1200px) and (max-width: 1300px) {
-  .moreDisabled {
-    width: 5.5rem;
-    height: 2rem;
-    bottom: 0.8rem;
-    font-size: 8pt;
-  }
-}
-@media (min-width: 1300px) and (max-width: 1400px) {
-  .moreDisabled {
-    width: 6.2rem;
-    height: 2.2rem;
-    align-self: center;
-    bottom: 1rem;
-    font-size: 9pt;
   }
 }
 

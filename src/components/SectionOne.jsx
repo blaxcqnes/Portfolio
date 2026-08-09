@@ -94,12 +94,20 @@ export default function SectionOne({
 
       {((largePortrait && activeList === 'skillsList') ||
         (largeLandscape && activeList === 'skillsList')) && (
-        <SkillsList setActiveList={setActiveList} />
+        <SkillsList
+          isContactFormOpen={isContactFormOpen}
+          activeList={activeList}
+          setActiveList={setActiveList}
+        />
       )}
 
       {((largePortrait && activeList === 'educationList') ||
         (largeLandscape && activeList === 'educationList')) && (
-        <EducationList setActiveList={setActiveList} />
+        <EducationList
+          isContactFormOpen={isContactFormOpen}
+          activeList={activeList}
+          setActiveList={setActiveList}
+        />
       )}
     </main>
   );

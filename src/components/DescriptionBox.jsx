@@ -32,7 +32,16 @@ export default function DescriptionBox({
             (largePortrait && isContactFormOpen) ||
             activeList ||
             isContactFormOpen ? (
-            <button className="estimatesDisabled">Estimates</button>
+            <button
+              className="estimates"
+              style={{
+                pointerEvents:
+                  activeList || isContactFormOpen ? 'none' : 'auto',
+              }}
+              disabled
+            >
+              Estimates
+            </button>
           ) : (
             <button
               className="estimates"
@@ -57,7 +66,16 @@ export default function DescriptionBox({
         <div className="locationAndEstimatesButton">
           <p className="location">Riyadh, Saudi Arabia</p>
           {activeList || isContactFormOpen ? (
-            <button className="estimatesDisabled">Estimates</button>
+            <button
+              className="estimates"
+              style={{
+                pointerEvents:
+                  activeList || isContactFormOpen ? 'none' : 'auto',
+              }}
+              disabled
+            >
+              Estimates
+            </button>
           ) : (
             <button
               className="estimates"

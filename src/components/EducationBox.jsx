@@ -25,7 +25,16 @@ export default function EducationBox({
         <div className="titleAndButton">
           <p className="title">Education</p>
           {activeList || isContactFormOpen ? (
-            <button className="coursesDisabled">Courses</button>
+            <button
+              className="courses"
+              style={{
+                pointerEvents:
+                  activeList || isContactFormOpen ? 'none' : 'auto',
+              }}
+              disabled
+            >
+              Courses
+            </button>
           ) : (
             <button
               className="courses"
@@ -72,7 +81,11 @@ export default function EducationBox({
         ? undefined
         : mobileScreens &&
           activeList === 'educationList' && (
-            <EducationList setActiveList={setActiveList} />
+            <EducationList
+              isContactFormOpen={isContactFormOpen}
+              activeList={activeList}
+              setActiveList={setActiveList}
+            />
           )}
     </div>
   );

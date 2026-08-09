@@ -1,5 +1,9 @@
 import { useState, useEffect } from 'react';
-export default function CyberList({ setActiveList }) {
+export default function CyberList({
+  isContactFormOpen,
+  activeList,
+  setActiveList,
+}) {
   const [pageNumber, setPageNumber] = useState(1);
 
   useEffect(() => {
@@ -52,7 +56,22 @@ export default function CyberList({ setActiveList }) {
       </div>
       <div className="content">
         {pageNumber < 2 ? (
-          <button className="previousDisabled" disabled>
+          <button
+            className="previous"
+            style={{
+              ...(activeList || isContactFormOpen
+                ? {
+                    pointerEvents: 'none',
+                    backgroundColor: '#1e1e1e',
+                    boxShadow: 'none',
+                    border: 'unset',
+                    color: '#000000',
+                    cursor: 'default',
+                  }
+                : undefined),
+            }}
+            disabled
+          >
             &lt;
           </button>
         ) : (
@@ -64,7 +83,22 @@ export default function CyberList({ setActiveList }) {
         {/*  */}
 
         {pageNumber > 1 ? (
-          <button className="nextDisabled" disabled>
+          <button
+            className="next"
+            style={{
+              ...(activeList || isContactFormOpen
+                ? {
+                    pointerEvents: 'none',
+                    backgroundColor: '#1e1e1e',
+                    boxShadow: 'none',
+                    border: 'unset',
+                    color: '#000000',
+                    cursor: 'default',
+                  }
+                : undefined),
+            }}
+            disabled
+          >
             &gt;
           </button>
         ) : (

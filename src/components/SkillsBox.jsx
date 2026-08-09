@@ -102,7 +102,16 @@ export default function SkillsBox({
         <div className="titleAndButton">
           <p className="title">Skills</p>
           {activeList || isContactFormOpen ? (
-            <button className="fluencyDisabled">Fluency</button>
+            <button
+              className="fluency"
+              style={{
+                pointerEvents:
+                  activeList || isContactFormOpen ? 'none' : 'auto',
+              }}
+              disabled
+            >
+              Fluency
+            </button>
           ) : (
             <button
               className="fluency"
@@ -184,7 +193,11 @@ export default function SkillsBox({
         ? undefined
         : mobileScreens &&
           activeList === 'skillsList' && (
-            <SkillsList setActiveList={setActiveList} />
+            <SkillsList
+              isContactFormOpen={isContactFormOpen}
+              activeList={activeList}
+              setActiveList={setActiveList}
+            />
           )}
     </div>
   );

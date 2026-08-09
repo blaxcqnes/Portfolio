@@ -1,6 +1,10 @@
 import { useState, useEffect, Fragment } from 'react';
 import { pageOne, pageTwo } from '../data/educationList';
-export default function EducationList({ setActiveList }) {
+export default function EducationList({
+  isContactFormOpen,
+  activeList,
+  setActiveList,
+}) {
   const [pageNumber, setPageNumber] = useState(1);
 
   useEffect(() => {
@@ -53,7 +57,22 @@ export default function EducationList({ setActiveList }) {
       </div>
       <div className="content">
         {pageNumber < 2 ? (
-          <button className="previousDisabled" disabled>
+          <button
+            className="previous"
+            style={{
+              ...(activeList || isContactFormOpen
+                ? {
+                    pointerEvents: 'none',
+                    backgroundColor: '#1e1e1e',
+                    boxShadow: 'none',
+                    border: 'unset',
+                    color: '#000000',
+                    cursor: 'default',
+                  }
+                : undefined),
+            }}
+            disabled
+          >
             &lt;
           </button>
         ) : (
@@ -85,7 +104,22 @@ export default function EducationList({ setActiveList }) {
         )}
 
         {pageNumber > 1 ? (
-          <button className="nextDisabled" disabled>
+          <button
+            className="next"
+            style={{
+              ...(activeList || isContactFormOpen
+                ? {
+                    pointerEvents: 'none',
+                    backgroundColor: '#1e1e1e',
+                    boxShadow: 'none',
+                    border: 'unset',
+                    color: '#000000',
+                    cursor: 'default',
+                  }
+                : undefined),
+            }}
+            disabled
+          >
             &gt;
           </button>
         ) : (

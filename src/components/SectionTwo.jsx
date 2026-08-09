@@ -88,12 +88,20 @@ export default function SectionTwo({
       </div>
 
       {activeList === 'cyberList' && (
-        <CyberList setActiveList={setActiveList} />
+        <CyberList
+          isContactFormOpen={isContactFormOpen}
+          activeList={activeList}
+          setActiveList={setActiveList}
+        />
       )}
 
       {((largePortrait && activeList === 'webList') ||
         (largeLandscape && activeList === 'webList')) && (
-        <WebList setActiveList={setActiveList} />
+        <WebList
+          isContactFormOpen={isContactFormOpen}
+          activeList={activeList}
+          setActiveList={setActiveList}
+        />
       )}
     </main>
   );

@@ -160,7 +160,15 @@ export default function WebBox({
           ))}
         </div>
         {activeList || isContactFormOpen ? (
-          <button className="moreDisabled">More</button>
+          <button
+            className="more"
+            style={{
+              pointerEvents: activeList || isContactFormOpen ? 'none' : 'auto',
+            }}
+            disabled
+          >
+            More
+          </button>
         ) : (
           <button
             className="more"
@@ -215,7 +223,13 @@ export default function WebBox({
       {largeLandscape || largePortrait
         ? undefined
         : mobileScreens &&
-          activeList === 'webList' && <WebList setActiveList={setActiveList} />}
+          activeList === 'webList' && (
+            <WebList
+              isContactFormOpen={isContactFormOpen}
+              activeList={activeList}
+              setActiveList={setActiveList}
+            />
+          )}
     </div>
   );
 }

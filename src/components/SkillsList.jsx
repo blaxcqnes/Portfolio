@@ -1,6 +1,10 @@
 import { useState, useEffect, Fragment } from 'react';
 import { cyberOne, webOne } from '../data/skillsList';
-export default function SkillsList({ setActiveList }) {
+export default function SkillsList({
+  isContactFormOpen,
+  activeList,
+  setActiveList,
+}) {
   const [pageNumber, setPageNumber] = useState(1);
 
   useEffect(() => {
@@ -53,7 +57,22 @@ export default function SkillsList({ setActiveList }) {
       </div>
       <div className="content">
         {pageNumber < 2 ? (
-          <button className="previousDisabled" disabled>
+          <button
+            className="previous"
+            style={{
+              ...(activeList || isContactFormOpen
+                ? {
+                    pointerEvents: 'none',
+                    backgroundColor: '#1e1e1e',
+                    boxShadow: 'none',
+                    border: 'unset',
+                    color: '#000000',
+                    cursor: 'default',
+                  }
+                : undefined),
+            }}
+            disabled
+          >
             &lt;
           </button>
         ) : (
@@ -101,7 +120,22 @@ export default function SkillsList({ setActiveList }) {
         )}
 
         {pageNumber > 1 ? (
-          <button className="nextDisabled" disabled>
+          <button
+            className="next"
+            style={{
+              ...(activeList || isContactFormOpen
+                ? {
+                    pointerEvents: 'none',
+                    backgroundColor: '#1e1e1e',
+                    boxShadow: 'none',
+                    border: 'unset',
+                    color: '#000000',
+                    cursor: 'default',
+                  }
+                : undefined),
+            }}
+            disabled
+          >
             &gt;
           </button>
         ) : (
