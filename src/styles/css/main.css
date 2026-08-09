@@ -4254,7 +4254,7 @@ input[type=email]) {
   right: 2rem;
   position: absolute;
   cursor: pointer;
-  transition: background-image 0.2s ease;
+  transition: all 0.2s ease;
 }
 @media (min-width: 300px) and (max-width: 1023px) {
   .mainContent .sectionOne .skillsAndEducation .skillsAndSkillsList .skillsBox .nextSkillsLoader .pausePlay {
@@ -9901,7 +9901,7 @@ input[type=email]) {
   right: 2rem;
   position: absolute;
   cursor: pointer;
-  transition: background-image 0.2s ease;
+  transition: all 0.2s ease;
 }
 @media (min-width: 300px) and (max-width: 1023px) {
   .mainContent .sectionTwo .projectsAndFooter .projects .webAndWebList .webBox .nextWebLoader .pausePlay {

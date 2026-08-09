@@ -234,7 +234,7 @@ export default function WebBox({
               className="pausePlay"
               onClick={pausePlay}
               style={{
-                opacity: activeList || isContactFormOpen || isPaused ? 0 : 1,
+                opacity: activeList || isContactFormOpen ? 0 : 1,
                 backgroundImage: isPaused
                   ? `url(${playTwo})`
                   : `url(${pauseTwo})`,
