@@ -1,3 +1,4 @@
+import { cyberOne, cyberTwo } from '../data/cyberBox';
 export default function CyberBox({
   isContactFormOpen,
   activeList,
@@ -16,24 +17,28 @@ export default function CyberBox({
       }
     >
       <p className="title">Cybersecurity Projects</p>
-      <div className="cyberContainer">
-        <h4 className="cyberTitle">Securing Systems & Networks</h4>
-        <ol className="cyberOrder">
-          <li>Prevention for Advanced Digital attacks</li>
-          <li>Design Secure own System</li>
-          <li>Prevent outside attacks using VPN & load balancing</li>
-          <li>Design PFSense Firewall network</li>
-          <li>Make your secure lab</li>
-        </ol>
-      </div>
-      <div className="cyberContainer">
-        <h4 className="cyberTitle">Cryptography & Stegnography</h4>
-        <ol className="cyberOrder">
-          <li>Avoiding Malware Detections-100% FUD</li>
-          <li>Cryptting service</li>
-          <li>Stenography</li>
-        </ol>
-      </div>
+      {cyberOne.map((cyberOne) => (
+        <div className={cyberOne.classCyberContainer} key={cyberOne.id}>
+          <h4 className={cyberOne.classCyberTitle}>{cyberOne.title}</h4>
+          <ol className={cyberOne.classCyberOrder}>
+            <li>{cyberOne.valueOne}</li>
+            <li>{cyberOne.valueTwo}</li>
+            <li>{cyberOne.valueThree}</li>
+            <li>{cyberOne.valueFour}</li>
+            <li>{cyberOne.valueFive}</li>
+          </ol>
+        </div>
+      ))}
+      {cyberTwo.map((cyberTwo) => (
+        <div className={cyberTwo.classCyberContainer} key={cyberTwo.id}>
+          <h4 className={cyberTwo.classCyberTitle}>{cyberTwo.title}</h4>
+          <ol className={cyberTwo.classCyberOrder}>
+            <li>{cyberTwo.valueOne}</li>
+            <li>{cyberTwo.valueTwo}</li>
+            <li>{cyberTwo.valueThree}</li>
+          </ol>
+        </div>
+      ))}
       {activeList || isContactFormOpen ? (
         <button
           className="extras"

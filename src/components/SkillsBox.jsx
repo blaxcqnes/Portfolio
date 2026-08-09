@@ -1,4 +1,5 @@
 import { useState, useEffect, useRef } from 'react';
+import { skillsOne, skillsTwo } from '../data/skillsBox';
 import SkillsList from './SkillsList';
 
 export default function SkillsBox({
@@ -28,7 +29,7 @@ export default function SkillsBox({
     return () => clearTimeout(timeoutId);
   }, []);
 
-  // Related to skills timer
+  // Related to glow animation
   useEffect(() => {
     const timeoutId = setTimeout(() => {
       timerRef.current = setInterval(() => {
@@ -48,6 +49,7 @@ export default function SkillsBox({
     };
   }, []);
 
+  // Related to skills timer
   useEffect(() => {
     if (isPaused || isContactFormOpen || activeList) return;
 
@@ -65,8 +67,15 @@ export default function SkillsBox({
     return () => clearInterval(timerId);
   }, [isPaused, isContactFormOpen, activeList]);
 
+  // Prevents timer from reseting after clicking pause button
+  useEffect(() => {
+    if (isPaused) return;
+    if (!timeLeft) return;
+  }, [isPaused, timeLeft]);
+
   // Related to the skills auto page change
   useEffect(() => {
+    if (isPaused) return;
     if (!timeLeft && skillPage <= 1) {
       setSkillPage((prev) => prev + 1);
       setTimeLeft(15);
@@ -75,7 +84,11 @@ export default function SkillsBox({
       setSkillPage((prev) => prev - 1);
       setTimeLeft(15);
     }
-  }, [timeLeft, skillPage]);
+  }, [isPaused, timeLeft, skillPage]);
+
+  function pausePlay() {
+    setIsPaused((prev) => !prev);
+  }
 
   return (
     <div className="skillsAndSkillsList">
@@ -96,8 +109,6 @@ export default function SkillsBox({
                 ? 'skillsBox 0.5s linear 1'
                 : !glow && timeLeft === 15 && 'skillsAlternate 1s ease 1',
         }}
-        onPointerEnter={() => setIsPaused(true)}
-        onPointerLeave={() => setIsPaused(false)}
       >
         <div className="titleAndButton">
           <p className="title">Skills</p>
@@ -125,29 +136,31 @@ export default function SkillsBox({
           )}
         </div>
 
-        {skillPage === 1 && (
-          <div className="skillsContainer">
-            <h4 className="skillsTitle">Cybersecurity</h4>
-            <ol className="skillsOrder">
-              <li>WireShark</li>
-              <li>Nmap</li>
-              <li>Metasploit</li>
-              <li>Burp Suite</li>
-            </ol>
-          </div>
-        )}
+        {skillPage === 1 &&
+          skillsOne.map((skillsOne) => (
+            <div className={skillsOne.classSkillsContainer} key={skillsOne.id}>
+              <h4 className={skillsOne.classSkillsTitle}>{skillsOne.title}</h4>
+              <ol className={skillsOne.classSkillsOrder}>
+                <li>{skillsOne.valueOne}</li>
+                <li>{skillsOne.valueTwo}</li>
+                <li>{skillsOne.valueThree}</li>
+                <li>{skillsOne.valueFour}</li>
+              </ol>
+            </div>
+          ))}
 
-        {skillPage === 2 && (
-          <div className="skillsContainer">
-            <h4 className="skillsTitle">Web Development</h4>
-            <ol className="skillsOrder">
-              <li>HTML</li>
-              <li>CSS & SCSS</li>
-              <li>JavaScript</li>
-              <li>React</li>
-            </ol>
-          </div>
-        )}
+        {skillPage === 2 &&
+          skillsTwo.map((skillsTwo) => (
+            <div className={skillsTwo.classSkillsContainer} key={skillsTwo.id}>
+              <h4 className={skillsTwo.classSkillsTitle}>{skillsTwo.title}</h4>
+              <ol className={skillsTwo.classSkillsOrder}>
+                <li>{skillsTwo.valueOne}</li>
+                <li>{skillsTwo.valueTwo}</li>
+                <li>{skillsTwo.valueThree}</li>
+                <li>{skillsTwo.valueFour}</li>
+              </ol>
+            </div>
+          ))}
 
         <div
           className="nextSkillsLoader"
@@ -186,6 +199,18 @@ export default function SkillsBox({
               {timeLeft}
             </div>
           )}
+
+          {!isContactFormOpen || !activeList ? (
+            <div
+              className="pausePlay"
+              onClick={pausePlay}
+              style={{
+                backgroundImage: isPaused
+                  ? `url('src/images/sectionOne/svgs/play.svg')`
+                  : `url('src/images/sectionOne/svgs/pause.svg')`,
+              }}
+            ></div>
+          ) : undefined}
         </div>
       </div>
 

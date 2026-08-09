@@ -4247,6 +4247,27 @@ input[type=email]) {
     font-size: 10pt;
   }
 }
+.mainContent .sectionOne .skillsAndEducation .skillsAndSkillsList .skillsBox .nextSkillsLoader .pausePlay {
+  display: flex;
+  width: 1rem;
+  height: 1rem;
+  right: 2rem;
+  position: absolute;
+  cursor: pointer;
+  transition: background-image 0.2s ease;
+}
+@media (min-width: 300px) and (max-width: 1023px) {
+  .mainContent .sectionOne .skillsAndEducation .skillsAndSkillsList .skillsBox .nextSkillsLoader .pausePlay {
+    left: 2.5rem;
+    right: unset;
+  }
+}
+@media (orientation: portrait) and (min-width: 1023px) and (max-width: 1100px) {
+  .mainContent .sectionOne .skillsAndEducation .skillsAndSkillsList .skillsBox .nextSkillsLoader .pausePlay {
+    left: 2.5rem;
+    right: unset;
+  }
+}
 .mainContent .sectionOne .skillsAndEducation .skillsAndSkillsList .skillsList {
   display: flex;
   flex-direction: column;
@@ -9539,6 +9560,8 @@ input[type=email]) {
 .mainContent .sectionTwo .projectsAndFooter .projects .webAndWebList .webBox .carousel .linkNonActive {
   width: 13rem;
   height: 7rem;
+  filter: opacity(0.5) grayscale(10%) blur(0.05rem) brightness(80%);
+  transition: filter 0.2s ease;
 }
 @media (min-width: 300px) and (max-width: 350px) {
   .mainContent .sectionTwo .projectsAndFooter .projects .webAndWebList .webBox .carousel .linkNonActive {
@@ -9589,10 +9612,6 @@ input[type=email]) {
   .mainContent .sectionTwo .projectsAndFooter .projects .webAndWebList .webBox .carousel .linkNonActive {
     width: 14rem;
   }
-}
-.mainContent .sectionTwo .projectsAndFooter .projects .webAndWebList .webBox .carousel .linkNonActive {
-  filter: opacity(0.5) grayscale(10%) blur(0.05rem) brightness(80%);
-  transition: filter 0.2s ease;
 }
 .mainContent .sectionTwo .projectsAndFooter .projects .webAndWebList .webBox .carousel .linkNonActive img {
   width: 100%;
@@ -9748,7 +9767,7 @@ input[type=email]) {
   height: fit-content;
   align-items: center;
   position: absolute;
-  left: 1.5rem;
+  right: 1.5rem;
   bottom: 1.5rem;
   z-index: 1;
 }
@@ -9873,6 +9892,33 @@ input[type=email]) {
 @media (orientation: portrait) and (min-width: 1023px) and (max-width: 1100px) {
   .mainContent .sectionTwo .projectsAndFooter .projects .webAndWebList .webBox .nextWebLoader .nextWebTimer {
     font-size: 10pt;
+  }
+}
+.mainContent .sectionTwo .projectsAndFooter .projects .webAndWebList .webBox .nextWebLoader .pausePlay {
+  display: flex;
+  width: 1rem;
+  height: 1rem;
+  right: 2rem;
+  position: absolute;
+  cursor: pointer;
+  transition: background-image 0.2s ease;
+}
+@media (min-width: 300px) and (max-width: 1023px) {
+  .mainContent .sectionTwo .projectsAndFooter .projects .webAndWebList .webBox .nextWebLoader .pausePlay {
+    left: 2.5rem;
+    right: unset;
+  }
+}
+@media (orientation: portrait) and (min-width: 1023px) and (max-width: 1100px) {
+  .mainContent .sectionTwo .projectsAndFooter .projects .webAndWebList .webBox .nextWebLoader .pausePlay {
+    left: 2.5rem;
+    right: unset;
+  }
+}
+@media (min-width: 1023px) and (max-width: 1100px) {
+  .mainContent .sectionTwo .projectsAndFooter .projects .webAndWebList .webBox .nextWebLoader .pausePlay {
+    left: 2rem;
+    right: unset;
   }
 }
 .mainContent .sectionTwo .projectsAndFooter .projects .webAndWebList .webList {

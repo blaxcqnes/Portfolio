@@ -75,6 +75,12 @@ export default function WebBox({
     return () => clearInterval(timerId);
   }, [isPaused, isContactFormOpen, activeList, carousel.length]);
 
+  // Prevents timer from reseting after clicking pause button
+  useEffect(() => {
+    if (isPaused) return;
+    if (!timeLeft) return;
+  }, [isPaused, timeLeft]);
+
   // Carousel images auto scroll logic
   useEffect(() => {
     if (isPaused) return;
@@ -95,6 +101,10 @@ export default function WebBox({
     }
   }, [isPaused, nextImg, currentIndex]);
 
+  function pausePlay() {
+    setIsPaused((prev) => !prev);
+  }
+
   return (
     <div className="webAndWebList">
       <div
@@ -114,8 +124,6 @@ export default function WebBox({
                 ? 'webBox 0.5s linear 1'
                 : !glow && timeLeft === 5 && 'webAlternate 1s ease 1',
         }}
-        onPointerEnter={() => setIsPaused(true)}
-        onPointerLeave={() => setIsPaused(false)}
       >
         <p className="title">Web Dev. Projects</p>
         <div
@@ -218,6 +226,18 @@ export default function WebBox({
               {timeLeft}
             </div>
           )}
+
+          {!isContactFormOpen || !activeList ? (
+            <div
+              className="pausePlay"
+              onClick={pausePlay}
+              style={{
+                backgroundImage: isPaused
+                  ? `url('src/images/sectionTwo/svgs/play.svg')`
+                  : `url('src/images/sectionTwo/svgs/pause.svg')`,
+              }}
+            ></div>
+          ) : undefined}
         </div>
       </div>
       {largeLandscape || largePortrait
