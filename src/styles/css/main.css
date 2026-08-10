@@ -9569,6 +9569,7 @@ input[type=email]) {
   height: auto;
   scroll-snap-align: center;
   transform: scale(102%);
+  transition: scroll-snap-align 0.2s ease, transform 0.2s ease;
 }
 @media (min-width: 300px) and (max-width: 350px) {
   .mainContent .sectionTwo .projectsAndFooter .projects .webAndWebList .webBox .carousel .linkActive {
@@ -9640,7 +9641,7 @@ input[type=email]) {
   height: 7rem;
   filter: opacity(0.5) grayscale(10%) blur(0.05rem) brightness(80%);
   transform: scale(90%);
-  transition: filter 0.2s ease;
+  transition: filter 0.2s ease, transform 0.2s ease;
 }
 @media (min-width: 300px) and (max-width: 350px) {
   .mainContent .sectionTwo .projectsAndFooter .projects .webAndWebList .webBox .carousel .linkNonActive {
