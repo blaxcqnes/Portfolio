@@ -144,12 +144,21 @@ export default function SkillsBox({
           skillsOne.map((skillsOne) => (
             <div className={skillsOne.classSkillsContainer} key={skillsOne.id}>
               <h4 className={skillsOne.classSkillsTitle}>{skillsOne.title}</h4>
-              <ol className={skillsOne.classSkillsOrder}>
-                <li>{skillsOne.valueOne}</li>
-                <li>{skillsOne.valueTwo}</li>
-                <li>{skillsOne.valueThree}</li>
-                <li>{skillsOne.valueFour}</li>
-              </ol>
+              <div className={skillsOne.classListContainer}>
+                <ol className={skillsOne.classSkillsOrder}>
+                  <li>{skillsOne.valueOne}</li>
+                  <li>{skillsOne.valueTwo}</li>
+                  <li>{skillsOne.valueThree}</li>
+                  <li>{skillsOne.valueFour}</li>
+                </ol>
+                <hr />
+                <ol className={skillsOne.classSkillsOrder}>
+                  <li>{skillsOne.valueOne}</li>
+                  <li>{skillsOne.valueTwo}</li>
+                  <li>{skillsOne.valueThree}</li>
+                  <li>{skillsOne.valueFour}</li>
+                </ol>
+              </div>
             </div>
           ))}
 
@@ -157,12 +166,21 @@ export default function SkillsBox({
           skillsTwo.map((skillsTwo) => (
             <div className={skillsTwo.classSkillsContainer} key={skillsTwo.id}>
               <h4 className={skillsTwo.classSkillsTitle}>{skillsTwo.title}</h4>
-              <ol className={skillsTwo.classSkillsOrder}>
-                <li>{skillsTwo.valueOne}</li>
-                <li>{skillsTwo.valueTwo}</li>
-                <li>{skillsTwo.valueThree}</li>
-                <li>{skillsTwo.valueFour}</li>
-              </ol>
+              <div className={skillsTwo.classListContainer}>
+                <ol className={skillsTwo.classSkillsOrder}>
+                  <li>{skillsTwo.valueOne}</li>
+                  <li>{skillsTwo.valueTwo}</li>
+                  <li>{skillsTwo.valueThree}</li>
+                  <li>{skillsTwo.valueFour}</li>
+                </ol>
+                <hr />
+                <ol className={skillsTwo.classSkillsOrder}>
+                  <li>{skillsTwo.valueOne}</li>
+                  <li>{skillsTwo.valueTwo}</li>
+                  <li>{skillsTwo.valueThree}</li>
+                  <li>{skillsTwo.valueFour}</li>
+                </ol>
+              </div>
             </div>
           ))}
 
