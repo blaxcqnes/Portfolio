@@ -33,6 +33,8 @@ export default function Header({
               style={{
                 pointerEvents:
                   activeList || isContactFormOpen ? 'none' : 'auto',
+                backgroundColor: '#1e1e1e',
+                boxShadow: 'unset',
               }}
               disabled
             >

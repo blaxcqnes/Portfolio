@@ -154,6 +154,7 @@ export default function ContactForm({
                       pointerEvents: 'none',
                       backgroundColor: '#2a2a2a',
                       color: '#000000',
+                      boxShadow: 'unset',
                     }
                   : undefined),
               }}

@@ -3925,6 +3925,7 @@ input[type=email]) {
     width: 7rem;
     height: 2.5rem;
     font-size: 10pt;
+    cursor: default;
   }
   .mainContent .sectionOne .skillsAndEducation .skillsAndSkillsList .skillsBox .titleAndButton .fluency:hover {
     box-shadow: none;
@@ -4130,7 +4131,7 @@ input[type=email]) {
 }
 @media (min-width: 300px) and (max-width: 1023px) {
   .mainContent .sectionOne .skillsAndEducation .skillsAndSkillsList .skillsBox .nextSkillsLoader {
-    left: 2rem;
+    left: 1.5rem;
     right: unset;
     bottom: 2rem;
   }
@@ -4140,14 +4141,6 @@ input[type=email]) {
     left: 2rem;
     right: unset;
     bottom: 2rem;
-  }
-}
-@keyframes nextSkillsLoader {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
   }
 }
 .mainContent .sectionOne .skillsAndEducation .skillsAndSkillsList .skillsBox .nextSkillsLoader .nextSkillsOval {
@@ -4249,23 +4242,77 @@ input[type=email]) {
 }
 .mainContent .sectionOne .skillsAndEducation .skillsAndSkillsList .skillsBox .nextSkillsLoader .pausePlay {
   display: flex;
-  width: 1rem;
-  height: 1rem;
-  right: 2rem;
+  padding: 1.2rem;
   position: absolute;
+  bottom: 1.5rem;
+  background-size: 1.2rem;
+  background-repeat: no-repeat;
+  background-position: center;
   cursor: pointer;
   transition: all 0.2s ease;
 }
+@media (min-width: 300px) and (max-width: 400px) {
+  .mainContent .sectionOne .skillsAndEducation .skillsAndSkillsList .skillsBox .nextSkillsLoader .pausePlay {
+    left: 1.5rem;
+    bottom: unset;
+  }
+}
+@media (min-width: 400px) and (max-width: 600px) {
+  .mainContent .sectionOne .skillsAndEducation .skillsAndSkillsList .skillsBox .nextSkillsLoader .pausePlay {
+    bottom: 1.5rem;
+  }
+}
+@media (width: 400px) {
+  .mainContent .sectionOne .skillsAndEducation .skillsAndSkillsList .skillsBox .nextSkillsLoader .pausePlay {
+    left: unset;
+    bottom: 1.5rem;
+  }
+}
+@media (min-width: 600px) and (max-width: 1023px) {
+  .mainContent .sectionOne .skillsAndEducation .skillsAndSkillsList .skillsBox .nextSkillsLoader .pausePlay {
+    background-size: 1rem;
+    left: 1.5rem;
+    bottom: unset;
+  }
+}
 @media (min-width: 300px) and (max-width: 1023px) {
   .mainContent .sectionOne .skillsAndEducation .skillsAndSkillsList .skillsBox .nextSkillsLoader .pausePlay {
-    left: 2.5rem;
-    right: unset;
+    cursor: default;
   }
 }
 @media (orientation: portrait) and (min-width: 1023px) and (max-width: 1100px) {
   .mainContent .sectionOne .skillsAndEducation .skillsAndSkillsList .skillsBox .nextSkillsLoader .pausePlay {
-    left: 2.5rem;
-    right: unset;
+    left: 2rem;
+    bottom: unset;
+    cursor: default;
+  }
+}
+@media (min-width: 1023px) and (max-width: 1200px) {
+  .mainContent .sectionOne .skillsAndEducation .skillsAndSkillsList .skillsBox .nextSkillsLoader .pausePlay {
+    padding: 0.8rem;
+    background-size: 0.8rem;
+    bottom: 1.5rem;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1300px) {
+  .mainContent .sectionOne .skillsAndEducation .skillsAndSkillsList .skillsBox .nextSkillsLoader .pausePlay {
+    padding: 0.9rem;
+    background-size: 0.9rem;
+    bottom: 1.5rem;
+  }
+}
+@media (min-width: 1300px) and (max-width: 1400px) {
+  .mainContent .sectionOne .skillsAndEducation .skillsAndSkillsList .skillsBox .nextSkillsLoader .pausePlay {
+    padding: 1rem;
+    background-size: 1rem;
+    bottom: 1.5rem;
+  }
+}
+@media (min-width: 1400px) and (max-width: 1500px) {
+  .mainContent .sectionOne .skillsAndEducation .skillsAndSkillsList .skillsBox .nextSkillsLoader .pausePlay {
+    padding: 1.1rem;
+    background-size: 1.1rem;
+    bottom: 1.5rem;
   }
 }
 .mainContent .sectionOne .skillsAndEducation .skillsAndSkillsList .skillsList {
@@ -9767,13 +9814,13 @@ input[type=email]) {
   height: fit-content;
   align-items: center;
   position: absolute;
-  right: 1.5rem;
+  left: 1.5rem;
   bottom: 1.5rem;
   z-index: 1;
 }
 @media (min-width: 300px) and (max-width: 1023px) {
   .mainContent .sectionTwo .projectsAndFooter .projects .webAndWebList .webBox .nextWebLoader {
-    left: 2rem;
+    left: 1.5rem;
     bottom: 2rem;
   }
 }
@@ -9787,14 +9834,6 @@ input[type=email]) {
   .mainContent .sectionTwo .projectsAndFooter .projects .webAndWebList .webBox .nextWebLoader {
     left: 2rem;
     bottom: 2rem;
-  }
-}
-@keyframes nextWebLoader {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
   }
 }
 .mainContent .sectionTwo .projectsAndFooter .projects .webAndWebList .webBox .nextWebLoader .nextWebOval {
@@ -9896,29 +9935,77 @@ input[type=email]) {
 }
 .mainContent .sectionTwo .projectsAndFooter .projects .webAndWebList .webBox .nextWebLoader .pausePlay {
   display: flex;
-  width: 1rem;
-  height: 1rem;
-  right: 2rem;
+  padding: 1.2rem;
   position: absolute;
+  bottom: 1.5rem;
+  background-size: 1.2rem;
+  background-repeat: no-repeat;
+  background-position: center;
   cursor: pointer;
   transition: all 0.2s ease;
 }
+@media (min-width: 300px) and (max-width: 400px) {
+  .mainContent .sectionTwo .projectsAndFooter .projects .webAndWebList .webBox .nextWebLoader .pausePlay {
+    left: 1.5rem;
+    bottom: unset;
+  }
+}
+@media (min-width: 400px) and (max-width: 600px) {
+  .mainContent .sectionTwo .projectsAndFooter .projects .webAndWebList .webBox .nextWebLoader .pausePlay {
+    bottom: 1.5rem;
+  }
+}
+@media (width: 400px) {
+  .mainContent .sectionTwo .projectsAndFooter .projects .webAndWebList .webBox .nextWebLoader .pausePlay {
+    left: unset;
+    bottom: 1.5rem;
+  }
+}
+@media (min-width: 600px) and (max-width: 1023px) {
+  .mainContent .sectionTwo .projectsAndFooter .projects .webAndWebList .webBox .nextWebLoader .pausePlay {
+    background-size: 1rem;
+    left: 1.5rem;
+    bottom: unset;
+  }
+}
 @media (min-width: 300px) and (max-width: 1023px) {
   .mainContent .sectionTwo .projectsAndFooter .projects .webAndWebList .webBox .nextWebLoader .pausePlay {
-    left: 2.5rem;
-    right: unset;
+    cursor: default;
   }
 }
 @media (orientation: portrait) and (min-width: 1023px) and (max-width: 1100px) {
   .mainContent .sectionTwo .projectsAndFooter .projects .webAndWebList .webBox .nextWebLoader .pausePlay {
-    left: 2.5rem;
-    right: unset;
+    left: 2rem;
+    bottom: unset;
+    cursor: default;
   }
 }
-@media (min-width: 1023px) and (max-width: 1100px) {
+@media (min-width: 1023px) and (max-width: 1200px) {
   .mainContent .sectionTwo .projectsAndFooter .projects .webAndWebList .webBox .nextWebLoader .pausePlay {
-    left: 2rem;
-    right: unset;
+    padding: 0.8rem;
+    background-size: 0.8rem;
+    bottom: 1.5rem;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1300px) {
+  .mainContent .sectionTwo .projectsAndFooter .projects .webAndWebList .webBox .nextWebLoader .pausePlay {
+    padding: 0.9rem;
+    background-size: 0.9rem;
+    bottom: 1.5rem;
+  }
+}
+@media (min-width: 1300px) and (max-width: 1400px) {
+  .mainContent .sectionTwo .projectsAndFooter .projects .webAndWebList .webBox .nextWebLoader .pausePlay {
+    padding: 1rem;
+    background-size: 1rem;
+    bottom: 1.5rem;
+  }
+}
+@media (min-width: 1400px) and (max-width: 1500px) {
+  .mainContent .sectionTwo .projectsAndFooter .projects .webAndWebList .webBox .nextWebLoader .pausePlay {
+    padding: 1.1rem;
+    background-size: 1.1rem;
+    bottom: 1.5rem;
   }
 }
 .mainContent .sectionTwo .projectsAndFooter .projects .webAndWebList .webList {

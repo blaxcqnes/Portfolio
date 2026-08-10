@@ -37,6 +37,8 @@ export default function DescriptionBox({
               style={{
                 pointerEvents:
                   activeList || isContactFormOpen ? 'none' : 'auto',
+                backgroundColor: '#1e1e1e',
+                boxShadow: 'unset',
               }}
               disabled
             >
@@ -71,6 +73,8 @@ export default function DescriptionBox({
               style={{
                 pointerEvents:
                   activeList || isContactFormOpen ? 'none' : 'auto',
+                backgroundColor: '#1e1e1e',
+                boxShadow: 'unset',
               }}
               disabled
             >

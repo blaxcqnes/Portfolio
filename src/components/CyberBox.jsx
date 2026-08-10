@@ -44,6 +44,8 @@ export default function CyberBox({
           className="extras"
           style={{
             pointerEvents: activeList || isContactFormOpen ? 'none' : 'auto',
+            backgroundColor: '#1e1e1e',
+            boxShadow: 'unset',
           }}
           disabled
         >

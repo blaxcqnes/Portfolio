@@ -174,6 +174,8 @@ export default function WebBox({
             className="more"
             style={{
               pointerEvents: activeList || isContactFormOpen ? 'none' : 'auto',
+              backgroundColor: '#1e1e1e',
+              boxShadow: 'unset',
             }}
             disabled
           >
@@ -191,14 +193,7 @@ export default function WebBox({
           </button>
         )}
 
-        <div
-          className="nextWebLoader"
-          style={{
-            ...(timeLeft === 5
-              ? { animation: 'nextWebLoader 1s linear 1' }
-              : undefined),
-          }}
-        >
+        <div className="nextWebLoader">
           <div
             className="nextWebOval"
             style={{
@@ -220,7 +215,7 @@ export default function WebBox({
                   activeList || isContactFormOpen || isPaused
                     ? 'hidden'
                     : 'visible',
-                ...(!activeList && !isContactFormOpen && timeLeft
+                ...(!activeList && !isContactFormOpen && timeLeft && !isPaused
                   ? { animation: 'nextWebTimer 1s linear 1' }
                   : undefined),
               }}
@@ -234,7 +229,9 @@ export default function WebBox({
               className="pausePlay"
               onClick={pausePlay}
               style={{
-                opacity: activeList || isContactFormOpen ? 0 : 1,
+                opacity: activeList || isContactFormOpen || glow ? 0 : 1,
+                pointerEvents:
+                  activeList || isContactFormOpen || glow ? 'none' : 'auto',
                 backgroundImage: isPaused
                   ? `url(${playTwo})`
                   : `url(${pauseTwo})`,

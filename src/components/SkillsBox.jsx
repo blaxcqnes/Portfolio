@@ -16,7 +16,7 @@ export default function SkillsBox({
   const timerRef = useRef(null);
   const isInitialLoad = useRef(true);
   //
-  const [timeLeft, setTimeLeft] = useState(15);
+  const [timeLeft, setTimeLeft] = useState(10);
   const [isPaused, setIsPaused] = useState(false);
   const [glow, setGlow] = useState(6);
   //
@@ -60,7 +60,7 @@ export default function SkillsBox({
 
       setTimeLeft((prev) => {
         if (!prev) {
-          return 15;
+          return 10;
         }
         return prev - 1;
       });
@@ -80,11 +80,11 @@ export default function SkillsBox({
     if (isPaused) return;
     if (!timeLeft && skillPage <= 1) {
       setSkillPage((prev) => prev + 1);
-      setTimeLeft(15);
+      setTimeLeft(10);
     }
     if (!timeLeft && skillPage >= 2) {
       setSkillPage((prev) => prev - 1);
-      setTimeLeft(15);
+      setTimeLeft(10);
     }
   }, [isPaused, timeLeft, skillPage]);
 
@@ -109,7 +109,7 @@ export default function SkillsBox({
               ? undefined
               : glow
                 ? 'skillsBox 0.5s linear 1'
-                : !glow && timeLeft === 15 && 'skillsAlternate 1s ease 1',
+                : !glow && timeLeft === 10 && 'skillsAlternate 1s ease 1',
         }}
       >
         <div className="titleAndButton">
@@ -120,6 +120,8 @@ export default function SkillsBox({
               style={{
                 pointerEvents:
                   activeList || isContactFormOpen ? 'none' : 'auto',
+                backgroundColor: '#1e1e1e',
+                boxShadow: 'unset',
               }}
               disabled
             >
@@ -164,14 +166,7 @@ export default function SkillsBox({
             </div>
           ))}
 
-        <div
-          className="nextSkillsLoader"
-          style={{
-            ...(timeLeft === 15
-              ? { animation: 'nextSkillsLoader 1s linear 1' }
-              : undefined),
-          }}
-        >
+        <div className="nextSkillsLoader">
           <div
             className="nextSkillsOval"
             style={{
@@ -193,7 +188,7 @@ export default function SkillsBox({
                   activeList || isContactFormOpen || isPaused
                     ? 'hidden'
                     : 'visible',
-                ...(!activeList && !isContactFormOpen && timeLeft
+                ...(!activeList && !isContactFormOpen && timeLeft && !isPaused
                   ? { animation: 'nextSkillsTimer 1s linear 1' }
                   : undefined),
               }}
@@ -207,7 +202,9 @@ export default function SkillsBox({
               className="pausePlay"
               onClick={pausePlay}
               style={{
-                opacity: activeList || isContactFormOpen ? 0 : 1,
+                opacity: activeList || isContactFormOpen || glow ? 0 : 1,
+                pointerEvents:
+                  activeList || isContactFormOpen || glow ? 'none' : 'auto',
                 backgroundImage: isPaused
                   ? `url(${playOne})`
                   : `url(${pauseOne})`,

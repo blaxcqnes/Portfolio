@@ -63,8 +63,8 @@ export default function CyberList({
                 ? {
                     pointerEvents: 'none',
                     backgroundColor: '#1e1e1e',
-                    boxShadow: 'none',
-                    border: 'unset',
+                    boxShadow: 'unset',
+                    border: 'none',
                     color: '#000000',
                     cursor: 'default',
                   }
@@ -90,8 +90,8 @@ export default function CyberList({
                 ? {
                     pointerEvents: 'none',
                     backgroundColor: '#1e1e1e',
-                    boxShadow: 'none',
-                    border: 'unset',
+                    boxShadow: 'unset',
+                    border: 'none',
                     color: '#000000',
                     cursor: 'default',
                   }
