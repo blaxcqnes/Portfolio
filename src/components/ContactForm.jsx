@@ -49,7 +49,7 @@ export default function ContactForm({
 
           setTimeout(() => {
             setStatusMessage('');
-          }, 6000);
+          }, 7000);
         },
         (error) => {
           const errorMessage =
@@ -62,7 +62,7 @@ export default function ContactForm({
 
           setTimeout(() => {
             setStatusMessage('');
-          }, 6000);
+          }, 7000);
         },
       );
     e.target.reset();
@@ -87,23 +87,23 @@ export default function ContactForm({
         {/*  */}
       </div>
       {/*  */}
+      {statusMessage ? (
+        <div
+          className="status"
+          style={{
+            backgroundColor:
+              statusType === 'info'
+                ? '#5c4f43'
+                : statusType === 'success'
+                  ? '#545146'
+                  : statusType === 'fail' && '#91372b',
+          }}
+        >
+          {statusType === 'info' && <div className="oval"></div>}
+          <p className={statusType}>{statusMessage}</p>
+        </div>
+      ) : null}
       <form ref={form} onSubmit={sendAnEmail} autoComplete="on">
-        {statusMessage ? (
-          <div
-            className="status"
-            style={{
-              backgroundColor:
-                statusType === 'info'
-                  ? '#5c4f43'
-                  : statusType === 'success'
-                    ? '#545146'
-                    : statusType === 'fail' && '#91372b',
-            }}
-          >
-            {statusType === 'info' && <div className="oval"></div>}
-            <p className={statusType}>{statusMessage}</p>
-          </div>
-        ) : undefined}
         <div className="allInOneForm">
           <label htmlFor="name"></label>
           <input
