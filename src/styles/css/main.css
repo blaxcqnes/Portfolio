@@ -4312,18 +4312,18 @@ input[type=email]) {
     cursor: default;
   }
 }
-@media (orientation: portrait) and (min-width: 1023px) and (max-width: 1100px) {
-  .mainContent .sectionOne .skillsAndEducation .skillsAndSkillsList .skillsBox .nextSkillsLoader .pausePlay {
-    left: 2rem;
-    bottom: unset;
-    cursor: default;
-  }
-}
 @media (min-width: 1023px) and (max-width: 1200px) {
   .mainContent .sectionOne .skillsAndEducation .skillsAndSkillsList .skillsBox .nextSkillsLoader .pausePlay {
     padding: 0.8rem;
     background-size: 0.8rem;
     right: 1.5rem;
+  }
+}
+@media (orientation: portrait) and (min-width: 1023px) and (max-width: 1100px) {
+  .mainContent .sectionOne .skillsAndEducation .skillsAndSkillsList .skillsBox .nextSkillsLoader .pausePlay {
+    background-size: 1.2rem;
+    left: 2rem;
+    cursor: default;
   }
 }
 @media (min-width: 1200px) and (max-width: 1300px) {
@@ -10020,19 +10020,19 @@ input[type=email]) {
     cursor: default;
   }
 }
-@media (orientation: portrait) and (min-width: 1023px) and (max-width: 1100px) {
-  .mainContent .sectionTwo .projectsAndFooter .projects .webAndWebList .webBox .nextWebLoader .pausePlay {
-    left: 2rem;
-    bottom: unset;
-    cursor: default;
-  }
-}
 @media (min-width: 1023px) and (max-width: 1100px) {
   .mainContent .sectionTwo .projectsAndFooter .projects .webAndWebList .webBox .nextWebLoader .pausePlay {
     padding: 0.8rem;
     background-size: 0.8rem;
     left: 1.5rem;
     bottom: unset;
+  }
+}
+@media (orientation: portrait) and (min-width: 1023px) and (max-width: 1100px) {
+  .mainContent .sectionTwo .projectsAndFooter .projects .webAndWebList .webBox .nextWebLoader .pausePlay {
+    background-size: 1.2rem;
+    left: 2rem;
+    cursor: default;
   }
 }
 @media (min-width: 1100px) and (max-width: 1200px) {
@@ -10377,7 +10377,6 @@ input[type=email]) {
   position: relative;
   border-radius: 0.5rem;
   background-color: #5c4f43;
-  animation: cyberBox 0.5s linear 1;
   transition: background-color 1s ease, filter 0.2s ease;
 }
 @keyframes cyberBox {
@@ -10391,6 +10390,17 @@ input[type=email]) {
   100% {
     transform: scale(100%);
     opacity: 1;
+  }
+}
+@keyframes cyberAlternate {
+  0% {
+    background-color: #5c4f43;
+  }
+  50% {
+    background-color: #545146;
+  }
+  100% {
+    background-color: #5c4f43;
   }
 }
 @media (min-width: 300px) and (max-width: 350px) {
@@ -10557,6 +10567,15 @@ input[type=email]) {
   display: flex;
   flex-direction: column;
   row-gap: 1rem;
+  animation: cyberContainer 0.5s ease;
+}
+@keyframes cyberContainer {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 @media (min-width: 350px) and (max-width: 600px) {
   .mainContent .sectionTwo .projectsAndFooter .projects .cyberBox .cyberContainer {
@@ -10848,6 +10867,196 @@ input[type=email]) {
     align-self: center;
     bottom: 1rem;
     font-size: 9pt;
+  }
+}
+.mainContent .sectionTwo .projectsAndFooter .projects .cyberBox .nextCyberLoader {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: fit-content;
+  height: fit-content;
+  align-items: center;
+  position: absolute;
+  left: 1.5rem;
+  bottom: 1.5rem;
+  z-index: 1;
+}
+@media (min-width: 300px) and (max-width: 1023px) {
+  .mainContent .sectionTwo .projectsAndFooter .projects .cyberBox .nextCyberLoader {
+    left: 1.5rem;
+    bottom: 1.5rem;
+  }
+}
+@media (min-width: 1023px) and (max-width: 1100px) {
+  .mainContent .sectionTwo .projectsAndFooter .projects .cyberBox .nextCyberLoader {
+    left: 1rem;
+    bottom: 1rem;
+  }
+}
+@media (min-width: 1100px) and (max-width: 1200px) {
+  .mainContent .sectionTwo .projectsAndFooter .projects .cyberBox .nextCyberLoader {
+    left: 1.2rem;
+    bottom: 1.2rem;
+  }
+}
+@media (orientation: portrait) and (min-width: 1023px) and (max-width: 1100px) {
+  .mainContent .sectionTwo .projectsAndFooter .projects .cyberBox .nextCyberLoader {
+    left: 2rem;
+    bottom: 2rem;
+  }
+}
+.mainContent .sectionTwo .projectsAndFooter .projects .cyberBox .nextCyberLoader .nextCyberOval {
+  display: flex;
+  width: 2rem;
+  height: 2rem;
+  position: absolute;
+  border: 0.14rem solid;
+  border-color: #8b8b8b transparent #8b8b8b transparent;
+  border-radius: 50%;
+  transform: border-color 0.2s ease, transform 0.2s ease;
+}
+@keyframes nextCyberOval {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes nextCyberStops {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+@keyframes nextCyberGlow {
+  0% {
+    border-color: #5c4f43;
+    opacity: 0;
+  }
+  25% {
+    border-color: #ffffff transparent #ffffff transparent;
+    transform: rotate(-90deg);
+    opacity: 1;
+  }
+  50% {
+    transform: rotate(-180deg);
+    opacity: 0;
+  }
+  75% {
+    border-color: #ffffff transparent #ffffff transparent;
+    transform: rotate(-270deg);
+    opacity: 1;
+  }
+  100% {
+    transform: rotate(-360deg);
+    opacity: 0;
+  }
+}
+@media (min-width: 1023px) and (max-width: 1300px) {
+  .mainContent .sectionTwo .projectsAndFooter .projects .cyberBox .nextCyberLoader .nextCyberOval {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+}
+@media (orientation: portrait) and (min-width: 1023px) and (max-width: 1100px) {
+  .mainContent .sectionTwo .projectsAndFooter .projects .cyberBox .nextCyberLoader .nextCyberOval {
+    width: 2.2rem;
+    height: 2.2rem;
+  }
+}
+.mainContent .sectionTwo .projectsAndFooter .projects .cyberBox .nextCyberLoader .nextCyberTimer {
+  display: flex;
+  position: absolute;
+  font-size: 10pt;
+  color: #8b8b8b;
+  transition: opacity 0.2s ease, visibility 0.2s ease;
+}
+@keyframes nextCyberTimer {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@media (min-width: 1023px) and (max-width: 1200px) {
+  .mainContent .sectionTwo .projectsAndFooter .projects .cyberBox .nextCyberLoader .nextCyberTimer {
+    font-size: 7.5pt;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1300px) {
+  .mainContent .sectionTwo .projectsAndFooter .projects .cyberBox .nextCyberLoader .nextCyberTimer {
+    font-size: 8pt;
+  }
+}
+@media (min-width: 1300px) and (max-width: 1500px) {
+  .mainContent .sectionTwo .projectsAndFooter .projects .cyberBox .nextCyberLoader .nextCyberTimer {
+    font-size: 9pt;
+  }
+}
+@media (orientation: portrait) and (min-width: 1023px) and (max-width: 1100px) {
+  .mainContent .sectionTwo .projectsAndFooter .projects .cyberBox .nextCyberLoader .nextCyberTimer {
+    font-size: 10pt;
+  }
+}
+.mainContent .sectionTwo .projectsAndFooter .projects .cyberBox .nextCyberLoader .pausePlay {
+  display: flex;
+  padding: 1.2rem;
+  position: absolute;
+  left: 1.5rem;
+  background-size: 1.2rem;
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+@media (min-width: 300px) and (max-width: 400px) {
+  .mainContent .sectionTwo .projectsAndFooter .projects .cyberBox .nextCyberLoader .pausePlay {
+    background-size: 1rem;
+  }
+}
+@media (min-width: 600px) and (max-width: 1023px) {
+  .mainContent .sectionTwo .projectsAndFooter .projects .cyberBox .nextCyberLoader .pausePlay {
+    background-size: 1rem;
+  }
+}
+@media (min-width: 300px) and (max-width: 1023px) {
+  .mainContent .sectionTwo .projectsAndFooter .projects .cyberBox .nextCyberLoader .pausePlay {
+    cursor: default;
+  }
+}
+@media (min-width: 1023px) and (max-width: 1200px) {
+  .mainContent .sectionTwo .projectsAndFooter .projects .cyberBox .nextCyberLoader .pausePlay {
+    padding: 0.8rem;
+    background-size: 0.8rem;
+  }
+}
+@media (orientation: portrait) and (min-width: 1023px) and (max-width: 1100px) {
+  .mainContent .sectionTwo .projectsAndFooter .projects .cyberBox .nextCyberLoader .pausePlay {
+    background-size: 1.2rem;
+    left: 2rem;
+    cursor: default;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1300px) {
+  .mainContent .sectionTwo .projectsAndFooter .projects .cyberBox .nextCyberLoader .pausePlay {
+    padding: 0.9rem;
+    background-size: 0.9rem;
+  }
+}
+@media (min-width: 1300px) and (max-width: 1400px) {
+  .mainContent .sectionTwo .projectsAndFooter .projects .cyberBox .nextCyberLoader .pausePlay {
+    padding: 1rem;
+    background-size: 1rem;
+  }
+}
+@media (min-width: 1400px) and (max-width: 1500px) {
+  .mainContent .sectionTwo .projectsAndFooter .projects .cyberBox .nextCyberLoader .pausePlay {
+    padding: 1.1rem;
+    background-size: 1.1rem;
   }
 }
 .mainContent .sectionTwo .projectsAndFooter .footer {

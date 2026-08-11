@@ -63,6 +63,8 @@ export default function SectionTwo({
       >
         <section className="projects">
           <CyberBox
+            pauseTwo={pauseTwo}
+            playTwo={playTwo}
             isContactFormOpen={isContactFormOpen}
             activeList={activeList}
             toggleCyberList={toggleCyberList}
