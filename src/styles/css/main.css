@@ -9568,6 +9568,7 @@ input[type=email]) {
   width: 13rem;
   height: auto;
   scroll-snap-align: start;
+  scroll-margin-bottom: 0.1rem;
   transform: scale(102%);
   transition: scroll-snap-align 0.2s ease, transform 0.2s ease;
 }
