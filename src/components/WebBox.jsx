@@ -232,6 +232,7 @@ export default function WebBox({
             <div
               className="pausePlay"
               onClick={pausePlay}
+              fetchPriority="high"
               style={{
                 opacity: activeList || isContactFormOpen || glow ? 0 : 1,
                 pointerEvents:
