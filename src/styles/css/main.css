@@ -9567,7 +9567,7 @@ input[type=email]) {
 .mainContent .sectionTwo .projectsAndFooter .projects .webAndWebList .webBox .carousel .linkActive {
   width: 13rem;
   height: auto;
-  scroll-snap-align: center;
+  scroll-snap-align: start;
   transform: scale(102%);
   transition: scroll-snap-align 0.2s ease, transform 0.2s ease;
 }
