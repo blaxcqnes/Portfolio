@@ -3,7 +3,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  row-gap: 1rem;
+  align-self: center;
   width: 100%;
   height: 90dvh;
   position: relative;
@@ -94,50 +94,6 @@
   }
   100% {
     transform: rotate(-360deg);
-  }
-}
-.loaderContainer .disclaimer {
-  position: fixed;
-  translate: 0 8rem;
-  font-size: 11.5pt;
-  font-weight: 500;
-  text-align: center;
-  line-height: 1.7rem;
-  color: #ffffff;
-}
-@media (min-width: 500px) and (max-width: 600px) {
-  .loaderContainer .disclaimer {
-    font-size: 12pt;
-  }
-}
-@media (min-width: 1000px) and (max-width: 1023px) {
-  .loaderContainer .disclaimer {
-    font-size: 12pt;
-  }
-}
-@media (min-width: 1023px) and (max-width: 1100px) {
-  .loaderContainer .disclaimer {
-    font-size: 8.5pt;
-  }
-}
-@media (orientation: portrait) and (min-width: 1023px) and (max-width: 1100px) {
-  .loaderContainer .disclaimer {
-    font-size: 12pt;
-  }
-}
-@media (min-width: 1100px) and (max-width: 1200px) {
-  .loaderContainer .disclaimer {
-    font-size: 9pt;
-  }
-}
-@media (min-width: 1200px) and (max-width: 1300px) {
-  .loaderContainer .disclaimer {
-    font-size: 10pt;
-  }
-}
-@media (min-width: 1500px) and (max-width: 1600px) {
-  .loaderContainer .disclaimer {
-    font-size: 11.5pt;
   }
 }
 
@@ -9984,7 +9940,7 @@ input[type=email]) {
   display: flex;
   padding: 1.2rem;
   position: absolute;
-  bottom: 1.5rem;
+  left: 1.5rem;
   background-size: 1.2rem;
   background-repeat: no-repeat;
   background-position: center;
@@ -9993,27 +9949,12 @@ input[type=email]) {
 }
 @media (min-width: 300px) and (max-width: 400px) {
   .mainContent .sectionTwo .projectsAndFooter .projects .webAndWebList .webBox .nextWebLoader .pausePlay {
-    left: 1.5rem;
-    bottom: unset;
     background-size: 1rem;
-  }
-}
-@media (min-width: 400px) and (max-width: 600px) {
-  .mainContent .sectionTwo .projectsAndFooter .projects .webAndWebList .webBox .nextWebLoader .pausePlay {
-    bottom: 1.5rem;
-  }
-}
-@media (width: 400px) {
-  .mainContent .sectionTwo .projectsAndFooter .projects .webAndWebList .webBox .nextWebLoader .pausePlay {
-    left: unset;
-    bottom: 1.5rem;
   }
 }
 @media (min-width: 600px) and (max-width: 1023px) {
   .mainContent .sectionTwo .projectsAndFooter .projects .webAndWebList .webBox .nextWebLoader .pausePlay {
     background-size: 1rem;
-    left: 1.5rem;
-    bottom: unset;
   }
 }
 @media (min-width: 300px) and (max-width: 1023px) {
@@ -10021,12 +9962,10 @@ input[type=email]) {
     cursor: default;
   }
 }
-@media (min-width: 1023px) and (max-width: 1100px) {
+@media (min-width: 1023px) and (max-width: 1200px) {
   .mainContent .sectionTwo .projectsAndFooter .projects .webAndWebList .webBox .nextWebLoader .pausePlay {
     padding: 0.8rem;
     background-size: 0.8rem;
-    left: 1.5rem;
-    bottom: unset;
   }
 }
 @media (orientation: portrait) and (min-width: 1023px) and (max-width: 1100px) {
@@ -10036,40 +9975,22 @@ input[type=email]) {
     cursor: default;
   }
 }
-@media (min-width: 1100px) and (max-width: 1200px) {
-  .mainContent .sectionTwo .projectsAndFooter .projects .webAndWebList .webBox .nextWebLoader .pausePlay {
-    padding: 0.8rem;
-    background-size: 0.8rem;
-    bottom: 1.5rem;
-  }
-}
-@media (width: 1100px) {
-  .mainContent .sectionTwo .projectsAndFooter .projects .webAndWebList .webBox .nextWebLoader .pausePlay {
-    padding: 0.8rem;
-    background-size: 0.8rem;
-    bottom: 1.5rem;
-    left: unset;
-  }
-}
 @media (min-width: 1200px) and (max-width: 1300px) {
   .mainContent .sectionTwo .projectsAndFooter .projects .webAndWebList .webBox .nextWebLoader .pausePlay {
     padding: 0.9rem;
     background-size: 0.9rem;
-    bottom: 1.5rem;
   }
 }
 @media (min-width: 1300px) and (max-width: 1400px) {
   .mainContent .sectionTwo .projectsAndFooter .projects .webAndWebList .webBox .nextWebLoader .pausePlay {
     padding: 1rem;
     background-size: 1rem;
-    bottom: 1.5rem;
   }
 }
 @media (min-width: 1400px) and (max-width: 1500px) {
   .mainContent .sectionTwo .projectsAndFooter .projects .webAndWebList .webBox .nextWebLoader .pausePlay {
     padding: 1.1rem;
     background-size: 1.1rem;
-    bottom: 1.5rem;
   }
 }
 .mainContent .sectionTwo .projectsAndFooter .projects .webAndWebList .webList {
