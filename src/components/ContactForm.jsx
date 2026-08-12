@@ -49,7 +49,7 @@ export default function ContactForm({
 
           setTimeout(() => {
             setStatusMessage('');
-          }, 7000);
+          }, 8000);
         },
         (error) => {
           const errorMessage =
@@ -62,7 +62,7 @@ export default function ContactForm({
 
           setTimeout(() => {
             setStatusMessage('');
-          }, 7000);
+          }, 8000);
         },
       );
     e.target.reset();
@@ -96,7 +96,7 @@ export default function ContactForm({
                 ? '#5c4f43'
                 : statusType === 'success'
                   ? '#545146'
-                  : statusType === 'fail' && '#91372b',
+                  : statusType === 'fail' && '#5f312a',
           }}
         >
           {statusType === 'info' && <div className="oval"></div>}
