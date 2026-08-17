@@ -92,9 +92,9 @@ export default function CyberBox({
       style={{
         ...(activeList || isContactFormOpen
           ? {
-              filter:
-                'opacity(0.5) grayscale(10%) blur(0.05rem) brightness(80%)',
-            }
+            filter:
+              'opacity(0.5) grayscale(10%) blur(0.05rem) brightness(80%)',
+          }
           : null),
         animation:
           activeList || isContactFormOpen
@@ -104,7 +104,7 @@ export default function CyberBox({
               : !glow && timeLeft === 15 && 'cyberAlternate 1s ease 1',
       }}
     >
-      <p className="title">Cybersecurity Projects</p>
+      <p className="title">Cybersecurity Portfolio</p>
       {cyberPage === 1 && (
         <>
           {cyberOne.map((item) => (

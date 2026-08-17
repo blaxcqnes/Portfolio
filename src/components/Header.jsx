@@ -3,9 +3,7 @@ import ContactForm from './ContactForm';
 export default function Header({
   isContactFormOpen,
   activeList,
-  setActiveList,
   toggleContactForm,
-  closeList,
 }) {
   return (
     <main className="header">
@@ -14,9 +12,9 @@ export default function Header({
         style={
           activeList || isContactFormOpen
             ? {
-                filter:
-                  'opacity(0.5) grayscale(10%) blur(0.05rem) brightness(80%)',
-              }
+              filter:
+                'opacity(0.5) grayscale(10%) blur(0.05rem) brightness(80%)',
+            }
             : null
         }
       >

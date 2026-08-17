@@ -54,10 +54,10 @@ export default function SectionTwo({
         style={
           largeForEstimatesLandscape && activeList === 'estimatesList'
             ? {
-                position: 'absolute',
-                transform: 'scale(90%)',
-                animation: 'estimatesActive 0.2s linear 1',
-              }
+              position: 'absolute',
+              transform: 'scale(90%)',
+              animation: 'estimatesActive 0.2s linear 1',
+            }
             : null
         }
       >
@@ -103,12 +103,12 @@ export default function SectionTwo({
 
       {((largePortrait && activeList === 'webList') ||
         (largeLandscape && activeList === 'webList')) && (
-        <WebList
-          isContactFormOpen={isContactFormOpen}
-          activeList={activeList}
-          setActiveList={setActiveList}
-        />
-      )}
+          <WebList
+            isContactFormOpen={isContactFormOpen}
+            activeList={activeList}
+            setActiveList={setActiveList}
+          />
+        )}
     </main>
   );
 }

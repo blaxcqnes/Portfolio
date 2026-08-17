@@ -3,9 +3,6 @@ import { carousel } from '../data/webBox';
 import WebList from './WebList';
 
 export default function WebBox({
-  kaffa,
-  veila,
-  guessGame,
   pauseTwo,
   playTwo,
   isContactFormOpen,
@@ -21,9 +18,7 @@ export default function WebBox({
   const imageRefs = useRef([]);
   //
   const [currentIndex, setCurrentIndex] = useState(0);
-  const currentItem = carousel[currentIndex];
   //
-  const [nextImg, setNextImg] = useState(1);
   const isInitialLoad = useRef(true);
   const [timeLeft, setTimeLeft] = useState(5);
   const [isPaused, setIsPaused] = useState(false);
@@ -101,7 +96,7 @@ export default function WebBox({
         behavior: 'smooth',
       });
     }
-  }, [isPaused, nextImg, currentIndex]);
+  }, [isPaused, currentIndex]);
 
   function pausePlay() {
     setIsPaused((prev) => !prev);
@@ -115,9 +110,9 @@ export default function WebBox({
         style={{
           ...(activeList || isContactFormOpen
             ? {
-                filter:
-                  'opacity(0.5) grayscale(10%) blur(0.05rem) brightness(80%)',
-              }
+              filter:
+                'opacity(0.5) grayscale(10%) blur(0.05rem) brightness(80%)',
+            }
             : null),
           animation:
             activeList || isContactFormOpen
@@ -127,16 +122,16 @@ export default function WebBox({
                 : !glow && timeLeft === 5 && 'webAlternate 1s ease 1',
         }}
       >
-        <p className="title">Web Dev. Projects</p>
+        <p className="title">Web Dev. Portfolio</p>
         <div
           ref={containerRef}
           className="carousel"
           style={
             activeList
               ? {
-                  overflowY: 'hidden',
-                  overscrollBehaviorY: 'unset',
-                }
+                overflowY: 'hidden',
+                overscrollBehaviorY: 'unset',
+              }
               : undefined
           }
         >
@@ -248,13 +243,13 @@ export default function WebBox({
       {largeLandscape || largePortrait
         ? undefined
         : mobileScreens &&
-          activeList === 'webList' && (
-            <WebList
-              isContactFormOpen={isContactFormOpen}
-              activeList={activeList}
-              setActiveList={setActiveList}
-            />
-          )}
+        activeList === 'webList' && (
+          <WebList
+            isContactFormOpen={isContactFormOpen}
+            activeList={activeList}
+            setActiveList={setActiveList}
+          />
+        )}
     </div>
   );
 }

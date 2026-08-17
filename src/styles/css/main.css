@@ -1,102 +1,3 @@
-.loaderContainer {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  align-self: center;
-  width: 100%;
-  height: 90dvh;
-  position: relative;
-  background-color: #1e1e1e;
-}
-.loaderContainer .loader {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  width: 100%;
-  height: 15rem;
-  align-items: center;
-  position: relative;
-  z-index: 1;
-}
-.loaderContainer .loader .spinnerBrown {
-  width: 6rem;
-  height: 6rem;
-  position: fixed;
-  border: 0.5rem solid;
-  border-color: #5c4f43 transparent #5c4f43 transparent;
-  border-radius: 50%;
-  animation: spinnerBrownAnimation 1.5s linear infinite;
-}
-@keyframes spinnerBrownAnimation {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
-.loaderContainer .loader .percentage {
-  position: fixed;
-  font-size: 11.5pt;
-  font-weight: 500;
-  text-align: center;
-  line-height: 1.7rem;
-  color: #ffffff;
-}
-@media (min-width: 500px) and (max-width: 600px) {
-  .loaderContainer .loader .percentage {
-    font-size: 12pt;
-  }
-}
-@media (min-width: 1000px) and (max-width: 1023px) {
-  .loaderContainer .loader .percentage {
-    font-size: 12pt;
-  }
-}
-@media (min-width: 1023px) and (max-width: 1100px) {
-  .loaderContainer .loader .percentage {
-    font-size: 8.5pt;
-  }
-}
-@media (orientation: portrait) and (min-width: 1023px) and (max-width: 1100px) {
-  .loaderContainer .loader .percentage {
-    font-size: 12pt;
-  }
-}
-@media (min-width: 1100px) and (max-width: 1200px) {
-  .loaderContainer .loader .percentage {
-    font-size: 9pt;
-  }
-}
-@media (min-width: 1200px) and (max-width: 1300px) {
-  .loaderContainer .loader .percentage {
-    font-size: 10pt;
-  }
-}
-@media (min-width: 1500px) and (max-width: 1600px) {
-  .loaderContainer .loader .percentage {
-    font-size: 11.5pt;
-  }
-}
-.loaderContainer .loader .spinnerOlive {
-  width: 10rem;
-  height: 10rem;
-  position: fixed;
-  border: 0.5rem solid;
-  border-color: #545146 transparent #545146 transparent;
-  border-radius: 50%;
-  animation: spinnerOliveAnimation 1.5s linear infinite;
-}
-@keyframes spinnerOliveAnimation {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(-360deg);
-  }
-}
-
 .container {
   display: flex;
   flex-direction: column;
@@ -233,9 +134,109 @@
   }
 }
 
+.loaderContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+  width: 100%;
+  height: 90dvh;
+  position: relative;
+  background-color: #1e1e1e;
+}
+.loaderContainer .loader {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  height: 15rem;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+}
+.loaderContainer .loader .spinnerBrown {
+  width: 6rem;
+  height: 6rem;
+  position: fixed;
+  border: 0.5rem solid;
+  border-color: #5c4f43 transparent #5c4f43 transparent;
+  border-radius: 50%;
+  animation: spinnerBrownAnimation 1.5s linear infinite;
+}
+@keyframes spinnerBrownAnimation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.loaderContainer .loader .percentage {
+  position: fixed;
+  font-size: 11.5pt;
+  font-weight: 500;
+  text-align: center;
+  line-height: 1.7rem;
+  color: #ffffff;
+}
+@media (min-width: 500px) and (max-width: 600px) {
+  .loaderContainer .loader .percentage {
+    font-size: 12pt;
+  }
+}
+@media (min-width: 1000px) and (max-width: 1023px) {
+  .loaderContainer .loader .percentage {
+    font-size: 12pt;
+  }
+}
+@media (min-width: 1023px) and (max-width: 1100px) {
+  .loaderContainer .loader .percentage {
+    font-size: 8.5pt;
+  }
+}
+@media (orientation: portrait) and (min-width: 1023px) and (max-width: 1100px) {
+  .loaderContainer .loader .percentage {
+    font-size: 12pt;
+  }
+}
+@media (min-width: 1100px) and (max-width: 1200px) {
+  .loaderContainer .loader .percentage {
+    font-size: 9pt;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1300px) {
+  .loaderContainer .loader .percentage {
+    font-size: 10pt;
+  }
+}
+@media (min-width: 1500px) and (max-width: 1600px) {
+  .loaderContainer .loader .percentage {
+    font-size: 11.5pt;
+  }
+}
+.loaderContainer .loader .spinnerOlive {
+  width: 10rem;
+  height: 10rem;
+  position: fixed;
+  border: 0.5rem solid;
+  border-color: #545146 transparent #545146 transparent;
+  border-radius: 50%;
+  animation: spinnerOliveAnimation 1.5s linear infinite;
+}
+@keyframes spinnerOliveAnimation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+
 .header {
   display: flex;
   width: 100%;
+  height: -moz-fit-content;
   height: fit-content;
   position: relative;
   animation: header 0.5s linear 1;
@@ -316,7 +317,8 @@
 .header .headerContainer .nameAndProfession {
   display: flex;
   flex-direction: row;
-  column-gap: 1.2rem;
+  -moz-column-gap: 1.2rem;
+       column-gap: 1.2rem;
   align-items: center;
 }
 @media (min-width: 600px) and (max-width: 1023px) {
@@ -328,12 +330,14 @@
 }
 @media (width: 1023px) {
   .header .headerContainer .nameAndProfession {
-    column-gap: 1.5rem;
+    -moz-column-gap: 1.5rem;
+         column-gap: 1.5rem;
   }
 }
 @media (min-width: 1023px) and (max-width: 1100px) {
   .header .headerContainer .nameAndProfession {
-    column-gap: 0.9rem;
+    -moz-column-gap: 0.9rem;
+         column-gap: 0.9rem;
   }
 }
 .header .headerContainer .nameAndProfession .name {
@@ -449,17 +453,20 @@
 .header .headerContainer .locationAndContact {
   display: flex;
   flex-direction: row;
-  column-gap: 1.5rem;
+  -moz-column-gap: 1.5rem;
+       column-gap: 1.5rem;
   align-items: center;
 }
 @media (min-width: 767px) and (max-width: 900px) {
   .header .headerContainer .locationAndContact {
-    column-gap: 1.3rem;
+    -moz-column-gap: 1.3rem;
+         column-gap: 1.3rem;
   }
 }
 @media (min-width: 900px) and (max-width: 1023px) {
   .header .headerContainer .locationAndContact {
-    column-gap: 1rem;
+    -moz-column-gap: 1rem;
+         column-gap: 1rem;
   }
 }
 .header .headerContainer .locationAndContact .location {
@@ -1294,7 +1301,8 @@
   display: flex;
   flex-direction: row;
   justify-content: center;
-  column-gap: 0.8rem;
+  -moz-column-gap: 0.8rem;
+       column-gap: 0.8rem;
   align-items: center;
   width: 100%;
   height: 4.1rem;
@@ -1692,7 +1700,9 @@
   color: #ffffff;
   animation: fail 8s linear 1;
   transition: all 0.2s ease;
-  user-select: text;
+  -webkit-user-select: text;
+     -moz-user-select: text;
+          user-select: text;
 }
 @keyframes fail {
   0% {
@@ -1917,12 +1927,20 @@ input[type=search],
 input[type=password],
 input[type=url],
 input[type=email]) {
-  appearance: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
   border-style: solid;
   outline: none;
 }
+.header .contactForm form .allInOneForm .name::-moz-placeholder {
+  color: #8b8b8b;
+}
 .header .contactForm form .allInOneForm .name::placeholder {
   color: #8b8b8b;
+}
+.header .contactForm form .allInOneForm .name::-moz-selection {
+  background-color: #5c4f43;
 }
 .header .contactForm form .allInOneForm .name::selection {
   background-color: #5c4f43;
@@ -1970,12 +1988,20 @@ input[type=search],
 input[type=password],
 input[type=url],
 input[type=email]) {
-  appearance: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
   border-style: solid;
   outline: none;
 }
+.header .contactForm form .allInOneForm .email::-moz-placeholder {
+  color: #8b8b8b;
+}
 .header .contactForm form .allInOneForm .email::placeholder {
   color: #8b8b8b;
+}
+.header .contactForm form .allInOneForm .email::-moz-selection {
+  background-color: #5c4f43;
 }
 .header .contactForm form .allInOneForm .email::selection {
   background-color: #5c4f43;
@@ -2023,12 +2049,20 @@ input[type=search],
 input[type=password],
 input[type=url],
 input[type=email]) {
-  appearance: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
   border-style: solid;
   outline: none;
 }
+.header .contactForm form .allInOneForm .subject::-moz-placeholder {
+  color: #8b8b8b;
+}
 .header .contactForm form .allInOneForm .subject::placeholder {
   color: #8b8b8b;
+}
+.header .contactForm form .allInOneForm .subject::-moz-selection {
+  background-color: #5c4f43;
 }
 .header .contactForm form .allInOneForm .subject::selection {
   background-color: #5c4f43;
@@ -2073,12 +2107,20 @@ input[type=email]) {
   font-size: 10pt;
 }
 .header .contactForm form .allInOneForm .textArea:focus:where(textarea) {
-  appearance: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
   border-style: solid;
   outline: none;
 }
+.header .contactForm form .allInOneForm .textArea::-moz-placeholder {
+  color: #8b8b8b;
+}
 .header .contactForm form .allInOneForm .textArea::placeholder {
   color: #8b8b8b;
+}
+.header .contactForm form .allInOneForm .textArea::-moz-selection {
+  background-color: #5c4f43;
 }
 .header .contactForm form .allInOneForm .textArea::selection {
   background-color: #5c4f43;
@@ -2149,7 +2191,8 @@ input[type=email]) {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  column-gap: 1rem;
+  -moz-column-gap: 1rem;
+       column-gap: 1rem;
   width: 100%;
   transition: all 0.2s ease;
 }
@@ -2335,7 +2378,8 @@ input[type=email]) {
 .mainContent {
   display: flex;
   flex-direction: row;
-  column-gap: 1rem;
+  -moz-column-gap: 1rem;
+       column-gap: 1rem;
   width: inherit;
   height: auto;
   position: relative;
@@ -2354,7 +2398,8 @@ input[type=email]) {
 }
 @media (min-width: 1023px) and (max-width: 1100px) {
   .mainContent {
-    column-gap: 0.4rem;
+    -moz-column-gap: 0.4rem;
+         column-gap: 0.4rem;
   }
 }
 @media (orientation: portrait) and (min-width: 1023px) and (max-width: 1100px) {
@@ -2365,12 +2410,14 @@ input[type=email]) {
 }
 @media (min-width: 1100px) and (max-width: 1200px) {
   .mainContent {
-    column-gap: 0.5rem;
+    -moz-column-gap: 0.5rem;
+         column-gap: 0.5rem;
   }
 }
 @media (min-width: 1200px) and (max-width: 1400px) {
   .mainContent {
-    column-gap: 0.8rem;
+    -moz-column-gap: 0.8rem;
+         column-gap: 0.8rem;
   }
 }
 .mainContent .sectionOne {
@@ -2414,7 +2461,8 @@ input[type=email]) {
 .mainContent .sectionOne .bio .imageAndDescription {
   display: flex;
   flex-direction: row;
-  column-gap: 1rem;
+  -moz-column-gap: 1rem;
+       column-gap: 1rem;
 }
 @media (min-width: 300px) and (max-width: 600px) {
   .mainContent .sectionOne .bio .imageAndDescription {
@@ -2429,32 +2477,38 @@ input[type=email]) {
 }
 @media (min-width: 1023px) and (max-width: 1100px) {
   .mainContent .sectionOne .bio .imageAndDescription {
-    column-gap: 0.4rem;
+    -moz-column-gap: 0.4rem;
+         column-gap: 0.4rem;
   }
 }
 @media (orientation: portrait) and (min-width: 1023px) and (max-width: 1100px) {
   .mainContent .sectionOne .bio .imageAndDescription {
-    column-gap: 1.2rem;
+    -moz-column-gap: 1.2rem;
+         column-gap: 1.2rem;
   }
 }
 @media (min-width: 1100px) and (max-width: 1200px) {
   .mainContent .sectionOne .bio .imageAndDescription {
-    column-gap: 0.5rem;
+    -moz-column-gap: 0.5rem;
+         column-gap: 0.5rem;
   }
 }
 @media (width: 1200px) {
   .mainContent .sectionOne .bio .imageAndDescription {
-    column-gap: 0.8rem;
+    -moz-column-gap: 0.8rem;
+         column-gap: 0.8rem;
   }
 }
 @media (min-width: 1200px) and (max-width: 1300px) {
   .mainContent .sectionOne .bio .imageAndDescription {
-    column-gap: 0.8rem;
+    -moz-column-gap: 0.8rem;
+         column-gap: 0.8rem;
   }
 }
 @media (min-width: 1300px) and (max-width: 1400px) {
   .mainContent .sectionOne .bio .imageAndDescription {
-    column-gap: 0.8rem;
+    -moz-column-gap: 0.8rem;
+         column-gap: 0.8rem;
   }
 }
 .mainContent .sectionOne .bio .imageAndDescription .imageAndTitle {
@@ -2484,7 +2538,8 @@ input[type=email]) {
   .mainContent .sectionOne .bio .imageAndDescription .imageAndTitle {
     width: 100%;
     height: auto;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
     border-radius: 0.5rem;
   }
 }
@@ -2575,7 +2630,8 @@ input[type=email]) {
 .mainContent .sectionOne .bio .imageAndDescription .imageAndTitle .mainImage {
   width: 100%;
   height: inherit;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   border-radius: 0.5rem;
   pointer-events: none;
 }
@@ -3323,7 +3379,8 @@ input[type=email]) {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  column-gap: 10%;
+  -moz-column-gap: 10%;
+       column-gap: 10%;
   align-self: center;
   align-items: center;
   width: 98%;
@@ -3529,7 +3586,8 @@ input[type=email]) {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  column-gap: 10%;
+  -moz-column-gap: 10%;
+       column-gap: 10%;
   align-self: center;
   align-items: center;
   width: 98%;
@@ -3547,7 +3605,8 @@ input[type=email]) {
 .mainContent .sectionOne .skillsAndEducation {
   display: flex;
   flex-direction: row;
-  column-gap: 1rem;
+  -moz-column-gap: 1rem;
+       column-gap: 1rem;
 }
 @media (min-width: 300px) and (max-width: 600px) {
   .mainContent .sectionOne .skillsAndEducation {
@@ -3562,32 +3621,38 @@ input[type=email]) {
 }
 @media (min-width: 1023px) and (max-width: 1100px) {
   .mainContent .sectionOne .skillsAndEducation {
-    column-gap: 0.4rem;
+    -moz-column-gap: 0.4rem;
+         column-gap: 0.4rem;
   }
 }
 @media (orientation: portrait) and (min-width: 1023px) and (max-width: 1100px) {
   .mainContent .sectionOne .skillsAndEducation {
-    column-gap: 1.2rem;
+    -moz-column-gap: 1.2rem;
+         column-gap: 1.2rem;
   }
 }
 @media (min-width: 1100px) and (max-width: 1200px) {
   .mainContent .sectionOne .skillsAndEducation {
-    column-gap: 0.5rem;
+    -moz-column-gap: 0.5rem;
+         column-gap: 0.5rem;
   }
 }
 @media (width: 1200px) {
   .mainContent .sectionOne .skillsAndEducation {
-    column-gap: 0.8rem;
+    -moz-column-gap: 0.8rem;
+         column-gap: 0.8rem;
   }
 }
 @media (min-width: 1200px) and (max-width: 1300px) {
   .mainContent .sectionOne .skillsAndEducation {
-    column-gap: 0.8rem;
+    -moz-column-gap: 0.8rem;
+         column-gap: 0.8rem;
   }
 }
 @media (min-width: 1300px) and (max-width: 1400px) {
   .mainContent .sectionOne .skillsAndEducation {
-    column-gap: 0.8rem;
+    -moz-column-gap: 0.8rem;
+         column-gap: 0.8rem;
   }
 }
 .mainContent .sectionOne .skillsAndEducation .skillsAndSkillsList {
@@ -4007,6 +4072,7 @@ input[type=email]) {
   display: flex;
   flex-direction: column;
   row-gap: 0.65rem;
+  width: -moz-fit-content;
   width: fit-content;
 }
 @media (min-width: 300px) and (max-width: 1023px) {
@@ -4096,7 +4162,9 @@ input[type=email]) {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  width: -moz-fit-content;
   width: fit-content;
+  height: -moz-fit-content;
   height: fit-content;
   align-items: center;
   position: absolute;
@@ -4414,7 +4482,8 @@ input[type=email]) {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  column-gap: 10%;
+  -moz-column-gap: 10%;
+       column-gap: 10%;
   align-self: center;
   align-items: center;
   width: 98%;
@@ -4607,7 +4676,9 @@ input[type=email]) {
 }
 .mainContent .sectionOne .skillsAndEducation .skillsAndSkillsList .skillsList .content .titleAndFluencies .fluenciesOne .fluencyOne .statusBar .percentage {
   display: flex;
+  height: -moz-fit-content;
   height: fit-content;
+  width: -moz-fit-content;
   width: fit-content;
   position: absolute;
   top: 12%;
@@ -4739,7 +4810,9 @@ input[type=email]) {
 }
 .mainContent .sectionOne .skillsAndEducation .skillsAndSkillsList .skillsList .content .titleAndFluencies .fluenciesOne .fluencyTwo .statusBar .percentage {
   display: flex;
+  height: -moz-fit-content;
   height: fit-content;
+  width: -moz-fit-content;
   width: fit-content;
   position: absolute;
   top: 12%;
@@ -4871,7 +4944,9 @@ input[type=email]) {
 }
 .mainContent .sectionOne .skillsAndEducation .skillsAndSkillsList .skillsList .content .titleAndFluencies .fluenciesOne .fluencyThree .statusBar .percentage {
   display: flex;
+  height: -moz-fit-content;
   height: fit-content;
+  width: -moz-fit-content;
   width: fit-content;
   position: absolute;
   top: 12%;
@@ -5003,7 +5078,9 @@ input[type=email]) {
 }
 .mainContent .sectionOne .skillsAndEducation .skillsAndSkillsList .skillsList .content .titleAndFluencies .fluenciesOne .fluencyFour .statusBar .percentage {
   display: flex;
+  height: -moz-fit-content;
   height: fit-content;
+  width: -moz-fit-content;
   width: fit-content;
   position: absolute;
   top: 12%;
@@ -5160,7 +5237,9 @@ input[type=email]) {
 }
 .mainContent .sectionOne .skillsAndEducation .skillsAndSkillsList .skillsList .content .titleAndFluencies .fluenciesTwo .fluencyOne .statusBar .percentage {
   display: flex;
+  height: -moz-fit-content;
   height: fit-content;
+  width: -moz-fit-content;
   width: fit-content;
   position: absolute;
   top: 12%;
@@ -5293,7 +5372,9 @@ input[type=email]) {
 }
 .mainContent .sectionOne .skillsAndEducation .skillsAndSkillsList .skillsList .content .titleAndFluencies .fluenciesTwo .fluencyTwo .statusBar .percentage {
   display: flex;
+  height: -moz-fit-content;
   height: fit-content;
+  width: -moz-fit-content;
   width: fit-content;
   position: absolute;
   top: 12%;
@@ -5425,7 +5506,9 @@ input[type=email]) {
 }
 .mainContent .sectionOne .skillsAndEducation .skillsAndSkillsList .skillsList .content .titleAndFluencies .fluenciesTwo .fluencyThree .statusBar .percentage {
   display: flex;
+  height: -moz-fit-content;
   height: fit-content;
+  width: -moz-fit-content;
   width: fit-content;
   position: absolute;
   top: 12%;
@@ -5557,7 +5640,9 @@ input[type=email]) {
 }
 .mainContent .sectionOne .skillsAndEducation .skillsAndSkillsList .skillsList .content .titleAndFluencies .fluenciesTwo .fluencyFour .statusBar .percentage {
   display: flex;
+  height: -moz-fit-content;
   height: fit-content;
+  width: -moz-fit-content;
   width: fit-content;
   position: absolute;
   top: 12%;
@@ -6110,17 +6195,20 @@ input[type=email]) {
 .mainContent .sectionOne .skillsAndEducation .educationAndEducationList .educationBox .educationContainer .institutionAndDegree .wrapper {
   display: flex;
   flex-direction: row;
-  column-gap: 0.5rem;
+  -moz-column-gap: 0.5rem;
+       column-gap: 0.5rem;
   align-items: center;
 }
 @media (min-width: 1023px) and (max-width: 1200px) {
   .mainContent .sectionOne .skillsAndEducation .educationAndEducationList .educationBox .educationContainer .institutionAndDegree .wrapper {
-    column-gap: 0.3rem;
+    -moz-column-gap: 0.3rem;
+         column-gap: 0.3rem;
   }
 }
 @media (orientation: portrait) and (min-width: 1023px) and (max-width: 1100px) {
   .mainContent .sectionOne .skillsAndEducation .educationAndEducationList .educationBox .educationContainer .institutionAndDegree .wrapper {
-    column-gap: 0.3rem;
+    -moz-column-gap: 0.3rem;
+         column-gap: 0.3rem;
   }
 }
 .mainContent .sectionOne .skillsAndEducation .educationAndEducationList .educationBox .educationContainer .institutionAndDegree .wrapper .institution {
@@ -6377,7 +6465,8 @@ input[type=email]) {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  column-gap: 10%;
+  -moz-column-gap: 10%;
+       column-gap: 10%;
   align-self: center;
   align-items: center;
   width: 98%;
@@ -6896,7 +6985,8 @@ input[type=email]) {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  column-gap: 10%;
+  -moz-column-gap: 10%;
+       column-gap: 10%;
   align-self: center;
   align-items: center;
   width: 98%;
@@ -7165,7 +7255,9 @@ input[type=email]) {
 }
 .mainContent .sectionOne .skillsList .content .titleAndFluencies .fluenciesOne .fluencyOne .statusBar .percentage {
   display: flex;
+  height: -moz-fit-content;
   height: fit-content;
+  width: -moz-fit-content;
   width: fit-content;
   position: absolute;
   top: 12%;
@@ -7229,7 +7321,8 @@ input[type=email]) {
 @media (min-width: 1023px) and (max-width: 1100px) {
   .mainContent .sectionOne .skillsList .content .titleAndFluencies .fluenciesOne .fluencyTwo {
     flex-direction: row;
-    column-gap: unset;
+    -moz-column-gap: unset;
+         column-gap: unset;
     justify-content: space-between;
     width: 100%;
   }
@@ -7277,7 +7370,9 @@ input[type=email]) {
 }
 .mainContent .sectionOne .skillsList .content .titleAndFluencies .fluenciesOne .fluencyTwo .statusBar .percentage {
   display: flex;
+  height: -moz-fit-content;
   height: fit-content;
+  width: -moz-fit-content;
   width: fit-content;
   position: absolute;
   top: 12%;
@@ -7341,7 +7436,8 @@ input[type=email]) {
 @media (min-width: 1023px) and (max-width: 1100px) {
   .mainContent .sectionOne .skillsList .content .titleAndFluencies .fluenciesOne .fluencyThree {
     flex-direction: row;
-    column-gap: unset;
+    -moz-column-gap: unset;
+         column-gap: unset;
     justify-content: space-between;
     width: 100%;
   }
@@ -7389,7 +7485,9 @@ input[type=email]) {
 }
 .mainContent .sectionOne .skillsList .content .titleAndFluencies .fluenciesOne .fluencyThree .statusBar .percentage {
   display: flex;
+  height: -moz-fit-content;
   height: fit-content;
+  width: -moz-fit-content;
   width: fit-content;
   position: absolute;
   top: 12%;
@@ -7453,7 +7551,8 @@ input[type=email]) {
 @media (min-width: 1023px) and (max-width: 1100px) {
   .mainContent .sectionOne .skillsList .content .titleAndFluencies .fluenciesOne .fluencyFour {
     flex-direction: row;
-    column-gap: unset;
+    -moz-column-gap: unset;
+         column-gap: unset;
     justify-content: space-between;
     width: 100%;
   }
@@ -7501,7 +7600,9 @@ input[type=email]) {
 }
 .mainContent .sectionOne .skillsList .content .titleAndFluencies .fluenciesOne .fluencyFour .statusBar .percentage {
   display: flex;
+  height: -moz-fit-content;
   height: fit-content;
+  width: -moz-fit-content;
   width: fit-content;
   position: absolute;
   top: 12%;
@@ -7630,7 +7731,9 @@ input[type=email]) {
 }
 .mainContent .sectionOne .skillsList .content .titleAndFluencies .fluenciesTwo .fluencyOne .statusBar .percentage {
   display: flex;
+  height: -moz-fit-content;
   height: fit-content;
+  width: -moz-fit-content;
   width: fit-content;
   position: absolute;
   top: 12%;
@@ -7694,7 +7797,8 @@ input[type=email]) {
 @media (min-width: 1023px) and (max-width: 1100px) {
   .mainContent .sectionOne .skillsList .content .titleAndFluencies .fluenciesTwo .fluencyTwo {
     flex-direction: row;
-    column-gap: unset;
+    -moz-column-gap: unset;
+         column-gap: unset;
     justify-content: space-between;
     width: 100%;
   }
@@ -7742,7 +7846,9 @@ input[type=email]) {
 }
 .mainContent .sectionOne .skillsList .content .titleAndFluencies .fluenciesTwo .fluencyTwo .statusBar .percentage {
   display: flex;
+  height: -moz-fit-content;
   height: fit-content;
+  width: -moz-fit-content;
   width: fit-content;
   position: absolute;
   top: 12%;
@@ -7806,7 +7912,8 @@ input[type=email]) {
 @media (min-width: 1023px) and (max-width: 1100px) {
   .mainContent .sectionOne .skillsList .content .titleAndFluencies .fluenciesTwo .fluencyThree {
     flex-direction: row;
-    column-gap: unset;
+    -moz-column-gap: unset;
+         column-gap: unset;
     justify-content: space-between;
     width: 100%;
   }
@@ -7854,7 +7961,9 @@ input[type=email]) {
 }
 .mainContent .sectionOne .skillsList .content .titleAndFluencies .fluenciesTwo .fluencyThree .statusBar .percentage {
   display: flex;
+  height: -moz-fit-content;
   height: fit-content;
+  width: -moz-fit-content;
   width: fit-content;
   position: absolute;
   top: 12%;
@@ -7918,7 +8027,8 @@ input[type=email]) {
 @media (min-width: 1023px) and (max-width: 1100px) {
   .mainContent .sectionOne .skillsList .content .titleAndFluencies .fluenciesTwo .fluencyFour {
     flex-direction: row;
-    column-gap: unset;
+    -moz-column-gap: unset;
+         column-gap: unset;
     justify-content: space-between;
     width: 100%;
   }
@@ -7966,7 +8076,9 @@ input[type=email]) {
 }
 .mainContent .sectionOne .skillsList .content .titleAndFluencies .fluenciesTwo .fluencyFour .statusBar .percentage {
   display: flex;
+  height: -moz-fit-content;
   height: fit-content;
+  width: -moz-fit-content;
   width: fit-content;
   position: absolute;
   top: 12%;
@@ -8345,7 +8457,8 @@ input[type=email]) {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  column-gap: 10%;
+  -moz-column-gap: 10%;
+       column-gap: 10%;
   align-self: center;
   align-items: center;
   width: 98%;
@@ -9080,7 +9193,8 @@ input[type=email]) {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  column-gap: 10%;
+  -moz-column-gap: 10%;
+       column-gap: 10%;
   align-self: center;
   align-items: center;
   width: 98%;
@@ -9162,7 +9276,8 @@ input[type=email]) {
 .mainContent .sectionTwo .projectsAndFooter .projects {
   display: flex;
   flex-direction: row;
-  column-gap: 1rem;
+  -moz-column-gap: 1rem;
+       column-gap: 1rem;
   width: 100%;
   height: 30.2rem;
 }
@@ -9185,38 +9300,44 @@ input[type=email]) {
 }
 @media (min-width: 1023px) and (max-width: 1100px) {
   .mainContent .sectionTwo .projectsAndFooter .projects {
-    column-gap: 0.4rem;
+    -moz-column-gap: 0.4rem;
+         column-gap: 0.4rem;
     height: 20.4rem;
   }
 }
 @media (orientation: portrait) and (min-width: 1023px) and (max-width: 1100px) {
   .mainContent .sectionTwo .projectsAndFooter .projects {
     flex-direction: row-reverse;
-    column-gap: 1.2rem;
+    -moz-column-gap: 1.2rem;
+         column-gap: 1.2rem;
     height: 29rem;
   }
 }
 @media (min-width: 1100px) and (max-width: 1200px) {
   .mainContent .sectionTwo .projectsAndFooter .projects {
-    column-gap: 0.5rem;
+    -moz-column-gap: 0.5rem;
+         column-gap: 0.5rem;
     height: 22.6rem;
   }
 }
 @media (width: 1200px) {
   .mainContent .sectionTwo .projectsAndFooter .projects {
-    column-gap: 0.8rem;
+    -moz-column-gap: 0.8rem;
+         column-gap: 0.8rem;
     height: 24.8rem;
   }
 }
 @media (min-width: 1200px) and (max-width: 1300px) {
   .mainContent .sectionTwo .projectsAndFooter .projects {
-    column-gap: 0.8rem;
+    -moz-column-gap: 0.8rem;
+         column-gap: 0.8rem;
     height: 24.8rem;
   }
 }
 @media (min-width: 1300px) and (max-width: 1400px) {
   .mainContent .sectionTwo .projectsAndFooter .projects {
-    column-gap: 0.8rem;
+    -moz-column-gap: 0.8rem;
+         column-gap: 0.8rem;
     height: 27.8rem;
   }
 }
@@ -9807,7 +9928,9 @@ input[type=email]) {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  width: -moz-fit-content;
   width: fit-content;
+  height: -moz-fit-content;
   height: fit-content;
   align-items: center;
   position: absolute;
@@ -10104,7 +10227,8 @@ input[type=email]) {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  column-gap: 10%;
+  -moz-column-gap: 10%;
+       column-gap: 10%;
   align-self: center;
   align-items: center;
   width: 98%;
@@ -10795,7 +10919,9 @@ input[type=email]) {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  width: -moz-fit-content;
   width: fit-content;
+  height: -moz-fit-content;
   height: fit-content;
   align-items: center;
   position: absolute;
@@ -11097,24 +11223,28 @@ input[type=email]) {
 @media (width: 600px) {
   .mainContent .sectionTwo .projectsAndFooter .footer .wrapper {
     flex-direction: row;
-    column-gap: 0.8rem;
+    -moz-column-gap: 0.8rem;
+         column-gap: 0.8rem;
   }
 }
 @media (min-width: 1023px) and (max-width: 1100px) {
   .mainContent .sectionTwo .projectsAndFooter .footer .wrapper {
     justify-content: center;
-    column-gap: 1.3rem;
+    -moz-column-gap: 1.3rem;
+         column-gap: 1.3rem;
   }
 }
 @media (orientation: portrait) and (min-width: 1023px) and (max-width: 1100px) {
   .mainContent .sectionTwo .projectsAndFooter .footer .wrapper {
-    column-gap: 2rem;
+    -moz-column-gap: 2rem;
+         column-gap: 2rem;
   }
 }
 @media (min-width: 1100px) and (max-width: 1200px) {
   .mainContent .sectionTwo .projectsAndFooter .footer .wrapper {
     justify-content: center;
-    column-gap: 1.2rem;
+    -moz-column-gap: 1.2rem;
+         column-gap: 1.2rem;
   }
 }
 .mainContent .sectionTwo .projectsAndFooter .footer .wrapper .leftPart {
@@ -11127,31 +11257,36 @@ input[type=email]) {
   .mainContent .sectionTwo .projectsAndFooter .footer .wrapper .leftPart {
     justify-content: center;
     flex-wrap: wrap;
-    column-gap: 1.5rem;
+    -moz-column-gap: 1.5rem;
+         column-gap: 1.5rem;
     width: inherit;
     line-height: 2rem;
   }
 }
 @media (min-width: 350px) and (max-width: 600px) {
   .mainContent .sectionTwo .projectsAndFooter .footer .wrapper .leftPart {
-    column-gap: 0.8rem;
+    -moz-column-gap: 0.8rem;
+         column-gap: 0.8rem;
     width: inherit;
   }
 }
 @media (min-width: 1023px) and (max-width: 1100px) {
   .mainContent .sectionTwo .projectsAndFooter .footer .wrapper .leftPart {
-    column-gap: 1rem;
+    -moz-column-gap: 1rem;
+         column-gap: 1rem;
     width: auto;
   }
 }
 @media (orientation: portrait) and (min-width: 1023px) and (max-width: 1100px) {
   .mainContent .sectionTwo .projectsAndFooter .footer .wrapper .leftPart {
-    column-gap: 3rem;
+    -moz-column-gap: 3rem;
+         column-gap: 3rem;
   }
 }
 @media (min-width: 1100px) and (max-width: 1200px) {
   .mainContent .sectionTwo .projectsAndFooter .footer .wrapper .leftPart {
-    column-gap: 1.5rem;
+    -moz-column-gap: 1.5rem;
+         column-gap: 1.5rem;
     width: auto;
   }
 }
@@ -11247,7 +11382,8 @@ input[type=email]) {
 @media (min-width: 300px) and (max-width: 350px) {
   .mainContent .sectionTwo .projectsAndFooter .footer .wrapper .rightPart {
     justify-content: center;
-    column-gap: 2rem;
+    -moz-column-gap: 2rem;
+         column-gap: 2rem;
     width: inherit;
   }
 }
@@ -11255,42 +11391,49 @@ input[type=email]) {
   .mainContent .sectionTwo .projectsAndFooter .footer .wrapper .rightPart {
     justify-content: center;
     width: inherit;
-    column-gap: 1.8rem;
+    -moz-column-gap: 1.8rem;
+         column-gap: 1.8rem;
   }
 }
 @media (min-width: 400px) and (max-width: 500px) {
   .mainContent .sectionTwo .projectsAndFooter .footer .wrapper .rightPart {
     justify-content: center;
     width: inherit;
-    column-gap: 1.5rem;
+    -moz-column-gap: 1.5rem;
+         column-gap: 1.5rem;
   }
 }
 @media (min-width: 500px) and (max-width: 600px) {
   .mainContent .sectionTwo .projectsAndFooter .footer .wrapper .rightPart {
     justify-content: center;
     width: inherit;
-    column-gap: 3rem;
+    -moz-column-gap: 3rem;
+         column-gap: 3rem;
   }
 }
 @media (width: 600px) {
   .mainContent .sectionTwo .projectsAndFooter .footer .wrapper .rightPart {
-    column-gap: 0.8rem;
+    -moz-column-gap: 0.8rem;
+         column-gap: 0.8rem;
   }
 }
 @media (min-width: 1023px) and (max-width: 1100px) {
   .mainContent .sectionTwo .projectsAndFooter .footer .wrapper .rightPart {
-    column-gap: 1rem;
+    -moz-column-gap: 1rem;
+         column-gap: 1rem;
     width: auto;
   }
 }
 @media (orientation: portrait) and (min-width: 1023px) and (max-width: 1100px) {
   .mainContent .sectionTwo .projectsAndFooter .footer .wrapper .rightPart {
-    column-gap: 3rem;
+    -moz-column-gap: 3rem;
+         column-gap: 3rem;
   }
 }
 @media (min-width: 1100px) and (max-width: 1200px) {
   .mainContent .sectionTwo .projectsAndFooter .footer .wrapper .rightPart {
-    column-gap: 1.5rem;
+    -moz-column-gap: 1.5rem;
+         column-gap: 1.5rem;
     width: auto;
   }
 }
@@ -11559,7 +11702,8 @@ input[type=email]) {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  column-gap: 10%;
+  -moz-column-gap: 10%;
+       column-gap: 10%;
   align-self: center;
   align-items: center;
   width: 98%;
@@ -12114,7 +12258,8 @@ input[type=email]) {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  column-gap: 10%;
+  -moz-column-gap: 10%;
+       column-gap: 10%;
   align-self: center;
   align-items: center;
   width: 98%;
@@ -12411,7 +12556,9 @@ input[type=email]) {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  user-select: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
   font-family: "Alan Sans", sans-serif;
   font-weight: 400;
   color: #ffffff;
