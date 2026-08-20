@@ -2629,7 +2629,6 @@ input[type=email]) {
 }
 .mainContent .sectionOne .bio .imageAndDescription .imageAndTitle .mainImage {
   width: 100%;
-  min-width: 0;
   height: inherit;
   -o-object-fit: cover;
      object-fit: cover;
