@@ -21,6 +21,7 @@ export default function App() {
   const activeListRef = useRef(null);
   const originalScrollRef = useRef({ x: 0, y: 0 });
 
+  // Related to screen sizes
   function useMediaQuery(query) {
     const subscribe = useCallback(
       (callback) => {
@@ -49,7 +50,9 @@ export default function App() {
     '(orientation: portrait) and (max-width: 1100px) and (max-height: 1470px)',
   );
   const exactLargeWidth = useMediaQuery('(width: 1023px)');
+  // End
 
+  // Loading screen, completes when all images are loaded and after 3 second delay.
   useLayoutEffect(() => {
     let loadedCount = 0;
     const totalImages = IMAGES_TO_PRELOAD.length;
@@ -89,13 +92,16 @@ export default function App() {
 
     loadAssets();
   }, []);
+  // End
 
+  // Cloases all lists and contact form
   function closeList() {
     if (activeList || isContactFormOpen) {
       setIsContactFormOpen(false);
       setActiveList(false);
     }
   }
+  // End
 
   // Toggle functions
   function toggleContactForm() {
@@ -167,6 +173,7 @@ export default function App() {
       activeListRef.current = null;
     };
   }, [activeList]);
+  // End
 
   // Auto closes lists when scrolled to the top
   useEffect(() => {
@@ -190,6 +197,7 @@ export default function App() {
       window.removeEventListener('scroll', handleScroll);
     };
   }, []);
+  // End
 
   // Escape key event handler
   useEffect(() => {
@@ -206,35 +214,36 @@ export default function App() {
       window.removeEventListener('keydown', handleKeyDown);
     };
   }, []);
+  // End
 
   return (
-    <div
+    <section
       className="container"
       onClick={closeList}
       style={
         activeList || isContactFormOpen
           ? {
-              height: autoLargeForContactFormAndEstimatesLandscape
-                ? 'auto'
-                : (!exactLargeWidth &&
-                      fixedLargeForContactFormAndEstimatesLandscape &&
-                      activeList === 'estimatesList') ||
-                    (fixedLargeForContactFormAndEstimatesLandscape &&
-                      isContactFormOpen) ||
-                    (fixedContactFormPortrait && isContactFormOpen) ||
-                    (!autoContactFormPortrait && isContactFormOpen)
-                  ? '100dvh'
-                  : 'auto',
-              overflowY:
-                activeList === 'estimatesList' || isContactFormOpen
-                  ? 'unset'
-                  : 'auto',
-              transform: 'scale(98%)',
-              animation: 'activeLists 0.2s linear 1',
-            }
+            height: autoLargeForContactFormAndEstimatesLandscape
+              ? 'auto'
+              : (!exactLargeWidth &&
+                fixedLargeForContactFormAndEstimatesLandscape &&
+                activeList === 'estimatesList') ||
+                (fixedLargeForContactFormAndEstimatesLandscape &&
+                  isContactFormOpen) ||
+                (fixedContactFormPortrait && isContactFormOpen) ||
+                (!autoContactFormPortrait && isContactFormOpen)
+                ? '100dvh'
+                : 'auto',
+            overflowY:
+              activeList === 'estimatesList' || isContactFormOpen
+                ? 'unset'
+                : 'auto',
+            transform: 'scale(98%)',
+            animation: 'activeLists 0.2s linear 1',
+          }
           : {
-              animation: 'nonActiveLists 0.2s linear 1',
-            }
+            animation: 'nonActiveLists 0.2s linear 1',
+          }
       }
     >
       {loading ? (
@@ -262,6 +271,6 @@ export default function App() {
           />
         </>
       )}
-    </div>
+    </section>
   );
 }

@@ -2629,9 +2629,16 @@ input[type=email]) {
 }
 .mainContent .sectionOne .bio .imageAndDescription .imageAndTitle .mainImage {
   width: 100%;
+  min-width: 0;
   height: inherit;
   -o-object-fit: cover;
      object-fit: cover;
+  transform: translate3d(0, 0, 0);
+  overflow-clip-margin: unset;
+  will-change: transform;
+  backface-visibility: hidden;
+  image-rendering: -webkit-optimize-contrast;
+  -webkit-backface-visibility: hidden;
   border-radius: 0.5rem;
   pointer-events: none;
 }
