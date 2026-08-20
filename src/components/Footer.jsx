@@ -58,7 +58,7 @@ export default function Footer({
               pointerEvents: activeList || isContactFormOpen ? 'none' : 'auto',
             }}>WhatsApp</a>
           <a
-            href="https://www.instagram.com/blaxcqnes?igsh=MWxmMW5yZmZhZGdo"
+            href="https://www.instagram.com/blaxcqnes"
             target="_blank"
             rel="noopener noreferrer"
             style={{
