@@ -32,7 +32,7 @@ export default function Footer({
       <div className="wrapper">
         <div className="leftPart">
           <a
-            href="https://www.linkedin.com/in/blaxcqnes/"
+            href="https://www.linkedin.com/in/blaxcqnes"
             target="_blank"
             rel="noopener noreferrer"
             style={{
