@@ -11,21 +11,21 @@ export default function Footer({
           ? undefined
           : activeList === 'cyberList' || activeList === 'webList'
             ? {
-                display: 'none',
-                width: '100%',
-                height: '0',
-                padding: '0',
-                borderRadius: '0',
-                animation: 'footerHidden 0.5s linear 1',
-                transition: 'all 0.2s ease',
-                opacity: '0',
-              }
+              display: 'none',
+              width: '100%',
+              height: '0',
+              padding: '0',
+              borderRadius: '0',
+              animation: 'footerHidden 0.5s linear 1',
+              transition: 'all 0.2s ease',
+              opacity: '0',
+            }
             : undefined),
         ...(activeList || isContactFormOpen
           ? {
-              filter:
-                'opacity(0.5) grayscale(10%) blur(0.05rem) brightness(80%)',
-            }
+            filter:
+              'opacity(0.5) grayscale(10%) blur(0.05rem) brightness(80%)',
+          }
           : undefined),
       }}
     >
@@ -51,9 +51,14 @@ export default function Footer({
           >
             GitHub
           </a>
-          <a>WhatsApp</a>
+          <a href="https://wa.me/blaxcqnes"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{
+              pointerEvents: activeList || isContactFormOpen ? 'none' : 'auto',
+            }}>WhatsApp</a>
           <a
-            href="https://www.instagram.com/blaxcqnes/"
+            href="https://www.instagram.com/blaxcqnes?igsh=MWxmMW5yZmZhZGdo"
             target="_blank"
             rel="noopener noreferrer"
             style={{
