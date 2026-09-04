@@ -81,7 +81,18 @@ export default function ServicesList({
 
     document.body.appendChild(canvas);
 
-    const imgData = canvas.toDataURL('image/jpeg', 0.92);
+    const imgData = canvas.toDataURL('image/jpeg', 0.95);
+
+    const testImage = document.createElement('img');
+
+    testImage.src = imgData;
+    testImage.style.width = '850px';
+    testImage.style.position = 'fixed';
+    testImage.style.left = '0';
+    testImage.style.top = '0';
+    testImage.style.zIndex = '99999';
+
+    document.body.appendChild(testImage);
 
     const pdf = new jsPDF({
       unit: 'in',
