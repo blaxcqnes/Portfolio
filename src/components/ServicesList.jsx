@@ -69,9 +69,6 @@ export default function ServicesList({
         clonedElement.style.height = 'auto';
         clonedElement.style.maxHeight = 'none';
         clonedElement.style.minHeight = '0';
-        clonedElement.style.position = 'fixed';
-        clonedElement.style.top = '0';
-        clonedElement.style.left = '0';
 
         clonedElement.style.overflow = 'visible';
         clonedElement.style.overflowY = 'visible';
@@ -84,7 +81,7 @@ export default function ServicesList({
       },
     });
 
-    const imgData = canvas.toDataURL('image/jpeg', 0.95);
+    const imgData = canvas.toDataURL('image/jpeg', 0.93);
 
     const testImage = document.createElement('img');
 
@@ -95,7 +92,7 @@ export default function ServicesList({
     testImage.style.top = '0';
     testImage.style.zIndex = '99999';
 
-    document.body.appendChild(testImage);
+    // document.body.appendChild(testImage);
 
     const pdf = new jsPDF({
       unit: 'in',
@@ -109,16 +106,7 @@ export default function ServicesList({
     const imgWidth = pdfWidth - 1;
     const imgHeight = (canvas.height * imgWidth) / canvas.width;
 
-    pdf.addImage(
-      imgData,
-      'JPEG',
-      0.5,
-      0.5,
-      imgWidth,
-      imgHeight,
-      undefined,
-      'FAST',
-    );
+    pdf.addImage(imgData, 'JPEG', 0.5, 0.5, imgWidth, imgHeight);
 
     pdf.save('estimates.pdf');
   };
