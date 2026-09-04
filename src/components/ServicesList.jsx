@@ -81,7 +81,7 @@ export default function ServicesList({
       },
     });
 
-    const imgData = canvas.toDataURL('image/jpeg', 2);
+    const imgData = canvas.toDataURL('image/jpeg', 1);
 
     const testImage = document.createElement('img');
 
@@ -103,10 +103,10 @@ export default function ServicesList({
 
     const pdfWidth = pdf.internal.pageSize.getWidth();
 
-    const imgWidth = pdfWidth - 1;
+    const imgWidth = pdfWidth - 0.5;
     const imgHeight = (canvas.height * imgWidth) / canvas.width;
 
-    pdf.addImage(imgData, 'JPEG', 0.5, 0.5, imgWidth, imgHeight);
+    pdf.addImage(imgData, 'JPEG', 0, 0, imgWidth, imgHeight);
 
     pdf.save('estimates.pdf');
   };
