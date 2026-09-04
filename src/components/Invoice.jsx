@@ -20,6 +20,7 @@ export default function Invoice({
     <div ref={invoiceRef} className="invoiceTemplate" id="invoiceTemplate">
       <span ref={invoiceRef} className="invoiceContent" id="invoiceTemplate">
         <p className="paymentStatus">Not Paid</p>
+        <p className="invoiceDescription">Customer e-invoice copy</p>
         <div className="invoiceHeader">
           <div className="titleNameBillNoDate">
             <span className="titleName">
@@ -40,7 +41,6 @@ export default function Invoice({
               </span>
             </span>
           </div>
-          <p className="invoiceDescription">Customer e-invoice copy</p>
         </div>
         {selectedServices.filter((service) => service.selected).length > 0 && (
           <div className="invoiceServices">
@@ -68,12 +68,12 @@ export default function Invoice({
           </div>
         )}
         <span className="invoiceDisclaimerContainer">
-          <p>
+          <p className="disclaimers">
             1- Prices are estimated and may vary depending on the project
             complexity.
           </p>
 
-          <p>
+          <p className="disclaimers">
             2- Your service purchase will be confirmed immediately after a
             successful payment. Please note that project scoping, designing, and
             development are subject to the terms of your approved agreement.
