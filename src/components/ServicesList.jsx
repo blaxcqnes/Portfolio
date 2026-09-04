@@ -60,32 +60,6 @@ export default function ServicesList({
       scrollX: 0,
       scrollY: 0,
 
-      // onclone: (clonedDocument) => {
-      //   const clonedElement = clonedDocument.getElementById('invoiceTemplate');
-
-      //   if (!clonedElement) return;
-
-      //   clonedElement.style.width = '850px';
-      //   clonedElement.style.height = 'auto';
-      //   clonedElement.style.maxHeight = 'none';
-      //   clonedElement.style.minHeight = '0';
-      //   clonedElement.style.overflow = 'visible';
-      //   clonedElement.style.overflowY = 'visible';
-      //   clonedElement.style.overflowX = 'visible';
-      //   clonedElement.style.overscrollBehaviorY = 'auto';
-      //   clonedElement.style.scrollbarGutter = 'unset';
-      //   clonedElement.style.visibility = 'visible';
-      //   clonedElement.style.pointerEvents = 'auto';
-
-      //   const allElements = clonedElement.querySelectorAll('*');
-
-      //   allElements.forEach((el) => {
-      //     el.style.wordSpacing = 'normal';
-      //     el.style.letterSpacing = 'normal';
-      //     el.style.whiteSpace = 'normal';
-      //   });
-      // },
-
       onclone: (clonedDocument) => {
         const clonedElement = clonedDocument.getElementById('invoiceTemplate');
 
@@ -98,20 +72,16 @@ export default function ServicesList({
         clonedElement.style.overflow = 'visible';
         clonedElement.style.overflowY = 'visible';
         clonedElement.style.overflowX = 'visible';
+        clonedElement.style.overscrollBehaviorY = 'auto';
+        clonedElement.style.scrollbarGutter = 'unset';
         clonedElement.style.visibility = 'visible';
-
-        // TEMPORARY DEBUGGING
-        clonedElement.style.position = 'fixed';
-        clonedElement.style.left = '0';
-        clonedElement.style.top = '0';
-        clonedElement.style.zIndex = '999999';
-        clonedElement.style.background = '#ffffff';
-
-        console.log('CLONED HTML:', clonedElement.outerHTML);
+        clonedElement.style.pointerEvents = 'auto';
       },
     });
 
-    const imgData = canvas.toDataURL('image/jpeg', 1);
+    document.body.appendChild(canvas);
+
+    const imgData = canvas.toDataURL('image/png');
 
     const pdf = new jsPDF({
       unit: 'in',
