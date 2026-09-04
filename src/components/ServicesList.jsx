@@ -49,6 +49,15 @@ export default function ServicesList({
 
     if (!element) return;
 
+    await Promise.all([
+      document.fonts.load('400 16px "Alan Sans"'),
+      document.fonts.load('500 16px "Alan Sans"'),
+      document.fonts.load('600 16px "Alan Sans"'),
+      document.fonts.load('700 16px "Alan Sans"'),
+    ]);
+
+    await document.fonts.ready;
+
     const canvas = await html2canvas(element, {
       scale: 2,
       backgroundColor: '#ffffff',
@@ -61,7 +70,7 @@ export default function ServicesList({
 
         if (!clonedElement) return;
 
-        clonedElement.style.width = '800px';
+        clonedElement.style.width = '723px';
         clonedElement.style.height = 'auto';
         clonedElement.style.maxHeight = 'none';
         clonedElement.style.minHeight = '0';
