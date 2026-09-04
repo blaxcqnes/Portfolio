@@ -52,7 +52,7 @@ export default function ServicesList({
     await document.fonts.ready;
 
     const canvas = await html2canvas(element, {
-      scale: 1,
+      scale: 3,
       backgroundColor: '#ffffff',
       useCORS: true,
       allowTaint: false,
