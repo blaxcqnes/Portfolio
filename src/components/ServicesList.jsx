@@ -52,9 +52,11 @@ export default function ServicesList({
     await document.fonts.ready;
 
     const canvas = await html2canvas(element, {
-      scale: 2,
+      scale: 1,
       backgroundColor: '#ffffff',
       useCORS: true,
+      allowTaint: false,
+      logging: false,
       scrollX: 0,
       scrollY: 0,
 
@@ -74,7 +76,6 @@ export default function ServicesList({
         clonedElement.style.scrollbarGutter = 'unset';
         clonedElement.style.visibility = 'visible';
         clonedElement.style.pointerEvents = 'auto';
-        clonedElement.style.fontFamily = 'Arial, sans-serif';
 
         const allElements = clonedElement.querySelectorAll('*');
 

@@ -10585,7 +10585,6 @@ input[type=email]) {
 }
 .mainContent .sectionTwo .servicesList .content .invoiceTemplate .invoiceContent .invoiceHeader .titleNameBillNoDate .titleName .invoiceTitle {
   color: #000000;
-  font-family: Arial, sans-serif;
   font-size: 19pt;
   font-weight: 600;
 }
@@ -10596,14 +10595,12 @@ input[type=email]) {
   align-items: start;
 }
 .mainContent .sectionTwo .servicesList .content .invoiceTemplate .invoiceContent .invoiceHeader .titleNameBillNoDate .titleName .nameContainer .nameTitle {
-  font-family: Arial, sans-serif;
   color: #8b8b8b;
   font-size: 9pt;
   font-weight: 600;
   width: fit-content;
 }
 .mainContent .sectionTwo .servicesList .content .invoiceTemplate .invoiceContent .invoiceHeader .titleNameBillNoDate .titleName .nameContainer .nameValue {
-  font-family: Arial, sans-serif;
   width: 68%;
   max-width: 68%;
   min-width: 0;
@@ -10626,14 +10623,12 @@ input[type=email]) {
   flex-wrap: wrap;
 }
 .mainContent .sectionTwo .servicesList .content .invoiceTemplate .invoiceContent .invoiceHeader .titleNameBillNoDate .billNoDate .invoiceBillNoContainer .invoiceBillNoTitle {
-  font-family: Arial, sans-serif;
   color: #8b8b8b;
   font-size: 9pt;
   font-weight: 600;
   width: fit-content;
 }
 .mainContent .sectionTwo .servicesList .content .invoiceTemplate .invoiceContent .invoiceHeader .titleNameBillNoDate .billNoDate .invoiceBillNoContainer .invoiceBillNo {
-  font-family: Arial, sans-serif;
   color: #000000;
   font-size: 9pt;
   font-weight: 600;
@@ -10645,13 +10640,11 @@ input[type=email]) {
   align-items: center;
 }
 .mainContent .sectionTwo .servicesList .content .invoiceTemplate .invoiceContent .invoiceHeader .titleNameBillNoDate .billNoDate .dateContainer .dateTitle {
-  font-family: Arial, sans-serif;
   color: #8b8b8b;
   font-size: 9pt;
   font-weight: 600;
 }
 .mainContent .sectionTwo .servicesList .content .invoiceTemplate .invoiceContent .invoiceHeader .titleNameBillNoDate .billNoDate .dateContainer .invoiceDate {
-  font-family: Arial, sans-serif;
   color: #000000;
   font-size: 9pt;
   font-weight: 600;
@@ -10660,7 +10653,6 @@ input[type=email]) {
   display: flex;
   align-self: center;
   color: #8b8b8b;
-  font-family: Arial, sans-serif;
   font-size: 10pt;
 }
 .mainContent .sectionTwo .servicesList .content .invoiceTemplate .invoiceContent .invoiceServices {
@@ -10691,17 +10683,14 @@ input[type=email]) {
 }
 .mainContent .sectionTwo .servicesList .content .invoiceTemplate .invoiceContent .invoiceServices .invoiceItems .servicesContainer .serviceNameDescription .invoiceServiceName {
   color: #000000;
-  font-family: Arial, sans-serif;
   font-size: 12pt;
   font-weight: 600;
 }
 .mainContent .sectionTwo .servicesList .content .invoiceTemplate .invoiceContent .invoiceServices .invoiceItems .servicesContainer .serviceNameDescription .invoiceServiceDescription {
-  font-family: Arial, sans-serif;
   color: #8b8b8b;
   font-size: 9pt;
 }
 .mainContent .sectionTwo .servicesList .content .invoiceTemplate .invoiceContent .invoiceServices .invoiceItems .servicesContainer .invoiceServicePrice {
-  font-family: Arial, sans-serif;
   color: #000000;
   font-size: 12pt;
   font-weight: 600;
@@ -10716,14 +10705,12 @@ input[type=email]) {
   color: rgba(84, 81, 70, 0.3764705882);
 }
 .mainContent .sectionTwo .servicesList .content .invoiceTemplate .invoiceContent .invoiceServices .invoiceTotal {
-  font-family: Arial, sans-serif;
   align-self: end;
   color: #000000;
   font-size: 13pt;
   font-weight: 600;
 }
 .mainContent .sectionTwo .servicesList .content .invoiceTemplate .invoiceContent .invoiceServices .invoiceTotal span {
-  font-family: Arial, sans-serif;
   color: #8b8b8b;
 }
 .mainContent .sectionTwo .servicesList .content .invoiceTemplate .invoiceContent .invoiceDisclaimerContainer {
@@ -10737,7 +10724,6 @@ input[type=email]) {
   border-radius: 0.5rem;
 }
 .mainContent .sectionTwo .servicesList .content .invoiceTemplate .invoiceContent p {
-  font-family: Arial, sans-serif;
   color: #8b8b8b;
   font-size: 9pt;
 }
