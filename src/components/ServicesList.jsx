@@ -81,7 +81,7 @@ export default function ServicesList({
       },
     });
 
-    const imgData = canvas.toDataURL('image/jpeg', 0.98);
+    const imgData = canvas.toDataURL('image/jpeg', 1.5);
 
     const testImage = document.createElement('img');
 
