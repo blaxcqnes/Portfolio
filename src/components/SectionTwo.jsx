@@ -12,6 +12,10 @@ export default function SectionTwo({
   guessGame,
   pauseTwo,
   playTwo,
+  select,
+  remove,
+  reset,
+  download,
   isContactFormOpen,
   activeList,
   setActiveList,
@@ -47,7 +51,13 @@ export default function SectionTwo({
   return (
     <main className="sectionTwo">
       {largeForServicesLandscape && activeList === 'servicesList' && (
-        <ServicesList setActiveList={setActiveList} />
+        <ServicesList
+          setActiveList={setActiveList}
+          select={select}
+          remove={remove}
+          reset={reset}
+          download={download}
+        />
       )}
       <div
         className="projectsAndFooter"

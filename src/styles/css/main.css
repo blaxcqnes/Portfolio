@@ -3219,12 +3219,12 @@ input[type=email]) {
 .mainContent .sectionOne .bio .imageAndDescription .descriptionAndServicesList .servicesList {
   display: flex;
   flex-direction: column;
-  row-gap: 2%;
+  row-gap: 0.5rem;
   width: 100%;
-  height: 100%;
+  height: fit-content;
   transform: scale(102%);
   animation: servicesList 0.2s linear 1;
-  scroll-margin: 0 0 7rem 0;
+  scroll-margin: 7rem 0 0 0;
   background-color: #1e1e1e;
   border-radius: 0.5rem;
   border: 0.1rem solid #545146;
@@ -3242,16 +3242,6 @@ input[type=email]) {
   100% {
     transform: scale(102%);
     opacity: 1;
-  }
-}
-@media (min-width: 300px) and (max-width: 500px) {
-  .mainContent .sectionOne .bio .imageAndDescription .descriptionAndServicesList .servicesList {
-    height: 30rem;
-  }
-}
-@media (min-width: 500px) and (max-width: 600px) {
-  .mainContent .sectionOne .bio .imageAndDescription .descriptionAndServicesList .servicesList {
-    height: 32rem;
   }
 }
 .mainContent .sectionOne .bio .imageAndDescription .descriptionAndServicesList .servicesList .titleAndButton {
@@ -3327,37 +3317,691 @@ input[type=email]) {
 }
 .mainContent .sectionOne .bio .imageAndDescription .descriptionAndServicesList .servicesList .content {
   display: flex;
-  flex-direction: row;
-  justify-content: center;
-  column-gap: 10%;
+  flex-direction: column;
+  justify-content: unset;
+  row-gap: 1rem;
   align-self: center;
   align-items: center;
   width: 98%;
-  height: 14.9rem;
+  height: 90.8%;
+  margin-bottom: 0.5rem;
+  padding-bottom: 0.6rem;
   position: relative;
   background-color: #232323;
   border-radius: 0.5rem;
 }
-@media (min-width: 300px) and (max-width: 400px) {
+@media (min-width: 300px) and (max-width: 322px) {
   .mainContent .sectionOne .bio .imageAndDescription .descriptionAndServicesList .servicesList .content {
     width: 95%;
-    height: 24.7rem;
-    align-items: unset;
+  }
+}
+@media (min-width: 322px) and (max-width: 350px) {
+  .mainContent .sectionOne .bio .imageAndDescription .descriptionAndServicesList .servicesList .content {
+    width: 95%;
+  }
+}
+@media (min-width: 350px) and (max-width: 400px) {
+  .mainContent .sectionOne .bio .imageAndDescription .descriptionAndServicesList .servicesList .content {
+    width: 95%;
   }
 }
 @media (min-width: 400px) and (max-width: 500px) {
   .mainContent .sectionOne .bio .imageAndDescription .descriptionAndServicesList .servicesList .content {
     width: 96%;
-    height: 24.5rem;
-    align-items: unset;
   }
 }
 @media (min-width: 500px) and (max-width: 600px) {
   .mainContent .sectionOne .bio .imageAndDescription .descriptionAndServicesList .servicesList .content {
     width: 96%;
-    height: 26.4rem;
-    align-items: unset;
   }
+}
+.mainContent .sectionOne .bio .imageAndDescription .descriptionAndServicesList .servicesList .content .services {
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.5rem;
+  align-items: center;
+  width: 100%;
+}
+.mainContent .sectionOne .bio .imageAndDescription .descriptionAndServicesList .servicesList .content .services .service {
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.5rem;
+  width: inherit;
+  padding: 1rem;
+  border: 0.1rem solid rgba(84, 81, 70, 0.3764705882);
+  border-radius: 0.5rem;
+  background-color: #1e1e1e;
+}
+.mainContent .sectionOne .bio .imageAndDescription .descriptionAndServicesList .servicesList .content .services .service .serviceNameAndPrice {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: start;
+}
+@media (min-width: 300px) and (max-width: 350px) {
+  .mainContent .sectionOne .bio .imageAndDescription .descriptionAndServicesList .servicesList .content .services .service .serviceNameAndPrice {
+    flex-direction: column;
+    justify-content: unset;
+    row-gap: 0.5rem;
+    align-items: end;
+  }
+}
+.mainContent .sectionOne .bio .imageAndDescription .descriptionAndServicesList .servicesList .content .services .service .serviceNameAndPrice .serviceName {
+  font-size: 11.5pt;
+  font-weight: 500;
+  color: #ffffff;
+  width: 80%;
+}
+@media (min-width: 300px) and (max-width: 350px) {
+  .mainContent .sectionOne .bio .imageAndDescription .descriptionAndServicesList .servicesList .content .services .service .serviceNameAndPrice .serviceName {
+    width: 100%;
+  }
+}
+@media (min-width: 500px) and (max-width: 600px) {
+  .mainContent .sectionOne .bio .imageAndDescription .descriptionAndServicesList .servicesList .content .services .service .serviceNameAndPrice .serviceName {
+    font-size: 12pt;
+  }
+}
+@media (width: 600px) {
+  .mainContent .sectionOne .bio .imageAndDescription .descriptionAndServicesList .servicesList .content .services .service .serviceNameAndPrice .serviceName {
+    font-size: 11.5pt;
+  }
+}
+.mainContent .sectionOne .bio .imageAndDescription .descriptionAndServicesList .servicesList .content .services .service .serviceNameAndPrice .serviceName span {
+  color: #8b8b8b;
+}
+.mainContent .sectionOne .bio .imageAndDescription .descriptionAndServicesList .servicesList .content .services .service .serviceNameAndPrice .servicePrice {
+  font-size: 11.5pt;
+  font-weight: 500;
+  color: #ebebeb;
+}
+@media (min-width: 500px) and (max-width: 600px) {
+  .mainContent .sectionOne .bio .imageAndDescription .descriptionAndServicesList .servicesList .content .services .service .serviceNameAndPrice .servicePrice {
+    font-size: 11pt;
+  }
+}
+@media (width: 600px) {
+  .mainContent .sectionOne .bio .imageAndDescription .descriptionAndServicesList .servicesList .content .services .service .serviceNameAndPrice .servicePrice {
+    font-size: 10pt;
+  }
+}
+.mainContent .sectionOne .bio .imageAndDescription .descriptionAndServicesList .servicesList .content .services .service .serviceDescriptionAndButton {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  column-gap: 4%;
+  align-items: center;
+}
+.mainContent .sectionOne .bio .imageAndDescription .descriptionAndServicesList .servicesList .content .services .service .serviceDescriptionAndButton .serviceDescription {
+  width: 78%;
+  font-size: 10pt;
+  color: #8b8b8b;
+}
+@media (min-width: 300px) and (max-width: 350px) {
+  .mainContent .sectionOne .bio .imageAndDescription .descriptionAndServicesList .servicesList .content .services .service .serviceDescriptionAndButton .serviceDescription {
+    width: 80%;
+  }
+}
+@media (min-width: 500px) and (max-width: 600px) {
+  .mainContent .sectionOne .bio .imageAndDescription .descriptionAndServicesList .servicesList .content .services .service .serviceDescriptionAndButton .serviceDescription {
+    font-size: 11pt;
+  }
+}
+@media (width: 600px) {
+  .mainContent .sectionOne .bio .imageAndDescription .descriptionAndServicesList .servicesList .content .services .service .serviceDescriptionAndButton .serviceDescription {
+    font-size: 10pt;
+  }
+}
+.mainContent .sectionOne .bio .imageAndDescription .descriptionAndServicesList .servicesList .content .services .service .serviceDescriptionAndButton .select {
+  width: 18%;
+  height: 1.6rem;
+  aspect-ratio: 1;
+  background-color: #1e1e1e;
+  border: 0.1rem solid #8b8b8b;
+  border-radius: 0.5rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 1rem;
+  cursor: pointer;
+  opacity: 0.5;
+}
+@keyframes select {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0.5;
+  }
+}
+.mainContent .sectionOne .bio .imageAndDescription .descriptionAndServicesList .servicesList .content .services .service .serviceDescriptionAndButton .select:hover {
+  opacity: 1;
+  background-color: #545146;
+}
+@media (min-width: 300px) and (max-width: 350px) {
+  .mainContent .sectionOne .bio .imageAndDescription .descriptionAndServicesList .servicesList .content .services .service .serviceDescriptionAndButton .select {
+    width: 19%;
+    height: 1.8rem;
+  }
+}
+@media (min-width: 300px) and (max-width: 1023px) {
+  .mainContent .sectionOne .bio .imageAndDescription .descriptionAndServicesList .servicesList .content .services .service .serviceDescriptionAndButton .select {
+    cursor: default;
+  }
+  .mainContent .sectionOne .bio .imageAndDescription .descriptionAndServicesList .servicesList .content .services .service .serviceDescriptionAndButton .select:hover {
+    box-shadow: none;
+  }
+}
+.mainContent .sectionOne .bio .imageAndDescription .descriptionAndServicesList .servicesList .content .services .service .serviceDescriptionAndButton .remove {
+  width: 18%;
+  height: 1.6rem;
+  aspect-ratio: 1;
+  background-color: #5f312a;
+  border: none;
+  border-radius: 0.5rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 1rem;
+  cursor: pointer;
+}
+@keyframes remove {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.mainContent .sectionOne .bio .imageAndDescription .descriptionAndServicesList .servicesList .content .services .service .serviceDescriptionAndButton .remove:hover {
+  background-color: #722f26;
+}
+@media (min-width: 300px) and (max-width: 350px) {
+  .mainContent .sectionOne .bio .imageAndDescription .descriptionAndServicesList .servicesList .content .services .service .serviceDescriptionAndButton .remove {
+    width: 19%;
+    height: 1.8rem;
+  }
+}
+@media (min-width: 300px) and (max-width: 1023px) {
+  .mainContent .sectionOne .bio .imageAndDescription .descriptionAndServicesList .servicesList .content .services .service .serviceDescriptionAndButton .remove {
+    cursor: default;
+  }
+  .mainContent .sectionOne .bio .imageAndDescription .descriptionAndServicesList .servicesList .content .services .service .serviceDescriptionAndButton .remove:hover {
+    box-shadow: none;
+  }
+}
+.mainContent .sectionOne .bio .imageAndDescription .descriptionAndServicesList .servicesList .content form {
+  display: flex;
+  flex-direction: row;
+  column-gap: 1%;
+  align-items: center;
+  width: 100%;
+  position: relative;
+  background-color: #232323;
+  border-radius: 0.5rem;
+}
+.mainContent .sectionOne .bio .imageAndDescription .descriptionAndServicesList .servicesList .content form .nameLabel {
+  display: flex;
+  position: relative;
+  width: 80%;
+  align-items: center;
+}
+.mainContent .sectionOne .bio .imageAndDescription .descriptionAndServicesList .servicesList .content form .nameLabel .up {
+  display: flex;
+  position: absolute;
+  top: -0.4rem;
+  right: 1rem;
+  background-color: #1e1e1e;
+  font-size: 7.5pt;
+  font-weight: 500;
+  border-radius: 0.1rem;
+  color: #8b8b8b;
+  z-index: 2;
+  margin: 0.2rem;
+}
+.mainContent .sectionOne .bio .imageAndDescription .descriptionAndServicesList .servicesList .content form .nameLabel .name {
+  width: 100%;
+  height: 2.5rem;
+  padding: 0.5rem;
+  border: 0.1rem solid rgba(84, 81, 70, 0.3764705882);
+  border-radius: 0.5rem;
+  background-color: #1e1e1e;
+  font-size: 10pt;
+}
+.mainContent .sectionOne .bio .imageAndDescription .descriptionAndServicesList .servicesList .content form .nameLabel .name:focus:where(input[type=text],
+input[type=search],
+input[type=password],
+input[type=url],
+input[type=email]) {
+  appearance: none;
+  border-style: solid;
+  outline: none;
+}
+.mainContent .sectionOne .bio .imageAndDescription .descriptionAndServicesList .servicesList .content form .nameLabel .name::placeholder {
+  color: #8b8b8b;
+}
+.mainContent .sectionOne .bio .imageAndDescription .descriptionAndServicesList .servicesList .content form .nameLabel .name::selection {
+  background-color: #5c4f43;
+}
+@media (min-width: 300px) and (max-width: 600px) {
+  .mainContent .sectionOne .bio .imageAndDescription .descriptionAndServicesList .servicesList .content form .nameLabel .name {
+    height: 2.5rem;
+  }
+}
+.mainContent .sectionOne .bio .imageAndDescription .descriptionAndServicesList .servicesList .content form .emailLabel {
+  display: flex;
+  position: relative;
+  width: 80%;
+  align-items: center;
+}
+.mainContent .sectionOne .bio .imageAndDescription .descriptionAndServicesList .servicesList .content form .emailLabel .up {
+  display: flex;
+  position: absolute;
+  top: -0.4rem;
+  right: 1rem;
+  background-color: #1e1e1e;
+  font-size: 7.5pt;
+  font-weight: 500;
+  border-radius: 0.1rem;
+  color: #8b8b8b;
+  z-index: 2;
+  margin: 0.2rem;
+}
+.mainContent .sectionOne .bio .imageAndDescription .descriptionAndServicesList .servicesList .content form .emailLabel .email {
+  width: 100%;
+  height: 2.5rem;
+  padding: 0.5rem;
+  border: 0.1rem solid rgba(84, 81, 70, 0.3764705882);
+  border-radius: 0.5rem;
+  background-color: #1e1e1e;
+  font-size: 10pt;
+}
+.mainContent .sectionOne .bio .imageAndDescription .descriptionAndServicesList .servicesList .content form .emailLabel .email:focus:where(input[type=text],
+input[type=search],
+input[type=password],
+input[type=url],
+input[type=email]) {
+  appearance: none;
+  border-style: solid;
+  outline: none;
+}
+.mainContent .sectionOne .bio .imageAndDescription .descriptionAndServicesList .servicesList .content form .emailLabel .email::placeholder {
+  color: #8b8b8b;
+}
+.mainContent .sectionOne .bio .imageAndDescription .descriptionAndServicesList .servicesList .content form .emailLabel .email::selection {
+  background-color: #5c4f43;
+}
+@media (min-width: 300px) and (max-width: 600px) {
+  .mainContent .sectionOne .bio .imageAndDescription .descriptionAndServicesList .servicesList .content form .emailLabel .email {
+    height: 2.5rem;
+  }
+}
+.mainContent .sectionOne .bio .imageAndDescription .descriptionAndServicesList .servicesList .content .disclaimerTotalResetDownload {
+  display: flex;
+  flex-direction: column;
+  row-gap: 2rem;
+  padding-inline: 0.4rem;
+}
+.mainContent .sectionOne .bio .imageAndDescription .descriptionAndServicesList .servicesList .content .disclaimerTotalResetDownload .disclaimer {
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.3rem;
+}
+.mainContent .sectionOne .bio .imageAndDescription .descriptionAndServicesList .servicesList .content .disclaimerTotalResetDownload .disclaimer .info {
+  font-size: 10pt;
+  color: #8b8b8b;
+}
+@keyframes infoPopup {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@media (min-width: 300px) and (max-width: 400px) {
+  .mainContent .sectionOne .bio .imageAndDescription .descriptionAndServicesList .servicesList .content .disclaimerTotalResetDownload .disclaimer .info {
+    font-size: 10pt;
+  }
+}
+@media (min-width: 400px) and (max-width: 500px) {
+  .mainContent .sectionOne .bio .imageAndDescription .descriptionAndServicesList .servicesList .content .disclaimerTotalResetDownload .disclaimer .info {
+    font-size: 10pt;
+  }
+}
+@media (min-width: 500px) and (max-width: 600px) {
+  .mainContent .sectionOne .bio .imageAndDescription .descriptionAndServicesList .servicesList .content .disclaimerTotalResetDownload .disclaimer .info {
+    font-size: 11pt;
+    bottom: 2.5rem;
+  }
+}
+.mainContent .sectionOne .bio .imageAndDescription .descriptionAndServicesList .servicesList .content .disclaimerTotalResetDownload .disclaimer .notice {
+  font-size: 10pt;
+  color: #8b8b8b;
+}
+@keyframes downloadPopup {
+  0% {
+    color: #8b8b8b;
+  }
+  50% {
+    color: #ffffff;
+  }
+  100% {
+    color: #8b8b8b;
+  }
+}
+@media (min-width: 300px) and (max-width: 400px) {
+  .mainContent .sectionOne .bio .imageAndDescription .descriptionAndServicesList .servicesList .content .disclaimerTotalResetDownload .disclaimer .notice {
+    font-size: 10pt;
+  }
+}
+@media (min-width: 400px) and (max-width: 500px) {
+  .mainContent .sectionOne .bio .imageAndDescription .descriptionAndServicesList .servicesList .content .disclaimerTotalResetDownload .disclaimer .notice {
+    font-size: 10pt;
+  }
+}
+@media (min-width: 500px) and (max-width: 600px) {
+  .mainContent .sectionOne .bio .imageAndDescription .descriptionAndServicesList .servicesList .content .disclaimerTotalResetDownload .disclaimer .notice {
+    font-size: 11pt;
+    bottom: 2.5rem;
+  }
+}
+.mainContent .sectionOne .bio .imageAndDescription .descriptionAndServicesList .servicesList .content .disclaimerTotalResetDownload .disclaimer .price {
+  font-size: 10pt;
+  color: #8b8b8b;
+}
+@keyframes priceShift {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes priceReposition {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@media (min-width: 300px) and (max-width: 400px) {
+  .mainContent .sectionOne .bio .imageAndDescription .descriptionAndServicesList .servicesList .content .disclaimerTotalResetDownload .disclaimer .price {
+    font-size: 10pt;
+  }
+}
+@media (min-width: 400px) and (max-width: 500px) {
+  .mainContent .sectionOne .bio .imageAndDescription .descriptionAndServicesList .servicesList .content .disclaimerTotalResetDownload .disclaimer .price {
+    font-size: 10pt;
+  }
+}
+@media (min-width: 500px) and (max-width: 600px) {
+  .mainContent .sectionOne .bio .imageAndDescription .descriptionAndServicesList .servicesList .content .disclaimerTotalResetDownload .disclaimer .price {
+    font-size: 11pt;
+    bottom: 2.5rem;
+  }
+}
+.mainContent .sectionOne .bio .imageAndDescription .descriptionAndServicesList .servicesList .content .disclaimerTotalResetDownload .totalResetDownload {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  column-gap: 18.401%;
+  align-items: center;
+  width: 100%;
+}
+.mainContent .sectionOne .bio .imageAndDescription .descriptionAndServicesList .servicesList .content .disclaimerTotalResetDownload .totalResetDownload .totalReset {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  column-gap: 4%;
+  align-items: center;
+  width: 60%;
+}
+.mainContent .sectionOne .bio .imageAndDescription .descriptionAndServicesList .servicesList .content .disclaimerTotalResetDownload .totalResetDownload .totalReset .total {
+  width: 60%;
+  font-size: 11.5pt;
+  font-weight: 600;
+  color: #ebebeb;
+  transition: all 0.2s ease;
+}
+.mainContent .sectionOne .bio .imageAndDescription .descriptionAndServicesList .servicesList .content .disclaimerTotalResetDownload .totalResetDownload .totalReset .total span {
+  color: #8b8b8b;
+  transition: all 0.2s ease;
+}
+.mainContent .sectionOne .bio .imageAndDescription .descriptionAndServicesList .servicesList .content .disclaimerTotalResetDownload .totalResetDownload .totalReset .reset {
+  width: 36%;
+  height: 1.6rem;
+  aspect-ratio: 1;
+  background-color: #5f312a;
+  border: none;
+  border-radius: 0.5rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 1rem;
+  font-size: 9.5pt;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+.mainContent .sectionOne .bio .imageAndDescription .descriptionAndServicesList .servicesList .content .disclaimerTotalResetDownload .totalResetDownload .totalReset .reset:hover {
+  background-color: #722f26;
+}
+.mainContent .sectionOne .bio .imageAndDescription .descriptionAndServicesList .servicesList .content .disclaimerTotalResetDownload .totalResetDownload .download {
+  width: 21.599%;
+  height: 1.6rem;
+  aspect-ratio: 1;
+  background-color: #545146;
+  border: none;
+  border-radius: 0.5rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 1rem;
+  font-size: 9.5pt;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+.mainContent .sectionOne .bio .imageAndDescription .descriptionAndServicesList .servicesList .content .disclaimerTotalResetDownload .totalResetDownload .download:hover {
+  background-color: #5c4f43;
+}
+.mainContent .sectionOne .bio .imageAndDescription .descriptionAndServicesList .servicesList .content .invoiceTemplate {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  height: 80%;
+  overflow-y: scroll;
+  overscroll-behavior-y: contain;
+  scrollbar-gutter: stable both-edges;
+  padding: 2rem;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  translate: -80% -50%;
+  background: #ffffff;
+  pointer-events: none;
+  visibility: hidden;
+  z-index: -999;
+}
+.mainContent .sectionOne .bio .imageAndDescription .descriptionAndServicesList .servicesList .content .invoiceTemplate .invoiceContent {
+  display: flex;
+  flex-direction: column;
+  row-gap: 2rem;
+  width: 100%;
+}
+.mainContent .sectionOne .bio .imageAndDescription .descriptionAndServicesList .servicesList .content .invoiceTemplate .invoiceContent .paymentStatus {
+  display: flex;
+  align-self: end;
+  width: fit-content;
+  padding: 0.8rem;
+  border-radius: 0.5rem;
+  background-color: rgba(114, 47, 38, 0.2588235294);
+  color: #722f26;
+  font-weight: 600;
+}
+.mainContent .sectionOne .bio .imageAndDescription .descriptionAndServicesList .servicesList .content .invoiceTemplate .invoiceContent .invoiceHeader {
+  display: flex;
+  flex-direction: column;
+  row-gap: 2rem;
+  height: 100%;
+  padding: 1rem;
+  position: relative;
+  border: solid 0.1rem rgba(92, 79, 67, 0.3764705882);
+  border-radius: 0.5rem;
+}
+.mainContent .sectionOne .bio .imageAndDescription .descriptionAndServicesList .servicesList .content .invoiceTemplate .invoiceContent .invoiceHeader .titleNameBillNoDate {
+  display: flex;
+  flex-direction: row;
+  column-gap: 10%;
+  justify-content: space-between;
+  align-items: end;
+}
+.mainContent .sectionOne .bio .imageAndDescription .descriptionAndServicesList .servicesList .content .invoiceTemplate .invoiceContent .invoiceHeader .titleNameBillNoDate .titleName {
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.5rem;
+  align-self: center;
+  width: 55%;
+}
+.mainContent .sectionOne .bio .imageAndDescription .descriptionAndServicesList .servicesList .content .invoiceTemplate .invoiceContent .invoiceHeader .titleNameBillNoDate .titleName .invoiceTitle {
+  color: #000000;
+  font-size: 19pt;
+  font-weight: 600;
+}
+.mainContent .sectionOne .bio .imageAndDescription .descriptionAndServicesList .servicesList .content .invoiceTemplate .invoiceContent .invoiceHeader .titleNameBillNoDate .titleName .nameContainer {
+  display: flex;
+  flex-direction: row;
+  column-gap: 0.3rem;
+  align-items: start;
+}
+.mainContent .sectionOne .bio .imageAndDescription .descriptionAndServicesList .servicesList .content .invoiceTemplate .invoiceContent .invoiceHeader .titleNameBillNoDate .titleName .nameContainer .nameTitle {
+  color: #8b8b8b;
+  font-size: 9pt;
+  font-weight: 600;
+  width: fit-content;
+}
+.mainContent .sectionOne .bio .imageAndDescription .descriptionAndServicesList .servicesList .content .invoiceTemplate .invoiceContent .invoiceHeader .titleNameBillNoDate .titleName .nameContainer .nameValue {
+  width: 68%;
+  max-width: 68%;
+  min-width: 0;
+  overflow-wrap: anywhere;
+  color: #000000;
+  font-size: 10pt;
+  font-weight: 600;
+}
+.mainContent .sectionOne .bio .imageAndDescription .descriptionAndServicesList .servicesList .content .invoiceTemplate .invoiceContent .invoiceHeader .titleNameBillNoDate .billNoDate {
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.5rem;
+  width: 35%;
+}
+.mainContent .sectionOne .bio .imageAndDescription .descriptionAndServicesList .servicesList .content .invoiceTemplate .invoiceContent .invoiceHeader .titleNameBillNoDate .billNoDate .invoiceBillNoContainer {
+  display: flex;
+  flex-direction: row;
+  column-gap: 0.3rem;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.mainContent .sectionOne .bio .imageAndDescription .descriptionAndServicesList .servicesList .content .invoiceTemplate .invoiceContent .invoiceHeader .titleNameBillNoDate .billNoDate .invoiceBillNoContainer .invoiceBillNoTitle {
+  color: #8b8b8b;
+  font-size: 9pt;
+  font-weight: 600;
+  width: fit-content;
+}
+.mainContent .sectionOne .bio .imageAndDescription .descriptionAndServicesList .servicesList .content .invoiceTemplate .invoiceContent .invoiceHeader .titleNameBillNoDate .billNoDate .invoiceBillNoContainer .invoiceBillNo {
+  color: #000000;
+  font-size: 9pt;
+  font-weight: 600;
+}
+.mainContent .sectionOne .bio .imageAndDescription .descriptionAndServicesList .servicesList .content .invoiceTemplate .invoiceContent .invoiceHeader .titleNameBillNoDate .billNoDate .dateContainer {
+  display: flex;
+  flex-direction: row;
+  column-gap: 0.3rem;
+  align-items: center;
+}
+.mainContent .sectionOne .bio .imageAndDescription .descriptionAndServicesList .servicesList .content .invoiceTemplate .invoiceContent .invoiceHeader .titleNameBillNoDate .billNoDate .dateContainer .dateTitle {
+  color: #8b8b8b;
+  font-size: 9pt;
+  font-weight: 600;
+}
+.mainContent .sectionOne .bio .imageAndDescription .descriptionAndServicesList .servicesList .content .invoiceTemplate .invoiceContent .invoiceHeader .titleNameBillNoDate .billNoDate .dateContainer .invoiceDate {
+  color: #000000;
+  font-size: 9pt;
+  font-weight: 600;
+}
+.mainContent .sectionOne .bio .imageAndDescription .descriptionAndServicesList .servicesList .content .invoiceTemplate .invoiceContent .invoiceHeader .invoiceDescription {
+  display: flex;
+  align-self: center;
+  color: #8b8b8b;
+  font-size: 10pt;
+}
+.mainContent .sectionOne .bio .imageAndDescription .descriptionAndServicesList .servicesList .content .invoiceTemplate .invoiceContent .invoiceServices {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1.5rem;
+  height: 100%;
+  padding: 1rem;
+  position: relative;
+  border: solid 0.1rem rgba(84, 81, 70, 0.3764705882);
+  border-radius: 0.5rem;
+}
+.mainContent .sectionOne .bio .imageAndDescription .descriptionAndServicesList .servicesList .content .invoiceTemplate .invoiceContent .invoiceServices .invoiceItems {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1.5rem;
+}
+.mainContent .sectionOne .bio .imageAndDescription .descriptionAndServicesList .servicesList .content .invoiceTemplate .invoiceContent .invoiceServices .invoiceItems .servicesContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.mainContent .sectionOne .bio .imageAndDescription .descriptionAndServicesList .servicesList .content .invoiceTemplate .invoiceContent .invoiceServices .invoiceItems .servicesContainer .serviceNameDescription {
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.3rem;
+}
+.mainContent .sectionOne .bio .imageAndDescription .descriptionAndServicesList .servicesList .content .invoiceTemplate .invoiceContent .invoiceServices .invoiceItems .servicesContainer .serviceNameDescription .invoiceServiceName {
+  color: #000000;
+  font-size: 12pt;
+  font-weight: 600;
+}
+.mainContent .sectionOne .bio .imageAndDescription .descriptionAndServicesList .servicesList .content .invoiceTemplate .invoiceContent .invoiceServices .invoiceItems .servicesContainer .serviceNameDescription .invoiceServiceDescription {
+  color: #8b8b8b;
+  font-size: 9pt;
+}
+.mainContent .sectionOne .bio .imageAndDescription .descriptionAndServicesList .servicesList .content .invoiceTemplate .invoiceContent .invoiceServices .invoiceItems .servicesContainer .invoiceServicePrice {
+  color: #000000;
+  font-size: 12pt;
+  font-weight: 600;
+}
+.mainContent .sectionOne .bio .imageAndDescription .descriptionAndServicesList .servicesList .content .invoiceTemplate .invoiceContent .invoiceServices .invoiceItems hr {
+  width: 80%;
+  height: 0.1rem;
+  align-self: center;
+  border: none;
+  border-radius: 0.5rem;
+  background-color: rgba(84, 81, 70, 0.3764705882);
+  color: rgba(84, 81, 70, 0.3764705882);
+}
+.mainContent .sectionOne .bio .imageAndDescription .descriptionAndServicesList .servicesList .content .invoiceTemplate .invoiceContent .invoiceServices .invoiceTotal {
+  align-self: end;
+  color: #000000;
+  font-size: 13pt;
+  font-weight: 600;
+}
+.mainContent .sectionOne .bio .imageAndDescription .descriptionAndServicesList .servicesList .content .invoiceTemplate .invoiceContent .invoiceServices .invoiceTotal span {
+  color: #8b8b8b;
+}
+.mainContent .sectionOne .bio .imageAndDescription .descriptionAndServicesList .servicesList .content .invoiceTemplate .invoiceContent .invoiceDisclaimerContainer {
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.5rem;
+  height: 100%;
+  padding: 1rem;
+  position: relative;
+  border: solid 0.1rem rgba(92, 79, 67, 0.3764705882);
+  border-radius: 0.5rem;
+}
+.mainContent .sectionOne .bio .imageAndDescription .descriptionAndServicesList .servicesList .content .invoiceTemplate .invoiceContent p {
+  color: #8b8b8b;
+  font-size: 9pt;
 }
 .mainContent .sectionOne .bio .servicesList {
   display: flex;
@@ -9262,21 +9906,20 @@ input[type=email]) {
     font-size: 9.5pt;
   }
 }
-.mainContent .sectionTwo .servicesList .content .services .service .serviceDescriptionAndButton .add {
+.mainContent .sectionTwo .servicesList .content .services .service .serviceDescriptionAndButton .select {
   width: 4.834rem;
   height: 1.6rem;
   aspect-ratio: 1;
   background-color: #1e1e1e;
   border: 0.1rem solid #8b8b8b;
   border-radius: 0.5rem;
-  background-image: url(/src/images/sectionTwo/svgs/select.svg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: 1rem;
   cursor: pointer;
   opacity: 0.5;
 }
-@keyframes add {
+@keyframes select {
   0% {
     opacity: 0;
   }
@@ -9284,69 +9927,69 @@ input[type=email]) {
     opacity: 0.5;
   }
 }
-.mainContent .sectionTwo .servicesList .content .services .service .serviceDescriptionAndButton .add:hover {
+.mainContent .sectionTwo .servicesList .content .services .service .serviceDescriptionAndButton .select:hover {
   opacity: 1;
   background-color: #545146;
 }
 @media (min-width: 300px) and (max-width: 400px) {
-  .mainContent .sectionTwo .servicesList .content .services .service .serviceDescriptionAndButton .add {
+  .mainContent .sectionTwo .servicesList .content .services .service .serviceDescriptionAndButton .select {
     width: 6rem;
     height: 2.3rem;
   }
 }
 @media (width: 700px) {
-  .mainContent .sectionTwo .servicesList .content .services .service .serviceDescriptionAndButton .add {
+  .mainContent .sectionTwo .servicesList .content .services .service .serviceDescriptionAndButton .select {
     width: 6rem;
     font-size: 9pt;
   }
 }
 @media (min-width: 700px) and (max-width: 767px) {
-  .mainContent .sectionTwo .servicesList .content .services .service .serviceDescriptionAndButton .add {
+  .mainContent .sectionTwo .servicesList .content .services .service .serviceDescriptionAndButton .select {
     width: 6rem;
     font-size: 9pt;
   }
 }
 @media (min-width: 300px) and (max-width: 1023px) {
-  .mainContent .sectionTwo .servicesList .content .services .service .serviceDescriptionAndButton .add {
+  .mainContent .sectionTwo .servicesList .content .services .service .serviceDescriptionAndButton .select {
     cursor: default;
   }
-  .mainContent .sectionTwo .servicesList .content .services .service .serviceDescriptionAndButton .add:hover {
+  .mainContent .sectionTwo .servicesList .content .services .service .serviceDescriptionAndButton .select:hover {
     box-shadow: none;
   }
 }
 @media (min-width: 1023px) and (max-width: 1100px) {
-  .mainContent .sectionTwo .servicesList .content .services .service .serviceDescriptionAndButton .add {
+  .mainContent .sectionTwo .servicesList .content .services .service .serviceDescriptionAndButton .select {
     width: 4.7rem;
     height: 1.8rem;
     font-size: 7.4pt;
   }
 }
 @media (orientation: portrait) and (min-width: 1023px) and (max-width: 1100px) {
-  .mainContent .sectionTwo .servicesList .content .services .service .serviceDescriptionAndButton .add {
+  .mainContent .sectionTwo .servicesList .content .services .service .serviceDescriptionAndButton .select {
     width: 7rem;
     height: 2.5rem;
     font-size: 10pt;
   }
-  .mainContent .sectionTwo .servicesList .content .services .service .serviceDescriptionAndButton .add:hover {
+  .mainContent .sectionTwo .servicesList .content .services .service .serviceDescriptionAndButton .select:hover {
     box-shadow: none;
   }
 }
 @media (min-width: 1100px) and (max-width: 1200px) {
-  .mainContent .sectionTwo .servicesList .content .services .service .serviceDescriptionAndButton .add {
+  .mainContent .sectionTwo .servicesList .content .services .service .serviceDescriptionAndButton .select {
     width: 5.1rem;
     height: 1.9rem;
     font-size: 8pt;
   }
 }
 @media (min-width: 1200px) and (max-width: 1300px) {
-  .mainContent .sectionTwo .servicesList .content .services .service .serviceDescriptionAndButton .add {
+  .mainContent .sectionTwo .servicesList .content .services .service .serviceDescriptionAndButton .select {
     width: 5.5rem;
     height: 2rem;
     font-size: 8pt;
   }
 }
 @media (min-width: 1300px) and (max-width: 1400px) {
-  .mainContent .sectionTwo .servicesList .content .services .service .serviceDescriptionAndButton .add {
+  .mainContent .sectionTwo .servicesList .content .services .service .serviceDescriptionAndButton .select {
     width: 6.2rem;
     height: 2.2rem;
     font-size: 9pt;
@@ -9359,7 +10002,6 @@ input[type=email]) {
   background-color: #5f312a;
   border: none;
   border-radius: 0.5rem;
-  background-image: url(/src/images/sectionTwo/svgs/remove.svg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: 1rem;
@@ -9728,7 +10370,6 @@ input[type=email]) {
   background-color: #5f312a;
   border: none;
   border-radius: 0.5rem;
-  background-image: url(/src/images/sectionTwo/svgs/reset.svg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: 1rem;
@@ -9810,7 +10451,6 @@ input[type=email]) {
   background-color: #545146;
   border: none;
   border-radius: 0.5rem;
-  background-image: url(/src/images/sectionTwo/svgs/download.svg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: 1rem;
@@ -9886,14 +10526,206 @@ input[type=email]) {
   }
 }
 .mainContent .sectionTwo .servicesList .content .invoiceTemplate {
-  width: 100%;
-  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  height: 80%;
+  overflow-y: scroll;
+  overscroll-behavior-y: contain;
+  scrollbar-gutter: stable both-edges;
+  padding: 2rem;
   position: absolute;
   left: 50%;
-  translate: -50% 0;
+  top: 50%;
+  translate: -80% -50%;
   background: #ffffff;
   pointer-events: none;
+  visibility: hidden;
   z-index: -999;
+}
+.mainContent .sectionTwo .servicesList .content .invoiceTemplate .invoiceContent {
+  display: flex;
+  flex-direction: column;
+  row-gap: 2rem;
+  width: 100%;
+}
+.mainContent .sectionTwo .servicesList .content .invoiceTemplate .invoiceContent .paymentStatus {
+  display: flex;
+  align-self: end;
+  width: fit-content;
+  padding: 0.8rem;
+  border-radius: 0.5rem;
+  background-color: rgba(114, 47, 38, 0.2588235294);
+  color: #722f26;
+  font-weight: 600;
+}
+.mainContent .sectionTwo .servicesList .content .invoiceTemplate .invoiceContent .invoiceHeader {
+  display: flex;
+  flex-direction: column;
+  row-gap: 2rem;
+  height: 100%;
+  padding: 1rem;
+  position: relative;
+  border: solid 0.1rem rgba(92, 79, 67, 0.3764705882);
+  border-radius: 0.5rem;
+}
+.mainContent .sectionTwo .servicesList .content .invoiceTemplate .invoiceContent .invoiceHeader .titleNameBillNoDate {
+  display: flex;
+  flex-direction: row;
+  column-gap: 10%;
+  justify-content: space-between;
+  align-items: end;
+}
+.mainContent .sectionTwo .servicesList .content .invoiceTemplate .invoiceContent .invoiceHeader .titleNameBillNoDate .titleName {
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.5rem;
+  align-self: center;
+  width: 55%;
+}
+.mainContent .sectionTwo .servicesList .content .invoiceTemplate .invoiceContent .invoiceHeader .titleNameBillNoDate .titleName .invoiceTitle {
+  color: #000000;
+  font-size: 19pt;
+  font-weight: 600;
+}
+.mainContent .sectionTwo .servicesList .content .invoiceTemplate .invoiceContent .invoiceHeader .titleNameBillNoDate .titleName .nameContainer {
+  display: flex;
+  flex-direction: row;
+  column-gap: 0.3rem;
+  align-items: start;
+}
+.mainContent .sectionTwo .servicesList .content .invoiceTemplate .invoiceContent .invoiceHeader .titleNameBillNoDate .titleName .nameContainer .nameTitle {
+  color: #8b8b8b;
+  font-size: 9pt;
+  font-weight: 600;
+  width: fit-content;
+}
+.mainContent .sectionTwo .servicesList .content .invoiceTemplate .invoiceContent .invoiceHeader .titleNameBillNoDate .titleName .nameContainer .nameValue {
+  width: 68%;
+  max-width: 68%;
+  min-width: 0;
+  overflow-wrap: anywhere;
+  color: #000000;
+  font-size: 10pt;
+  font-weight: 600;
+}
+.mainContent .sectionTwo .servicesList .content .invoiceTemplate .invoiceContent .invoiceHeader .titleNameBillNoDate .billNoDate {
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.5rem;
+  width: 35%;
+}
+.mainContent .sectionTwo .servicesList .content .invoiceTemplate .invoiceContent .invoiceHeader .titleNameBillNoDate .billNoDate .invoiceBillNoContainer {
+  display: flex;
+  flex-direction: row;
+  column-gap: 0.3rem;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.mainContent .sectionTwo .servicesList .content .invoiceTemplate .invoiceContent .invoiceHeader .titleNameBillNoDate .billNoDate .invoiceBillNoContainer .invoiceBillNoTitle {
+  color: #8b8b8b;
+  font-size: 9pt;
+  font-weight: 600;
+  width: fit-content;
+}
+.mainContent .sectionTwo .servicesList .content .invoiceTemplate .invoiceContent .invoiceHeader .titleNameBillNoDate .billNoDate .invoiceBillNoContainer .invoiceBillNo {
+  color: #000000;
+  font-size: 9pt;
+  font-weight: 600;
+}
+.mainContent .sectionTwo .servicesList .content .invoiceTemplate .invoiceContent .invoiceHeader .titleNameBillNoDate .billNoDate .dateContainer {
+  display: flex;
+  flex-direction: row;
+  column-gap: 0.3rem;
+  align-items: center;
+}
+.mainContent .sectionTwo .servicesList .content .invoiceTemplate .invoiceContent .invoiceHeader .titleNameBillNoDate .billNoDate .dateContainer .dateTitle {
+  color: #8b8b8b;
+  font-size: 9pt;
+  font-weight: 600;
+}
+.mainContent .sectionTwo .servicesList .content .invoiceTemplate .invoiceContent .invoiceHeader .titleNameBillNoDate .billNoDate .dateContainer .invoiceDate {
+  color: #000000;
+  font-size: 9pt;
+  font-weight: 600;
+}
+.mainContent .sectionTwo .servicesList .content .invoiceTemplate .invoiceContent .invoiceHeader .invoiceDescription {
+  display: flex;
+  align-self: center;
+  color: #8b8b8b;
+  font-size: 10pt;
+}
+.mainContent .sectionTwo .servicesList .content .invoiceTemplate .invoiceContent .invoiceServices {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1.5rem;
+  height: 100%;
+  padding: 1rem;
+  position: relative;
+  border: solid 0.1rem rgba(84, 81, 70, 0.3764705882);
+  border-radius: 0.5rem;
+}
+.mainContent .sectionTwo .servicesList .content .invoiceTemplate .invoiceContent .invoiceServices .invoiceItems {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1.5rem;
+}
+.mainContent .sectionTwo .servicesList .content .invoiceTemplate .invoiceContent .invoiceServices .invoiceItems .servicesContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.mainContent .sectionTwo .servicesList .content .invoiceTemplate .invoiceContent .invoiceServices .invoiceItems .servicesContainer .serviceNameDescription {
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.3rem;
+}
+.mainContent .sectionTwo .servicesList .content .invoiceTemplate .invoiceContent .invoiceServices .invoiceItems .servicesContainer .serviceNameDescription .invoiceServiceName {
+  color: #000000;
+  font-size: 12pt;
+  font-weight: 600;
+}
+.mainContent .sectionTwo .servicesList .content .invoiceTemplate .invoiceContent .invoiceServices .invoiceItems .servicesContainer .serviceNameDescription .invoiceServiceDescription {
+  color: #8b8b8b;
+  font-size: 9pt;
+}
+.mainContent .sectionTwo .servicesList .content .invoiceTemplate .invoiceContent .invoiceServices .invoiceItems .servicesContainer .invoiceServicePrice {
+  color: #000000;
+  font-size: 12pt;
+  font-weight: 600;
+}
+.mainContent .sectionTwo .servicesList .content .invoiceTemplate .invoiceContent .invoiceServices .invoiceItems hr {
+  width: 80%;
+  height: 0.1rem;
+  align-self: center;
+  border: none;
+  border-radius: 0.5rem;
+  background-color: rgba(84, 81, 70, 0.3764705882);
+  color: rgba(84, 81, 70, 0.3764705882);
+}
+.mainContent .sectionTwo .servicesList .content .invoiceTemplate .invoiceContent .invoiceServices .invoiceTotal {
+  align-self: end;
+  color: #000000;
+  font-size: 13pt;
+  font-weight: 600;
+}
+.mainContent .sectionTwo .servicesList .content .invoiceTemplate .invoiceContent .invoiceServices .invoiceTotal span {
+  color: #8b8b8b;
+}
+.mainContent .sectionTwo .servicesList .content .invoiceTemplate .invoiceContent .invoiceDisclaimerContainer {
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.5rem;
+  height: 100%;
+  padding: 1rem;
+  position: relative;
+  border: solid 0.1rem rgba(92, 79, 67, 0.3764705882);
+  border-radius: 0.5rem;
+}
+.mainContent .sectionTwo .servicesList .content .invoiceTemplate .invoiceContent p {
+  color: #8b8b8b;
+  font-size: 9pt;
 }
 .mainContent .sectionTwo .projectsAndFooter {
   display: flex;

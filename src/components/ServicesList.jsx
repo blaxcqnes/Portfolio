@@ -3,8 +3,15 @@ import jsPDF from 'jspdf';
 import html2canvas from 'html2canvas';
 import emailjs from '@emailjs/browser';
 import { services } from '../data/servicesList';
+import Invoice from './Invoice';
 
-export default function ServicesList({ setActiveList }) {
+export default function ServicesList({
+  select,
+  remove,
+  reset,
+  download,
+  setActiveList,
+}) {
   const [selectedServices, setSelectedServices] = useState(services);
   const [nameValue, setNameInputValue] = useState('');
   const [emailValue, setEmailInputValue] = useState('');
@@ -23,7 +30,7 @@ export default function ServicesList({ setActiveList }) {
     .filter((service) => service.selected)
     .reduce((total, service) => total + service.price, 0);
 
-  function reset() {
+  function resetValue() {
     setSelectedServices((prev) =>
       prev.map((selection) =>
         selection.selected
@@ -43,11 +50,29 @@ export default function ServicesList({ setActiveList }) {
     if (!element) return;
 
     const canvas = await html2canvas(element, {
-      scale: 3,
+      scale: 2,
       backgroundColor: '#ffffff',
       useCORS: true,
       scrollX: 0,
       scrollY: 0,
+
+      onclone: (clonedDocument) => {
+        const clonedElement = clonedDocument.getElementById('invoiceTemplate');
+
+        if (!clonedElement) return;
+
+        clonedElement.style.width = '723px';
+        clonedElement.style.height = 'auto';
+        clonedElement.style.maxHeight = 'none';
+        clonedElement.style.minHeight = '0';
+        clonedElement.style.overflow = 'visible';
+        clonedElement.style.overflowY = 'visible';
+        clonedElement.style.overflowX = 'visible';
+        clonedElement.style.overscrollBehaviorY = 'auto';
+        clonedElement.style.scrollbarGutter = 'unset';
+        clonedElement.style.visibility = 'visible';
+        clonedElement.style.pointerEvents = 'auto';
+      },
     });
 
     const imgData = canvas.toDataURL('image/jpeg', 1);
@@ -65,7 +90,7 @@ export default function ServicesList({ setActiveList }) {
 
     pdf.addImage(imgData, 'JPEG', 0.5, 0.5, imgWidth, imgHeight);
 
-    pdf.save('service-estimate.pdf');
+    pdf.save('estimates.pdf');
   };
 
   const sendEmailEstimate = (e) => {
@@ -74,6 +99,11 @@ export default function ServicesList({ setActiveList }) {
     const activeServices = selectedServices.filter(
       (service) => service.selected,
     );
+
+    const invoiceNumber = `M-INV-${new Date()
+      .toISOString()
+      .replace(/[^0-9]/g, '')
+      .slice(0, 14)}`;
 
     //Email body
     const servicesListString = activeServices
@@ -88,6 +118,7 @@ export default function ServicesList({ setActiveList }) {
     const templateParams = {
       client_name: nameValue,
       client_email: emailValue,
+      invoice_number: invoiceNumber,
       selected_services: servicesListString,
       total_price: `$${totalPriceEmailJs}`,
     };
@@ -161,14 +192,22 @@ export default function ServicesList({ setActiveList }) {
                   <button
                     className="remove"
                     onClick={() => toggleSelection(selectedServices.id)}
-                    style={{ animation: 'remove 0.2s linear 1' }}
+                    style={{
+                      animation: 'remove 0.2s linear 1',
+                      backgroundImage: `url(${remove})`,
+                    }}
+                    fetchPriority="high"
                   ></button>
                 ) : (
-                  <button
-                    className="add"
+                  <div
+                    className="select"
                     onClick={() => toggleSelection(selectedServices.id)}
-                    style={{ animation: 'add 0.2s linear 1' }}
-                  ></button>
+                    style={{
+                      animation: 'select 0.2s linear 1',
+                      backgroundImage: `url(${select})`,
+                    }}
+                    fetchPriority="high"
+                  ></div>
                 )}
               </span>
             </section>
@@ -271,10 +310,17 @@ export default function ServicesList({ setActiveList }) {
                   color: totalPrice ? '#ebebeb' : '#8b8b8b',
                 }}
               >
-                <span>Totaling:</span> ${totalPrice}
+                <span>Total:</span> ${totalPrice}
               </p>
               {totalPrice || nameValue || emailValue ? (
-                <button className="reset" onClick={reset}></button>
+                <button
+                  className="reset"
+                  onClick={resetValue}
+                  fetchPriority="high"
+                  style={{
+                    backgroundImage: `url(${reset})`,
+                  }}
+                ></button>
               ) : (
                 <button
                   className="reset"
@@ -282,7 +328,9 @@ export default function ServicesList({ setActiveList }) {
                     pointerEvents: 'none',
                     backgroundColor: '#232323',
                     opacity: 0.2,
+                    backgroundImage: `url(${reset})`,
                   }}
+                  fetchPriority="high"
                   disabled
                 ></button>
               )}
@@ -291,6 +339,8 @@ export default function ServicesList({ setActiveList }) {
               <button
                 className="download"
                 onClick={handleFinalDownloadAndSubmit}
+                fetchPriority="high"
+                style={{ backgroundImage: `url(${download})` }}
               ></button>
             ) : (
               <button
@@ -299,34 +349,20 @@ export default function ServicesList({ setActiveList }) {
                   pointerEvents: 'none',
                   backgroundColor: '#232323',
                   opacity: 0.2,
+                  backgroundImage: `url(${download})`,
                 }}
+                fetchPriority="high"
                 disabled
               ></button>
             )}
           </div>
         </div>
-        <div ref={invoiceRef} className="invoiceTemplate" id="invoiceTemplate">
-          <span ref={invoiceRef} id="invoiceTemplate">
-            <h2 style={{ color: '#000000' }}>Service Estimate</h2>
-            {selectedServices
-              .filter((service) => service.selected)
-              .map((service) => (
-                <div
-                  key={service.id}
-                  style={{ display: 'flex', justifyContent: 'space-between' }}
-                >
-                  <span style={{ color: '#000000' }}>{service.name}</span>
-                  <span style={{ color: '#000000' }}>${service.price}</span>
-                </div>
-              ))}
-
-            <hr />
-            <h3 style={{ color: '#000000' }}>
-              Total: ${totalPrice}
-              {nameValue}
-            </h3>
-          </span>
-        </div>
+        <Invoice
+          invoiceRef={invoiceRef}
+          selectedServices={selectedServices}
+          totalPrice={totalPrice}
+          nameValue={nameValue}
+        />
       </div>
     </main>
   );

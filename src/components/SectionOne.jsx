@@ -11,6 +11,10 @@ export default function SectionOne({
   me,
   pauseOne,
   playOne,
+  select,
+  remove,
+  reset,
+  download,
   isContactFormOpen,
   activeList,
   setActiveList,
@@ -55,6 +59,10 @@ export default function SectionOne({
           />
 
           <DescriptionBox
+            select={select}
+            remove={remove}
+            reset={reset}
+            download={download}
             isContactFormOpen={isContactFormOpen}
             activeList={activeList}
             setActiveList={setActiveList}
@@ -68,7 +76,13 @@ export default function SectionOne({
         {/* Services list appears above width: 600px for larger portrait screens */}
         {((largePortrait && activeList === 'servicesList') ||
           (largeForServicesLandscape && activeList === 'servicesList')) && (
-          <ServicesList setActiveList={setActiveList} />
+          <ServicesList
+            setActiveList={setActiveList}
+            select={select}
+            remove={remove}
+            reset={reset}
+            download={download}
+          />
         )}
       </section>
 

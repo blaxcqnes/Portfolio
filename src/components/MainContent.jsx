@@ -8,6 +8,10 @@ import pauseOne from '../images/sectionOne/svgs/pause.svg';
 import playOne from '../images/sectionOne/svgs/play.svg';
 import pauseTwo from '../images/sectionTwo/svgs/pause.svg';
 import playTwo from '../images/sectionTwo/svgs/play.svg';
+import select from '../images/sectionTwo/svgs/select.svg';
+import remove from '../images/sectionTwo/svgs/remove.svg';
+import reset from '../images/sectionTwo/svgs/reset.svg';
+import download from '../images/sectionTwo/svgs/download.svg';
 
 export default function MainContent({
   isContactFormOpen,
@@ -25,6 +29,10 @@ export default function MainContent({
         me={me}
         pauseOne={pauseOne}
         playOne={playOne}
+        select={select}
+        remove={remove}
+        reset={reset}
+        download={download}
         isContactFormOpen={isContactFormOpen}
         activeList={activeList}
         setActiveList={setActiveList}
@@ -39,6 +47,10 @@ export default function MainContent({
         guessGame={guessGame}
         pauseTwo={pauseTwo}
         playTwo={playTwo}
+        select={select}
+        remove={remove}
+        reset={reset}
+        download={download}
         isContactFormOpen={isContactFormOpen}
         activeList={activeList}
         setActiveList={setActiveList}
@@ -60,4 +72,8 @@ MainContent.assets = [
   playOne,
   pauseTwo,
   playTwo,
+  select,
+  remove,
+  reset,
+  download,
 ];

@@ -1,6 +1,10 @@
 import ServicesList from './ServicesList';
 
 export default function DescriptionBox({
+  select,
+  remove,
+  reset,
+  download,
   isContactFormOpen,
   activeList,
   setActiveList,
@@ -97,7 +101,13 @@ export default function DescriptionBox({
       {/* Services list appears below width: 600px for smaller portrait screens */}
       {largeLandscape || largePortrait ? undefined : mobileScreens &&
         activeList === 'servicesList' ? (
-        <ServicesList setActiveList={setActiveList} />
+        <ServicesList
+          setActiveList={setActiveList}
+          select={select}
+          remove={remove}
+          reset={reset}
+          download={download}
+        />
       ) : undefined}
     </div>
   );
