@@ -10598,6 +10598,8 @@ input[type=email]) {
   color: #8b8b8b;
   font-size: 9pt;
   font-weight: 600;
+  letter-spacing: normal;
+  white-space: normal;
   width: fit-content;
 }
 .mainContent .sectionTwo .servicesList .content .invoiceTemplate .invoiceContent .invoiceHeader .titleNameBillNoDate .titleName .nameContainer .nameValue {
@@ -10608,6 +10610,8 @@ input[type=email]) {
   color: #000000;
   font-size: 10pt;
   font-weight: 600;
+  letter-spacing: normal;
+  white-space: normal;
 }
 .mainContent .sectionTwo .servicesList .content .invoiceTemplate .invoiceContent .invoiceHeader .titleNameBillNoDate .billNoDate {
   display: flex;
@@ -10623,15 +10627,19 @@ input[type=email]) {
   flex-wrap: wrap;
 }
 .mainContent .sectionTwo .servicesList .content .invoiceTemplate .invoiceContent .invoiceHeader .titleNameBillNoDate .billNoDate .invoiceBillNoContainer .invoiceBillNoTitle {
+  width: fit-content;
   color: #8b8b8b;
   font-size: 9pt;
   font-weight: 600;
-  width: fit-content;
+  letter-spacing: normal;
+  white-space: normal;
 }
 .mainContent .sectionTwo .servicesList .content .invoiceTemplate .invoiceContent .invoiceHeader .titleNameBillNoDate .billNoDate .invoiceBillNoContainer .invoiceBillNo {
   color: #000000;
   font-size: 9pt;
   font-weight: 600;
+  letter-spacing: normal;
+  white-space: normal;
 }
 .mainContent .sectionTwo .servicesList .content .invoiceTemplate .invoiceContent .invoiceHeader .titleNameBillNoDate .billNoDate .dateContainer {
   display: flex;
@@ -10648,12 +10656,16 @@ input[type=email]) {
   color: #000000;
   font-size: 9pt;
   font-weight: 600;
+  letter-spacing: normal;
+  white-space: normal;
 }
 .mainContent .sectionTwo .servicesList .content .invoiceTemplate .invoiceContent .invoiceHeader .invoiceDescription {
   display: flex;
   align-self: center;
   color: #8b8b8b;
   font-size: 10pt;
+  letter-spacing: normal;
+  white-space: normal;
 }
 .mainContent .sectionTwo .servicesList .content .invoiceTemplate .invoiceContent .invoiceServices {
   display: flex;
@@ -10685,15 +10697,21 @@ input[type=email]) {
   color: #000000;
   font-size: 12pt;
   font-weight: 600;
+  letter-spacing: normal;
+  white-space: normal;
 }
 .mainContent .sectionTwo .servicesList .content .invoiceTemplate .invoiceContent .invoiceServices .invoiceItems .servicesContainer .serviceNameDescription .invoiceServiceDescription {
   color: #8b8b8b;
   font-size: 9pt;
+  letter-spacing: normal;
+  white-space: normal;
 }
 .mainContent .sectionTwo .servicesList .content .invoiceTemplate .invoiceContent .invoiceServices .invoiceItems .servicesContainer .invoiceServicePrice {
   color: #000000;
   font-size: 12pt;
   font-weight: 600;
+  letter-spacing: normal;
+  white-space: normal;
 }
 .mainContent .sectionTwo .servicesList .content .invoiceTemplate .invoiceContent .invoiceServices .invoiceItems hr {
   width: 80%;
@@ -10709,9 +10727,13 @@ input[type=email]) {
   color: #000000;
   font-size: 13pt;
   font-weight: 600;
+  letter-spacing: normal;
+  white-space: normal;
 }
 .mainContent .sectionTwo .servicesList .content .invoiceTemplate .invoiceContent .invoiceServices .invoiceTotal span {
   color: #8b8b8b;
+  letter-spacing: normal;
+  white-space: normal;
 }
 .mainContent .sectionTwo .servicesList .content .invoiceTemplate .invoiceContent .invoiceDisclaimerContainer {
   display: flex;
@@ -10726,6 +10748,8 @@ input[type=email]) {
 .mainContent .sectionTwo .servicesList .content .invoiceTemplate .invoiceContent p {
   color: #8b8b8b;
   font-size: 9pt;
+  letter-spacing: normal;
+  white-space: normal;
 }
 .mainContent .sectionTwo .projectsAndFooter {
   display: flex;
