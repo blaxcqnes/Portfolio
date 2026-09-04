@@ -81,7 +81,7 @@ export default function ServicesList({
 
     document.body.appendChild(canvas);
 
-    const imgData = canvas.toDataURL('image/png');
+    const imgData = canvas.toDataURL('image/jpeg', 0.92);
 
     const pdf = new jsPDF({
       unit: 'in',
@@ -94,7 +94,16 @@ export default function ServicesList({
     const imgWidth = pdfWidth - 1;
     const imgHeight = (canvas.height * imgWidth) / canvas.width;
 
-    pdf.addImage(imgData, 'JPEG', 0.5, 0.5, imgWidth, imgHeight);
+    pdf.addImage(
+      imgData,
+      'JPEG',
+      0.5,
+      0.5,
+      imgWidth,
+      imgHeight,
+      undefined,
+      'FAST',
+    );
 
     pdf.save('estimates.pdf');
   };
