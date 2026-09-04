@@ -85,13 +85,17 @@ export default function ServicesList({
     });
 
     const imgData = canvas.toDataURL('image/jpeg', 0.95);
+
     const testImage = document.createElement('img');
+
     testImage.src = imgData;
-    testImage.style.width = '90px';
+    testImage.style.width = '850px';
     testImage.style.position = 'fixed';
     testImage.style.left = '0';
     testImage.style.top = '0';
     testImage.style.zIndex = '99999';
+
+    document.body.appendChild(testImage);
 
     const pdf = new jsPDF({
       unit: 'in',
@@ -105,7 +109,16 @@ export default function ServicesList({
     const imgWidth = pdfWidth - 1;
     const imgHeight = (canvas.height * imgWidth) / canvas.width;
 
-    pdf.addImage(imgData, 'JPEG', 0.5, 0.5, imgWidth, imgHeight);
+    pdf.addImage(
+      imgData,
+      'JPEG',
+      0.5,
+      0.5,
+      imgWidth,
+      imgHeight,
+      undefined,
+      'FAST',
+    );
 
     pdf.save('estimates.pdf');
   };
