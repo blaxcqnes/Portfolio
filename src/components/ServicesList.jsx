@@ -65,7 +65,7 @@ export default function ServicesList({
 
         if (!clonedElement) return;
 
-        clonedElement.style.width = '750px';
+        clonedElement.style.width = '62.5rem';
         clonedElement.style.height = 'auto';
         clonedElement.style.maxHeight = 'none';
         clonedElement.style.minHeight = '0';
