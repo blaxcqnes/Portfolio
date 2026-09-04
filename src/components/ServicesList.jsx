@@ -49,13 +49,6 @@ export default function ServicesList({
 
     if (!element) return;
 
-    await Promise.all([
-      document.fonts.load('400 16px "Alan Sans"'),
-      document.fonts.load('500 16px "Alan Sans"'),
-      document.fonts.load('600 16px "Alan Sans"'),
-      document.fonts.load('700 16px "Alan Sans"'),
-    ]);
-
     await document.fonts.ready;
 
     const canvas = await html2canvas(element, {
@@ -81,6 +74,7 @@ export default function ServicesList({
         clonedElement.style.scrollbarGutter = 'unset';
         clonedElement.style.visibility = 'visible';
         clonedElement.style.pointerEvents = 'auto';
+        clonedElement.style.fontFamily = 'Arial, sans-serif';
 
         const allElements = clonedElement.querySelectorAll('*');
 
