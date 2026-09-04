@@ -10535,13 +10535,9 @@ input[type=email]) {
   scrollbar-gutter: stable both-edges;
   padding: 2rem;
   position: absolute;
-  left: 50%;
   top: 50%;
-  translate: -80% -50%;
+  translate: -50% -50%;
   background: #ffffff;
-  pointer-events: none;
-  visibility: hidden;
-  z-index: -999;
 }
 .mainContent .sectionTwo .servicesList .content .invoiceTemplate .invoiceContent {
   display: flex;
@@ -10714,9 +10710,9 @@ input[type=email]) {
   color: #8b8b8b;
 }
 .mainContent .sectionTwo .servicesList .content .invoiceTemplate .invoiceContent .invoiceDisclaimerContainer {
-  display: flex;
-  flex-direction: column;
-  row-gap: 0.5rem;
+  display: grid;
+  grid-template-rows: 2;
+  gap: 0.5rem;
   height: 100%;
   padding: 1rem;
   position: relative;
