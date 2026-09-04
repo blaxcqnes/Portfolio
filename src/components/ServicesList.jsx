@@ -65,7 +65,7 @@ export default function ServicesList({
 
         if (!clonedElement) return;
 
-        clonedElement.style.width = '850px';
+        clonedElement.style.width = '900px';
         clonedElement.style.height = 'auto';
         clonedElement.style.maxHeight = 'none';
         clonedElement.style.minHeight = '0';
@@ -84,18 +84,20 @@ export default function ServicesList({
       },
     });
 
-    const imgData = canvas.toDataURL('image/png');
-    image.style.width = '850px';
-    image.style.position = 'fixed';
-    image.style.top = '0';
-    image.style.left = '0';
-    image.style.zIndex = '99999';
+    const imgData = canvas.toDataURL('image/jpeg', 0.95);
+    const testImage = document.createElement('img');
+    testImage.src = imgData;
+    testImage.style.width = '90px';
+    testImage.style.position = 'fixed';
+    testImage.style.left = '0';
+    testImage.style.top = '0';
+    testImage.style.zIndex = '99999';
 
     const pdf = new jsPDF({
       unit: 'in',
       format: 'letter',
       orientation: 'portrait',
-      compress: true,
+      // compress: true,
     });
 
     const pdfWidth = pdf.internal.pageSize.getWidth();
@@ -103,7 +105,7 @@ export default function ServicesList({
     const imgWidth = pdfWidth - 1;
     const imgHeight = (canvas.height * imgWidth) / canvas.width;
 
-    pdf.addImage(imgData, 'PNG', 0.5, 0.5, imgWidth, imgHeight);
+    pdf.addImage(imgData, 'JPEG', 0.5, 0.5, imgWidth, imgHeight);
 
     pdf.save('estimates.pdf');
   };
