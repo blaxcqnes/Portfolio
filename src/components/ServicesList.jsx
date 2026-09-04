@@ -52,7 +52,7 @@ export default function ServicesList({
     await document.fonts.ready;
 
     const canvas = await html2canvas(element, {
-      scale: 2,
+      scale: 3,
       backgroundColor: '#ffffff',
       useCORS: true,
       allowTaint: false,
@@ -60,30 +60,54 @@ export default function ServicesList({
       scrollX: 0,
       scrollY: 0,
 
+      // onclone: (clonedDocument) => {
+      //   const clonedElement = clonedDocument.getElementById('invoiceTemplate');
+
+      //   if (!clonedElement) return;
+
+      //   clonedElement.style.width = '850px';
+      //   clonedElement.style.height = 'auto';
+      //   clonedElement.style.maxHeight = 'none';
+      //   clonedElement.style.minHeight = '0';
+      //   clonedElement.style.overflow = 'visible';
+      //   clonedElement.style.overflowY = 'visible';
+      //   clonedElement.style.overflowX = 'visible';
+      //   clonedElement.style.overscrollBehaviorY = 'auto';
+      //   clonedElement.style.scrollbarGutter = 'unset';
+      //   clonedElement.style.visibility = 'visible';
+      //   clonedElement.style.pointerEvents = 'auto';
+
+      //   const allElements = clonedElement.querySelectorAll('*');
+
+      //   allElements.forEach((el) => {
+      //     el.style.wordSpacing = 'normal';
+      //     el.style.letterSpacing = 'normal';
+      //     el.style.whiteSpace = 'normal';
+      //   });
+      // },
+
       onclone: (clonedDocument) => {
         const clonedElement = clonedDocument.getElementById('invoiceTemplate');
 
         if (!clonedElement) return;
 
-        clonedElement.style.width = '723px';
+        clonedElement.style.width = '850px';
         clonedElement.style.height = 'auto';
         clonedElement.style.maxHeight = 'none';
         clonedElement.style.minHeight = '0';
         clonedElement.style.overflow = 'visible';
         clonedElement.style.overflowY = 'visible';
         clonedElement.style.overflowX = 'visible';
-        clonedElement.style.overscrollBehaviorY = 'auto';
-        clonedElement.style.scrollbarGutter = 'unset';
         clonedElement.style.visibility = 'visible';
-        clonedElement.style.pointerEvents = 'auto';
 
-        const allElements = clonedElement.querySelectorAll('*');
+        // TEMPORARY DEBUGGING
+        clonedElement.style.position = 'fixed';
+        clonedElement.style.left = '0';
+        clonedElement.style.top = '0';
+        clonedElement.style.zIndex = '999999';
+        clonedElement.style.background = '#ffffff';
 
-        allElements.forEach((el) => {
-          el.style.wordSpacing = 'normal';
-          el.style.letterSpacing = 'normal';
-          el.style.whiteSpace = 'normal';
-        });
+        console.log('CLONED HTML:', clonedElement.outerHTML);
       },
     });
 
