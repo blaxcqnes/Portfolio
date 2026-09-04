@@ -72,6 +72,7 @@ export default function ServicesList({
         clonedElement.style.position = 'fixed';
         clonedElement.style.top = '0';
         clonedElement.style.left = '0';
+        clonedElement.style.translate = 'unset';
 
         clonedElement.style.overflow = 'visible';
         clonedElement.style.overflowY = 'visible';

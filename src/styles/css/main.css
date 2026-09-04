@@ -10532,7 +10532,7 @@ input[type=email]) {
   overscroll-behavior-y: contain;
   scrollbar-gutter: stable both-edges;
   padding: 2rem;
-  position: absolute;
+  position: fixed;
   left: 50%;
   top: 50%;
   translate: -50% -50%;
