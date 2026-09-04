@@ -65,10 +65,13 @@ export default function ServicesList({
 
         if (!clonedElement) return;
 
-        clonedElement.style.width = '900px';
+        clonedElement.style.width = '750px';
         clonedElement.style.height = 'auto';
         clonedElement.style.maxHeight = 'none';
         clonedElement.style.minHeight = '0';
+        clonedElement.style.position = 'fixed';
+        clonedElement.style.top = '0';
+        clonedElement.style.left = '0';
 
         clonedElement.style.overflow = 'visible';
         clonedElement.style.overflowY = 'visible';
@@ -78,21 +81,11 @@ export default function ServicesList({
         clonedElement.style.scrollbarGutter = 'unset';
         clonedElement.style.visibility = 'visible';
         clonedElement.style.pointerEvents = 'auto';
+        clonedElement.style.zIndex = '999';
       },
     });
 
     const imgData = canvas.toDataURL('image/jpeg', 1);
-
-    const testImage = document.createElement('img');
-
-    testImage.src = imgData;
-    testImage.style.width = '900px';
-    testImage.style.position = 'fixed';
-    testImage.style.left = '0';
-    testImage.style.top = '0';
-    testImage.style.zIndex = '99999';
-
-    // document.body.appendChild(testImage);
 
     const pdf = new jsPDF({
       unit: 'in',
@@ -103,10 +96,10 @@ export default function ServicesList({
 
     const pdfWidth = pdf.internal.pageSize.getWidth();
 
-    const imgWidth = pdfWidth - 0.5;
+    const imgWidth = pdfWidth - 1;
     const imgHeight = (canvas.height * imgWidth) / canvas.width;
 
-    pdf.addImage(imgData, 'JPEG', 0, 0, imgWidth, imgHeight);
+    pdf.addImage(imgData, 'JPEG', 0.5, 0.5, imgWidth, imgHeight);
 
     pdf.save('estimates.pdf');
   };
