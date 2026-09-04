@@ -10535,8 +10535,11 @@ input[type=email]) {
   position: fixed;
   left: 50%;
   top: 50%;
-  translate: -50% -50%;
+  translate: -50% -45%;
   background: #ffffff;
+  pointer-events: none;
+  visibility: hidden;
+  z-index: -999;
 }
 .mainContent .sectionTwo .servicesList .content .invoiceTemplate .invoiceContent {
   display: block;
