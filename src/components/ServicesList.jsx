@@ -52,7 +52,7 @@ export default function ServicesList({
     await document.fonts.ready;
 
     const canvas = await html2canvas(element, {
-      scale: 3,
+      scale: 2,
       backgroundColor: '#ffffff',
       useCORS: true,
       allowTaint: false,
@@ -69,9 +69,11 @@ export default function ServicesList({
         clonedElement.style.height = 'auto';
         clonedElement.style.maxHeight = 'none';
         clonedElement.style.minHeight = '0';
+
         clonedElement.style.overflow = 'visible';
         clonedElement.style.overflowY = 'visible';
         clonedElement.style.overflowX = 'visible';
+
         clonedElement.style.overscrollBehaviorY = 'auto';
         clonedElement.style.scrollbarGutter = 'unset';
         clonedElement.style.visibility = 'visible';
@@ -79,25 +81,13 @@ export default function ServicesList({
       },
     });
 
-    document.body.appendChild(canvas);
-
-    const imgData = canvas.toDataURL('image/jpeg', 0.95);
-
-    const testImage = document.createElement('img');
-
-    testImage.src = imgData;
-    testImage.style.width = '850px';
-    testImage.style.position = 'fixed';
-    testImage.style.left = '0';
-    testImage.style.top = '0';
-    testImage.style.zIndex = '99999';
-
-    document.body.appendChild(testImage);
+    const imgData = canvas.toDataURL('image/png');
 
     const pdf = new jsPDF({
       unit: 'in',
       format: 'letter',
       orientation: 'portrait',
+      compress: true,
     });
 
     const pdfWidth = pdf.internal.pageSize.getWidth();
@@ -105,16 +95,7 @@ export default function ServicesList({
     const imgWidth = pdfWidth - 1;
     const imgHeight = (canvas.height * imgWidth) / canvas.width;
 
-    pdf.addImage(
-      imgData,
-      'JPEG',
-      0.5,
-      0.5,
-      imgWidth,
-      imgHeight,
-      undefined,
-      'FAST',
-    );
+    pdf.addImage(imgData, 'PNG', 0.5, 0.5, imgWidth, imgHeight);
 
     pdf.save('estimates.pdf');
   };
