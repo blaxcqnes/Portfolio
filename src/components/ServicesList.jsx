@@ -58,6 +58,8 @@ export default function ServicesList({
       scrollX: 0,
       scrollY: 0,
 
+      foreignObjectRendering: true,
+
       onclone: (clonedDocument) => {
         const clonedElement = clonedDocument.getElementById('invoiceTemplate');
 
