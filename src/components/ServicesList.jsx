@@ -52,7 +52,7 @@ export default function ServicesList({
     await document.fonts.ready;
 
     const canvas = await html2canvas(element, {
-      scale: 2,
+      scale: 3,
       backgroundColor: '#ffffff',
       useCORS: true,
       allowTaint: false,
@@ -89,7 +89,7 @@ export default function ServicesList({
     const testImage = document.createElement('img');
 
     testImage.src = imgData;
-    testImage.style.width = '850px';
+    testImage.style.width = '900px';
     testImage.style.position = 'fixed';
     testImage.style.left = '0';
     testImage.style.top = '0';
