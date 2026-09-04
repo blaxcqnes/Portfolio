@@ -52,7 +52,7 @@ export default function ServicesList({
     await document.fonts.ready;
 
     const canvas = await html2canvas(element, {
-      scale: 2,
+      scale: 3,
       backgroundColor: '#ffffff',
       useCORS: true,
       allowTaint: false,
@@ -69,6 +69,9 @@ export default function ServicesList({
         clonedElement.style.height = 'auto';
         clonedElement.style.maxHeight = 'none';
         clonedElement.style.minHeight = '0';
+        clonedElement.style.position = 'fixed';
+        clonedElement.style.top = '0';
+        clonedElement.style.left = '0';
 
         clonedElement.style.overflow = 'visible';
         clonedElement.style.overflowY = 'visible';
