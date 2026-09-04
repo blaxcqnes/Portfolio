@@ -49,12 +49,12 @@ export default function ServicesList({
 
     if (!element) return;
 
-    await Promise.all([
-      document.fonts.load('400 16px "Alan Sans"'),
-      document.fonts.load('500 16px "Alan Sans"'),
-      document.fonts.load('600 16px "Alan Sans"'),
-      document.fonts.load('700 16px "Alan Sans"'),
-    ]);
+    // await Promise.all([
+    //   document.fonts.load('400 16px "Alan Sans"'),
+    //   document.fonts.load('500 16px "Alan Sans"'),
+    //   document.fonts.load('600 16px "Alan Sans"'),
+    //   document.fonts.load('700 16px "Alan Sans"'),
+    // ]);
 
     await document.fonts.ready;
 
