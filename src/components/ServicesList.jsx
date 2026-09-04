@@ -85,6 +85,11 @@ export default function ServicesList({
     });
 
     const imgData = canvas.toDataURL('image/png');
+    image.style.width = '850px';
+    image.style.position = 'fixed';
+    image.style.top = '0';
+    image.style.left = '0';
+    image.style.zIndex = '99999';
 
     const pdf = new jsPDF({
       unit: 'in',
