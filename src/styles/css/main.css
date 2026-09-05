@@ -3830,7 +3830,7 @@ input[type=email]) {
 .mainContent .sectionOne .bio .imageAndDescription .descriptionAndServicesList .servicesList .content .invoiceTemplate .invoiceContent .statusDescription .paymentStatus {
   display: inline-block;
   width: 88px;
-  height: 41px;
+  height: 42px;
   padding: 12px;
   border-radius: 0.5rem;
   background-color: rgba(114, 47, 38, 0.2588235294);
@@ -4081,7 +4081,7 @@ input[type=email]) {
 }
 .mainContent .sectionOne .bio .imageAndDescription .descriptionAndServicesList .servicesList .content .invoiceTemplate .invoiceContent .invoiceDisclaimerContainer .disclaimers {
   display: block;
-  width: 530px;
+  width: 565px;
   margin-bottom: 10px;
   color: #8b8b8b;
   font-family: "Alan Sans", sans-serif;
@@ -10524,7 +10524,7 @@ input[type=email]) {
 .mainContent .sectionTwo .servicesList .content .invoiceTemplate .invoiceContent .statusDescription .paymentStatus {
   display: inline-block;
   width: 88px;
-  height: 41px;
+  height: 42px;
   padding: 12px;
   border-radius: 0.5rem;
   background-color: rgba(114, 47, 38, 0.2588235294);
@@ -10775,7 +10775,7 @@ input[type=email]) {
 }
 .mainContent .sectionTwo .servicesList .content .invoiceTemplate .invoiceContent .invoiceDisclaimerContainer .disclaimers {
   display: block;
-  width: 530px;
+  width: 565px;
   margin-bottom: 10px;
   color: #8b8b8b;
   font-family: "Alan Sans", sans-serif;
