@@ -49,14 +49,19 @@ export default function ServicesList({
 
     if (!element) return;
 
+    await document.fonts.load('400 16px "Alan Sans"');
+    await document.fonts.load('600 16px "Alan Sans"');
     await document.fonts.ready;
+    element.getBoundingClientRect();
+
+    await new Promise(requestAnimationFrame);
+    await new Promise(requestAnimationFrame);
 
     const canvas = await html2canvas(element, {
       scale: 3,
       backgroundColor: '#ffffff',
       useCORS: true,
       letterRendering: true,
-      letterSpacing: '0.03px',
       allowTaint: false,
       logging: false,
       scrollX: 0,
@@ -67,7 +72,7 @@ export default function ServicesList({
 
         if (!clonedElement) return;
 
-        clonedElement.style.width = '46.875rem';
+        clonedElement.style.width = '750px';
         clonedElement.style.height = 'auto';
         clonedElement.style.maxHeight = 'none';
         clonedElement.style.minHeight = '0';
@@ -88,7 +93,7 @@ export default function ServicesList({
       },
     });
 
-    const imgData = canvas.toDataURL('image/jpeg', 0.93);
+    const imgData = canvas.toDataURL('image/png');
 
     const pdf = new jsPDF('p', 'mm', 'a4');
 
@@ -97,7 +102,7 @@ export default function ServicesList({
     const imgWidth = pdfWidth - 1;
     const imgHeight = (canvas.height * imgWidth) / canvas.width;
 
-    pdf.addImage(imgData, 'JPEG', 0.5, 0.5, imgWidth, imgHeight);
+    pdf.addImage(imgData, 'PNG', 0.5, 0.5, imgWidth, imgHeight);
 
     pdf.save('estimates.pdf');
   };
