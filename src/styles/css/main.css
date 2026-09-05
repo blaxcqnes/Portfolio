@@ -10397,7 +10397,7 @@ input[type=email]) {
   }
 }
 .mainContent .sectionTwo .servicesList .content .invoiceTemplate {
-  width: 800%;
+  width: 80%;
   height: 80%;
   overflow-y: scroll;
   overscroll-behavior-y: contain;
