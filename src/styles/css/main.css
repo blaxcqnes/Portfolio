@@ -10547,7 +10547,6 @@ input[type=email]) {
 .mainContent .sectionTwo .servicesList .content .invoiceTemplate .invoiceContent .paymentStatus {
   display: inline-block;
   width: fit-content;
-  padding: 0.8rem;
   border-radius: 0.5rem;
   background-color: rgba(114, 47, 38, 0.2588235294);
   color: #722f26;
@@ -10567,7 +10566,6 @@ input[type=email]) {
 .mainContent .sectionTwo .servicesList .content .invoiceTemplate .invoiceContent .invoiceHeader {
   display: block;
   height: auto;
-  padding: 1rem;
   margin-top: 2rem;
   position: relative;
   border: solid 0.1rem rgba(92, 79, 67, 0.3764705882);
@@ -10655,7 +10653,6 @@ input[type=email]) {
 }
 .mainContent .sectionTwo .servicesList .content .invoiceTemplate .invoiceContent .invoiceServices {
   display: block;
-  padding: 1rem;
   margin-top: 2rem;
   position: relative;
   border: solid 0.1rem rgba(84, 81, 70, 0.3764705882);
@@ -10717,7 +10714,6 @@ input[type=email]) {
 .mainContent .sectionTwo .servicesList .content .invoiceTemplate .invoiceContent .invoiceDisclaimerContainer {
   display: block;
   height: auto;
-  padding: 1rem;
   margin-top: 2rem;
   position: relative;
   border: solid 0.1rem rgba(92, 79, 67, 0.3764705882);
