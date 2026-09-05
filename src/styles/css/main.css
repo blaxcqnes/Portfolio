@@ -3455,13 +3455,9 @@ input[type=email]) {
 .mainContent .sectionOne .bio .imageAndDescription .descriptionAndServicesList .servicesList .content .services .service .serviceDescriptionAndButton .select {
   width: 18%;
   height: 1.6rem;
-  aspect-ratio: 1;
   background-color: #1e1e1e;
   border: 0.1rem solid #8b8b8b;
   border-radius: 0.5rem;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: 1rem;
   cursor: pointer;
   opacity: 0.5;
 }
@@ -3494,13 +3490,10 @@ input[type=email]) {
 .mainContent .sectionOne .bio .imageAndDescription .descriptionAndServicesList .servicesList .content .services .service .serviceDescriptionAndButton .remove {
   width: 18%;
   height: 1.6rem;
-  aspect-ratio: 1;
+  padding: 0.2rem;
   background-color: #5f312a;
   border: none;
   border-radius: 0.5rem;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: 1rem;
   cursor: pointer;
 }
 @keyframes remove {
@@ -3770,13 +3763,10 @@ input[type=email]) {
 .mainContent .sectionOne .bio .imageAndDescription .descriptionAndServicesList .servicesList .content .disclaimerTotalResetDownload .totalResetDownload .totalReset .reset {
   width: 36%;
   height: 1.6rem;
-  aspect-ratio: 1;
+  padding: 0.3rem;
   background-color: #5f312a;
   border: none;
   border-radius: 0.5rem;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: 1rem;
   font-size: 9.5pt;
   cursor: pointer;
   transition: all 0.2s ease;
@@ -3784,22 +3774,35 @@ input[type=email]) {
 .mainContent .sectionOne .bio .imageAndDescription .descriptionAndServicesList .servicesList .content .disclaimerTotalResetDownload .totalResetDownload .totalReset .reset:hover {
   background-color: #722f26;
 }
+@media (min-width: 300px) and (max-width: 1023px) {
+  .mainContent .sectionOne .bio .imageAndDescription .descriptionAndServicesList .servicesList .content .disclaimerTotalResetDownload .totalResetDownload .totalReset .reset {
+    cursor: default;
+  }
+  .mainContent .sectionOne .bio .imageAndDescription .descriptionAndServicesList .servicesList .content .disclaimerTotalResetDownload .totalResetDownload .totalReset .reset:hover {
+    box-shadow: none;
+  }
+}
 .mainContent .sectionOne .bio .imageAndDescription .descriptionAndServicesList .servicesList .content .disclaimerTotalResetDownload .totalResetDownload .download {
   width: 21.599%;
   height: 1.6rem;
-  aspect-ratio: 1;
+  padding: 0.2rem;
   background-color: #545146;
   border: none;
   border-radius: 0.5rem;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: 1rem;
   font-size: 9.5pt;
   cursor: pointer;
   transition: all 0.2s ease;
 }
 .mainContent .sectionOne .bio .imageAndDescription .descriptionAndServicesList .servicesList .content .disclaimerTotalResetDownload .totalResetDownload .download:hover {
   background-color: #5c4f43;
+}
+@media (min-width: 300px) and (max-width: 1023px) {
+  .mainContent .sectionOne .bio .imageAndDescription .descriptionAndServicesList .servicesList .content .disclaimerTotalResetDownload .totalResetDownload .download {
+    cursor: default;
+  }
+  .mainContent .sectionOne .bio .imageAndDescription .descriptionAndServicesList .servicesList .content .disclaimerTotalResetDownload .totalResetDownload .download:hover {
+    box-shadow: none;
+  }
 }
 .mainContent .sectionOne .bio .imageAndDescription .descriptionAndServicesList .servicesList .content .invoiceTemplate {
   display: flex;
@@ -9909,13 +9912,9 @@ input[type=email]) {
 .mainContent .sectionTwo .servicesList .content .services .service .serviceDescriptionAndButton .select {
   width: 4.834rem;
   height: 1.6rem;
-  aspect-ratio: 1;
   background-color: #1e1e1e;
   border: 0.1rem solid #8b8b8b;
   border-radius: 0.5rem;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: 1rem;
   cursor: pointer;
   opacity: 0.5;
 }
@@ -9930,32 +9929,6 @@ input[type=email]) {
 .mainContent .sectionTwo .servicesList .content .services .service .serviceDescriptionAndButton .select:hover {
   opacity: 1;
   background-color: #545146;
-}
-@media (min-width: 300px) and (max-width: 400px) {
-  .mainContent .sectionTwo .servicesList .content .services .service .serviceDescriptionAndButton .select {
-    width: 6rem;
-    height: 2.3rem;
-  }
-}
-@media (width: 700px) {
-  .mainContent .sectionTwo .servicesList .content .services .service .serviceDescriptionAndButton .select {
-    width: 6rem;
-    font-size: 9pt;
-  }
-}
-@media (min-width: 700px) and (max-width: 767px) {
-  .mainContent .sectionTwo .servicesList .content .services .service .serviceDescriptionAndButton .select {
-    width: 6rem;
-    font-size: 9pt;
-  }
-}
-@media (min-width: 300px) and (max-width: 1023px) {
-  .mainContent .sectionTwo .servicesList .content .services .service .serviceDescriptionAndButton .select {
-    cursor: default;
-  }
-  .mainContent .sectionTwo .servicesList .content .services .service .serviceDescriptionAndButton .select:hover {
-    box-shadow: none;
-  }
 }
 @media (min-width: 1023px) and (max-width: 1100px) {
   .mainContent .sectionTwo .servicesList .content .services .service .serviceDescriptionAndButton .select {
@@ -9998,13 +9971,10 @@ input[type=email]) {
 .mainContent .sectionTwo .servicesList .content .services .service .serviceDescriptionAndButton .remove {
   width: 4.834rem;
   height: 1.6rem;
-  aspect-ratio: 1;
+  padding: 0.2rem;
   background-color: #5f312a;
   border: none;
   border-radius: 0.5rem;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: 1rem;
   cursor: pointer;
 }
 @keyframes remove {
@@ -10017,32 +9987,6 @@ input[type=email]) {
 }
 .mainContent .sectionTwo .servicesList .content .services .service .serviceDescriptionAndButton .remove:hover {
   background-color: #722f26;
-}
-@media (min-width: 300px) and (max-width: 400px) {
-  .mainContent .sectionTwo .servicesList .content .services .service .serviceDescriptionAndButton .remove {
-    width: 6rem;
-    height: 2.3rem;
-  }
-}
-@media (width: 700px) {
-  .mainContent .sectionTwo .servicesList .content .services .service .serviceDescriptionAndButton .remove {
-    width: 6rem;
-    font-size: 9pt;
-  }
-}
-@media (min-width: 700px) and (max-width: 767px) {
-  .mainContent .sectionTwo .servicesList .content .services .service .serviceDescriptionAndButton .remove {
-    width: 6rem;
-    font-size: 9pt;
-  }
-}
-@media (min-width: 300px) and (max-width: 1023px) {
-  .mainContent .sectionTwo .servicesList .content .services .service .serviceDescriptionAndButton .remove {
-    cursor: default;
-  }
-  .mainContent .sectionTwo .servicesList .content .services .service .serviceDescriptionAndButton .remove:hover {
-    box-shadow: none;
-  }
 }
 @media (min-width: 1023px) and (max-width: 1100px) {
   .mainContent .sectionTwo .servicesList .content .services .service .serviceDescriptionAndButton .remove {
@@ -10366,45 +10310,16 @@ input[type=email]) {
 .mainContent .sectionTwo .servicesList .content .disclaimerTotalResetDownload .totalResetDownload .totalReset .reset {
   width: 4.834rem;
   height: 1.6rem;
-  aspect-ratio: 1;
+  padding: 0.3rem;
   background-color: #5f312a;
   border: none;
   border-radius: 0.5rem;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: 1rem;
   font-size: 9.5pt;
   cursor: pointer;
   transition: all 0.2s ease;
 }
 .mainContent .sectionTwo .servicesList .content .disclaimerTotalResetDownload .totalResetDownload .totalReset .reset:hover {
   background-color: #722f26;
-}
-@media (min-width: 300px) and (max-width: 400px) {
-  .mainContent .sectionTwo .servicesList .content .disclaimerTotalResetDownload .totalResetDownload .totalReset .reset {
-    width: 6rem;
-    height: 2.3rem;
-  }
-}
-@media (width: 700px) {
-  .mainContent .sectionTwo .servicesList .content .disclaimerTotalResetDownload .totalResetDownload .totalReset .reset {
-    width: 6rem;
-    font-size: 9pt;
-  }
-}
-@media (min-width: 700px) and (max-width: 767px) {
-  .mainContent .sectionTwo .servicesList .content .disclaimerTotalResetDownload .totalResetDownload .totalReset .reset {
-    width: 6rem;
-    font-size: 9pt;
-  }
-}
-@media (min-width: 300px) and (max-width: 1023px) {
-  .mainContent .sectionTwo .servicesList .content .disclaimerTotalResetDownload .totalResetDownload .totalReset .reset {
-    cursor: default;
-  }
-  .mainContent .sectionTwo .servicesList .content .disclaimerTotalResetDownload .totalResetDownload .totalReset .reset:hover {
-    box-shadow: none;
-  }
 }
 @media (min-width: 1023px) and (max-width: 1100px) {
   .mainContent .sectionTwo .servicesList .content .disclaimerTotalResetDownload .totalResetDownload .totalReset .reset {
@@ -10447,45 +10362,16 @@ input[type=email]) {
 .mainContent .sectionTwo .servicesList .content .disclaimerTotalResetDownload .totalResetDownload .download {
   width: 4.834rem;
   height: 1.6rem;
-  aspect-ratio: 1;
+  padding: 0.2rem;
   background-color: #545146;
   border: none;
   border-radius: 0.5rem;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: 1rem;
   font-size: 9.5pt;
   cursor: pointer;
   transition: all 0.2s ease;
 }
 .mainContent .sectionTwo .servicesList .content .disclaimerTotalResetDownload .totalResetDownload .download:hover {
   background-color: #5c4f43;
-}
-@media (min-width: 300px) and (max-width: 400px) {
-  .mainContent .sectionTwo .servicesList .content .disclaimerTotalResetDownload .totalResetDownload .download {
-    width: 6rem;
-    height: 2.3rem;
-  }
-}
-@media (width: 700px) {
-  .mainContent .sectionTwo .servicesList .content .disclaimerTotalResetDownload .totalResetDownload .download {
-    width: 6rem;
-    font-size: 9pt;
-  }
-}
-@media (min-width: 700px) and (max-width: 767px) {
-  .mainContent .sectionTwo .servicesList .content .disclaimerTotalResetDownload .totalResetDownload .download {
-    width: 6rem;
-    font-size: 9pt;
-  }
-}
-@media (min-width: 300px) and (max-width: 1023px) {
-  .mainContent .sectionTwo .servicesList .content .disclaimerTotalResetDownload .totalResetDownload .download {
-    cursor: default;
-  }
-  .mainContent .sectionTwo .servicesList .content .disclaimerTotalResetDownload .totalResetDownload .download:hover {
-    box-shadow: none;
-  }
 }
 @media (min-width: 1023px) and (max-width: 1100px) {
   .mainContent .sectionTwo .servicesList .content .disclaimerTotalResetDownload .totalResetDownload .download {

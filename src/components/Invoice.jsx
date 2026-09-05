@@ -5,17 +5,16 @@ export default function Invoice({
   nameValue,
 }) {
   const now = new Date();
-
   const day = String(now.getDate()).padStart(2, '0');
   const month = String(now.getMonth() + 1).padStart(2, '0');
   const year = now.getFullYear();
   const hours = String(now.getHours()).padStart(2, '0');
   const minutes = String(now.getMinutes()).padStart(2, '0');
-
   const invoiceNumber = `INV${hours}${minutes}${day}${month}${year}`;
 
   const today = new Date();
   const formattedDate = today.toLocaleDateString('en-GB');
+
   return (
     <div ref={invoiceRef} className="invoiceTemplate" id="invoiceTemplate">
       <span ref={invoiceRef} className="invoiceContent" id="invoiceTemplate">

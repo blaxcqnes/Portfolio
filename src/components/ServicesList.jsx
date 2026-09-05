@@ -72,8 +72,8 @@ export default function ServicesList({
 
         if (!clonedElement) return;
 
-        clonedElement.style.width = '800px';
-        clonedElement.style.maxWidth = '800px';
+        clonedElement.style.width = '850px';
+        clonedElement.style.maxWidth = '850px';
         clonedElement.style.height = 'auto';
         clonedElement.style.maxHeight = 'none';
         clonedElement.style.minHeight = '0';
@@ -204,25 +204,25 @@ export default function ServicesList({
                   {selectedServices.description}
                 </p>
                 {selectedServices.selected ? (
-                  <button
+                  <img
                     className="remove"
+                    src={remove}
                     onClick={() => toggleSelection(selectedServices.id)}
                     style={{
                       animation: 'remove 0.2s linear 1',
-                      backgroundImage: `url(${remove})`,
                     }}
                     fetchPriority="high"
-                  ></button>
+                  />
                 ) : (
-                  <div
+                  <img
                     className="select"
+                    src={select}
                     onClick={() => toggleSelection(selectedServices.id)}
                     style={{
                       animation: 'select 0.2s linear 1',
-                      backgroundImage: `url(${select})`,
                     }}
                     fetchPriority="high"
-                  ></div>
+                  />
                 )}
               </span>
             </section>
@@ -328,47 +328,45 @@ export default function ServicesList({
                 <span>Total:</span> ${totalPrice}
               </p>
               {totalPrice || nameValue || emailValue ? (
-                <button
+                <img
                   className="reset"
                   onClick={resetValue}
+                  src={reset}
                   fetchPriority="high"
-                  style={{
-                    backgroundImage: `url(${reset})`,
-                  }}
-                ></button>
+                />
               ) : (
-                <button
+                <img
                   className="reset"
                   style={{
                     pointerEvents: 'none',
                     backgroundColor: '#232323',
                     opacity: 0.2,
-                    backgroundImage: `url(${reset})`,
                   }}
+                  src={reset}
                   fetchPriority="high"
                   disabled
-                ></button>
+                />
               )}
             </section>
             {totalPrice && nameValue && emailValue ? (
-              <button
+              <img
                 className="download"
                 onClick={handleFinalDownloadAndSubmit}
+                src={download}
                 fetchPriority="high"
-                style={{ backgroundImage: `url(${download})` }}
-              ></button>
+              />
             ) : (
-              <button
+              <img
                 className="download"
                 style={{
                   pointerEvents: 'none',
                   backgroundColor: '#232323',
                   opacity: 0.2,
-                  backgroundImage: `url(${download})`,
                 }}
+                src={download}
                 fetchPriority="high"
                 disabled
-              ></button>
+              />
             )}
           </div>
         </div>

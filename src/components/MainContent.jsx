@@ -65,15 +65,15 @@ export default function MainContent({
 
 MainContent.assets = [
   me,
-  kaffa,
-  veila,
-  guessGame,
-  pauseOne,
-  playOne,
-  pauseTwo,
-  playTwo,
   select,
   remove,
   reset,
   download,
+  pauseOne,
+  playOne,
+  pauseTwo,
+  playTwo,
+  kaffa,
+  veila,
+  guessGame,
 ];
