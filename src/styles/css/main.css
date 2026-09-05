@@ -10540,6 +10540,8 @@ input[type=email]) {
   pointer-events: none;
   visibility: hidden;
   z-index: -999;
+  letter-spacing: 0.01px;
+  text-rendering: geometricPrecision;
 }
 .mainContent .sectionTwo .servicesList .content .invoiceTemplate .invoiceContent {
   display: block;
@@ -10553,6 +10555,8 @@ input[type=email]) {
   color: #722f26;
   font-size: 9pt;
   font-weight: 600;
+  letter-spacing: 0.01px;
+  text-rendering: geometricPrecision;
 }
 .mainContent .sectionTwo .servicesList .content .invoiceTemplate .invoiceContent .invoiceDescription {
   display: inline-block;
@@ -10563,6 +10567,8 @@ input[type=email]) {
   color: #8b8b8b;
   font-size: 9pt;
   font-weight: 600;
+  letter-spacing: 0.01px;
+  text-rendering: geometricPrecision;
 }
 .mainContent .sectionTwo .servicesList .content .invoiceTemplate .invoiceContent .invoiceHeader {
   display: block;
@@ -10572,26 +10578,36 @@ input[type=email]) {
   position: relative;
   border: solid 0.1rem rgba(92, 79, 67, 0.3764705882);
   border-radius: 0.5rem;
+  letter-spacing: 0.01px;
+  text-rendering: geometricPrecision;
 }
 .mainContent .sectionTwo .servicesList .content .invoiceTemplate .invoiceContent .invoiceHeader .titleNameBillNoDate {
   display: block;
   margin-bottom: 1.5rem;
+  letter-spacing: 0.01px;
+  text-rendering: geometricPrecision;
 }
 .mainContent .sectionTwo .servicesList .content .invoiceTemplate .invoiceContent .invoiceHeader .titleNameBillNoDate .titleName {
   display: block;
   width: 70%;
+  letter-spacing: 0.01px;
+  text-rendering: geometricPrecision;
 }
 .mainContent .sectionTwo .servicesList .content .invoiceTemplate .invoiceContent .invoiceHeader .titleNameBillNoDate .titleName .invoiceTitle {
   margin-bottom: 0.5rem;
   color: #000000;
   font-size: 19pt;
   font-weight: 600;
+  letter-spacing: 0.01px;
+  text-rendering: geometricPrecision;
 }
 .mainContent .sectionTwo .servicesList .content .invoiceTemplate .invoiceContent .invoiceHeader .titleNameBillNoDate .titleName .nameContainer {
   display: block;
   height: fit-content;
   position: relative;
   margin-bottom: 0.5rem;
+  letter-spacing: 0.01px;
+  text-rendering: geometricPrecision;
 }
 .mainContent .sectionTwo .servicesList .content .invoiceTemplate .invoiceContent .invoiceHeader .titleNameBillNoDate .titleName .nameContainer .nameTitle {
   display: block;
@@ -10601,6 +10617,8 @@ input[type=email]) {
   color: #8b8b8b;
   font-size: 9pt;
   font-weight: 600;
+  letter-spacing: 0.01px;
+  text-rendering: geometricPrecision;
 }
 .mainContent .sectionTwo .servicesList .content .invoiceTemplate .invoiceContent .invoiceHeader .titleNameBillNoDate .titleName .nameContainer .nameValue {
   width: 95%;
@@ -10610,6 +10628,8 @@ input[type=email]) {
   color: #000000;
   font-size: 10pt;
   font-weight: 600;
+  letter-spacing: 0.01px;
+  text-rendering: geometricPrecision;
 }
 .mainContent .sectionTwo .servicesList .content .invoiceTemplate .invoiceContent .invoiceHeader .titleNameBillNoDate .billNoDate {
   height: auto;

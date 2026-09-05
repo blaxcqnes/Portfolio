@@ -52,9 +52,10 @@ export default function ServicesList({
     await document.fonts.ready;
 
     const canvas = await html2canvas(element, {
-      scale: 3,
+      scale: 2,
       backgroundColor: '#ffffff',
       useCORS: true,
+      letterRendering: true,
       allowTaint: false,
       logging: false,
       scrollX: 0,
@@ -86,27 +87,16 @@ export default function ServicesList({
       },
     });
 
-    const imgData = canvas.toDataURL('image/jpeg', 0.8);
+    const imgData = canvas.toDataURL('image/jpeg', 1.0);
 
-    const pdf = new jsPDF({
-      unit: 'in',
-      format: 'letter',
-      orientation: 'portrait',
-      // compress: true,
-    });
+    const pdf = new jsPDF('p', 'mm', 'a4');
 
     const pdfWidth = pdf.internal.pageSize.getWidth();
 
     const imgWidth = pdfWidth - 1;
     const imgHeight = (canvas.height * imgWidth) / canvas.width;
 
-    const pageWidth = pdf.internal.pageSize.getWidth();
-    const pageHeight = pdf.internal.pageSize.getHeight();
-
-    const x = (pageWidth - imgWidth) / 2;
-    const y = (pageHeight - imgHeight) / 2;
-
-    pdf.addImage(imgData, 'JPEG', x, y, imgWidth, imgHeight);
+    pdf.addImage(imgData, 'JPEG', 0.5, 0.5, imgWidth, imgHeight);
 
     pdf.save('estimates.pdf');
   };
