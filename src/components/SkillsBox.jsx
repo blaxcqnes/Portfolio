@@ -216,19 +216,17 @@ export default function SkillsBox({
           )}
 
           {!isContactFormOpen || !activeList ? (
-            <div
+            <img
               className="pausePlay"
               onClick={pausePlay}
-              fetchPriority="high"
+              src={isPaused ? playOne : pauseOne}
               style={{
                 opacity: activeList || isContactFormOpen || glow ? 0 : 1,
                 pointerEvents:
                   activeList || isContactFormOpen || glow ? 'none' : 'auto',
-                backgroundImage: isPaused
-                  ? `url(${playOne})`
-                  : `url(${pauseOne})`,
               }}
-            ></div>
+              fetchPriority="high"
+            />
           ) : undefined}
         </div>
       </div>

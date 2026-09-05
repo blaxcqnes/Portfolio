@@ -224,19 +224,17 @@ export default function WebBox({
           )}
 
           {!isContactFormOpen || !activeList ? (
-            <div
+            <img
               className="pausePlay"
               onClick={pausePlay}
-              fetchPriority="high"
+              src={isPaused ? playTwo : pauseTwo}
               style={{
                 opacity: activeList || isContactFormOpen || glow ? 0 : 1,
                 pointerEvents:
                   activeList || isContactFormOpen || glow ? 'none' : 'auto',
-                backgroundImage: isPaused
-                  ? `url(${playTwo})`
-                  : `url(${pauseTwo})`,
               }}
-            ></div>
+              fetchPriority="high"
+            />
           ) : undefined}
         </div>
       </div>
