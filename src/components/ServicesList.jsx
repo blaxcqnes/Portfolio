@@ -15,6 +15,8 @@ export default function ServicesList({
   const [selectedServices, setSelectedServices] = useState(services);
   const [nameValue, setNameInputValue] = useState('');
   const [emailValue, setEmailInputValue] = useState('');
+  const isGeneratingPdf = useRef(false);
+  const [isGenerating, setIsGenerating] = useState(false);
 
   const toggleSelection = (id) => {
     setSelectedServices((prev) =>
@@ -44,69 +46,93 @@ export default function ServicesList({
 
   const invoiceRef = useRef(null);
 
-  const downloadInvoice = async () => {
-    const element = invoiceRef.current;
-
-    if (!element) return;
-
+  const waitForRender = async () => {
     await document.fonts.load('400 16px "Alan Sans"');
     await document.fonts.load('600 16px "Alan Sans"');
     await document.fonts.ready;
-    element.getBoundingClientRect();
 
     await new Promise(requestAnimationFrame);
     await new Promise(requestAnimationFrame);
 
-    const canvas = await html2canvas(element, {
-      scale: 3,
-      backgroundColor: '#ffffff',
-      useCORS: true,
-      letterRendering: true,
-      allowTaint: false,
-      logging: false,
-      scrollX: 0,
-      scrollY: 0,
+    await new Promise((resolve) => setTimeout(resolve, 50));
 
-      onclone: (clonedDocument) => {
-        const clonedElement = clonedDocument.getElementById('invoiceTemplate');
+    await new Promise(requestAnimationFrame);
+  };
 
-        if (!clonedElement) return;
+  const downloadInvoice = async () => {
+    if (isGeneratingPdf.current) return;
 
-        clonedElement.style.width = '650px';
-        clonedElement.style.maxWidth = 'none';
-        clonedElement.style.minWidth = '0';
-        clonedElement.style.height = 'auto';
-        clonedElement.style.maxHeight = 'none';
-        clonedElement.style.minHeight = '0';
-        clonedElement.style.position = 'fixed';
-        clonedElement.style.top = '0';
-        clonedElement.style.left = '0';
-        clonedElement.style.translate = 'unset';
+    isGeneratingPdf.current = true;
+    setIsGenerating(true);
 
-        clonedElement.style.overflow = 'visible';
-        clonedElement.style.overflowY = 'visible';
-        clonedElement.style.overflowX = 'visible';
+    try {
+      const element = invoiceRef.current;
 
-        clonedElement.style.overscrollBehaviorY = 'auto';
-        clonedElement.style.scrollbarGutter = 'unset';
-        clonedElement.style.visibility = 'visible';
-        clonedElement.style.pointerEvents = 'auto';
-        clonedElement.style.zIndex = '999';
-      },
-    });
+      if (!element) return;
 
-    const imgData = canvas.toDataURL('image/png');
+      await waitForRender();
 
-    const pdf = new jsPDF('p', 'mm', 'a4');
+      element.getBoundingClientRect();
 
-    const pdfWidth = pdf.internal.pageSize.getWidth();
+      const canvas = await html2canvas(element, {
+        scale: 3,
+        backgroundColor: '#ffffff',
+        useCORS: true,
+        allowTaint: false,
+        logging: false,
+        scrollX: 0,
+        scrollY: 0,
 
-    const imgWidth = pdfWidth - 1;
-    const imgHeight = (canvas.height * imgWidth) / canvas.width;
+        onclone: (clonedDocument) => {
+          const clonedElement =
+            clonedDocument.getElementById('invoiceTemplate');
 
-    pdf.addImage(imgData, 'PNG', 0.5, 0.5, imgWidth, imgHeight);
+          if (!clonedElement) return;
 
-    pdf.save('estimates.pdf');
+          clonedElement.style.width = '700px';
+          clonedElement.style.maxWidth = 'none';
+          clonedElement.style.minWidth = '0';
+
+          clonedElement.style.height = 'auto';
+          clonedElement.style.maxHeight = 'none';
+          clonedElement.style.minHeight = '0';
+
+          clonedElement.style.position = 'fixed';
+          clonedElement.style.top = '0';
+          clonedElement.style.left = '0';
+          clonedElement.style.translate = 'none';
+
+          clonedElement.style.overflow = 'visible';
+          clonedElement.style.overflowY = 'visible';
+          clonedElement.style.overflowX = 'visible';
+
+          clonedElement.style.overscrollBehaviorY = 'auto';
+          clonedElement.style.scrollbarGutter = 'unset';
+
+          clonedElement.style.visibility = 'visible';
+          clonedElement.style.pointerEvents = 'auto';
+          clonedElement.style.zIndex = '999';
+        },
+      });
+
+      const imgData = canvas.toDataURL('image/png');
+
+      const pdf = new jsPDF('p', 'mm', 'a4');
+
+      const pdfWidth = pdf.internal.pageSize.getWidth();
+
+      const imgWidth = pdfWidth - 0.5;
+      const imgHeight = (canvas.height * imgWidth) / canvas.width;
+
+      pdf.addImage(imgData, 'PNG', 0.5, 0.5, imgWidth, imgHeight);
+
+      pdf.save('estimates.pdf');
+    } catch (error) {
+      console.error('PDF generation failed:', error);
+    } finally {
+      isGeneratingPdf.current = false;
+      setIsGenerating(false);
+    }
   };
 
   const sendEmailEstimate = (e) => {
@@ -353,7 +379,12 @@ export default function ServicesList({
               <img
                 className="download"
                 onClick={handleFinalDownloadAndSubmit}
-                src={download}
+                src={isGenerating ? select : download}
+                style={{
+                  animation: isGenerating
+                    ? 'select 0.3s linear 1'
+                    : 'download 0.3s linear 1',
+                }}
                 fetchPriority="high"
               />
             ) : (

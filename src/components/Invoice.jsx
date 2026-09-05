@@ -18,8 +18,10 @@ export default function Invoice({
   return (
     <div ref={invoiceRef} className="invoiceTemplate" id="invoiceTemplate">
       <span ref={invoiceRef} className="invoiceContent" id="invoiceTemplate">
-        <p className="paymentStatus">Not Paid</p>
-        <p className="invoiceDescription">Customer e-invoice copy</p>
+        <div className="statusDescription">
+          <p className="paymentStatus">Not Paid</p>
+          <p className="invoiceDescription">Customer e-invoice copy</p>
+        </div>
         <div className="invoiceHeader">
           <div className="titleNameBillNoDate">
             <span className="titleName">
@@ -72,7 +74,7 @@ export default function Invoice({
             complexity.
           </p>
 
-          <p className="disclaimers">
+          <p className="disclaimers" style={{ marginBottom: 'unset' }}>
             2- Your service purchase will be confirmed immediately after a
             successful payment. Please note that project scoping, designing, and
             development are subject to the terms of your approved agreement.
