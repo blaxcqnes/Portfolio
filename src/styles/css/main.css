@@ -3830,7 +3830,7 @@ input[type=email]) {
 .mainContent .sectionOne .bio .imageAndDescription .descriptionAndServicesList .servicesList .content .invoiceTemplate .invoiceContent .statusDescription .paymentStatus {
   display: inline-block;
   width: 88px;
-  height: 37px;
+  height: 41px;
   padding: 12px;
   border-radius: 0.5rem;
   background-color: rgba(114, 47, 38, 0.2588235294);
@@ -10524,7 +10524,7 @@ input[type=email]) {
 .mainContent .sectionTwo .servicesList .content .invoiceTemplate .invoiceContent .statusDescription .paymentStatus {
   display: inline-block;
   width: 88px;
-  height: 37px;
+  height: 41px;
   padding: 12px;
   border-radius: 0.5rem;
   background-color: rgba(114, 47, 38, 0.2588235294);
