@@ -56,6 +56,7 @@ export default function ServicesList({
       backgroundColor: '#ffffff',
       useCORS: true,
       letterRendering: true,
+      letterSpacing: '0.03px',
       allowTaint: false,
       logging: false,
       scrollX: 0,
@@ -87,7 +88,7 @@ export default function ServicesList({
       },
     });
 
-    const imgData = canvas.toDataURL('image/jpeg', 1.5);
+    const imgData = canvas.toDataURL('image/jpeg', 0.95);
 
     const pdf = new jsPDF('p', 'mm', 'a4');
 
