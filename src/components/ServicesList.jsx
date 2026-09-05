@@ -88,7 +88,7 @@ export default function ServicesList({
       },
     });
 
-    const imgData = canvas.toDataURL('image/jpeg', 0.95);
+    const imgData = canvas.toDataURL('image/jpeg', 0.93);
 
     const pdf = new jsPDF('p', 'mm', 'a4');
 
