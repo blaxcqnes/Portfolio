@@ -67,7 +67,7 @@ export default function Invoice({
           </div>
         )}
         <span className="invoiceDisclaimerContainer">
-          <p className="disclaimers" style={{ marginTop: '15px' }}>
+          <p className="disclaimers">
             1- Prices are estimated and may vary depending on the project
             complexity.
           </p>

@@ -3816,7 +3816,7 @@ input[type=email]) {
   position: absolute;
   left: 50%;
   top: 50%;
-  translate: -80% -50%;
+  translate: -50% -45%;
   background: #ffffff;
   pointer-events: none;
   visibility: hidden;
@@ -10397,8 +10397,8 @@ input[type=email]) {
   }
 }
 .mainContent .sectionTwo .servicesList .content .invoiceTemplate {
-  width: 80%;
-  height: 100%;
+  width: 800%;
+  height: 80%;
   overflow-y: scroll;
   overscroll-behavior-y: contain;
   scrollbar-gutter: stable both-edges;
@@ -10447,7 +10447,7 @@ input[type=email]) {
   display: block;
   height: auto;
   padding: 1rem;
-  margin-top: 2rem;
+  margin-top: 1.5rem;
   position: relative;
   border: solid 0.1rem rgba(92, 79, 67, 0.3764705882);
   border-radius: 0.5rem;
@@ -10566,7 +10566,7 @@ input[type=email]) {
 .mainContent .sectionTwo .servicesList .content .invoiceTemplate .invoiceContent .invoiceServices {
   display: block;
   padding: 1rem;
-  margin-top: 2rem;
+  margin-top: 1.5rem;
   position: relative;
   border: solid 0.1rem rgba(84, 81, 70, 0.3764705882);
   border-radius: 0.5rem;
@@ -10576,6 +10576,7 @@ input[type=email]) {
 }
 .mainContent .sectionTwo .servicesList .content .invoiceTemplate .invoiceContent .invoiceServices .invoiceItems .servicesContainer {
   display: block;
+  position: relative;
 }
 .mainContent .sectionTwo .servicesList .content .invoiceTemplate .invoiceContent .invoiceServices .invoiceItems .servicesContainer .serviceNameDescription {
   display: block;
@@ -10608,8 +10609,9 @@ input[type=email]) {
   width: 60px;
   position: relative;
   display: inline-block;
-  left: 600px;
+  left: 85%;
   bottom: 70px;
+  translate: 50% 0;
   color: #000000;
   font-size: 16px;
   font-family: "Alan Sans", sans-serif;
@@ -10633,7 +10635,8 @@ input[type=email]) {
   display: block;
   width: 130px;
   position: relative;
-  left: 525px;
+  left: 65%;
+  translate: 50% 0;
   color: #000000;
   font-size: 18px;
   font-family: "Alan Sans", sans-serif;
@@ -10656,7 +10659,7 @@ input[type=email]) {
   display: block;
   height: auto;
   padding: 1rem;
-  margin-top: 2rem;
+  margin-top: 1.5rem;
   position: relative;
   border: solid 0.1rem rgba(92, 79, 67, 0.3764705882);
   border-radius: 0.5rem;
@@ -10664,7 +10667,7 @@ input[type=email]) {
 .mainContent .sectionTwo .servicesList .content .invoiceTemplate .invoiceContent .invoiceDisclaimerContainer .disclaimers {
   display: block;
   width: 615px;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
   color: #8b8b8b;
   font-family: "Alan Sans", sans-serif;
   font-size: 12px;
