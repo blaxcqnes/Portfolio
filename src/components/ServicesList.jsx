@@ -52,7 +52,7 @@ export default function ServicesList({
     await document.fonts.ready;
 
     const canvas = await html2canvas(element, {
-      scale: 3,
+      scale: 2,
       backgroundColor: '#ffffff',
       useCORS: true,
       allowTaint: false,
@@ -86,7 +86,7 @@ export default function ServicesList({
       },
     });
 
-    const imgData = canvas.toDataURL('image/jpeg', 1);
+    const imgData = canvas.toDataURL('image/jpeg', 0.85);
 
     const pdf = new jsPDF({
       unit: 'in',
