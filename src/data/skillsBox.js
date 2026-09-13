@@ -6,10 +6,14 @@ const skillsOne = [
     title: 'Cybersecurity',
     classListContainer: 'listContainer',
     classSkillsOrder: 'skillsOrder',
-    valueOne: 'WireShark',
+    valueOne: 'Wireshark',
     valueTwo: 'Nmap',
     valueThree: 'Metasploit',
-    valueFour: 'Burp Suite',
+    valueFour: 'MITM Attack',
+    valueFive: 'Burp Suite',
+    valueSix: 'Netcat',
+    valueSeven: 'Honeypot',
+    valueEight: 'Network Security',
   },
 ];
 

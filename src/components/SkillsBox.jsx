@@ -6,6 +6,8 @@ export default function SkillsBox({
   isContactFormOpen,
   activeList,
   setActiveList,
+  nextOne,
+  previousOne,
   pauseOne,
   playOne,
   toggleSkillsList,
@@ -92,6 +94,22 @@ export default function SkillsBox({
     setIsPaused((prev) => !prev);
   }
 
+  function next() {
+    if (skillPage <= 1) {
+      setSkillPage((prev) => prev + 1);
+      setIsPaused(true);
+      setTimeLeft(10);
+    }
+  }
+
+  function previous() {
+    if (skillPage >= 2) {
+      setSkillPage((prev) => prev - 1);
+      setIsPaused(true);
+      setTimeLeft(10);
+    }
+  }
+
   return (
     <div className="skillsAndSkillsList">
       <div
@@ -151,12 +169,11 @@ export default function SkillsBox({
                   <li>{skillsOne.valueThree}</li>
                   <li>{skillsOne.valueFour}</li>
                 </ol>
-                <hr />
                 <ol className={skillsOne.classSkillsOrder}>
-                  <li>{skillsOne.valueOne}</li>
-                  <li>{skillsOne.valueTwo}</li>
-                  <li>{skillsOne.valueThree}</li>
-                  <li>{skillsOne.valueFour}</li>
+                  <li>{skillsOne.valueFive}</li>
+                  <li>{skillsOne.valueSix}</li>
+                  <li>{skillsOne.valueSeven}</li>
+                  <li>{skillsOne.valueEight}</li>
                 </ol>
               </div>
             </div>
@@ -173,7 +190,6 @@ export default function SkillsBox({
                   <li>{skillsTwo.valueThree}</li>
                   <li>{skillsTwo.valueFour}</li>
                 </ol>
-                <hr />
                 <ol className={skillsTwo.classSkillsOrder}>
                   <li>{skillsTwo.valueOne}</li>
                   <li>{skillsTwo.valueTwo}</li>
@@ -184,6 +200,57 @@ export default function SkillsBox({
             </div>
           ))}
 
+        <div className="pages">
+          {!isContactFormOpen || !activeList ? (
+            <img
+              className="previousOne"
+              onClick={skillPage <= 1 ? undefined : previous}
+              src={previousOne}
+              style={{
+                opacity:
+                  activeList || isContactFormOpen || glow
+                    ? 0
+                    : skillPage <= 1
+                      ? 0.5
+                      : 1,
+
+                pointerEvents:
+                  activeList || isContactFormOpen || glow || skillPage <= 1
+                    ? 'none'
+                    : 'auto',
+              }}
+              fetchPriority="high"
+            />
+          ) : undefined}
+          <p
+            className="pageNumber"
+            style={{
+              opacity: activeList || isContactFormOpen || glow ? 0 : 1,
+            }}
+          >
+            {skillPage} / 2
+          </p>
+          {!isContactFormOpen || !activeList ? (
+            <img
+              className="nextOne"
+              onClick={skillPage >= 2 ? undefined : next}
+              src={nextOne}
+              style={{
+                opacity:
+                  activeList || isContactFormOpen || glow
+                    ? 0
+                    : skillPage >= 2
+                      ? 0.5
+                      : 1,
+                pointerEvents:
+                  activeList || isContactFormOpen || glow || skillPage >= 2
+                    ? 'none'
+                    : 'auto',
+              }}
+              fetchPriority="high"
+            />
+          ) : undefined}
+        </div>
         <div className="nextSkillsLoader">
           <div
             className="nextSkillsOval"
@@ -207,8 +274,8 @@ export default function SkillsBox({
                     ? 'hidden'
                     : 'visible',
                 ...(!activeList && !isContactFormOpen && timeLeft && !isPaused
-                  ? { animation: 'nextSkillsTimer 1s linear 1' }
-                  : undefined),
+                  ? { animation: 'nextSkillsTimerVisible 1s linear 1' }
+                  : { animation: 'nextSkillsTimerHidden 0.2s linear 1' }),
               }}
             >
               {timeLeft}

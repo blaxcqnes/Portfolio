@@ -9,6 +9,8 @@ import EducationList from './EducationList';
 
 export default function SectionOne({
   me,
+  nextOne,
+  previousOne,
   pauseOne,
   playOne,
   select,
@@ -91,6 +93,8 @@ export default function SectionOne({
           isContactFormOpen={isContactFormOpen}
           activeList={activeList}
           setActiveList={setActiveList}
+          nextOne={nextOne}
+          previousOne={previousOne}
           pauseOne={pauseOne}
           playOne={playOne}
           toggleSkillsList={toggleSkillsList}
