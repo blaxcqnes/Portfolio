@@ -4765,15 +4765,25 @@ input[type=email]) {
   left: 0.5rem;
   z-index: 1;
 }
-@media (min-width: 300px) and (max-width: 400px) {
+@media (min-width: 300px) and (max-width: 350px) {
   .mainContent .sectionOne .skillsAndEducation .skillsAndSkillsList .skillsBox .pages {
-    bottom: 21rem;
+    justify-content: center;
+    bottom: 21.5rem;
+    right: 0;
+    left: unset;
+  }
+}
+@media (min-width: 350px) and (max-width: 400px) {
+  .mainContent .sectionOne .skillsAndEducation .skillsAndSkillsList .skillsBox .pages {
+    justify-content: center;
+    bottom: 21.1rem;
     right: 0;
     left: unset;
   }
 }
 @media (min-width: 400px) and (max-width: 500px) {
   .mainContent .sectionOne .skillsAndEducation .skillsAndSkillsList .skillsBox .pages {
+    justify-content: center;
     bottom: 22.2rem;
     right: 0;
     left: unset;
@@ -4781,16 +4791,53 @@ input[type=email]) {
 }
 @media (min-width: 500px) and (max-width: 600px) {
   .mainContent .sectionOne .skillsAndEducation .skillsAndSkillsList .skillsBox .pages {
-    bottom: 21rem;
+    justify-content: unset;
+    bottom: 21.2rem;
     right: 0;
     left: unset;
   }
 }
 @media (min-width: 600px) and (max-width: 700px) {
   .mainContent .sectionOne .skillsAndEducation .skillsAndSkillsList .skillsBox .pages {
+    justify-content: center;
     bottom: 20.7rem;
     right: 0;
     left: unset;
+  }
+}
+@media (width: 600px) {
+  .mainContent .sectionOne .skillsAndEducation .skillsAndSkillsList .skillsBox .pages {
+    justify-content: center;
+    bottom: 20.7rem;
+    right: 0;
+    left: unset;
+  }
+}
+@media (min-width: 700px) and (max-width: 1023px) {
+  .mainContent .sectionOne .skillsAndEducation .skillsAndSkillsList .skillsBox .pages {
+    justify-content: center;
+    bottom: 0.69rem;
+    right: 0;
+    left: unset;
+  }
+}
+@media (min-width: 1023px) and (max-width: 1100px) {
+  .mainContent .sectionOne .skillsAndEducation .skillsAndSkillsList .skillsBox .pages {
+    bottom: 0.3rem;
+    left: 0.5rem;
+  }
+}
+@media (orientation: portrait) and (min-width: 1023px) and (max-width: 1100px) {
+  .mainContent .sectionOne .skillsAndEducation .skillsAndSkillsList .skillsBox .pages {
+    justify-content: center;
+    bottom: 0.95rem;
+    right: 0;
+    left: unset;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1400px) {
+  .mainContent .sectionOne .skillsAndEducation .skillsAndSkillsList .skillsBox .pages {
+    bottom: 0.75rem;
   }
 }
 .mainContent .sectionOne .skillsAndEducation .skillsAndSkillsList .skillsBox .pages .previousOne {
@@ -4864,6 +4911,36 @@ input[type=email]) {
 @media (min-width: 500px) and (max-width: 600px) {
   .mainContent .sectionOne .skillsAndEducation .skillsAndSkillsList .skillsBox .pages .pageNumber {
     font-size: 10pt;
+  }
+}
+@media (min-width: 900px) and (max-width: 1023px) {
+  .mainContent .sectionOne .skillsAndEducation .skillsAndSkillsList .skillsBox .pages .pageNumber {
+    font-size: 10pt;
+  }
+}
+@media (min-width: 1023px) and (max-width: 1100px) {
+  .mainContent .sectionOne .skillsAndEducation .skillsAndSkillsList .skillsBox .pages .pageNumber {
+    font-size: 8pt;
+  }
+}
+@media (orientation: portrait) and (min-width: 1023px) and (max-width: 1100px) {
+  .mainContent .sectionOne .skillsAndEducation .skillsAndSkillsList .skillsBox .pages .pageNumber {
+    font-size: 9.5pt;
+  }
+}
+@media (min-width: 1100px) and (max-width: 1200px) {
+  .mainContent .sectionOne .skillsAndEducation .skillsAndSkillsList .skillsBox .pages .pageNumber {
+    font-size: 8.5pt;
+  }
+}
+@media (width: 1100px) {
+  .mainContent .sectionOne .skillsAndEducation .skillsAndSkillsList .skillsBox .pages .pageNumber {
+    font-size: 8.5pt;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1300px) {
+  .mainContent .sectionOne .skillsAndEducation .skillsAndSkillsList .skillsBox .pages .pageNumber {
+    font-size: 8.5pt;
   }
 }
 .mainContent .sectionOne .skillsAndEducation .skillsAndSkillsList .skillsBox .pages .nextOne {

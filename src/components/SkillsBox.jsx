@@ -211,7 +211,7 @@ export default function SkillsBox({
                   activeList || isContactFormOpen || glow
                     ? 0
                     : skillPage <= 1
-                      ? 0.5
+                      ? 0.25
                       : 1,
 
                 pointerEvents:
@@ -240,7 +240,7 @@ export default function SkillsBox({
                   activeList || isContactFormOpen || glow
                     ? 0
                     : skillPage >= 2
-                      ? 0.5
+                      ? 0.25
                       : 1,
                 pointerEvents:
                   activeList || isContactFormOpen || glow || skillPage >= 2
