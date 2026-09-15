@@ -45,6 +45,53 @@ const cyberOne = [
   },
 ];
 
+const cyberTwo = [
+  {
+    id: 1,
+    classFluency: 'fluencyOne',
+    className: 'name',
+    name: 'Burp Suit',
+    classStatusBar: 'statusBar',
+    classBottom: 'bottom',
+    classPercentage: 'percentage',
+    value: '75%',
+    classTop: 'topOne',
+  },
+  {
+    id: 2,
+    classFluency: 'fluencyTwo',
+    className: 'name',
+    name: 'Netcat',
+    classStatusBar: 'statusBar',
+    classBottom: 'bottom',
+    classPercentage: 'percentage',
+    value: '80%',
+    classTop: 'topTwo',
+  },
+  {
+    id: 3,
+    classFluency: 'fluencyThree',
+    className: 'name',
+    name: 'Honeypot',
+    classStatusBar: 'statusBar',
+    classBottom: 'bottom',
+    classPercentage: 'percentage',
+    value: '75%',
+    classTop: 'topThree',
+  },
+  {
+    id: 4,
+    classFluency: 'fluencyFour',
+    className: 'name',
+    name: 'Network Security',
+    classStatusBar: 'statusBar',
+    classBottom: 'bottom',
+    classPercentage: 'percentage',
+    value: '80%',
+    classTop: 'topFour',
+  },
+];
+
 const webOne = [
   {
     id: 1,
@@ -92,4 +139,51 @@ const webOne = [
   },
 ];
 
-export { cyberOne, webOne };
+const webTwo = [
+  {
+    id: 1,
+    classFluency: 'fluencyOne',
+    className: 'name',
+    name: 'Express.JS',
+    classStatusBar: 'statusBar',
+    classBottom: 'bottom',
+    classPercentage: 'percentage',
+    value: '80%',
+    classTop: 'topOne',
+  },
+  {
+    id: 2,
+    classFluency: 'fluencyTwo',
+    className: 'name',
+    name: 'Node.JS',
+    classStatusBar: 'statusBar',
+    classBottom: 'bottom',
+    classPercentage: 'percentage',
+    value: '80%',
+    classTop: 'topTwo',
+  },
+  {
+    id: 3,
+    classFluency: 'fluencyThree',
+    className: 'name',
+    name: 'SQL',
+    classStatusBar: 'statusBar',
+    classBottom: 'bottom',
+    classPercentage: 'percentage',
+    value: '90%',
+    classTop: 'topThree',
+  },
+  {
+    id: 4,
+    classFluency: 'fluencyFour',
+    className: 'name',
+    name: 'MongoDB',
+    classStatusBar: 'statusBar',
+    classBottom: 'bottom',
+    classPercentage: 'percentage',
+    value: '75%',
+    classTop: 'topFour',
+  },
+];
+
+export { cyberOne, cyberTwo, webOne, webTwo };

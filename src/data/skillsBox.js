@@ -29,6 +29,10 @@ const skillsTwo = [
     valueTwo: 'CSS & SCSS',
     valueThree: 'JavaScript',
     valueFour: 'React.JS',
+    valueFive: 'Express.JS',
+    valueSix: 'Node.JS',
+    valueSeven: 'SQL',
+    valueEight: 'MongoDB',
   },
 ];
 

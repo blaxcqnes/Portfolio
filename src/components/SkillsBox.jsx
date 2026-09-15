@@ -191,10 +191,10 @@ export default function SkillsBox({
                   <li>{skillsTwo.valueFour}</li>
                 </ol>
                 <ol className={skillsTwo.classSkillsOrder}>
-                  <li>{skillsTwo.valueOne}</li>
-                  <li>{skillsTwo.valueTwo}</li>
-                  <li>{skillsTwo.valueThree}</li>
-                  <li>{skillsTwo.valueFour}</li>
+                  <li>{skillsTwo.valueFive}</li>
+                  <li>{skillsTwo.valueSix}</li>
+                  <li>{skillsTwo.valueSeven}</li>
+                  <li>{skillsTwo.valueEight}</li>
                 </ol>
               </div>
             </div>

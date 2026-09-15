@@ -1,5 +1,5 @@
 import { useState, useEffect, Fragment } from 'react';
-import { cyberOne, webOne } from '../data/skillsList';
+import { cyberOne, cyberTwo, webOne, webTwo } from '../data/skillsList';
 export default function SkillsList({
   isContactFormOpen,
   activeList,
@@ -10,18 +10,10 @@ export default function SkillsList({
   useEffect(() => {
     const handleKeyDown = (e) => {
       if (e.key === 'ArrowRight') {
-        setPageNumber(2);
+        setPageNumber((prev) => (prev < 4 ? prev + 1 : prev));
       }
-    };
-
-    window.addEventListener('keydown', handleKeyDown);
-    return () => window.removeEventListener('keydown', handleKeyDown);
-  }, []);
-
-  useEffect(() => {
-    const handleKeyDown = (e) => {
       if (e.key === 'ArrowLeft') {
-        setPageNumber(1);
+        setPageNumber((prev) => (prev > 1 ? prev - 1 : prev));
       }
     };
 
@@ -30,11 +22,11 @@ export default function SkillsList({
   }, []);
 
   function previous() {
-    if (pageNumber > 1) setPageNumber((prev) => prev - 1);
+    setPageNumber((prev) => (prev > 1 ? prev - 1 : prev));
   }
 
   function next() {
-    if (pageNumber < 2) setPageNumber((prev) => prev + 1);
+    setPageNumber((prev) => (prev < 4 ? prev + 1 : prev));
   }
 
   return (
@@ -56,7 +48,11 @@ export default function SkillsList({
         </button>
       </div>
       <div className="content">
-        {pageNumber < 2 ? (
+        {pageNumber > 1 ? (
+          <button className="previous" onClick={previous}>
+            &lt;
+          </button>
+        ) : (
           <button
             className="previous"
             style={{
@@ -75,13 +71,9 @@ export default function SkillsList({
           >
             &lt;
           </button>
-        ) : (
-          <button className="previous" onClick={previous}>
-            &lt;
-          </button>
         )}
 
-        {pageNumber < 2 ? (
+        {pageNumber === 1 && (
           <div className="titleAndFluencies">
             <h4 className="title">Fluency in Cybersecurity</h4>
             <div className="fluenciesOne">
@@ -99,10 +91,32 @@ export default function SkillsList({
               ))}
             </div>
           </div>
-        ) : (
+        )}
+
+        {pageNumber === 2 && (
           <div className="titleAndFluencies">
-            <h4 className="title">Fluency in Front-End</h4>
+            <h4 className="title">Fluency in Cybersecurity</h4>
             <div className="fluenciesTwo">
+              {cyberTwo.map((skills) => (
+                <Fragment key={skills.id}>
+                  <div className={skills.classFluency}>
+                    <p className={skills.className}>{skills.name}</p>
+                    <div className={skills.classStatusBar}>
+                      <div className={skills.classBottom}></div>
+                      <p className={skills.classPercentage}>{skills.value}</p>
+                      <div className={skills.classTop}></div>
+                    </div>
+                  </div>
+                </Fragment>
+              ))}
+            </div>
+          </div>
+        )}
+
+        {pageNumber === 3 && (
+          <div className="titleAndFluencies">
+            <h4 className="title">Fluency in Web Dev.</h4>
+            <div className="fluenciesThree">
               {webOne.map((web) => (
                 <Fragment key={web.id}>
                   <div className={web.classFluency}>
@@ -119,7 +133,31 @@ export default function SkillsList({
           </div>
         )}
 
-        {pageNumber > 1 ? (
+        {pageNumber === 4 && (
+          <div className="titleAndFluencies">
+            <h4 className="title">Fluency in Web Dev.</h4>
+            <div className="fluenciesFour">
+              {webTwo.map((web) => (
+                <Fragment key={web.id}>
+                  <div className={web.classFluency}>
+                    <p className={web.className}>{web.name}</p>
+                    <div className={web.classStatusBar}>
+                      <div className={web.classBottom}></div>
+                      <p className={web.classPercentage}>{web.value}</p>
+                      <div className={web.classTop}></div>
+                    </div>
+                  </div>
+                </Fragment>
+              ))}
+            </div>
+          </div>
+        )}
+
+        {pageNumber < 4 ? (
+          <button className="next" onClick={next}>
+            &gt;
+          </button>
+        ) : (
           <button
             className="next"
             style={{
@@ -138,13 +176,9 @@ export default function SkillsList({
           >
             &gt;
           </button>
-        ) : (
-          <button className="next" onClick={next}>
-            &gt;
-          </button>
         )}
 
-        <p className="pageNumber">{pageNumber} / 2</p>
+        <p className="pageNumber">{pageNumber} / 4</p>
       </div>
     </main>
   );

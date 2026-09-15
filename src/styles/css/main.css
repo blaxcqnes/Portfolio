@@ -6064,20 +6064,19 @@ input[type=email]) {
   width: fit-content;
   position: absolute;
   top: 12%;
-  left: 44%;
+  left: 45%;
   font-size: 10pt;
   font-weight: 500;
   color: #ebebeb;
   z-index: 2;
 }
-@media (min-width: 300px) and (max-width: 1023px) {
+@media (min-width: 300px) and (max-width: 600px) {
   .mainContent .sectionOne .skillsAndEducation .skillsAndSkillsList .skillsList .content .titleAndFluencies .fluenciesTwo .fluencyOne .statusBar .percentage {
     top: 10%;
-    left: 42%;
   }
 }
 .mainContent .sectionOne .skillsAndEducation .skillsAndSkillsList .skillsList .content .titleAndFluencies .fluenciesTwo .fluencyOne .statusBar .topOne {
-  width: 10rem;
+  width: 7.5rem;
   height: 1.5rem;
   position: absolute;
   border-radius: 0.5rem;
@@ -6093,14 +6092,14 @@ input[type=email]) {
     opacity: 0;
   }
   to {
-    width: 10rem;
+    width: 7.5rem;
     background-color: #5c4f43;
     opacity: 1;
   }
 }
 @media (min-width: 300px) and (max-width: 330px) {
   .mainContent .sectionOne .skillsAndEducation .skillsAndSkillsList .skillsList .content .titleAndFluencies .fluenciesTwo .fluencyOne .statusBar .topOne {
-    width: 7.5rem;
+    width: 5.625rem;
   }
   @keyframes topFive {
     from {
@@ -6109,7 +6108,7 @@ input[type=email]) {
       opacity: 0;
     }
     to {
-      width: 7.5rem;
+      width: 5.625rem;
       background-color: #5c4f43;
       opacity: 1;
     }
@@ -6117,7 +6116,7 @@ input[type=email]) {
 }
 @media (min-width: 330px) and (max-width: 350px) {
   .mainContent .sectionOne .skillsAndEducation .skillsAndSkillsList .skillsList .content .titleAndFluencies .fluenciesTwo .fluencyOne .statusBar .topOne {
-    width: 8.5rem;
+    width: 6.375rem;
   }
   @keyframes topFive {
     from {
@@ -6126,7 +6125,7 @@ input[type=email]) {
       opacity: 0;
     }
     to {
-      width: 8.5rem;
+      width: 6.375rem;
       background-color: #5c4f43;
       opacity: 1;
     }
@@ -6134,7 +6133,7 @@ input[type=email]) {
 }
 @media (min-width: 350px) and (max-width: 360px) {
   .mainContent .sectionOne .skillsAndEducation .skillsAndSkillsList .skillsList .content .titleAndFluencies .fluenciesTwo .fluencyOne .statusBar .topOne {
-    width: 9rem;
+    width: 6.75rem;
   }
   @keyframes topFive {
     from {
@@ -6143,7 +6142,7 @@ input[type=email]) {
       opacity: 0;
     }
     to {
-      width: 9rem;
+      width: 6.75rem;
       background-color: #5c4f43;
       opacity: 1;
     }
@@ -6209,7 +6208,7 @@ input[type=email]) {
   }
 }
 .mainContent .sectionOne .skillsAndEducation .skillsAndSkillsList .skillsList .content .titleAndFluencies .fluenciesTwo .fluencyTwo .statusBar .topTwo {
-  width: 9rem;
+  width: 8rem;
   height: 1.5rem;
   position: absolute;
   border-radius: 0.5rem;
@@ -6225,14 +6224,14 @@ input[type=email]) {
     opacity: 0;
   }
   to {
-    width: 9rem;
+    width: 8rem;
     background-color: #5c4f43;
     opacity: 1;
   }
 }
 @media (min-width: 300px) and (max-width: 330px) {
   .mainContent .sectionOne .skillsAndEducation .skillsAndSkillsList .skillsList .content .titleAndFluencies .fluenciesTwo .fluencyTwo .statusBar .topTwo {
-    width: 6.75rem;
+    width: 6rem;
   }
   @keyframes topSix {
     from {
@@ -6241,7 +6240,7 @@ input[type=email]) {
       opacity: 0;
     }
     to {
-      width: 6.75rem;
+      width: 6rem;
       background-color: #5c4f43;
       opacity: 1;
     }
@@ -6249,7 +6248,7 @@ input[type=email]) {
 }
 @media (min-width: 330px) and (max-width: 350px) {
   .mainContent .sectionOne .skillsAndEducation .skillsAndSkillsList .skillsList .content .titleAndFluencies .fluenciesTwo .fluencyTwo .statusBar .topTwo {
-    width: 7.65rem;
+    width: 6.8rem;
   }
   @keyframes topSix {
     from {
@@ -6258,7 +6257,7 @@ input[type=email]) {
       opacity: 0;
     }
     to {
-      width: 7.65rem;
+      width: 6.8rem;
       background-color: #5c4f43;
       opacity: 1;
     }
@@ -6266,7 +6265,7 @@ input[type=email]) {
 }
 @media (min-width: 350px) and (max-width: 360px) {
   .mainContent .sectionOne .skillsAndEducation .skillsAndSkillsList .skillsList .content .titleAndFluencies .fluenciesTwo .fluencyTwo .statusBar .topTwo {
-    width: 8.1rem;
+    width: 7.2rem;
   }
   @keyframes topSix {
     from {
@@ -6275,7 +6274,7 @@ input[type=email]) {
       opacity: 0;
     }
     to {
-      width: 8.1rem;
+      width: 7.2rem;
       background-color: #5c4f43;
       opacity: 1;
     }
@@ -6341,7 +6340,7 @@ input[type=email]) {
   }
 }
 .mainContent .sectionOne .skillsAndEducation .skillsAndSkillsList .skillsList .content .titleAndFluencies .fluenciesTwo .fluencyThree .statusBar .topThree {
-  width: 7rem;
+  width: 7.5rem;
   height: 1.5rem;
   position: absolute;
   border-radius: 0.5rem;
@@ -6357,14 +6356,14 @@ input[type=email]) {
     opacity: 0;
   }
   to {
-    width: 7rem;
+    width: 7.5rem;
     background-color: #5c4f43;
     opacity: 1;
   }
 }
 @media (min-width: 300px) and (max-width: 330px) {
   .mainContent .sectionOne .skillsAndEducation .skillsAndSkillsList .skillsList .content .titleAndFluencies .fluenciesTwo .fluencyThree .statusBar .topThree {
-    width: 5.25rem;
+    width: 5.625rem;
   }
   @keyframes topSeven {
     from {
@@ -6373,7 +6372,7 @@ input[type=email]) {
       opacity: 0;
     }
     to {
-      width: 5.25rem;
+      width: 5.625rem;
       background-color: #5c4f43;
       opacity: 1;
     }
@@ -6381,7 +6380,7 @@ input[type=email]) {
 }
 @media (min-width: 330px) and (max-width: 350px) {
   .mainContent .sectionOne .skillsAndEducation .skillsAndSkillsList .skillsList .content .titleAndFluencies .fluenciesTwo .fluencyThree .statusBar .topThree {
-    width: 5.95rem;
+    width: 6.375rem;
   }
   @keyframes topSeven {
     from {
@@ -6390,7 +6389,7 @@ input[type=email]) {
       opacity: 0;
     }
     to {
-      width: 5.95rem;
+      width: 6.375rem;
       background-color: #5c4f43;
       opacity: 1;
     }
@@ -6398,7 +6397,7 @@ input[type=email]) {
 }
 @media (min-width: 350px) and (max-width: 360px) {
   .mainContent .sectionOne .skillsAndEducation .skillsAndSkillsList .skillsList .content .titleAndFluencies .fluenciesTwo .fluencyThree .statusBar .topThree {
-    width: 6.3rem;
+    width: 6.75rem;
   }
   @keyframes topSeven {
     from {
@@ -6407,7 +6406,7 @@ input[type=email]) {
       opacity: 0;
     }
     to {
-      width: 6.3rem;
+      width: 6.75rem;
       background-color: #5c4f43;
       opacity: 1;
     }
@@ -6473,7 +6472,7 @@ input[type=email]) {
   }
 }
 .mainContent .sectionOne .skillsAndEducation .skillsAndSkillsList .skillsList .content .titleAndFluencies .fluenciesTwo .fluencyFour .statusBar .topFour {
-  width: 8rem;
+  width: 7.5rem;
   height: 1.5rem;
   position: absolute;
   border-radius: 0.5rem;
@@ -6489,16 +6488,570 @@ input[type=email]) {
     opacity: 0;
   }
   to {
-    width: 8rem;
+    width: 7.5rem;
     background-color: #5c4f43;
     opacity: 1;
   }
 }
 @media (min-width: 300px) and (max-width: 330px) {
   .mainContent .sectionOne .skillsAndEducation .skillsAndSkillsList .skillsList .content .titleAndFluencies .fluenciesTwo .fluencyFour .statusBar .topFour {
-    width: 6rem;
+    width: 5.625rem;
   }
   @keyframes topEight {
+    from {
+      width: 0rem;
+      background-color: #545146;
+      opacity: 0;
+    }
+    to {
+      width: 5.625rem;
+      background-color: #5c4f43;
+      opacity: 1;
+    }
+  }
+}
+@media (min-width: 330px) and (max-width: 350px) {
+  .mainContent .sectionOne .skillsAndEducation .skillsAndSkillsList .skillsList .content .titleAndFluencies .fluenciesTwo .fluencyFour .statusBar .topFour {
+    width: 6.375rem;
+  }
+  @keyframes topEight {
+    from {
+      width: 0rem;
+      background-color: #545146;
+      opacity: 0;
+    }
+    to {
+      width: 6.375rem;
+      background-color: #5c4f43;
+      opacity: 1;
+    }
+  }
+}
+@media (min-width: 350px) and (max-width: 360px) {
+  .mainContent .sectionOne .skillsAndEducation .skillsAndSkillsList .skillsList .content .titleAndFluencies .fluenciesTwo .fluencyFour .statusBar .topFour {
+    width: 6.75rem;
+  }
+  @keyframes topEight {
+    from {
+      width: 0rem;
+      background-color: #545146;
+      opacity: 0;
+    }
+    to {
+      width: 6.75rem;
+      background-color: #5c4f43;
+      opacity: 1;
+    }
+  }
+}
+.mainContent .sectionOne .skillsAndEducation .skillsAndSkillsList .skillsList .content .titleAndFluencies .fluenciesThree {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1.2rem;
+  margin-left: 1rem;
+  animation: fluenciesThree 0.5s linear 1;
+}
+@keyframes fluenciesThree {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@media (min-width: 300px) and (max-width: 400px) {
+  .mainContent .sectionOne .skillsAndEducation .skillsAndSkillsList .skillsList .content .titleAndFluencies .fluenciesThree {
+    margin-left: 0.5rem;
+  }
+}
+@media (min-width: 300px) and (max-width: 600px) {
+  .mainContent .sectionOne .skillsAndEducation .skillsAndSkillsList .skillsList .content .titleAndFluencies .fluenciesThree {
+    row-gap: 1.5rem;
+  }
+}
+.mainContent .sectionOne .skillsAndEducation .skillsAndSkillsList .skillsList .content .titleAndFluencies .fluenciesThree .fluencyOne {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.mainContent .sectionOne .skillsAndEducation .skillsAndSkillsList .skillsList .content .titleAndFluencies .fluenciesThree .fluencyOne .name {
+  font-size: 11.5pt;
+  font-weight: 500;
+  color: #ffffff;
+  position: unset;
+}
+@media (min-width: 500px) and (max-width: 600px) {
+  .mainContent .sectionOne .skillsAndEducation .skillsAndSkillsList .skillsList .content .titleAndFluencies .fluenciesThree .fluencyOne .name {
+    font-size: 12pt;
+  }
+}
+.mainContent .sectionOne .skillsAndEducation .skillsAndSkillsList .skillsList .content .titleAndFluencies .fluenciesThree .fluencyOne .statusBar {
+  display: flex;
+  position: relative;
+}
+.mainContent .sectionOne .skillsAndEducation .skillsAndSkillsList .skillsList .content .titleAndFluencies .fluenciesThree .fluencyOne .statusBar .bottom {
+  width: 10rem;
+  height: 1.5rem;
+  border-radius: 0.5rem;
+  background-color: #545146;
+}
+@media (min-width: 300px) and (max-width: 330px) {
+  .mainContent .sectionOne .skillsAndEducation .skillsAndSkillsList .skillsList .content .titleAndFluencies .fluenciesThree .fluencyOne .statusBar .bottom {
+    width: 7.5rem;
+  }
+}
+@media (min-width: 330px) and (max-width: 350px) {
+  .mainContent .sectionOne .skillsAndEducation .skillsAndSkillsList .skillsList .content .titleAndFluencies .fluenciesThree .fluencyOne .statusBar .bottom {
+    width: 8.5rem;
+  }
+}
+@media (min-width: 350px) and (max-width: 360px) {
+  .mainContent .sectionOne .skillsAndEducation .skillsAndSkillsList .skillsList .content .titleAndFluencies .fluenciesThree .fluencyOne .statusBar .bottom {
+    width: 9rem;
+  }
+}
+.mainContent .sectionOne .skillsAndEducation .skillsAndSkillsList .skillsList .content .titleAndFluencies .fluenciesThree .fluencyOne .statusBar .percentage {
+  display: flex;
+  height: fit-content;
+  width: fit-content;
+  position: absolute;
+  top: 12%;
+  left: 44%;
+  font-size: 10pt;
+  font-weight: 500;
+  color: #ebebeb;
+  z-index: 2;
+}
+@media (min-width: 300px) and (max-width: 1023px) {
+  .mainContent .sectionOne .skillsAndEducation .skillsAndSkillsList .skillsList .content .titleAndFluencies .fluenciesThree .fluencyOne .statusBar .percentage {
+    top: 10%;
+    left: 42%;
+  }
+}
+.mainContent .sectionOne .skillsAndEducation .skillsAndSkillsList .skillsList .content .titleAndFluencies .fluenciesThree .fluencyOne .statusBar .topOne {
+  width: 10rem;
+  height: 1.5rem;
+  position: absolute;
+  border-radius: 0.5rem;
+  border: 0.1rem solid #656565;
+  background-color: #5c4f43;
+  animation: topNine 1s cubic-bezier(0.1, -0.6, 0.2, 0) 0s 1 none;
+  z-index: 1;
+}
+@keyframes topNine {
+  from {
+    width: 0rem;
+    background-color: #545146;
+    opacity: 0;
+  }
+  to {
+    width: 10rem;
+    background-color: #5c4f43;
+    opacity: 1;
+  }
+}
+@media (min-width: 300px) and (max-width: 330px) {
+  .mainContent .sectionOne .skillsAndEducation .skillsAndSkillsList .skillsList .content .titleAndFluencies .fluenciesThree .fluencyOne .statusBar .topOne {
+    width: 7.5rem;
+  }
+  @keyframes topNine {
+    from {
+      width: 0rem;
+      background-color: #545146;
+      opacity: 0;
+    }
+    to {
+      width: 7.5rem;
+      background-color: #5c4f43;
+      opacity: 1;
+    }
+  }
+}
+@media (min-width: 330px) and (max-width: 350px) {
+  .mainContent .sectionOne .skillsAndEducation .skillsAndSkillsList .skillsList .content .titleAndFluencies .fluenciesThree .fluencyOne .statusBar .topOne {
+    width: 8.5rem;
+  }
+  @keyframes topNine {
+    from {
+      width: 0rem;
+      background-color: #545146;
+      opacity: 0;
+    }
+    to {
+      width: 8.5rem;
+      background-color: #5c4f43;
+      opacity: 1;
+    }
+  }
+}
+@media (min-width: 350px) and (max-width: 360px) {
+  .mainContent .sectionOne .skillsAndEducation .skillsAndSkillsList .skillsList .content .titleAndFluencies .fluenciesThree .fluencyOne .statusBar .topOne {
+    width: 9rem;
+  }
+  @keyframes topNine {
+    from {
+      width: 0rem;
+      background-color: #545146;
+      opacity: 0;
+    }
+    to {
+      width: 9rem;
+      background-color: #5c4f43;
+      opacity: 1;
+    }
+  }
+}
+.mainContent .sectionOne .skillsAndEducation .skillsAndSkillsList .skillsList .content .titleAndFluencies .fluenciesThree .fluencyTwo {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.mainContent .sectionOne .skillsAndEducation .skillsAndSkillsList .skillsList .content .titleAndFluencies .fluenciesThree .fluencyTwo .name {
+  font-size: 11.5pt;
+  font-weight: 500;
+  color: #ffffff;
+  position: unset;
+}
+@media (min-width: 500px) and (max-width: 600px) {
+  .mainContent .sectionOne .skillsAndEducation .skillsAndSkillsList .skillsList .content .titleAndFluencies .fluenciesThree .fluencyTwo .name {
+    font-size: 12pt;
+  }
+}
+.mainContent .sectionOne .skillsAndEducation .skillsAndSkillsList .skillsList .content .titleAndFluencies .fluenciesThree .fluencyTwo .statusBar {
+  display: flex;
+  position: relative;
+}
+.mainContent .sectionOne .skillsAndEducation .skillsAndSkillsList .skillsList .content .titleAndFluencies .fluenciesThree .fluencyTwo .statusBar .bottom {
+  width: 10rem;
+  height: 1.5rem;
+  border-radius: 0.5rem;
+  background-color: #545146;
+}
+@media (min-width: 300px) and (max-width: 330px) {
+  .mainContent .sectionOne .skillsAndEducation .skillsAndSkillsList .skillsList .content .titleAndFluencies .fluenciesThree .fluencyTwo .statusBar .bottom {
+    width: 7.5rem;
+  }
+}
+@media (min-width: 330px) and (max-width: 350px) {
+  .mainContent .sectionOne .skillsAndEducation .skillsAndSkillsList .skillsList .content .titleAndFluencies .fluenciesThree .fluencyTwo .statusBar .bottom {
+    width: 8.5rem;
+  }
+}
+@media (min-width: 350px) and (max-width: 360px) {
+  .mainContent .sectionOne .skillsAndEducation .skillsAndSkillsList .skillsList .content .titleAndFluencies .fluenciesThree .fluencyTwo .statusBar .bottom {
+    width: 9rem;
+  }
+}
+.mainContent .sectionOne .skillsAndEducation .skillsAndSkillsList .skillsList .content .titleAndFluencies .fluenciesThree .fluencyTwo .statusBar .percentage {
+  display: flex;
+  height: fit-content;
+  width: fit-content;
+  position: absolute;
+  top: 12%;
+  left: 45%;
+  font-size: 10pt;
+  font-weight: 500;
+  color: #ebebeb;
+  z-index: 2;
+}
+@media (min-width: 300px) and (max-width: 600px) {
+  .mainContent .sectionOne .skillsAndEducation .skillsAndSkillsList .skillsList .content .titleAndFluencies .fluenciesThree .fluencyTwo .statusBar .percentage {
+    top: 10%;
+  }
+}
+.mainContent .sectionOne .skillsAndEducation .skillsAndSkillsList .skillsList .content .titleAndFluencies .fluenciesThree .fluencyTwo .statusBar .topTwo {
+  width: 9rem;
+  height: 1.5rem;
+  position: absolute;
+  border-radius: 0.5rem;
+  border: 0.1rem solid #656565;
+  background-color: #5c4f43;
+  animation: topTen 1s cubic-bezier(0.1, -0.6, 0.2, 0) 0s 1 none;
+  z-index: 1;
+}
+@keyframes topTen {
+  from {
+    width: 0rem;
+    background-color: #545146;
+    opacity: 0;
+  }
+  to {
+    width: 9rem;
+    background-color: #5c4f43;
+    opacity: 1;
+  }
+}
+@media (min-width: 300px) and (max-width: 330px) {
+  .mainContent .sectionOne .skillsAndEducation .skillsAndSkillsList .skillsList .content .titleAndFluencies .fluenciesThree .fluencyTwo .statusBar .topTwo {
+    width: 6.75rem;
+  }
+  @keyframes topTen {
+    from {
+      width: 0rem;
+      background-color: #545146;
+      opacity: 0;
+    }
+    to {
+      width: 6.75rem;
+      background-color: #5c4f43;
+      opacity: 1;
+    }
+  }
+}
+@media (min-width: 330px) and (max-width: 350px) {
+  .mainContent .sectionOne .skillsAndEducation .skillsAndSkillsList .skillsList .content .titleAndFluencies .fluenciesThree .fluencyTwo .statusBar .topTwo {
+    width: 7.65rem;
+  }
+  @keyframes topTen {
+    from {
+      width: 0rem;
+      background-color: #545146;
+      opacity: 0;
+    }
+    to {
+      width: 7.65rem;
+      background-color: #5c4f43;
+      opacity: 1;
+    }
+  }
+}
+@media (min-width: 350px) and (max-width: 360px) {
+  .mainContent .sectionOne .skillsAndEducation .skillsAndSkillsList .skillsList .content .titleAndFluencies .fluenciesThree .fluencyTwo .statusBar .topTwo {
+    width: 8.1rem;
+  }
+  @keyframes topTen {
+    from {
+      width: 0rem;
+      background-color: #545146;
+      opacity: 0;
+    }
+    to {
+      width: 8.1rem;
+      background-color: #5c4f43;
+      opacity: 1;
+    }
+  }
+}
+.mainContent .sectionOne .skillsAndEducation .skillsAndSkillsList .skillsList .content .titleAndFluencies .fluenciesThree .fluencyThree {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.mainContent .sectionOne .skillsAndEducation .skillsAndSkillsList .skillsList .content .titleAndFluencies .fluenciesThree .fluencyThree .name {
+  font-size: 11.5pt;
+  font-weight: 500;
+  color: #ffffff;
+  position: unset;
+}
+@media (min-width: 500px) and (max-width: 600px) {
+  .mainContent .sectionOne .skillsAndEducation .skillsAndSkillsList .skillsList .content .titleAndFluencies .fluenciesThree .fluencyThree .name {
+    font-size: 12pt;
+  }
+}
+.mainContent .sectionOne .skillsAndEducation .skillsAndSkillsList .skillsList .content .titleAndFluencies .fluenciesThree .fluencyThree .statusBar {
+  display: flex;
+  position: relative;
+}
+.mainContent .sectionOne .skillsAndEducation .skillsAndSkillsList .skillsList .content .titleAndFluencies .fluenciesThree .fluencyThree .statusBar .bottom {
+  width: 10rem;
+  height: 1.5rem;
+  border-radius: 0.5rem;
+  background-color: #545146;
+}
+@media (min-width: 300px) and (max-width: 330px) {
+  .mainContent .sectionOne .skillsAndEducation .skillsAndSkillsList .skillsList .content .titleAndFluencies .fluenciesThree .fluencyThree .statusBar .bottom {
+    width: 7.5rem;
+  }
+}
+@media (min-width: 330px) and (max-width: 350px) {
+  .mainContent .sectionOne .skillsAndEducation .skillsAndSkillsList .skillsList .content .titleAndFluencies .fluenciesThree .fluencyThree .statusBar .bottom {
+    width: 8.5rem;
+  }
+}
+@media (min-width: 350px) and (max-width: 360px) {
+  .mainContent .sectionOne .skillsAndEducation .skillsAndSkillsList .skillsList .content .titleAndFluencies .fluenciesThree .fluencyThree .statusBar .bottom {
+    width: 9rem;
+  }
+}
+.mainContent .sectionOne .skillsAndEducation .skillsAndSkillsList .skillsList .content .titleAndFluencies .fluenciesThree .fluencyThree .statusBar .percentage {
+  display: flex;
+  height: fit-content;
+  width: fit-content;
+  position: absolute;
+  top: 12%;
+  left: 45%;
+  font-size: 10pt;
+  font-weight: 500;
+  color: #ebebeb;
+  z-index: 2;
+}
+@media (min-width: 300px) and (max-width: 600px) {
+  .mainContent .sectionOne .skillsAndEducation .skillsAndSkillsList .skillsList .content .titleAndFluencies .fluenciesThree .fluencyThree .statusBar .percentage {
+    top: 10%;
+  }
+}
+.mainContent .sectionOne .skillsAndEducation .skillsAndSkillsList .skillsList .content .titleAndFluencies .fluenciesThree .fluencyThree .statusBar .topThree {
+  width: 7rem;
+  height: 1.5rem;
+  position: absolute;
+  border-radius: 0.5rem;
+  border: 0.1rem solid #656565;
+  background-color: #5c4f43;
+  animation: topEleven 1s cubic-bezier(0.1, -0.6, 0.2, 0) 0s 1 none;
+  z-index: 1;
+}
+@keyframes topEleven {
+  from {
+    width: 0rem;
+    background-color: #545146;
+    opacity: 0;
+  }
+  to {
+    width: 7rem;
+    background-color: #5c4f43;
+    opacity: 1;
+  }
+}
+@media (min-width: 300px) and (max-width: 330px) {
+  .mainContent .sectionOne .skillsAndEducation .skillsAndSkillsList .skillsList .content .titleAndFluencies .fluenciesThree .fluencyThree .statusBar .topThree {
+    width: 5.25rem;
+  }
+  @keyframes topEleven {
+    from {
+      width: 0rem;
+      background-color: #545146;
+      opacity: 0;
+    }
+    to {
+      width: 5.25rem;
+      background-color: #5c4f43;
+      opacity: 1;
+    }
+  }
+}
+@media (min-width: 330px) and (max-width: 350px) {
+  .mainContent .sectionOne .skillsAndEducation .skillsAndSkillsList .skillsList .content .titleAndFluencies .fluenciesThree .fluencyThree .statusBar .topThree {
+    width: 5.95rem;
+  }
+  @keyframes topEleven {
+    from {
+      width: 0rem;
+      background-color: #545146;
+      opacity: 0;
+    }
+    to {
+      width: 5.95rem;
+      background-color: #5c4f43;
+      opacity: 1;
+    }
+  }
+}
+@media (min-width: 350px) and (max-width: 360px) {
+  .mainContent .sectionOne .skillsAndEducation .skillsAndSkillsList .skillsList .content .titleAndFluencies .fluenciesThree .fluencyThree .statusBar .topThree {
+    width: 6.3rem;
+  }
+  @keyframes topEleven {
+    from {
+      width: 0rem;
+      background-color: #545146;
+      opacity: 0;
+    }
+    to {
+      width: 6.3rem;
+      background-color: #5c4f43;
+      opacity: 1;
+    }
+  }
+}
+.mainContent .sectionOne .skillsAndEducation .skillsAndSkillsList .skillsList .content .titleAndFluencies .fluenciesThree .fluencyFour {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.mainContent .sectionOne .skillsAndEducation .skillsAndSkillsList .skillsList .content .titleAndFluencies .fluenciesThree .fluencyFour .name {
+  font-size: 11.5pt;
+  font-weight: 500;
+  color: #ffffff;
+  position: unset;
+}
+@media (min-width: 500px) and (max-width: 600px) {
+  .mainContent .sectionOne .skillsAndEducation .skillsAndSkillsList .skillsList .content .titleAndFluencies .fluenciesThree .fluencyFour .name {
+    font-size: 12pt;
+  }
+}
+.mainContent .sectionOne .skillsAndEducation .skillsAndSkillsList .skillsList .content .titleAndFluencies .fluenciesThree .fluencyFour .statusBar {
+  display: flex;
+  position: relative;
+}
+.mainContent .sectionOne .skillsAndEducation .skillsAndSkillsList .skillsList .content .titleAndFluencies .fluenciesThree .fluencyFour .statusBar .bottom {
+  width: 10rem;
+  height: 1.5rem;
+  border-radius: 0.5rem;
+  background-color: #545146;
+}
+@media (min-width: 300px) and (max-width: 330px) {
+  .mainContent .sectionOne .skillsAndEducation .skillsAndSkillsList .skillsList .content .titleAndFluencies .fluenciesThree .fluencyFour .statusBar .bottom {
+    width: 7.5rem;
+  }
+}
+@media (min-width: 330px) and (max-width: 350px) {
+  .mainContent .sectionOne .skillsAndEducation .skillsAndSkillsList .skillsList .content .titleAndFluencies .fluenciesThree .fluencyFour .statusBar .bottom {
+    width: 8.5rem;
+  }
+}
+@media (min-width: 350px) and (max-width: 360px) {
+  .mainContent .sectionOne .skillsAndEducation .skillsAndSkillsList .skillsList .content .titleAndFluencies .fluenciesThree .fluencyFour .statusBar .bottom {
+    width: 9rem;
+  }
+}
+.mainContent .sectionOne .skillsAndEducation .skillsAndSkillsList .skillsList .content .titleAndFluencies .fluenciesThree .fluencyFour .statusBar .percentage {
+  display: flex;
+  height: fit-content;
+  width: fit-content;
+  position: absolute;
+  top: 12%;
+  left: 45%;
+  font-size: 10pt;
+  font-weight: 500;
+  color: #ebebeb;
+  z-index: 2;
+}
+@media (min-width: 300px) and (max-width: 600px) {
+  .mainContent .sectionOne .skillsAndEducation .skillsAndSkillsList .skillsList .content .titleAndFluencies .fluenciesThree .fluencyFour .statusBar .percentage {
+    top: 10%;
+  }
+}
+.mainContent .sectionOne .skillsAndEducation .skillsAndSkillsList .skillsList .content .titleAndFluencies .fluenciesThree .fluencyFour .statusBar .topFour {
+  width: 8rem;
+  height: 1.5rem;
+  position: absolute;
+  border-radius: 0.5rem;
+  border: 0.1rem solid #656565;
+  background-color: #5c4f43;
+  animation: topTwelve 1s cubic-bezier(0.1, -0.6, 0.2, 0) 0s 1 none;
+  z-index: 1;
+}
+@keyframes topTwelve {
+  from {
+    width: 0rem;
+    background-color: #545146;
+    opacity: 0;
+  }
+  to {
+    width: 8rem;
+    background-color: #5c4f43;
+    opacity: 1;
+  }
+}
+@media (min-width: 300px) and (max-width: 330px) {
+  .mainContent .sectionOne .skillsAndEducation .skillsAndSkillsList .skillsList .content .titleAndFluencies .fluenciesThree .fluencyFour .statusBar .topFour {
+    width: 6rem;
+  }
+  @keyframes topTwelve {
     from {
       width: 0rem;
       background-color: #545146;
@@ -6512,10 +7065,10 @@ input[type=email]) {
   }
 }
 @media (min-width: 330px) and (max-width: 350px) {
-  .mainContent .sectionOne .skillsAndEducation .skillsAndSkillsList .skillsList .content .titleAndFluencies .fluenciesTwo .fluencyFour .statusBar .topFour {
+  .mainContent .sectionOne .skillsAndEducation .skillsAndSkillsList .skillsList .content .titleAndFluencies .fluenciesThree .fluencyFour .statusBar .topFour {
     width: 6.8rem;
   }
-  @keyframes topEight {
+  @keyframes topTwelve {
     from {
       width: 0rem;
       background-color: #545146;
@@ -6529,10 +7082,10 @@ input[type=email]) {
   }
 }
 @media (min-width: 350px) and (max-width: 360px) {
-  .mainContent .sectionOne .skillsAndEducation .skillsAndSkillsList .skillsList .content .titleAndFluencies .fluenciesTwo .fluencyFour .statusBar .topFour {
+  .mainContent .sectionOne .skillsAndEducation .skillsAndSkillsList .skillsList .content .titleAndFluencies .fluenciesThree .fluencyFour .statusBar .topFour {
     width: 7.2rem;
   }
-  @keyframes topEight {
+  @keyframes topTwelve {
     from {
       width: 0rem;
       background-color: #545146;
@@ -6540,6 +7093,560 @@ input[type=email]) {
     }
     to {
       width: 7.2rem;
+      background-color: #5c4f43;
+      opacity: 1;
+    }
+  }
+}
+.mainContent .sectionOne .skillsAndEducation .skillsAndSkillsList .skillsList .content .titleAndFluencies .fluenciesFour {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1.2rem;
+  margin-left: 1rem;
+  animation: fluenciesFour 0.5s linear 1;
+}
+@keyframes fluenciesFour {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@media (min-width: 300px) and (max-width: 400px) {
+  .mainContent .sectionOne .skillsAndEducation .skillsAndSkillsList .skillsList .content .titleAndFluencies .fluenciesFour {
+    margin-left: 0.5rem;
+  }
+}
+@media (min-width: 300px) and (max-width: 600px) {
+  .mainContent .sectionOne .skillsAndEducation .skillsAndSkillsList .skillsList .content .titleAndFluencies .fluenciesFour {
+    row-gap: 1.5rem;
+  }
+}
+.mainContent .sectionOne .skillsAndEducation .skillsAndSkillsList .skillsList .content .titleAndFluencies .fluenciesFour .fluencyOne {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.mainContent .sectionOne .skillsAndEducation .skillsAndSkillsList .skillsList .content .titleAndFluencies .fluenciesFour .fluencyOne .name {
+  font-size: 11.5pt;
+  font-weight: 500;
+  color: #ffffff;
+  position: unset;
+}
+@media (min-width: 500px) and (max-width: 600px) {
+  .mainContent .sectionOne .skillsAndEducation .skillsAndSkillsList .skillsList .content .titleAndFluencies .fluenciesFour .fluencyOne .name {
+    font-size: 12pt;
+  }
+}
+.mainContent .sectionOne .skillsAndEducation .skillsAndSkillsList .skillsList .content .titleAndFluencies .fluenciesFour .fluencyOne .statusBar {
+  display: flex;
+  position: relative;
+}
+.mainContent .sectionOne .skillsAndEducation .skillsAndSkillsList .skillsList .content .titleAndFluencies .fluenciesFour .fluencyOne .statusBar .bottom {
+  width: 10rem;
+  height: 1.5rem;
+  border-radius: 0.5rem;
+  background-color: #545146;
+}
+@media (min-width: 300px) and (max-width: 330px) {
+  .mainContent .sectionOne .skillsAndEducation .skillsAndSkillsList .skillsList .content .titleAndFluencies .fluenciesFour .fluencyOne .statusBar .bottom {
+    width: 7.5rem;
+  }
+}
+@media (min-width: 330px) and (max-width: 350px) {
+  .mainContent .sectionOne .skillsAndEducation .skillsAndSkillsList .skillsList .content .titleAndFluencies .fluenciesFour .fluencyOne .statusBar .bottom {
+    width: 8.5rem;
+  }
+}
+@media (min-width: 350px) and (max-width: 360px) {
+  .mainContent .sectionOne .skillsAndEducation .skillsAndSkillsList .skillsList .content .titleAndFluencies .fluenciesFour .fluencyOne .statusBar .bottom {
+    width: 9rem;
+  }
+}
+.mainContent .sectionOne .skillsAndEducation .skillsAndSkillsList .skillsList .content .titleAndFluencies .fluenciesFour .fluencyOne .statusBar .percentage {
+  display: flex;
+  height: fit-content;
+  width: fit-content;
+  position: absolute;
+  top: 12%;
+  left: 44%;
+  font-size: 10pt;
+  font-weight: 500;
+  color: #ebebeb;
+  z-index: 2;
+}
+@media (min-width: 300px) and (max-width: 1023px) {
+  .mainContent .sectionOne .skillsAndEducation .skillsAndSkillsList .skillsList .content .titleAndFluencies .fluenciesFour .fluencyOne .statusBar .percentage {
+    top: 10%;
+    left: 42%;
+  }
+}
+.mainContent .sectionOne .skillsAndEducation .skillsAndSkillsList .skillsList .content .titleAndFluencies .fluenciesFour .fluencyOne .statusBar .topOne {
+  width: 8rem;
+  height: 1.5rem;
+  position: absolute;
+  border-radius: 0.5rem;
+  border: 0.1rem solid #656565;
+  background-color: #5c4f43;
+  animation: topThirteen 1s cubic-bezier(0.1, -0.6, 0.2, 0) 0s 1 none;
+  z-index: 1;
+}
+@keyframes topThirteen {
+  from {
+    width: 0rem;
+    background-color: #545146;
+    opacity: 0;
+  }
+  to {
+    width: 8rem;
+    background-color: #5c4f43;
+    opacity: 1;
+  }
+}
+@media (min-width: 300px) and (max-width: 330px) {
+  .mainContent .sectionOne .skillsAndEducation .skillsAndSkillsList .skillsList .content .titleAndFluencies .fluenciesFour .fluencyOne .statusBar .topOne {
+    width: 6rem;
+  }
+  @keyframes topThirteen {
+    from {
+      width: 0rem;
+      background-color: #545146;
+      opacity: 0;
+    }
+    to {
+      width: 6rem;
+      background-color: #5c4f43;
+      opacity: 1;
+    }
+  }
+}
+@media (min-width: 330px) and (max-width: 350px) {
+  .mainContent .sectionOne .skillsAndEducation .skillsAndSkillsList .skillsList .content .titleAndFluencies .fluenciesFour .fluencyOne .statusBar .topOne {
+    width: 6.8rem;
+  }
+  @keyframes topThirteen {
+    from {
+      width: 0rem;
+      background-color: #545146;
+      opacity: 0;
+    }
+    to {
+      width: 6.8rem;
+      background-color: #5c4f43;
+      opacity: 1;
+    }
+  }
+}
+@media (min-width: 350px) and (max-width: 360px) {
+  .mainContent .sectionOne .skillsAndEducation .skillsAndSkillsList .skillsList .content .titleAndFluencies .fluenciesFour .fluencyOne .statusBar .topOne {
+    width: 7.2rem;
+  }
+  @keyframes topThirteen {
+    from {
+      width: 0rem;
+      background-color: #545146;
+      opacity: 0;
+    }
+    to {
+      width: 7.2rem;
+      background-color: #5c4f43;
+      opacity: 1;
+    }
+  }
+}
+.mainContent .sectionOne .skillsAndEducation .skillsAndSkillsList .skillsList .content .titleAndFluencies .fluenciesFour .fluencyTwo {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.mainContent .sectionOne .skillsAndEducation .skillsAndSkillsList .skillsList .content .titleAndFluencies .fluenciesFour .fluencyTwo .name {
+  font-size: 11.5pt;
+  font-weight: 500;
+  color: #ffffff;
+  position: unset;
+}
+@media (min-width: 500px) and (max-width: 600px) {
+  .mainContent .sectionOne .skillsAndEducation .skillsAndSkillsList .skillsList .content .titleAndFluencies .fluenciesFour .fluencyTwo .name {
+    font-size: 12pt;
+  }
+}
+.mainContent .sectionOne .skillsAndEducation .skillsAndSkillsList .skillsList .content .titleAndFluencies .fluenciesFour .fluencyTwo .statusBar {
+  display: flex;
+  position: relative;
+}
+.mainContent .sectionOne .skillsAndEducation .skillsAndSkillsList .skillsList .content .titleAndFluencies .fluenciesFour .fluencyTwo .statusBar .bottom {
+  width: 10rem;
+  height: 1.5rem;
+  border-radius: 0.5rem;
+  background-color: #545146;
+}
+@media (min-width: 300px) and (max-width: 330px) {
+  .mainContent .sectionOne .skillsAndEducation .skillsAndSkillsList .skillsList .content .titleAndFluencies .fluenciesFour .fluencyTwo .statusBar .bottom {
+    width: 7.5rem;
+  }
+}
+@media (min-width: 330px) and (max-width: 350px) {
+  .mainContent .sectionOne .skillsAndEducation .skillsAndSkillsList .skillsList .content .titleAndFluencies .fluenciesFour .fluencyTwo .statusBar .bottom {
+    width: 8.5rem;
+  }
+}
+@media (min-width: 350px) and (max-width: 360px) {
+  .mainContent .sectionOne .skillsAndEducation .skillsAndSkillsList .skillsList .content .titleAndFluencies .fluenciesFour .fluencyTwo .statusBar .bottom {
+    width: 9rem;
+  }
+}
+.mainContent .sectionOne .skillsAndEducation .skillsAndSkillsList .skillsList .content .titleAndFluencies .fluenciesFour .fluencyTwo .statusBar .percentage {
+  display: flex;
+  height: fit-content;
+  width: fit-content;
+  position: absolute;
+  top: 12%;
+  left: 45%;
+  font-size: 10pt;
+  font-weight: 500;
+  color: #ebebeb;
+  z-index: 2;
+}
+@media (min-width: 300px) and (max-width: 600px) {
+  .mainContent .sectionOne .skillsAndEducation .skillsAndSkillsList .skillsList .content .titleAndFluencies .fluenciesFour .fluencyTwo .statusBar .percentage {
+    top: 10%;
+  }
+}
+.mainContent .sectionOne .skillsAndEducation .skillsAndSkillsList .skillsList .content .titleAndFluencies .fluenciesFour .fluencyTwo .statusBar .topTwo {
+  width: 8rem;
+  height: 1.5rem;
+  position: absolute;
+  border-radius: 0.5rem;
+  border: 0.1rem solid #656565;
+  background-color: #5c4f43;
+  animation: topFourteen 1s cubic-bezier(0.1, -0.6, 0.2, 0) 0s 1 none;
+  z-index: 1;
+}
+@keyframes topFourteen {
+  from {
+    width: 0rem;
+    background-color: #545146;
+    opacity: 0;
+  }
+  to {
+    width: 8rem;
+    background-color: #5c4f43;
+    opacity: 1;
+  }
+}
+@media (min-width: 300px) and (max-width: 330px) {
+  .mainContent .sectionOne .skillsAndEducation .skillsAndSkillsList .skillsList .content .titleAndFluencies .fluenciesFour .fluencyTwo .statusBar .topTwo {
+    width: 6rem;
+  }
+  @keyframes topFourteen {
+    from {
+      width: 0rem;
+      background-color: #545146;
+      opacity: 0;
+    }
+    to {
+      width: 6rem;
+      background-color: #5c4f43;
+      opacity: 1;
+    }
+  }
+}
+@media (min-width: 330px) and (max-width: 350px) {
+  .mainContent .sectionOne .skillsAndEducation .skillsAndSkillsList .skillsList .content .titleAndFluencies .fluenciesFour .fluencyTwo .statusBar .topTwo {
+    width: 6.8rem;
+  }
+  @keyframes topFourteen {
+    from {
+      width: 0rem;
+      background-color: #545146;
+      opacity: 0;
+    }
+    to {
+      width: 6.8rem;
+      background-color: #5c4f43;
+      opacity: 1;
+    }
+  }
+}
+@media (min-width: 350px) and (max-width: 360px) {
+  .mainContent .sectionOne .skillsAndEducation .skillsAndSkillsList .skillsList .content .titleAndFluencies .fluenciesFour .fluencyTwo .statusBar .topTwo {
+    width: 7.2rem;
+  }
+  @keyframes topFourteen {
+    from {
+      width: 0rem;
+      background-color: #545146;
+      opacity: 0;
+    }
+    to {
+      width: 7.2rem;
+      background-color: #5c4f43;
+      opacity: 1;
+    }
+  }
+}
+.mainContent .sectionOne .skillsAndEducation .skillsAndSkillsList .skillsList .content .titleAndFluencies .fluenciesFour .fluencyThree {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.mainContent .sectionOne .skillsAndEducation .skillsAndSkillsList .skillsList .content .titleAndFluencies .fluenciesFour .fluencyThree .name {
+  font-size: 11.5pt;
+  font-weight: 500;
+  color: #ffffff;
+  position: unset;
+}
+@media (min-width: 500px) and (max-width: 600px) {
+  .mainContent .sectionOne .skillsAndEducation .skillsAndSkillsList .skillsList .content .titleAndFluencies .fluenciesFour .fluencyThree .name {
+    font-size: 12pt;
+  }
+}
+.mainContent .sectionOne .skillsAndEducation .skillsAndSkillsList .skillsList .content .titleAndFluencies .fluenciesFour .fluencyThree .statusBar {
+  display: flex;
+  position: relative;
+}
+.mainContent .sectionOne .skillsAndEducation .skillsAndSkillsList .skillsList .content .titleAndFluencies .fluenciesFour .fluencyThree .statusBar .bottom {
+  width: 10rem;
+  height: 1.5rem;
+  border-radius: 0.5rem;
+  background-color: #545146;
+}
+@media (min-width: 300px) and (max-width: 330px) {
+  .mainContent .sectionOne .skillsAndEducation .skillsAndSkillsList .skillsList .content .titleAndFluencies .fluenciesFour .fluencyThree .statusBar .bottom {
+    width: 7.5rem;
+  }
+}
+@media (min-width: 330px) and (max-width: 350px) {
+  .mainContent .sectionOne .skillsAndEducation .skillsAndSkillsList .skillsList .content .titleAndFluencies .fluenciesFour .fluencyThree .statusBar .bottom {
+    width: 8.5rem;
+  }
+}
+@media (min-width: 350px) and (max-width: 360px) {
+  .mainContent .sectionOne .skillsAndEducation .skillsAndSkillsList .skillsList .content .titleAndFluencies .fluenciesFour .fluencyThree .statusBar .bottom {
+    width: 9rem;
+  }
+}
+.mainContent .sectionOne .skillsAndEducation .skillsAndSkillsList .skillsList .content .titleAndFluencies .fluenciesFour .fluencyThree .statusBar .percentage {
+  display: flex;
+  height: fit-content;
+  width: fit-content;
+  position: absolute;
+  top: 12%;
+  left: 45%;
+  font-size: 10pt;
+  font-weight: 500;
+  color: #ebebeb;
+  z-index: 2;
+}
+@media (min-width: 300px) and (max-width: 600px) {
+  .mainContent .sectionOne .skillsAndEducation .skillsAndSkillsList .skillsList .content .titleAndFluencies .fluenciesFour .fluencyThree .statusBar .percentage {
+    top: 10%;
+  }
+}
+.mainContent .sectionOne .skillsAndEducation .skillsAndSkillsList .skillsList .content .titleAndFluencies .fluenciesFour .fluencyThree .statusBar .topThree {
+  width: 9rem;
+  height: 1.5rem;
+  position: absolute;
+  border-radius: 0.5rem;
+  border: 0.1rem solid #656565;
+  background-color: #5c4f43;
+  animation: topFifteen 1s cubic-bezier(0.1, -0.6, 0.2, 0) 0s 1 none;
+  z-index: 1;
+}
+@keyframes topFifteen {
+  from {
+    width: 0rem;
+    background-color: #545146;
+    opacity: 0;
+  }
+  to {
+    width: 9rem;
+    background-color: #5c4f43;
+    opacity: 1;
+  }
+}
+@media (min-width: 300px) and (max-width: 330px) {
+  .mainContent .sectionOne .skillsAndEducation .skillsAndSkillsList .skillsList .content .titleAndFluencies .fluenciesFour .fluencyThree .statusBar .topThree {
+    width: 6.75rem;
+  }
+  @keyframes topFifteen {
+    from {
+      width: 0rem;
+      background-color: #545146;
+      opacity: 0;
+    }
+    to {
+      width: 6.75rem;
+      background-color: #5c4f43;
+      opacity: 1;
+    }
+  }
+}
+@media (min-width: 330px) and (max-width: 350px) {
+  .mainContent .sectionOne .skillsAndEducation .skillsAndSkillsList .skillsList .content .titleAndFluencies .fluenciesFour .fluencyThree .statusBar .topThree {
+    width: 7.65rem;
+  }
+  @keyframes topFifteen {
+    from {
+      width: 0rem;
+      background-color: #545146;
+      opacity: 0;
+    }
+    to {
+      width: 7.65rem;
+      background-color: #5c4f43;
+      opacity: 1;
+    }
+  }
+}
+@media (min-width: 350px) and (max-width: 360px) {
+  .mainContent .sectionOne .skillsAndEducation .skillsAndSkillsList .skillsList .content .titleAndFluencies .fluenciesFour .fluencyThree .statusBar .topThree {
+    width: 8.1rem;
+  }
+  @keyframes topFifteen {
+    from {
+      width: 0rem;
+      background-color: #545146;
+      opacity: 0;
+    }
+    to {
+      width: 8.1rem;
+      background-color: #5c4f43;
+      opacity: 1;
+    }
+  }
+}
+.mainContent .sectionOne .skillsAndEducation .skillsAndSkillsList .skillsList .content .titleAndFluencies .fluenciesFour .fluencyFour {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.mainContent .sectionOne .skillsAndEducation .skillsAndSkillsList .skillsList .content .titleAndFluencies .fluenciesFour .fluencyFour .name {
+  font-size: 11.5pt;
+  font-weight: 500;
+  color: #ffffff;
+  position: unset;
+}
+@media (min-width: 500px) and (max-width: 600px) {
+  .mainContent .sectionOne .skillsAndEducation .skillsAndSkillsList .skillsList .content .titleAndFluencies .fluenciesFour .fluencyFour .name {
+    font-size: 12pt;
+  }
+}
+.mainContent .sectionOne .skillsAndEducation .skillsAndSkillsList .skillsList .content .titleAndFluencies .fluenciesFour .fluencyFour .statusBar {
+  display: flex;
+  position: relative;
+}
+.mainContent .sectionOne .skillsAndEducation .skillsAndSkillsList .skillsList .content .titleAndFluencies .fluenciesFour .fluencyFour .statusBar .bottom {
+  width: 10rem;
+  height: 1.5rem;
+  border-radius: 0.5rem;
+  background-color: #545146;
+}
+@media (min-width: 300px) and (max-width: 330px) {
+  .mainContent .sectionOne .skillsAndEducation .skillsAndSkillsList .skillsList .content .titleAndFluencies .fluenciesFour .fluencyFour .statusBar .bottom {
+    width: 7.5rem;
+  }
+}
+@media (min-width: 330px) and (max-width: 350px) {
+  .mainContent .sectionOne .skillsAndEducation .skillsAndSkillsList .skillsList .content .titleAndFluencies .fluenciesFour .fluencyFour .statusBar .bottom {
+    width: 8.5rem;
+  }
+}
+@media (min-width: 350px) and (max-width: 360px) {
+  .mainContent .sectionOne .skillsAndEducation .skillsAndSkillsList .skillsList .content .titleAndFluencies .fluenciesFour .fluencyFour .statusBar .bottom {
+    width: 9rem;
+  }
+}
+.mainContent .sectionOne .skillsAndEducation .skillsAndSkillsList .skillsList .content .titleAndFluencies .fluenciesFour .fluencyFour .statusBar .percentage {
+  display: flex;
+  height: fit-content;
+  width: fit-content;
+  position: absolute;
+  top: 12%;
+  left: 45%;
+  font-size: 10pt;
+  font-weight: 500;
+  color: #ebebeb;
+  z-index: 2;
+}
+@media (min-width: 300px) and (max-width: 600px) {
+  .mainContent .sectionOne .skillsAndEducation .skillsAndSkillsList .skillsList .content .titleAndFluencies .fluenciesFour .fluencyFour .statusBar .percentage {
+    top: 10%;
+  }
+}
+.mainContent .sectionOne .skillsAndEducation .skillsAndSkillsList .skillsList .content .titleAndFluencies .fluenciesFour .fluencyFour .statusBar .topFour {
+  width: 7.5rem;
+  height: 1.5rem;
+  position: absolute;
+  border-radius: 0.5rem;
+  border: 0.1rem solid #656565;
+  background-color: #5c4f43;
+  animation: topSixteen 1s cubic-bezier(0.1, -0.6, 0.2, 0) 0s 1 none;
+  z-index: 1;
+}
+@keyframes topSixteen {
+  from {
+    width: 0rem;
+    background-color: #545146;
+    opacity: 0;
+  }
+  to {
+    width: 7.5rem;
+    background-color: #5c4f43;
+    opacity: 1;
+  }
+}
+@media (min-width: 300px) and (max-width: 330px) {
+  .mainContent .sectionOne .skillsAndEducation .skillsAndSkillsList .skillsList .content .titleAndFluencies .fluenciesFour .fluencyFour .statusBar .topFour {
+    width: 5.625rem;
+  }
+  @keyframes topSixteen {
+    from {
+      width: 0rem;
+      background-color: #545146;
+      opacity: 0;
+    }
+    to {
+      width: 5.625rem;
+      background-color: #5c4f43;
+      opacity: 1;
+    }
+  }
+}
+@media (min-width: 330px) and (max-width: 350px) {
+  .mainContent .sectionOne .skillsAndEducation .skillsAndSkillsList .skillsList .content .titleAndFluencies .fluenciesFour .fluencyFour .statusBar .topFour {
+    width: 6.375rem;
+  }
+  @keyframes topSixteen {
+    from {
+      width: 0rem;
+      background-color: #545146;
+      opacity: 0;
+    }
+    to {
+      width: 6.375rem;
+      background-color: #5c4f43;
+      opacity: 1;
+    }
+  }
+}
+@media (min-width: 350px) and (max-width: 360px) {
+  .mainContent .sectionOne .skillsAndEducation .skillsAndSkillsList .skillsList .content .titleAndFluencies .fluenciesFour .fluencyFour .statusBar .topFour {
+    width: 6.75rem;
+  }
+  @keyframes topSixteen {
+    from {
+      width: 0rem;
+      background-color: #545146;
+      opacity: 0;
+    }
+    to {
+      width: 6.75rem;
       background-color: #5c4f43;
       opacity: 1;
     }
@@ -8534,7 +9641,7 @@ input[type=email]) {
   width: fit-content;
   position: absolute;
   top: 12%;
-  left: 44%;
+  left: 45%;
   font-size: 10pt;
   font-weight: 500;
   color: #ebebeb;
@@ -8547,7 +9654,7 @@ input[type=email]) {
   }
 }
 .mainContent .sectionOne .skillsList .content .titleAndFluencies .fluenciesTwo .fluencyOne .statusBar .topOne {
-  width: 10rem;
+  width: 7.5rem;
   height: 1.5rem;
   position: absolute;
   border-radius: 0.5rem;
@@ -8563,14 +9670,14 @@ input[type=email]) {
     opacity: 0;
   }
   to {
-    width: 10rem;
+    width: 7.5rem;
     background-color: #5c4f43;
     opacity: 1;
   }
 }
 @media (min-width: 1023px) and (max-width: 1200px) {
   .mainContent .sectionOne .skillsList .content .titleAndFluencies .fluenciesTwo .fluencyOne .statusBar .topOne {
-    width: 9rem;
+    width: 6.75rem;
   }
   @keyframes topFiveLarge {
     from {
@@ -8579,7 +9686,7 @@ input[type=email]) {
       opacity: 0;
     }
     to {
-      width: 9rem;
+      width: 6.75rem;
       background-color: #5c4f43;
       opacity: 1;
     }
@@ -8659,7 +9766,7 @@ input[type=email]) {
   }
 }
 .mainContent .sectionOne .skillsList .content .titleAndFluencies .fluenciesTwo .fluencyTwo .statusBar .topTwo {
-  width: 9rem;
+  width: 8rem;
   height: 1.5rem;
   position: absolute;
   border-radius: 0.5rem;
@@ -8675,14 +9782,14 @@ input[type=email]) {
     opacity: 0;
   }
   to {
-    width: 9rem;
+    width: 8rem;
     background-color: #5c4f43;
     opacity: 1;
   }
 }
 @media (min-width: 1023px) and (max-width: 1200px) {
   .mainContent .sectionOne .skillsList .content .titleAndFluencies .fluenciesTwo .fluencyTwo .statusBar .topTwo {
-    width: 8.1rem;
+    width: 7.2rem;
   }
   @keyframes topSixLarge {
     from {
@@ -8691,7 +9798,7 @@ input[type=email]) {
       opacity: 0;
     }
     to {
-      width: 8.1rem;
+      width: 7.2rem;
       background-color: #5c4f43;
       opacity: 1;
     }
@@ -8771,7 +9878,7 @@ input[type=email]) {
   }
 }
 .mainContent .sectionOne .skillsList .content .titleAndFluencies .fluenciesTwo .fluencyThree .statusBar .topThree {
-  width: 7rem;
+  width: 7.5rem;
   height: 1.5rem;
   position: absolute;
   border-radius: 0.5rem;
@@ -8787,14 +9894,14 @@ input[type=email]) {
     opacity: 0;
   }
   to {
-    width: 7rem;
+    width: 7.5rem;
     background-color: #5c4f43;
     opacity: 1;
   }
 }
 @media (min-width: 1023px) and (max-width: 1200px) {
   .mainContent .sectionOne .skillsList .content .titleAndFluencies .fluenciesTwo .fluencyThree .statusBar .topThree {
-    width: 6.3rem;
+    width: 6.75rem;
   }
   @keyframes topSevenLarge {
     from {
@@ -8803,7 +9910,7 @@ input[type=email]) {
       opacity: 0;
     }
     to {
-      width: 6.3rem;
+      width: 6.75rem;
       background-color: #5c4f43;
       opacity: 1;
     }
@@ -8916,6 +10023,936 @@ input[type=email]) {
     }
     to {
       width: 7.2rem;
+      background-color: #5c4f43;
+      opacity: 1;
+    }
+  }
+}
+.mainContent .sectionOne .skillsList .content .titleAndFluencies .fluenciesThree {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1.2rem;
+  margin-left: 1rem;
+  animation: fluenciesThree 0.5s linear 1;
+}
+@keyframes fluenciesThree {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@media (min-width: 1023px) and (max-width: 1100px) {
+  .mainContent .sectionOne .skillsList .content .titleAndFluencies .fluenciesThree {
+    row-gap: 0.7rem;
+  }
+}
+@media (min-width: 1100px) and (max-width: 1200px) {
+  .mainContent .sectionOne .skillsList .content .titleAndFluencies .fluenciesThree {
+    row-gap: 0.8rem;
+  }
+}
+.mainContent .sectionOne .skillsList .content .titleAndFluencies .fluenciesThree .fluencyOne {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.mainContent .sectionOne .skillsList .content .titleAndFluencies .fluenciesThree .fluencyOne .name {
+  font-size: 11.5pt;
+  font-weight: 500;
+  color: #ffffff;
+  position: unset;
+}
+@media (min-width: 1023px) and (max-width: 1100px) {
+  .mainContent .sectionOne .skillsList .content .titleAndFluencies .fluenciesThree .fluencyOne .name {
+    font-size: 8.5pt;
+  }
+}
+@media (orientation: portrait) and (min-width: 1023px) and (max-width: 1100px) {
+  .mainContent .sectionOne .skillsList .content .titleAndFluencies .fluenciesThree .fluencyOne .name {
+    font-size: 12pt;
+  }
+}
+@media (min-width: 1100px) and (max-width: 1200px) {
+  .mainContent .sectionOne .skillsList .content .titleAndFluencies .fluenciesThree .fluencyOne .name {
+    font-size: 9pt;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1300px) {
+  .mainContent .sectionOne .skillsList .content .titleAndFluencies .fluenciesThree .fluencyOne .name {
+    font-size: 10pt;
+  }
+}
+.mainContent .sectionOne .skillsList .content .titleAndFluencies .fluenciesThree .fluencyOne .statusBar {
+  display: flex;
+  position: relative;
+}
+.mainContent .sectionOne .skillsList .content .titleAndFluencies .fluenciesThree .fluencyOne .statusBar .bottom {
+  width: 10rem;
+  height: 1.5rem;
+  border-radius: 0.5rem;
+  background-color: #545146;
+}
+@media (min-width: 1023px) and (max-width: 1200px) {
+  .mainContent .sectionOne .skillsList .content .titleAndFluencies .fluenciesThree .fluencyOne .statusBar .bottom {
+    width: 9rem;
+  }
+}
+.mainContent .sectionOne .skillsList .content .titleAndFluencies .fluenciesThree .fluencyOne .statusBar .percentage {
+  display: flex;
+  height: fit-content;
+  width: fit-content;
+  position: absolute;
+  top: 12%;
+  left: 44%;
+  font-size: 10pt;
+  font-weight: 500;
+  color: #ebebeb;
+  z-index: 2;
+}
+@media (min-width: 1023px) and (max-width: 1300px) {
+  .mainContent .sectionOne .skillsList .content .titleAndFluencies .fluenciesThree .fluencyOne .statusBar .percentage {
+    top: 17%;
+    font-size: 9pt;
+  }
+}
+.mainContent .sectionOne .skillsList .content .titleAndFluencies .fluenciesThree .fluencyOne .statusBar .topOne {
+  width: 10rem;
+  height: 1.5rem;
+  position: absolute;
+  border-radius: 0.5rem;
+  border: 0.1rem solid #656565;
+  background-color: #5c4f43;
+  animation: topNineLarge 1s cubic-bezier(0.1, -0.6, 0.2, 0) 0s 1 none;
+  z-index: 1;
+}
+@keyframes topNineLarge {
+  from {
+    width: 0rem;
+    background-color: #545146;
+    opacity: 0;
+  }
+  to {
+    width: 10rem;
+    background-color: #5c4f43;
+    opacity: 1;
+  }
+}
+@media (min-width: 1023px) and (max-width: 1200px) {
+  .mainContent .sectionOne .skillsList .content .titleAndFluencies .fluenciesThree .fluencyOne .statusBar .topOne {
+    width: 9rem;
+  }
+  @keyframes topNineLarge {
+    from {
+      width: 0rem;
+      background-color: #545146;
+      opacity: 0;
+    }
+    to {
+      width: 9rem;
+      background-color: #5c4f43;
+      opacity: 1;
+    }
+  }
+}
+.mainContent .sectionOne .skillsList .content .titleAndFluencies .fluenciesThree .fluencyTwo {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+@media (min-width: 1023px) and (max-width: 1100px) {
+  .mainContent .sectionOne .skillsList .content .titleAndFluencies .fluenciesThree .fluencyTwo {
+    flex-direction: row;
+    column-gap: unset;
+    justify-content: space-between;
+    width: 100%;
+  }
+}
+.mainContent .sectionOne .skillsList .content .titleAndFluencies .fluenciesThree .fluencyTwo .name {
+  font-size: 11.5pt;
+  font-weight: 500;
+  color: #ffffff;
+  position: unset;
+}
+@media (min-width: 1023px) and (max-width: 1100px) {
+  .mainContent .sectionOne .skillsList .content .titleAndFluencies .fluenciesThree .fluencyTwo .name {
+    font-size: 8.5pt;
+  }
+}
+@media (orientation: portrait) and (min-width: 1023px) and (max-width: 1100px) {
+  .mainContent .sectionOne .skillsList .content .titleAndFluencies .fluenciesThree .fluencyTwo .name {
+    font-size: 12pt;
+  }
+}
+@media (min-width: 1100px) and (max-width: 1200px) {
+  .mainContent .sectionOne .skillsList .content .titleAndFluencies .fluenciesThree .fluencyTwo .name {
+    font-size: 9pt;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1300px) {
+  .mainContent .sectionOne .skillsList .content .titleAndFluencies .fluenciesThree .fluencyTwo .name {
+    font-size: 10pt;
+  }
+}
+.mainContent .sectionOne .skillsList .content .titleAndFluencies .fluenciesThree .fluencyTwo .statusBar {
+  display: flex;
+  position: relative;
+}
+.mainContent .sectionOne .skillsList .content .titleAndFluencies .fluenciesThree .fluencyTwo .statusBar .bottom {
+  width: 10rem;
+  height: 1.5rem;
+  border-radius: 0.5rem;
+  background-color: #545146;
+}
+@media (min-width: 1023px) and (max-width: 1200px) {
+  .mainContent .sectionOne .skillsList .content .titleAndFluencies .fluenciesThree .fluencyTwo .statusBar .bottom {
+    width: 9rem;
+  }
+}
+.mainContent .sectionOne .skillsList .content .titleAndFluencies .fluenciesThree .fluencyTwo .statusBar .percentage {
+  display: flex;
+  height: fit-content;
+  width: fit-content;
+  position: absolute;
+  top: 12%;
+  left: 45%;
+  font-size: 10pt;
+  font-weight: 500;
+  color: #ebebeb;
+  z-index: 2;
+}
+@media (min-width: 1023px) and (max-width: 1300px) {
+  .mainContent .sectionOne .skillsList .content .titleAndFluencies .fluenciesThree .fluencyTwo .statusBar .percentage {
+    top: 17%;
+    font-size: 9pt;
+  }
+}
+.mainContent .sectionOne .skillsList .content .titleAndFluencies .fluenciesThree .fluencyTwo .statusBar .topTwo {
+  width: 9rem;
+  height: 1.5rem;
+  position: absolute;
+  border-radius: 0.5rem;
+  border: 0.1rem solid #656565;
+  background-color: #5c4f43;
+  animation: topTenLarge 1s cubic-bezier(0.1, -0.6, 0.2, 0) 0s 1 none;
+  z-index: 1;
+}
+@keyframes topTenLarge {
+  from {
+    width: 0rem;
+    background-color: #545146;
+    opacity: 0;
+  }
+  to {
+    width: 9rem;
+    background-color: #5c4f43;
+    opacity: 1;
+  }
+}
+@media (min-width: 1023px) and (max-width: 1200px) {
+  .mainContent .sectionOne .skillsList .content .titleAndFluencies .fluenciesThree .fluencyTwo .statusBar .topTwo {
+    width: 8.1rem;
+  }
+  @keyframes topTenLarge {
+    from {
+      width: 0rem;
+      background-color: #545146;
+      opacity: 0;
+    }
+    to {
+      width: 8.1rem;
+      background-color: #5c4f43;
+      opacity: 1;
+    }
+  }
+}
+.mainContent .sectionOne .skillsList .content .titleAndFluencies .fluenciesThree .fluencyThree {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+@media (min-width: 1023px) and (max-width: 1100px) {
+  .mainContent .sectionOne .skillsList .content .titleAndFluencies .fluenciesThree .fluencyThree {
+    flex-direction: row;
+    column-gap: unset;
+    justify-content: space-between;
+    width: 100%;
+  }
+}
+.mainContent .sectionOne .skillsList .content .titleAndFluencies .fluenciesThree .fluencyThree .name {
+  font-size: 11.5pt;
+  font-weight: 500;
+  color: #ffffff;
+  position: unset;
+}
+@media (min-width: 1023px) and (max-width: 1100px) {
+  .mainContent .sectionOne .skillsList .content .titleAndFluencies .fluenciesThree .fluencyThree .name {
+    font-size: 8.5pt;
+  }
+}
+@media (orientation: portrait) and (min-width: 1023px) and (max-width: 1100px) {
+  .mainContent .sectionOne .skillsList .content .titleAndFluencies .fluenciesThree .fluencyThree .name {
+    font-size: 12pt;
+  }
+}
+@media (min-width: 1100px) and (max-width: 1200px) {
+  .mainContent .sectionOne .skillsList .content .titleAndFluencies .fluenciesThree .fluencyThree .name {
+    font-size: 9pt;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1300px) {
+  .mainContent .sectionOne .skillsList .content .titleAndFluencies .fluenciesThree .fluencyThree .name {
+    font-size: 10pt;
+  }
+}
+.mainContent .sectionOne .skillsList .content .titleAndFluencies .fluenciesThree .fluencyThree .statusBar {
+  display: flex;
+  position: relative;
+}
+.mainContent .sectionOne .skillsList .content .titleAndFluencies .fluenciesThree .fluencyThree .statusBar .bottom {
+  width: 10rem;
+  height: 1.5rem;
+  border-radius: 0.5rem;
+  background-color: #545146;
+}
+@media (min-width: 1023px) and (max-width: 1200px) {
+  .mainContent .sectionOne .skillsList .content .titleAndFluencies .fluenciesThree .fluencyThree .statusBar .bottom {
+    width: 9rem;
+  }
+}
+.mainContent .sectionOne .skillsList .content .titleAndFluencies .fluenciesThree .fluencyThree .statusBar .percentage {
+  display: flex;
+  height: fit-content;
+  width: fit-content;
+  position: absolute;
+  top: 12%;
+  left: 45%;
+  font-size: 10pt;
+  font-weight: 500;
+  color: #ebebeb;
+  z-index: 2;
+}
+@media (min-width: 1023px) and (max-width: 1300px) {
+  .mainContent .sectionOne .skillsList .content .titleAndFluencies .fluenciesThree .fluencyThree .statusBar .percentage {
+    top: 17%;
+    font-size: 9pt;
+  }
+}
+.mainContent .sectionOne .skillsList .content .titleAndFluencies .fluenciesThree .fluencyThree .statusBar .topThree {
+  width: 7rem;
+  height: 1.5rem;
+  position: absolute;
+  border-radius: 0.5rem;
+  border: 0.1rem solid #656565;
+  background-color: #5c4f43;
+  animation: topElevenLarge 1s cubic-bezier(0.1, -0.6, 0.2, 0) 0s 1 none;
+  z-index: 1;
+}
+@keyframes topElevenLarge {
+  from {
+    width: 0rem;
+    background-color: #545146;
+    opacity: 0;
+  }
+  to {
+    width: 7rem;
+    background-color: #5c4f43;
+    opacity: 1;
+  }
+}
+@media (min-width: 1023px) and (max-width: 1200px) {
+  .mainContent .sectionOne .skillsList .content .titleAndFluencies .fluenciesThree .fluencyThree .statusBar .topThree {
+    width: 6.3rem;
+  }
+  @keyframes topElevenLarge {
+    from {
+      width: 0rem;
+      background-color: #545146;
+      opacity: 0;
+    }
+    to {
+      width: 6.3rem;
+      background-color: #5c4f43;
+      opacity: 1;
+    }
+  }
+}
+.mainContent .sectionOne .skillsList .content .titleAndFluencies .fluenciesThree .fluencyFour {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+@media (min-width: 1023px) and (max-width: 1100px) {
+  .mainContent .sectionOne .skillsList .content .titleAndFluencies .fluenciesThree .fluencyFour {
+    flex-direction: row;
+    column-gap: unset;
+    justify-content: space-between;
+    width: 100%;
+  }
+}
+.mainContent .sectionOne .skillsList .content .titleAndFluencies .fluenciesThree .fluencyFour .name {
+  font-size: 11.5pt;
+  font-weight: 500;
+  color: #ffffff;
+  position: unset;
+}
+@media (min-width: 1023px) and (max-width: 1100px) {
+  .mainContent .sectionOne .skillsList .content .titleAndFluencies .fluenciesThree .fluencyFour .name {
+    font-size: 8.5pt;
+  }
+}
+@media (orientation: portrait) and (min-width: 1023px) and (max-width: 1100px) {
+  .mainContent .sectionOne .skillsList .content .titleAndFluencies .fluenciesThree .fluencyFour .name {
+    font-size: 12pt;
+  }
+}
+@media (min-width: 1100px) and (max-width: 1200px) {
+  .mainContent .sectionOne .skillsList .content .titleAndFluencies .fluenciesThree .fluencyFour .name {
+    font-size: 9pt;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1300px) {
+  .mainContent .sectionOne .skillsList .content .titleAndFluencies .fluenciesThree .fluencyFour .name {
+    font-size: 10pt;
+  }
+}
+.mainContent .sectionOne .skillsList .content .titleAndFluencies .fluenciesThree .fluencyFour .statusBar {
+  display: flex;
+  position: relative;
+}
+.mainContent .sectionOne .skillsList .content .titleAndFluencies .fluenciesThree .fluencyFour .statusBar .bottom {
+  width: 10rem;
+  height: 1.5rem;
+  border-radius: 0.5rem;
+  background-color: #545146;
+}
+@media (min-width: 1023px) and (max-width: 1200px) {
+  .mainContent .sectionOne .skillsList .content .titleAndFluencies .fluenciesThree .fluencyFour .statusBar .bottom {
+    width: 9rem;
+  }
+}
+.mainContent .sectionOne .skillsList .content .titleAndFluencies .fluenciesThree .fluencyFour .statusBar .percentage {
+  display: flex;
+  height: fit-content;
+  width: fit-content;
+  position: absolute;
+  top: 12%;
+  left: 45%;
+  font-size: 10pt;
+  font-weight: 500;
+  color: #ebebeb;
+  z-index: 2;
+}
+@media (min-width: 1023px) and (max-width: 1300px) {
+  .mainContent .sectionOne .skillsList .content .titleAndFluencies .fluenciesThree .fluencyFour .statusBar .percentage {
+    top: 17%;
+    font-size: 9pt;
+  }
+}
+.mainContent .sectionOne .skillsList .content .titleAndFluencies .fluenciesThree .fluencyFour .statusBar .topFour {
+  width: 8rem;
+  height: 1.5rem;
+  position: absolute;
+  border-radius: 0.5rem;
+  border: 0.1rem solid #656565;
+  background-color: #5c4f43;
+  animation: topTwelveLarge 1s cubic-bezier(0.1, -0.6, 0.2, 0) 0s 1 none;
+  z-index: 1;
+}
+@keyframes topTwelveLarge {
+  from {
+    width: 0rem;
+    background-color: #545146;
+    opacity: 0;
+  }
+  to {
+    width: 8rem;
+    background-color: #5c4f43;
+    opacity: 1;
+  }
+}
+@media (min-width: 1023px) and (max-width: 1200px) {
+  .mainContent .sectionOne .skillsList .content .titleAndFluencies .fluenciesThree .fluencyFour .statusBar .topFour {
+    width: 7.2rem;
+  }
+  @keyframes topTwelveLarge {
+    from {
+      width: 0rem;
+      background-color: #545146;
+      opacity: 0;
+    }
+    to {
+      width: 7.2rem;
+      background-color: #5c4f43;
+      opacity: 1;
+    }
+  }
+}
+.mainContent .sectionOne .skillsList .content .titleAndFluencies .fluenciesFour {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1.2rem;
+  margin-left: 1rem;
+  animation: fluenciesFour 0.5s linear 1;
+}
+@keyframes fluenciesFour {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@media (min-width: 1023px) and (max-width: 1100px) {
+  .mainContent .sectionOne .skillsList .content .titleAndFluencies .fluenciesFour {
+    row-gap: 0.7rem;
+  }
+}
+@media (min-width: 1100px) and (max-width: 1200px) {
+  .mainContent .sectionOne .skillsList .content .titleAndFluencies .fluenciesFour {
+    row-gap: 0.8rem;
+  }
+}
+.mainContent .sectionOne .skillsList .content .titleAndFluencies .fluenciesFour .fluencyOne {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.mainContent .sectionOne .skillsList .content .titleAndFluencies .fluenciesFour .fluencyOne .name {
+  font-size: 11.5pt;
+  font-weight: 500;
+  color: #ffffff;
+  position: unset;
+}
+@media (min-width: 1023px) and (max-width: 1100px) {
+  .mainContent .sectionOne .skillsList .content .titleAndFluencies .fluenciesFour .fluencyOne .name {
+    font-size: 8.5pt;
+  }
+}
+@media (orientation: portrait) and (min-width: 1023px) and (max-width: 1100px) {
+  .mainContent .sectionOne .skillsList .content .titleAndFluencies .fluenciesFour .fluencyOne .name {
+    font-size: 12pt;
+  }
+}
+@media (min-width: 1100px) and (max-width: 1200px) {
+  .mainContent .sectionOne .skillsList .content .titleAndFluencies .fluenciesFour .fluencyOne .name {
+    font-size: 9pt;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1300px) {
+  .mainContent .sectionOne .skillsList .content .titleAndFluencies .fluenciesFour .fluencyOne .name {
+    font-size: 10pt;
+  }
+}
+.mainContent .sectionOne .skillsList .content .titleAndFluencies .fluenciesFour .fluencyOne .statusBar {
+  display: flex;
+  position: relative;
+}
+.mainContent .sectionOne .skillsList .content .titleAndFluencies .fluenciesFour .fluencyOne .statusBar .bottom {
+  width: 10rem;
+  height: 1.5rem;
+  border-radius: 0.5rem;
+  background-color: #545146;
+}
+@media (min-width: 1023px) and (max-width: 1200px) {
+  .mainContent .sectionOne .skillsList .content .titleAndFluencies .fluenciesFour .fluencyOne .statusBar .bottom {
+    width: 9rem;
+  }
+}
+.mainContent .sectionOne .skillsList .content .titleAndFluencies .fluenciesFour .fluencyOne .statusBar .percentage {
+  display: flex;
+  height: fit-content;
+  width: fit-content;
+  position: absolute;
+  top: 12%;
+  left: 44%;
+  font-size: 10pt;
+  font-weight: 500;
+  color: #ebebeb;
+  z-index: 2;
+}
+@media (min-width: 1023px) and (max-width: 1300px) {
+  .mainContent .sectionOne .skillsList .content .titleAndFluencies .fluenciesFour .fluencyOne .statusBar .percentage {
+    top: 17%;
+    font-size: 9pt;
+  }
+}
+.mainContent .sectionOne .skillsList .content .titleAndFluencies .fluenciesFour .fluencyOne .statusBar .topOne {
+  width: 8rem;
+  height: 1.5rem;
+  position: absolute;
+  border-radius: 0.5rem;
+  border: 0.1rem solid #656565;
+  background-color: #5c4f43;
+  animation: topThirteenLarge 1s cubic-bezier(0.1, -0.6, 0.2, 0) 0s 1 none;
+  z-index: 1;
+}
+@keyframes topThirteenLarge {
+  from {
+    width: 0rem;
+    background-color: #545146;
+    opacity: 0;
+  }
+  to {
+    width: 8rem;
+    background-color: #5c4f43;
+    opacity: 1;
+  }
+}
+@media (min-width: 1023px) and (max-width: 1200px) {
+  .mainContent .sectionOne .skillsList .content .titleAndFluencies .fluenciesFour .fluencyOne .statusBar .topOne {
+    width: 7.2rem;
+  }
+  @keyframes topThirteenLarge {
+    from {
+      width: 0rem;
+      background-color: #545146;
+      opacity: 0;
+    }
+    to {
+      width: 7.2rem;
+      background-color: #5c4f43;
+      opacity: 1;
+    }
+  }
+}
+.mainContent .sectionOne .skillsList .content .titleAndFluencies .fluenciesFour .fluencyTwo {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+@media (min-width: 1023px) and (max-width: 1100px) {
+  .mainContent .sectionOne .skillsList .content .titleAndFluencies .fluenciesFour .fluencyTwo {
+    flex-direction: row;
+    column-gap: unset;
+    justify-content: space-between;
+    width: 100%;
+  }
+}
+.mainContent .sectionOne .skillsList .content .titleAndFluencies .fluenciesFour .fluencyTwo .name {
+  font-size: 11.5pt;
+  font-weight: 500;
+  color: #ffffff;
+  position: unset;
+}
+@media (min-width: 1023px) and (max-width: 1100px) {
+  .mainContent .sectionOne .skillsList .content .titleAndFluencies .fluenciesFour .fluencyTwo .name {
+    font-size: 8.5pt;
+  }
+}
+@media (orientation: portrait) and (min-width: 1023px) and (max-width: 1100px) {
+  .mainContent .sectionOne .skillsList .content .titleAndFluencies .fluenciesFour .fluencyTwo .name {
+    font-size: 12pt;
+  }
+}
+@media (min-width: 1100px) and (max-width: 1200px) {
+  .mainContent .sectionOne .skillsList .content .titleAndFluencies .fluenciesFour .fluencyTwo .name {
+    font-size: 9pt;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1300px) {
+  .mainContent .sectionOne .skillsList .content .titleAndFluencies .fluenciesFour .fluencyTwo .name {
+    font-size: 10pt;
+  }
+}
+.mainContent .sectionOne .skillsList .content .titleAndFluencies .fluenciesFour .fluencyTwo .statusBar {
+  display: flex;
+  position: relative;
+}
+.mainContent .sectionOne .skillsList .content .titleAndFluencies .fluenciesFour .fluencyTwo .statusBar .bottom {
+  width: 10rem;
+  height: 1.5rem;
+  border-radius: 0.5rem;
+  background-color: #545146;
+}
+@media (min-width: 1023px) and (max-width: 1200px) {
+  .mainContent .sectionOne .skillsList .content .titleAndFluencies .fluenciesFour .fluencyTwo .statusBar .bottom {
+    width: 9rem;
+  }
+}
+.mainContent .sectionOne .skillsList .content .titleAndFluencies .fluenciesFour .fluencyTwo .statusBar .percentage {
+  display: flex;
+  height: fit-content;
+  width: fit-content;
+  position: absolute;
+  top: 12%;
+  left: 45%;
+  font-size: 10pt;
+  font-weight: 500;
+  color: #ebebeb;
+  z-index: 2;
+}
+@media (min-width: 1023px) and (max-width: 1300px) {
+  .mainContent .sectionOne .skillsList .content .titleAndFluencies .fluenciesFour .fluencyTwo .statusBar .percentage {
+    top: 17%;
+    font-size: 9pt;
+  }
+}
+.mainContent .sectionOne .skillsList .content .titleAndFluencies .fluenciesFour .fluencyTwo .statusBar .topTwo {
+  width: 8rem;
+  height: 1.5rem;
+  position: absolute;
+  border-radius: 0.5rem;
+  border: 0.1rem solid #656565;
+  background-color: #5c4f43;
+  animation: topFourteenLarge 1s cubic-bezier(0.1, -0.6, 0.2, 0) 0s 1 none;
+  z-index: 1;
+}
+@keyframes topFourteenLarge {
+  from {
+    width: 0rem;
+    background-color: #545146;
+    opacity: 0;
+  }
+  to {
+    width: 8rem;
+    background-color: #5c4f43;
+    opacity: 1;
+  }
+}
+@media (min-width: 1023px) and (max-width: 1200px) {
+  .mainContent .sectionOne .skillsList .content .titleAndFluencies .fluenciesFour .fluencyTwo .statusBar .topTwo {
+    width: 7.2rem;
+  }
+  @keyframes topFourteenLarge {
+    from {
+      width: 0rem;
+      background-color: #545146;
+      opacity: 0;
+    }
+    to {
+      width: 7.2rem;
+      background-color: #5c4f43;
+      opacity: 1;
+    }
+  }
+}
+.mainContent .sectionOne .skillsList .content .titleAndFluencies .fluenciesFour .fluencyThree {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+@media (min-width: 1023px) and (max-width: 1100px) {
+  .mainContent .sectionOne .skillsList .content .titleAndFluencies .fluenciesFour .fluencyThree {
+    flex-direction: row;
+    column-gap: unset;
+    justify-content: space-between;
+    width: 100%;
+  }
+}
+.mainContent .sectionOne .skillsList .content .titleAndFluencies .fluenciesFour .fluencyThree .name {
+  font-size: 11.5pt;
+  font-weight: 500;
+  color: #ffffff;
+  position: unset;
+}
+@media (min-width: 1023px) and (max-width: 1100px) {
+  .mainContent .sectionOne .skillsList .content .titleAndFluencies .fluenciesFour .fluencyThree .name {
+    font-size: 8.5pt;
+  }
+}
+@media (orientation: portrait) and (min-width: 1023px) and (max-width: 1100px) {
+  .mainContent .sectionOne .skillsList .content .titleAndFluencies .fluenciesFour .fluencyThree .name {
+    font-size: 12pt;
+  }
+}
+@media (min-width: 1100px) and (max-width: 1200px) {
+  .mainContent .sectionOne .skillsList .content .titleAndFluencies .fluenciesFour .fluencyThree .name {
+    font-size: 9pt;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1300px) {
+  .mainContent .sectionOne .skillsList .content .titleAndFluencies .fluenciesFour .fluencyThree .name {
+    font-size: 10pt;
+  }
+}
+.mainContent .sectionOne .skillsList .content .titleAndFluencies .fluenciesFour .fluencyThree .statusBar {
+  display: flex;
+  position: relative;
+}
+.mainContent .sectionOne .skillsList .content .titleAndFluencies .fluenciesFour .fluencyThree .statusBar .bottom {
+  width: 10rem;
+  height: 1.5rem;
+  border-radius: 0.5rem;
+  background-color: #545146;
+}
+@media (min-width: 1023px) and (max-width: 1200px) {
+  .mainContent .sectionOne .skillsList .content .titleAndFluencies .fluenciesFour .fluencyThree .statusBar .bottom {
+    width: 9rem;
+  }
+}
+.mainContent .sectionOne .skillsList .content .titleAndFluencies .fluenciesFour .fluencyThree .statusBar .percentage {
+  display: flex;
+  height: fit-content;
+  width: fit-content;
+  position: absolute;
+  top: 12%;
+  left: 45%;
+  font-size: 10pt;
+  font-weight: 500;
+  color: #ebebeb;
+  z-index: 2;
+}
+@media (min-width: 1023px) and (max-width: 1300px) {
+  .mainContent .sectionOne .skillsList .content .titleAndFluencies .fluenciesFour .fluencyThree .statusBar .percentage {
+    top: 17%;
+    font-size: 9pt;
+  }
+}
+.mainContent .sectionOne .skillsList .content .titleAndFluencies .fluenciesFour .fluencyThree .statusBar .topThree {
+  width: 9rem;
+  height: 1.5rem;
+  position: absolute;
+  border-radius: 0.5rem;
+  border: 0.1rem solid #656565;
+  background-color: #5c4f43;
+  animation: topFifteenLarge 1s cubic-bezier(0.1, -0.6, 0.2, 0) 0s 1 none;
+  z-index: 1;
+}
+@keyframes topFifteenLarge {
+  from {
+    width: 0rem;
+    background-color: #545146;
+    opacity: 0;
+  }
+  to {
+    width: 9rem;
+    background-color: #5c4f43;
+    opacity: 1;
+  }
+}
+@media (min-width: 1023px) and (max-width: 1200px) {
+  .mainContent .sectionOne .skillsList .content .titleAndFluencies .fluenciesFour .fluencyThree .statusBar .topThree {
+    width: 8.1rem;
+  }
+  @keyframes topFifteenLarge {
+    from {
+      width: 0rem;
+      background-color: #545146;
+      opacity: 0;
+    }
+    to {
+      width: 8.1rem;
+      background-color: #5c4f43;
+      opacity: 1;
+    }
+  }
+}
+.mainContent .sectionOne .skillsList .content .titleAndFluencies .fluenciesFour .fluencyFour {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+@media (min-width: 1023px) and (max-width: 1100px) {
+  .mainContent .sectionOne .skillsList .content .titleAndFluencies .fluenciesFour .fluencyFour {
+    flex-direction: row;
+    column-gap: unset;
+    justify-content: space-between;
+    width: 100%;
+  }
+}
+.mainContent .sectionOne .skillsList .content .titleAndFluencies .fluenciesFour .fluencyFour .name {
+  font-size: 11.5pt;
+  font-weight: 500;
+  color: #ffffff;
+  position: unset;
+}
+@media (min-width: 1023px) and (max-width: 1100px) {
+  .mainContent .sectionOne .skillsList .content .titleAndFluencies .fluenciesFour .fluencyFour .name {
+    font-size: 8.5pt;
+  }
+}
+@media (orientation: portrait) and (min-width: 1023px) and (max-width: 1100px) {
+  .mainContent .sectionOne .skillsList .content .titleAndFluencies .fluenciesFour .fluencyFour .name {
+    font-size: 12pt;
+  }
+}
+@media (min-width: 1100px) and (max-width: 1200px) {
+  .mainContent .sectionOne .skillsList .content .titleAndFluencies .fluenciesFour .fluencyFour .name {
+    font-size: 9pt;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1300px) {
+  .mainContent .sectionOne .skillsList .content .titleAndFluencies .fluenciesFour .fluencyFour .name {
+    font-size: 10pt;
+  }
+}
+.mainContent .sectionOne .skillsList .content .titleAndFluencies .fluenciesFour .fluencyFour .statusBar {
+  display: flex;
+  position: relative;
+}
+.mainContent .sectionOne .skillsList .content .titleAndFluencies .fluenciesFour .fluencyFour .statusBar .bottom {
+  width: 10rem;
+  height: 1.5rem;
+  border-radius: 0.5rem;
+  background-color: #545146;
+}
+@media (min-width: 1023px) and (max-width: 1200px) {
+  .mainContent .sectionOne .skillsList .content .titleAndFluencies .fluenciesFour .fluencyFour .statusBar .bottom {
+    width: 9rem;
+  }
+}
+.mainContent .sectionOne .skillsList .content .titleAndFluencies .fluenciesFour .fluencyFour .statusBar .percentage {
+  display: flex;
+  height: fit-content;
+  width: fit-content;
+  position: absolute;
+  top: 12%;
+  left: 45%;
+  font-size: 10pt;
+  font-weight: 500;
+  color: #ebebeb;
+  z-index: 2;
+}
+@media (min-width: 1023px) and (max-width: 1300px) {
+  .mainContent .sectionOne .skillsList .content .titleAndFluencies .fluenciesFour .fluencyFour .statusBar .percentage {
+    top: 17%;
+    font-size: 9pt;
+  }
+}
+.mainContent .sectionOne .skillsList .content .titleAndFluencies .fluenciesFour .fluencyFour .statusBar .topFour {
+  width: 7.5rem;
+  height: 1.5rem;
+  position: absolute;
+  border-radius: 0.5rem;
+  border: 0.1rem solid #656565;
+  background-color: #5c4f43;
+  animation: topSixteenLarge 1s cubic-bezier(0.1, -0.6, 0.2, 0) 0s 1 none;
+  z-index: 1;
+}
+@keyframes topSixteenLarge {
+  from {
+    width: 0rem;
+    background-color: #545146;
+    opacity: 0;
+  }
+  to {
+    width: 7.5rem;
+    background-color: #5c4f43;
+    opacity: 1;
+  }
+}
+@media (min-width: 1023px) and (max-width: 1200px) {
+  .mainContent .sectionOne .skillsList .content .titleAndFluencies .fluenciesFour .fluencyFour .statusBar .topFour {
+    width: 6.75rem;
+  }
+  @keyframes topSixteenLarge {
+    from {
+      width: 0rem;
+      background-color: #545146;
+      opacity: 0;
+    }
+    to {
+      width: 6.75rem;
       background-color: #5c4f43;
       opacity: 1;
     }
