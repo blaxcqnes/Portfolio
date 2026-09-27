@@ -10,6 +10,8 @@ export default function SectionTwo({
   kaffa,
   veila,
   guessGame,
+  nextTwo,
+  previousTwo,
   pauseTwo,
   playTwo,
   select,
@@ -73,6 +75,8 @@ export default function SectionTwo({
       >
         <section className="projects">
           <CyberBox
+            nextTwo={nextTwo}
+            previousTwo={previousTwo}
             pauseTwo={pauseTwo}
             playTwo={playTwo}
             isContactFormOpen={isContactFormOpen}

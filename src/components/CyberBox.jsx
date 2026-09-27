@@ -1,6 +1,8 @@
 import { useState, useEffect, useRef } from 'react';
 import { cyberOne, cyberTwo } from '../data/cyberBox';
 export default function CyberBox({
+  nextTwo,
+  previousTwo,
   pauseTwo,
   playTwo,
   isContactFormOpen,
@@ -84,6 +86,22 @@ export default function CyberBox({
 
   function pausePlay() {
     setIsPaused((prev) => !prev);
+  }
+
+  function next() {
+    if (cyberPage <= 1) {
+      setCyberPage((prev) => prev + 1);
+      setIsPaused(true);
+      setTimeLeft(10);
+    }
+  }
+
+  function previous() {
+    if (cyberPage >= 2) {
+      setCyberPage((prev) => prev - 1);
+      setIsPaused(true);
+      setTimeLeft(10);
+    }
   }
   return (
     <div
@@ -225,6 +243,58 @@ export default function CyberBox({
               opacity: activeList || isContactFormOpen || glow ? 0 : 1,
               pointerEvents:
                 activeList || isContactFormOpen || glow ? 'none' : 'auto',
+            }}
+            fetchPriority="high"
+          />
+        ) : undefined}
+      </div>
+
+      <div className="pages">
+        {!isContactFormOpen || !activeList ? (
+          <img
+            className="previousTwo"
+            onClick={cyberPage <= 1 ? undefined : previous}
+            src={previousTwo}
+            style={{
+              opacity:
+                activeList || isContactFormOpen || glow
+                  ? 0
+                  : cyberPage <= 1
+                    ? 0.25
+                    : 1,
+
+              pointerEvents:
+                activeList || isContactFormOpen || glow || cyberPage <= 1
+                  ? 'none'
+                  : 'auto',
+            }}
+            fetchPriority="high"
+          />
+        ) : undefined}
+        <p
+          className="pageNumber"
+          style={{
+            opacity: activeList || isContactFormOpen || glow ? 0 : 1,
+          }}
+        >
+          {cyberPage} / 2
+        </p>
+        {!isContactFormOpen || !activeList ? (
+          <img
+            className="nextTwo"
+            onClick={cyberPage >= 2 ? undefined : next}
+            src={nextTwo}
+            style={{
+              opacity:
+                activeList || isContactFormOpen || glow
+                  ? 0
+                  : cyberPage >= 2
+                    ? 0.25
+                    : 1,
+              pointerEvents:
+                activeList || isContactFormOpen || glow || cyberPage >= 2
+                  ? 'none'
+                  : 'auto',
             }}
             fetchPriority="high"
           />

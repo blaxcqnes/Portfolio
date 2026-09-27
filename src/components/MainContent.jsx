@@ -8,6 +8,8 @@ import nextOne from '../images/sectionOne/svgs/nextOne.svg';
 import previousOne from '../images/sectionOne/svgs/previousOne.svg';
 import pauseOne from '../images/sectionOne/svgs/pause.svg';
 import playOne from '../images/sectionOne/svgs/play.svg';
+import nextTwo from '../images/sectionTwo/svgs/nextTwo.svg';
+import previousTwo from '../images/sectionTwo/svgs/previousTwo.svg';
 import pauseTwo from '../images/sectionTwo/svgs/pause.svg';
 import playTwo from '../images/sectionTwo/svgs/play.svg';
 import select from '../images/sectionTwo/svgs/select.svg';
@@ -49,6 +51,8 @@ export default function MainContent({
         kaffa={kaffa}
         veila={veila}
         guessGame={guessGame}
+        nextTwo={nextTwo}
+        previousTwo={previousTwo}
         pauseTwo={pauseTwo}
         playTwo={playTwo}
         select={select}
@@ -77,6 +81,8 @@ MainContent.assets = [
   previousOne,
   pauseOne,
   playOne,
+  nextTwo,
+  previousTwo,
   pauseTwo,
   playTwo,
   kaffa,

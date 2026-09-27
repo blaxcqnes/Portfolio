@@ -3372,17 +3372,21 @@ input[type=email]) {
   border-radius: 0.5rem;
   background-color: #1e1e1e;
 }
+@media (min-width: 300px) and (max-width: 330px) {
+  .mainContent .sectionOne .bio .imageAndDescription .descriptionAndServicesList .servicesList .content .services .service {
+    row-gap: 0.7rem;
+  }
+}
 .mainContent .sectionOne .bio .imageAndDescription .descriptionAndServicesList .servicesList .content .services .service .serviceNameAndPrice {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: start;
 }
-@media (min-width: 300px) and (max-width: 350px) {
+@media (min-width: 300px) and (max-width: 330px) {
   .mainContent .sectionOne .bio .imageAndDescription .descriptionAndServicesList .servicesList .content .services .service .serviceNameAndPrice {
     flex-direction: column;
     justify-content: unset;
-    row-gap: 0.5rem;
     align-items: end;
   }
 }
@@ -3392,9 +3396,10 @@ input[type=email]) {
   color: #ffffff;
   width: 80%;
 }
-@media (min-width: 300px) and (max-width: 350px) {
+@media (min-width: 300px) and (max-width: 330px) {
   .mainContent .sectionOne .bio .imageAndDescription .descriptionAndServicesList .servicesList .content .services .service .serviceNameAndPrice .serviceName {
-    width: 100%;
+    align-self: start;
+    width: 13.5rem;
   }
 }
 @media (min-width: 500px) and (max-width: 600px) {
@@ -3411,12 +3416,51 @@ input[type=email]) {
   color: #8b8b8b;
 }
 .mainContent .sectionOne .bio .imageAndDescription .descriptionAndServicesList .servicesList .content .services .service .serviceNameAndPrice .servicePrice {
+  width: 3.5rem;
   font-size: 11.5pt;
   font-weight: 500;
   color: #ebebeb;
 }
-@media (min-width: 500px) and (max-width: 600px) {
+@media (min-width: 300px) and (max-width: 330px) {
   .mainContent .sectionOne .bio .imageAndDescription .descriptionAndServicesList .servicesList .content .services .service .serviceNameAndPrice .servicePrice {
+    width: 3rem;
+  }
+}
+@media (min-width: 380px) and (max-width: 400px) {
+  .mainContent .sectionOne .bio .imageAndDescription .descriptionAndServicesList .servicesList .content .services .service .serviceNameAndPrice .servicePrice {
+    width: 3.7rem;
+  }
+}
+@media (min-width: 400px) and (max-width: 430px) {
+  .mainContent .sectionOne .bio .imageAndDescription .descriptionAndServicesList .servicesList .content .services .service .serviceNameAndPrice .servicePrice {
+    width: 4rem;
+  }
+}
+@media (min-width: 430px) and (max-width: 480px) {
+  .mainContent .sectionOne .bio .imageAndDescription .descriptionAndServicesList .servicesList .content .services .service .serviceNameAndPrice .servicePrice {
+    width: 4.5rem;
+  }
+}
+@media (min-width: 480px) and (max-width: 500px) {
+  .mainContent .sectionOne .bio .imageAndDescription .descriptionAndServicesList .servicesList .content .services .service .serviceNameAndPrice .servicePrice {
+    width: 4.8rem;
+  }
+}
+@media (min-width: 500px) and (max-width: 530px) {
+  .mainContent .sectionOne .bio .imageAndDescription .descriptionAndServicesList .servicesList .content .services .service .serviceNameAndPrice .servicePrice {
+    width: 5.3rem;
+    font-size: 11pt;
+  }
+}
+@media (min-width: 530px) and (max-width: 580px) {
+  .mainContent .sectionOne .bio .imageAndDescription .descriptionAndServicesList .servicesList .content .services .service .serviceNameAndPrice .servicePrice {
+    width: 5.6rem;
+    font-size: 11pt;
+  }
+}
+@media (min-width: 580px) and (max-width: 600px) {
+  .mainContent .sectionOne .bio .imageAndDescription .descriptionAndServicesList .servicesList .content .services .service .serviceNameAndPrice .servicePrice {
+    width: 5.9rem;
     font-size: 11pt;
   }
 }
@@ -4226,6 +4270,7 @@ input[type=email]) {
 .mainContent .sectionOne .bio .servicesList .content .services .service {
   display: flex;
   flex-direction: column;
+  row-gap: 0.4rem;
   width: inherit;
   padding: 0.55rem 1rem;
   border: 0.1rem solid rgba(84, 81, 70, 0.3764705882);
@@ -5975,18 +6020,22 @@ input[type=email]) {
   cursor: pointer;
   transition: all 0.2s ease;
 }
-@media (min-width: 300px) and (max-width: 600px) {
+@media (min-width: 300px) and (max-width: 350px) {
   .mainContent .sectionOne .skillsAndEducation .skillsAndSkillsList .skillsBox .nextSkillsLoader .pausePlay {
-    width: 1.6rem;
-    height: 1.6rem;
-    left: 2rem;
+    left: 1.4rem;
   }
 }
-@media (min-width: 600px) and (max-width: 1023px) {
+@media (min-width: 600px) and (max-width: 700px) {
   .mainContent .sectionOne .skillsAndEducation .skillsAndSkillsList .skillsBox .nextSkillsLoader .pausePlay {
     width: 1.6rem;
     height: 1.6rem;
-    left: 2rem;
+    left: 1.4rem;
+  }
+}
+@media (min-width: 700px) and (max-width: 1023px) {
+  .mainContent .sectionOne .skillsAndEducation .skillsAndSkillsList .skillsBox .nextSkillsLoader .pausePlay {
+    width: 1.6rem;
+    height: 1.6rem;
   }
 }
 @media (min-width: 300px) and (max-width: 1023px) {
@@ -14527,13 +14576,19 @@ input[type=email]) {
   cursor: pointer;
   transition: all 0.2s ease;
 }
-@media (min-width: 300px) and (max-width: 400px) {
+@media (min-width: 300px) and (max-width: 350px) {
+  .mainContent .sectionTwo .projectsAndFooter .projects .webAndWebList .webBox .nextWebLoader .pausePlay {
+    left: 1.4rem;
+  }
+}
+@media (min-width: 600px) and (max-width: 700px) {
   .mainContent .sectionTwo .projectsAndFooter .projects .webAndWebList .webBox .nextWebLoader .pausePlay {
     width: 1.6rem;
     height: 1.6rem;
+    left: 1.4rem;
   }
 }
-@media (min-width: 600px) and (max-width: 1023px) {
+@media (min-width: 700px) and (max-width: 1023px) {
   .mainContent .sectionTwo .projectsAndFooter .projects .webAndWebList .webBox .nextWebLoader .pausePlay {
     width: 1.6rem;
     height: 1.6rem;
@@ -15515,13 +15570,19 @@ input[type=email]) {
   cursor: pointer;
   transition: all 0.2s ease;
 }
-@media (min-width: 300px) and (max-width: 400px) {
+@media (min-width: 300px) and (max-width: 350px) {
+  .mainContent .sectionTwo .projectsAndFooter .projects .cyberBox .nextCyberLoader .pausePlay {
+    left: 1.4rem;
+  }
+}
+@media (min-width: 600px) and (max-width: 700px) {
   .mainContent .sectionTwo .projectsAndFooter .projects .cyberBox .nextCyberLoader .pausePlay {
     width: 1.6rem;
     height: 1.6rem;
+    left: 1.4rem;
   }
 }
-@media (min-width: 600px) and (max-width: 1023px) {
+@media (min-width: 700px) and (max-width: 1023px) {
   .mainContent .sectionTwo .projectsAndFooter .projects .cyberBox .nextCyberLoader .pausePlay {
     width: 1.6rem;
     height: 1.6rem;
@@ -15536,7 +15597,7 @@ input[type=email]) {
   .mainContent .sectionTwo .projectsAndFooter .projects .cyberBox .nextCyberLoader .pausePlay {
     width: 1.4rem;
     height: 1.4rem;
-    left: 1.5rem;
+    left: 1.3rem;
   }
 }
 @media (orientation: portrait) and (min-width: 1023px) and (max-width: 1100px) {
@@ -15557,6 +15618,294 @@ input[type=email]) {
 }
 @media (min-width: 1300px) and (max-width: 1400px) {
   .mainContent .sectionTwo .projectsAndFooter .projects .cyberBox .nextCyberLoader .pausePlay {
+    width: 1.4rem;
+    height: 1.4rem;
+    padding: 0.2rem;
+  }
+}
+.mainContent .sectionTwo .projectsAndFooter .projects .cyberBox .pages {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: max-content;
+  position: absolute;
+  bottom: 0.5rem;
+  right: 0.3rem;
+  z-index: 1;
+}
+@media (min-width: 300px) and (max-width: 350px) {
+  .mainContent .sectionTwo .projectsAndFooter .projects .cyberBox .pages {
+    justify-content: center;
+    bottom: 21.5rem;
+    right: 0;
+    left: unset;
+  }
+}
+@media (min-width: 350px) and (max-width: 400px) {
+  .mainContent .sectionTwo .projectsAndFooter .projects .cyberBox .pages {
+    justify-content: center;
+    bottom: 21.1rem;
+    right: 0;
+    left: unset;
+  }
+}
+@media (min-width: 400px) and (max-width: 500px) {
+  .mainContent .sectionTwo .projectsAndFooter .projects .cyberBox .pages {
+    justify-content: center;
+    bottom: 22.2rem;
+    right: 0;
+    left: unset;
+  }
+}
+@media (min-width: 500px) and (max-width: 600px) {
+  .mainContent .sectionTwo .projectsAndFooter .projects .cyberBox .pages {
+    justify-content: unset;
+    bottom: 21.2rem;
+    right: 0;
+    left: unset;
+  }
+}
+@media (min-width: 300px) and (max-width: 325px) {
+  .mainContent .sectionTwo .projectsAndFooter .projects .cyberBox .pages {
+    justify-content: center;
+    bottom: 0.7rem;
+    right: 6.8rem;
+  }
+}
+@media (min-width: 325px) and (max-width: 400px) {
+  .mainContent .sectionTwo .projectsAndFooter .projects .cyberBox .pages {
+    justify-content: center;
+    bottom: 0.7rem;
+    right: 7.8rem;
+  }
+}
+@media (min-width: 400px) and (max-width: 500px) {
+  .mainContent .sectionTwo .projectsAndFooter .projects .cyberBox .pages {
+    justify-content: center;
+    bottom: 0.7rem;
+    right: 9.3rem;
+  }
+}
+@media (min-width: 500px) and (max-width: 600px) {
+  .mainContent .sectionTwo .projectsAndFooter .projects .cyberBox .pages {
+    justify-content: center;
+    bottom: 0.7rem;
+    right: 10.8rem;
+  }
+}
+@media (min-width: 600px) and (max-width: 700px) {
+  .mainContent .sectionTwo .projectsAndFooter .projects .cyberBox .pages {
+    justify-content: center;
+    bottom: 0.7rem;
+    right: 7.3rem;
+  }
+}
+@media (width: 600px) {
+  .mainContent .sectionTwo .projectsAndFooter .projects .cyberBox .pages {
+    justify-content: center;
+    bottom: 0.7rem;
+    right: 7.3rem;
+  }
+}
+@media (min-width: 700px) and (max-width: 800px) {
+  .mainContent .sectionTwo .projectsAndFooter .projects .cyberBox .pages {
+    justify-content: center;
+    bottom: 0.7rem;
+    right: 8.8rem;
+  }
+}
+@media (min-width: 800px) and (max-width: 1023px) {
+  .mainContent .sectionTwo .projectsAndFooter .projects .cyberBox .pages {
+    justify-content: center;
+    bottom: 0.7rem;
+    right: 10.8rem;
+  }
+}
+@media (min-width: 1023px) and (max-width: 1100px) {
+  .mainContent .sectionTwo .projectsAndFooter .projects .cyberBox .pages {
+    bottom: 0.3rem;
+    right: 6rem;
+  }
+}
+@media (orientation: portrait) and (min-width: 1023px) and (max-width: 1100px) {
+  .mainContent .sectionTwo .projectsAndFooter .projects .cyberBox .pages {
+    justify-content: center;
+    bottom: 0.95rem;
+    right: 10.8rem;
+    left: unset;
+  }
+}
+@media (min-width: 1100px) and (max-width: 1200px) {
+  .mainContent .sectionTwo .projectsAndFooter .projects .cyberBox .pages {
+    right: 0.3rem;
+  }
+}
+@media (width: 1100px) {
+  .mainContent .sectionTwo .projectsAndFooter .projects .cyberBox .pages {
+    bottom: 0.5rem;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1400px) {
+  .mainContent .sectionTwo .projectsAndFooter .projects .cyberBox .pages {
+    right: 0.5rem;
+    bottom: 0.75rem;
+  }
+}
+@media (width: 1200px) {
+  .mainContent .sectionTwo .projectsAndFooter .projects .cyberBox .pages {
+    bottom: 0.5rem;
+  }
+}
+.mainContent .sectionTwo .projectsAndFooter .projects .cyberBox .pages .previousTwo {
+  display: flex;
+  width: 1.8rem;
+  height: 1.8rem;
+  padding: 0.3rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+@media (min-width: 300px) and (max-width: 600px) {
+  .mainContent .sectionTwo .projectsAndFooter .projects .cyberBox .pages .previousTwo {
+    width: 1.6rem;
+    height: 1.6rem;
+  }
+}
+@media (min-width: 600px) and (max-width: 1023px) {
+  .mainContent .sectionTwo .projectsAndFooter .projects .cyberBox .pages .previousTwo {
+    width: 1.6rem;
+    height: 1.6rem;
+  }
+}
+@media (min-width: 300px) and (max-width: 1023px) {
+  .mainContent .sectionTwo .projectsAndFooter .projects .cyberBox .pages .previousTwo {
+    cursor: default;
+  }
+}
+@media (min-width: 1023px) and (max-width: 1200px) {
+  .mainContent .sectionTwo .projectsAndFooter .projects .cyberBox .pages .previousTwo {
+    width: 1.4rem;
+    height: 1.4rem;
+  }
+}
+@media (orientation: portrait) and (min-width: 1023px) and (max-width: 1100px) {
+  .mainContent .sectionTwo .projectsAndFooter .projects .cyberBox .pages .previousTwo {
+    width: 1.8rem;
+    height: 1.8rem;
+    cursor: default;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1300px) {
+  .mainContent .sectionTwo .projectsAndFooter .projects .cyberBox .pages .previousTwo {
+    width: 1.4rem;
+    height: 1.4rem;
+    padding: 0.2rem;
+  }
+}
+@media (min-width: 1300px) and (max-width: 1400px) {
+  .mainContent .sectionTwo .projectsAndFooter .projects .cyberBox .pages .previousTwo {
+    width: 1.4rem;
+    height: 1.4rem;
+    padding: 0.2rem;
+  }
+}
+.mainContent .sectionTwo .projectsAndFooter .projects .cyberBox .pages .pageNumber {
+  width: 2rem;
+  text-align: center;
+  font-size: 9pt;
+  color: #8b8b8b;
+}
+@media (min-width: 300px) and (max-width: 350px) {
+  .mainContent .sectionTwo .projectsAndFooter .projects .cyberBox .pages .pageNumber {
+    font-size: 8.5pt;
+  }
+}
+@media (min-width: 400px) and (max-width: 500px) {
+  .mainContent .sectionTwo .projectsAndFooter .projects .cyberBox .pages .pageNumber {
+    font-size: 9.5pt;
+  }
+}
+@media (min-width: 500px) and (max-width: 600px) {
+  .mainContent .sectionTwo .projectsAndFooter .projects .cyberBox .pages .pageNumber {
+    font-size: 10pt;
+  }
+}
+@media (min-width: 900px) and (max-width: 1023px) {
+  .mainContent .sectionTwo .projectsAndFooter .projects .cyberBox .pages .pageNumber {
+    font-size: 10pt;
+  }
+}
+@media (min-width: 1023px) and (max-width: 1100px) {
+  .mainContent .sectionTwo .projectsAndFooter .projects .cyberBox .pages .pageNumber {
+    font-size: 8pt;
+  }
+}
+@media (orientation: portrait) and (min-width: 1023px) and (max-width: 1100px) {
+  .mainContent .sectionTwo .projectsAndFooter .projects .cyberBox .pages .pageNumber {
+    font-size: 9.5pt;
+  }
+}
+@media (min-width: 1100px) and (max-width: 1200px) {
+  .mainContent .sectionTwo .projectsAndFooter .projects .cyberBox .pages .pageNumber {
+    font-size: 8.5pt;
+  }
+}
+@media (width: 1100px) {
+  .mainContent .sectionTwo .projectsAndFooter .projects .cyberBox .pages .pageNumber {
+    font-size: 8.5pt;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1300px) {
+  .mainContent .sectionTwo .projectsAndFooter .projects .cyberBox .pages .pageNumber {
+    font-size: 8.5pt;
+  }
+}
+.mainContent .sectionTwo .projectsAndFooter .projects .cyberBox .pages .nextTwo {
+  display: flex;
+  width: 1.8rem;
+  height: 1.8rem;
+  padding: 0.3rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+@media (min-width: 300px) and (max-width: 600px) {
+  .mainContent .sectionTwo .projectsAndFooter .projects .cyberBox .pages .nextTwo {
+    width: 1.6rem;
+    height: 1.6rem;
+  }
+}
+@media (min-width: 600px) and (max-width: 1023px) {
+  .mainContent .sectionTwo .projectsAndFooter .projects .cyberBox .pages .nextTwo {
+    width: 1.6rem;
+    height: 1.6rem;
+  }
+}
+@media (min-width: 300px) and (max-width: 1023px) {
+  .mainContent .sectionTwo .projectsAndFooter .projects .cyberBox .pages .nextTwo {
+    cursor: default;
+  }
+}
+@media (min-width: 1023px) and (max-width: 1200px) {
+  .mainContent .sectionTwo .projectsAndFooter .projects .cyberBox .pages .nextTwo {
+    width: 1.4rem;
+    height: 1.4rem;
+  }
+}
+@media (orientation: portrait) and (min-width: 1023px) and (max-width: 1100px) {
+  .mainContent .sectionTwo .projectsAndFooter .projects .cyberBox .pages .nextTwo {
+    width: 1.8rem;
+    height: 1.8rem;
+    cursor: default;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1300px) {
+  .mainContent .sectionTwo .projectsAndFooter .projects .cyberBox .pages .nextTwo {
+    width: 1.4rem;
+    height: 1.4rem;
+    padding: 0.2rem;
+  }
+}
+@media (min-width: 1300px) and (max-width: 1400px) {
+  .mainContent .sectionTwo .projectsAndFooter .projects .cyberBox .pages .nextTwo {
     width: 1.4rem;
     height: 1.4rem;
     padding: 0.2rem;

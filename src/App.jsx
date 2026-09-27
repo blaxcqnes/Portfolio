@@ -54,43 +54,75 @@ export default function App() {
 
   // Loading screen, completes when all images are loaded and after 3 second delay.
   useLayoutEffect(() => {
-    let loadedCount = 0;
+    let isMounted = true;
     const totalImages = IMAGES_TO_PRELOAD.length;
-
+    let loadedCount = 0;
+    const updateProgress = () => {
+      if (!isMounted) return;
+      loadedCount++;
+      const percentage =
+        totalImages === 0 ? 100 : Math.round((loadedCount / totalImages) * 100);
+      setProgress(Math.min(percentage, 100));
+    };
     const preloadImage = (src) => {
       return new Promise((resolve) => {
         const img = new Image();
-
-        const handleImageCounter = () => {
-          loadedCount++;
-          const percentage = Math.round((loadedCount / totalImages) * 100);
-          setProgress(percentage);
+        let completed = false;
+        const finish = async () => {
+          if (completed) return;
+          completed = true;
+          try {
+            if (img.decode) {
+              await img.decode();
+            }
+          } catch {}
+          updateProgress();
           resolve();
         };
-
-        img.onload = handleImageCounter;
-        img.onerror = handleImageCounter;
+        img.onload = finish;
+        img.onerror = finish;
         img.src = src;
+        if (img.complete) {
+          finish();
+        }
       });
     };
-
     const minDelay = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
-
     const loadAssets = async () => {
       try {
+        if (totalImages === 0) {
+          setProgress(100);
+          await minDelay(3000);
+          if (isMounted) {
+            setLoading(false);
+          }
+          return;
+        }
         await Promise.all([
-          ...IMAGES_TO_PRELOAD.map((src) => preloadImage(src)),
+          ...IMAGES_TO_PRELOAD.map(preloadImage),
           minDelay(3000),
         ]);
+        await new Promise((resolve) => {
+          requestAnimationFrame(() => {
+            requestAnimationFrame(resolve);
+          });
+        });
+        if (isMounted) {
+          setProgress(100);
+          setLoading(false);
+        }
       } catch (error) {
         console.error('Error during asset loading:', error);
-      } finally {
-        setProgress(100);
-        setLoading(false);
+        if (isMounted) {
+          setProgress(100);
+          setLoading(false);
+        }
       }
     };
-
     loadAssets();
+    return () => {
+      isMounted = false;
+    };
   }, []);
   // End
 
