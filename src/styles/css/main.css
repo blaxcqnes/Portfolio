@@ -6025,6 +6025,12 @@ input[type=email]) {
     left: 1.4rem;
   }
 }
+@media (min-width: 350px) and (max-width: 600px) {
+  .mainContent .sectionOne .skillsAndEducation .skillsAndSkillsList .skillsBox .nextSkillsLoader .pausePlay {
+    left: 2rem;
+    right: unset;
+  }
+}
 @media (min-width: 600px) and (max-width: 700px) {
   .mainContent .sectionOne .skillsAndEducation .skillsAndSkillsList .skillsBox .nextSkillsLoader .pausePlay {
     width: 1.6rem;
@@ -6036,6 +6042,8 @@ input[type=email]) {
   .mainContent .sectionOne .skillsAndEducation .skillsAndSkillsList .skillsBox .nextSkillsLoader .pausePlay {
     width: 1.6rem;
     height: 1.6rem;
+    left: 2rem;
+    right: unset;
   }
 }
 @media (min-width: 300px) and (max-width: 1023px) {
@@ -6055,6 +6063,7 @@ input[type=email]) {
     width: 1.8rem;
     height: 1.8rem;
     left: 2rem;
+    right: unset;
     cursor: default;
   }
 }
