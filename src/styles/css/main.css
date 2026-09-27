@@ -4095,9 +4095,9 @@ input[type=email]) {
 .mainContent .sectionOne .bio .servicesList {
   display: flex;
   flex-direction: column;
-  row-gap: 2%;
+  row-gap: 0.3rem;
   width: 100%;
-  height: 20rem;
+  height: fit-content;
   transform: scale(102%);
   animation: servicesList 0.2s linear 1;
   scroll-margin: 0 0 7rem 0;
@@ -4120,11 +4120,6 @@ input[type=email]) {
     opacity: 1;
   }
 }
-@media (orientation: portrait) and (min-width: 1023px) and (max-width: 1100px) {
-  .mainContent .sectionOne .bio .servicesList {
-    height: 20rem;
-  }
-}
 .mainContent .sectionOne .bio .servicesList .titleAndButton {
   display: flex;
   flex-direction: row;
@@ -4134,6 +4129,11 @@ input[type=email]) {
   background-color: #5c4f43;
   border-radius: 0.4rem 0.4rem 0 0;
 }
+@media (width: 600px) {
+  .mainContent .sectionOne .bio .servicesList .titleAndButton {
+    padding: 0.8rem 2rem;
+  }
+}
 @media (orientation: portrait) and (min-width: 1023px) and (max-width: 1100px) {
   .mainContent .sectionOne .bio .servicesList .titleAndButton {
     padding: 0.8rem 1rem;
@@ -4142,6 +4142,11 @@ input[type=email]) {
 .mainContent .sectionOne .bio .servicesList .titleAndButton h4 {
   font-size: 15pt;
   font-weight: 600;
+}
+@media (min-width: 1000px) and (max-width: 1023px) {
+  .mainContent .sectionOne .bio .servicesList .titleAndButton h4 {
+    font-size: 16pt;
+  }
 }
 @media (orientation: portrait) and (min-width: 1023px) and (max-width: 1100px) {
   .mainContent .sectionOne .bio .servicesList .titleAndButton h4 {
@@ -4198,22 +4203,840 @@ input[type=email]) {
 }
 .mainContent .sectionOne .bio .servicesList .content {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
-  column-gap: 10%;
+  row-gap: 0.7rem;
   align-self: center;
   align-items: center;
-  width: 98%;
-  height: 14.9rem;
+  width: 98.5%;
+  height: fit-content;
+  margin-bottom: 0.3rem;
+  padding: 0 0.1rem 0.3rem 0.1rem;
   position: relative;
   background-color: #232323;
   border-radius: 0.5rem;
 }
-@media (orientation: portrait) and (min-width: 1023px) and (max-width: 1100px) {
-  .mainContent .sectionOne .bio .servicesList .content {
-    width: 98.5%;
-    height: 14.9rem;
+.mainContent .sectionOne .bio .servicesList .content .services {
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.3rem;
+  align-items: center;
+  width: 100%;
+}
+.mainContent .sectionOne .bio .servicesList .content .services .service {
+  display: flex;
+  flex-direction: column;
+  width: inherit;
+  padding: 0.55rem 1rem;
+  border: 0.1rem solid rgba(84, 81, 70, 0.3764705882);
+  border-radius: 0.5rem;
+  background-color: #1e1e1e;
+}
+.mainContent .sectionOne .bio .servicesList .content .services .service .serviceNameAndPrice {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.mainContent .sectionOne .bio .servicesList .content .services .service .serviceNameAndPrice .serviceName {
+  font-size: 11.5pt;
+  font-weight: 500;
+  color: #ffffff;
+  width: 15rem;
+}
+@media (width: 600px) {
+  .mainContent .sectionOne .bio .servicesList .content .services .service .serviceNameAndPrice .serviceName {
+    font-size: 11.5pt;
   }
+}
+@media (min-width: 900px) and (max-width: 1000px) {
+  .mainContent .sectionOne .bio .servicesList .content .services .service .serviceNameAndPrice .serviceName {
+    font-size: 11.5pt;
+  }
+}
+@media (min-width: 1000px) and (max-width: 1023px) {
+  .mainContent .sectionOne .bio .servicesList .content .services .service .serviceNameAndPrice .serviceName {
+    font-size: 12pt;
+  }
+}
+@media (orientation: portrait) and (min-width: 1023px) and (max-width: 1100px) {
+  .mainContent .sectionOne .bio .servicesList .content .services .service .serviceNameAndPrice .serviceName {
+    font-size: 12pt;
+  }
+}
+@media (min-width: 1100px) and (max-width: 1200px) {
+  .mainContent .sectionOne .bio .servicesList .content .services .service .serviceNameAndPrice .serviceName {
+    font-size: 9pt;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1300px) {
+  .mainContent .sectionOne .bio .servicesList .content .services .service .serviceNameAndPrice .serviceName {
+    font-size: 10pt;
+  }
+}
+.mainContent .sectionOne .bio .servicesList .content .services .service .serviceNameAndPrice .serviceName span {
+  color: #8b8b8b;
+}
+.mainContent .sectionOne .bio .servicesList .content .services .service .serviceNameAndPrice .servicePrice {
+  width: 5rem;
+  text-align: center;
+  font-size: 11.5pt;
+  font-weight: 500;
+  color: #ebebeb;
+}
+@media (min-width: 500px) and (max-width: 600px) {
+  .mainContent .sectionOne .bio .servicesList .content .services .service .serviceNameAndPrice .servicePrice {
+    font-size: 11pt;
+  }
+}
+@media (width: 600px) {
+  .mainContent .sectionOne .bio .servicesList .content .services .service .serviceNameAndPrice .servicePrice {
+    font-size: 10pt;
+  }
+}
+@media (min-width: 900px) and (max-width: 1000px) {
+  .mainContent .sectionOne .bio .servicesList .content .services .service .serviceNameAndPrice .servicePrice {
+    font-size: 10.5pt;
+  }
+}
+@media (min-width: 1000px) and (max-width: 1023px) {
+  .mainContent .sectionOne .bio .servicesList .content .services .service .serviceNameAndPrice .servicePrice {
+    font-size: 11pt;
+  }
+}
+@media (orientation: portrait) and (min-width: 1023px) and (max-width: 1100px) {
+  .mainContent .sectionOne .bio .servicesList .content .services .service .serviceNameAndPrice .servicePrice {
+    width: 4.7rem;
+    font-size: 10.5pt;
+  }
+}
+.mainContent .sectionOne .bio .servicesList .content .services .service .serviceDescriptionAndButton {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  column-gap: 8%;
+  align-items: center;
+}
+.mainContent .sectionOne .bio .servicesList .content .services .service .serviceDescriptionAndButton .serviceDescription {
+  width: 80%;
+  font-size: 10pt;
+  color: #8b8b8b;
+}
+@media (width: 600px) {
+  .mainContent .sectionOne .bio .servicesList .content .services .service .serviceDescriptionAndButton .serviceDescription {
+    font-size: 10pt;
+  }
+}
+@media (min-width: 900px) and (max-width: 1000px) {
+  .mainContent .sectionOne .bio .servicesList .content .services .service .serviceDescriptionAndButton .serviceDescription {
+    font-size: 10.5pt;
+  }
+}
+@media (min-width: 1000px) and (max-width: 1023px) {
+  .mainContent .sectionOne .bio .servicesList .content .services .service .serviceDescriptionAndButton .serviceDescription {
+    font-size: 11pt;
+  }
+}
+@media (orientation: portrait) and (min-width: 1023px) and (max-width: 1100px) {
+  .mainContent .sectionOne .bio .servicesList .content .services .service .serviceDescriptionAndButton .serviceDescription {
+    font-size: 10.5pt;
+  }
+}
+.mainContent .sectionOne .bio .servicesList .content .services .service .serviceDescriptionAndButton .select {
+  width: 4.834rem;
+  height: 1.6rem;
+  background-color: #1e1e1e;
+  border: 0.1rem solid #8b8b8b;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  opacity: 0.5;
+}
+@keyframes select {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 0.5;
+  }
+}
+.mainContent .sectionOne .bio .servicesList .content .services .service .serviceDescriptionAndButton .select:hover {
+  opacity: 1;
+  background-color: #545146;
+}
+@media (min-width: 300px) {
+  .mainContent .sectionOne .bio .servicesList .content .services .service .serviceDescriptionAndButton .select {
+    cursor: default;
+  }
+}
+@media (orientation: portrait) and (min-width: 1023px) and (max-width: 1100px) {
+  .mainContent .sectionOne .bio .servicesList .content .services .service .serviceDescriptionAndButton .select {
+    width: 4.5rem;
+    height: 1.7rem;
+  }
+  .mainContent .sectionOne .bio .servicesList .content .services .service .serviceDescriptionAndButton .select:hover {
+    box-shadow: none;
+  }
+}
+.mainContent .sectionOne .bio .servicesList .content .services .service .serviceDescriptionAndButton .remove {
+  width: 4.834rem;
+  height: 1.6rem;
+  padding: 0.2rem;
+  background-color: #5f312a;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+@keyframes remove {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.mainContent .sectionOne .bio .servicesList .content .services .service .serviceDescriptionAndButton .remove:hover {
+  background-color: #722f26;
+}
+@media (min-width: 300px) {
+  .mainContent .sectionOne .bio .servicesList .content .services .service .serviceDescriptionAndButton .remove {
+    cursor: default;
+  }
+}
+@media (orientation: portrait) and (min-width: 1023px) and (max-width: 1100px) {
+  .mainContent .sectionOne .bio .servicesList .content .services .service .serviceDescriptionAndButton .remove {
+    width: 4.5rem;
+    height: 1.7rem;
+  }
+  .mainContent .sectionOne .bio .servicesList .content .services .service .serviceDescriptionAndButton .remove:hover {
+    box-shadow: none;
+  }
+}
+.mainContent .sectionOne .bio .servicesList .content form {
+  display: flex;
+  flex-direction: row;
+  column-gap: 1%;
+  align-items: center;
+  width: 100%;
+  position: relative;
+  background-color: #232323;
+  border-radius: 0.5rem;
+}
+.mainContent .sectionOne .bio .servicesList .content form .nameLabel {
+  display: flex;
+  position: relative;
+  width: 80%;
+  align-items: center;
+}
+.mainContent .sectionOne .bio .servicesList .content form .nameLabel .up {
+  display: flex;
+  position: absolute;
+  top: -0.4rem;
+  right: 1rem;
+  background-color: #1e1e1e;
+  font-size: 7.5pt;
+  font-weight: 500;
+  border-radius: 0.1rem;
+  color: #8b8b8b;
+  z-index: 2;
+  margin: 0.2rem;
+}
+.mainContent .sectionOne .bio .servicesList .content form .nameLabel .name {
+  width: 100%;
+  height: 2.5rem;
+  padding: 0.5rem;
+  border: 0.1rem solid rgba(84, 81, 70, 0.3764705882);
+  border-radius: 0.5rem;
+  background-color: #1e1e1e;
+  font-size: 10pt;
+}
+.mainContent .sectionOne .bio .servicesList .content form .nameLabel .name:focus:where(input[type=text],
+input[type=search],
+input[type=password],
+input[type=url],
+input[type=email]) {
+  appearance: none;
+  border-style: solid;
+  outline: none;
+}
+.mainContent .sectionOne .bio .servicesList .content form .nameLabel .name::placeholder {
+  color: #8b8b8b;
+}
+.mainContent .sectionOne .bio .servicesList .content form .nameLabel .name::selection {
+  background-color: #5c4f43;
+}
+@media (min-width: 600px) and (max-width: 800px) {
+  .mainContent .sectionOne .bio .servicesList .content form .nameLabel .name {
+    height: 2.5rem;
+  }
+}
+@media (orientation: portrait) and (min-width: 1023px) and (max-width: 1100px) {
+  .mainContent .sectionOne .bio .servicesList .content form .nameLabel .name {
+    height: 3rem;
+    font-size: 11pt;
+  }
+}
+.mainContent .sectionOne .bio .servicesList .content form .emailLabel {
+  display: flex;
+  position: relative;
+  width: 80%;
+  align-items: center;
+}
+.mainContent .sectionOne .bio .servicesList .content form .emailLabel .up {
+  display: flex;
+  position: absolute;
+  top: -0.4rem;
+  right: 1rem;
+  background-color: #1e1e1e;
+  font-size: 7.5pt;
+  font-weight: 500;
+  border-radius: 0.1rem;
+  color: #8b8b8b;
+  z-index: 2;
+  margin: 0.2rem;
+}
+.mainContent .sectionOne .bio .servicesList .content form .emailLabel .email {
+  width: 100%;
+  height: 2.5rem;
+  padding: 0.5rem;
+  border: 0.1rem solid rgba(84, 81, 70, 0.3764705882);
+  border-radius: 0.5rem;
+  background-color: #1e1e1e;
+  font-size: 10pt;
+}
+.mainContent .sectionOne .bio .servicesList .content form .emailLabel .email:focus:where(input[type=text],
+input[type=search],
+input[type=password],
+input[type=url],
+input[type=email]) {
+  appearance: none;
+  border-style: solid;
+  outline: none;
+}
+.mainContent .sectionOne .bio .servicesList .content form .emailLabel .email::placeholder {
+  color: #8b8b8b;
+}
+.mainContent .sectionOne .bio .servicesList .content form .emailLabel .email::selection {
+  background-color: #5c4f43;
+}
+@media (min-width: 600px) and (max-width: 800px) {
+  .mainContent .sectionOne .bio .servicesList .content form .emailLabel .email {
+    height: 2.5rem;
+  }
+}
+@media (orientation: portrait) and (min-width: 1023px) and (max-width: 1100px) {
+  .mainContent .sectionOne .bio .servicesList .content form .emailLabel .email {
+    height: 3rem;
+    font-size: 11pt;
+  }
+}
+.mainContent .sectionOne .bio .servicesList .content .disclaimerTotalResetDownload {
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.8rem;
+  width: 100%;
+  padding-inline: 0.4rem;
+  margin-top: 0.2rem;
+}
+.mainContent .sectionOne .bio .servicesList .content .disclaimerTotalResetDownload .disclaimer {
+  display: inline-block;
+}
+.mainContent .sectionOne .bio .servicesList .content .disclaimerTotalResetDownload .disclaimer .info {
+  margin-right: 0.4rem;
+  font-size: 10pt;
+  color: #8b8b8b;
+}
+@keyframes infoPopup {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@media (width: 600px) {
+  .mainContent .sectionOne .bio .servicesList .content .disclaimerTotalResetDownload .disclaimer .info {
+    font-size: 10pt;
+  }
+}
+@media (min-width: 900px) and (max-width: 1000px) {
+  .mainContent .sectionOne .bio .servicesList .content .disclaimerTotalResetDownload .disclaimer .info {
+    font-size: 10.5pt;
+  }
+}
+@media (min-width: 1000px) and (max-width: 1023px) {
+  .mainContent .sectionOne .bio .servicesList .content .disclaimerTotalResetDownload .disclaimer .info {
+    font-size: 11pt;
+  }
+}
+@media (orientation: portrait) and (min-width: 1023px) and (max-width: 1100px) {
+  .mainContent .sectionOne .bio .servicesList .content .disclaimerTotalResetDownload .disclaimer .info {
+    font-size: 10.5pt;
+  }
+}
+.mainContent .sectionOne .bio .servicesList .content .disclaimerTotalResetDownload .disclaimer .notice {
+  margin-right: 0.4rem;
+  font-size: 10pt;
+  color: #8b8b8b;
+}
+@keyframes downloadPopup {
+  0% {
+    color: #8b8b8b;
+  }
+  50% {
+    color: #ffffff;
+  }
+  100% {
+    color: #8b8b8b;
+  }
+}
+@media (width: 600px) {
+  .mainContent .sectionOne .bio .servicesList .content .disclaimerTotalResetDownload .disclaimer .notice {
+    font-size: 10pt;
+  }
+}
+@media (min-width: 900px) and (max-width: 1000px) {
+  .mainContent .sectionOne .bio .servicesList .content .disclaimerTotalResetDownload .disclaimer .notice {
+    font-size: 10.5pt;
+  }
+}
+@media (min-width: 1000px) and (max-width: 1023px) {
+  .mainContent .sectionOne .bio .servicesList .content .disclaimerTotalResetDownload .disclaimer .notice {
+    font-size: 11pt;
+  }
+}
+@media (orientation: portrait) and (min-width: 1023px) and (max-width: 1100px) {
+  .mainContent .sectionOne .bio .servicesList .content .disclaimerTotalResetDownload .disclaimer .notice {
+    font-size: 10.5pt;
+  }
+}
+.mainContent .sectionOne .bio .servicesList .content .disclaimerTotalResetDownload .disclaimer .price {
+  font-size: 10pt;
+  color: #8b8b8b;
+}
+@keyframes priceShift {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes priceReposition {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@media (width: 600px) {
+  .mainContent .sectionOne .bio .servicesList .content .disclaimerTotalResetDownload .disclaimer .price {
+    font-size: 10pt;
+  }
+}
+@media (min-width: 900px) and (max-width: 1000px) {
+  .mainContent .sectionOne .bio .servicesList .content .disclaimerTotalResetDownload .disclaimer .price {
+    font-size: 10.5pt;
+  }
+}
+@media (min-width: 1000px) and (max-width: 1023px) {
+  .mainContent .sectionOne .bio .servicesList .content .disclaimerTotalResetDownload .disclaimer .price {
+    font-size: 11pt;
+  }
+}
+@media (orientation: portrait) and (min-width: 1023px) and (max-width: 1100px) {
+  .mainContent .sectionOne .bio .servicesList .content .disclaimerTotalResetDownload .disclaimer .price {
+    font-size: 10.5pt;
+  }
+}
+.mainContent .sectionOne .bio .servicesList .content .disclaimerTotalResetDownload .totalResetDownload {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.mainContent .sectionOne .bio .servicesList .content .disclaimerTotalResetDownload .totalResetDownload .totalReset {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 33%;
+}
+.mainContent .sectionOne .bio .servicesList .content .disclaimerTotalResetDownload .totalResetDownload .totalReset .total {
+  font-size: 13pt;
+  font-weight: 600;
+  color: #ebebeb;
+  transition: all 0.2s ease;
+}
+.mainContent .sectionOne .bio .servicesList .content .disclaimerTotalResetDownload .totalResetDownload .totalReset .total span {
+  color: #8b8b8b;
+  transition: all 0.2s ease;
+}
+.mainContent .sectionOne .bio .servicesList .content .disclaimerTotalResetDownload .totalResetDownload .totalReset .reset {
+  width: 4.834rem;
+  height: 1.6rem;
+  padding: 0.3rem;
+  background-color: #5f312a;
+  border: none;
+  border-radius: 0.5rem;
+  font-size: 9.5pt;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+.mainContent .sectionOne .bio .servicesList .content .disclaimerTotalResetDownload .totalResetDownload .totalReset .reset:hover {
+  background-color: #722f26;
+}
+@media (min-width: 300px) {
+  .mainContent .sectionOne .bio .servicesList .content .disclaimerTotalResetDownload .totalResetDownload .totalReset .reset {
+    cursor: default;
+  }
+  .mainContent .sectionOne .bio .servicesList .content .disclaimerTotalResetDownload .totalResetDownload .totalReset .reset:hover {
+    box-shadow: none;
+  }
+}
+@media (orientation: portrait) and (min-width: 1023px) and (max-width: 1100px) {
+  .mainContent .sectionOne .bio .servicesList .content .disclaimerTotalResetDownload .totalResetDownload .totalReset .reset {
+    width: 4.5rem;
+    height: 1.7rem;
+  }
+  .mainContent .sectionOne .bio .servicesList .content .disclaimerTotalResetDownload .totalResetDownload .totalReset .reset:hover {
+    box-shadow: none;
+  }
+}
+.mainContent .sectionOne .bio .servicesList .content .disclaimerTotalResetDownload .totalResetDownload .download {
+  width: 4.834rem;
+  height: 1.6rem;
+  padding: 0.2rem;
+  background-color: #545146;
+  border: none;
+  border-radius: 0.5rem;
+  font-size: 9.5pt;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+@keyframes download {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes select {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.mainContent .sectionOne .bio .servicesList .content .disclaimerTotalResetDownload .totalResetDownload .download:hover {
+  background-color: #5c4f43;
+}
+@media (min-width: 300px) {
+  .mainContent .sectionOne .bio .servicesList .content .disclaimerTotalResetDownload .totalResetDownload .download {
+    cursor: default;
+  }
+  .mainContent .sectionOne .bio .servicesList .content .disclaimerTotalResetDownload .totalResetDownload .download:hover {
+    box-shadow: none;
+  }
+}
+@media (orientation: portrait) and (min-width: 1023px) and (max-width: 1100px) {
+  .mainContent .sectionOne .bio .servicesList .content .disclaimerTotalResetDownload .totalResetDownload .download {
+    width: 4.5rem;
+    height: 1.7rem;
+  }
+  .mainContent .sectionOne .bio .servicesList .content .disclaimerTotalResetDownload .totalResetDownload .download:hover {
+    box-shadow: none;
+  }
+}
+.mainContent .sectionOne .bio .servicesList .content .invoiceTemplate {
+  width: 80%;
+  height: 80%;
+  overflow-y: scroll;
+  overscroll-behavior-y: contain;
+  scrollbar-gutter: stable both-edges;
+  padding: 2rem;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  translate: -50% -45%;
+  background: #ffffff;
+  pointer-events: none;
+  visibility: hidden;
+  z-index: -999;
+}
+.mainContent .sectionOne .bio .servicesList .content .invoiceTemplate .invoiceContent {
+  display: block;
+}
+.mainContent .sectionOne .bio .servicesList .content .invoiceTemplate .invoiceContent .statusDescription {
+  display: block;
+  position: relative;
+}
+.mainContent .sectionOne .bio .servicesList .content .invoiceTemplate .invoiceContent .statusDescription .paymentStatus {
+  display: inline-block;
+  width: 88px;
+  height: 42px;
+  padding: 12px;
+  border-radius: 0.5rem;
+  background-color: rgba(114, 47, 38, 0.2588235294);
+  color: #722f26;
+  font-size: 10px;
+  font-family: "Alan Sans", sans-serif;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-rendering: geometricPrecision;
+  text-align: center;
+}
+.mainContent .sectionOne .bio .servicesList .content .invoiceTemplate .invoiceContent .statusDescription .invoiceDescription {
+  display: inline-block;
+  width: 185px;
+  position: relative;
+  left: 50%;
+  translate: -80% 0;
+  color: #8b8b8b;
+  font-size: 10px;
+  font-family: "Alan Sans", sans-serif;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-rendering: geometricPrecision;
+  text-align: justify;
+}
+.mainContent .sectionOne .bio .servicesList .content .invoiceTemplate .invoiceContent .invoiceHeader {
+  display: block;
+  height: auto;
+  padding: 16px;
+  margin-top: 10px;
+  position: relative;
+  border: solid 0.1rem rgba(92, 79, 67, 0.3764705882);
+  border-radius: 0.5rem;
+}
+.mainContent .sectionOne .bio .servicesList .content .invoiceTemplate .invoiceContent .invoiceHeader .titleNameBillNoDate {
+  display: block;
+  margin-bottom: 1.5rem;
+}
+.mainContent .sectionOne .bio .servicesList .content .invoiceTemplate .invoiceContent .invoiceHeader .titleNameBillNoDate .titleName {
+  display: block;
+  width: 399px;
+}
+.mainContent .sectionOne .bio .servicesList .content .invoiceTemplate .invoiceContent .invoiceHeader .titleNameBillNoDate .titleName .invoiceTitle {
+  width: 110px;
+  margin-bottom: 0.5rem;
+  color: #000000;
+  font-size: 20px;
+  font-family: "Alan Sans", sans-serif;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-rendering: geometricPrecision;
+  text-align: justify;
+}
+.mainContent .sectionOne .bio .servicesList .content .invoiceTemplate .invoiceContent .invoiceHeader .titleNameBillNoDate .titleName .nameContainer {
+  display: block;
+  height: fit-content;
+  position: relative;
+  margin-bottom: 0.5rem;
+}
+.mainContent .sectionOne .bio .servicesList .content .invoiceTemplate .invoiceContent .invoiceHeader .titleNameBillNoDate .titleName .nameContainer .nameTitle {
+  display: block;
+  position: relative;
+  width: 123px;
+  margin-bottom: 0.2rem;
+  color: #8b8b8b;
+  font-size: 10px;
+  font-family: "Alan Sans", sans-serif;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-rendering: geometricPrecision;
+  text-align: justify;
+}
+.mainContent .sectionOne .bio .servicesList .content .invoiceTemplate .invoiceContent .invoiceHeader .titleNameBillNoDate .titleName .nameContainer .nameValue {
+  width: 300px;
+  max-width: 100%;
+  min-width: 0;
+  overflow-wrap: anywhere;
+  color: #000000;
+  font-size: 13px;
+  font-family: "Alan Sans", sans-serif;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-rendering: geometricPrecision;
+  text-align: justify;
+}
+.mainContent .sectionOne .bio .servicesList .content .invoiceTemplate .invoiceContent .invoiceHeader .titleNameBillNoDate .billNoDate {
+  height: auto;
+  position: absolute;
+  top: 30px;
+  right: 10px;
+  width: 149px;
+}
+.mainContent .sectionOne .bio .servicesList .content .invoiceTemplate .invoiceContent .invoiceHeader .titleNameBillNoDate .billNoDate .invoiceBillNoContainer {
+  display: block;
+}
+.mainContent .sectionOne .bio .servicesList .content .invoiceTemplate .invoiceContent .invoiceHeader .titleNameBillNoDate .billNoDate .invoiceBillNoContainer .invoiceBillNoTitle {
+  display: block;
+  position: relative;
+  width: 86px;
+  margin-bottom: 0.2rem;
+  color: #8b8b8b;
+  font-size: 10px;
+  font-family: "Alan Sans", sans-serif;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-rendering: geometricPrecision;
+  text-align: justify;
+}
+.mainContent .sectionOne .bio .servicesList .content .invoiceTemplate .invoiceContent .invoiceHeader .titleNameBillNoDate .billNoDate .invoiceBillNoContainer .invoiceBillNo {
+  width: 145px;
+  margin-bottom: 0.5rem;
+  color: #000000;
+  font-size: 10px;
+  font-family: "Alan Sans", sans-serif;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-rendering: auto;
+  text-align: justify;
+}
+.mainContent .sectionOne .bio .servicesList .content .invoiceTemplate .invoiceContent .invoiceHeader .titleNameBillNoDate .billNoDate .dateContainer {
+  display: block;
+}
+.mainContent .sectionOne .bio .servicesList .content .invoiceTemplate .invoiceContent .invoiceHeader .titleNameBillNoDate .billNoDate .dateContainer .dateTitle {
+  display: block;
+  position: relative;
+  width: 42px;
+  margin-bottom: 0.2rem;
+  color: #8b8b8b;
+  font-size: 10px;
+  font-family: "Alan Sans", sans-serif;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-rendering: geometricPrecision;
+  text-align: justify;
+}
+.mainContent .sectionOne .bio .servicesList .content .invoiceTemplate .invoiceContent .invoiceHeader .titleNameBillNoDate .billNoDate .dateContainer .invoiceDate {
+  width: 95px;
+  color: #000000;
+  font-size: 10px;
+  font-family: "Alan Sans", sans-serif;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-rendering: geometricPrecision;
+  text-align: justify;
+}
+.mainContent .sectionOne .bio .servicesList .content .invoiceTemplate .invoiceContent .invoiceServices {
+  display: block;
+  padding: 16px;
+  margin-top: 10px;
+  position: relative;
+  border: solid 0.1rem rgba(84, 81, 70, 0.3764705882);
+  border-radius: 0.5rem;
+}
+.mainContent .sectionOne .bio .servicesList .content .invoiceTemplate .invoiceContent .invoiceServices .invoiceItems {
+  margin-bottom: 5px;
+}
+.mainContent .sectionOne .bio .servicesList .content .invoiceTemplate .invoiceContent .invoiceServices .invoiceItems .servicesContainer {
+  display: block;
+  position: relative;
+}
+.mainContent .sectionOne .bio .servicesList .content .invoiceTemplate .invoiceContent .invoiceServices .invoiceItems .servicesContainer .serviceNameDescription {
+  display: block;
+}
+.mainContent .sectionOne .bio .servicesList .content .invoiceTemplate .invoiceContent .invoiceServices .invoiceItems .servicesContainer .serviceNameDescription .invoiceServiceName {
+  display: block;
+  width: 250px;
+  margin-bottom: 5px;
+  color: #000000;
+  font-size: 14px;
+  font-family: "Alan Sans", sans-serif;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-rendering: geometricPrecision;
+  text-align: justify;
+}
+.mainContent .sectionOne .bio .servicesList .content .invoiceTemplate .invoiceContent .invoiceServices .invoiceItems .servicesContainer .serviceNameDescription .invoiceServiceDescription {
+  display: inline-block;
+  width: 460px;
+  color: #8b8b8b;
+  font-size: 10px;
+  font-family: "Alan Sans", sans-serif;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 2px;
+  text-rendering: geometricPrecision;
+  text-align: justify;
+}
+.mainContent .sectionOne .bio .servicesList .content .invoiceTemplate .invoiceContent .invoiceServices .invoiceItems .servicesContainer .invoiceServicePrice {
+  width: 60px;
+  position: relative;
+  display: inline-block;
+  left: 85%;
+  translate: 50% -170%;
+  color: #000000;
+  font-size: 14px;
+  font-family: "Alan Sans", sans-serif;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-rendering: geometricPrecision;
+  text-align: justify;
+}
+.mainContent .sectionOne .bio .servicesList .content .invoiceTemplate .invoiceContent .invoiceServices .invoiceItems hr {
+  width: 430px;
+  height: 1.5px;
+  margin-top: 5px;
+  position: relative;
+  bottom: 10px;
+  left: 50%;
+  translate: -50% 0;
+  border: none;
+  border-radius: 0.5rem;
+  background-color: rgba(84, 81, 70, 0.3764705882);
+  color: rgba(84, 81, 70, 0.3764705882);
+}
+.mainContent .sectionOne .bio .servicesList .content .invoiceTemplate .invoiceContent .invoiceServices .invoiceTotal {
+  display: block;
+  width: 130px;
+  position: relative;
+  left: 70%;
+  translate: 50% 0;
+  color: #000000;
+  font-size: 14px;
+  font-family: "Alan Sans", sans-serif;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-rendering: geometricPrecision;
+  text-align: justify;
+}
+.mainContent .sectionOne .bio .servicesList .content .invoiceTemplate .invoiceContent .invoiceServices .invoiceTotal span {
+  display: inline-block;
+  width: 50px;
+  color: #8b8b8b;
+  font-family: "Alan Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 2px;
+  text-rendering: geometricPrecision;
+  text-align: justify;
+}
+.mainContent .sectionOne .bio .servicesList .content .invoiceTemplate .invoiceContent .invoiceDisclaimerContainer {
+  display: block;
+  height: auto;
+  padding: 16px;
+  margin-top: 10px;
+  position: relative;
+  border: solid 0.1rem rgba(92, 79, 67, 0.3764705882);
+  border-radius: 0.5rem;
+}
+.mainContent .sectionOne .bio .servicesList .content .invoiceTemplate .invoiceContent .invoiceDisclaimerContainer .disclaimers {
+  display: block;
+  width: 565px;
+  margin-bottom: 10px;
+  color: #8b8b8b;
+  font-family: "Alan Sans", sans-serif;
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 2px;
+  text-rendering: geometricPrecision;
+  text-align: justify;
 }
 .mainContent .sectionOne .skillsAndEducation {
   display: flex;
@@ -10571,7 +11394,7 @@ input[type=email]) {
   width: fit-content;
   position: absolute;
   top: 12%;
-  left: 44%;
+  left: 45%;
   font-size: 10pt;
   font-weight: 500;
   color: #ebebeb;
@@ -12089,34 +12912,9 @@ input[type=email]) {
   color: #ffffff;
   width: 80%;
 }
-@media (min-width: 500px) and (max-width: 600px) {
-  .mainContent .sectionTwo .servicesList .content .services .service .serviceNameAndPrice .serviceName {
-    font-size: 12pt;
-  }
-}
-@media (width: 600px) {
-  .mainContent .sectionTwo .servicesList .content .services .service .serviceNameAndPrice .serviceName {
-    font-size: 11.5pt;
-  }
-}
-@media (min-width: 900px) and (max-width: 1000px) {
-  .mainContent .sectionTwo .servicesList .content .services .service .serviceNameAndPrice .serviceName {
-    font-size: 11.5pt;
-  }
-}
-@media (min-width: 1000px) and (max-width: 1023px) {
-  .mainContent .sectionTwo .servicesList .content .services .service .serviceNameAndPrice .serviceName {
-    font-size: 12pt;
-  }
-}
 @media (min-width: 1023px) and (max-width: 1100px) {
   .mainContent .sectionTwo .servicesList .content .services .service .serviceNameAndPrice .serviceName {
     font-size: 8.5pt;
-  }
-}
-@media (orientation: portrait) and (min-width: 1023px) and (max-width: 1100px) {
-  .mainContent .sectionTwo .servicesList .content .services .service .serviceNameAndPrice .serviceName {
-    font-size: 12pt;
   }
 }
 @media (min-width: 1100px) and (max-width: 1200px) {
@@ -12139,34 +12937,9 @@ input[type=email]) {
   font-weight: 500;
   color: #ebebeb;
 }
-@media (min-width: 500px) and (max-width: 600px) {
-  .mainContent .sectionTwo .servicesList .content .services .service .serviceNameAndPrice .servicePrice {
-    font-size: 11pt;
-  }
-}
-@media (width: 600px) {
-  .mainContent .sectionTwo .servicesList .content .services .service .serviceNameAndPrice .servicePrice {
-    font-size: 10pt;
-  }
-}
-@media (min-width: 900px) and (max-width: 1000px) {
-  .mainContent .sectionTwo .servicesList .content .services .service .serviceNameAndPrice .servicePrice {
-    font-size: 10.5pt;
-  }
-}
-@media (min-width: 1000px) and (max-width: 1023px) {
-  .mainContent .sectionTwo .servicesList .content .services .service .serviceNameAndPrice .servicePrice {
-    font-size: 11pt;
-  }
-}
 @media (min-width: 1023px) and (max-width: 1100px) {
   .mainContent .sectionTwo .servicesList .content .services .service .serviceNameAndPrice .servicePrice {
     font-size: 8.1pt;
-  }
-}
-@media (orientation: portrait) and (min-width: 1023px) and (max-width: 1100px) {
-  .mainContent .sectionTwo .servicesList .content .services .service .serviceNameAndPrice .servicePrice {
-    font-size: 10.5pt;
   }
 }
 @media (min-width: 1100px) and (max-width: 1200px) {
@@ -12206,34 +12979,9 @@ input[type=email]) {
   font-size: 10pt;
   color: #8b8b8b;
 }
-@media (min-width: 500px) and (max-width: 600px) {
-  .mainContent .sectionTwo .servicesList .content .services .service .serviceDescriptionAndButton .serviceDescription {
-    font-size: 11pt;
-  }
-}
-@media (width: 600px) {
-  .mainContent .sectionTwo .servicesList .content .services .service .serviceDescriptionAndButton .serviceDescription {
-    font-size: 10pt;
-  }
-}
-@media (min-width: 900px) and (max-width: 1000px) {
-  .mainContent .sectionTwo .servicesList .content .services .service .serviceDescriptionAndButton .serviceDescription {
-    font-size: 10.5pt;
-  }
-}
-@media (min-width: 1000px) and (max-width: 1023px) {
-  .mainContent .sectionTwo .servicesList .content .services .service .serviceDescriptionAndButton .serviceDescription {
-    font-size: 11pt;
-  }
-}
 @media (min-width: 1023px) and (max-width: 1100px) {
   .mainContent .sectionTwo .servicesList .content .services .service .serviceDescriptionAndButton .serviceDescription {
     font-size: 8.1pt;
-  }
-}
-@media (orientation: portrait) and (min-width: 1023px) and (max-width: 1100px) {
-  .mainContent .sectionTwo .servicesList .content .services .service .serviceDescriptionAndButton .serviceDescription {
-    font-size: 10.5pt;
   }
 }
 @media (min-width: 1100px) and (max-width: 1200px) {
@@ -12289,16 +13037,6 @@ input[type=email]) {
     font-size: 7.4pt;
   }
 }
-@media (orientation: portrait) and (min-width: 1023px) and (max-width: 1100px) {
-  .mainContent .sectionTwo .servicesList .content .services .service .serviceDescriptionAndButton .select {
-    width: 7rem;
-    height: 2.5rem;
-    font-size: 10pt;
-  }
-  .mainContent .sectionTwo .servicesList .content .services .service .serviceDescriptionAndButton .select:hover {
-    box-shadow: none;
-  }
-}
 @media (min-width: 1100px) and (max-width: 1200px) {
   .mainContent .sectionTwo .servicesList .content .services .service .serviceDescriptionAndButton .select {
     width: 5.1rem;
@@ -12345,16 +13083,6 @@ input[type=email]) {
     width: 4.7rem;
     height: 1.8rem;
     font-size: 7.4pt;
-  }
-}
-@media (orientation: portrait) and (min-width: 1023px) and (max-width: 1100px) {
-  .mainContent .sectionTwo .servicesList .content .services .service .serviceDescriptionAndButton .remove {
-    width: 7rem;
-    height: 2.5rem;
-    font-size: 10pt;
-  }
-  .mainContent .sectionTwo .servicesList .content .services .service .serviceDescriptionAndButton .remove:hover {
-    box-shadow: none;
   }
 }
 @media (min-width: 1100px) and (max-width: 1200px) {
@@ -12430,21 +13158,10 @@ input[type=email]) {
 .mainContent .sectionTwo .servicesList .content form .nameLabel .name::selection {
   background-color: #5c4f43;
 }
-@media (min-width: 300px) and (max-width: 800px) {
-  .mainContent .sectionTwo .servicesList .content form .nameLabel .name {
-    height: 2.5rem;
-  }
-}
 @media (min-width: 1023px) and (max-width: 1200px) {
   .mainContent .sectionTwo .servicesList .content form .nameLabel .name {
     height: 2rem;
     font-size: 8pt;
-  }
-}
-@media (orientation: portrait) and (min-width: 1023px) and (max-width: 1100px) {
-  .mainContent .sectionTwo .servicesList .content form .nameLabel .name {
-    height: 3rem;
-    font-size: 11pt;
   }
 }
 @media (min-width: 1200px) and (max-width: 1300px) {
@@ -12501,21 +13218,10 @@ input[type=email]) {
 .mainContent .sectionTwo .servicesList .content form .emailLabel .email::selection {
   background-color: #5c4f43;
 }
-@media (min-width: 300px) and (max-width: 800px) {
-  .mainContent .sectionTwo .servicesList .content form .emailLabel .email {
-    height: 2.5rem;
-  }
-}
 @media (min-width: 1023px) and (max-width: 1200px) {
   .mainContent .sectionTwo .servicesList .content form .emailLabel .email {
     height: 2rem;
     font-size: 8pt;
-  }
-}
-@media (orientation: portrait) and (min-width: 1023px) and (max-width: 1100px) {
-  .mainContent .sectionTwo .servicesList .content form .emailLabel .email {
-    height: 3rem;
-    font-size: 11pt;
   }
 }
 @media (min-width: 1200px) and (max-width: 1300px) {
@@ -12552,22 +13258,6 @@ input[type=email]) {
     opacity: 1;
   }
 }
-@media (min-width: 300px) and (max-width: 400px) {
-  .mainContent .sectionTwo .servicesList .content .disclaimerTotalResetDownload .disclaimer .info {
-    font-size: 10pt;
-  }
-}
-@media (min-width: 400px) and (max-width: 500px) {
-  .mainContent .sectionTwo .servicesList .content .disclaimerTotalResetDownload .disclaimer .info {
-    font-size: 10pt;
-  }
-}
-@media (min-width: 500px) and (max-width: 600px) {
-  .mainContent .sectionTwo .servicesList .content .disclaimerTotalResetDownload .disclaimer .info {
-    font-size: 11pt;
-    bottom: 2.5rem;
-  }
-}
 .mainContent .sectionTwo .servicesList .content .disclaimerTotalResetDownload .disclaimer .notice {
   margin-right: 0.4rem;
   font-size: 10pt;
@@ -12582,22 +13272,6 @@ input[type=email]) {
   }
   100% {
     color: #8b8b8b;
-  }
-}
-@media (min-width: 300px) and (max-width: 400px) {
-  .mainContent .sectionTwo .servicesList .content .disclaimerTotalResetDownload .disclaimer .notice {
-    font-size: 10pt;
-  }
-}
-@media (min-width: 400px) and (max-width: 500px) {
-  .mainContent .sectionTwo .servicesList .content .disclaimerTotalResetDownload .disclaimer .notice {
-    font-size: 10pt;
-  }
-}
-@media (min-width: 500px) and (max-width: 600px) {
-  .mainContent .sectionTwo .servicesList .content .disclaimerTotalResetDownload .disclaimer .notice {
-    font-size: 11pt;
-    bottom: 2.5rem;
   }
 }
 .mainContent .sectionTwo .servicesList .content .disclaimerTotalResetDownload .disclaimer .price {
@@ -12618,22 +13292,6 @@ input[type=email]) {
   }
   to {
     opacity: 1;
-  }
-}
-@media (min-width: 300px) and (max-width: 400px) {
-  .mainContent .sectionTwo .servicesList .content .disclaimerTotalResetDownload .disclaimer .price {
-    font-size: 10pt;
-  }
-}
-@media (min-width: 400px) and (max-width: 500px) {
-  .mainContent .sectionTwo .servicesList .content .disclaimerTotalResetDownload .disclaimer .price {
-    font-size: 10pt;
-  }
-}
-@media (min-width: 500px) and (max-width: 600px) {
-  .mainContent .sectionTwo .servicesList .content .disclaimerTotalResetDownload .disclaimer .price {
-    font-size: 11pt;
-    bottom: 2.5rem;
   }
 }
 .mainContent .sectionTwo .servicesList .content .disclaimerTotalResetDownload .totalResetDownload {
@@ -12678,16 +13336,6 @@ input[type=email]) {
     width: 4.7rem;
     height: 1.8rem;
     font-size: 7.4pt;
-  }
-}
-@media (orientation: portrait) and (min-width: 1023px) and (max-width: 1100px) {
-  .mainContent .sectionTwo .servicesList .content .disclaimerTotalResetDownload .totalResetDownload .totalReset .reset {
-    width: 7rem;
-    height: 2.5rem;
-    font-size: 10pt;
-  }
-  .mainContent .sectionTwo .servicesList .content .disclaimerTotalResetDownload .totalResetDownload .totalReset .reset:hover {
-    box-shadow: none;
   }
 }
 @media (min-width: 1100px) and (max-width: 1200px) {
@@ -12746,16 +13394,6 @@ input[type=email]) {
     width: 4.7rem;
     height: 1.8rem;
     font-size: 7.4pt;
-  }
-}
-@media (orientation: portrait) and (min-width: 1023px) and (max-width: 1100px) {
-  .mainContent .sectionTwo .servicesList .content .disclaimerTotalResetDownload .totalResetDownload .download {
-    width: 7rem;
-    height: 2.5rem;
-    font-size: 10pt;
-  }
-  .mainContent .sectionTwo .servicesList .content .disclaimerTotalResetDownload .totalResetDownload .download:hover {
-    box-shadow: none;
   }
 }
 @media (min-width: 1100px) and (max-width: 1200px) {
