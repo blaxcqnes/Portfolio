@@ -586,6 +586,7 @@
     width: 7rem;
     height: 2.5rem;
     font-size: 10pt;
+    cursor: default;
   }
   .header .headerContainer .locationAndContact .contact:hover {
     box-shadow: none;
@@ -1264,6 +1265,7 @@
     width: 7rem;
     height: 2.5rem;
     font-size: 10pt;
+    cursor: default;
   }
   .header .contactForm .titleAndButton .close:hover {
     box-shadow: none;
@@ -2216,6 +2218,7 @@ input[type=email]) {
     width: 7rem;
     height: 2.5rem;
     font-size: 10pt;
+    cursor: default;
   }
   .header .contactForm form .buttons .send:hover {
     box-shadow: none;
@@ -2305,6 +2308,7 @@ input[type=email]) {
     width: 7rem;
     height: 2.5rem;
     font-size: 10pt;
+    cursor: default;
   }
   .header .contactForm form .buttons .reset:hover {
     box-shadow: none;
@@ -2935,6 +2939,7 @@ input[type=email]) {
     width: 7rem;
     height: 2.5rem;
     font-size: 10pt;
+    cursor: default;
   }
   .mainContent .sectionOne .bio .imageAndDescription .descriptionAndServicesList .descriptionBox .titleAndButton .services:hover {
     box-shadow: none;
@@ -3216,6 +3221,11 @@ input[type=email]) {
     box-shadow: none;
   }
 }
+@media (orientation: portrait) and (min-width: 1023px) {
+  .mainContent .sectionOne .bio .imageAndDescription .descriptionAndServicesList .descriptionBox .locationAndServicesButton .services {
+    cursor: default;
+  }
+}
 .mainContent .sectionOne .bio .imageAndDescription .descriptionAndServicesList .servicesList {
   display: flex;
   flex-direction: column;
@@ -3313,6 +3323,11 @@ input[type=email]) {
   }
   .mainContent .sectionOne .bio .imageAndDescription .descriptionAndServicesList .servicesList .titleAndButton .close:hover {
     box-shadow: none;
+  }
+}
+@media (orientation: portrait) and (min-width: 1023px) {
+  .mainContent .sectionOne .bio .imageAndDescription .descriptionAndServicesList .servicesList .titleAndButton .close {
+    cursor: default;
   }
 }
 .mainContent .sectionOne .bio .imageAndDescription .descriptionAndServicesList .servicesList .content {
@@ -4245,6 +4260,11 @@ input[type=email]) {
     box-shadow: none;
   }
 }
+@media (orientation: portrait) and (min-width: 1023px) {
+  .mainContent .sectionOne .bio .servicesList .titleAndButton .close {
+    cursor: default;
+  }
+}
 .mainContent .sectionOne .bio .servicesList .content {
   display: flex;
   flex-direction: column;
@@ -4417,6 +4437,7 @@ input[type=email]) {
   .mainContent .sectionOne .bio .servicesList .content .services .service .serviceDescriptionAndButton .select {
     width: 4.5rem;
     height: 1.7rem;
+    cursor: default;
   }
   .mainContent .sectionOne .bio .servicesList .content .services .service .serviceDescriptionAndButton .select:hover {
     box-shadow: none;
@@ -4451,6 +4472,7 @@ input[type=email]) {
   .mainContent .sectionOne .bio .servicesList .content .services .service .serviceDescriptionAndButton .remove {
     width: 4.5rem;
     height: 1.7rem;
+    cursor: default;
   }
   .mainContent .sectionOne .bio .servicesList .content .services .service .serviceDescriptionAndButton .remove:hover {
     box-shadow: none;
@@ -4743,6 +4765,7 @@ input[type=email]) {
   .mainContent .sectionOne .bio .servicesList .content .disclaimerTotalResetDownload .totalResetDownload .totalReset .reset {
     width: 4.5rem;
     height: 1.7rem;
+    cursor: default;
   }
   .mainContent .sectionOne .bio .servicesList .content .disclaimerTotalResetDownload .totalResetDownload .totalReset .reset:hover {
     box-shadow: none;
@@ -4790,6 +4813,7 @@ input[type=email]) {
   .mainContent .sectionOne .bio .servicesList .content .disclaimerTotalResetDownload .totalResetDownload .download {
     width: 4.5rem;
     height: 1.7rem;
+    cursor: default;
   }
   .mainContent .sectionOne .bio .servicesList .content .disclaimerTotalResetDownload .totalResetDownload .download:hover {
     box-shadow: none;
@@ -6191,6 +6215,11 @@ input[type=email]) {
     box-shadow: none;
   }
 }
+@media (orientation: portrait) and (min-width: 1023px) {
+  .mainContent .sectionOne .skillsAndEducation .skillsAndSkillsList .skillsList .titleAndButton .close {
+    cursor: default;
+  }
+}
 .mainContent .sectionOne .skillsAndEducation .skillsAndSkillsList .skillsList .content {
   display: flex;
   flex-direction: row;
@@ -6285,6 +6314,11 @@ input[type=email]) {
   }
   .mainContent .sectionOne .skillsAndEducation .skillsAndSkillsList .skillsList .content .previous:hover {
     box-shadow: none;
+  }
+}
+@media (orientation: portrait) and (min-width: 1023px) {
+  .mainContent .sectionOne .skillsAndEducation .skillsAndSkillsList .skillsList .content .previous {
+    cursor: default;
   }
 }
 .mainContent .sectionOne .skillsAndEducation .skillsAndSkillsList .skillsList .content .titleAndFluencies {
@@ -8052,16 +8086,15 @@ input[type=email]) {
   width: fit-content;
   position: absolute;
   top: 12%;
-  left: 44%;
+  left: 45%;
   font-size: 10pt;
   font-weight: 500;
   color: #ebebeb;
   z-index: 2;
 }
-@media (min-width: 300px) and (max-width: 1023px) {
+@media (min-width: 300px) and (max-width: 600px) {
   .mainContent .sectionOne .skillsAndEducation .skillsAndSkillsList .skillsList .content .titleAndFluencies .fluenciesFour .fluencyOne .statusBar .percentage {
     top: 10%;
-    left: 42%;
   }
 }
 .mainContent .sectionOne .skillsAndEducation .skillsAndSkillsList .skillsList .content .titleAndFluencies .fluenciesFour .fluencyOne .statusBar .topOne {
@@ -8596,6 +8629,11 @@ input[type=email]) {
     box-shadow: none;
   }
 }
+@media (orientation: portrait) and (min-width: 1023px) {
+  .mainContent .sectionOne .skillsAndEducation .skillsAndSkillsList .skillsList .content .next {
+    cursor: default;
+  }
+}
 .mainContent .sectionOne .skillsAndEducation .skillsAndSkillsList .skillsList .content .pageNumber {
   position: absolute;
   right: 2.5rem;
@@ -8904,6 +8942,7 @@ input[type=email]) {
     width: 7rem;
     height: 2.5rem;
     font-size: 10pt;
+    cursor: default;
   }
   .mainContent .sectionOne .skillsAndEducation .educationAndEducationList .educationBox .titleAndButton .courses:hover {
     box-shadow: none;
@@ -9261,6 +9300,11 @@ input[type=email]) {
     box-shadow: none;
   }
 }
+@media (orientation: portrait) and (min-width: 1023px) {
+  .mainContent .sectionOne .skillsAndEducation .educationAndEducationList .educationList .titleAndButton .close {
+    cursor: default;
+  }
+}
 .mainContent .sectionOne .skillsAndEducation .educationAndEducationList .educationList .content {
   display: flex;
   flex-direction: row;
@@ -9355,6 +9399,11 @@ input[type=email]) {
   }
   .mainContent .sectionOne .skillsAndEducation .educationAndEducationList .educationList .content .previous:hover {
     box-shadow: none;
+  }
+}
+@media (orientation: portrait) and (min-width: 1023px) {
+  .mainContent .sectionOne .skillsAndEducation .educationAndEducationList .educationList .content .previous {
+    cursor: default;
   }
 }
 .mainContent .sectionOne .skillsAndEducation .educationAndEducationList .educationList .content .pageOne {
@@ -9578,6 +9627,11 @@ input[type=email]) {
     box-shadow: none;
   }
 }
+@media (orientation: portrait) and (min-width: 1023px) {
+  .mainContent .sectionOne .skillsAndEducation .educationAndEducationList .educationList .content .next {
+    cursor: default;
+  }
+}
 .mainContent .sectionOne .skillsAndEducation .educationAndEducationList .educationList .content .pageNumber {
   position: absolute;
   right: 2.5rem;
@@ -9754,6 +9808,7 @@ input[type=email]) {
     width: 7rem;
     height: 2.5rem;
     font-size: 10pt;
+    cursor: default;
   }
   .mainContent .sectionOne .skillsList .titleAndButton .close:hover {
     box-shadow: none;
@@ -9900,6 +9955,7 @@ input[type=email]) {
     width: 2.5rem;
     height: 7rem;
     font-size: 10pt;
+    cursor: default;
   }
   .mainContent .sectionOne .skillsList .content .previous:hover {
     box-shadow: none;
@@ -11916,6 +11972,7 @@ input[type=email]) {
     width: 2.5rem;
     height: 7rem;
     font-size: 10pt;
+    cursor: default;
   }
   .mainContent .sectionOne .skillsList .content .next:hover {
     box-shadow: none;
@@ -12133,6 +12190,7 @@ input[type=email]) {
     width: 7rem;
     height: 2.5rem;
     font-size: 10pt;
+    cursor: default;
   }
   .mainContent .sectionOne .educationList .titleAndButton .close:hover {
     box-shadow: none;
@@ -12279,6 +12337,7 @@ input[type=email]) {
     width: 2.5rem;
     height: 7rem;
     font-size: 10pt;
+    cursor: default;
   }
   .mainContent .sectionOne .educationList .content .previous:hover {
     box-shadow: none;
@@ -12654,6 +12713,7 @@ input[type=email]) {
     width: 2.5rem;
     height: 7rem;
     font-size: 10pt;
+    cursor: default;
   }
   .mainContent .sectionOne .educationList .content .next:hover {
     box-shadow: none;
@@ -14200,9 +14260,15 @@ input[type=email]) {
     width: 9.3rem;
   }
 }
+@media (min-width: 300px) and (max-width: 1023px) {
+  .mainContent .sectionTwo .projectsAndFooter .projects .webAndWebList .webBox .carousel .linkActive {
+    cursor: default;
+  }
+}
 @media (orientation: portrait) and (min-width: 1023px) and (max-width: 1100px) {
   .mainContent .sectionTwo .projectsAndFooter .projects .webAndWebList .webBox .carousel .linkActive {
     width: 12rem;
+    cursor: default;
   }
 }
 @media (min-width: 1100px) and (max-width: 1200px) {
@@ -14266,6 +14332,11 @@ input[type=email]) {
     width: 12.5rem;
   }
 }
+@media (min-width: 300px) and (max-width: 1023px) {
+  .mainContent .sectionTwo .projectsAndFooter .projects .webAndWebList .webBox .carousel .linkNonActive {
+    cursor: default;
+  }
+}
 @media (min-width: 1023px) and (max-width: 1100px) {
   .mainContent .sectionTwo .projectsAndFooter .projects .webAndWebList .webBox .carousel .linkNonActive {
     width: 9.3rem;
@@ -14274,6 +14345,7 @@ input[type=email]) {
 @media (orientation: portrait) and (min-width: 1023px) and (max-width: 1100px) {
   .mainContent .sectionTwo .projectsAndFooter .projects .webAndWebList .webBox .carousel .linkNonActive {
     width: 12rem;
+    cursor: default;
   }
 }
 @media (min-width: 1100px) and (max-width: 1200px) {
@@ -14411,6 +14483,7 @@ input[type=email]) {
     right: 2rem;
     bottom: 2rem;
     font-size: 10pt;
+    cursor: default;
   }
   .mainContent .sectionTwo .projectsAndFooter .projects .webAndWebList .webBox .more:hover {
     box-shadow: none;
@@ -14745,6 +14818,11 @@ input[type=email]) {
     box-shadow: none;
   }
 }
+@media (orientation: portrait) and (min-width: 1023px) {
+  .mainContent .sectionTwo .projectsAndFooter .projects .webAndWebList .webList .titleAndButton .close {
+    cursor: default;
+  }
+}
 .mainContent .sectionTwo .projectsAndFooter .projects .webAndWebList .webList .content {
   display: flex;
   flex-direction: row;
@@ -14841,6 +14919,11 @@ input[type=email]) {
     box-shadow: none;
   }
 }
+@media (orientation: portrait) and (min-width: 1023px) {
+  .mainContent .sectionTwo .projectsAndFooter .projects .webAndWebList .webList .content .previous {
+    cursor: default;
+  }
+}
 .mainContent .sectionTwo .projectsAndFooter .projects .webAndWebList .webList .content .next {
   width: 2.5rem;
   height: 7rem;
@@ -14902,6 +14985,11 @@ input[type=email]) {
   }
   .mainContent .sectionTwo .projectsAndFooter .projects .webAndWebList .webList .content .next:hover {
     box-shadow: none;
+  }
+}
+@media (orientation: portrait) and (min-width: 1023px) {
+  .mainContent .sectionTwo .projectsAndFooter .projects .webAndWebList .webList .content .next {
+    cursor: default;
   }
 }
 .mainContent .sectionTwo .projectsAndFooter .projects .webAndWebList .webList .content .pageNumber {
@@ -15405,6 +15493,7 @@ input[type=email]) {
     right: 2rem;
     bottom: 2rem;
     font-size: 10pt;
+    cursor: default;
   }
   .mainContent .sectionTwo .projectsAndFooter .projects .cyberBox .extras:hover {
     box-shadow: none;
@@ -16468,6 +16557,7 @@ input[type=email]) {
     width: 7rem;
     height: 2.5rem;
     font-size: 10pt;
+    cursor: default;
   }
   .mainContent .sectionTwo .cyberList .titleAndButton .close:hover {
     box-shadow: none;
@@ -16667,6 +16757,7 @@ input[type=email]) {
     width: 2.5rem;
     height: 7rem;
     font-size: 10pt;
+    cursor: default;
   }
   .mainContent .sectionTwo .cyberList .content .previous:hover {
     box-shadow: none;
@@ -16788,6 +16879,7 @@ input[type=email]) {
     width: 2.5rem;
     height: 7rem;
     font-size: 10pt;
+    cursor: default;
   }
   .mainContent .sectionTwo .cyberList .content .next:hover {
     box-shadow: none;
@@ -17023,6 +17115,7 @@ input[type=email]) {
     width: 7rem;
     height: 2.5rem;
     font-size: 10pt;
+    cursor: default;
   }
   .mainContent .sectionTwo .webList .titleAndButton .close:hover {
     box-shadow: none;
@@ -17169,6 +17262,7 @@ input[type=email]) {
     width: 2.5rem;
     height: 7rem;
     font-size: 10pt;
+    cursor: default;
   }
   .mainContent .sectionTwo .webList .content .previous:hover {
     box-shadow: none;
@@ -17272,6 +17366,7 @@ input[type=email]) {
     width: 2.5rem;
     height: 7rem;
     font-size: 10pt;
+    cursor: default;
   }
   .mainContent .sectionTwo .webList .content .next:hover {
     box-shadow: none;
