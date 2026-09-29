@@ -9463,7 +9463,7 @@ input[type=email]) {
 .mainContent .sectionOne .skillsAndEducation .educationAndEducationList .educationList .content .pageOne li {
   font-size: 10pt;
   list-style-type: none;
-  color: #ebebeb;
+  color: #8b8b8b;
 }
 @media (min-width: 300px) and (max-width: 500px) {
   .mainContent .sectionOne .skillsAndEducation .educationAndEducationList .educationList .content .pageOne li {
@@ -9542,7 +9542,7 @@ input[type=email]) {
 .mainContent .sectionOne .skillsAndEducation .educationAndEducationList .educationList .content .pageTwo li {
   font-size: 10pt;
   list-style-type: none;
-  color: #ebebeb;
+  color: #8b8b8b;
 }
 @media (min-width: 300px) and (max-width: 500px) {
   .mainContent .sectionOne .skillsAndEducation .educationAndEducationList .educationList .content .pageTwo li {
@@ -12423,7 +12423,7 @@ input[type=email]) {
 .mainContent .sectionOne .educationList .content .pageOne li {
   font-size: 10pt;
   list-style-type: none;
-  color: #ebebeb;
+  color: #8b8b8b;
 }
 @media (min-width: 900px) and (max-width: 1000px) {
   .mainContent .sectionOne .educationList .content .pageOne li {
@@ -12559,7 +12559,7 @@ input[type=email]) {
 .mainContent .sectionOne .educationList .content .pageTwo li {
   font-size: 10pt;
   list-style-type: none;
-  color: #ebebeb;
+  color: #8b8b8b;
 }
 @media (min-width: 900px) and (max-width: 1000px) {
   .mainContent .sectionOne .educationList .content .pageTwo li {
@@ -14739,14 +14739,64 @@ input[type=email]) {
     opacity: 1;
   }
 }
-@media (min-width: 300px) and (max-width: 500px) {
+@media (min-width: 300px) and (max-width: 328px) {
   .mainContent .sectionTwo .projectsAndFooter .projects .webAndWebList .webList {
-    height: 30rem;
+    row-gap: 0.5rem;
+    height: 38rem;
+    scroll-margin-bottom: 5rem;
   }
 }
-@media (min-width: 500px) and (max-width: 600px) {
+@media (min-width: 328px) and (max-width: 331px) {
   .mainContent .sectionTwo .projectsAndFooter .projects .webAndWebList .webList {
-    height: 32rem;
+    row-gap: 0.5rem;
+    height: 36rem;
+    scroll-margin-bottom: 5rem;
+  }
+}
+@media (min-width: 331px) and (max-width: 350px) {
+  .mainContent .sectionTwo .projectsAndFooter .projects .webAndWebList .webList {
+    row-gap: 0.5rem;
+    height: 35.1rem;
+    scroll-margin-bottom: 5rem;
+  }
+}
+@media (min-width: 350px) and (max-width: 400px) {
+  .mainContent .sectionTwo .projectsAndFooter .projects .webAndWebList .webList {
+    row-gap: 0.5rem;
+    height: 33.5rem;
+    scroll-margin-bottom: 5rem;
+  }
+}
+@media (min-width: 400px) and (max-width: 435px) {
+  .mainContent .sectionTwo .projectsAndFooter .projects .webAndWebList .webList {
+    row-gap: 0.5rem;
+    height: 33rem;
+    scroll-margin-bottom: 5rem;
+  }
+}
+@media (min-width: 434px) and (max-width: 449px) {
+  .mainContent .sectionTwo .projectsAndFooter .projects .webAndWebList .webList {
+    row-gap: 0.5rem;
+    height: 31.5rem;
+    scroll-margin-bottom: 5rem;
+  }
+}
+@media (min-width: 449px) and (max-width: 600px) {
+  .mainContent .sectionTwo .projectsAndFooter .projects .webAndWebList .webList {
+    row-gap: 0.5rem;
+    height: 31rem;
+    scroll-margin-bottom: 5rem;
+  }
+}
+@media (min-width: 600px) and (max-width: 1023px) {
+  .mainContent .sectionTwo .projectsAndFooter .projects .webAndWebList .webList {
+    row-gap: 0.45rem;
+    height: 22.58rem;
+  }
+}
+@media (orientation: portrait) and (min-width: 1023px) and (max-width: 1100px) {
+  .mainContent .sectionTwo .projectsAndFooter .projects .webAndWebList .webList {
+    height: 22.188rem;
   }
 }
 .mainContent .sectionTwo .projectsAndFooter .projects .webAndWebList .webList .titleAndButton {
@@ -14768,6 +14818,11 @@ input[type=email]) {
     padding: 0.8rem 2rem;
   }
 }
+@media (orientation: portrait) and (min-width: 1023px) and (max-width: 1100px) {
+  .mainContent .sectionTwo .projectsAndFooter .projects .webAndWebList .webList .titleAndButton {
+    padding: 0.8rem 1rem;
+  }
+}
 .mainContent .sectionTwo .projectsAndFooter .projects .webAndWebList .webList .titleAndButton h4 {
   font-size: 15pt;
   font-weight: 600;
@@ -14780,6 +14835,16 @@ input[type=email]) {
 @media (min-width: 400px) and (max-width: 500px) {
   .mainContent .sectionTwo .projectsAndFooter .projects .webAndWebList .webList .titleAndButton h4 {
     font-size: 14pt;
+  }
+}
+@media (min-width: 1000px) and (max-width: 1023px) {
+  .mainContent .sectionTwo .projectsAndFooter .projects .webAndWebList .webList .titleAndButton h4 {
+    font-size: 16pt;
+  }
+}
+@media (orientation: portrait) and (min-width: 1023px) and (max-width: 1100px) {
+  .mainContent .sectionTwo .projectsAndFooter .projects .webAndWebList .webList .titleAndButton h4 {
+    font-size: 16pt;
   }
 }
 .mainContent .sectionTwo .projectsAndFooter .projects .webAndWebList .webList .titleAndButton .close {
@@ -14810,6 +14875,19 @@ input[type=email]) {
     height: 2.3rem;
   }
 }
+@media (min-width: 600px) and (max-width: 800px) {
+  .mainContent .sectionTwo .projectsAndFooter .projects .webAndWebList .webList .titleAndButton .close {
+    width: 6rem;
+    font-size: 9pt;
+  }
+}
+@media (width: 800px) {
+  .mainContent .sectionTwo .projectsAndFooter .projects .webAndWebList .webList .titleAndButton .close {
+    width: 7rem;
+    height: 2.5rem;
+    font-size: 10pt;
+  }
+}
 @media (min-width: 300px) and (max-width: 1023px) {
   .mainContent .sectionTwo .projectsAndFooter .projects .webAndWebList .webList .titleAndButton .close {
     cursor: default;
@@ -14818,9 +14896,15 @@ input[type=email]) {
     box-shadow: none;
   }
 }
-@media (orientation: portrait) and (min-width: 1023px) {
+@media (orientation: portrait) and (min-width: 1023px) and (max-width: 1100px) {
   .mainContent .sectionTwo .projectsAndFooter .projects .webAndWebList .webList .titleAndButton .close {
+    width: 7rem;
+    height: 2.5rem;
+    font-size: 10pt;
     cursor: default;
+  }
+  .mainContent .sectionTwo .projectsAndFooter .projects .webAndWebList .webList .titleAndButton .close:hover {
+    box-shadow: none;
   }
 }
 .mainContent .sectionTwo .projectsAndFooter .projects .webAndWebList .webList .content {
@@ -14836,25 +14920,65 @@ input[type=email]) {
   background-color: #232323;
   border-radius: 0.5rem;
 }
-@media (min-width: 300px) and (max-width: 400px) {
+@media (min-width: 300px) and (max-width: 319px) {
   .mainContent .sectionTwo .projectsAndFooter .projects .webAndWebList .webList .content {
+    align-items: unset;
     width: 95%;
-    height: 24.65rem;
-    align-items: unset;
+    height: 90.8%;
+    margin-bottom: 0.5rem;
+    padding: 0.8rem 0 0.6rem 0;
   }
 }
-@media (min-width: 400px) and (max-width: 500px) {
+@media (min-width: 319px) and (max-width: 350px) {
   .mainContent .sectionTwo .projectsAndFooter .projects .webAndWebList .webList .content {
-    width: 96%;
-    height: 24.55rem;
     align-items: unset;
+    width: 95%;
+    height: 90.8%;
+    margin-bottom: 0.5rem;
+    padding: 1.2rem 0 0.6rem 0;
   }
 }
-@media (min-width: 500px) and (max-width: 600px) {
+@media (min-width: 350px) and (max-width: 400px) {
   .mainContent .sectionTwo .projectsAndFooter .projects .webAndWebList .webList .content {
-    width: 96%;
-    height: 26.4rem;
     align-items: unset;
+    width: 95%;
+    height: 90.8%;
+    margin-bottom: 0.5rem;
+    padding: 1.2rem 0 0.6rem 0;
+  }
+}
+@media (min-width: 400px) and (max-width: 449px) {
+  .mainContent .sectionTwo .projectsAndFooter .projects .webAndWebList .webList .content {
+    align-items: unset;
+    width: 96%;
+    height: 90.8%;
+    margin-bottom: 0.5rem;
+    padding: 1.2rem 0 0.6rem 0;
+  }
+}
+@media (min-width: 449px) and (max-width: 600px) {
+  .mainContent .sectionTwo .projectsAndFooter .projects .webAndWebList .webList .content {
+    align-items: unset;
+    width: 96%;
+    height: 90.8%;
+    margin-bottom: 0.5rem;
+    padding: 1.5rem 0 0.6rem 0;
+  }
+}
+@media (min-width: 600px) and (max-width: 1023px) {
+  .mainContent .sectionTwo .projectsAndFooter .projects .webAndWebList .webList .content {
+    width: 97.5%;
+    height: 90.8%;
+    margin-bottom: 0.5rem;
+    padding: 0.6rem 0 0.6rem 0;
+  }
+}
+@media (orientation: portrait) and (min-width: 1023px) and (max-width: 1100px) {
+  .mainContent .sectionTwo .projectsAndFooter .projects .webAndWebList .webList .content {
+    width: 98.5%;
+    height: 90.8%;
+    margin-bottom: 0.5rem;
+    padding: 0.6rem 0 0.6rem 0;
   }
 }
 .mainContent .sectionTwo .projectsAndFooter .projects .webAndWebList .webList .content .previous {
@@ -14911,6 +15035,33 @@ input[type=email]) {
     left: 2rem;
   }
 }
+@media (min-width: 600px) and (max-width: 700px) {
+  .mainContent .sectionTwo .projectsAndFooter .projects .webAndWebList .webList .content .previous {
+    height: 6rem;
+    bottom: unset;
+    left: 2rem;
+    font-size: 9pt;
+  }
+}
+@media (min-width: 700px) and (max-width: 800px) {
+  .mainContent .sectionTwo .projectsAndFooter .projects .webAndWebList .webList .content .previous {
+    height: 6rem;
+    top: unset;
+    bottom: unset;
+    left: 2rem;
+    font-size: 9pt;
+  }
+}
+@media (width: 800px) {
+  .mainContent .sectionTwo .projectsAndFooter .projects .webAndWebList .webList .content .previous {
+    width: 2.5rem;
+    height: 7rem;
+    top: unset;
+    bottom: unset;
+    left: 2rem;
+    font-size: 9.5pt;
+  }
+}
 @media (min-width: 300px) and (max-width: 1023px) {
   .mainContent .sectionTwo .projectsAndFooter .projects .webAndWebList .webList .content .previous {
     cursor: default;
@@ -14919,9 +15070,15 @@ input[type=email]) {
     box-shadow: none;
   }
 }
-@media (orientation: portrait) and (min-width: 1023px) {
+@media (orientation: portrait) and (min-width: 1023px) and (max-width: 1100px) {
   .mainContent .sectionTwo .projectsAndFooter .projects .webAndWebList .webList .content .previous {
+    width: 2.5rem;
+    height: 7rem;
+    font-size: 10pt;
     cursor: default;
+  }
+  .mainContent .sectionTwo .projectsAndFooter .projects .webAndWebList .webList .content .previous:hover {
+    box-shadow: none;
   }
 }
 .mainContent .sectionTwo .projectsAndFooter .projects .webAndWebList .webList .content .next {
@@ -14945,38 +15102,57 @@ input[type=email]) {
 }
 @media (min-width: 300px) and (max-width: 350px) {
   .mainContent .sectionTwo .projectsAndFooter .projects .webAndWebList .webList .content .next {
-    width: 5.7rem;
-    height: 2.3rem;
-    bottom: 1rem;
-    left: 7rem;
-    font-size: 9.5pt;
-  }
-}
-@media (min-width: 350px) and (max-width: 400px) {
-  .mainContent .sectionTwo .projectsAndFooter .projects .webAndWebList .webList .content .next {
     width: 6rem;
     height: 2.3rem;
     bottom: 1rem;
     left: 7rem;
-    font-size: 9.5pt;
+    font-size: 9pt;
   }
 }
-@media (min-width: 400px) and (max-width: 600px) {
+@media (min-width: 350px) and (max-width: 600px) {
   .mainContent .sectionTwo .projectsAndFooter .projects .webAndWebList .webList .content .next {
-    width: 7rem;
-    height: 2.5rem;
+    width: 6rem;
+    height: 2.3rem;
     bottom: 1rem;
-    left: 8.5rem;
+    left: 8rem;
+    font-size: 9pt;
   }
 }
 @media (width: 600px) {
   .mainContent .sectionTwo .projectsAndFooter .projects .webAndWebList .webList .content .next {
     width: 2.5rem;
     height: 7rem;
-    top: unset;
     bottom: unset;
     right: 2rem;
     left: unset;
+    font-size: 10pt;
+  }
+}
+@media (min-width: 600px) and (max-width: 700px) {
+  .mainContent .sectionTwo .projectsAndFooter .projects .webAndWebList .webList .content .next {
+    height: 6rem;
+    bottom: unset;
+    right: 2rem;
+    font-size: 9pt;
+  }
+}
+@media (min-width: 700px) and (max-width: 800px) {
+  .mainContent .sectionTwo .projectsAndFooter .projects .webAndWebList .webList .content .next {
+    height: 6rem;
+    top: unset;
+    bottom: unset;
+    right: 2rem;
+    font-size: 9pt;
+  }
+}
+@media (width: 800px) {
+  .mainContent .sectionTwo .projectsAndFooter .projects .webAndWebList .webList .content .next {
+    width: 2.5rem;
+    height: 7rem;
+    top: unset;
+    bottom: unset;
+    right: 2rem;
+    font-size: 9.5pt;
   }
 }
 @media (min-width: 300px) and (max-width: 1023px) {
@@ -14987,9 +15163,15 @@ input[type=email]) {
     box-shadow: none;
   }
 }
-@media (orientation: portrait) and (min-width: 1023px) {
+@media (orientation: portrait) and (min-width: 1023px) and (max-width: 1100px) {
   .mainContent .sectionTwo .projectsAndFooter .projects .webAndWebList .webList .content .next {
+    width: 2.5rem;
+    height: 7rem;
+    font-size: 10pt;
     cursor: default;
+  }
+  .mainContent .sectionTwo .projectsAndFooter .projects .webAndWebList .webList .content .next:hover {
+    box-shadow: none;
   }
 }
 .mainContent .sectionTwo .projectsAndFooter .projects .webAndWebList .webList .content .pageNumber {
@@ -16391,21 +16573,59 @@ input[type=email]) {
     opacity: 1;
   }
 }
-@media (min-width: 300px) and (max-width: 500px) {
+@media (min-width: 300px) and (max-width: 328px) {
   .mainContent .sectionTwo .cyberList {
-    height: 30rem;
+    row-gap: 0.5rem;
+    height: 38rem;
     scroll-margin-bottom: 5rem;
   }
 }
-@media (min-width: 500px) and (max-width: 600px) {
+@media (min-width: 328px) and (max-width: 331px) {
   .mainContent .sectionTwo .cyberList {
-    height: 32rem;
+    row-gap: 0.5rem;
+    height: 36rem;
     scroll-margin-bottom: 5rem;
   }
 }
-@media (min-width: 600px) and (max-width: 700px) {
+@media (min-width: 331px) and (max-width: 350px) {
   .mainContent .sectionTwo .cyberList {
-    height: 22rem;
+    row-gap: 0.5rem;
+    height: 35.1rem;
+    scroll-margin-bottom: 5rem;
+  }
+}
+@media (min-width: 350px) and (max-width: 400px) {
+  .mainContent .sectionTwo .cyberList {
+    row-gap: 0.5rem;
+    height: 33.5rem;
+    scroll-margin-bottom: 5rem;
+  }
+}
+@media (min-width: 400px) and (max-width: 435px) {
+  .mainContent .sectionTwo .cyberList {
+    row-gap: 0.5rem;
+    height: 33rem;
+    scroll-margin-bottom: 5rem;
+  }
+}
+@media (min-width: 434px) and (max-width: 449px) {
+  .mainContent .sectionTwo .cyberList {
+    row-gap: 0.5rem;
+    height: 31.5rem;
+    scroll-margin-bottom: 5rem;
+  }
+}
+@media (min-width: 449px) and (max-width: 600px) {
+  .mainContent .sectionTwo .cyberList {
+    row-gap: 0.5rem;
+    height: 31rem;
+    scroll-margin-bottom: 5rem;
+  }
+}
+@media (min-width: 600px) and (max-width: 1023px) {
+  .mainContent .sectionTwo .cyberList {
+    row-gap: 0.45rem;
+    height: 22.58rem;
   }
 }
 @media (min-width: 1023px) and (max-width: 1200px) {
@@ -16415,7 +16635,7 @@ input[type=email]) {
 }
 @media (orientation: portrait) and (min-width: 1023px) and (max-width: 1100px) {
   .mainContent .sectionTwo .cyberList {
-    height: 20rem;
+    height: 22.188rem;
   }
 }
 @media (min-width: 1200px) and (max-width: 1300px) {
@@ -16597,31 +16817,57 @@ input[type=email]) {
   background-color: #232323;
   border-radius: 0.5rem;
 }
-@media (min-width: 300px) and (max-width: 400px) {
+@media (min-width: 300px) and (max-width: 319px) {
   .mainContent .sectionTwo .cyberList .content {
+    align-items: unset;
     width: 95%;
-    height: 24.65rem;
-    align-items: unset;
+    height: 90.8%;
+    margin-bottom: 0.5rem;
+    padding: 0.8rem 0 0.6rem 0;
   }
 }
-@media (min-width: 400px) and (max-width: 500px) {
+@media (min-width: 319px) and (max-width: 350px) {
   .mainContent .sectionTwo .cyberList .content {
-    width: 96%;
-    height: 24.55rem;
     align-items: unset;
+    width: 95%;
+    height: 90.8%;
+    margin-bottom: 0.5rem;
+    padding: 1.2rem 0 0.6rem 0;
   }
 }
-@media (min-width: 500px) and (max-width: 600px) {
+@media (min-width: 350px) and (max-width: 400px) {
   .mainContent .sectionTwo .cyberList .content {
-    width: 96%;
-    height: 26.4rem;
     align-items: unset;
+    width: 95%;
+    height: 90.8%;
+    margin-bottom: 0.5rem;
+    padding: 1.2rem 0 0.6rem 0;
   }
 }
-@media (min-width: 600px) and (max-width: 700px) {
+@media (min-width: 400px) and (max-width: 449px) {
+  .mainContent .sectionTwo .cyberList .content {
+    align-items: unset;
+    width: 96%;
+    height: 90.8%;
+    margin-bottom: 0.5rem;
+    padding: 1.2rem 0 0.6rem 0;
+  }
+}
+@media (min-width: 449px) and (max-width: 600px) {
+  .mainContent .sectionTwo .cyberList .content {
+    align-items: unset;
+    width: 96%;
+    height: 90.8%;
+    margin-bottom: 0.5rem;
+    padding: 1.5rem 0 0.6rem 0;
+  }
+}
+@media (min-width: 600px) and (max-width: 1023px) {
   .mainContent .sectionTwo .cyberList .content {
     width: 97.5%;
-    height: 16.8rem;
+    height: 90.8%;
+    margin-bottom: 0.5rem;
+    padding: 0.6rem 0 0.6rem 0;
   }
 }
 @media (min-width: 1023px) and (max-width: 1200px) {
@@ -16632,7 +16878,9 @@ input[type=email]) {
 @media (orientation: portrait) and (min-width: 1023px) and (max-width: 1100px) {
   .mainContent .sectionTwo .cyberList .content {
     width: 98.5%;
-    height: 14.9rem;
+    height: 90.8%;
+    margin-bottom: 0.5rem;
+    padding: 0.6rem 0 0.6rem 0;
   }
 }
 @media (min-width: 1200px) and (max-width: 1300px) {
@@ -16782,6 +17030,269 @@ input[type=email]) {
     width: 2.2rem;
     height: 6.2rem;
     font-size: 9pt;
+  }
+}
+.mainContent .sectionTwo .cyberList .content .titleAndLists {
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.3rem;
+  width: 75%;
+  animation: titleAndLists 0.5s linear 1;
+}
+@keyframes titleAndLists {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@media (min-width: 300px) and (max-width: 320px) {
+  .mainContent .sectionTwo .cyberList .content .titleAndLists {
+    width: 92%;
+  }
+}
+@media (min-width: 320px) and (max-width: 600px) {
+  .mainContent .sectionTwo .cyberList .content .titleAndLists {
+    width: 90%;
+  }
+}
+@media (min-width: 600px) and (max-width: 1023px) {
+  .mainContent .sectionTwo .cyberList .content .titleAndLists {
+    width: 70%;
+  }
+}
+@media (min-width: 1023px) and (max-width: 1078px) {
+  .mainContent .sectionTwo .cyberList .content .titleAndLists {
+    row-gap: 0.1rem;
+    width: 78%;
+  }
+}
+@media (min-width: 1078px) and (max-width: 1100px) {
+  .mainContent .sectionTwo .cyberList .content .titleAndLists {
+    row-gap: 0.2rem;
+    width: 78%;
+  }
+}
+@media (min-width: 1100px) and (max-width: 1187px) {
+  .mainContent .sectionTwo .cyberList .content .titleAndLists {
+    row-gap: 0rem;
+    width: 74%;
+  }
+}
+@media (width: 1100px) {
+  .mainContent .sectionTwo .cyberList .content .titleAndLists {
+    row-gap: 0rem;
+    width: 78%;
+  }
+}
+@media (min-width: 1187px) and (max-width: 1200px) {
+  .mainContent .sectionTwo .cyberList .content .titleAndLists {
+    row-gap: 0.25rem;
+    width: 74%;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1224px) {
+  .mainContent .sectionTwo .cyberList .content .titleAndLists {
+    row-gap: 0.15rem;
+    width: 76%;
+  }
+}
+@media (min-width: 1224px) and (max-width: 1300px) {
+  .mainContent .sectionTwo .cyberList .content .titleAndLists {
+    row-gap: 0.25rem;
+    width: 76%;
+  }
+}
+@media (min-width: 1300px) and (max-width: 1400px) {
+  .mainContent .sectionTwo .cyberList .content .titleAndLists {
+    row-gap: 0.25rem;
+    width: 76%;
+  }
+}
+@media (width: 1300px) {
+  .mainContent .sectionTwo .cyberList .content .titleAndLists {
+    row-gap: 0.2rem;
+    width: 76%;
+  }
+}
+.mainContent .sectionTwo .cyberList .content .titleAndLists .title {
+  margin-bottom: 0.2rem;
+  font-size: 15pt;
+  font-weight: 600;
+  color: #ffffff;
+}
+@media (min-width: 300px) and (max-width: 400px) {
+  .mainContent .sectionTwo .cyberList .content .titleAndLists .title {
+    font-size: 13pt;
+  }
+}
+@media (min-width: 400px) and (max-width: 500px) {
+  .mainContent .sectionTwo .cyberList .content .titleAndLists .title {
+    font-size: 14pt;
+  }
+}
+@media (min-width: 1023px) and (max-width: 1100px) {
+  .mainContent .sectionTwo .cyberList .content .titleAndLists .title {
+    font-size: 10pt;
+  }
+}
+@media (orientation: portrait) and (min-width: 1023px) and (max-width: 1100px) {
+  .mainContent .sectionTwo .cyberList .content .titleAndLists .title {
+    font-size: 16pt;
+  }
+}
+@media (min-width: 1100px) and (max-width: 1200px) {
+  .mainContent .sectionTwo .cyberList .content .titleAndLists .title {
+    font-size: 11pt;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1300px) {
+  .mainContent .sectionTwo .cyberList .content .titleAndLists .title {
+    font-size: 12pt;
+  }
+}
+@media (min-width: 1300px) and (max-width: 1400px) {
+  .mainContent .sectionTwo .cyberList .content .titleAndLists .title {
+    font-size: 14pt;
+  }
+}
+.mainContent .sectionTwo .cyberList .content .titleAndLists .projectsContainer {
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.1rem;
+  margin-left: 1.1rem;
+}
+@media (min-width: 1023px) and (max-width: 1200px) {
+  .mainContent .sectionTwo .cyberList .content .titleAndLists .projectsContainer {
+    row-gap: unset;
+  }
+}
+@media (width: 1200px) {
+  .mainContent .sectionTwo .cyberList .content .titleAndLists .projectsContainer {
+    row-gap: 0.2rem;
+  }
+}
+@media (width: 1300px) {
+  .mainContent .sectionTwo .cyberList .content .titleAndLists .projectsContainer {
+    row-gap: unset;
+  }
+}
+.mainContent .sectionTwo .cyberList .content .titleAndLists .projectsContainer ol {
+  list-style: disc;
+}
+.mainContent .sectionTwo .cyberList .content .titleAndLists .projectsContainer ol li {
+  font-size: 10pt;
+  list-style-type: disc;
+  color: #ebebeb;
+}
+@media (min-width: 400px) and (max-width: 500px) {
+  .mainContent .sectionTwo .cyberList .content .titleAndLists .projectsContainer ol li {
+    font-size: 10.5pt;
+  }
+}
+@media (min-width: 500px) and (max-width: 600px) {
+  .mainContent .sectionTwo .cyberList .content .titleAndLists .projectsContainer ol li {
+    font-size: 11pt;
+  }
+}
+@media (width: 600px) {
+  .mainContent .sectionTwo .cyberList .content .titleAndLists .projectsContainer ol li {
+    font-size: 10pt;
+  }
+}
+@media (min-width: 900px) and (max-width: 1000px) {
+  .mainContent .sectionTwo .cyberList .content .titleAndLists .projectsContainer ol li {
+    font-size: 11pt;
+  }
+}
+@media (min-width: 1000px) and (max-width: 1023px) {
+  .mainContent .sectionTwo .cyberList .content .titleAndLists .projectsContainer ol li {
+    font-size: 11.5pt;
+  }
+}
+@media (min-width: 1023px) and (max-width: 1100px) {
+  .mainContent .sectionTwo .cyberList .content .titleAndLists .projectsContainer ol li {
+    font-size: 8.2pt;
+  }
+}
+@media (orientation: portrait) and (min-width: 1023px) and (max-width: 1100px) {
+  .mainContent .sectionTwo .cyberList .content .titleAndLists .projectsContainer ol li {
+    font-size: 11.5pt;
+  }
+}
+@media (min-width: 1100px) and (max-width: 1200px) {
+  .mainContent .sectionTwo .cyberList .content .titleAndLists .projectsContainer ol li {
+    font-size: 9pt;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1300px) {
+  .mainContent .sectionTwo .cyberList .content .titleAndLists .projectsContainer ol li {
+    font-size: 9pt;
+  }
+}
+@media (min-width: 1300px) and (max-width: 1400px) {
+  .mainContent .sectionTwo .cyberList .content .titleAndLists .projectsContainer ol li {
+    font-size: 9.5pt;
+  }
+}
+.mainContent .sectionTwo .cyberList .content .titleAndLists .projectsContainer span {
+  font-size: 10pt;
+  color: #8b8b8b;
+}
+@media (min-width: 500px) and (max-width: 600px) {
+  .mainContent .sectionTwo .cyberList .content .titleAndLists .projectsContainer span {
+    font-size: 11pt;
+  }
+}
+@media (width: 600px) {
+  .mainContent .sectionTwo .cyberList .content .titleAndLists .projectsContainer span {
+    font-size: 10pt;
+  }
+}
+@media (min-width: 900px) and (max-width: 1000px) {
+  .mainContent .sectionTwo .cyberList .content .titleAndLists .projectsContainer span {
+    font-size: 10.5pt;
+  }
+}
+@media (min-width: 1000px) and (max-width: 1023px) {
+  .mainContent .sectionTwo .cyberList .content .titleAndLists .projectsContainer span {
+    font-size: 11pt;
+  }
+}
+@media (min-width: 1023px) and (max-width: 1100px) {
+  .mainContent .sectionTwo .cyberList .content .titleAndLists .projectsContainer span {
+    font-size: 8.1pt;
+  }
+}
+@media (orientation: portrait) and (min-width: 1023px) and (max-width: 1100px) {
+  .mainContent .sectionTwo .cyberList .content .titleAndLists .projectsContainer span {
+    font-size: 10.5pt;
+  }
+}
+@media (min-width: 1100px) and (max-width: 1200px) {
+  .mainContent .sectionTwo .cyberList .content .titleAndLists .projectsContainer span {
+    font-size: 8.5pt;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1300px) {
+  .mainContent .sectionTwo .cyberList .content .titleAndLists .projectsContainer span {
+    font-size: 9pt;
+  }
+}
+@media (width: 1200px) {
+  .mainContent .sectionTwo .cyberList .content .titleAndLists .projectsContainer span {
+    font-size: 8.5pt;
+  }
+}
+@media (min-width: 1300px) and (max-width: 1400px) {
+  .mainContent .sectionTwo .cyberList .content .titleAndLists .projectsContainer span {
+    font-size: 9.5pt;
+  }
+}
+@media (min-width: 1400px) and (max-width: 1500px) {
+  .mainContent .sectionTwo .cyberList .content .titleAndLists .projectsContainer span {
+    font-size: 9.5pt;
   }
 }
 .mainContent .sectionTwo .cyberList .content .next {
@@ -17006,7 +17517,7 @@ input[type=email]) {
 }
 @media (orientation: portrait) and (min-width: 1023px) and (max-width: 1100px) {
   .mainContent .sectionTwo .webList {
-    height: 20rem;
+    height: 20.188rem;
   }
 }
 @media (min-width: 1200px) and (max-width: 1300px) {

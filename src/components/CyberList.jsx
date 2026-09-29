@@ -1,4 +1,5 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, Fragment } from 'react';
+import { cyberListOne } from '../data/cyberList';
 export default function CyberList({
   isContactFormOpen,
   activeList,
@@ -80,7 +81,25 @@ export default function CyberList({
           </button>
         )}
 
-        {/*  */}
+        {pageNumber === 1 && (
+          <div className="titleAndLists">
+            <h4 className="title">Securing Systems & Networks</h4>
+            {cyberListOne.map((projects) => (
+              <Fragment key={projects.id}>
+                <div className={projects.classProjectsContainer}>
+                  <ol>
+                    <li className={projects.classProject}>
+                      {projects.project}
+                    </li>
+                  </ol>
+                  <span className={projects.classDescription}>
+                    {projects.description}
+                  </span>
+                </div>
+              </Fragment>
+            ))}
+          </div>
+        )}
 
         {pageNumber > 1 ? (
           <button
