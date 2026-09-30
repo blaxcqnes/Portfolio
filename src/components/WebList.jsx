@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import { webListOne } from '../data/webList';
 export default function WebList({
   activeList,
   isContactFormOpen,
@@ -9,18 +10,10 @@ export default function WebList({
   useEffect(() => {
     const handleKeyDown = (e) => {
       if (e.key === 'ArrowRight') {
-        setPageNumber(2);
+        setPageNumber((prev) => (prev < 2 ? prev + 1 : prev));
       }
-    };
-
-    window.addEventListener('keydown', handleKeyDown);
-    return () => window.removeEventListener('keydown', handleKeyDown);
-  }, []);
-
-  useEffect(() => {
-    const handleKeyDown = (e) => {
       if (e.key === 'ArrowLeft') {
-        setPageNumber(1);
+        setPageNumber((prev) => (prev > 1 ? prev - 1 : prev));
       }
     };
 
@@ -29,11 +22,11 @@ export default function WebList({
   }, []);
 
   function previous() {
-    if (pageNumber > 1) setPageNumber((prev) => prev - 1);
+    setPageNumber((prev) => (prev > 1 ? prev - 1 : prev));
   }
 
   function next() {
-    if (pageNumber < 2) setPageNumber((prev) => prev + 1);
+    setPageNumber((prev) => (prev < 2 ? prev + 1 : prev));
   }
 
   return (
@@ -51,7 +44,11 @@ export default function WebList({
         </button>
       </div>
       <div className="content">
-        {pageNumber < 2 ? (
+        {pageNumber > 1 ? (
+          <button className="previous" onClick={previous}>
+            &lt;
+          </button>
+        ) : (
           <button
             className="previous"
             style={{
@@ -70,15 +67,37 @@ export default function WebList({
           >
             &lt;
           </button>
-        ) : (
-          <button className="previous" onClick={previous}>
-            &lt;
-          </button>
         )}
 
-        {/*  */}
+        {pageNumber === 1 && (
+          <div className="webProjectsContainer">
+            {webListOne.map((projects) => (
+              <div className={projects.classNameProjects} key={projects.id}>
+                <a className={projects.classNameWebLink} href={projects.url}>
+                  <img
+                    className={projects.classNameUrlImg}
+                    src={projects.srcImg}
+                  />
+                </a>
+                <a className={projects.classNameGitLink} href={projects.git}>
+                  <div className="gitImg">
+                    <img
+                      className={projects.classNameGitContainer}
+                      src={projects.srcGit}
+                      alt=""
+                    />
+                  </div>
+                </a>
+              </div>
+            ))}
+          </div>
+        )}
 
-        {pageNumber > 1 ? (
+        {pageNumber < 2 ? (
+          <button className="next" onClick={next}>
+            &gt;
+          </button>
+        ) : (
           <button
             className="next"
             style={{
@@ -95,10 +114,6 @@ export default function WebList({
             }}
             disabled
           >
-            &gt;
-          </button>
-        ) : (
-          <button className="next" onClick={next}>
             &gt;
           </button>
         )}

@@ -15081,6 +15081,103 @@ input[type=email]) {
     box-shadow: none;
   }
 }
+.mainContent .sectionTwo .projectsAndFooter .projects .webAndWebList .webList .content .webProjectsContainer {
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.5rem;
+  justify-content: space-around;
+  align-items: center;
+  width: 95%;
+  height: auto;
+  animation: webProjectsContainer 0.5s linear 1;
+}
+@keyframes webProjectsContainer {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@media (min-width: 300px) and (max-width: 600px) {
+  .mainContent .sectionTwo .projectsAndFooter .projects .webAndWebList .webList .content .webProjectsContainer {
+    row-gap: unset;
+    height: 85%;
+  }
+}
+.mainContent .sectionTwo .projectsAndFooter .projects .webAndWebList .webList .content .webProjectsContainer .projects {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.mainContent .sectionTwo .projectsAndFooter .projects .webAndWebList .webList .content .webProjectsContainer .projects .webLink {
+  width: 11rem;
+  height: auto;
+  transition: all 0.2s ease;
+}
+@media (min-width: 300px) and (max-width: 1023px) {
+  .mainContent .sectionTwo .projectsAndFooter .projects .webAndWebList .webList .content .webProjectsContainer .projects .webLink {
+    cursor: default;
+  }
+}
+@media (orientation: portrait) and (min-width: 1023px) and (max-width: 1100px) {
+  .mainContent .sectionTwo .projectsAndFooter .projects .webAndWebList .webList .content .webProjectsContainer .projects .webLink {
+    width: 12rem;
+    cursor: default;
+  }
+}
+.mainContent .sectionTwo .projectsAndFooter .projects .webAndWebList .webList .content .webProjectsContainer .projects .webLink .urlImg {
+  width: 100%;
+  height: 100%;
+  border-radius: 0.5rem;
+}
+.mainContent .sectionTwo .projectsAndFooter .projects .webAndWebList .webList .content .webProjectsContainer .projects .gitLink {
+  display: flex;
+  justify-content: center;
+  width: 2.5rem;
+  height: 6.2rem;
+  background-color: #1e1e1e;
+  border: 0.05rem solid #8b8b8b;
+  border-radius: 0.5rem;
+  cursor: default;
+  transition: all 0.2s ease;
+}
+.mainContent .sectionTwo .projectsAndFooter .projects .webAndWebList .webList .content .webProjectsContainer .projects .gitLink:hover {
+  background-color: #5c4f43;
+  box-shadow: inset 0 0 0 1.5px #8b8b8b;
+}
+@media (width: 600px) {
+  .mainContent .sectionTwo .projectsAndFooter .projects .webAndWebList .webList .content .webProjectsContainer .projects .gitLink {
+    width: 2.5rem;
+    height: 7rem;
+    top: unset;
+    bottom: unset;
+    right: 2rem;
+    left: unset;
+  }
+}
+@media (min-width: 300px) and (max-width: 1023px) {
+  .mainContent .sectionTwo .projectsAndFooter .projects .webAndWebList .webList .content .webProjectsContainer .projects .gitLink {
+    cursor: default;
+  }
+  .mainContent .sectionTwo .projectsAndFooter .projects .webAndWebList .webList .content .webProjectsContainer .projects .gitLink:hover {
+    box-shadow: none;
+  }
+}
+.mainContent .sectionTwo .projectsAndFooter .projects .webAndWebList .webList .content .webProjectsContainer .projects .gitLink .gitImg {
+  display: flex;
+  justify-content: center;
+  width: inherit;
+  height: inherit;
+}
+.mainContent .sectionTwo .projectsAndFooter .projects .webAndWebList .webList .content .webProjectsContainer .projects .gitLink .gitImg:hover {
+  filter: brightness(200%);
+}
+.mainContent .sectionTwo .projectsAndFooter .projects .webAndWebList .webList .content .webProjectsContainer .projects .gitLink .gitImg .gitContainer {
+  width: 2rem;
+  height: auto;
+}
 .mainContent .sectionTwo .projectsAndFooter .projects .webAndWebList .webList .content .next {
   width: 2.5rem;
   height: 7rem;
@@ -17817,6 +17914,241 @@ input[type=email]) {
     width: 2.2rem;
     height: 6.2rem;
     font-size: 9pt;
+  }
+}
+.mainContent .sectionTwo .webList .content .webProjectsContainer {
+  display: flex;
+  flex-direction: row;
+  column-gap: 0.5rem;
+  justify-content: center;
+  align-items: center;
+  width: 79%;
+  animation: webProjectsContainer 0.5s linear 1;
+}
+@keyframes webProjectsContainer {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@media (min-width: 600px) and (max-width: 700px) {
+  .mainContent .sectionTwo .webList .content .webProjectsContainer {
+    column-gap: 0.75rem;
+    width: 70%;
+    height: 95%;
+    flex-wrap: wrap;
+  }
+}
+@media (min-width: 700px) and (max-width: 800px) {
+  .mainContent .sectionTwo .webList .content .webProjectsContainer {
+    width: 77%;
+    height: 95%;
+    flex-wrap: wrap;
+  }
+}
+@media (min-width: 800px) and (max-width: 1023px) {
+  .mainContent .sectionTwo .webList .content .webProjectsContainer {
+    column-gap: 1.8rem;
+    width: 82%;
+    height: 95%;
+    flex-wrap: wrap;
+  }
+}
+@media (min-width: 1023px) and (max-width: 1100px) {
+  .mainContent .sectionTwo .webList .content .webProjectsContainer {
+    width: 80%;
+  }
+}
+@media (orientation: portrait) and (min-width: 1023px) and (max-width: 1100px) {
+  .mainContent .sectionTwo .webList .content .webProjectsContainer {
+    column-gap: 1.8rem;
+    width: 88%;
+    height: 95%;
+    flex-wrap: wrap;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1500px) {
+  .mainContent .sectionTwo .webList .content .webProjectsContainer {
+    width: 77%;
+  }
+}
+.mainContent .sectionTwo .webList .content .webProjectsContainer .projects {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1.2rem;
+  align-items: center;
+}
+@media (min-width: 600px) and (max-width: 700px) {
+  .mainContent .sectionTwo .webList .content .webProjectsContainer .projects {
+    flex-direction: row;
+    column-gap: 0.2rem;
+  }
+}
+.mainContent .sectionTwo .webList .content .webProjectsContainer .projects .webLink {
+  display: flex;
+  align-items: center;
+  width: 11rem;
+  height: auto;
+  scroll-snap-align: start;
+  transition: all 0.2s ease;
+}
+@media (min-width: 600px) and (max-width: 700px) {
+  .mainContent .sectionTwo .webList .content .webProjectsContainer .projects .webLink {
+    width: 9rem;
+  }
+}
+@media (width: 600px) {
+  .mainContent .sectionTwo .webList .content .webProjectsContainer .projects .webLink {
+    width: 9rem;
+  }
+}
+@media (min-width: 700px) and (max-width: 800px) {
+  .mainContent .sectionTwo .webList .content .webProjectsContainer .projects .webLink {
+    width: 10rem;
+  }
+}
+@media (min-width: 900px) and (max-width: 1023px) {
+  .mainContent .sectionTwo .webList .content .webProjectsContainer .projects .webLink {
+    width: 12rem;
+  }
+}
+@media (min-width: 1023px) and (max-width: 1100px) {
+  .mainContent .sectionTwo .webList .content .webProjectsContainer .projects .webLink {
+    width: 7.5rem;
+  }
+}
+@media (min-width: 300px) and (max-width: 1023px) {
+  .mainContent .sectionTwo .webList .content .webProjectsContainer .projects .webLink {
+    cursor: default;
+  }
+}
+@media (orientation: portrait) and (min-width: 1023px) and (max-width: 1100px) {
+  .mainContent .sectionTwo .webList .content .webProjectsContainer .projects .webLink {
+    width: 13rem;
+    cursor: default;
+  }
+}
+@media (min-width: 1100px) and (max-width: 1200px) {
+  .mainContent .sectionTwo .webList .content .webProjectsContainer .projects .webLink {
+    width: 7.5rem;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1300px) {
+  .mainContent .sectionTwo .webList .content .webProjectsContainer .projects .webLink {
+    width: 8.3rem;
+  }
+}
+@media (min-width: 1300px) and (max-width: 1400px) {
+  .mainContent .sectionTwo .webList .content .webProjectsContainer .projects .webLink {
+    width: 9.3rem;
+  }
+}
+@media (min-width: 1400px) and (max-width: 1500px) {
+  .mainContent .sectionTwo .webList .content .webProjectsContainer .projects .webLink {
+    width: 10.2rem;
+  }
+}
+.mainContent .sectionTwo .webList .content .webProjectsContainer .projects .webLink .urlImg {
+  width: 100%;
+  height: 100%;
+  border-radius: 0.5rem;
+}
+.mainContent .sectionTwo .webList .content .webProjectsContainer .projects .gitLink {
+  width: 7rem;
+  height: 2.5rem;
+  background-color: #1e1e1e;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+.mainContent .sectionTwo .webList .content .webProjectsContainer .projects .gitLink:hover {
+  background-color: #545146;
+  box-shadow: inset 0 0 0 1.5px #8b8b8b;
+}
+@media (min-width: 600px) and (max-width: 700px) {
+  .mainContent .sectionTwo .webList .content .webProjectsContainer .projects .gitLink {
+    width: 2.5rem;
+    height: 5.8rem;
+  }
+}
+@media (width: 800px) {
+  .mainContent .sectionTwo .webList .content .webProjectsContainer .projects .gitLink {
+    width: 7rem;
+    height: 2.5rem;
+    font-size: 10pt;
+  }
+}
+@media (min-width: 300px) and (max-width: 1023px) {
+  .mainContent .sectionTwo .webList .content .webProjectsContainer .projects .gitLink {
+    cursor: default;
+  }
+  .mainContent .sectionTwo .webList .content .webProjectsContainer .projects .gitLink:hover {
+    box-shadow: none;
+  }
+}
+@media (min-width: 1023px) and (max-width: 1100px) {
+  .mainContent .sectionTwo .webList .content .webProjectsContainer .projects .gitLink {
+    width: 4.7rem;
+    height: 1.8rem;
+    font-size: 7.4pt;
+  }
+}
+@media (orientation: portrait) and (min-width: 1023px) and (max-width: 1100px) {
+  .mainContent .sectionTwo .webList .content .webProjectsContainer .projects .gitLink {
+    width: 7rem;
+    height: 2.5rem;
+    font-size: 10pt;
+    cursor: default;
+  }
+  .mainContent .sectionTwo .webList .content .webProjectsContainer .projects .gitLink:hover {
+    box-shadow: none;
+  }
+}
+@media (min-width: 1100px) and (max-width: 1200px) {
+  .mainContent .sectionTwo .webList .content .webProjectsContainer .projects .gitLink {
+    width: 5.1rem;
+    height: 1.9rem;
+    font-size: 8pt;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1300px) {
+  .mainContent .sectionTwo .webList .content .webProjectsContainer .projects .gitLink {
+    width: 5.5rem;
+    height: 2rem;
+    font-size: 8pt;
+  }
+}
+@media (min-width: 1300px) and (max-width: 1400px) {
+  .mainContent .sectionTwo .webList .content .webProjectsContainer .projects .gitLink {
+    width: 6.2rem;
+    height: 2.2rem;
+    font-size: 9pt;
+  }
+}
+.mainContent .sectionTwo .webList .content .webProjectsContainer .projects .gitLink .gitImg {
+  display: flex;
+  justify-content: center;
+  width: inherit;
+  height: inherit;
+}
+.mainContent .sectionTwo .webList .content .webProjectsContainer .projects .gitLink .gitImg:hover {
+  filter: brightness(200%);
+}
+.mainContent .sectionTwo .webList .content .webProjectsContainer .projects .gitLink .gitImg .gitContainer {
+  width: 2rem;
+  height: auto;
+}
+@media (min-width: 1023px) and (max-width: 1300px) {
+  .mainContent .sectionTwo .webList .content .webProjectsContainer .projects .gitLink .gitImg .gitContainer {
+    width: 1.5rem;
+  }
+}
+@media (min-width: 1300px) and (max-width: 1400px) {
+  .mainContent .sectionTwo .webList .content .webProjectsContainer .projects .gitLink .gitImg .gitContainer {
+    width: 1.6rem;
   }
 }
 .mainContent .sectionTwo .webList .content .next {

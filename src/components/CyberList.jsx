@@ -10,7 +10,7 @@ export default function CyberList({
   useEffect(() => {
     const handleKeyDown = (e) => {
       if (e.key === 'ArrowRight') {
-        setPageNumber((prev) => (prev < 4 ? prev + 1 : prev));
+        setPageNumber((prev) => (prev < 3 ? prev + 1 : prev));
       }
       if (e.key === 'ArrowLeft') {
         setPageNumber((prev) => (prev > 1 ? prev - 1 : prev));
@@ -26,7 +26,7 @@ export default function CyberList({
   }
 
   function next() {
-    setPageNumber((prev) => (prev < 4 ? prev + 1 : prev));
+    setPageNumber((prev) => (prev < 3 ? prev + 1 : prev));
   }
 
   return (
@@ -133,7 +133,7 @@ export default function CyberList({
           </div>
         )}
 
-        {pageNumber < 4 ? (
+        {pageNumber < 3 ? (
           <button className="next" onClick={next}>
             &gt;
           </button>
@@ -158,7 +158,7 @@ export default function CyberList({
           </button>
         )}
 
-        <p className="pageNumber">{pageNumber} / 4</p>
+        <p className="pageNumber">{pageNumber} / 3</p>
       </div>
     </main>
   );
