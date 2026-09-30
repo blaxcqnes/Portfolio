@@ -30,4 +30,58 @@ const cyberListOne = [
   },
 ];
 
-export { cyberListOne };
+const cyberListTwo = [
+  {
+    id: 1,
+    classProjectsContainer: 'projectsContainer',
+    classProject: 'project',
+    project: 'Design pfSense Firewall Network',
+    classDescription: 'description',
+    description:
+      'Build a network security environment using pfSense as a firewall and router. The project includes configuring firewall rules, traffic monitoring, and protection against unauthorized network activity.',
+  },
+
+  {
+    id: 2,
+    classProjectsContainer: 'projectsContainer',
+    classProject: 'project',
+    project: 'Make Your Secure Lab',
+    classDescription: 'description',
+    description:
+      'Create an isolated cybersecurity laboratory for safely testing security tools, vulnerabilities,firewalls, and network configurations without affecting real-world systems.',
+  },
+];
+
+const cyberListThree = [
+  {
+    id: 1,
+    classProjectsContainer: 'projectsContainer',
+    classProject: 'project',
+    project: 'Avoiding Malware Detection – 100% FUD',
+    classDescription: 'description',
+    description:
+      'Techniques used to improve malware detection resistance, focusing on how security systems identify suspicious files and how defensive tools can detect evasive behavior.',
+  },
+
+  {
+    id: 2,
+    classProjectsContainer: 'projectsContainer',
+    classProject: 'project',
+    project: 'Crypting Service',
+    classDescription: 'description',
+    description:
+      'Develop a service that uses encryption techniques to protect sensitive files or data, ensuring confidentiality and preventing unauthorized access.',
+  },
+
+  {
+    id: 3,
+    classProjectsContainer: 'projectsContainer',
+    classProject: 'project',
+    project: 'Steganography',
+    classDescription: 'description',
+    description:
+      'Develop a system that securely hides confidential information within images, audio, or other digital media and allows the data to be extracted by authorized users.',
+  },
+];
+
+export { cyberListOne, cyberListTwo, cyberListThree };

@@ -1,5 +1,5 @@
 import { useState, useEffect, Fragment } from 'react';
-import { cyberListOne } from '../data/cyberList';
+import { cyberListOne, cyberListTwo, cyberListThree } from '../data/cyberList';
 export default function CyberList({
   isContactFormOpen,
   activeList,
@@ -10,18 +10,10 @@ export default function CyberList({
   useEffect(() => {
     const handleKeyDown = (e) => {
       if (e.key === 'ArrowRight') {
-        setPageNumber(2);
+        setPageNumber((prev) => (prev < 4 ? prev + 1 : prev));
       }
-    };
-
-    window.addEventListener('keydown', handleKeyDown);
-    return () => window.removeEventListener('keydown', handleKeyDown);
-  }, []);
-
-  useEffect(() => {
-    const handleKeyDown = (e) => {
       if (e.key === 'ArrowLeft') {
-        setPageNumber(1);
+        setPageNumber((prev) => (prev > 1 ? prev - 1 : prev));
       }
     };
 
@@ -30,11 +22,11 @@ export default function CyberList({
   }, []);
 
   function previous() {
-    if (pageNumber > 1) setPageNumber((prev) => prev - 1);
+    setPageNumber((prev) => (prev > 1 ? prev - 1 : prev));
   }
 
   function next() {
-    if (pageNumber < 2) setPageNumber((prev) => prev + 1);
+    setPageNumber((prev) => (prev < 4 ? prev + 1 : prev));
   }
 
   return (
@@ -56,7 +48,11 @@ export default function CyberList({
         </button>
       </div>
       <div className="content">
-        {pageNumber < 2 ? (
+        {pageNumber > 1 ? (
+          <button className="previous" onClick={previous}>
+            &lt;
+          </button>
+        ) : (
           <button
             className="previous"
             style={{
@@ -73,10 +69,6 @@ export default function CyberList({
             }}
             disabled
           >
-            &lt;
-          </button>
-        ) : (
-          <button className="previous" onClick={previous}>
             &lt;
           </button>
         )}
@@ -101,7 +93,51 @@ export default function CyberList({
           </div>
         )}
 
-        {pageNumber > 1 ? (
+        {pageNumber === 2 && (
+          <div className="titleAndLists">
+            <h4 className="title">Securing Systems & Networks</h4>
+            {cyberListTwo.map((projects) => (
+              <Fragment key={projects.id}>
+                <div className={projects.classProjectsContainer}>
+                  <ol>
+                    <li className={projects.classProject}>
+                      {projects.project}
+                    </li>
+                  </ol>
+                  <span className={projects.classDescription}>
+                    {projects.description}
+                  </span>
+                </div>
+              </Fragment>
+            ))}
+          </div>
+        )}
+
+        {pageNumber === 3 && (
+          <div className="titleAndLists">
+            <h4 className="title">Cryptography & Steganography</h4>
+            {cyberListThree.map((projects) => (
+              <Fragment key={projects.id}>
+                <div className={projects.classProjectsContainer}>
+                  <ol>
+                    <li className={projects.classProject}>
+                      {projects.project}
+                    </li>
+                  </ol>
+                  <span className={projects.classDescription}>
+                    {projects.description}
+                  </span>
+                </div>
+              </Fragment>
+            ))}
+          </div>
+        )}
+
+        {pageNumber < 4 ? (
+          <button className="next" onClick={next}>
+            &gt;
+          </button>
+        ) : (
           <button
             className="next"
             style={{
@@ -120,13 +156,9 @@ export default function CyberList({
           >
             &gt;
           </button>
-        ) : (
-          <button className="next" onClick={next}>
-            &gt;
-          </button>
         )}
 
-        <p className="pageNumber">{pageNumber} / 2</p>
+        <p className="pageNumber">{pageNumber} / 4</p>
       </div>
     </main>
   );
