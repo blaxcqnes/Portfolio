@@ -7,9 +7,6 @@ import WebList from './WebList';
 import Footer from './Footer';
 
 export default function SectionTwo({
-  kaffa,
-  veila,
-  guessGame,
   nextTwo,
   previousTwo,
   pauseTwo,
@@ -85,9 +82,6 @@ export default function SectionTwo({
           />
 
           <WebBox
-            kaffa={kaffa}
-            veila={veila}
-            guessGame={guessGame}
             pauseTwo={pauseTwo}
             playTwo={playTwo}
             isContactFormOpen={isContactFormOpen}

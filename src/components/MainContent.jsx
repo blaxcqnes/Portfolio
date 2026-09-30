@@ -4,6 +4,7 @@ import me from '../images/sectionOne/me.jpg';
 import kaffa from '../images/sectionTwo/kaffa.jpg';
 import veila from '../images/sectionTwo/veila.jpg';
 import guessGame from '../images/sectionTwo/guessGame.jpg';
+import github from '../images/sectionTwo/svgs/github.svg';
 import nextOne from '../images/sectionOne/svgs/nextOne.svg';
 import previousOne from '../images/sectionOne/svgs/previousOne.svg';
 import pauseOne from '../images/sectionOne/svgs/pause.svg';
@@ -48,9 +49,6 @@ export default function MainContent({
         toggleEducationList={toggleEducationList}
       />
       <SectionTwo
-        kaffa={kaffa}
-        veila={veila}
-        guessGame={guessGame}
         nextTwo={nextTwo}
         previousTwo={previousTwo}
         pauseTwo={pauseTwo}
@@ -88,4 +86,5 @@ MainContent.assets = [
   kaffa,
   veila,
   guessGame,
+  github,
 ];

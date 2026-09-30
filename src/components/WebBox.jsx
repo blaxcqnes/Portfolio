@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef, act } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import { carousel } from '../data/webBox';
 import WebList from './WebList';
 
