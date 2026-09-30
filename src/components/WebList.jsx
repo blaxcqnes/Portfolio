@@ -77,6 +77,7 @@ export default function WebList({
                   <img
                     className={projects.classNameUrlImg}
                     src={projects.srcImg}
+                    fetchPriority="high"
                   />
                 </a>
                 <a className={projects.classNameGitLink} href={projects.git}>
@@ -84,7 +85,7 @@ export default function WebList({
                     <img
                       className={projects.classNameGitContainer}
                       src={projects.srcGit}
-                      alt=""
+                      fetchPriority="high"
                     />
                   </div>
                 </a>
