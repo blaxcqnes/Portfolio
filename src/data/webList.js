@@ -1,7 +1,7 @@
-import kaffa from '../images/sectionTwo/kaffa.jpg';
-import veila from '../images/sectionTwo/veila.jpg';
-import guessGame from '../images/sectionTwo/guessGame.jpg';
-import github from '../images/sectionTwo/svgs/github.svg';
+import kaffa from '/images/sectionTwo/kaffa.jpg';
+import veila from '/images/sectionTwo/veila.jpg';
+import guessGame from '/images/sectionTwo/guessGame.jpg';
+import github from '/images/sectionTwo/svgs/github.svg';
 const webListOne = [
   {
     id: 1,

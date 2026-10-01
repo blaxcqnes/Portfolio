@@ -1,4 +1,5 @@
 export default function Footer({
+  ResumeEng,
   isContactFormOpen,
   activeList,
   mobileScreens,
@@ -11,21 +12,21 @@ export default function Footer({
           ? undefined
           : activeList === 'cyberList' || activeList === 'webList'
             ? {
-              display: 'none',
-              width: '100%',
-              height: '0',
-              padding: '0',
-              borderRadius: '0',
-              animation: 'footerHidden 0.5s linear 1',
-              transition: 'all 0.2s ease',
-              opacity: '0',
-            }
+                display: 'none',
+                width: '100%',
+                height: '0',
+                padding: '0',
+                borderRadius: '0',
+                animation: 'footerHidden 0.5s linear 1',
+                transition: 'all 0.2s ease',
+                opacity: '0',
+              }
             : undefined),
         ...(activeList || isContactFormOpen
           ? {
-            filter:
-              'opacity(0.5) grayscale(10%) blur(0.05rem) brightness(80%)',
-          }
+              filter:
+                'opacity(0.5) grayscale(10%) blur(0.05rem) brightness(80%)',
+            }
           : undefined),
       }}
     >
@@ -51,12 +52,16 @@ export default function Footer({
           >
             GitHub
           </a>
-          <a href="https://wa.me/blaxcqnes"
+          <a
+            href="https://wa.me/blaxcqnes"
             target="_blank"
             rel="noopener noreferrer"
             style={{
               pointerEvents: activeList || isContactFormOpen ? 'none' : 'auto',
-            }}>WhatsApp</a>
+            }}
+          >
+            WhatsApp
+          </a>
           <a
             href="https://www.instagram.com/blaxcqnes"
             target="_blank"
@@ -73,9 +78,8 @@ export default function Footer({
         </div>
         <div className="rightPart">
           <a
-            href="https://example.com"
-            target="_blank"
-            rel="noopener noreferrer"
+            href="/documents/Resume - Eng.pdf"
+            download
             style={{
               pointerEvents: activeList || isContactFormOpen ? 'none' : 'auto',
             }}
@@ -83,9 +87,8 @@ export default function Footer({
             Resume - Eng
           </a>
           <a
-            href="https://example.com"
-            target="_blank"
-            rel="noopener noreferrer"
+            href="/documents/Resume - Ar.pdf"
+            download
             style={{
               pointerEvents: activeList || isContactFormOpen ? 'none' : 'auto',
             }}

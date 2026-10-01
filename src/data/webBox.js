@@ -1,6 +1,6 @@
-import kaffa from '../images/sectionTwo/kaffa.jpg';
-import veila from '../images/sectionTwo/veila.jpg';
-import guessGame from '../images/sectionTwo/guessGame.jpg';
+import kaffa from '/images/sectionTwo/kaffa.jpg';
+import veila from '/images/sectionTwo/veila.jpg';
+import guessGame from '/images/sectionTwo/guessGame.jpg';
 const carousel = [
   {
     id: 1,
