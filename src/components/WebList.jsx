@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { webListOne } from '../data/webList';
+import { webListOne, webListTwo } from '../data/webList';
 export default function WebList({
   activeList,
   isContactFormOpen,
@@ -72,6 +72,31 @@ export default function WebList({
         {pageNumber === 1 && (
           <div className="webProjectsContainer">
             {webListOne.map((projects) => (
+              <div className={projects.classNameProjects} key={projects.id}>
+                <a className={projects.classNameWebLink} href={projects.url}>
+                  <img
+                    className={projects.classNameUrlImg}
+                    src={projects.srcImg}
+                    fetchPriority="high"
+                  />
+                </a>
+                <a className={projects.classNameGitLink} href={projects.git}>
+                  <div className="gitImg">
+                    <img
+                      className={projects.classNameGitContainer}
+                      src={projects.srcGit}
+                      fetchPriority="high"
+                    />
+                  </div>
+                </a>
+              </div>
+            ))}
+          </div>
+        )}
+
+        {pageNumber === 2 && (
+          <div className="webProjectsContainer">
+            {webListTwo.map((projects) => (
               <div className={projects.classNameProjects} key={projects.id}>
                 <a className={projects.classNameWebLink} href={projects.url}>
                   <img

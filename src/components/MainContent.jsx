@@ -4,6 +4,9 @@ import me from '/images/sectionOne/me.jpg';
 import kaffa from '/images/sectionTwo/kaffa.jpg';
 import veila from '/images/sectionTwo/veila.jpg';
 import guessGame from '/images/sectionTwo/guessGame.jpg';
+import samaArts from '/images/sectionTwo/samaArts.jpg';
+import assemblyEndgame from '/images/sectionTwo/assemblyEndgame.jpg';
+import chefClaude from '/images/sectionTwo/chefClaude.jpg';
 import github from '/images/sectionTwo/svgs/github.svg';
 import nextOne from '/images/sectionOne/svgs/nextOne.svg';
 import previousOne from '/images/sectionOne/svgs/previousOne.svg';
@@ -86,5 +89,8 @@ MainContent.assets = [
   kaffa,
   veila,
   guessGame,
+  samaArts,
+  assemblyEndgame,
+  chefClaude,
   github,
 ];
