@@ -93,7 +93,12 @@ export default function CyberList({
                 </Fragment>
               ))}
             </div>
-            <a className="gitLink" href="https://example.com">
+            <a
+              className="gitLink"
+              href="https://example.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <div className="gitImg">
                 <img
                   className="gitContainer"
@@ -125,7 +130,12 @@ export default function CyberList({
               ))}
             </div>
 
-            <a className="gitLink" href="https://example.com">
+            <a
+              className="gitLink"
+              href="https://example.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <div className="gitImg">
                 <img
                   className="gitContainer"

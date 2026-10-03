@@ -73,14 +73,24 @@ export default function WebList({
           <div className="webProjectsContainer">
             {webListOne.map((projects) => (
               <div className={projects.classNameProjects} key={projects.id}>
-                <a className={projects.classNameWebLink} href={projects.url}>
+                <a
+                  className={projects.classNameWebLink}
+                  href={projects.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <img
                     className={projects.classNameUrlImg}
                     src={projects.srcImg}
                     fetchPriority="high"
                   />
                 </a>
-                <a className={projects.classNameGitLink} href={projects.git}>
+                <a
+                  className={projects.classNameGitLink}
+                  href={projects.git}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <div className={projects.classNameGitImg}>
                     <img
                       className={projects.classNameGitContainer}
@@ -98,14 +108,24 @@ export default function WebList({
           <div className="webProjectsContainer">
             {webListTwo.map((projects) => (
               <div className={projects.classNameProjects} key={projects.id}>
-                <a className={projects.classNameWebLink} href={projects.url}>
+                <a
+                  className={projects.classNameWebLink}
+                  href={projects.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <img
                     className={projects.classNameUrlImg}
                     src={projects.srcImg}
                     fetchPriority="high"
                   />
                 </a>
-                <a className={projects.classNameGitLink} href={projects.git}>
+                <a
+                  className={projects.classNameGitLink}
+                  href={projects.git}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <div className={projects.classNameGitImg}>
                     <img
                       className={projects.classNameGitContainer}

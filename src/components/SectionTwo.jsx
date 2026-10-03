@@ -114,6 +114,7 @@ export default function SectionTwo({
       {((largePortrait && activeList === 'webList') ||
         (largeLandscape && activeList === 'webList')) && (
         <WebList
+          github={github}
           isContactFormOpen={isContactFormOpen}
           activeList={activeList}
           setActiveList={setActiveList}
