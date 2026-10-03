@@ -14742,42 +14742,42 @@ input[type=email]) {
 @media (min-width: 300px) and (max-width: 328px) {
   .mainContent .sectionTwo .projectsAndFooter .projects .webAndWebList .webList {
     row-gap: 0.5rem;
-    height: 38rem;
+    height: 40.5rem;
     scroll-margin-bottom: 5rem;
   }
 }
 @media (min-width: 328px) and (max-width: 331px) {
   .mainContent .sectionTwo .projectsAndFooter .projects .webAndWebList .webList {
     row-gap: 0.5rem;
-    height: 36rem;
+    height: 38.5rem;
     scroll-margin-bottom: 5rem;
   }
 }
 @media (min-width: 331px) and (max-width: 350px) {
   .mainContent .sectionTwo .projectsAndFooter .projects .webAndWebList .webList {
     row-gap: 0.5rem;
-    height: 35.1rem;
+    height: 37.6rem;
     scroll-margin-bottom: 5rem;
   }
 }
 @media (min-width: 350px) and (max-width: 400px) {
   .mainContent .sectionTwo .projectsAndFooter .projects .webAndWebList .webList {
     row-gap: 0.5rem;
-    height: 33.5rem;
+    height: 36rem;
     scroll-margin-bottom: 5rem;
   }
 }
 @media (min-width: 400px) and (max-width: 435px) {
   .mainContent .sectionTwo .projectsAndFooter .projects .webAndWebList .webList {
     row-gap: 0.5rem;
-    height: 33rem;
+    height: 35.5rem;
     scroll-margin-bottom: 5rem;
   }
 }
 @media (min-width: 434px) and (max-width: 449px) {
   .mainContent .sectionTwo .projectsAndFooter .projects .webAndWebList .webList {
     row-gap: 0.5rem;
-    height: 31.5rem;
+    height: 34rem;
     scroll-margin-bottom: 5rem;
   }
 }
@@ -14962,7 +14962,7 @@ input[type=email]) {
     width: 96%;
     height: 90.8%;
     margin-bottom: 0.5rem;
-    padding: 1.5rem 0 0.6rem 0;
+    padding: 1rem 0 0.6rem 0;
   }
 }
 @media (min-width: 600px) and (max-width: 1023px) {
@@ -15099,7 +15099,21 @@ input[type=email]) {
     opacity: 1;
   }
 }
-@media (min-width: 300px) and (max-width: 600px) {
+@media (min-width: 300px) and (max-width: 331px) {
+  .mainContent .sectionTwo .projectsAndFooter .projects .webAndWebList .webList .content .webProjectsContainer {
+    position: absolute;
+    top: 2.5rem;
+    row-gap: unset;
+    height: 75%;
+  }
+}
+@media (min-width: 331px) and (max-width: 449px) {
+  .mainContent .sectionTwo .projectsAndFooter .projects .webAndWebList .webList .content .webProjectsContainer {
+    row-gap: unset;
+    height: 80%;
+  }
+}
+@media (min-width: 449px) and (max-width: 600px) {
   .mainContent .sectionTwo .projectsAndFooter .projects .webAndWebList .webList .content .webProjectsContainer {
     row-gap: unset;
     height: 85%;
@@ -15159,9 +15173,6 @@ input[type=email]) {
 @media (min-width: 300px) and (max-width: 1023px) {
   .mainContent .sectionTwo .projectsAndFooter .projects .webAndWebList .webList .content .webProjectsContainer .projects .gitLink {
     cursor: default;
-  }
-  .mainContent .sectionTwo .projectsAndFooter .projects .webAndWebList .webList .content .webProjectsContainer .projects .gitLink:hover {
-    box-shadow: none;
   }
 }
 .mainContent .sectionTwo .projectsAndFooter .projects .webAndWebList .webList .content .webProjectsContainer .projects .gitLink .gitImg {
@@ -16672,42 +16683,42 @@ input[type=email]) {
 @media (min-width: 300px) and (max-width: 328px) {
   .mainContent .sectionTwo .cyberList {
     row-gap: 0.5rem;
-    height: 38rem;
+    height: 40.5rem;
     scroll-margin-bottom: 5rem;
   }
 }
 @media (min-width: 328px) and (max-width: 331px) {
   .mainContent .sectionTwo .cyberList {
     row-gap: 0.5rem;
-    height: 36rem;
+    height: 38.5rem;
     scroll-margin-bottom: 5rem;
   }
 }
 @media (min-width: 331px) and (max-width: 350px) {
   .mainContent .sectionTwo .cyberList {
     row-gap: 0.5rem;
-    height: 35.1rem;
+    height: 37.6rem;
     scroll-margin-bottom: 5rem;
   }
 }
 @media (min-width: 350px) and (max-width: 400px) {
   .mainContent .sectionTwo .cyberList {
     row-gap: 0.5rem;
-    height: 33.5rem;
+    height: 36rem;
     scroll-margin-bottom: 5rem;
   }
 }
 @media (min-width: 400px) and (max-width: 435px) {
   .mainContent .sectionTwo .cyberList {
     row-gap: 0.5rem;
-    height: 33rem;
+    height: 35.5rem;
     scroll-margin-bottom: 5rem;
   }
 }
 @media (min-width: 434px) and (max-width: 449px) {
   .mainContent .sectionTwo .cyberList {
     row-gap: 0.5rem;
-    height: 31.5rem;
+    height: 34rem;
     scroll-margin-bottom: 5rem;
   }
 }
@@ -17144,6 +17155,14 @@ input[type=email]) {
   width: 75%;
   animation: titleAndLists 0.5s linear 1;
 }
+@keyframes titleAndLists {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 @media (min-width: 300px) and (max-width: 600px) {
   .mainContent .sectionTwo .cyberList .content .titleAndLists {
     justify-content: unset;
@@ -17152,14 +17171,6 @@ input[type=email]) {
 @media (min-width: 600px) and (max-width: 1023px) {
   .mainContent .sectionTwo .cyberList .content .titleAndLists {
     height: 16.25rem;
-  }
-}
-@keyframes titleAndLists {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
   }
 }
 @media (min-width: 300px) and (max-width: 320px) {
@@ -17408,6 +17419,92 @@ input[type=email]) {
 @media (min-width: 1400px) and (max-width: 1500px) {
   .mainContent .sectionTwo .cyberList .content .titleAndLists .projectsContainer span {
     font-size: 9.5pt;
+  }
+}
+.mainContent .sectionTwo .cyberList .content .gitLink {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  bottom: 0.5rem;
+  left: 0.5rem;
+  width: 3.5rem;
+  height: 2.5rem;
+  background-color: #1e1e1e;
+  border: 0.1rem solid #8b8b8b;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+.mainContent .sectionTwo .cyberList .content .gitLink:hover {
+  background-color: #545146;
+}
+@media (min-width: 300px) and (max-width: 450px) {
+  .mainContent .sectionTwo .cyberList .content .gitLink {
+    bottom: 4.5rem;
+    right: 0.5rem;
+    left: unset;
+  }
+}
+@media (min-width: 449px) and (max-width: 600px) {
+  .mainContent .sectionTwo .cyberList .content .gitLink {
+    bottom: 1rem;
+    right: 6rem;
+    left: unset;
+  }
+}
+@media (width: 600px) {
+  .mainContent .sectionTwo .cyberList .content .gitLink {
+    bottom: 0.5rem;
+    left: 0.5rem;
+  }
+}
+@media (min-width: 300px) and (max-width: 1023px) {
+  .mainContent .sectionTwo .cyberList .content .gitLink {
+    cursor: default;
+  }
+}
+@media (min-width: 1023px) and (max-width: 1100px) {
+  .mainContent .sectionTwo .cyberList .content .gitLink {
+    width: 2.75rem;
+    height: 2.5rem;
+  }
+}
+@media (orientation: portrait) and (min-width: 1023px) and (max-width: 1100px) {
+  .mainContent .sectionTwo .cyberList .content .gitLink {
+    width: 4rem;
+    height: 3rem;
+    cursor: default;
+  }
+  .mainContent .sectionTwo .cyberList .content .gitLink:hover {
+    box-shadow: none;
+  }
+}
+.mainContent .sectionTwo .cyberList .content .gitLink .gitImg {
+  display: flex;
+  justify-content: center;
+  width: inherit;
+  height: inherit;
+}
+.mainContent .sectionTwo .cyberList .content .gitLink .gitImg:hover {
+  filter: brightness(200%);
+}
+.mainContent .sectionTwo .cyberList .content .gitLink .gitImg .gitContainer {
+  width: 2rem;
+  height: auto;
+}
+@media (min-width: 1023px) and (max-width: 1300px) {
+  .mainContent .sectionTwo .cyberList .content .gitLink .gitImg .gitContainer {
+    width: 1.5rem;
+  }
+}
+@media (orientation: portrait) and (min-width: 1023px) and (max-width: 1100px) {
+  .mainContent .sectionTwo .cyberList .content .gitLink .gitImg .gitContainer {
+    width: 2rem;
+  }
+}
+@media (min-width: 1300px) and (max-width: 1400px) {
+  .mainContent .sectionTwo .cyberList .content .gitLink .gitImg .gitContainer {
+    width: 1.6rem;
   }
 }
 .mainContent .sectionTwo .cyberList .content .next {
@@ -18055,17 +18152,18 @@ input[type=email]) {
   border-radius: 0.5rem;
 }
 .mainContent .sectionTwo .webList .content .webProjectsContainer .projects .gitLink {
+  display: flex;
+  justify-content: center;
   width: 7rem;
   height: 2.5rem;
   background-color: #1e1e1e;
-  border: none;
+  border: 0.1rem solid #8b8b8b;
   border-radius: 0.5rem;
   cursor: pointer;
   transition: all 0.2s ease;
 }
 .mainContent .sectionTwo .webList .content .webProjectsContainer .projects .gitLink:hover {
   background-color: #5c4f43;
-  box-shadow: inset 0 0 0 1.5px #8b8b8b;
 }
 @media (min-width: 600px) and (max-width: 700px) {
   .mainContent .sectionTwo .webList .content .webProjectsContainer .projects .gitLink {
@@ -18083,9 +18181,6 @@ input[type=email]) {
 @media (min-width: 300px) and (max-width: 1023px) {
   .mainContent .sectionTwo .webList .content .webProjectsContainer .projects .gitLink {
     cursor: default;
-  }
-  .mainContent .sectionTwo .webList .content .webProjectsContainer .projects .gitLink:hover {
-    box-shadow: none;
   }
 }
 @media (min-width: 1023px) and (max-width: 1100px) {

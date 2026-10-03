@@ -1,6 +1,7 @@
 import { useState, useEffect, Fragment } from 'react';
 import { cyberListOne, cyberListTwo, cyberListThree } from '../data/cyberList';
 export default function CyberList({
+  github,
   isContactFormOpen,
   activeList,
   setActiveList,
@@ -74,63 +75,97 @@ export default function CyberList({
         )}
 
         {pageNumber === 1 && (
-          <div className="titleAndLists">
-            <h4 className="title">Securing Systems & Networks</h4>
-            {cyberListOne.map((projects) => (
-              <Fragment key={projects.id}>
-                <div className={projects.classProjectsContainer}>
-                  <ol>
-                    <li className={projects.classProject}>
-                      {projects.project}
-                    </li>
-                  </ol>
-                  <span className={projects.classDescription}>
-                    {projects.description}
-                  </span>
-                </div>
-              </Fragment>
-            ))}
-          </div>
+          <>
+            <div className="titleAndLists">
+              <h4 className="title">Securing Systems & Networks</h4>
+              {cyberListOne.map((projects) => (
+                <Fragment key={projects.id}>
+                  <div className={projects.classProjectsContainer}>
+                    <ol>
+                      <li className={projects.classProject}>
+                        {projects.project}
+                      </li>
+                    </ol>
+                    <span className={projects.classDescription}>
+                      {projects.description}
+                    </span>
+                  </div>
+                </Fragment>
+              ))}
+            </div>
+            <a className="gitLink" href="https://example.com">
+              <div className="gitImg">
+                <img
+                  className="gitContainer"
+                  src={github}
+                  fetchPriority="high"
+                />
+              </div>
+            </a>
+          </>
         )}
 
         {pageNumber === 2 && (
-          <div className="titleAndLists">
-            <h4 className="title">Securing Systems & Networks</h4>
-            {cyberListTwo.map((projects) => (
-              <Fragment key={projects.id}>
-                <div className={projects.classProjectsContainer}>
-                  <ol>
-                    <li className={projects.classProject}>
-                      {projects.project}
-                    </li>
-                  </ol>
-                  <span className={projects.classDescription}>
-                    {projects.description}
-                  </span>
-                </div>
-              </Fragment>
-            ))}
-          </div>
+          <>
+            <div className="titleAndLists">
+              <h4 className="title">Securing Systems & Networks</h4>
+              {cyberListTwo.map((projects) => (
+                <Fragment key={projects.id}>
+                  <div className={projects.classProjectsContainer}>
+                    <ol>
+                      <li className={projects.classProject}>
+                        {projects.project}
+                      </li>
+                    </ol>
+                    <span className={projects.classDescription}>
+                      {projects.description}
+                    </span>
+                  </div>
+                </Fragment>
+              ))}
+            </div>
+
+            <a className="gitLink" href="https://example.com">
+              <div className="gitImg">
+                <img
+                  className="gitContainer"
+                  src={github}
+                  fetchPriority="high"
+                />
+              </div>
+            </a>
+          </>
         )}
 
         {pageNumber === 3 && (
-          <div className="titleAndLists">
-            <h4 className="title">Cryptography & Steganography</h4>
-            {cyberListThree.map((projects) => (
-              <Fragment key={projects.id}>
-                <div className={projects.classProjectsContainer}>
-                  <ol>
-                    <li className={projects.classProject}>
-                      {projects.project}
-                    </li>
-                  </ol>
-                  <span className={projects.classDescription}>
-                    {projects.description}
-                  </span>
-                </div>
-              </Fragment>
-            ))}
-          </div>
+          <>
+            <div className="titleAndLists">
+              <h4 className="title">Cryptography & Steganography</h4>
+              {cyberListThree.map((projects) => (
+                <Fragment key={projects.id}>
+                  <div className={projects.classProjectsContainer}>
+                    <ol>
+                      <li className={projects.classProject}>
+                        {projects.project}
+                      </li>
+                    </ol>
+                    <span className={projects.classDescription}>
+                      {projects.description}
+                    </span>
+                  </div>
+                </Fragment>
+              ))}
+            </div>
+            <a className="gitLink" href="https://example.com">
+              <div className="gitImg">
+                <img
+                  className="gitContainer"
+                  src={github}
+                  fetchPriority="high"
+                />
+              </div>
+            </a>
+          </>
         )}
 
         {pageNumber < 3 ? (

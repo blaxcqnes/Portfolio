@@ -15,6 +15,7 @@ export default function SectionTwo({
   remove,
   reset,
   download,
+  github,
   isContactFormOpen,
   activeList,
   setActiveList,
@@ -103,6 +104,7 @@ export default function SectionTwo({
 
       {activeList === 'cyberList' && (
         <CyberList
+          github={github}
           isContactFormOpen={isContactFormOpen}
           activeList={activeList}
           setActiveList={setActiveList}

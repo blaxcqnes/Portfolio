@@ -60,6 +60,7 @@ export default function MainContent({
         remove={remove}
         reset={reset}
         download={download}
+        github={github}
         isContactFormOpen={isContactFormOpen}
         activeList={activeList}
         setActiveList={setActiveList}

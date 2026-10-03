@@ -81,7 +81,7 @@ export default function WebList({
                   />
                 </a>
                 <a className={projects.classNameGitLink} href={projects.git}>
-                  <div className="gitImg">
+                  <div className={projects.classNameGitImg}>
                     <img
                       className={projects.classNameGitContainer}
                       src={projects.srcGit}
@@ -106,7 +106,7 @@ export default function WebList({
                   />
                 </a>
                 <a className={projects.classNameGitLink} href={projects.git}>
-                  <div className="gitImg">
+                  <div className={projects.classNameGitImg}>
                     <img
                       className={projects.classNameGitContainer}
                       src={projects.srcGit}
