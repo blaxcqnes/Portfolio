@@ -15150,7 +15150,7 @@ input[type=email]) {
   display: flex;
   justify-content: center;
   width: 2.5rem;
-  height: 6.2rem;
+  height: 2.5rem;
   background-color: #1e1e1e;
   border: 0.1rem solid #8b8b8b;
   border-radius: 0.5rem;
@@ -15159,16 +15159,7 @@ input[type=email]) {
 }
 .mainContent .sectionTwo .projectsAndFooter .projects .webAndWebList .webList .content .webProjectsContainer .projects .gitLink:hover {
   background-color: #5c4f43;
-}
-@media (width: 600px) {
-  .mainContent .sectionTwo .projectsAndFooter .projects .webAndWebList .webList .content .webProjectsContainer .projects .gitLink {
-    width: 2.5rem;
-    height: 7rem;
-    top: unset;
-    bottom: unset;
-    right: 2rem;
-    left: unset;
-  }
+  filter: brightness(140%);
 }
 @media (min-width: 300px) and (max-width: 1023px) {
   .mainContent .sectionTwo .projectsAndFooter .projects .webAndWebList .webList .content .webProjectsContainer .projects .gitLink {
@@ -15181,11 +15172,8 @@ input[type=email]) {
   width: inherit;
   height: inherit;
 }
-.mainContent .sectionTwo .projectsAndFooter .projects .webAndWebList .webList .content .webProjectsContainer .projects .gitLink .gitImg:hover {
-  filter: brightness(200%);
-}
 .mainContent .sectionTwo .projectsAndFooter .projects .webAndWebList .webList .content .webProjectsContainer .projects .gitLink .gitImg .gitContainer {
-  width: 2rem;
+  width: 1.7rem;
   height: auto;
 }
 .mainContent .sectionTwo .projectsAndFooter .projects .webAndWebList .webList .content .next {
@@ -17427,7 +17415,7 @@ input[type=email]) {
   position: absolute;
   bottom: 0.5rem;
   left: 0.5rem;
-  width: 3.5rem;
+  width: 2.5rem;
   height: 2.5rem;
   background-color: #1e1e1e;
   border: 0.1rem solid #8b8b8b;
@@ -17437,6 +17425,7 @@ input[type=email]) {
 }
 .mainContent .sectionTwo .cyberList .content .gitLink:hover {
   background-color: #545146;
+  filter: brightness(140%);
 }
 @media (min-width: 300px) and (max-width: 450px) {
   .mainContent .sectionTwo .cyberList .content .gitLink {
@@ -17463,16 +17452,10 @@ input[type=email]) {
     cursor: default;
   }
 }
-@media (min-width: 1023px) and (max-width: 1100px) {
-  .mainContent .sectionTwo .cyberList .content .gitLink {
-    width: 2.75rem;
-    height: 2.5rem;
-  }
-}
 @media (orientation: portrait) and (min-width: 1023px) and (max-width: 1100px) {
   .mainContent .sectionTwo .cyberList .content .gitLink {
-    width: 4rem;
-    height: 3rem;
+    width: 2.5rem;
+    height: 2.5rem;
     cursor: default;
   }
   .mainContent .sectionTwo .cyberList .content .gitLink:hover {
@@ -17485,26 +17468,13 @@ input[type=email]) {
   width: inherit;
   height: inherit;
 }
-.mainContent .sectionTwo .cyberList .content .gitLink .gitImg:hover {
-  filter: brightness(200%);
-}
 .mainContent .sectionTwo .cyberList .content .gitLink .gitImg .gitContainer {
-  width: 2rem;
+  width: 1.7rem;
   height: auto;
-}
-@media (min-width: 1023px) and (max-width: 1300px) {
-  .mainContent .sectionTwo .cyberList .content .gitLink .gitImg .gitContainer {
-    width: 1.5rem;
-  }
 }
 @media (orientation: portrait) and (min-width: 1023px) and (max-width: 1100px) {
   .mainContent .sectionTwo .cyberList .content .gitLink .gitImg .gitContainer {
-    width: 2rem;
-  }
-}
-@media (min-width: 1300px) and (max-width: 1400px) {
-  .mainContent .sectionTwo .cyberList .content .gitLink .gitImg .gitContainer {
-    width: 1.6rem;
+    width: 1.7rem;
   }
 }
 .mainContent .sectionTwo .cyberList .content .next {
@@ -18154,7 +18124,7 @@ input[type=email]) {
 .mainContent .sectionTwo .webList .content .webProjectsContainer .projects .gitLink {
   display: flex;
   justify-content: center;
-  width: 7rem;
+  width: 2.5rem;
   height: 2.5rem;
   background-color: #1e1e1e;
   border: 0.1rem solid #8b8b8b;
@@ -18164,35 +18134,11 @@ input[type=email]) {
 }
 .mainContent .sectionTwo .webList .content .webProjectsContainer .projects .gitLink:hover {
   background-color: #5c4f43;
-}
-@media (min-width: 600px) and (max-width: 700px) {
-  .mainContent .sectionTwo .webList .content .webProjectsContainer .projects .gitLink {
-    width: 2.5rem;
-    height: 5.8rem;
-  }
-}
-@media (width: 800px) {
-  .mainContent .sectionTwo .webList .content .webProjectsContainer .projects .gitLink {
-    width: 7rem;
-    height: 2.5rem;
-    font-size: 10pt;
-  }
-}
-@media (min-width: 300px) and (max-width: 1023px) {
-  .mainContent .sectionTwo .webList .content .webProjectsContainer .projects .gitLink {
-    cursor: default;
-  }
-}
-@media (min-width: 1023px) and (max-width: 1100px) {
-  .mainContent .sectionTwo .webList .content .webProjectsContainer .projects .gitLink {
-    width: 4.7rem;
-    height: 1.8rem;
-    font-size: 7.4pt;
-  }
+  filter: brightness(140%);
 }
 @media (orientation: portrait) and (min-width: 1023px) and (max-width: 1100px) {
   .mainContent .sectionTwo .webList .content .webProjectsContainer .projects .gitLink {
-    width: 7rem;
+    width: 2.5rem;
     height: 2.5rem;
     font-size: 10pt;
     cursor: default;
@@ -18201,48 +18147,19 @@ input[type=email]) {
     box-shadow: none;
   }
 }
-@media (min-width: 1100px) and (max-width: 1200px) {
-  .mainContent .sectionTwo .webList .content .webProjectsContainer .projects .gitLink {
-    width: 5.1rem;
-    height: 1.9rem;
-    font-size: 8pt;
-  }
-}
-@media (min-width: 1200px) and (max-width: 1300px) {
-  .mainContent .sectionTwo .webList .content .webProjectsContainer .projects .gitLink {
-    width: 5.5rem;
-    height: 2rem;
-    font-size: 8pt;
-  }
-}
-@media (min-width: 1300px) and (max-width: 1400px) {
-  .mainContent .sectionTwo .webList .content .webProjectsContainer .projects .gitLink {
-    width: 6.2rem;
-    height: 2.2rem;
-    font-size: 9pt;
-  }
-}
 .mainContent .sectionTwo .webList .content .webProjectsContainer .projects .gitLink .gitImg {
   display: flex;
   justify-content: center;
   width: inherit;
   height: inherit;
 }
-.mainContent .sectionTwo .webList .content .webProjectsContainer .projects .gitLink .gitImg:hover {
-  filter: brightness(200%);
-}
 .mainContent .sectionTwo .webList .content .webProjectsContainer .projects .gitLink .gitImg .gitContainer {
-  width: 2rem;
+  width: 1.7rem;
   height: auto;
 }
-@media (min-width: 1023px) and (max-width: 1300px) {
+@media (orientation: portrait) and (min-width: 1023px) and (max-width: 1100px) {
   .mainContent .sectionTwo .webList .content .webProjectsContainer .projects .gitLink .gitImg .gitContainer {
-    width: 1.5rem;
-  }
-}
-@media (min-width: 1300px) and (max-width: 1400px) {
-  .mainContent .sectionTwo .webList .content .webProjectsContainer .projects .gitLink .gitImg .gitContainer {
-    width: 1.6rem;
+    width: 1.7rem;
   }
 }
 .mainContent .sectionTwo .webList .content .next {
