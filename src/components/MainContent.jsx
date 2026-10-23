@@ -75,18 +75,6 @@ export default function MainContent({
 
 MainContent.assets = [
   me,
-  select,
-  remove,
-  reset,
-  download,
-  nextOne,
-  previousOne,
-  pauseOne,
-  playOne,
-  nextTwo,
-  previousTwo,
-  pauseTwo,
-  playTwo,
   kaffa,
   veila,
   guessGame,

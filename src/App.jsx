@@ -10,7 +10,23 @@ import Loader from './components/Loader';
 import Header from './components/Header';
 import MainContent from './components/MainContent';
 
-const IMAGES_TO_PRELOAD = [...(MainContent.assets || [])];
+// const IMAGES_TO_PRELOAD = [...(MainContent.assets || [])];
+const IMAGES_TO_PRELOAD = [
+  ...(MainContent.assets || []),
+  '/images/sectionTwo/svgs/github.svg',
+  '/images/sectionOne/svgs/nextOne.svg',
+  '/images/sectionOne/svgs/previousOne.svg',
+  '/images/sectionOne/svgs/pause.svg',
+  '/images/sectionOne/svgs/play.svg',
+  '/images/sectionTwo/svgs/nextTwo.svg',
+  '/images/sectionTwo/svgs/previousTwo.svg',
+  '/images/sectionTwo/svgs/pause.svg',
+  '/images/sectionTwo/svgs/play.svg',
+  '/images/sectionTwo/svgs/select.svg',
+  '/images/sectionTwo/svgs/remove.svg',
+  '/images/sectionTwo/svgs/reset.svg',
+  '/images/sectionTwo/svgs/download.svg',
+];
 
 export default function App() {
   const [loading, setLoading] = useState(true);

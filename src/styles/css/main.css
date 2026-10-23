@@ -2580,12 +2580,16 @@ input[type=email]) {
   width: 100%;
   height: inherit;
   object-fit: cover;
-  transform: translate3d(0, 0, 0);
+  filter: none;
+  opacity: 1;
+  transform: none;
   overflow-clip-margin: unset;
   will-change: transform;
   backface-visibility: hidden;
-  image-rendering: -webkit-optimize-contrast;
+  image-rendering: auto;
   -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  mix-blend-mode: normal;
   border-radius: 0.5rem;
   pointer-events: none;
 }
@@ -18330,6 +18334,7 @@ input[type=email]) {
 body {
   background-color: #1e1e1e;
   scroll-behavior: smooth;
+  filter: none;
 }
 
 body::-webkit-scrollbar {
