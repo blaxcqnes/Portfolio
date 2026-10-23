@@ -80,9 +80,9 @@ export default function WebList({
                   rel="noopener noreferrer"
                 >
                   <img
-                    className={projects.classNameUrlImg}
                     src={projects.srcImg}
                     fetchPriority="high"
+                    className={projects.classNameUrlImg}
                   />
                 </a>
                 <a
@@ -93,9 +93,9 @@ export default function WebList({
                 >
                   <div className={projects.classNameGitImg}>
                     <img
-                      className={projects.classNameGitContainer}
                       src={projects.srcGit}
                       fetchPriority="high"
+                      className={projects.classNameGitContainer}
                     />
                   </div>
                 </a>
@@ -115,9 +115,9 @@ export default function WebList({
                   rel="noopener noreferrer"
                 >
                   <img
-                    className={projects.classNameUrlImg}
                     src={projects.srcImg}
                     fetchPriority="high"
+                    className={projects.classNameUrlImg}
                   />
                 </a>
                 <a
@@ -128,9 +128,9 @@ export default function WebList({
                 >
                   <div className={projects.classNameGitImg}>
                     <img
-                      className={projects.classNameGitContainer}
                       src={projects.srcGit}
                       fetchPriority="high"
+                      className={projects.classNameGitContainer}
                     />
                   </div>
                 </a>

@@ -203,9 +203,10 @@ export default function SkillsBox({
         <div className="pages">
           {!isContactFormOpen || !activeList ? (
             <img
+              src={previousOne}
+              fetchPriority="high"
               className="previousOne"
               onClick={skillPage <= 1 ? undefined : previous}
-              src={previousOne}
               style={{
                 opacity:
                   activeList || isContactFormOpen || glow
@@ -219,7 +220,6 @@ export default function SkillsBox({
                     ? 'none'
                     : 'auto',
               }}
-              fetchPriority="high"
             />
           ) : undefined}
           <p
@@ -232,9 +232,10 @@ export default function SkillsBox({
           </p>
           {!isContactFormOpen || !activeList ? (
             <img
+              src={nextOne}
+              fetchPriority="high"
               className="nextOne"
               onClick={skillPage >= 2 ? undefined : next}
-              src={nextOne}
               style={{
                 opacity:
                   activeList || isContactFormOpen || glow
@@ -247,7 +248,6 @@ export default function SkillsBox({
                     ? 'none'
                     : 'auto',
               }}
-              fetchPriority="high"
             />
           ) : undefined}
         </div>
@@ -284,15 +284,15 @@ export default function SkillsBox({
 
           {!isContactFormOpen || !activeList ? (
             <img
+              src={isPaused ? playOne : pauseOne}
+              fetchPriority="high"
               className="pausePlay"
               onClick={pausePlay}
-              src={isPaused ? playOne : pauseOne}
               style={{
                 opacity: activeList || isContactFormOpen || glow ? 0 : 1,
                 pointerEvents:
                   activeList || isContactFormOpen || glow ? 'none' : 'auto',
               }}
-              fetchPriority="high"
             />
           ) : undefined}
         </div>

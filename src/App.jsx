@@ -10,7 +10,6 @@ import Loader from './components/Loader';
 import Header from './components/Header';
 import MainContent from './components/MainContent';
 
-// const IMAGES_TO_PRELOAD = [...(MainContent.assets || [])];
 const IMAGES_TO_PRELOAD = [
   ...(MainContent.assets || []),
   '/images/sectionTwo/svgs/github.svg',

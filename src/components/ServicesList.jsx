@@ -235,25 +235,25 @@ export default function ServicesList({
                 <p className={selectedServices.classServiceDescription}>
                   {selectedServices.description}
                 </p>
-                {selectedServices.selected ? (
+                {!selectedServices.selected ? (
                   <img
-                    className="remove"
-                    src={remove}
-                    onClick={() => toggleSelection(selectedServices.id)}
-                    style={{
-                      animation: 'remove 0.2s linear 1',
-                    }}
-                    fetchPriority="high"
-                  />
-                ) : (
-                  <img
-                    className="select"
                     src={select}
+                    fetchPriority="high"
+                    className="select"
                     onClick={() => toggleSelection(selectedServices.id)}
                     style={{
                       animation: 'select 0.2s linear 1',
                     }}
+                  />
+                ) : (
+                  <img
+                    src={remove}
                     fetchPriority="high"
+                    className="remove"
+                    onClick={() => toggleSelection(selectedServices.id)}
+                    style={{
+                      animation: 'remove 0.2s linear 1',
+                    }}
                   />
                 )}
               </span>
@@ -361,47 +361,47 @@ export default function ServicesList({
               </p>
               {totalPrice || nameValue || emailValue ? (
                 <img
-                  className="reset"
-                  onClick={resetValue}
                   src={reset}
                   fetchPriority="high"
+                  className="reset"
+                  onClick={resetValue}
                 />
               ) : (
                 <img
+                  src={reset}
+                  fetchPriority="high"
+                  disabled
                   className="reset"
                   style={{
                     pointerEvents: 'none',
                     backgroundColor: '#232323',
                     opacity: 0.2,
                   }}
-                  src={reset}
-                  fetchPriority="high"
-                  disabled
                 />
               )}
             </section>
             {totalPrice && nameValue && emailValue ? (
               <img
+                src={isGenerating ? select : download}
+                fetchPriority="high"
                 className="download"
                 onClick={handleFinalDownloadAndSubmit}
-                src={isGenerating ? select : download}
                 style={{
                   animation: isGenerating
                     ? 'select 0.3s linear 1'
                     : 'download 0.3s linear 1',
                 }}
-                fetchPriority="high"
               />
             ) : (
               <img
+                src={download}
+                fetchPriority="high"
                 className="download"
                 style={{
                   pointerEvents: 'none',
                   backgroundColor: '#232323',
                   opacity: 0.2,
                 }}
-                src={download}
-                fetchPriority="high"
                 disabled
               />
             )}

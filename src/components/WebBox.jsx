@@ -225,15 +225,15 @@ export default function WebBox({
 
           {!isContactFormOpen || !activeList ? (
             <img
+              src={isPaused ? playTwo : pauseTwo}
+              fetchPriority="high"
               className="pausePlay"
               onClick={pausePlay}
-              src={isPaused ? playTwo : pauseTwo}
               style={{
                 opacity: activeList || isContactFormOpen || glow ? 0 : 1,
                 pointerEvents:
                   activeList || isContactFormOpen || glow ? 'none' : 'auto',
               }}
-              fetchPriority="high"
             />
           ) : undefined}
         </div>

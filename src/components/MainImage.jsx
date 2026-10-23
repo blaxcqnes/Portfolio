@@ -2,10 +2,10 @@ export default function MainImage({ me, isContactFormOpen, activeList }) {
   return (
     <div className="imageAndTitle">
       <img
-        id="me"
         src={me}
-        className="mainImage"
         fetchPriority="high"
+        id="me"
+        className="mainImage"
         onContextMenu={(e) => e.preventDefault()}
         style={
           activeList || isContactFormOpen

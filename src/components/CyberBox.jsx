@@ -236,15 +236,15 @@ export default function CyberBox({
 
         {!isContactFormOpen || !activeList ? (
           <img
+            src={isPaused ? playTwo : pauseTwo}
+            fetchPriority="high"
             className="pausePlay"
             onClick={pausePlay}
-            src={isPaused ? playTwo : pauseTwo}
             style={{
               opacity: activeList || isContactFormOpen || glow ? 0 : 1,
               pointerEvents:
                 activeList || isContactFormOpen || glow ? 'none' : 'auto',
             }}
-            fetchPriority="high"
           />
         ) : undefined}
       </div>
@@ -252,9 +252,10 @@ export default function CyberBox({
       <div className="pages">
         {!isContactFormOpen || !activeList ? (
           <img
+            src={previousTwo}
+            fetchPriority="high"
             className="previousTwo"
             onClick={cyberPage <= 1 ? undefined : previous}
-            src={previousTwo}
             style={{
               opacity:
                 activeList || isContactFormOpen || glow
@@ -268,7 +269,6 @@ export default function CyberBox({
                   ? 'none'
                   : 'auto',
             }}
-            fetchPriority="high"
           />
         ) : undefined}
         <p
@@ -281,9 +281,10 @@ export default function CyberBox({
         </p>
         {!isContactFormOpen || !activeList ? (
           <img
+            src={nextTwo}
+            fetchPriority="high"
             className="nextTwo"
             onClick={cyberPage >= 2 ? undefined : next}
-            src={nextTwo}
             style={{
               opacity:
                 activeList || isContactFormOpen || glow
@@ -296,7 +297,6 @@ export default function CyberBox({
                   ? 'none'
                   : 'auto',
             }}
-            fetchPriority="high"
           />
         ) : undefined}
       </div>
