@@ -26,6 +26,7 @@ const IMAGES_TO_PRELOAD = [
   '/images/sectionTwo/svgs/reset.svg',
   '/images/sectionTwo/svgs/download.svg',
 ];
+const preloadedImagesRef = useRef([]);
 
 export default function App() {
   const [loading, setLoading] = useState(true);
@@ -82,6 +83,7 @@ export default function App() {
     const preloadImage = (src) => {
       return new Promise((resolve) => {
         const img = new Image();
+        preloadedImagesRef.current.push(img);
         let completed = false;
         const finish = async () => {
           if (completed) return;

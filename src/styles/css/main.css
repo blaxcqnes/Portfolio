@@ -3856,6 +3856,22 @@ input[type=email]) {
   cursor: pointer;
   transition: all 0.2s ease;
 }
+@keyframes download {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes select {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 .mainContent .sectionOne .bio .imageAndDescription .descriptionAndServicesList .servicesList .content .disclaimerTotalResetDownload .totalResetDownload .download:hover {
   background-color: #5c4f43;
 }
@@ -17413,7 +17429,7 @@ input[type=email]) {
     font-size: 9.5pt;
   }
 }
-.mainContent .sectionTwo .cyberList .content .gitLink {
+.mainContent .sectionTwo .cyberList .content .titleAndLists .gitLink {
   display: flex;
   justify-content: center;
   position: absolute;
@@ -17427,57 +17443,57 @@ input[type=email]) {
   cursor: pointer;
   transition: all 0.2s ease;
 }
-.mainContent .sectionTwo .cyberList .content .gitLink:hover {
+.mainContent .sectionTwo .cyberList .content .titleAndLists .gitLink:hover {
   background-color: #545146;
   filter: brightness(140%);
 }
 @media (min-width: 300px) and (max-width: 450px) {
-  .mainContent .sectionTwo .cyberList .content .gitLink {
+  .mainContent .sectionTwo .cyberList .content .titleAndLists .gitLink {
     bottom: 4.5rem;
     right: 0.5rem;
     left: unset;
   }
 }
 @media (min-width: 449px) and (max-width: 600px) {
-  .mainContent .sectionTwo .cyberList .content .gitLink {
+  .mainContent .sectionTwo .cyberList .content .titleAndLists .gitLink {
     bottom: 1rem;
     right: 6rem;
     left: unset;
   }
 }
 @media (width: 600px) {
-  .mainContent .sectionTwo .cyberList .content .gitLink {
+  .mainContent .sectionTwo .cyberList .content .titleAndLists .gitLink {
     bottom: 0.5rem;
     left: 0.5rem;
   }
 }
 @media (min-width: 300px) and (max-width: 1023px) {
-  .mainContent .sectionTwo .cyberList .content .gitLink {
+  .mainContent .sectionTwo .cyberList .content .titleAndLists .gitLink {
     cursor: default;
   }
 }
 @media (orientation: portrait) and (min-width: 1023px) and (max-width: 1100px) {
-  .mainContent .sectionTwo .cyberList .content .gitLink {
+  .mainContent .sectionTwo .cyberList .content .titleAndLists .gitLink {
     width: 2.5rem;
     height: 2.5rem;
     cursor: default;
   }
-  .mainContent .sectionTwo .cyberList .content .gitLink:hover {
+  .mainContent .sectionTwo .cyberList .content .titleAndLists .gitLink:hover {
     box-shadow: none;
   }
 }
-.mainContent .sectionTwo .cyberList .content .gitLink .gitImg {
+.mainContent .sectionTwo .cyberList .content .titleAndLists .gitLink .gitImg {
   display: flex;
   justify-content: center;
   width: inherit;
   height: inherit;
 }
-.mainContent .sectionTwo .cyberList .content .gitLink .gitImg .gitContainer {
+.mainContent .sectionTwo .cyberList .content .titleAndLists .gitLink .gitImg .gitContainer {
   width: 1.7rem;
   height: auto;
 }
 @media (orientation: portrait) and (min-width: 1023px) and (max-width: 1100px) {
-  .mainContent .sectionTwo .cyberList .content .gitLink .gitImg .gitContainer {
+  .mainContent .sectionTwo .cyberList .content .titleAndLists .gitLink .gitImg .gitContainer {
     width: 1.7rem;
   }
 }

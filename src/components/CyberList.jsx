@@ -78,20 +78,20 @@ export default function CyberList({
           <>
             <div className="titleAndLists">
               <h4 className="title">Securing Systems & Networks</h4>
+
               {cyberListOne.map((projects) => (
-                <>
-                  <Fragment key={projects.id}>
-                    <div className={projects.classProjectsContainer}>
-                      <ol>
-                        <li className={projects.classProject}>
-                          {projects.project}
-                        </li>
-                      </ol>
-                      <span className={projects.classDescription}>
-                        {projects.description}
-                      </span>
-                    </div>
-                  </Fragment>
+                <Fragment key={projects.id}>
+                  <div className={projects.classProjectsContainer}>
+                    <ol>
+                      <li className={projects.classProject}>
+                        {projects.project}
+                      </li>
+                    </ol>
+
+                    <span className={projects.classDescription}>
+                      {projects.description}
+                    </span>
+                  </div>
                   <a
                     className="gitLink"
                     href="https://example.com"
@@ -101,12 +101,13 @@ export default function CyberList({
                     <div className="gitImg">
                       <img
                         src={github}
+                        alt="GitHub"
                         fetchPriority="high"
                         className="gitContainer"
                       />
                     </div>
                   </a>
-                </>
+                </Fragment>
               ))}
             </div>
           </>
@@ -117,19 +118,18 @@ export default function CyberList({
             <div className="titleAndLists">
               <h4 className="title">Securing Systems & Networks</h4>
               {cyberListTwo.map((projects) => (
-                <>
-                  <Fragment key={projects.id}>
-                    <div className={projects.classProjectsContainer}>
-                      <ol>
-                        <li className={projects.classProject}>
-                          {projects.project}
-                        </li>
-                      </ol>
-                      <span className={projects.classDescription}>
-                        {projects.description}
-                      </span>
-                    </div>
-                  </Fragment>
+                <Fragment key={projects.id}>
+                  <div className={projects.classProjectsContainer}>
+                    <ol>
+                      <li className={projects.classProject}>
+                        {projects.project}
+                      </li>
+                    </ol>
+
+                    <span className={projects.classDescription}>
+                      {projects.description}
+                    </span>
+                  </div>
                   <a
                     className="gitLink"
                     href="https://example.com"
@@ -139,12 +139,13 @@ export default function CyberList({
                     <div className="gitImg">
                       <img
                         src={github}
+                        alt="GitHub"
                         fetchPriority="high"
                         className="gitContainer"
                       />
                     </div>
                   </a>
-                </>
+                </Fragment>
               ))}
             </div>
           </>
@@ -155,29 +156,34 @@ export default function CyberList({
             <div className="titleAndLists">
               <h4 className="title">Cryptography & Steganography</h4>
               {cyberListThree.map((projects) => (
-                <>
-                  <Fragment key={projects.id}>
-                    <div className={projects.classProjectsContainer}>
-                      <ol>
-                        <li className={projects.classProject}>
-                          {projects.project}
-                        </li>
-                      </ol>
-                      <span className={projects.classDescription}>
-                        {projects.description}
-                      </span>
-                    </div>
-                  </Fragment>
-                  <a className="gitLink" href="https://example.com">
+                <Fragment key={projects.id}>
+                  <div className={projects.classProjectsContainer}>
+                    <ol>
+                      <li className={projects.classProject}>
+                        {projects.project}
+                      </li>
+                    </ol>
+
+                    <span className={projects.classDescription}>
+                      {projects.description}
+                    </span>
+                  </div>
+                  <a
+                    className="gitLink"
+                    href="https://example.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     <div className="gitImg">
                       <img
                         src={github}
+                        alt="GitHub"
                         fetchPriority="high"
                         className="gitContainer"
                       />
                     </div>
                   </a>
-                </>
+                </Fragment>
               ))}
             </div>
           </>
