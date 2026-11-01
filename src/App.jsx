@@ -314,6 +314,21 @@ export default function App() {
         <Loader progress={progress} />
       ) : (
         <>
+          <div
+            style={{
+              display: 'none',
+              position: 'absolute',
+              width: 0,
+              height: 0,
+              overflow: 'hidden',
+              pointerEvents: 'none',
+            }}
+            aria-hidden="true"
+          >
+            {IMAGES_TO_PRELOAD.map((src, index) => (
+              <img key={index} src={src} alt="" />
+            ))}
+          </div>
           <Header
             isContactFormOpen={isContactFormOpen}
             activeList={activeList}
